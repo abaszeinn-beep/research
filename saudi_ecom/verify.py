@@ -301,6 +301,22 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if cand.get("root_domain") in MARKETPLACE_ROOTS:
         return done("rejected", "excluded_marketplace: " + MARKETPLACE_ROOTS[cand["root_domain"]])
 
+    if key.endswith(".myshopify.com"):
+        st, mfinal, txt, _, _ = await f.get(urljoin(url, "/meta.json"), tries=2)
+        if st == 200 and txt.strip().startswith("{"):
+            try:
+                mj = json.loads(txt)
+            except ValueError:
+                mj = {}
+            country, currency = mj.get("country"), mj.get("currency")
+            if country and currency and country != "SA" and currency != "SAR":
+                res.update({"http_status": st, "final_url": mfinal, "store_name": mj.get("name") or "", "platform": "shopify",
+                            "saudi_evidence": json.dumps({"shopify_country": country, "shopify_currency": currency}), "evidence_url": mfinal})
+                return done("rejected", f"non_saudi_shopify_store (meta.json country={country}, currency={currency})")
+            dom = (mj.get("domain") or "").lower()
+            if dom and not dom.endswith(".myshopify.com"):
+                url = "https://" + dom + "/"
+
     st, final, html, hdrs, err = await f.get(url)
     if st is None and err == "connect_error" and url.startswith("https://"):
         st, final, html, hdrs, err = await f.get("http://" + url[8:], tries=2)
