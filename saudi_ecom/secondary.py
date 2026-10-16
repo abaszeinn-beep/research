@@ -26,7 +26,7 @@ import httpx
 
 from . import db
 from . import signals as S
-from .common import registrable_domain
+from .common import identity, registrable_domain
 from .discover_search import bing_decode
 from .reference import connect
 from .verify import SA_GEO
@@ -286,6 +286,29 @@ SECONDARY_REASONS = ("blocked_or_challenge%", "js_rendered%", "partial_ecommerce
                      "fetch_failed%", "verification_timeout%", "rate_limited%", "weak_ecommerce%", "http_5%", "http_403%")
 
 
+def unresolved_targets(con, per_ref=2):
+    """Brand refs the audit left unresolved: their existing non-verified candidates (Saudi-path keys first), else root domains."""
+    seen = {r[0] for r in con.execute("SELECT key FROM secondary_evidence")}
+    rows = []
+    for ref_id, name, doms in con.execute("SELECT ref_id, name, domains FROM reference_stores WHERE kind='brand' AND status='unresolved'").fetchall():
+        ds = doms.split()
+        if not ds:
+            continue
+        qs = ",".join("?" * len(ds))
+        cands = con.execute(f"SELECT key, url FROM candidates WHERE (root_domain IN ({qs}) OR key IN ({qs})) AND status NOT IN ('verified','in_progress')",
+                            (*ds, *ds)).fetchall()
+        if not cands:
+            for d in ds:
+                ident = identity(f"https://{d}/")
+                if ident:
+                    db.add_candidates(con, [(f"https://{d}/", 5)], "reference:secondary_fallback", f"ref {ref_id}", 5)
+                    cands.append((ident["key"], f"https://{d}/"))
+            con.commit()
+        cands.sort(key=lambda kv: ("|" not in kv[0], len(kv[0])))
+        rows += [(k, u, name, doms) for k, u in cands[:per_ref] if k not in seen]
+    return rows
+
+
 def targets(con, keys, limit):
     """Reference-linked candidates the live checker couldn't confirm (plus explicit keys)."""
     if keys:
@@ -300,6 +323,7 @@ def targets(con, keys, limit):
             JOIN reference_stores r ON r.ref_id=ru.ref_id JOIN candidates c ON c.key=ru.key LEFT JOIN verifications v ON v.key=ru.key
             WHERE r.kind='brand' AND c.status IN ('unverified','rejected') AND (v.key IS NULL OR {cond})
             AND ru.key NOT IN (SELECT key FROM secondary_evidence) LIMIT ?""", (*SECONDARY_REASONS, limit)).fetchall()
+        rows += unresolved_targets(con)
     return [{"key": k, "url": u if u.startswith("http") else "https://" + u, "name": n or k, "domains": (d or "").split()} for k, u, n, d in rows if k]
 
 

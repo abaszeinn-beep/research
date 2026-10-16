@@ -297,6 +297,72 @@ async def retry_none(con):
     print(f"[reference] cdx retry found {found}/{len(refs)}", flush=True)
 
 
+APPSTORE_GENRES = {"Shopping", "Food & Drink", "Lifestyle", "Health & Fitness", "Medical"}
+
+
+def _norm(s):
+    return re.sub(r"[^a-z0-9\u0600-\u06ff]", "", (s or "").lower().replace("&", "and"))
+
+
+def appstore_domains(con, limit=1000):
+    """Official storefront domains from the Saudi App Store (iTunes Search API sellerUrl) for brands with no
+    working Saudi storefront yet; matched refs get the new domains and are queued for resolve again."""
+    from .common import MARKETPLACE_ROOTS, NON_STORE_ROOTS
+    refs = con.execute("SELECT ref_id, name, domains, sources FROM reference_stores WHERE kind='brand' AND status IN ('excluded','unresolved') "
+                       "AND reason NOT LIKE 'excluded: marketplace%' LIMIT ?", (limit,)).fetchall()
+    print(f"[appstore] {len(refs)} refs", flush=True)
+    added = 0
+    with httpx.Client(timeout=30) as client:
+        for i, (ref_id, name, doms, sources) in enumerate(refs):
+            term = name.split(":")[-1].split("/")[0].strip()
+            tok = _norm(term)
+            if len(tok) < 3:
+                continue
+            for attempt in range(3):
+                try:
+                    r = client.get("https://itunes.apple.com/search", params={"term": term, "country": "sa", "entity": "software", "limit": 8})
+                    if r.status_code == 200:
+                        break
+                except httpx.HTTPError:
+                    pass
+                time.sleep(20)
+            else:
+                continue
+            time.sleep(3.2)
+            have = set(doms.split())
+            new = []
+            for app in r.json().get("results", []):
+                if app.get("primaryGenreName") not in APPSTORE_GENRES or not app.get("sellerUrl"):
+                    continue
+                if tok not in _norm(app.get("trackName")) and tok not in _norm(app.get("sellerName")):
+                    continue
+                host = (urlsplit(app["sellerUrl"]).hostname or "").lower()
+                root = registrable_domain(host)
+                if not root or root in NON_STORE_ROOTS or root in MARKETPLACE_ROOTS or root in have:
+                    continue
+                if tok[:4] not in _norm(root) and tok not in _norm(app.get("sellerName")):
+                    continue
+                cand = host[4:] if host.startswith("www.") else host
+                for d in {cand, root}:
+                    if d not in have:
+                        have.add(d)
+                        new.append(d)
+                src = f"appstore:{app.get('trackId')} ({app.get('trackName')[:40]}; sellerUrl {app['sellerUrl']})"
+                srcs = json.loads(sources or "[]")
+                if src not in srcs:
+                    srcs.append(src)
+                    sources = json.dumps(srcs, ensure_ascii=False)
+            if new:
+                added += 1
+                con.execute("UPDATE reference_stores SET domains=?, sources=? WHERE ref_id=?", (" ".join(sorted(have, key=lambda d: d not in new)), sources, ref_id))
+                con.execute("DELETE FROM reference_urls WHERE ref_id=? AND via IN ('none','live_variant','wayback_cdx')", (ref_id,))
+                con.commit()
+                print(f"[appstore] {name}: +{' '.join(new)}", flush=True)
+            if i % 25 == 0:
+                print(f"[appstore] {i}/{len(refs)} added={added}", flush=True)
+    print(f"[appstore] done added={added}", flush=True)
+
+
 def link(con):
     """Queue resolved URLs as candidates (source reference:<id>), re-verifying ones not yet verified."""
     rows = con.execute("SELECT ref_id, url, final_url, via FROM reference_urls WHERE url!='-'").fetchall()
@@ -358,7 +424,7 @@ def audit(con, previous_csv=None):
     for ref_id, key, via in con.execute("SELECT ref_id, key, via FROM reference_urls WHERE key IS NOT NULL"):
         mapped.setdefault(ref_id, []).append(key)
     sec = {k: (v, e) for k, v, e in con.execute("SELECT key, verdict, evidence FROM secondary_evidence")} if con.execute(
-        "SELECT name FROM sqlite_master WHERE name='secondary_evidence'").fetchone() else {}
+        "SELECT name FROM sqlite_master WHERE name='secondary_evidence'").fetchall() else {}
     nones = {r[0]: json.loads(r[1] or "{}") for r in con.execute("SELECT ref_id, info FROM reference_urls WHERE via='none'")}
 
     def master_of(k):
@@ -369,7 +435,7 @@ def audit(con, previous_csv=None):
 
     rows = []
     for ref_id, name, cat, tier, doms, sources, rank, kind in con.execute(
-            "SELECT ref_id, name, category, tier, domains, sources, tranco_rank, kind FROM reference_stores"):
+            "SELECT ref_id, name, category, tier, domains, sources, tranco_rank, kind FROM reference_stores").fetchall():
         domains = doms.split()
         roots = {registrable_domain(d) for d in domains}
         labels = {r.split(".")[0] for r in roots}
@@ -406,7 +472,11 @@ def audit(con, previous_csv=None):
                 if exc:
                     break
             blocked = [c for c in cands if re.search(r"blocked|challenge|robots|rate_limited|js_rendered|partial|insufficient|weak|timeout|fetch_failed|http_5", c["reason"] or "")]
-            if blocked:
+            pend = [c for c in cands if c["cstatus"] in ("pending", "in_progress")]
+            if pend and not blocked:
+                status, key, url = "unresolved", pend[0]["key"], pend[0]["url"]
+                reason = "unresolved: live verification still queued"
+            elif blocked:
                 b = blocked[0]
                 key = b["key"]
                 url = b["final"] or b["url"]
@@ -439,7 +509,7 @@ def audit(con, previous_csv=None):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["load", "resolve", "retry-none", "link", "audit"])
+    ap.add_argument("cmd", choices=["load", "resolve", "retry-none", "appstore", "link", "audit"])
     ap.add_argument("--kinds", default="brand")
     ap.add_argument("--limit", type=int, default=100000)
     ap.add_argument("--no-bing", action="store_true")
@@ -450,6 +520,8 @@ if __name__ == "__main__":
         load(con)
     elif a.cmd == "resolve":
         asyncio.run(resolve(con, a.kinds.split(","), a.limit, not a.no_bing, not a.no_cdx))
+    elif a.cmd == "appstore":
+        appstore_domains(con, a.limit)
     elif a.cmd == "retry-none":
         asyncio.run(retry_none(con))
     elif a.cmd == "audit":

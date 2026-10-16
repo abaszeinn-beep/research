@@ -177,6 +177,10 @@ def identity(url: str):
                         "root_domain": suf, "platform_hint": plat}
             return {"key": host, "url": f"https://{host}/", "root_domain": suf, "platform_hint": plat}
 
+    if host == "apple.com":
+        m = SAUDI_LOCALE_RE.search(path + ("/" if not path.endswith("/") else ""))
+        if m:
+            return {"key": "apple.com|sa", "url": f"https://www.apple.com{path[: m.end()].rstrip('/')}/", "root_domain": root, "platform_hint": None}
     if root in NON_STORE_ROOTS or host in NON_STORE_ROOTS:
         return None
     if root.endswith(".gov.sa") or root.endswith(".edu.sa") or root.endswith(".sch.sa"):
