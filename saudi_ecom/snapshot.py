@@ -7,6 +7,9 @@ def main():
     tmp = os.path.join(os.path.dirname(db.DB_PATH), "snapshot.sqlite")
     dst = sqlite3.connect(tmp)
     src.backup(dst)
+    # cat_text (page text kept for re-categorisation) dominates the size; the live DB keeps it.
+    dst.execute("UPDATE verifications SET cat_text=NULL")
+    dst.commit()
     dst.execute("VACUUM")
     dst.close(); src.close()
     with open(tmp, "rb") as fi, gzip.open(tmp.replace("snapshot.sqlite", "saudi_ecom.sqlite.gz"), "wb", compresslevel=9) as fo:
