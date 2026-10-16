@@ -51,9 +51,9 @@ class Fetcher:
 
     def _sem(self, host):
         if host not in self.host_sems:
-            n = 3 if host in ("salla.sa", "api.salla.dev") else self.per_host
+            n = 4 if host in ("salla.sa", "api.salla.dev") else self.per_host
             if host in ("salla.sa", "api.salla.dev"):
-                self.host_gap[host] = 0.35
+                self.host_gap[host] = 0.25
             self.host_sems[host] = asyncio.Semaphore(n)
         return self.host_sems[host]
 
@@ -113,9 +113,12 @@ class Fetcher:
                 try:
                     st, final, text, hdrs = await asyncio.wait_for(self._raw_get(url, headers), 45)
                     self.stats["requests"] += 1
+                    base_gap = 0.25 if host in ("salla.sa", "api.salla.dev") else 0.5
                     if st == 429:
                         self.stats["http_429"] += 1
                         self.host_gap[host] = min(self.host_gap[host] * 1.5 + 0.2, 6.0)
+                    elif self.host_gap[host] > base_gap:
+                        self.host_gap[host] = max(base_gap, self.host_gap[host] * 0.97)
                     if st in (429, 502, 503, 504) and attempt < tries - 1 and not CHALLENGE.search(text[:5000]):
                         last_err = f"http_{st}"
                         if st == 429:
@@ -414,6 +417,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
                 return done("rejected", "digital_products_only (salla product types: %s)" % dict(t))
             if phys == 0 and service > 0:
                 return done("rejected", "services_only (salla product types: %s)" % dict(t))
+            if phys <= 10 and (service + digital) >= 2 * phys:
+                return done("rejected", "mostly_services_or_digital (salla product types: %s)" % dict(t))
         if plat == "woocommerce" and probe.get("n"):
             if probe.get("demo", 0) >= max(2, probe["n"] // 2):
                 return done("rejected", f"theme_demo_products_only (woocommerce sample data: {probe['demo']}/{probe['n']})")
@@ -432,6 +437,12 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             smp = None
         if smp:
             ecom["sitemap_probe"] = smp
+
+    pnames = [n for n in ((probe or {}).get("names") or []) if n]
+    if len(pnames) >= 3:
+        svc = sum(1 for n in pnames if S.SERVICE_NAME.search(n))
+        if svc >= 0.6 * len(pnames):
+            return done("rejected", f"mostly_services_or_digital_by_product_names ({svc}/{len(pnames)})")
 
     product_ev = []
     if smp:
@@ -628,7 +639,8 @@ async def main(concurrency, per_host, worker, idle_exit, where_extra, reset_stal
         while True:
             await asyncio.sleep(60)
             el = time.time() - t_start
-            info = dict(stats) | {"per_min": round(stats["total"] / (el / 60), 1), "requests": f.stats["requests"]}
+            info = dict(stats) | {"per_min": round(stats["total"] / (el / 60), 1), "requests": f.stats["requests"], "http_429": f.stats["http_429"],
+                                  "salla_gap": round(f.host_gap.get("salla.sa", 0), 2)}
             print(f"[verify:{worker}] {info}", flush=True)
             db.heartbeat(con, f"verify:{worker}", "code-worker(asyncio)", concurrency, info)
 
