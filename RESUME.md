@@ -82,19 +82,26 @@ scripts/start_worker.sh search-discovery saudi_ecom.discover_search --engines bi
 scripts/start_worker.sh listicles saudi_ecom.discover_pages --expand-queries saudi_ecom/data/listicle_queries.txt
 python3 -m saudi_ecom.seeds
 
-# verification (two processes: one includes Salla, one excludes Salla so the throttled salla.sa host doesn't starve others)
-scripts/start_worker.sh verifier-1 saudi_ecom.verify --concurrency 48 --worker v1
-scripts/start_worker.sh verifier-2 saudi_ecom.verify --concurrency 64 --worker v2 --where "\"AND coalesce(platform_hint,'')!='salla'\""
+# verification: one process per platform queue, because each platform has its own rate-limit bucket and a
+# shared queue lets a throttled platform hold every concurrency slot.
+scripts/start_worker.sh verifier-1 saudi_ecom.verify --concurrency 48 --per-host 2 --worker v1 --where "\"AND platform_hint='salla'\""
+scripts/start_worker.sh verifier-2 saudi_ecom.verify --concurrency 64 --per-host 2 --worker v2 --where "\"AND coalesce(platform_hint,'') NOT IN ('salla','zid','shopify') AND priority>=0\""
+scripts/start_worker.sh verifier-3 saudi_ecom.verify --concurrency 12 --per-host 2 --worker v3 --where "\"AND platform_hint='zid' AND priority>=0\""
+scripts/start_worker.sh verifier-4 saudi_ecom.verify --concurrency 6 --per-host 2 --worker v4 --where "\"AND platform_hint='shopify'\""
+# slow retry queue (priority<0): rate-limited / timed-out non-Salla candidates (e.g. Hostinger CDN throttles per client IP)
+scripts/start_worker.sh verifier-5 saudi_ecom.verify --concurrency 4 --per-host 1 --worker v5 --where "\"AND coalesce(platform_hint,'') NOT IN ('salla','shopify') AND priority<0\""
+# watchdog restarts any verifier whose log is stale >6 min (same filters as above)
+tmux new-session -d -s watchdog "bash scripts/watchdog.sh 2>&1 | tee -a logs/watchdog.log"
 # browser pass for JS-rendered pages
-scripts/start_worker.sh browser saudi_ecom.verify_browser --concurrency 4
+scripts/start_worker.sh browser saudi_ecom.verify_browser --concurrency 4 --limit 1500
 
-# re-check rate-limited ones later
-python3 -c "import sqlite3;c=sqlite3.connect('data/saudi_ecom.sqlite');c.execute(\"UPDATE candidates SET status='pending' WHERE key IN (SELECT key FROM verifications WHERE reason LIKE 'rate_limited%' OR reason LIKE '%http_429%')\");c.commit()"
+# re-check rate-limited ones later (non-Salla go to the slow queue; Salla back to verifier-1)
+python3 -c "import sqlite3;c=sqlite3.connect('data/saudi_ecom.sqlite');c.execute(\"UPDATE candidates SET status='pending', priority=CASE WHEN platform_hint IN ('salla','shopify') THEN 5 ELSE -1 END WHERE status='unverified' AND key IN (SELECT key FROM verifications WHERE reason LIKE 'rate_limited%')\");c.commit()"
 
 # metrics / export
 python3 -m saudi_ecom.status
 python3 -m saudi_ecom.export
-gzip -kf data/saudi_ecom.sqlite   # compressed snapshot for git
+python3 -m saudi_ecom.snapshot   # consistent compressed snapshot for git (drops cached page text)
 ```
 
 Ad-hoc check of URLs without touching the DB: `python3 -m saudi_ecom.check_urls https://example.sa ...`
