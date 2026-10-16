@@ -230,7 +230,8 @@ async def woo_probe(f: Fetcher, base: str):
 
 
 SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
-ZID_TEST_NAME = re.compile(r"^(?:prod(?:uct)?\s?\d*|test.*|.*\btest\b.*|تجربة.*|منتج تجريبي.*|(?=[a-z]*\d)(?=\d*[a-z])[a-z0-9]{6,12})$", re.I)
+ZID_TEST_NAME = re.compile(r"^(?:prod(?:uct)?\s?\d*|test.*|.*\btest\b.*|تجربة.*|منتج تجريبي.*)$", re.I)
+ZID_RANDOM_SLUG = re.compile(r"^(?=.*\d)(?=.*[A-Za-z])[A-Za-z0-9]{8,12}$")
 ZID_DIGITAL_SLUG = re.compile(r"\bpdf\b|chat ?gpt|رقمي|إلكتروني|الكتروني|استشار|رحلة .{0,40}يوم|اشتراك", re.I)
 WOO_SERVICE_PATH = re.compile(r"/(?:services?|الخدمة|الخدمات|خدمات|خدمة|courses?|الدورات|دورة|booking|حجز|packages?|الباقات|باقة)/", re.I)
 WOO_DEMO = re.compile(r"^(?:wordpress pennant|hoodie(?: with (?:logo|zipper|pocket))?|beanie(?: with logo)?|album|single|t-shirt(?: with logo)?|cap|sunglasses|polo|belt|long sleeve tee|v-neck t-shirt|logo collection|levitating .*|lorem ipsum.*|sample product.*|product name|test product.*|منتج تجريبي.*|منتج \d+)$", re.I)
@@ -487,10 +488,14 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             if sum(1 for n in slugs if ZID_TEST_NAME.search(n)) >= max(1, len(slugs) // 2):
                 return done("rejected", f"demo_or_test_store (zid placeholder product names: {', '.join(slugs[:3])})")
             ship = {"physical": 0, "non_physical": 0}
+            sampled = []
             for s in raw[:4]:
                 st4, _, h4, _, _ = await f.get(urljoin(base, "/products/" + s), tries=1)
                 if st4 != 200:
                     continue
+                t4 = S.meta(h4, "og:title")
+                if t4:
+                    sampled.append(t4)
                 m = re.search(r'"requires_shipping"\s*:\s*(true|false)', h4)
                 if m:
                     ship["physical" if m.group(1) == "true" else "non_physical"] += 1
@@ -504,12 +509,17 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             svc = sum(1 for n in slugs if S.SERVICE_NAME.search(n) or S.DIGITAL.search(n) or ZID_DIGITAL_SLUG.search(n))
             if not n_s and len(slugs) <= 3 and svc:
                 return done("unverified", f"few_products_service_or_digital_like (zid, {svc}/{len(slugs)}; manual review)")
-            pnames = slugs
-            product_names = product_names + slugs[:60]
-    if len(pnames) >= 3:
-        svc = sum(1 for n in pnames if S.SERVICE_NAME.search(n))
-        if svc >= 0.6 * len(pnames):
+            pnames = [s for s in slugs if not ZID_RANDOM_SLUG.search(s)] + sampled
+            product_names = product_names + pnames[:60]
+    svc_share = 0.0
+    if pnames:
+        svc = sum(1 for n in pnames if S.SERVICE_NAME.search(n) or S.DIGITAL.search(n))
+        svc_share = svc / len(pnames)
+        if len(pnames) >= 3 and svc_share >= 0.5:
             return done("rejected", f"mostly_services_or_digital_by_product_names ({svc}/{len(pnames)})")
+    m_org = S.SERVICE_ORG.search(res.get("store_name") or "")
+    if m_org and (physical is None or svc_share >= 0.25 or len(pnames) < 3):
+        return done("unverified", f"service_style_store_name (manual review): {m_org.group(0)}; service-like products {svc_share:.0%}")
 
     product_ev = []
     if smp:

@@ -10,9 +10,9 @@ while true; do
     if [ "$age" -gt 360 ]; then
       echo "$(date -u +%FT%TZ) verifier-$v stale ${age}s -> restart"
       case $v in
-        1) where="platform_hint='salla'"; conc=48 ;;
-        2) where="coalesce(platform_hint,'') NOT IN ('salla','zid','shopify') AND priority>=0"; conc=64 ;;
-        5) where="coalesce(platform_hint,'') NOT IN ('salla','shopify') AND priority<0"; conc=4 ;;
+        1) where="platform_hint IN ('salla','shopify') AND priority>=0"; conc=24 ;;
+        2) where="coalesce(platform_hint,'') NOT IN ('salla','zid','shopify') AND priority>=0"; conc=48 ;;
+        5) where="priority<0"; conc=4 ;;
         3) where="platform_hint='zid' AND priority>=0"; conc=12 ;;
         4) where="platform_hint='shopify'"; conc=6 ;;
       esac

@@ -99,7 +99,13 @@ SERVICE = re.compile(
     r"تصميم (?:مواقع|شعارات|جرافيك)|web design|marketing agency|وكالة تسويق|برمجة تطبيقات",
     re.I,
 )
-SERVICE_NAME = re.compile(r"تدريب|التدريب|برنامج|دبلوم|دورة|دورات|كورس|حقيبة تدريبية|ورشة|ورش عمل|استشار|جلسة|جلسات|زيارة|زيارات|\bvisits?\b|sessions?|consultation|course|webinar|اشتراك|subscription|حجز|booking|فحص|تحليل|تصميم شعار|تصميم هوية|logo design|خدمة|خدمات|service|تركيب|صيانة|تنظيف|مخيم|رحلة|تذكرة|تذاكر|ticket|بطاقة رقمية|كود|code|ملف pdf|pdf|ebook|كتاب إلكتروني|قالب|template", re.I)
+SERVICE_NAME = re.compile(r"تدريب|التدريب|برنامج|دبلوم|دورة|دورات|كورس|حقيبة تدريبية|ورشة|ورش عمل|استشار|جلسة|جلسات|زيارة|زيارات|\bvisits?\b|sessions?|consultation|course|webinar|اشتراك|subscription|حجز|booking|فحص|تحليل|تصميم شعار|تصميم هوية|logo design|خدمة|خدمات|service|تركيب|صيانة|تنظيف|مخيم|رحلة|تذكرة|تذاكر|ticket|بطاقة رقمية|كود|code|ملف pdf|pdf|ebook|كتاب إلكتروني|قالب|template"
+                          r"|ابشر|أبشر|وثيقة العمل الحر|تسجيل في|التسجيل في|التقديم على|تجديد|استخراج|معقب|تعقيب"
+                          r"|حسابات? |رانك|\brank\b|كوينز|شحن شدات|شدات|جواهر|\buc\b"
+                          r"|سيرة ذاتية|\bcv\b|بوربوينت|powerpoint|عروض تقديمية|كتابة محتوى|ترجمة"
+                          r"|قدرات|تحصيلي|اختبار|حصص|محاضرة|شرح"
+                          r"|باقة .{0,20}(?:شهر|شهور|سنة|سنوي)|طباعة الملازم|ملازم", re.I)
+SERVICE_ORG = re.compile(r"للتدريب|تدريب|training|للخدمات|خدمات|services|مكتب|منصة|تعليمي|أكاديمية|academy|معقب|وكيلك|للاستشارات|consult", re.I)
 CHARITY = re.compile(r"جمعية|خيري|خيرية|تبرع|تبرعات|كفالة يتيم|كفالة|صدقة|زكاة|وقف خيري|أوقاف|donat(?:e|ion)|charity|sadaqah|zakat|non-?profit|غير ربحية", re.I)
 ORG = re.compile(r"نادي|جمعية|مستشفى|hospital|جامعة|university|مدرسة|مدارس|school|academy|أكاديمية|معهد|institute|كلية|college|وزارة|ministry|هيئة|authority|بلدية|municipality|غرفة تجارية|chamber of commerce|مجمع طبي|مجمع [^ ]+ الطبي|مجمع [^ ]+ [^ ]+ الطبي|مركز طبي|educational|تعليمي|تعليمية|للتدريب|تدريب|training|travel|tours|للسفر|سياحة|سفريات|طيران|hotel|فندق|فنادق|medical (?:complex|center)|عيادات|clinics|منصة|platform|مكتب محاماة|law firm|مكتب هندسي|consultants?|استشارات|شركة مقاولات|contracting|نقابة|federation|اتحاد|consultancy|consulting|عيادة|clinic\b|مستوصف|dental|طب الأسنان|^dr\.? |^د\. ?|برمجة|تطوير المواقع|تصميم المواقع|web design|software|digital agency|marketing agency|وكالة تسويق|recruitment|توظيف|staffing", re.I)
 RESTAURANT = re.compile(r"food menu|restaurant menu|قائمة الطعام|المنيو|مطعم|restaurant|order food|اطلب وجبتك|وجبات|meals?\b|burger|برجر|pizza|بيتزا|شاورما|shawarma|كافيه|cafe\b|توصيل الطعام|food delivery", re.I)
