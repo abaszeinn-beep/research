@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/cache/
+data/*.sqlite-wal
+data/*.sqlite-shm
+data/raw/
+logs/*.log
