@@ -29,7 +29,7 @@ CHALLENGE = re.compile(r"just a moment\.\.\.|cf-chl|challenge-platform/h/|attent
                        r"access denied|request could not be satisfied|pardon our interruption|"
                        r"captcha|are you a robot|incapsula|perimeterx|px-captcha|distil|ddos-guard|sucuri website firewall", re.I)
 
-LISTING_HINT = re.compile(r"href=[\"']([^\"'#]*(?:/products/?|/collections/all|/shop/?|/store/?|/categories/[^\"']+|/category/[^\"']+|/collections/[^\"']+|/c/[^\"']+|/-/c\d+|product-category/[^\"']+|/all-products|/catalog[^\"']*|/new-arrivals?|/offers)[^\"'#]*)[\"']", re.I)
+LISTING_HINT = re.compile(r"href=[\"'](?!data:)([^\"'#<>\s]{0,200}?(?:/products/?|/collections/all|/shop/?|/store/?|/categories/[^\"']+|/category/[^\"']+|/collections/[^\"']+|/c/[^\"']+|/-/c\d+|product-category/[^\"']+|/all-products|/catalog[^\"']*|/new-arrivals?|/offers)[^\"'#<>\s]{0,200})[\"']", re.I)
 
 
 DEMO = re.compile(r"^(?:متجر تجريبي|متجر تجريبى|demo store|test store|my store|متجري|store name|اسم المتجر)$|متجر تجريبي|demo ?store|test ?store|متجر اختبار", re.I)
@@ -216,7 +216,7 @@ async def woo_probe(f: Fetcher, base: str):
     return None
 
 
-SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<]*(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
+SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
 WOO_DEMO = re.compile(r"^(?:wordpress pennant|hoodie(?: with (?:logo|zipper|pocket))?|beanie(?: with logo)?|album|single|t-shirt(?: with logo)?|cap|sunglasses|polo|belt|long sleeve tee|v-neck t-shirt|logo collection|levitating .*|lorem ipsum.*|sample product.*|product name|test product.*|منتج تجريبي.*|منتج \d+)$", re.I)
 
 

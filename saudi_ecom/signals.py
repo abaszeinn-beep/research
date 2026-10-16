@@ -61,8 +61,8 @@ ADD_TO_CART = re.compile(
 )
 CART_CHECKOUT = re.compile(r"/cart\b|/checkout\b|/basket\b|سلة التسوق|السلة|عربة التسوق|إتمام الطلب|اتمام الطلب|checkout|mini-cart|cart-count|cart_count", re.I)
 PRODUCT_LINK = re.compile(
-    r"href=[\"'][^\"']*(?:/products?/[^\"'/?#]+|/p\d{5,}|/p/[^\"'/?#]+|-p-\d+|/item/[^\"'/?#]+|/dp/|"
-    r"product_id=\d+|route=product/product|/product-page/|/[a-z0-9-]+-\d{4,}\.html|/buy-[^\"'/?#]+|/pd/)[^\"']*[\"']",
+    r"href=[\"'](?!data:)[^\"'<>\s]{0,200}?(?:/products?/[^\"'/?#]+|/p\d{5,}|/p/[^\"'/?#]+|-p-\d+|/item/[^\"'/?#]+|/dp/|"
+    r"product_id=\d+|route=product/product|/product-page/|/[a-z0-9-]+-\d{4,}\.html|/buy-[^\"'/?#]+|/pd/)[^\"'<>\s]{0,200}[\"']",
     re.I,
 )
 PRICE_SAR = re.compile(r"(?:\d[\d,.]*\s*(?:ر\.?\s?س|SAR|ريال|﷼|SR\b))|(?:(?:SAR|ر\.?\s?س|SR|﷼)\s*\d)", re.I)
