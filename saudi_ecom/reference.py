@@ -43,8 +43,7 @@ CREATE TABLE IF NOT EXISTS reference_urls(
 PATH_VARIANTS = ["/sa/en/", "/sa-en/", "/en-sa/", "/sa/ar/", "/ar-sa/", "/sa-ar/", "/en_sa/", "/ar_sa/", "/saudi-en/",
                  "/sa_en/", "/ksa/en/", "/en/sa/", "/sa/", "/saudi/", "/ksa/", "/saudi-arabia/"]
 HOST_VARIANTS = ["sa.{d}", "ksa.{d}", "saudi.{d}", "en-sa.{d}"]
-CDX_PREFIXES = ["{d}/sa", "{d}/en-sa", "{d}/ar-sa", "{d}/en_sa", "{d}/ar_sa", "{d}/ksa", "{d}/en/sa", "{d}/ar/sa",
-                "{d}/saudi", "sa.{d}/", "ksa.{d}/"]
+CDX_PREFIXES = ["{d}/sa", "{d}/en-sa", "{d}/ar-sa", "sa.{d}/", "{d}/en_sa", "{d}/ar_sa"]
 NOT_FOUND = re.compile(r"<title>[^<]{0,80}(?:404|not found|page not found|غير موجود|الصفحة غير)", re.I)
 NON_STORE_SA = re.compile(r"\.(?:gov|edu|med|sch|net|org)\.sa$|^(?:google|bing|yahoo|absher|nusuk)\.", re.I)
 
@@ -229,7 +228,7 @@ async def resolve(con, kinds, limit, use_bing, use_cdx):
                        (*kinds, limit)).fetchall()
     print(f"[reference] resolving {len(refs)} refs", flush=True)
     f = Fetcher(48, 2)
-    sem = asyncio.Semaphore(2)
+    sem = asyncio.Semaphore(4)
     stats = {"accepted": 0, "blocked": 0, "cdx": 0, "bing": 0, "none": 0}
     async with httpx.AsyncClient(headers={"User-Agent": "saudi-ecom-directory-research/1.0 (polite CDX client)"}) as cdx_client, \
             httpx.AsyncClient(headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
@@ -244,7 +243,7 @@ async def resolve(con, kinds, limit, use_bing, use_cdx):
             if blocked:
                 stats["blocked"] += 1
             if not acc and use_cdx:
-                for d in blocked or domains:
+                for d in blocked:
                     if await cdx_probe(cdx_client, sem, con, ref_id, d):
                         stats["cdx"] += 1
                         acc = [d]
@@ -259,12 +258,17 @@ async def resolve(con, kinds, limit, use_bing, use_cdx):
                             (ref_id, "-", None, "none", None, None, json.dumps({"blocked": blocked}), db.now()))
             con.commit()
 
-        tasks = [one(*r) for r in refs]
+        pool = asyncio.Semaphore(32)
         done = 0
-        for chunk in range(0, len(tasks), 24):
-            await asyncio.gather(*tasks[chunk:chunk + 24])
-            done += len(tasks[chunk:chunk + 24])
-            print(f"[reference] {done}/{len(refs)} {stats}", flush=True)
+
+        async def pooled(r):
+            nonlocal done
+            async with pool:
+                await one(*r)
+            done += 1
+            if done % 10 == 0 or done == len(refs):
+                print(f"[reference] {done}/{len(refs)} {stats}", flush=True)
+        await asyncio.gather(*(pooled(r) for r in refs))
     await f.client.aclose()
 
 
