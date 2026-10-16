@@ -17,6 +17,9 @@ from .verify import SA_GEO
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..")
 XLSX = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.xlsx")
 CSV = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.csv")
+REF_CSV = os.path.join(OUT_DIR, "data", "reference_universe.csv")
+# master directory as committed before the reference audit (commit 16cd9b5), to tell "already present" from "added"
+PREVIOUS_CSV = os.path.join(OUT_DIR, "data", "previous_master_16cd9b5.csv")
 
 PLATFORM_SHARED = {"salla.sa", "zid.store", "myshopify.com", "expandcart.com", "matjrah.store", "youcan.shop", "wuilt.com", "salla.store", "company.site", "wixsite.com"}
 
@@ -59,7 +62,7 @@ def store_identity_ids(ev):
 
 def dedup(con):
     rows = con.execute(
-        "SELECT v.key, v.final_key, v.final_url, v.ecom_evidence, c.url, c.platform_hint FROM verifications v JOIN candidates c USING(key) WHERE v.status='verified'"
+        "SELECT v.key, v.final_key, v.final_url, v.ecom_evidence, c.url, c.platform_hint FROM verifications v JOIN candidates c USING(key) WHERE v.status IN ('verified','verified_secondary_evidence')"
     ).fetchall()
     groups = defaultdict(list)
     for key, fkey, furl, ev, url, ph in rows:
@@ -87,7 +90,7 @@ def dedup(con):
                     rep_of[k] = keep
     dups = [(rep, k) for k, rep in rep_of.items() if rep != k]
     con.execute("BEGIN IMMEDIATE")
-    con.execute("UPDATE verifications SET duplicate_of=NULL WHERE status='verified'")
+    con.execute("UPDATE verifications SET duplicate_of=NULL WHERE status IN ('verified','verified_secondary_evidence')")
     con.executemany("UPDATE verifications SET duplicate_of=? WHERE key=?", dups)
     con.executemany("UPDATE candidates SET status='duplicate' WHERE key=?", [(k,) for _, k in dups])
     con.executemany("UPDATE candidates SET status='verified' WHERE key=?", [(k,) for k in set(rep_of.values())])
@@ -123,7 +126,7 @@ def main():
         """SELECT v.*, c.url, c.root_domain, c.first_source, c.source_detail, c.platform_hint,
                   (SELECT group_concat(source, ', ') FROM candidate_sources s WHERE s.key=v.key) AS all_sources
            FROM verifications v JOIN candidates c USING(key)""", con)
-    ver = v[(v.status == "verified") & (v.duplicate_of.isna())].copy()
+    ver = v[(v.status.isin(["verified", "verified_secondary_evidence"])) & (v.duplicate_of.isna())].copy()
     ver["Master URL"] = ver.apply(master_url, axis=1)
     ver["Store Name"] = [clean_name(n, u) for n, u in zip(ver.store_name, ver["Master URL"])]
     ver["Registrable Root Domain"] = [
@@ -159,7 +162,7 @@ def main():
         "Verification Source URL": ver.final_url,
         "Product Evidence URL": ver.product_evidence,
         "Verification Date (UTC)": ver.verified_at,
-        "Status": "verified",
+        "Status": ver.status,
         "Discovery Source": ver.all_sources.fillna(ver.first_source),
         "Notes": ver.apply(notes, axis=1),
     })
@@ -183,11 +186,25 @@ def main():
         unverified = pd.concat([unverified, pending], ignore_index=True)
 
     cov = coverage(con, ver, v, ndup)
+    from . import reference
+    rcon = reference.connect()
+    ref_rows = reference.audit(rcon, PREVIOUS_CSV)
+    ref_df = pd.DataFrame(ref_rows)
+    audit_df = ref_df[ref_df.kind == "brand"] if len(ref_df) else ref_df
+    audit_df = pd.concat([audit_df, ref_df[(ref_df.kind != "brand") & ref_df.status.str.startswith("in_directory")]], ignore_index=True) if len(ref_df) else ref_df
+    audit_sheet = pd.DataFrame({
+        "Reference Store": audit_df.name, "Tier": audit_df.tier, "Category": audit_df.category,
+        "Reference Source(s)": audit_df.sources, "Tranco Rank": audit_df.tranco_rank,
+        "Coverage Status": audit_df.status, "Storefront URL": audit_df.url, "Reason": audit_df.reason,
+        "Evidence": audit_df.evidence, "Known Domains": audit_df.domains,
+    }).sort_values(["Coverage Status", "Tier", "Reference Store"]) if len(audit_df) else pd.DataFrame()
+    ref_df.to_csv(REF_CSV, index=False, encoding="utf-8-sig")
 
     with pd.ExcelWriter(XLSX, engine="openpyxl") as xw:
         master.to_excel(xw, sheet_name="Master Directory", index=False)
         evidence.to_excel(xw, sheet_name="Verification Evidence", index=False)
         unverified.to_excel(xw, sheet_name="Unverified Candidates", index=False)
+        audit_sheet.to_excel(xw, sheet_name="Major Retailer Coverage Audit", index=False)
         startrow = 0
         for title, df in cov:
             pd.DataFrame({title: []}).to_excel(xw, sheet_name="Research Coverage", index=False, startrow=startrow)

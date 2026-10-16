@@ -272,6 +272,31 @@ async def resolve(con, kinds, limit, use_bing, use_cdx):
     await f.client.aclose()
 
 
+async def retry_none(con):
+    """Second pass for refs where live variants found nothing (often geo-redirects from this non-Saudi VM):
+    look for recent archived captures under Saudi paths of every known domain."""
+    refs = con.execute("SELECT r.ref_id, r.domains FROM reference_stores r JOIN reference_urls u ON u.ref_id=r.ref_id AND u.via='none' WHERE r.kind='brand'").fetchall()
+    print(f"[reference] cdx retry for {len(refs)} refs", flush=True)
+    sem = asyncio.Semaphore(4)
+    found = 0
+    async with httpx.AsyncClient(headers={"User-Agent": "saudi-ecom-directory-research/1.0 (polite CDX client)"}) as client:
+        async def one(ref_id, doms):
+            nonlocal found
+            for d in doms.split():
+                if await cdx_probe(client, sem, con, ref_id, d):
+                    con.execute("DELETE FROM reference_urls WHERE ref_id=? AND via='none'", (ref_id,))
+                    found += 1
+                    break
+            con.commit()
+        pool = asyncio.Semaphore(8)
+
+        async def pooled(r):
+            async with pool:
+                await one(*r)
+        await asyncio.gather(*(pooled(r) for r in refs))
+    print(f"[reference] cdx retry found {found}/{len(refs)}", flush=True)
+
+
 def link(con):
     """Queue resolved URLs as candidates (source reference:<id>), re-verifying ones not yet verified."""
     rows = con.execute("SELECT ref_id, url, final_url, via FROM reference_urls WHERE url!='-'").fetchall()
@@ -300,9 +325,121 @@ def link(con):
     print(f"linked {n} urls")
 
 
+EXCLUDE_REASONS = [
+    (re.compile(r"^excluded_marketplace"), "excluded: marketplace / aggregator"),
+    (re.compile(r"digital_products_only|likely_digital_only"), "excluded: digital goods only"),
+    (re.compile(r"services_only|mostly_services|likely_services"), "excluded: services only"),
+    (re.compile(r"restaurant_or_food_service"), "excluded: restaurant / food service"),
+    (re.compile(r"redirects_to_non_saudi_storefront|not_saudi_relevant|non_saudi_shopify"), "excluded: no Saudi storefront (site serves another country)"),
+    (re.compile(r"no_ecommerce_evidence"), "excluded: no online ordering on Saudi site (brand/info site)"),
+    (re.compile(r"store_closed|store_not_launched|parked"), "excluded: store closed / not launched"),
+    (re.compile(r"charity_or_donations"), "excluded: charity"),
+]
+
+
+def audit(con, previous_csv=None):
+    """Assign each reference store a coverage status. Returns list of dict rows for the audit sheet."""
+    from .common import MARKETPLACE_ROOTS
+    prev = set()
+    if previous_csv and os.path.exists(previous_csv):
+        with open(previous_csv, encoding="utf-8-sig") as fh:
+            for r in csv.DictReader(fh):
+                prev.add(r["Root Domain / Storefront URL"].rstrip("/"))
+    ver = {}
+    for key, root, st, vst, dup, furl, curl, reason, method, ev_url, vat in con.execute(
+            """SELECT c.key, c.root_domain, c.status, v.status, v.duplicate_of, v.final_url, c.url, v.reason, v.method, v.evidence_url, v.verified_at
+               FROM candidates c LEFT JOIN verifications v USING(key)"""):
+        ver[key] = dict(key=key, root=root, cstatus=st, vstatus=vst, dup=dup, final=furl, url=curl, reason=reason or "", method=method,
+                        ev_url=ev_url, ts=vat)
+    by_root = {}
+    for k, r in ver.items():
+        by_root.setdefault(r["root"], []).append(k)
+    mapped = {}
+    for ref_id, key, via in con.execute("SELECT ref_id, key, via FROM reference_urls WHERE key IS NOT NULL"):
+        mapped.setdefault(ref_id, []).append(key)
+    sec = {k: (v, e) for k, v, e in con.execute("SELECT key, verdict, evidence FROM secondary_evidence")} if con.execute(
+        "SELECT name FROM sqlite_master WHERE name='secondary_evidence'").fetchone() else {}
+    nones = {r[0]: json.loads(r[1] or "{}") for r in con.execute("SELECT ref_id, info FROM reference_urls WHERE via='none'")}
+
+    def master_of(k):
+        r = ver.get(k)
+        while r and r["cstatus"] == "duplicate" and r["dup"] and r["dup"] in ver and r["dup"] != r["key"]:
+            r = ver[r["dup"]]
+        return r
+
+    rows = []
+    for ref_id, name, cat, tier, doms, sources, rank, kind in con.execute(
+            "SELECT ref_id, name, category, tier, domains, sources, tranco_rank, kind FROM reference_stores"):
+        domains = doms.split()
+        roots = {registrable_domain(d) for d in domains}
+        labels = {r.split(".")[0] for r in roots}
+        alt = set(roots) | {f"{l}.sa" for l in labels} | {f"{l}.com.sa" for l in labels} | {f"{l}-sa.com" for l in labels} | {f"{l}sa.com" for l in labels} | {f"{l}ksa.com" for l in labels}
+        keys = set(mapped.get(ref_id, []))
+        for r in alt:
+            keys.update(by_root.get(r, []))
+        cands = [master_of(k) for k in keys if k in ver]
+        cands = [c for c in cands if c]
+        good = [c for c in cands if c["cstatus"] == "verified" and c["vstatus"] in ("verified", "verified_secondary_evidence")]
+        status, url, reason, evidence, key = None, "", "", "", None
+        if any(r in MARKETPLACE_ROOTS for r in roots):
+            status, reason = "excluded", "excluded: marketplace / aggregator (" + MARKETPLACE_ROOTS[[r for r in roots if r in MARKETPLACE_ROOTS][0]] + ")"
+        elif good:
+            good.sort(key=lambda c: (c["vstatus"] != "verified", not SA_GEO.search(c["final"] or c["url"] or ""), len(c["key"])))
+            g = good[0]
+            key = g["key"]
+            url = g["final"] or g["url"]
+            from .export import master_url
+            murl = master_url({"final_url": g["final"], "url": g["url"]})
+            url = murl
+            primary = g["vstatus"] == "verified"
+            status = "in_directory_primary" if primary else "in_directory_secondary"
+            was = murl.rstrip("/") in prev
+            reason = ("already present before reference audit" if was else "added by reference audit") + ("" if primary else " (secondary evidence)")
+            evidence = (g["reason"] or "") + (f" | evidence: {g['ev_url']}" if g["ev_url"] else "") + f" | checked {g['ts']}"
+        else:
+            exc = None
+            for c in cands:
+                for rx, label in EXCLUDE_REASONS:
+                    if rx.search(c["reason"] or ""):
+                        exc = (label, c)
+                        break
+                if exc:
+                    break
+            blocked = [c for c in cands if re.search(r"blocked|challenge|robots|rate_limited|js_rendered|partial|insufficient|weak|timeout|fetch_failed|http_5", c["reason"] or "")]
+            if blocked:
+                b = blocked[0]
+                key = b["key"]
+                url = b["final"] or b["url"]
+                s = sec.get(b["key"])
+                ev_types = [e["type"] for e in json.loads(s[1])] if s else []
+                oks = [e for e in json.loads(s[1]) if e.get("ok")] if s else []
+                status = "unresolved"
+                reason = f"unresolved: live check '{b['reason'][:60]}'" + (f"; secondary evidence insufficient ({', '.join(e['type'] for e in oks) or 'none'} of {', '.join(ev_types)})" if s else "; secondary evidence not yet collected")
+                evidence = " | ".join(f"{e['type']}: {e.get('detail')} ({e.get('url')}, {e.get('date')})" for e in oks)
+            elif exc:
+                status, reason = "excluded", exc[0]
+                key, url, evidence = exc[1]["key"], exc[1]["final"] or exc[1]["url"], exc[1]["reason"][:200]
+            elif cands:
+                c = cands[0]
+                status, key, url = "excluded", c["key"], c["final"] or c["url"]
+                reason = "excluded: no working Saudi storefront found (" + (c["reason"] or c["cstatus"])[:80] + ")"
+            else:
+                status = "excluded"
+                info = nones.get(ref_id, {})
+                reason = "excluded: no Saudi storefront found (Saudi URL variants" + (", Wayback CDX" if info.get("blocked") else "") + " checked)"
+        if kind in ("tranco_sa", "wikidata") and status != "in_directory_primary" and status != "in_directory_secondary":
+            status = "screened_out"
+        con.execute("UPDATE reference_stores SET status=?, best_key=?, best_url=?, reason=?, evidence=?, checked_at=? WHERE ref_id=?",
+                    (status, key, url, reason, evidence, db.now(), ref_id))
+        rows.append(dict(ref_id=ref_id, name=name, category=cat, tier=tier, domains=doms, sources=", ".join(json.loads(sources)),
+                         tranco_rank=rank, kind=kind, status=status, url=url, key=key, reason=reason, evidence=evidence))
+    con.commit()
+    return rows
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["load", "resolve", "link"])
+    ap.add_argument("cmd", choices=["load", "resolve", "retry-none", "link", "audit"])
     ap.add_argument("--kinds", default="brand")
     ap.add_argument("--limit", type=int, default=100000)
     ap.add_argument("--no-bing", action="store_true")
@@ -313,5 +450,11 @@ if __name__ == "__main__":
         load(con)
     elif a.cmd == "resolve":
         asyncio.run(resolve(con, a.kinds.split(","), a.limit, not a.no_bing, not a.no_cdx))
+    elif a.cmd == "retry-none":
+        asyncio.run(retry_none(con))
+    elif a.cmd == "audit":
+        import collections
+        rows = audit(con, os.path.join(HERE, "..", "data", "previous_master_16cd9b5.csv"))
+        print(collections.Counter((r["kind"], r["status"]) for r in rows))
     else:
         link(con)

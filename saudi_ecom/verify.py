@@ -230,6 +230,7 @@ async def woo_probe(f: Fetcher, base: str):
 
 
 SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
+ZID_TEST_NAME = re.compile(r"^(?:prod(?:uct)?\s?\d*|test.*|.*\btest\b.*|تجربة.*|منتج تجريبي.*|(?=[a-z]*\d)(?=\d*[a-z])[a-z0-9]{6,12})$", re.I)
 ZID_DIGITAL_SLUG = re.compile(r"\bpdf\b|chat ?gpt|رقمي|إلكتروني|الكتروني|استشار|رحلة .{0,40}يوم|اشتراك", re.I)
 WOO_SERVICE_PATH = re.compile(r"/(?:services?|الخدمة|الخدمات|خدمات|خدمة|courses?|الدورات|دورة|booking|حجز|packages?|الباقات|باقة)/", re.I)
 WOO_DEMO = re.compile(r"^(?:wordpress pennant|hoodie(?: with (?:logo|zipper|pocket))?|beanie(?: with logo)?|album|single|t-shirt(?: with logo)?|cap|sunglasses|polo|belt|long sleeve tee|v-neck t-shirt|logo collection|levitating .*|lorem ipsum.*|sample product.*|product name|test product.*|منتج تجريبي.*|منتج \d+)$", re.I)
@@ -474,18 +475,37 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     pnames = [n for n in ((probe or {}).get("names") or []) if n]
     if plat == "zid" and not pnames:
         def zid_slugs(h):
-            found = {unquote(m).replace("-", " ") for m in re.findall(r"/products/([^\"'?#/<>\s]{1,200})", h[:1_500_000])}
+            found = {unquote(m) for m in re.findall(r"/products/([^\"'?#/<>\s]{1,200})", h[:1_500_000])}
             return sorted(s for s in found if s.strip() and "\\" not in s)
-        slugs = zid_slugs(html + extra_html)
-        if not slugs and not extra_html:
+        raw = zid_slugs(html + extra_html)
+        if not raw and "/products/" not in (extra_url or ""):
             st3, _, h3, _, _ = await f.get(urljoin(base, "/products/"), tries=2)
             if st3 == 200:
-                slugs = zid_slugs(h3)
+                raw = zid_slugs(h3)
+        slugs = [s.replace("-", " ") for s in raw]
         if slugs:
+            if sum(1 for n in slugs if ZID_TEST_NAME.search(n)) >= max(1, len(slugs) // 2):
+                return done("rejected", f"demo_or_test_store (zid placeholder product names: {', '.join(slugs[:3])})")
+            ship = {"physical": 0, "non_physical": 0}
+            for s in raw[:4]:
+                st4, _, h4, _, _ = await f.get(urljoin(base, "/products/" + s), tries=1)
+                if st4 != 200:
+                    continue
+                m = re.search(r'"requires_shipping"\s*:\s*(true|false)', h4)
+                if m:
+                    ship["physical" if m.group(1) == "true" else "non_physical"] += 1
+            ecom["zid_shipping_sample"] = ship
+            n_s = ship["physical"] + ship["non_physical"]
+            if n_s and ship["physical"] == 0:
+                return done("rejected", f"digital_or_services_only (zid requires_shipping=false for {n_s}/{n_s} sampled products)")
+            if n_s >= 3 and ship["physical"] * 3 < n_s:
+                return done("rejected", f"mostly_services_or_digital (zid requires_shipping: {ship})")
+            physical = ship["physical"] if n_s else None
             svc = sum(1 for n in slugs if S.SERVICE_NAME.search(n) or S.DIGITAL.search(n) or ZID_DIGITAL_SLUG.search(n))
-            if len(slugs) <= 3 and svc:
+            if not n_s and len(slugs) <= 3 and svc:
                 return done("unverified", f"few_products_service_or_digital_like (zid, {svc}/{len(slugs)}; manual review)")
             pnames = slugs
+            product_names = product_names + slugs[:60]
     if len(pnames) >= 3:
         svc = sum(1 for n in pnames if S.SERVICE_NAME.search(n))
         if svc >= 0.6 * len(pnames):
