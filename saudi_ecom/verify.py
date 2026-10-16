@@ -230,6 +230,7 @@ async def woo_probe(f: Fetcher, base: str):
 
 
 SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
+ZID_DIGITAL_SLUG = re.compile(r"\bpdf\b|chat ?gpt|رقمي|إلكتروني|الكتروني|استشار|رحلة .{0,40}يوم|اشتراك", re.I)
 WOO_SERVICE_PATH = re.compile(r"/(?:services?|الخدمة|الخدمات|خدمات|خدمة|courses?|الدورات|دورة|booking|حجز|packages?|الباقات|باقة)/", re.I)
 WOO_DEMO = re.compile(r"^(?:wordpress pennant|hoodie(?: with (?:logo|zipper|pocket))?|beanie(?: with logo)?|album|single|t-shirt(?: with logo)?|cap|sunglasses|polo|belt|long sleeve tee|v-neck t-shirt|logo collection|levitating .*|lorem ipsum.*|sample product.*|product name|test product.*|منتج تجريبي.*|منتج \d+)$", re.I)
 
@@ -471,6 +472,20 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             ecom["sitemap_probe"] = smp
 
     pnames = [n for n in ((probe or {}).get("names") or []) if n]
+    if plat == "zid" and not pnames:
+        def zid_slugs(h):
+            found = {unquote(m).replace("-", " ") for m in re.findall(r"/products/([^\"'?#/<>\s]{1,200})", h[:1_500_000])}
+            return sorted(s for s in found if s.strip() and "\\" not in s)
+        slugs = zid_slugs(html + extra_html)
+        if not slugs and not extra_html:
+            st3, _, h3, _, _ = await f.get(urljoin(base, "/products/"), tries=2)
+            if st3 == 200:
+                slugs = zid_slugs(h3)
+        if slugs:
+            svc = sum(1 for n in slugs if S.SERVICE_NAME.search(n) or S.DIGITAL.search(n) or ZID_DIGITAL_SLUG.search(n))
+            if len(slugs) <= 3 and svc:
+                return done("unverified", f"few_products_service_or_digital_like (zid, {svc}/{len(slugs)}; manual review)")
+            pnames = slugs
     if len(pnames) >= 3:
         svc = sum(1 for n in pnames if S.SERVICE_NAME.search(n))
         if svc >= 0.6 * len(pnames):
