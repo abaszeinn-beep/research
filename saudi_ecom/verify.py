@@ -230,7 +230,7 @@ async def woo_probe(f: Fetcher, base: str):
 
 
 SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
-ZID_TEST_NAME = re.compile(r"^(?:prod(?:uct)?\s?\d*|test.*|.*\btest\b.*|تجربة.*|منتج تجريبي.*)$", re.I)
+ZID_TEST_NAME = re.compile(r"^(?:prod(?:uct)?\s?\d*|(?:options? )?(?:prod )?test(?:\s*\d+|\s+(?:new )?product.*)?|test new.*|تجربة(?:\s*[\d٠-٩]+)?|منتج تجريبي.*|منتج (?:رقم )?[\d٠-٩]+|p)$", re.I)
 ZID_RANDOM_SLUG = re.compile(r"^(?=.*\d)(?=.*[A-Za-z])[A-Za-z0-9]{8,12}$")
 ZID_DIGITAL_SLUG = re.compile(r"\bpdf\b|chat ?gpt|رقمي|إلكتروني|الكتروني|استشار|رحلة .{0,40}يوم|اشتراك", re.I)
 WOO_SERVICE_PATH = re.compile(r"/(?:services?|الخدمة|الخدمات|خدمات|خدمة|courses?|الدورات|دورة|booking|حجز|packages?|الباقات|باقة)/", re.I)
@@ -516,8 +516,15 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         hits = [n for n in pnames if S.SERVICE_NAME.search(n) or S.DIGITAL.search(n)]
         svc = len(hits)
         svc_share = svc / len(pnames)
-        if len(pnames) >= 3 and svc_share >= 0.5:
+        if (len(pnames) >= 3 and svc_share >= 0.5) or (len(pnames) < 3 and svc == len(pnames)):
             return done("rejected", f"mostly_services_or_digital_by_product_names ({svc}/{len(pnames)}; e.g. {' / '.join(h[:40] for h in hits[:3])})")
+        if plat == "salla" and sum(1 for n in pnames if ZID_TEST_NAME.search(n.strip())) >= max(1, len(pnames) // 2):
+            return done("rejected", f"demo_or_test_store (placeholder product names: {', '.join(pnames[:3])})")
+        n_ch = sum(1 for n in pnames if S.CHARITY_PRODUCT.search(n))
+        if n_ch >= max(1, len(pnames) // 3):
+            return done("rejected", f"charity_or_donations (product names: {n_ch}/{len(pnames)})")
+    if S.RESTAURANT_NAME.search(res.get("store_name") or ""):
+        return done("rejected", "restaurant_or_food_service (store name: " + S.RESTAURANT_NAME.search(res["store_name"]).group(0) + ")")
     m_org = S.SERVICE_ORG.search(res.get("store_name") or "")
     if m_org and (physical is None or svc_share >= 0.25 or len(pnames) < 3):
         return done("unverified", f"service_style_store_name (manual review): {m_org.group(0)}; service-like products {svc_share:.0%}")
