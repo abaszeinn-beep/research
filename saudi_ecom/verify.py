@@ -16,7 +16,7 @@ import socket
 import time
 import urllib.robotparser
 from collections import Counter, defaultdict
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import unquote, urljoin, urlsplit
 
 import httpx
 
@@ -224,11 +224,13 @@ async def woo_probe(f: Fetcher, base: str):
         demo = sum(1 for n in names if WOO_DEMO.match(n))
         return {"n": len(prods), "demo": demo, "currency": cur, "names": names[:20],
                 "sample_url": prods[0].get("permalink") if prods else None,
-                "purchasable": sum(1 for p in prods if p.get("is_purchasable"))}
+                "purchasable": sum(1 for p in prods if p.get("is_purchasable")),
+                "service_links": sum(1 for p in prods if WOO_SERVICE_PATH.search(unquote(p.get("permalink") or "")))}
     return None
 
 
 SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
+WOO_SERVICE_PATH = re.compile(r"/(?:services?|الخدمة|الخدمات|خدمات|خدمة|courses?|الدورات|دورة|booking|حجز|packages?|الباقات|باقة)/", re.I)
 WOO_DEMO = re.compile(r"^(?:wordpress pennant|hoodie(?: with (?:logo|zipper|pocket))?|beanie(?: with logo)?|album|single|t-shirt(?: with logo)?|cap|sunglasses|polo|belt|long sleeve tee|v-neck t-shirt|logo collection|levitating .*|lorem ipsum.*|sample product.*|product name|test product.*|منتج تجريبي.*|منتج \d+)$", re.I)
 
 
@@ -450,6 +452,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         if plat == "woocommerce" and probe.get("n"):
             if probe.get("demo", 0) >= max(2, probe["n"] // 2):
                 return done("rejected", f"theme_demo_products_only (woocommerce sample data: {probe['demo']}/{probe['n']})")
+            if probe.get("service_links", 0) >= max(2, probe["n"] // 2):
+                return done("rejected", f"services_only (woocommerce service/booking permalinks: {probe['service_links']}/{probe['n']})")
             if probe.get("purchasable", 0) == 0:
                 probe["n"] = 0
         if plat == "shopify" and probe.get("n"):
