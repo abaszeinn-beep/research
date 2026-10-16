@@ -5,3 +5,5 @@ data/*.sqlite-wal
 data/*.sqlite-shm
 data/raw/
 logs/*.log
+data/saudi_ecom.sqlite
+data/snapshot.sqlite
