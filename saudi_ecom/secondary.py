@@ -203,8 +203,10 @@ def name_tokens(name):
 async def app_store(client, name, domains):
     toks = name_tokens(name)
     if not toks:
+        toks = [d.split(".")[0] for d in domains[:1]]
+    if not toks:
         return {"type": "app_store", "ok": False, "detail": "no name tokens"}
-    term = " ".join(toks[:3])
+    term = " ".join(toks[:3]) if name_tokens(name) else name
     try:
         r = await client.get("https://itunes.apple.com/search", params={"term": term, "country": "sa", "entity": "software", "limit": "10"}, timeout=30)
         res = r.json().get("results", [])
@@ -215,7 +217,9 @@ async def app_store(client, name, domains):
         title = (a.get("trackName") or "").lower()
         seller = (a.get("sellerName") or "").lower()
         surl = (a.get("sellerUrl") or "").lower()
-        name_match = all(t in title or t in seller for t in toks[:2]) or any(l and l in surl for l in labels)
+        norm_title = re.sub(r"[^a-z0-9]", "", title)
+        name_match = (all(t in title or t in seller for t in toks[:2]) or any(l and l in surl for l in labels)
+                      or (len(norm_title) >= 5 and any(norm_title in l or l in norm_title for l in labels)))
         if not name_match or a.get("primaryGenreName") not in SHOP_GENRES:
             continue
         rel = (a.get("currentVersionReleaseDate") or "")[:10]
@@ -318,7 +322,8 @@ def unresolved_targets(con, per_ref=2):
 def targets(con, keys, limit):
     """Reference-linked candidates the live checker couldn't confirm (plus explicit keys)."""
     if keys:
-        q = f"""SELECT c.key, c.url, (SELECT r.name FROM reference_urls ru JOIN reference_stores r USING(ref_id) WHERE ru.key=c.key LIMIT 1),
+        q = f"""SELECT c.key, c.url, coalesce((SELECT r.name FROM reference_urls ru JOIN reference_stores r USING(ref_id) WHERE ru.key=c.key LIMIT 1),
+                                              (SELECT r.name FROM reference_stores r WHERE r.best_key=c.key LIMIT 1)),
                 (SELECT r.domains FROM reference_urls ru JOIN reference_stores r USING(ref_id) WHERE ru.key=c.key LIMIT 1),
                 (SELECT store_name FROM verifications v WHERE v.key=c.key)
                 FROM candidates c WHERE c.key IN ({','.join('?'*len(keys))})"""

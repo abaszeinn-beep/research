@@ -92,6 +92,7 @@ MARKETPLACE_ROOTS = {
     "sharafdg.com": None, "nahdi.sa": None, "mumzworld.com": None,
     "tamara.co": "BNPL provider", "tabby.ai": "BNPL provider",
     "farfetch.com": "multi-boutique luxury marketplace", "shein.com": None,
+    "carswitch.com": "used-car marketplace", "motory.com": "car classifieds",
 }
 MARKETPLACE_ROOTS = {k: v for k, v in MARKETPLACE_ROOTS.items() if v}
 

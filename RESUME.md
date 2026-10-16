@@ -28,6 +28,8 @@ recorded in the `jobs` / `queries` tables and skipped on restart; candidates car
 | `verify.py` | async HTTP verifier (robots.txt respected, global semaphore + per-host semaphore and adaptive per-host gap, 429 Retry-After, bounded exponential backoff, 45 s per-request and 240 s per-candidate caps) | asyncio, 48–64 per process |
 | `verify_browser.py` | Playwright (headless Chromium) second pass for JS-rendered / thin pages | 4 browser contexts |
 | `signals.py` | parked/closed/demo detection, platform fingerprints, ecommerce + Saudi-relevance signals, category classifier | – |
+| `reference.py` | reference universe of big/medium Saudi online stores (`reference_stores`, `reference_urls`): `load` (brand TSV + Tranco `.sa` + Wikidata), `load-malls`, `resolve` (Saudi URL variants live, Wayback CDX for blocked), `retry-none`, `appstore` (Saudi App Store `sellerUrl` domains), `link` (queue as candidates), `audit` (coverage status per reference store) | resolve: 32 refs in parallel |
+| `secondary.py` | evidence for bot-walled / JS-only storefronts without bypassing anything: Wayback + Common Crawl product captures with SAR prices and ordering control (≤180 days), robots-allowed sitemaps, Saudi App Store shopping app (≤365 days). ≥2 independent evidence types incl. ≥1 storefront-level → `verified_secondary_evidence` | 10 targets in parallel |
 | `export.py` | dedup pass + Excel/CSV export | – |
 | `status.py`, `monitor.py` | metrics | – |
 
@@ -50,6 +52,10 @@ recorded in the `jobs` / `queries` tables and skipped on restart; candidates car
 * **noon.com and amazon.sa are excluded** as multi-seller marketplaces (aggregators), per the brief. Other excluded aggregators are listed in `common.MARKETPLACE_ROOTS`.
 * Retailers that run their own store but also host third-party sellers (e.g. Namshi, Jarir, Extra) are included as retailers.
 * Stores selling both physical and some digital goods are included (note added); digital-only are rejected.
+* Also excluded as marketplaces: Farfetch (multi-boutique), Trendyol, Temu, AliExpress, Ubuy/Desertcart (cross-border), Haraj/OpenSooq (classifieds), used-car marketplaces.
+* `verified_secondary_evidence` (Status column) = live site behind a bot wall / JS-only, accepted on ≥2 independent current evidence types (archived product pages with SAR prices + ordering control, sitemap, Saudi App Store app); evidence URLs + dates are in the Verification Evidence sheet. No CAPTCHA or bot wall was bypassed.
+* A brand's Saudi storefront on a global domain (`brand.com/sa-en/`, `sa.brand.com`) counts as that brand's Saudi store; root-domain geo-redirects seen from this US-based VM are not treated as proof of absence.
+* No AI subagents were used: the Task tool was not available in this environment, so parallelism came from separate tmux worker processes sharing the SQLite DB.
 
 ## Search channel test results (Phase 1, from this VM)
 | Channel | Result |
@@ -63,7 +69,10 @@ recorded in the `jobs` / `queries` tables and skipped on restart; candidates car
 | searx.be | 200 but JSON API disabled |
 | Common Crawl CDX (index.commoncrawl.org) | **works** (intermittent 502s, retried) — highest yield |
 | crt.sh JSON | works, but Salla/Zid use wildcard certificates → very low yield |
-| Wayback CDX | works but slow (24 s/request); not used |
+| Wayback CDX | works but slow (24 s/request); prefix queries used for Saudi-path resolution and secondary evidence; domain-wide filtered queries time out |
+| Bing HTML (re-tested 2026-10-16) | **degraded**: returns unrelated results (calculator sites) to this IP — no longer used |
+| DuckDuckGo html (re-tested 2026-10-16) | HTTP 202 anomaly page on the first query |
+| iTunes Search API (country=sa) | works (~20 req/min); used for App Store evidence and `sellerUrl` domain discovery |
 | Search API keys in env | none present |
 
 ## How to resume
@@ -85,12 +94,11 @@ python3 -m saudi_ecom.seeds
 
 # verification: one process per platform queue, because each platform has its own rate-limit bucket and a
 # shared queue lets a throttled platform hold every concurrency slot.
-scripts/start_worker.sh verifier-1 saudi_ecom.verify --concurrency 48 --per-host 2 --worker v1 --where "\"AND platform_hint='salla'\""
-scripts/start_worker.sh verifier-2 saudi_ecom.verify --concurrency 64 --per-host 2 --worker v2 --where "\"AND coalesce(platform_hint,'') NOT IN ('salla','zid','shopify') AND priority>=0\""
+scripts/start_worker.sh verifier-1 saudi_ecom.verify --concurrency 24 --per-host 2 --worker v1 --where "\"AND platform_hint IN ('salla','shopify') AND priority>=0\""
+scripts/start_worker.sh verifier-2 saudi_ecom.verify --concurrency 48 --per-host 2 --worker v2 --where "\"AND coalesce(platform_hint,'') NOT IN ('salla','zid','shopify') AND priority>=0\""
 scripts/start_worker.sh verifier-3 saudi_ecom.verify --concurrency 12 --per-host 2 --worker v3 --where "\"AND platform_hint='zid' AND priority>=0\""
-scripts/start_worker.sh verifier-4 saudi_ecom.verify --concurrency 6 --per-host 2 --worker v4 --where "\"AND platform_hint='shopify'\""
-# slow retry queue (priority<0): rate-limited / timed-out non-Salla candidates (e.g. Hostinger CDN throttles per client IP)
-scripts/start_worker.sh verifier-5 saudi_ecom.verify --concurrency 4 --per-host 1 --worker v5 --where "\"AND coalesce(platform_hint,'') NOT IN ('salla','shopify') AND priority<0\""
+# slow retry queue (priority<0): rate-limited / timed-out candidates (e.g. Hostinger CDN throttles per client IP)
+scripts/start_worker.sh verifier-5 saudi_ecom.verify --concurrency 4 --per-host 1 --worker v5 --where "\"AND priority<0\""
 # watchdog restarts any verifier whose log is stale >6 min (same filters as above)
 tmux new-session -d -s watchdog "bash scripts/watchdog.sh 2>&1 | tee -a logs/watchdog.log"
 # browser pass for JS-rendered pages
@@ -98,6 +106,18 @@ scripts/start_worker.sh browser saudi_ecom.verify_browser --concurrency 4 --limi
 
 # re-check rate-limited ones later (non-Salla go to the slow queue; Salla back to verifier-1)
 python3 -c "import sqlite3;c=sqlite3.connect('data/saudi_ecom.sqlite');c.execute(\"UPDATE candidates SET status='pending', priority=CASE WHEN platform_hint IN ('salla','shopify') THEN 5 ELSE -1 END WHERE status='unverified' AND key IN (SELECT key FROM verifications WHERE reason LIKE 'rate_limited%')\");c.commit()"
+
+# reference universe + major/medium coverage audit (order matters; every step is resumable)
+python3 -m saudi_ecom.reference load            # saudi_ecom/data/reference_brands.tsv + data/raw/tranco.csv + data/raw/wikidata_*.json
+python3 -m saudi_ecom.reference load-malls      # saudi_ecom/data/mall_tenants.tsv (Kingdom Centre, Red Sea Mall)
+scripts/start_worker.sh reference saudi_ecom.reference resolve --kinds brand,mall --no-bing
+python3 -m saudi_ecom.reference retry-none      # Wayback CDX under Saudi paths for refs where nothing was found live
+python3 -m saudi_ecom.reference link            # queue resolved URLs (priority 10) -> verifiers
+python3 -m saudi_ecom.reference audit           # sets reference_stores.status
+python3 -m saudi_ecom.reference appstore        # extra official domains for excluded/unresolved refs, then resolve + link again
+scripts/start_worker.sh secondary saudi_ecom.secondary --limit 1000 --concurrency 10   # unresolved refs (bot walls / JS)
+python3 -m saudi_ecom.reference audit
+# the export writes data/reference_universe.csv and the "Major Retailer Coverage Audit" sheet
 
 # metrics / export
 python3 -m saudi_ecom.status
