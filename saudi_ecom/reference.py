@@ -27,6 +27,7 @@ from .verify import Fetcher, SA_GEO, FOREIGN_GEO
 
 HERE = os.path.dirname(__file__)
 TSV = os.path.join(HERE, "data", "reference_brands.tsv")
+FRANCHISE_TSV = os.path.join(HERE, "data", "franchise_groups.tsv")
 RAW = os.path.join(HERE, "..", "data", "raw")
 TRANCO_ID = "Y8JGG"
 
@@ -66,12 +67,22 @@ def tranco_ranks():
 
 
 def upsert(con, name, category, tier, domains, sources, rank, kind):
-    row = con.execute("SELECT ref_id, sources FROM reference_stores WHERE name=? AND domains=?", (name, domains)).fetchone()
+    row = con.execute("SELECT ref_id, sources, domains FROM reference_stores WHERE name=? AND domains=?", (name, domains)).fetchone()
+    if not row and kind in ("brand", "mall"):
+        row = con.execute("SELECT ref_id, sources, domains FROM reference_stores WHERE name=? AND kind=?", (name, kind)).fetchone()
     if row:
         old = json.loads(row[1] or "[]")
         merged = old + [s for s in sources if s not in old]
-        con.execute("UPDATE reference_stores SET sources=?, tranco_rank=coalesce(?, tranco_rank) WHERE ref_id=?",
-                    (json.dumps(merged, ensure_ascii=False), rank, row[0]))
+        old_doms = (row[2] or "").split()
+        new_doms = domains.split()
+        labels = {d.split(".")[0].replace("-", "") for d in new_doms}
+        extra = []
+        for d in old_doms:
+            lab = d.split(".")[0].replace("-", "")
+            if d not in new_doms and (lab in labels or d.endswith(".sa")) and d not in extra:
+                extra.append(d)
+        con.execute("UPDATE reference_stores SET sources=?, domains=?, category=CASE WHEN ?!='' THEN ? ELSE category END, tier=?, tranco_rank=coalesce(?, tranco_rank) WHERE ref_id=?",
+                    (json.dumps(merged, ensure_ascii=False), " ".join(new_doms + extra), category, category, tier, rank, row[0]))
         return row[0]
     cur = con.execute("INSERT INTO reference_stores(name,category,tier,domains,sources,tranco_rank,kind,status) VALUES(?,?,?,?,?,?,?,'pending')",
                       (name, category, tier, domains, json.dumps(sources, ensure_ascii=False), rank, kind))
@@ -81,18 +92,21 @@ def upsert(con, name, category, tier, domains, sources, rank, kind):
 def load(con):
     ranks = tranco_ranks()
     n = 0
-    with open(TSV, encoding="utf-8") as fh:
-        for line in fh:
-            if line.startswith("#") or not line.strip():
-                continue
-            name, cat, tier, doms, src = line.rstrip("\n").split("\t")
-            dl = doms.split()
-            rank = min([ranks[registrable_domain(d)] for d in dl if registrable_domain(d) in ranks] or [None]) if ranks else None
-            srcs = [src]
-            if rank:
-                srcs.append(f"tranco:{TRANCO_ID}#rank{rank}")
-            upsert(con, name, cat, tier, " ".join(dl), srcs, rank, "brand")
-            n += 1
+    for path in (TSV, FRANCHISE_TSV):
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as fh:
+            for line in fh:
+                if line.startswith("#") or not line.strip():
+                    continue
+                name, cat, tier, doms, src = line.rstrip("\n").split("\t")
+                dl = doms.split()
+                rank = min([ranks[registrable_domain(d)] for d in dl if registrable_domain(d) in ranks] or [None]) if ranks else None
+                srcs = [src]
+                if rank:
+                    srcs.append(f"tranco:{TRANCO_ID}#rank{rank}")
+                upsert(con, name, cat, tier, " ".join(dl), srcs, rank, "brand")
+                n += 1
     # Tranco .sa domains: only become part of the universe once verification shows a store (kind=tranco_sa)
     t = 0
     for d, r in ranks.items():

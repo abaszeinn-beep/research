@@ -78,6 +78,12 @@ class Fetcher:
                 if size >= read_limit:
                     break
             body = b"".join(chunks)
+            if body[:2] == b"\x1f\x8b":
+                import gzip
+                try:
+                    body = gzip.decompress(body)
+                except Exception:
+                    pass
             enc = r.encoding or "utf-8"
             try:
                 text = body.decode(enc, errors="replace")
@@ -229,7 +235,7 @@ async def woo_probe(f: Fetcher, base: str):
     return None
 
 
-SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
+SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^</]+|/product-[^</\s]+|/catalog/product/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+|/style/[a-z]{2}\d{4,}[^<\s]*)/?)\s*</loc>", re.I)
 ZID_TEST_NAME = re.compile(r"^(?:prod(?:uct)?\s?\d*|(?:options? )?(?:prod )?test(?:\s*\d+|\s+(?:new )?product.*)?|test new.*|تجربة(?:\s*[\d٠-٩]+)?|منتج تجريبي.*|منتج (?:رقم )?[\d٠-٩]+|p)$", re.I)
 ZID_RANDOM_SLUG = re.compile(r"^(?=.*\d)(?=.*[A-Za-z])[A-Za-z0-9]{8,12}$")
 ZID_DIGITAL_SLUG = re.compile(r"\bpdf\b|chat ?gpt|رقمي|إلكتروني|الكتروني|استشار|رحلة .{0,40}يوم|اشتراك", re.I)
@@ -239,6 +245,8 @@ WOO_DEMO = re.compile(r"^(?:wordpress pennant|hoodie(?: with (?:logo|zipper|pock
 
 async def sitemap_probe(f: Fetcher, base: str):
     """Look for product URLs in the site's sitemap(s) (robots.txt Sitemap: lines or /sitemap.xml)."""
+    if base.rstrip("/") not in f.robots:
+        await f.allowed(base if base.endswith("/") else base + "/")
     rp = f.robots.get(base.rstrip("/"))
     maps = []
     try:
@@ -248,21 +256,25 @@ async def sitemap_probe(f: Fetcher, base: str):
     if not maps:
         maps = [urljoin(base, "/sitemap.xml"), urljoin(base, "/sitemap_index.xml")]
     seen = 0
-    for sm in maps[:3]:
-        st, _, txt, _, _ = await f.get(sm, tries=2)
+    for sm in maps[:4]:
+        st, _, txt, _, err = await f.get(sm, tries=2)
         seen += 1
-        if st != 200 or "<loc>" not in txt:
+        if st != 200 or "<loc>" not in (txt or ""):
             continue
         prods = SITEMAP_PRODUCT.findall(txt)
         children = re.findall(r"<sitemap>\s*<loc>\s*([^<]+)</loc>", txt, re.I)
         if prods and not children:
             return {"sitemap": sm, "product_urls": len(prods), "sample_url": prods[0].strip()}
-        prod_children = [c for c in children if re.search(r"product|prod|item|catalog", c, re.I)]
-        for ch in prod_children[:1]:
+        # "sitemaps" contains the substring "item"; only treat a child as a product sitemap when its name says product.
+        named = [c for c in children if re.search(r"product", c, re.I)]
+        # Magento-style indexes put product URLs in a later shard; try the last child as well as the first.
+        prod_children = named or list(dict.fromkeys(children[:1] + children[-1:]))
+        for ch in prod_children[:2]:
             st2, _, t2, _, _ = await f.get(ch.strip(), tries=2)
-            if st2 == 200:
-                locs = re.findall(r"<loc>\s*([^<\s]{1,500})\s*</loc>", t2) if re.search(r"product", ch, re.I) else SITEMAP_PRODUCT.findall(t2)
-                if locs:
+            if st2 == 200 and t2:
+                named_product = bool(re.search(r"product", ch, re.I))
+                locs = re.findall(r"<loc>\s*([^<\s]{1,500})\s*</loc>", t2) if named_product else SITEMAP_PRODUCT.findall(t2)
+                if len(locs) >= 5:
                     return {"sitemap": ch.strip(), "product_urls": len(locs), "sample_url": locs[0].strip()}
     return None
 
@@ -465,7 +477,7 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
                 return done("rejected", "no_shippable_products (shopify products.json requires_shipping=0)")
 
     smp = None
-    if not (probe and probe.get("n")) and a["n_product_links"] < 2 and "Product" not in a["ld_types"]:
+    if not (probe and probe.get("n")) and a["n_product_links"] < 3 and "Product" not in a["ld_types"]:
         try:
             smp = await sitemap_probe(f, base)
         except Exception:

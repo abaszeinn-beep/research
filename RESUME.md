@@ -53,7 +53,8 @@ recorded in the `jobs` / `queries` tables and skipped on restart; candidates car
 * Retailers that run their own store but also host third-party sellers (e.g. Namshi, Jarir, Extra) are included as retailers.
 * Stores selling both physical and some digital goods are included (note added); digital-only are rejected.
 * Also excluded as marketplaces: Farfetch (multi-boutique), Trendyol, Temu, AliExpress, Ubuy/Desertcart (cross-border), Haraj/OpenSooq (classifieds), used-car marketplaces.
-* `verified_secondary_evidence` (Status column) = live site behind a bot wall / JS-only, accepted on ≥2 independent current evidence types (archived product pages with SAR prices + ordering control, sitemap, Saudi App Store app); evidence URLs + dates are in the Verification Evidence sheet. No CAPTCHA or bot wall was bypassed.
+* `verified_secondary_evidence` (Status column) = live site behind a bot wall / JS-only, accepted on ≥2 independent current evidence types (archived product pages with SAR prices + ordering control, sitemap, Saudi App Store app); evidence URLs + dates are in the Verification Evidence sheet. No CAPTCHA or bot wall was bypassed. Sitemap indexes are followed (including `.xml.gz`); a child sitemap counts when its name says "product" (the substring "item" inside "sitemaps" does not).
+* 6th Street's Saudi storefront now redirects to AIVI (`en-sa.aivi.com`). Danube grocery is `danube.sa` (BinDawood); Danube Home's country sites are UAE/Qatar/Oman/Bahrain and `/sa` redirects to the UAE store, so it is excluded. STC's public site had no device shop (excluded as no online ordering). ACE's resolving storefront is the UAE site; `ace-ksa.com` does not resolve. Ibrahim AlQurashi's Saudi shop is the Salla store IBRAQ (`saudi.ibraqperfumes.com`).
 * A brand's Saudi storefront on a global domain (`brand.com/sa-en/`, `sa.brand.com`) counts as that brand's Saudi store; root-domain geo-redirects seen from this US-based VM are not treated as proof of absence.
 * No AI subagents were used: the Task tool was not available in this environment, so parallelism came from separate tmux worker processes sharing the SQLite DB.
 
@@ -108,7 +109,7 @@ scripts/start_worker.sh browser saudi_ecom.verify_browser --concurrency 4 --limi
 python3 -c "import sqlite3;c=sqlite3.connect('data/saudi_ecom.sqlite');c.execute(\"UPDATE candidates SET status='pending', priority=CASE WHEN platform_hint IN ('salla','shopify') THEN 5 ELSE -1 END WHERE status='unverified' AND key IN (SELECT key FROM verifications WHERE reason LIKE 'rate_limited%')\");c.commit()"
 
 # reference universe + major/medium coverage audit (order matters; every step is resumable)
-python3 -m saudi_ecom.reference load            # saudi_ecom/data/reference_brands.tsv + data/raw/tranco.csv + data/raw/wikidata_*.json
+python3 -m saudi_ecom.reference load            # reference_brands.tsv + franchise_groups.tsv + data/raw/tranco.csv + data/raw/wikidata_*.json
 python3 -m saudi_ecom.reference load-malls      # saudi_ecom/data/mall_tenants.tsv (Kingdom Centre, Red Sea Mall)
 scripts/start_worker.sh reference saudi_ecom.reference resolve --kinds brand,mall --no-bing
 python3 -m saudi_ecom.reference retry-none      # Wayback CDX under Saudi paths for refs where nothing was found live

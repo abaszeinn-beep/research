@@ -34,7 +34,11 @@ from .verify import FOREIGN_GEO, SA_GEO
 UA_RESEARCH = {"User-Agent": "saudi-ecom-directory-research/1.0 (polite archive client)"}
 UA_BROWSER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
               "Accept-Language": "ar-SA,ar;q=0.9,en;q=0.8"}
-PRODUCT_URL = re.compile(r"/p/|/p\d{4,}|-p\d{5,}|[-_]p[-_]?\d{5,}|/product[s]?/|/dp/|/pd/|\d{6,}\.html|/buy-|/item/|/prd/|\.p\d+|/\d{7,}", re.I)
+PRODUCT_URL = re.compile(
+    r"/p/|/p\d{4,}|-p\d{5,}|[-_]p[-_]?\d{5,}|/products?/|/product-[a-z0-9]|/catalog/product/|/dp/|/pd/|"
+    r"\d{6,}\.html|/buy-|/item/|/prd/|\.p\d+|/\d{7,}|/style/[a-z]{2}\d{4,}|"
+    r"/(?:sa-en|en-sa|ar-sa)/[a-z0-9]+(?:-[a-z0-9]+){4,}\.html",
+    re.I)
 SAR = re.compile(r'(?:SAR|ر\.?\s?س|ريال|﷼)(?:\s|&nbsp;|<[^<>]{0,120}>){0,6}\d|\d[\d,.]*(?:\s|&nbsp;|<[^<>]{0,120}>){0,6}(?:SAR|ر\.?\s?س|ريال|﷼)|"(?:priceCurrency|currency|currencyCode|currency_code)"\s*:\s*"SAR"', re.I)
 CART = re.compile(r"add[\s_-]?to[\s_-]?(?:cart|bag|basket)|addToCart|أضف إلى (?:السلة|الحقيبة)|اضف للسلة|أضف للسلة|إضافة إلى (?:السلة|الحقيبة)|buy now|اشتر[يِ]? الآن|\"@type\"\s*:\s*\"Offer\"", re.I)
 SHOP_GENRES = {"Shopping", "Food & Drink", "Lifestyle", "Health & Fitness", "Medical"}
@@ -159,6 +163,17 @@ async def cc_product(client, prefix):
     return out
 
 
+def _xml_text(resp):
+    raw = resp.content or b""
+    if raw[:2] == b"\x1f\x8b":
+        import gzip
+        try:
+            return gzip.decompress(raw).decode("utf-8", "replace")
+        except Exception:
+            return resp.text or ""
+    return resp.text or ""
+
+
 async def sitemap_ev(client, base_host, prefix):
     try:
         r = await client.get(f"https://{base_host}/robots.txt", timeout=20)
@@ -168,30 +183,53 @@ async def sitemap_ev(client, base_host, prefix):
         return {"type": "sitemap", "ok": False, "detail": f"robots_http_{r.status_code}"}
     maps = re.findall(r"(?im)^\s*sitemap:\s*(\S+)", r.text)
     sa_maps = [m for m in maps if SA_GEO.search(m) or "sa" in m.lower()] or maps
-    for sm in sa_maps[:4]:
+
+    def productish(locs):
+        return [l for l in locs if PRODUCT_URL.search(l) and (SA_GEO.search(l) or ".sa/" in l or ".sa." in l)]
+
+    async def read_map(url):
         try:
-            s = await client.get(sm, timeout=30)
+            s = await client.get(url, timeout=40)
         except httpx.HTTPError:
+            return None
+        if s.status_code != 200:
+            return None
+        text = _xml_text(s)
+        if "<loc>" not in text:
+            return None
+        return re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", text)
+
+    for sm in sa_maps[:4]:
+        locs = await read_map(sm)
+        if not locs:
             continue
-        if s.status_code != 200 or "<loc>" not in s.text:
-            continue
-        locs = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", s.text)
-        prods = [l for l in locs if PRODUCT_URL.search(l) and (SA_GEO.search(l) or ".sa/" in l)]
+        prods = productish(locs)
         if len(prods) >= 5:
             return {"type": "sitemap", "ok": True, "url": sm, "date": NOW.strftime("%Y%m%d"),
                     "detail": f"{len(prods)} Saudi-storefront product URLs in sitemap", "sample": prods[:3]}
-        children = [l for l in locs if l.endswith(".xml") or "sitemap" in l.lower()]
-        for ch in [c for c in children if SA_GEO.search(c) or "product" in c.lower()][:2]:
-            try:
-                c = await client.get(ch, timeout=30)
-            except httpx.HTTPError:
-                continue
-            cl = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", c.text) if c.status_code == 200 else []
-            cp = [l for l in cl if PRODUCT_URL.search(l) and (SA_GEO.search(l) or ".sa/" in l)]
+        children = [l for l in locs if re.search(r"\.xml(?:\.gz)?$", l, re.I) or "sitemap" in l.lower()]
+        preferred = [c for c in children if re.search(r"product", c, re.I)]
+        rest = [c for c in children if c not in preferred and (SA_GEO.search(c) or "sa" in c.lower())]
+        ordered = preferred or rest or children
+        for ch in ordered[:3]:
+            cl = await read_map(ch) or []
+            cp = productish(cl) if not re.search(r"product", ch, re.I) else [l for l in cl if SA_GEO.search(l) or ".sa/" in l or ".sa." in l]
+            if not cp and re.search(r"product", ch, re.I):
+                cp = productish(cl)
             if len(cp) >= 5:
                 return {"type": "sitemap", "ok": True, "url": ch, "date": NOW.strftime("%Y%m%d"),
                         "detail": f"{len(cp)} Saudi-storefront product URLs in sitemap", "sample": cp[:3]}
     return {"type": "sitemap", "ok": False, "detail": "no Saudi product URLs in accessible sitemaps"}
+
+
+# Brand search terms that the Saudi App Store lists under a different title than the reference name.
+APP_ALIASES = {
+    "6th street": ["AIVI"],
+    "american eagle": ["AE Aerie"],
+    "lego": ["LEGO KSA"],
+    "redtag": ["REDTAG"],
+    "red tag": ["REDTAG"],
+}
 
 
 def name_tokens(name):
@@ -207,18 +245,27 @@ async def app_store(client, name, domains):
     if not toks:
         return {"type": "app_store", "ok": False, "detail": "no name tokens"}
     term = " ".join(toks[:3]) if name_tokens(name) else name
+    alias_key = re.sub(r"[^a-z0-9 ]", "", term.lower()).strip()
+    terms = [term] + APP_ALIASES.get(alias_key, [])
+    res = []
     try:
-        r = await client.get("https://itunes.apple.com/search", params={"term": term, "country": "sa", "entity": "software", "limit": "10"}, timeout=30)
-        res = r.json().get("results", [])
+        for t in terms:
+            r = await client.get("https://itunes.apple.com/search", params={"term": t, "country": "sa", "entity": "software", "limit": "8"}, timeout=30)
+            res.extend(r.json().get("results", []))
     except Exception:
         return {"type": "app_store", "ok": False, "detail": "itunes_error"}
     labels = {d.split(".")[0] for d in domains}
+    alias_tokens = [t for alias in terms[1:] for t in name_tokens(alias)]
+    generic = {"toys", "fashion", "beauty", "home", "kids", "baby", "market", "shop", "store", "online", "mall", "sport", "sports", "wear"}
+    toks = [t for t in toks if t not in generic] or toks
     for a in res:
         title = (a.get("trackName") or "").lower()
         seller = (a.get("sellerName") or "").lower()
         surl = (a.get("sellerUrl") or "").lower()
         norm_title = re.sub(r"[^a-z0-9]", "", title)
-        name_match = (all(t in title or t in seller for t in toks[:2]) or any(l and l in surl for l in labels)
+        alias_match = bool(alias_tokens) and all(t in title or t in seller for t in alias_tokens[:2])
+        token_match = all(t in title or t in seller for t in toks[:2]) and (len(toks) >= 2 or (toks and toks[0] not in generic and len(toks[0]) >= 4))
+        name_match = (token_match or alias_match or any(l and len(l) >= 4 and l in surl for l in labels)
                       or (len(norm_title) >= 5 and any(norm_title in l or l in norm_title for l in labels)))
         if not name_match or a.get("primaryGenreName") not in SHOP_GENRES:
             continue
@@ -286,10 +333,15 @@ def save(con, item, res, ref_name):
     if res["verdict"] == "verified_secondary_evidence":
         sf = item["url"]
         for e in evs:
-            if e["type"] in ("wayback_product", "commoncrawl_product", "sitemap") and e.get("url"):
+            if e["type"] in ("wayback_product", "commoncrawl_product") and e.get("url"):
                 orig = re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", e["url"])
                 sf = "https://" + storefront_prefix(orig)
                 break
+            if e["type"] == "sitemap":
+                sample = (e.get("sample") or [None])[0]
+                if sample:
+                    sf = "https://" + storefront_prefix(sample)
+                    break
         con.execute("""UPDATE verifications SET status='verified_secondary_evidence', method='secondary',
                        reason=?, product_evidence=?, evidence_url=?, verified_at=?, store_name=CASE WHEN coalesce(store_name,'')='' THEN ? ELSE store_name END,
                        final_url=? WHERE key=?""",
