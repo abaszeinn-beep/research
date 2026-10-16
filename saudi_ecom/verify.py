@@ -32,6 +32,9 @@ CHALLENGE = re.compile(r"just a moment\.\.\.|cf-chl|challenge-platform/h/|attent
 LISTING_HINT = re.compile(r"href=[\"']([^\"'#]*(?:/products/?|/collections/all|/shop/?|/store/?|/categories/[^\"']+|/category/[^\"']+|/collections/[^\"']+|/c/[^\"']+|/-/c\d+|product-category/[^\"']+|/all-products|/catalog[^\"']*|/new-arrivals?|/offers)[^\"'#]*)[\"']", re.I)
 
 
+DEMO = re.compile(r"^(?:متجر تجريبي|متجر تجريبى|demo store|test store|my store|متجري|store name|اسم المتجر)$|متجر تجريبي|demo ?store|test ?store|متجر اختبار", re.I)
+
+
 class Fetcher:
     def __init__(self, concurrency: int, per_host: int):
         limits = httpx.Limits(max_connections=concurrency * 2, max_keepalive_connections=concurrency)
@@ -41,13 +44,16 @@ class Fetcher:
         self.per_host = per_host
         self.host_sems: dict[str, asyncio.Semaphore] = {}
         self.host_last: dict[str, float] = defaultdict(float)
+        self.host_gap: dict[str, float] = defaultdict(lambda: 0.5)
         self.robots: dict[str, urllib.robotparser.RobotFileParser | None] = {}
         self.robots_lock: dict[str, asyncio.Lock] = defaultdict(asyncio.Lock)
         self.stats = Counter()
 
     def _sem(self, host):
         if host not in self.host_sems:
-            n = 6 if host in ("salla.sa", "api.salla.dev") else self.per_host
+            n = 3 if host in ("salla.sa", "api.salla.dev") else self.per_host
+            if host in ("salla.sa", "api.salla.dev"):
+                self.host_gap[host] = 0.35
             self.host_sems[host] = asyncio.Semaphore(n)
         return self.host_sems[host]
 
@@ -100,14 +106,21 @@ class Fetcher:
         for attempt in range(tries):
             async with self.global_sem, self._sem(host):
                 gap = time.monotonic() - self.host_last[host]
-                if gap < 0.5:
-                    await asyncio.sleep(0.5 - gap)
+                want = self.host_gap[host]
+                if gap < want:
+                    await asyncio.sleep(want - gap)
                 self.host_last[host] = time.monotonic()
                 try:
                     st, final, text, hdrs = await asyncio.wait_for(self._raw_get(url, headers), 45)
                     self.stats["requests"] += 1
+                    if st == 429:
+                        self.stats["http_429"] += 1
+                        self.host_gap[host] = min(self.host_gap[host] * 1.5 + 0.2, 6.0)
                     if st in (429, 502, 503, 504) and attempt < tries - 1 and not CHALLENGE.search(text[:5000]):
                         last_err = f"http_{st}"
+                        if st == 429:
+                            ra = hdrs.get("retry-after", "")
+                            delay = max(delay, min(float(ra), 60) if ra.isdigit() else 15)
                     else:
                         return st, final, text, hdrs, None
                 except (httpx.ConnectError, httpx.ConnectTimeout) as e:
@@ -301,6 +314,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         res["final_key"] = None
 
     head = html[:8000]
+    if st == 429:
+        return done("unverified", "rate_limited_http_429 (retry later)")
     if st in (403, 401, 429, 503) or (st >= 400 and CHALLENGE.search(head)):
         if CHALLENGE.search(head) or st in (403, 429, 503):
             return done("unverified", f"blocked_or_challenge_http_{st}")
@@ -317,11 +332,16 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     pk = (S.PARKED.search(head_text) if short else None) or (S.PARKED_TITLE.search(a["title"]) if len(a["text"]) < 3000 else None)
     if pk:
         return done("rejected", "parked_or_placeholder: " + pk.group(0)[:60])
-    if 'class="maintenance"' in html[:20000] or (len(a["text"]) < 6000 and S.CLOSED.search(head_text)) or "password-page" in html[:30000] and len(a["text"]) < 6000:
+    if re.search(r'<body[^>]*class="[^"]*\bconstruction\b', html[:20000]) or "ترقَّب إطلاق المتجر" in html[:20000] or "ترقب إطلاق المتجر" in html[:20000]:
+        return done("rejected", "store_not_launched (platform 'coming soon' page)")
+    if re.search(r'<body[^>]*class="[^"]*\bmaintenance\b', html[:20000]) or (len(a["text"]) < 6000 and S.CLOSED.search(head_text)) or "password-page" in html[:30000] and len(a["text"]) < 6000:
         m = S.CLOSED.search(head_text)
         return done("rejected", "store_closed_or_maintenance" + (": " + m.group(0) if m else ""))
     if re.search(r'window\.location(?:\.href)?\s*=\s*["\']/lander', html[:3000]):
         return done("rejected", "parked_or_placeholder: lander redirect")
+
+    if DEMO.search(res["store_name"] or "") or re.match(r"salla\.sa/dev-", key) or re.search(r"demostore\.|demo-store|/dev-[a-z0-9]{10,}", final):
+        return done("rejected", "demo_or_test_store")
 
     plat = a["platform"]
     probe = None
@@ -335,6 +355,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             probe = await woo_probe(f, base)
     except Exception as e:  # probe failures must not kill the verification
         probe = {"error": type(e).__name__}
+
+    if plat == "salla" and probe and str(probe.get("error", "")).startswith("http_429"):
+        return done("unverified", "rate_limited_http_429 (salla api; retry later)")
 
     extra_html = ""
     extra_url = None
@@ -453,8 +476,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if not has_product or not has_purchase:
         if thin_page(html, a):
             return done("unverified", "partial_ecommerce_evidence_js_page: " + ",".join(product_ev + purchase_ev))
-        if has_product and not has_purchase and a["sar_prices"] >= 3:
-            pass
+        if has_product and not has_purchase and (a["sar_prices"] >= 3 or ("schema.org Product/Offer" in product_ev and a["sar_prices"] >= 1)):
+            purchase_ev.append("purchasable listings (product pages/offers with prices)")
         else:
             return done("unverified" if (has_product or a["cart"]) else "rejected",
                         "insufficient_ecommerce_evidence: " + (",".join(product_ev + purchase_ev) or "none"))
