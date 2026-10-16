@@ -465,6 +465,7 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
 
     cat_texts = [a["title"] + " " + res["store_name"], a["desc"], S.meta(html, "keywords") or "", " ".join(product_names), a["text"][:6000]]
     cat, sub = S.classify_category(cat_texts, [6, 4, 2, 2, 1])
+    res["cat_text"] = "\x1f".join(t[:3000] for t in cat_texts)
     res["category"], res["subcategory"] = cat, sub
 
     has_product = bool(product_ev)
@@ -495,9 +496,22 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         if n_srv >= 6 and not a["add_to_cart"]:
             return done("rejected", f"likely_services ({n_srv} service markers)")
 
+    name_title = (res["store_name"] or "") + " " + a["title"]
+    n_char = len(S.CHARITY.findall(name_title + " " + a["desc"] + " " + a["text"][:8000]))
+    if S.CHARITY.search(name_title) or n_char >= 5:
+        if not (physical and physical >= 3 and n_char < 5):
+            return done("rejected", f"charity_or_donations ({n_char} markers)")
+    if physical is None and S.ORG.search(name_title):
+        return done("unverified", "organization_site_with_shop_features (manual review): " + S.ORG.search(name_title).group(0))
+    if plat in ("custom/unknown", "wix", "odoo", "nopcommerce", "wuilt") and not (probe and probe.get("n")):
+        strong_prod = a["n_product_links"] >= 3 or "Product" in a["ld_types"] or a["sar_prices"] >= 3 or bool(smp and smp.get("product_urls", 0) >= 5)
+        if not (a["add_to_cart"] >= 1 and strong_prod):
+            return done("unverified", "weak_ecommerce_evidence_custom_platform: " + ",".join(product_ev + purchase_ev))
+
     strong = any(k in sev for k in ("sa_tld", "sa_locale", "currency_SAR_code", "sar_prices", "saudi_phone", "vat_number", "shopify_shop_country"))
     if sev.get("shopify_shop_country") not in (None, "SA") and not any(k in sev for k in ("sa_tld", "sa_locale", "vat_number")):
         strong = "saudi_phone" in sev and ("sar_prices" in sev or "currency_SAR_code" in sev)
+    res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
     if score >= 4 and strong:
         res["status"] = "verified"
         note = []
@@ -515,7 +529,7 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
 
 
 COLS = ["key", "final_url", "final_key", "http_status", "store_name", "platform", "category", "subcategory", "saudi_score",
-        "saudi_evidence", "ecom_evidence", "product_evidence", "status", "reason", "evidence_url", "verified_at", "duplicate_of", "method", "elapsed"]
+        "saudi_evidence", "ecom_evidence", "product_evidence", "status", "reason", "evidence_url", "verified_at", "duplicate_of", "method", "elapsed", "cat_text"]
 
 
 def save(con, res):

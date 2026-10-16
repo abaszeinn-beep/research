@@ -71,7 +71,7 @@ NON_STORE_ROOTS = {
     "wamda.com", "magnitt.com", "similarweb.com", "semrush.com", "builtwith.com",
     "storeleads.app", "storeleads.com", "myip.ms", "whois.com", "who.is", "crt.sh",
     "expandcart.com", "youcan.shop", "wuilt.com", "matjrah.com", "tryzid.com",
-    "salla.sa", "zid.store", "myshopify.com", "wix.com", "wixsite.com", "squarespace.com",
+    "salla.sa", "salla.store", "zid.store", "myshopify.com", "wix.com", "salla.com.sa", "zid.sa", "matjrah.store", "expandcart.com", "wixsite.com", "squarespace.com",
     "godaddy.com", "namecheap.com", "sedo.com", "dan.com", "afternic.com", "hugedomains.com",
     "nic.sa", "saudinic.net.sa", "stc.com.sa", "mobily.com.sa", "sa.zain.com",
     "careem.com", "hungerstation.com", "jahez.net", "mrsool.co", "talabat.com", "toyou.io",

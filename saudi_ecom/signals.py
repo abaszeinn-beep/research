@@ -99,6 +99,8 @@ SERVICE = re.compile(
     r"تصميم (?:مواقع|شعارات|جرافيك)|web design|marketing agency|وكالة تسويق|برمجة تطبيقات",
     re.I,
 )
+CHARITY = re.compile(r"جمعية|خيري|خيرية|تبرع|تبرعات|كفالة يتيم|كفالة|صدقة|زكاة|وقف خيري|أوقاف|donat(?:e|ion)|charity|sadaqah|zakat|non-?profit|غير ربحية", re.I)
+ORG = re.compile(r"نادي|جمعية|مستشفى|hospital|جامعة|university|مدرسة|مدارس|school|academy|أكاديمية|معهد|institute|كلية|college|وزارة|ministry|هيئة|authority|بلدية|municipality|غرفة تجارية|chamber of commerce|مجمع طبي|مجمع [^ ]+ الطبي|مجمع [^ ]+ [^ ]+ الطبي|مركز طبي|educational|تعليمي|تعليمية|medical (?:complex|center)|عيادات|clinics|منصة|platform|مكتب محاماة|law firm|مكتب هندسي|consultants?|استشارات|شركة مقاولات|contracting|نقابة|federation|اتحاد", re.I)
 RESTAURANT = re.compile(r"food menu|restaurant menu|قائمة الطعام|المنيو|مطعم|restaurant|order food|اطلب وجبتك|وجبات|meals?\b|burger|برجر|pizza|بيتزا|شاورما|shawarma|كافيه|cafe\b|توصيل الطعام|food delivery", re.I)
 
 CATEGORIES = [
@@ -113,7 +115,7 @@ CATEGORIES = [
     ("Fashion & Apparel", r"ملابس|أزياء|ازياء|fashion|apparel|clothing|clothes|t-?shirts?|تيشيرت|قمصان|بناطيل|jeans|جينز|uniforms?|يونيفورم|زي موحد"),
     ("Shoes", r"أحذية|احذية|حذاء|shoes|footwear|نعال|صنادل|sandals|boots|كعب"),
     ("Bags & Luggage", r"حقائب|شنط|شنطة|bags?\b|handbags?|luggage|backpacks?|wallets?|محافظ|حقيبة"),
-    ("Jewelry & Watches", r"مجوهرات|jewel|ذهب|فضة|خواتم|earrings?|اساور|أساور|bracelets?|قلادة|قلائد|necklaces?|ساعات|wrist ?watch(?:es)?|watches|ألماس|diamonds?|مسابح|حلق"),
+    ("Jewelry & Watches", r"مجوهرات|jewel|ذهب|فضة|خواتم|earrings?|اساور|أساور|bracelets?|قلادة|قلائد|necklaces?|ساعات يد|ساعات رجالية|ساعات نسائية|ساعة يد|wrist ?watch(?:es)?|watches|ألماس|diamonds?|مسابح"),
     ("Mobiles & Accessories", r"جوال|جوالات|mobiles?|phones?|iphone|ايفون|سامسونج|samsung|كفرات|cases?\b|شواحن|chargers?|سماعات|earbuds|airpods|power ?bank"),
     ("Computers & Electronics", r"كمبيوتر|computers?|laptops?|لابتوب|حاسب|electronics|إلكترونيات|الكترونيات|شاشات|monitors?|printers?|طابعات|كاميرات|cameras?|تلفزيون|tv\b|smart home|راوتر|networking|قطع كمبيوتر|pc parts"),
     ("Gaming", r"gaming|ألعاب الفيديو|العاب فيديو|بلايستيشن|playstation|xbox|nintendo|اكس بوكس|قيمنق|قيمينق|gamers?"),
@@ -122,7 +124,7 @@ CATEGORIES = [
     ("Home Decor", r"ديكور|decor|تحف|لوحات|wall art|مزهريات|vases?|شموع|candles?|سجاد|rugs?|carpets?|ستائر|curtains?|إضاءة ديكورية|home accessories"),
     ("Kitchenware & Tableware", r"أواني|اواني|kitchenware|cookware|مطبخ|kitchen|قدور|pots?\b|صحون|plates?|أكواب|cups?|mugs?|ترامس|ثيرموس|thermos|دلال|فناجين|tableware|ضيافة"),
     ("Bedding, Mattresses & Textiles", r"مفارش|bedding|مراتب|مرتبة|mattress|بطانيات|blankets?|وسائد|pillows?|شراشف|sheets|مناشف|towels?|textiles?|أقمشة|اقمشة|fabrics?"),
-    ("Home Improvement & Hardware", r"عدد|أدوات صحية|سباكة|plumbing|hardware|أدوات يدوية|hand tools|power tools|دهانات|paints?|بويات|home improvement|tools?\b"),
+    ("Home Improvement & Hardware", r"عدد يدوية|العدد والأدوات|أدوات صحية|سباكة|plumbing|hardware|أدوات يدوية|hand tools|power tools|دهانات|paints?|بويات|home improvement|tools?\b"),
     ("Lighting & Electrical", r"إضاءة|اضاءة|lighting|lamps?|ثريات|chandeliers?|led\b|كهربائية|electrical|أفياش|كيابل|cables?|switches"),
     ("Building Materials", r"مواد بناء|building materials|سيراميك|ceramic|بلاط|tiles?|رخام|marble|حديد|steel|اسمنت|cement|أخشاب|wood panels|عوازل|insulation|بورسلان|porcelain"),
     ("Industrial & Tools", r"معدات صناعية|industrial|مصانع|machinery|مكائن|معدات|equipment|safety equipment|معدات السلامة|compressors?|generators?|مولدات|pumps?|مضخات|لحام|welding"),
@@ -131,16 +133,16 @@ CATEGORIES = [
     ("Baby & Maternity", r"مواليد|رضع|baby|babies|حفاضات|diapers?|maternity|أمومة|امومة|عربات أطفال|strollers?|car seats?|رضاعات|bottles"),
     ("Books & Stationery", r"كتب|books?|مكتبة|library|bookstore|قرطاسية|stationery|أدوات مدرسية|school supplies|دفاتر|notebooks?|أقلام|pens?\b|روايات|novels?"),
     ("Office Supplies", r"مستلزمات مكتبية|office supplies|أدوات مكتبية|ورق تصوير|copy paper|حبر|ink|toner|أحبار|office furniture"),
-    ("Sports, Fitness & Outdoor", r"رياض|sports?\b|fitness|لياقة|gym|جيم|camping|تخييم|رحلات|outdoor|صيد|fishing|hunting|مقناص|bicycles?|دراجات|bikes?\b|scooters?|سكوتر|يوغا|yoga|كرة|ball"),
+    ("Sports, Fitness & Outdoor", r"رياضة|رياضي|sports?\b|fitness|لياقة|gym|جيم|camping|تخييم|رحلات|outdoor|صيد|fishing|hunting|مقناص|bicycles?|دراجات|bikes?\b|scooters?|سكوتر|يوغا|yoga|كرة|ball"),
     ("Automotive Parts & Accessories", r"قطع غيار|spare parts|auto parts|سيارات|cars?\b|automotive|إكسسوارات سيارات|car accessories|زيوت|motor oil|كفرات|إطارات|اطارات|tires?|tyres?|بطاريات|batteries|car care|تلميع|عناية بالسيارة"),
     ("Grocery & Food", r"بقالة|grocery|groceries|سوبر ?ماركت|supermarket|مواد غذائية|food products|أغذية|اغذية|معلبات|بهارات|spices|توابل|أرز|rice|زيت زيتون|olive oil|عسل|honey|سمن|ghee|لحوم|meat|دواجن|poultry|خضار|vegetables|فواكه|fruits?|مخبوزات|bakery|ألبان|dairy"),
-    ("Coffee, Tea & Dates", r"قهوة|coffee|بن\b|محمصة|roastery|roasters?|شاي|tea\b|تمور|تمر|dates\b|espresso|اسبريسو|مختص|specialty coffee|هيل|cardamom"),
+    ("Coffee, Tea & Dates", r"قهوة|coffee|البن|محمصة|roastery|roasters?|شاي|tea\b|تمور|تمر|dates\b|espresso|اسبريسو|مختص|specialty coffee|هيل|cardamom"),
     ("Chocolates & Sweets", r"شوكولات|chocolate|حلويات|sweets|حلا|كيك|cakes?|معمول|maamoul|حلقوم|candy|حلاوة|بسكويت|cookies|كوكيز|desserts?"),
     ("Flowers, Gifts & Party", r"ورد|زهور|flowers?|florist|هدايا|gifts?|توزيعات|party|حفلات|بالونات|balloons?|تغليف|wrapping|مناسبات|events supplies|بوكيه|bouquet"),
     ("Pets", r"حيوانات أليفة|pets?\b|قطط|cats?\b|كلاب|dogs?\b|طيور|birds?|أسماك الزينة|aquarium|أكل قطط|cat food|dog food|بيطري|veterinary"),
     ("Pharmacy & Wellness", r"صيدلية|pharmacy|أدوية|medicines?|فيتامينات|vitamins?|مكملات غذائية|supplements?|بروتين|protein|wellness|صحة|health|أعشاب|herbs|طب بديل|عسل علاجي"),
     ("Healthcare & Medical Equipment", r"أجهزة طبية|medical (?:devices|equipment|supplies)|مستلزمات طبية|طبي|surgical|جراحية|dental|أسنان|كراسي متحركة|wheelchairs?|مختبر|laboratory|عدسات لاصقة|contact lenses|نظارات|eyewear|optical|بصريات"),
-    ("Agriculture & Gardening", r"زراعة|زراعية|agricultur|garden|حدائق|نباتات|plants?|بذور|seeds|أسمدة|fertilizers?|شتلات|ري\b|irrigation|مشاتل|nursery"),
+    ("Agriculture & Gardening", r"زراعة|زراعية|agricultur|garden|حدائق|نباتات|plants?|بذور|seeds|أسمدة|fertilizers?|شتلات|ري بالتنقيط|irrigation|مشاتل|nursery"),
     ("Religious Products", r"سجاد صلاة|prayer mats?|مصاحف|quran|مصحف|إسلامي|islamic|سبح|tasbih|إحرام|ihram|حج|عمرة|umrah|hajj"),
     ("Arts, Crafts & Handmade", r"يدوي|handmade|حرف|crafts?|رسم|art supplies|أدوات رسم|خياطة|sewing|تطريز|embroidery|خرز|beads|كروشيه|crochet|resin|ريزن"),
     ("Wholesale & B2B", r"جملة|wholesale|بالجملة|b2b|موزع|distributor|توريد|supplier|مورد|تجار الجملة|bulk"),
@@ -148,7 +150,20 @@ CATEGORIES = [
     ("Packaging & Supplies", r"تغليف|packaging|علب تغليف|أكياس ورقية|طباعة الكرتون|printing services|ملصقات|stickers?"),
     ("Cleaning & Household Supplies", r"منظفات|cleaning|detergents?|household|مناديل|tissues?|معطرات|air fresheners?|تنظيف"),
 ]
-CATEGORY_RES = [(name, re.compile(rx, re.I)) for name, rx in CATEGORIES]
+AR = "\u0600-\u06FF"
+
+
+def _wrap(alt: str) -> str:
+    if re.search(f"[{AR}]", alt):
+        return f"(?<![{AR}])(?:و|ب|ل|ف)?(?:ال|لل)?(?:{alt})(?:ات|ة|ي|ية|ين|ون|ها|ه)?(?![{AR}])"
+    return rf"\b(?:{alt})\b"
+
+
+def compile_terms(rx: str):
+    return re.compile("|".join(_wrap(a) for a in rx.split("|")), re.I)
+
+
+CATEGORY_RES = [(name, compile_terms(rx)) for name, rx in CATEGORIES]
 
 TAG_RE = re.compile(r"<[^>]+>")
 SCRIPT_RE = re.compile(r"<(script|style|noscript|svg)[^>]*>.*?</\1>", re.I | re.S)

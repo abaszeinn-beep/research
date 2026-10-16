@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS verifications (
     store_name TEXT, platform TEXT, category TEXT, subcategory TEXT,
     saudi_score REAL, saudi_evidence TEXT, ecom_evidence TEXT, product_evidence TEXT,
     status TEXT, reason TEXT, evidence_url TEXT, verified_at TEXT,
-    duplicate_of TEXT, method TEXT, elapsed REAL
+    duplicate_of TEXT, method TEXT, elapsed REAL, cat_text TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_ver_final ON verifications(final_key);
 CREATE TABLE IF NOT EXISTS queries (
@@ -69,6 +69,9 @@ def connect(path: str | None = None) -> sqlite3.Connection:
     con.execute("PRAGMA busy_timeout=120000")
     con.execute("PRAGMA synchronous=NORMAL")
     con.executescript(SCHEMA)
+    cols = {r[1] for r in con.execute("PRAGMA table_info(verifications)")}
+    if "cat_text" not in cols:
+        con.execute("ALTER TABLE verifications ADD COLUMN cat_text TEXT")
     return con
 
 
