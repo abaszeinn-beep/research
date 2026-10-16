@@ -93,10 +93,11 @@ class DDG(Engine):
             return []
         await self.wait()
         try:
-            r = await self.client.post("https://html.duckduckgo.com/html/", data={"q": q, "kl": "xa-ar"}, timeout=30)
+            r = await self.client.get("https://lite.duckduckgo.com/lite/", params={"q": q, "kl": "xa-ar"}, timeout=30)
         except httpx.HTTPError:
             return None
-        if r.status_code != 200 or "anomaly" in r.text.lower():
+        low = r.text.lower()
+        if r.status_code != 200 or "anomaly" in low or "bots use duckduckgo" in low or "challenge" in low[:5000]:
             self.block()
             return None
         self.consecutive_blocks = 0

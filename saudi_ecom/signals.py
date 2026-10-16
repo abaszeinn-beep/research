@@ -100,7 +100,7 @@ SERVICE = re.compile(
     re.I,
 )
 CHARITY = re.compile(r"جمعية|خيري|خيرية|تبرع|تبرعات|كفالة يتيم|كفالة|صدقة|زكاة|وقف خيري|أوقاف|donat(?:e|ion)|charity|sadaqah|zakat|non-?profit|غير ربحية", re.I)
-ORG = re.compile(r"نادي|جمعية|مستشفى|hospital|جامعة|university|مدرسة|مدارس|school|academy|أكاديمية|معهد|institute|كلية|college|وزارة|ministry|هيئة|authority|بلدية|municipality|غرفة تجارية|chamber of commerce|مجمع طبي|مجمع [^ ]+ الطبي|مجمع [^ ]+ [^ ]+ الطبي|مركز طبي|educational|تعليمي|تعليمية|medical (?:complex|center)|عيادات|clinics|منصة|platform|مكتب محاماة|law firm|مكتب هندسي|consultants?|استشارات|شركة مقاولات|contracting|نقابة|federation|اتحاد", re.I)
+ORG = re.compile(r"نادي|جمعية|مستشفى|hospital|جامعة|university|مدرسة|مدارس|school|academy|أكاديمية|معهد|institute|كلية|college|وزارة|ministry|هيئة|authority|بلدية|municipality|غرفة تجارية|chamber of commerce|مجمع طبي|مجمع [^ ]+ الطبي|مجمع [^ ]+ [^ ]+ الطبي|مركز طبي|educational|تعليمي|تعليمية|للتدريب|تدريب|training|travel|tours|للسفر|سياحة|سفريات|طيران|hotel|فندق|فنادق|medical (?:complex|center)|عيادات|clinics|منصة|platform|مكتب محاماة|law firm|مكتب هندسي|consultants?|استشارات|شركة مقاولات|contracting|نقابة|federation|اتحاد", re.I)
 RESTAURANT = re.compile(r"food menu|restaurant menu|قائمة الطعام|المنيو|مطعم|restaurant|order food|اطلب وجبتك|وجبات|meals?\b|burger|برجر|pizza|بيتزا|شاورما|shawarma|كافيه|cafe\b|توصيل الطعام|food delivery", re.I)
 
 CATEGORIES = [
@@ -198,7 +198,18 @@ def _norm_letters(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+JUNK_NAME = re.compile(r"\.(?:html?|php|aspx?)$|^google[0-9a-f]{8,}|^https?://|^[\W\d_]+$", re.I)
+
+
 def store_name(html: str, fallback: str, host: str = "") -> str:
+    n = _store_name(html, fallback, host)
+    if JUNK_NAME.search(n or ""):
+        h = re.sub(r"^www\d?\.", "", (host or fallback).lower())
+        return h.split(".")[0] if h else fallback
+    return n
+
+
+def _store_name(html: str, fallback: str, host: str = "") -> str:
     label = ""
     if host:
         h = host.lower().split(":")[0]

@@ -205,13 +205,16 @@ async def woo_probe(f: Fetcher, base: str):
         except ValueError:
             return None
         cur = sorted({(p.get("prices") or {}).get("currency_code") for p in prods if p.get("prices")} - {None})
-        return {"n": len(prods), "currency": cur, "names": [p.get("name") or "" for p in prods][:20],
+        names = [re.sub(r"\s+", " ", (p.get("name") or "")).strip() for p in prods]
+        demo = sum(1 for n in names if WOO_DEMO.match(n))
+        return {"n": len(prods), "demo": demo, "currency": cur, "names": names[:20],
                 "sample_url": prods[0].get("permalink") if prods else None,
                 "purchasable": sum(1 for p in prods if p.get("is_purchasable"))}
     return None
 
 
-SITEMAP_PRODUCT = re.compile(r"<loc>\s*([^<]*(?:product|/p/|/p\d{5,}|/products/|-p-\d+|/dp/|/item/)[^<]*)</loc>", re.I)
+SITEMAP_PRODUCT = re.compile(r"<loc>\s*(https?://[^<]*(?:/products?/[^</]+|/p/[^</]+|/p\d{5,}|-p-\d+|/dp/[^<]+|/item/[^</]+|/pd/[^<]+)/?)\s*</loc>", re.I)
+WOO_DEMO = re.compile(r"^(?:wordpress pennant|hoodie(?: with (?:logo|zipper|pocket))?|beanie(?: with logo)?|album|single|t-shirt(?: with logo)?|cap|sunglasses|polo|belt|long sleeve tee|v-neck t-shirt|logo collection|levitating .*|lorem ipsum.*|sample product.*|product name|test product.*|منتج تجريبي.*|منتج \d+)$", re.I)
 
 
 async def sitemap_probe(f: Fetcher, base: str):
@@ -238,11 +241,9 @@ async def sitemap_probe(f: Fetcher, base: str):
         for ch in prod_children[:1]:
             st2, _, t2, _, _ = await f.get(ch.strip(), tries=2)
             if st2 == 200:
-                locs = re.findall(r"<loc>\s*([^<]+)</loc>", t2)
+                locs = SITEMAP_PRODUCT.findall(t2)
                 if locs:
                     return {"sitemap": ch.strip(), "product_urls": len(locs), "sample_url": locs[0].strip()}
-        if prod_children:
-            return {"sitemap": sm, "product_sitemaps": len(prod_children), "sample_url": prod_children[0].strip()}
     return None
 
 
@@ -413,6 +414,11 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
                 return done("rejected", "digital_products_only (salla product types: %s)" % dict(t))
             if phys == 0 and service > 0:
                 return done("rejected", "services_only (salla product types: %s)" % dict(t))
+        if plat == "woocommerce" and probe.get("n"):
+            if probe.get("demo", 0) >= max(2, probe["n"] // 2):
+                return done("rejected", f"theme_demo_products_only (woocommerce sample data: {probe['demo']}/{probe['n']})")
+            if probe.get("purchasable", 0) == 0:
+                probe["n"] = 0
         if plat == "shopify" and probe.get("n"):
             physical = probe.get("requires_shipping", 0)
             if physical == 0:
@@ -458,6 +464,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         else:
             sev["shopify_shop_country"] = probe["country"]
             score -= 1.5
+    if probe and plat == "woocommerce" and probe.get("currency") and "SAR" not in probe["currency"]:
+        sev["woo_store_currency"] = probe["currency"]
+        score -= 3
     if probe and plat == "shopify" and probe.get("currency") == "SAR":
         sev["shopify_base_currency"] = "SAR"
     res["saudi_score"] = round(score, 2)
@@ -501,9 +510,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if S.CHARITY.search(name_title) or n_char >= 5:
         if not (physical and physical >= 3 and n_char < 5):
             return done("rejected", f"charity_or_donations ({n_char} markers)")
-    if physical is None and S.ORG.search(name_title):
-        return done("unverified", "organization_site_with_shop_features (manual review): " + S.ORG.search(name_title).group(0))
-    if plat in ("custom/unknown", "wix", "odoo", "nopcommerce", "wuilt") and not (probe and probe.get("n")):
+    if physical is None and S.ORG.search(res["store_name"] or ""):
+        return done("unverified", "organization_site_with_shop_features (manual review): " + S.ORG.search(res["store_name"]).group(0))
+    if plat not in ("salla", "zid", "shopify") and not (probe and probe.get("n")):
         strong_prod = a["n_product_links"] >= 3 or "Product" in a["ld_types"] or a["sar_prices"] >= 3 or bool(smp and smp.get("product_urls", 0) >= 5)
         if not (a["add_to_cart"] >= 1 and strong_prod):
             return done("unverified", "weak_ecommerce_evidence_custom_platform: " + ",".join(product_ev + purchase_ev))
