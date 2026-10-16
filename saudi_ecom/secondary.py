@@ -290,7 +290,7 @@ def unresolved_targets(con, per_ref=2):
     """Brand refs the audit left unresolved: their existing non-verified candidates (Saudi-path keys first), else root domains."""
     seen = {r[0] for r in con.execute("SELECT key FROM secondary_evidence")}
     rows = []
-    for ref_id, name, doms in con.execute("SELECT ref_id, name, domains FROM reference_stores WHERE kind='brand' AND status='unresolved'").fetchall():
+    for ref_id, name, doms in con.execute("SELECT ref_id, name, domains FROM reference_stores WHERE kind IN ('brand','mall') AND status='unresolved'").fetchall():
         ds = doms.split()
         if not ds:
             continue
@@ -321,7 +321,7 @@ def targets(con, keys, limit):
         cond = " OR ".join("v.reason LIKE ?" for _ in SECONDARY_REASONS)
         rows = con.execute(f"""SELECT DISTINCT ru.key, coalesce(ru.final_url, ru.url), r.name, r.domains FROM reference_urls ru
             JOIN reference_stores r ON r.ref_id=ru.ref_id JOIN candidates c ON c.key=ru.key LEFT JOIN verifications v ON v.key=ru.key
-            WHERE r.kind='brand' AND c.status IN ('unverified','rejected') AND (v.key IS NULL OR {cond})
+            WHERE r.kind IN ('brand','mall') AND c.status IN ('unverified','rejected') AND (v.key IS NULL OR {cond})
             AND ru.key NOT IN (SELECT key FROM secondary_evidence) LIMIT ?""", (*SECONDARY_REASONS, limit)).fetchall()
         rows += unresolved_targets(con)
     return [{"key": k, "url": u if u.startswith("http") else "https://" + u, "name": n or k, "domains": (d or "").split()} for k, u, n, d in rows if k]

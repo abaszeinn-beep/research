@@ -275,7 +275,7 @@ async def resolve(con, kinds, limit, use_bing, use_cdx):
 async def retry_none(con):
     """Second pass for refs where live variants found nothing (often geo-redirects from this non-Saudi VM):
     look for recent archived captures under Saudi paths of every known domain."""
-    refs = con.execute("SELECT r.ref_id, r.domains FROM reference_stores r JOIN reference_urls u ON u.ref_id=r.ref_id AND u.via='none' WHERE r.kind='brand'").fetchall()
+    refs = con.execute("SELECT r.ref_id, r.domains FROM reference_stores r JOIN reference_urls u ON u.ref_id=r.ref_id AND u.via='none' WHERE r.kind IN ('brand','mall')").fetchall()
     print(f"[reference] cdx retry for {len(refs)} refs", flush=True)
     sem = asyncio.Semaphore(4)
     found = 0
@@ -297,6 +297,40 @@ async def retry_none(con):
     print(f"[reference] cdx retry found {found}/{len(refs)}", flush=True)
 
 
+MALL_TSV = os.path.join(HERE, "data", "mall_tenants.tsv")
+
+
+def load_malls(con):
+    """Mall tenant directories: tenants matching a brand ref add the mall as a source; the rest become kind='mall' refs."""
+    brands = con.execute("SELECT ref_id, name, domains, sources FROM reference_stores WHERE kind IN ('brand','mall')").fetchall()
+    index = {}
+    for ref_id, name, doms, _ in brands:
+        for part in name.split(":")[-1].split("/"):
+            index.setdefault(_norm(part), ref_id)
+        for d in doms.split():
+            index.setdefault(_norm(d.split(".")[0]), ref_id)
+    merged = new = 0
+    with open(MALL_TSV, encoding="utf-8") as fh:
+        for line in fh:
+            if line.startswith("#") or not line.strip():
+                continue
+            slug, name, cat, src = line.rstrip("\n").split("\t")
+            srcs = [s.strip() for s in src.split("|")]
+            ref_id = index.get(_norm(name)) or index.get(_norm(slug))
+            if ref_id:
+                old = json.loads(con.execute("SELECT sources FROM reference_stores WHERE ref_id=?", (ref_id,)).fetchone()[0] or "[]")
+                con.execute("UPDATE reference_stores SET sources=? WHERE ref_id=?",
+                            (json.dumps(old + [s for s in srcs if s not in old], ensure_ascii=False), ref_id))
+                merged += 1
+                continue
+            label = slug.replace("-", "")
+            doms = f"{label}.com {label}.sa {label}.com.sa"
+            upsert(con, name, cat or "Fashion & Apparel", "medium", doms, srcs + ["domains guessed from tenant name"], None, "mall")
+            new += 1
+    con.commit()
+    print(f"[malls] merged into existing refs: {merged}, new mall refs: {new}")
+
+
 APPSTORE_GENRES = {"Shopping", "Food & Drink", "Lifestyle", "Health & Fitness", "Medical"}
 
 
@@ -308,7 +342,7 @@ def appstore_domains(con, limit=1000):
     """Official storefront domains from the Saudi App Store (iTunes Search API sellerUrl) for brands with no
     working Saudi storefront yet; matched refs get the new domains and are queued for resolve again."""
     from .common import MARKETPLACE_ROOTS, NON_STORE_ROOTS
-    refs = con.execute("SELECT ref_id, name, domains, sources FROM reference_stores WHERE kind='brand' AND status IN ('excluded','unresolved') "
+    refs = con.execute("SELECT ref_id, name, domains, sources FROM reference_stores WHERE kind IN ('brand','mall') AND status IN ('excluded','unresolved') "
                        "AND reason NOT LIKE 'excluded: marketplace%' LIMIT ?", (limit,)).fetchall()
     print(f"[appstore] {len(refs)} refs", flush=True)
     added = 0
@@ -509,7 +543,7 @@ def audit(con, previous_csv=None):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["load", "resolve", "retry-none", "appstore", "link", "audit"])
+    ap.add_argument("cmd", choices=["load", "load-malls", "resolve", "retry-none", "appstore", "link", "audit"])
     ap.add_argument("--kinds", default="brand")
     ap.add_argument("--limit", type=int, default=100000)
     ap.add_argument("--no-bing", action="store_true")
@@ -520,6 +554,8 @@ if __name__ == "__main__":
         load(con)
     elif a.cmd == "resolve":
         asyncio.run(resolve(con, a.kinds.split(","), a.limit, not a.no_bing, not a.no_cdx))
+    elif a.cmd == "load-malls":
+        load_malls(con)
     elif a.cmd == "appstore":
         appstore_domains(con, a.limit)
     elif a.cmd == "retry-none":

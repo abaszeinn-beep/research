@@ -190,8 +190,8 @@ def main():
     rcon = reference.connect()
     ref_rows = reference.audit(rcon, PREVIOUS_CSV)
     ref_df = pd.DataFrame(ref_rows)
-    audit_df = ref_df[ref_df.kind == "brand"] if len(ref_df) else ref_df
-    audit_df = pd.concat([audit_df, ref_df[(ref_df.kind != "brand") & ref_df.status.str.startswith("in_directory")]], ignore_index=True) if len(ref_df) else ref_df
+    audit_df = ref_df[ref_df.kind.isin(["brand", "mall"])] if len(ref_df) else ref_df
+    audit_df = pd.concat([audit_df, ref_df[~ref_df.kind.isin(["brand", "mall"]) & ref_df.status.str.startswith("in_directory")]], ignore_index=True) if len(ref_df) else ref_df
     audit_sheet = pd.DataFrame({
         "Reference Store": audit_df.name, "Tier": audit_df.tier, "Category": audit_df.category,
         "Reference Source(s)": audit_df.sources, "Tranco Rank": audit_df.tranco_rank,
