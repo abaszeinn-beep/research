@@ -513,10 +513,11 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             product_names = product_names + pnames[:60]
     svc_share = 0.0
     if pnames:
-        svc = sum(1 for n in pnames if S.SERVICE_NAME.search(n) or S.DIGITAL.search(n))
+        hits = [n for n in pnames if S.SERVICE_NAME.search(n) or S.DIGITAL.search(n)]
+        svc = len(hits)
         svc_share = svc / len(pnames)
         if len(pnames) >= 3 and svc_share >= 0.5:
-            return done("rejected", f"mostly_services_or_digital_by_product_names ({svc}/{len(pnames)})")
+            return done("rejected", f"mostly_services_or_digital_by_product_names ({svc}/{len(pnames)}; e.g. {' / '.join(h[:40] for h in hits[:3])})")
     m_org = S.SERVICE_ORG.search(res.get("store_name") or "")
     if m_org and (physical is None or svc_share >= 0.25 or len(pnames) < 3):
         return done("unverified", f"service_style_store_name (manual review): {m_org.group(0)}; service-like products {svc_share:.0%}")
