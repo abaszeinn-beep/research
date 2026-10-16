@@ -1,0 +1,427 @@
+# name	category	tier	domains (space separated; global + known Saudi)	source
+# source tags: user_brief = named in the task brief; wikipedia:<page> = listed on that Wikipedia page;
+# analyst_seed = analyst brand knowledge (candidate only — status comes from live/secondary verification).
+# Tranco ranks (list Y8JGG, 2026-10-15) are attached automatically by saudi_ecom.reference.
+Jarir Bookstore	Books & Stationery	major	jarir.com	user_brief
+eXtra	Computers & Electronics	major	extra.com extrastores.com	user_brief
+SACO	Home Improvement & Hardware	major	saco.sa	user_brief
+Almanea	Computers & Electronics	major	almanea.sa	user_brief
+Tamkeen	Mobiles & Accessories	major	tamkeen.com.sa tamkeenstores.com.sa	user_brief
+Virgin Megastore	Computers & Electronics	major	virginmegastore.sa virginmegastore.com	user_brief
+Abyat	Home Improvement & Hardware	major	abyat.com	user_brief
+Nice One	Beauty & Cosmetics	major	niceonesa.com	user_brief
+Golden Scent	Perfumes & Oud	major	goldenscent.com	user_brief
+Namshi	Fashion & Apparel	major	namshi.com	user_brief
+Ounass	Fashion & Apparel	major	ounass.sa ounass.com	user_brief
+6th Street	Fashion & Apparel	major	6thstreet.com	user_brief
+Sivvi	Fashion & Apparel	major	sivvi.com	user_brief
+Mumzworld	Baby & Maternity	major	mumzworld.com	user_brief
+Nana	Grocery & Food	major	nana.sa	user_brief
+Ninja	Grocery & Food	major	ninja.sa ananinja.com	user_brief
+Amazon.sa	Department Store / General	major	amazon.sa	user_brief
+noon	Department Store / General	major	noon.com	user_brief
+Arabian Oud	Perfumes & Oud	major	arabianoud.com	user_brief
+Abdul Samad Al Qurashi	Perfumes & Oud	major	asqgrp.com abdulsamadalqurashi.com	user_brief
+Ajmal Perfumes	Perfumes & Oud	major	ajmalperfume.com ajmal.com	user_brief
+Rasasi	Perfumes & Oud	major	rasasi.com	user_brief
+Lomar	Fashion - Men	major	lomar.com lomar.sa	user_brief
+Ghawali	Perfumes & Oud	medium	ghawali.com	user_brief
+Asateel	Perfumes & Oud	medium	asateel.com	user_brief
+Carrefour KSA	Grocery & Food	major	carrefourksa.com	user_brief
+BinDawood	Grocery & Food	major	bindawood.com	user_brief
+Danube	Grocery & Food	major	danube.sa	user_brief
+Othaim Markets	Grocery & Food	major	othaimmarkets.com	user_brief
+Panda	Grocery & Food	major	panda.com.sa	user_brief
+Tamimi Markets	Grocery & Food	major	tamimimarkets.com	user_brief
+LuLu Hypermarket	Grocery & Food	major	luluhypermarket.com	user_brief
+Nahdi	Pharmacy & Wellness	major	nahdionline.com	user_brief
+Al-Dawaa	Pharmacy & Wellness	major	al-dawaa.com	user_brief
+Whites Pharmacy	Pharmacy & Wellness	medium	whites.sa whitespharmacy.com	user_brief
+United Pharmacies	Pharmacy & Wellness	medium	united-pharmacies.com	user_brief
+IKEA	Furniture	major	ikea.com	user_brief
+ACE Hardware	Home Improvement & Hardware	major	aceuae.com acehardware.sa ace-ksa.com	user_brief
+Centrepoint	Department Store / General	major	centrepointstores.com	user_brief
+Max Fashion	Fashion & Apparel	major	maxfashion.com	user_brief
+Home Centre	Furniture	major	homecentre.com	user_brief
+Babyshop	Fashion - Kids	major	babyshopstores.com	user_brief
+Splash	Fashion & Apparel	major	splashfashions.com	user_brief
+Level Shoes	Shoes	major	levelshoes.com	user_brief
+Tryano	Department Store / General	medium	tryano.com	user_brief
+Faces	Beauty & Cosmetics	major	faces.com wojooh.com	user_brief
+Nike	Fashion - Sportswear & Streetwear	major	nike.com nike.sa	user_brief
+Adidas	Fashion - Sportswear & Streetwear	major	adidas.com.sa adidas.com adidas.sa	user_brief
+Puma	Fashion - Sportswear & Streetwear	major	puma.com	user_brief
+Skechers	Shoes	major	skechers.com skechers.com.sa	user_brief
+Under Armour	Fashion - Sportswear & Streetwear	major	underarmour.com underarmour.com.sa	user_brief
+Sephora	Beauty & Cosmetics	major	sephora.sa sephora.com	user_brief
+MAC Cosmetics	Beauty & Cosmetics	major	maccosmetics.com mac-cosmetics.sa maccosmetics.com.sa	user_brief
+Bath & Body Works	Personal Care & Grooming	major	bathandbodyworks.com.sa	user_brief
+Victoria's Secret	Fashion - Women	major	victoriassecret.com.sa	user_brief
+Huda Beauty	Beauty & Cosmetics	major	hudabeauty.com	user_brief
+Kayali	Perfumes & Oud	medium	kayali.com	user_brief
+Apple	Computers & Electronics	major	apple.com	user_brief
+Samsung	Mobiles & Accessories	major	samsung.com	user_brief
+Huawei	Mobiles & Accessories	major	huawei.com consumer.huawei.com	user_brief
+Xiaomi	Mobiles & Accessories	major	mi.com	user_brief
+Dyson	Home Appliances	major	dyson.com dyson.sa	user_brief
+Logitech	Computers & Electronics	medium	logitech.com	user_brief
+Toys R Us	Toys & Hobbies	major	toysrusmena.com toysrus.sa	user_brief
+Hamleys	Toys & Hobbies	major	hamleys.com hamleys.sa	user_brief
+LEGO	Toys & Hobbies	major	lego.com	user_brief
+Zara	Fashion & Apparel	major	zara.com	user_brief
+H&M	Fashion & Apparel	major	hm.com	user_brief
+Centrepoint Lifestyle	Department Store / General	medium	lifestyleshops.com	wikipedia:Landmark Group
+Shoe Mart	Shoes	medium	shoemartstores.com	wikipedia:Landmark Group
+Home Box	Furniture	medium	homeboxstores.com	wikipedia:Landmark Group
+Styli	Fashion & Apparel	major	stylishop.com styli.com	wikipedia:Landmark Group
+Emax	Computers & Electronics	medium	emaxme.com	wikipedia:Landmark Group
+Iconic	Fashion & Apparel	medium	iconicstores.com	wikipedia:Landmark Group
+Shoexpress	Shoes	medium	shoexpress.com	wikipedia:Landmark Group
+Massimo Dutti	Fashion & Apparel	major	massimodutti.com	analyst_seed
+Pull&Bear	Fashion & Apparel	major	pullandbear.com	analyst_seed
+Bershka	Fashion & Apparel	major	bershka.com	analyst_seed
+Stradivarius	Fashion - Women	major	stradivarius.com	analyst_seed
+Oysho	Fashion - Women	medium	oysho.com	analyst_seed
+Zara Home	Home Decor	medium	zarahome.com	analyst_seed
+Lefties	Fashion & Apparel	medium	lefties.com	analyst_seed
+American Eagle	Fashion & Apparel	major	americaneagle.com.sa aeo.com.sa	analyst_seed
+Gap	Fashion & Apparel	major	gap.com.sa	analyst_seed
+Banana Republic	Fashion & Apparel	medium	bananarepublic.com.sa	analyst_seed
+Old Navy	Fashion & Apparel	medium	oldnavy.com.sa	analyst_seed
+Mango	Fashion & Apparel	major	mango.com shop.mango.com	analyst_seed
+Marks & Spencer	Department Store / General	major	marksandspencer.sa marksandspencer.com	analyst_seed
+Debenhams	Department Store / General	medium	debenhams.com.sa debenhams.com	analyst_seed
+Bloomingdale's	Department Store / General	medium	bloomingdales.sa	analyst_seed
+Harvey Nichols Riyadh	Department Store / General	medium	harveynichols.com.sa harveynichols.com	analyst_seed
+Saks Fifth Avenue	Department Store / General	medium	saksfifthavenue.sa saksfifthavenue.com	analyst_seed
+Tommy Hilfiger	Fashion & Apparel	medium	tommy.com	analyst_seed
+Calvin Klein	Fashion & Apparel	medium	calvinklein.com calvinklein.com.sa	analyst_seed
+Lacoste	Fashion & Apparel	medium	lacoste.com	analyst_seed
+Levi's	Fashion & Apparel	medium	levi.com levi.com.sa	analyst_seed
+Guess	Fashion & Apparel	medium	guess.com guess.sa	analyst_seed
+Charles & Keith	Bags & Luggage	medium	charleskeith.com	analyst_seed
+Aldo	Shoes	medium	aldoshoes.com aldoshoes.com.sa	analyst_seed
+Nine West	Shoes	medium	ninewest.com.sa	analyst_seed
+Steve Madden	Shoes	medium	stevemadden.com.sa stevemadden.sa	analyst_seed
+Clarks	Shoes	medium	clarks.com clarks.sa	analyst_seed
+Ecco	Shoes	medium	ecco.com ecco.com.sa	analyst_seed
+Crocs	Shoes	medium	crocs.com crocs.sa crocs.com.sa	analyst_seed
+New Balance	Shoes	medium	newbalance.com.sa newbalance.com	analyst_seed
+Asics	Fashion - Sportswear & Streetwear	medium	asics.com	analyst_seed
+Reebok	Fashion - Sportswear & Streetwear	medium	reebok.com.sa reebok.com	analyst_seed
+Converse	Shoes	medium	converse.com converse.com.sa	analyst_seed
+Vans	Shoes	medium	vans.com vans.com.sa	analyst_seed
+The North Face	Sports, Fitness & Outdoor	medium	thenorthface.com thenorthface.com.sa	analyst_seed
+Columbia	Sports, Fitness & Outdoor	medium	columbia.com columbiasportswear.com.sa	analyst_seed
+Sun & Sand Sports	Sports, Fitness & Outdoor	major	sunandsandsports.com	analyst_seed
+Athlete's Co	Sports, Fitness & Outdoor	medium	athletesco.com	analyst_seed
+Al Mutlaq Sports / Sports Corner	Sports, Fitness & Outdoor	medium	sportscorner.com.sa	analyst_seed
+Decathlon	Sports, Fitness & Outdoor	major	decathlon.sa	analyst_seed
+SSS Footlocker	Shoes	medium	footlocker.sa footlocker.com.sa	analyst_seed
+Foot Locker	Shoes	medium	footlocker.com	analyst_seed
+Sporter	Sports, Fitness & Outdoor	medium	sporter.com	analyst_seed
+Fitness Time Pro shop	Sports, Fitness & Outdoor	medium	fitnesstime.com.sa	analyst_seed
+Lululemon	Fashion - Sportswear & Streetwear	medium	lululemon.com lululemon.sa	analyst_seed
+Gymshark	Fashion - Sportswear & Streetwear	medium	gymshark.com	analyst_seed
+Hollister	Fashion & Apparel	medium	hollisterco.com.sa	analyst_seed
+Abercrombie & Fitch	Fashion & Apparel	medium	abercrombie.com.sa	analyst_seed
+River Island	Fashion & Apparel	medium	riverisland.com	analyst_seed
+Next	Fashion & Apparel	major	next.com.sa next.sa	analyst_seed
+Mothercare	Baby & Maternity	major	mothercare.com.sa	analyst_seed
+Pottery Barn Kids	Furniture	medium	potterybarnkids.com.sa	analyst_seed
+Pottery Barn	Furniture	medium	potterybarn.com.sa	analyst_seed
+West Elm	Furniture	medium	westelm.com.sa	analyst_seed
+Williams-Sonoma	Kitchenware & Tableware	medium	williams-sonoma.com.sa	analyst_seed
+Crate & Barrel	Home Decor	medium	crateandbarrel.com.sa	analyst_seed
+H&M Home	Home Decor	medium	hm.com	analyst_seed
+The Body Shop	Personal Care & Grooming	medium	thebodyshop.com.sa thebodyshop.com	analyst_seed
+Boots	Pharmacy & Wellness	medium	boots.com.sa	analyst_seed
+Charlotte Tilbury	Beauty & Cosmetics	medium	charlottetilbury.com	analyst_seed
+Clinique	Beauty & Cosmetics	medium	clinique.com clinique.com.sa	analyst_seed
+Estee Lauder	Beauty & Cosmetics	medium	esteelauder.com esteelauder.com.sa esteelauder.me	analyst_seed
+L'Occitane	Personal Care & Grooming	medium	loccitane.com loccitane.sa	analyst_seed
+Kiko Milano	Beauty & Cosmetics	medium	kikocosmetics.com	analyst_seed
+NYX Cosmetics	Beauty & Cosmetics	medium	nyxcosmetics.com nyxcosmetics.sa	analyst_seed
+Bobbi Brown	Beauty & Cosmetics	medium	bobbibrown.com bobbibrown.com.sa	analyst_seed
+Benefit Cosmetics	Beauty & Cosmetics	medium	benefitcosmetics.com	analyst_seed
+Fenty Beauty	Beauty & Cosmetics	medium	fentybeauty.com	analyst_seed
+The Ordinary / Deciem	Beauty & Cosmetics	medium	theordinary.com	analyst_seed
+Dior	Perfumes & Oud	medium	dior.com	analyst_seed
+Chanel	Perfumes & Oud	medium	chanel.com	analyst_seed
+Tom Ford Beauty	Perfumes & Oud	medium	tomford.com tomfordbeauty.com	analyst_seed
+Jo Malone	Perfumes & Oud	medium	jomalone.com jomalone.com.sa	analyst_seed
+Swiss Arabian	Perfumes & Oud	medium	swissarabian.com	analyst_seed
+Deraah	Perfumes & Oud	medium	deraah.com	analyst_seed
+Al Majed Oud	Perfumes & Oud	major	almajedoud.com almajed4oud.com	analyst_seed
+Ibraheem Al Qurashi	Perfumes & Oud	major	ibraheemalqurashi.com	analyst_seed
+Al Haramain Perfumes	Perfumes & Oud	medium	alharamainperfumes.com	analyst_seed
+Lattafa	Perfumes & Oud	medium	lattafa.com lattafa-perfumes.com	analyst_seed
+Abdul Samad Al Qurashi (ASQ online)	Perfumes & Oud	medium	asq.com.sa	analyst_seed
+Oud Elite	Perfumes & Oud	medium	oudelite.com	analyst_seed
+Nabeel Perfumes	Perfumes & Oud	medium	nabeelperfumes.com	analyst_seed
+Gissah	Perfumes & Oud	medium	gissah.com	analyst_seed
+Anfas Alkhaleej	Perfumes & Oud	medium	anfasalkhaleej.com	analyst_seed
+Reef Perfumes	Perfumes & Oud	medium	reefperfumes.com	analyst_seed
+Thameen	Perfumes & Oud	medium	thameen.com	analyst_seed
+Faris Perfumes	Perfumes & Oud	medium	faris-perfumes.com	analyst_seed
+Lazurde	Jewelry & Watches	major	lazurde.com	analyst_seed
+Damas	Jewelry & Watches	medium	damasjewellery.com	analyst_seed
+Tanishq	Jewelry & Watches	medium	tanishq.co.in	analyst_seed
+Pandora	Jewelry & Watches	medium	pandora.net pandora.sa	analyst_seed
+Swarovski	Jewelry & Watches	medium	swarovski.com	analyst_seed
+Cartier	Jewelry & Watches	medium	cartier.com	analyst_seed
+Rivoli	Jewelry & Watches	medium	rivoligroup.com rivoli.sa	analyst_seed
+Al Hassan Watches	Jewelry & Watches	medium	alhassanwatches.com	analyst_seed
+Casio	Jewelry & Watches	medium	casio.com	analyst_seed
+Alfardan Jewellery	Jewelry & Watches	medium	alfardanjewellery.com	analyst_seed
+Malabar Gold & Diamonds	Jewelry & Watches	medium	malabargoldanddiamonds.com	analyst_seed
+Joyalukkas	Jewelry & Watches	medium	joyalukkas.com	analyst_seed
+L'azurde Miss L	Jewelry & Watches	medium	missl.com	analyst_seed
+Samsonite	Bags & Luggage	medium	samsonite.com.sa	analyst_seed
+American Tourister	Bags & Luggage	medium	americantourister.com.sa	analyst_seed
+Michael Kors	Bags & Luggage	medium	michaelkors.com michaelkors.sa	analyst_seed
+Coach	Bags & Luggage	medium	coach.com coach.sa	analyst_seed
+Tumi	Bags & Luggage	medium	tumi.com tumi.sa	analyst_seed
+Parfois	Bags & Luggage	medium	parfois.com	analyst_seed
+Accessorize	Bags & Luggage	medium	accessorize.com accessorize.com.sa	analyst_seed
+Vogacloset	Fashion - Women	medium	vogacloset.com	analyst_seed
+Shein	Fashion & Apparel	major	shein.com sa.shein.com ar.shein.com	analyst_seed
+Trendyol	Department Store / General	major	trendyol.com trendyol.sa	analyst_seed
+Fordeal	Department Store / General	medium	fordeal.com	analyst_seed
+Temu	Department Store / General	major	temu.com	analyst_seed
+AliExpress	Department Store / General	major	aliexpress.com	analyst_seed
+Ubuy	Department Store / General	medium	ubuy.com.sa	analyst_seed
+Desertcart	Department Store / General	medium	desertcart.sa	analyst_seed
+Haraj	Department Store / General	major	haraj.com.sa	analyst_seed
+OpenSooq	Department Store / General	major	opensooq.com	analyst_seed
+Floward	Flowers, Gifts & Party	major	floward.com	analyst_seed
+Bloomr / Flowers Bloom	Flowers, Gifts & Party	medium	flowerbloom.com.sa	analyst_seed
+Raseel	Flowers, Gifts & Party	medium	raseel.gift	analyst_seed
+Bateel	Coffee, Tea & Dates	major	bateel.com	analyst_seed
+Patchi	Chocolates & Sweets	major	patchi.com	analyst_seed
+Saadeddin Pastry	Chocolates & Sweets	medium	saadeddin.com	analyst_seed
+Al Rifai	Grocery & Food	medium	alrifai.com alrifai.sa	analyst_seed
+Tamr Al Madinah / Dates	Coffee, Tea & Dates	medium	tamrah.com	analyst_seed
+Siafa Dates	Coffee, Tea & Dates	medium	siafadates.com	analyst_seed
+Mitts Dates / Milaf	Coffee, Tea & Dates	medium	milaf.sa	analyst_seed
+Dukan Al Dhahab Coffee	Coffee, Tea & Dates	medium	dukanalqahwa.com	analyst_seed
+Barn's	Coffee, Tea & Dates	medium	barns.com.sa	analyst_seed
+Camel Step	Coffee, Tea & Dates	medium	camelstep.com	analyst_seed
+Half Million	Coffee, Tea & Dates	medium	halfmillion.coffee	analyst_seed
+Nespresso	Coffee, Tea & Dates	major	nespresso.com	analyst_seed
+Starbucks At Home / Dose Cafe	Coffee, Tea & Dates	medium	dosecafe.com	analyst_seed
+Kiffa Coffee	Coffee, Tea & Dates	medium	kiffa.sa	analyst_seed
+Elixir Bunn	Coffee, Tea & Dates	medium	elixirbunn.com	analyst_seed
+Lindt	Chocolates & Sweets	medium	lindt.sa lindt-spruengli.com	analyst_seed
+Godiva	Chocolates & Sweets	medium	godiva.com godivachocolates.sa	analyst_seed
+Bostani Chocolatier	Chocolates & Sweets	medium	bostani.com.sa	analyst_seed
+Tamimi Online	Grocery & Food	medium	shop.tamimimarkets.com	analyst_seed
+Farm Superstores	Grocery & Food	major	farm.com.sa	analyst_seed
+Manuel Market	Grocery & Food	medium	manuelmarket.com	analyst_seed
+Nesto	Grocery & Food	medium	nestogroup.com	analyst_seed
+Al Raya	Grocery & Food	medium	alraya.com.sa	analyst_seed
+Hyper Panda	Grocery & Food	medium	panda.com.sa	analyst_seed
+Jahez Grocery	Grocery & Food	medium	jahez.net	analyst_seed
+HungerStation Mart	Grocery & Food	medium	hungerstation.com	analyst_seed
+Talabat Mart	Grocery & Food	medium	talabat.com	analyst_seed
+Sary	Wholesale & B2B	medium	sary.com	analyst_seed
+Retailo	Wholesale & B2B	medium	retailo.co	analyst_seed
+Zid store showcase	Department Store / General	medium	zid.sa	analyst_seed
+Salla platform	Department Store / General	medium	salla.com	analyst_seed
+Samsung SA	Mobiles & Accessories	major	samsung.com	analyst_seed
+Apple Store SA	Mobiles & Accessories	major	apple.com	analyst_seed
+OPPO	Mobiles & Accessories	medium	oppo.com	analyst_seed
+Honor	Mobiles & Accessories	medium	honor.com	analyst_seed
+Vivo	Mobiles & Accessories	medium	vivo.com	analyst_seed
+Realme	Mobiles & Accessories	medium	realme.com	analyst_seed
+Nokia	Mobiles & Accessories	medium	nokia.com	analyst_seed
+Anker	Mobiles & Accessories	medium	anker.com ankerstore.sa anker.sa	analyst_seed
+Belkin	Mobiles & Accessories	medium	belkin.com	analyst_seed
+Mobily shop	Mobiles & Accessories	medium	mobily.com.sa	analyst_seed
+STC shop	Mobiles & Accessories	major	stc.com.sa	analyst_seed
+Zain KSA shop	Mobiles & Accessories	medium	sa.zain.com	analyst_seed
+Mobile Zone	Mobiles & Accessories	medium	mobilezone.com.sa	analyst_seed
+Al Jeraisy (JCC)	Computers & Electronics	medium	jcc.com.sa	analyst_seed
+Black Box	Computers & Electronics	medium	blackbox.com.sa	analyst_seed
+Dell	Computers & Electronics	medium	dell.com	analyst_seed
+HP	Computers & Electronics	medium	hp.com	analyst_seed
+Lenovo	Computers & Electronics	medium	lenovo.com	analyst_seed
+Asus	Computers & Electronics	medium	asus.com	analyst_seed
+Acer	Computers & Electronics	medium	acer.com	analyst_seed
+Microsoft Store	Computers & Electronics	medium	microsoft.com	analyst_seed
+Sony	Computers & Electronics	medium	sony.com sony-mea.com	analyst_seed
+LG	Home Appliances	major	lg.com	analyst_seed
+Bose	Computers & Electronics	medium	bose.com bose.sa	analyst_seed
+JBL	Computers & Electronics	medium	jbl.com jbl.sa	analyst_seed
+Canon	Computers & Electronics	medium	canon-me.com	analyst_seed
+Sharaf DG	Computers & Electronics	major	sharafdg.com	analyst_seed
+Xcite	Computers & Electronics	medium	xcite.com.sa	analyst_seed
+Al Khunaizan	Home Appliances	medium	alkhunaizan.sa	analyst_seed
+Al Hassan Shaker / Hassan Shaker	Home Appliances	medium	shaker.com.sa	analyst_seed
+Abdul Latif Jameel Electronics	Home Appliances	medium	aljelectronics.com	analyst_seed
+Al Sayer / Toshiba	Home Appliances	medium	toshiba.sa	analyst_seed
+Philips	Home Appliances	medium	philips.com philips.sa	analyst_seed
+Braun	Personal Care & Grooming	medium	braun.com	analyst_seed
+Tefal	Kitchenware & Tableware	medium	tefal.com tefal.sa	analyst_seed
+Moulinex	Home Appliances	medium	moulinex.com moulinex.sa	analyst_seed
+Kenwood	Home Appliances	medium	kenwoodworld.com kenwood.sa	analyst_seed
+Black+Decker	Home Appliances	medium	blackanddecker.sa blackanddecker.com	analyst_seed
+Bosch Home	Home Appliances	medium	bosch-home.com	analyst_seed
+Siemens Home	Home Appliances	medium	siemens-home.bsh-group.com	analyst_seed
+Midea	Home Appliances	medium	midea.com midea.sa	analyst_seed
+Gree	Home Appliances	medium	gree.com	analyst_seed
+Haier	Home Appliances	medium	haier.com	analyst_seed
+Hisense	Home Appliances	medium	hisense.com	analyst_seed
+Sharp	Home Appliances	medium	sharp-ksa.com	analyst_seed
+Nikai	Home Appliances	medium	nikai.com	analyst_seed
+PlayStation	Gaming	medium	playstation.com	analyst_seed
+Games 2 Egypt / Geekay	Gaming	medium	geekay.com	analyst_seed
+Razer	Gaming	medium	razer.com	analyst_seed
+Pan Emirates	Furniture	medium	panemirates.com	analyst_seed
+Homes R Us	Furniture	medium	homesrus.com	analyst_seed
+Midas Furniture	Furniture	medium	midasonline.com.sa midas.sa	analyst_seed
+Al Rugaib Furniture	Furniture	medium	alrugaib.com	analyst_seed
+Hayat Furniture	Furniture	medium	hayatfurniture.com	analyst_seed
+Idea / Idea Furniture	Furniture	medium	idea.com.sa	analyst_seed
+Ashley HomeStore	Furniture	medium	ashleyhomestore.com.sa ashleyfurniture.com.sa	analyst_seed
+Danube Home	Furniture	major	danubehome.com	analyst_seed
+2XL Furniture	Furniture	medium	2xlhome.com	analyst_seed
+Homzmart	Furniture	medium	homzmart.com	analyst_seed
+JYSK	Bedding, Mattresses & Textiles	medium	jysk.com.sa jysk.sa	analyst_seed
+Sleep High	Bedding, Mattresses & Textiles	medium	sleephigh.com.sa	analyst_seed
+Simmons	Bedding, Mattresses & Textiles	medium	simmons.com.sa	analyst_seed
+Sleep Comfort	Bedding, Mattresses & Textiles	medium	sleepcomfort.sa	analyst_seed
+Al Mutlaq Furniture	Furniture	medium	almutlaqfurniture.com	analyst_seed
+Mikyajy	Beauty & Cosmetics	medium	mikyajy.com	analyst_seed
+Wojooh	Beauty & Cosmetics	medium	wojooh.com	analyst_seed
+Boutiqaat	Beauty & Cosmetics	medium	boutiqaat.com	analyst_seed
+Vavaa	Beauty & Cosmetics	medium	vavaa.sa vavaa.com	analyst_seed
+Dr. Nutrition	Pharmacy & Wellness	medium	dr-nutrition.com	analyst_seed
+iHerb	Pharmacy & Wellness	medium	iherb.com	analyst_seed
+Al Nahdi Care	Pharmacy & Wellness	medium	nahdi.sa	analyst_seed
+Lemon Pharmacy	Pharmacy & Wellness	medium	lemonpharmacy.com lemon.sa	analyst_seed
+Orange Pharmacies	Pharmacy & Wellness	medium	orangepharmacies.com	analyst_seed
+Kunooz Pharmacies	Pharmacy & Wellness	medium	kunooz.com	analyst_seed
+Aster Pharmacy	Pharmacy & Wellness	medium	myaster.sa	analyst_seed
+Magrabi Optical	Healthcare & Medical Equipment	major	magrabi.com magrabioptical.com	analyst_seed
+Eyewa	Healthcare & Medical Equipment	major	eyewa.com	analyst_seed
+Nazzarti	Healthcare & Medical Equipment	medium	nazzarti.com.sa	analyst_seed
+Al Jaber Optical	Healthcare & Medical Equipment	medium	aljaberoptical.com	analyst_seed
+Optic Center / Barakat Optical	Healthcare & Medical Equipment	medium	barakatoptical.com	analyst_seed
+Yateem Optician	Healthcare & Medical Equipment	medium	yateemoptician.com	analyst_seed
+Omron	Healthcare & Medical Equipment	medium	omron.sa	analyst_seed
+Medical supplies Medex	Healthcare & Medical Equipment	medium	medex.com.sa	analyst_seed
+Little Majlis / Fairy toys	Toys & Hobbies	medium	littlemajlis.com	analyst_seed
+Early Learning Centre	Toys & Hobbies	medium	elc.com.sa elc-sa.com	analyst_seed
+Babyshop online	Baby & Maternity	medium	babyshop.com	analyst_seed
+FirstCry	Baby & Maternity	major	firstcry.sa	analyst_seed
+Mamas & Papas	Baby & Maternity	medium	mamasandpapas.sa mamasandpapas.com	analyst_seed
+Chicco	Baby & Maternity	medium	chicco.sa chicco.com	analyst_seed
+Carter's	Fashion - Kids	medium	carters.com.sa	analyst_seed
+The Children's Place	Fashion - Kids	medium	childrensplace.sa childrensplace.com.sa	analyst_seed
+Okaidi	Fashion - Kids	medium	okaidi.sa okaidi.com	analyst_seed
+Mothercare online	Baby & Maternity	medium	mothercare.com.sa	analyst_seed
+Obeikan Bookstore	Books & Stationery	major	obeikanbookstore.com obeikan.com.sa	analyst_seed
+Jamalon	Books & Stationery	medium	jamalon.com	analyst_seed
+Virgin Books / Kinokuniya	Books & Stationery	medium	kinokuniya.com	analyst_seed
+Al Rushd Bookstore	Books & Stationery	medium	rushd.com.sa alrushd.com	analyst_seed
+Tashkeel / Faber-Castell	Books & Stationery	medium	faber-castell.sa	analyst_seed
+Maktabat Jarir business	Office Supplies	medium	jarirbusiness.com	analyst_seed
+Office Depot	Office Supplies	medium	officedepot.com.sa	analyst_seed
+Petsmart / Pet's Delight	Pets	medium	petsdelight.com	analyst_seed
+Pet Zone	Pets	medium	petzone.com.sa	analyst_seed
+Pet Arabia	Pets	medium	petarabia.com	analyst_seed
+Abdul Latif Jameel Toyota Parts	Automotive Parts & Accessories	medium	toyota.com.sa	analyst_seed
+Petromin	Automotive Parts & Accessories	medium	petromin.com	analyst_seed
+Carswitch / Partsouq	Automotive Parts & Accessories	medium	partsouq.com	analyst_seed
+Bridgestone / Al Jomaih	Automotive Parts & Accessories	medium	aljomaihtyres.com	analyst_seed
+Mobil 1 / Lucas Oil	Automotive Parts & Accessories	medium	lucasoil.sa	analyst_seed
+Al Mutlaq Auto Parts / Hyundai	Automotive Parts & Accessories	medium	hyundai.com	analyst_seed
+Home Depot SA / Mr. DIY	Home Improvement & Hardware	medium	mrdiy.com	analyst_seed
+Al Babtain Lighting	Lighting & Electrical	medium	albabtain.com	analyst_seed
+Philips Lighting / Signify	Lighting & Electrical	medium	lighting.philips.com	analyst_seed
+Saudi Ceramics	Building Materials	medium	saudiceramics.com	analyst_seed
+RAK Ceramics	Building Materials	medium	rakceramics.com	analyst_seed
+Al Fanar Electrical	Lighting & Electrical	medium	alfanar.com	analyst_seed
+Bosch Power Tools	Industrial & Tools	medium	bosch-pt.com	analyst_seed
+Makita	Industrial & Tools	medium	makita.sa	analyst_seed
+RS Components / Arduino SA	Electronic Components	medium	rs-online.com	analyst_seed
+Dar Al Salam / Islamic products	Religious Products	medium	darussalam.com	analyst_seed
+Abaya: Hessa Falasi	Fashion - Abayas & Modest	medium	hessafalasi.com	analyst_seed
+Abaya: Lomar Women	Fashion - Abayas & Modest	medium	lomar.com	analyst_seed
+Abaya: Mauzan	Fashion - Abayas & Modest	medium	mauzan.com	analyst_seed
+Abaya: Aab collection	Fashion - Abayas & Modest	medium	aabcollection.com	analyst_seed
+Abaya: Hanayen	Fashion - Abayas & Modest	medium	hanayen.com	analyst_seed
+Abaya: Kaafmeem	Fashion - Abayas & Modest	medium	kaafmeem.com	analyst_seed
+Thobe: Al Aseel	Fashion - Men	medium	alaseel.com	analyst_seed
+Thobe: Al Dafah	Fashion - Men	medium	aldafah.com	analyst_seed
+Shemagh: Al Ghutra Al Hamra / Yasaq	Fashion - Men	medium	yasaq.com	analyst_seed
+Fashion: Ashi Studio	Fashion - Women	medium	ashistudio.com	analyst_seed
+Fashion: Bambah	Fashion - Women	medium	bambahboutique.com	analyst_seed
+Fashion: Uniqlo	Fashion & Apparel	major	uniqlo.com uniqlo.sa	analyst_seed
+Fashion: LC Waikiki	Fashion & Apparel	major	lcwaikiki.sa lcw.com	analyst_seed
+Fashion: DeFacto	Fashion & Apparel	medium	defacto.com defacto.sa	analyst_seed
+Fashion: Koton	Fashion & Apparel	medium	koton.com	analyst_seed
+Fashion: Mothercare Kids	Fashion - Kids	medium	mothercare.com.sa	analyst_seed
+Fashion: R&B Fashion	Fashion & Apparel	medium	rnbfashion.com	analyst_seed
+Fashion: Redtag	Fashion & Apparel	major	redtag.sa redtagfashion.com	analyst_seed
+Fashion: Brands For Less	Fashion & Apparel	major	brandsforless.com	analyst_seed
+Fashion: Matalan	Fashion & Apparel	medium	matalan.sa matalan.co.uk	analyst_seed
+Fashion: Ounass men	Fashion - Men	medium	ounass.sa	analyst_seed
+Fashion: Jack & Jones	Fashion - Men	medium	jackjones.com jackjones.sa	analyst_seed
+Fashion: Celio	Fashion - Men	medium	celio.com celio.sa	analyst_seed
+Fashion: Giordano	Fashion & Apparel	medium	giordano.com.sa	analyst_seed
+Fashion: Massimo kids / Zara kids	Fashion - Kids	medium	zara.com	analyst_seed
+Fashion: Farfetch	Fashion & Apparel	medium	farfetch.com	analyst_seed
+Fashion: Net-a-Porter	Fashion & Apparel	medium	net-a-porter.com	analyst_seed
+Fashion: Modanisa	Fashion - Abayas & Modest	medium	modanisa.com	analyst_seed
+Fashion: Toby / Max Kids	Fashion - Kids	medium	maxfashion.com	analyst_seed
+Fashion: Selfridges / Harrods (intl)	Department Store / General	medium	harrods.com	analyst_seed
+Luxury: Louis Vuitton	Bags & Luggage	medium	louisvuitton.com	analyst_seed
+Luxury: Gucci	Fashion & Apparel	medium	gucci.com	analyst_seed
+Luxury: Burberry	Fashion & Apparel	medium	burberry.com	analyst_seed
+Luxury: Rolex (Al Hussaini)	Jewelry & Watches	medium	rolex.com	analyst_seed
+Luxury: Montblanc	Bags & Luggage	medium	montblanc.com	analyst_seed
+Luxury: Hugo Boss	Fashion - Men	medium	hugoboss.com hugoboss.sa	analyst_seed
+Luxury: Prada	Fashion & Apparel	medium	prada.com	analyst_seed
+Luxury: Balenciaga	Fashion & Apparel	medium	balenciaga.com	analyst_seed
+Luxury: Valentino	Fashion & Apparel	medium	valentino.com	analyst_seed
+Luxury: Dolce & Gabbana	Fashion & Apparel	medium	dolcegabbana.com	analyst_seed
+Luxury: Saint Laurent	Fashion & Apparel	medium	ysl.com	analyst_seed
+Luxury: Tiffany & Co	Jewelry & Watches	medium	tiffany.com tiffany.sa	analyst_seed
+Luxury: Bvlgari	Jewelry & Watches	medium	bulgari.com	analyst_seed
+Luxury: Givenchy	Fashion & Apparel	medium	givenchy.com	analyst_seed
+Kitchen: Le Creuset	Kitchenware & Tableware	medium	lecreuset.sa	analyst_seed
+Kitchen: Tupperware	Kitchenware & Tableware	medium	tupperware.sa	analyst_seed
+Kitchen: Royalford / Geepas	Kitchenware & Tableware	medium	royalford.sa geepas.com	analyst_seed
+Kitchen: Al Saif Gallery	Kitchenware & Tableware	major	alsaifgallery.com	analyst_seed
+Home: Chattels & More	Home Decor	medium	chattelsandmore.com	analyst_seed
+Home: H&M Home	Home Decor	medium	hm.com	analyst_seed
+Home: Abyat online	Home Decor	medium	abyat.com	analyst_seed
+Home: Al Jedaie / Tablecloths	Bedding, Mattresses & Textiles	medium	aljedaie.com	analyst_seed
+Home: Bedding: Bed Bath & Beyond SA	Bedding, Mattresses & Textiles	medium	bedbathandbeyond.com.sa	analyst_seed
+Cleaning: Al Mudhish / Clorox	Cleaning & Household Supplies	medium	almudhish.com	analyst_seed
+Cleaning: Fine Hygienic	Cleaning & Household Supplies	medium	finehygienicholding.com	analyst_seed
+Wholesale: Ogram / Wholesale	Wholesale & B2B	medium	ogram.com	analyst_seed
+Wholesale: Tradeling	Wholesale & B2B	medium	tradeling.com	analyst_seed
+Sports: Nike SA authorised (Level Shoes)	Shoes	medium	levelshoes.com	analyst_seed
+Sports: Adidas outlet	Fashion - Sportswear & Streetwear	medium	adidas.sa	analyst_seed
+Sports: Oakley	Sports, Fitness & Outdoor	medium	oakley.com	analyst_seed
+Sports: Shimano / bikes	Sports, Fitness & Outdoor	medium	shimano.com	analyst_seed
+Telecom: Jawwy / Virgin Mobile shop	Mobiles & Accessories	medium	virginmobile.sa	analyst_seed
+Electronics: Global Center / Gulf Pc	Computers & Electronics	medium	pccity.com.sa	analyst_seed
+Electronics: Alsaif Electronics	Computers & Electronics	medium	alsaifelectronics.com	analyst_seed
+Furniture: Saudi Furniture / Hommey	Furniture	medium	hommey.com	analyst_seed
+Furniture: Al Mufarrej	Furniture	medium	almufarrej.com	analyst_seed
+Furniture: Al Ghazzawi	Furniture	medium	ghazzawi.com	analyst_seed
+Grocery: Sadhan Markets	Grocery & Food	medium	sadhan.com.sa	analyst_seed
+Grocery: Al Sadhan Online	Grocery & Food	medium	alsadhan.com	analyst_seed
+Grocery: Lulu Saudi	Grocery & Food	major	luluhypermarket.com	analyst_seed
+Grocery: Al Muntazah	Grocery & Food	medium	almuntazah.com	analyst_seed
+Grocery: Al Marai shop	Grocery & Food	medium	almarai.com	analyst_seed
+Grocery: Sunbulah	Grocery & Food	medium	sunbulah.com	analyst_seed
+Grocery: Tanmiah / Butchers	Grocery & Food	medium	tanmiah.com	analyst_seed
+Grocery: Dates: Al Madina dates	Coffee, Tea & Dates	medium	madinadates.com	analyst_seed
+Water: Nova water	Grocery & Food	medium	nova.sa novawater.com	analyst_seed
+Water: Berain water	Grocery & Food	medium	berain.com.sa	analyst_seed
+Water: Hana water	Grocery & Food	medium	hanawater.com	analyst_seed
