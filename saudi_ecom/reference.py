@@ -437,9 +437,12 @@ EXCLUDE_REASONS = [
 ]
 
 
+PLATFORM_ROOTS = {"salla.com", "salla.sa", "zid.sa", "tryzid.com", "shopify.com", "expandcart.com", "youcan.shop", "wuilt.com", "matjrah.com"}
+
+
 def audit(con, previous_csv=None):
     """Assign each reference store a coverage status. Returns list of dict rows for the audit sheet."""
-    from .common import MARKETPLACE_ROOTS
+    from .common import MARKETPLACE_ROOTS, NON_STORE_ROOTS
     prev = set()
     if previous_csv and os.path.exists(previous_csv):
         with open(previous_csv, encoding="utf-8-sig") as fh:
@@ -475,13 +478,15 @@ def audit(con, previous_csv=None):
         labels = {r.split(".")[0] for r in roots}
         alt = set(roots) | {f"{l}.sa" for l in labels} | {f"{l}.com.sa" for l in labels} | {f"{l}-sa.com" for l in labels} | {f"{l}sa.com" for l in labels} | {f"{l}ksa.com" for l in labels}
         keys = set(mapped.get(ref_id, []))
-        for r in alt:
+        for r in alt - NON_STORE_ROOTS:
             keys.update(by_root.get(r, []))
         cands = [master_of(k) for k in keys if k in ver]
         cands = [c for c in cands if c]
         good = [c for c in cands if c["cstatus"] == "verified" and c["vstatus"] in ("verified", "verified_secondary_evidence")]
         status, url, reason, evidence, key = None, "", "", "", None
-        if any(r in MARKETPLACE_ROOTS for r in roots):
+        if roots and roots <= PLATFORM_ROOTS:
+            status, reason = "excluded", "excluded: ecommerce platform / non-store site, not a merchant"
+        elif any(r in MARKETPLACE_ROOTS for r in roots):
             status, reason = "excluded", "excluded: marketplace / aggregator (" + MARKETPLACE_ROOTS[[r for r in roots if r in MARKETPLACE_ROOTS][0]] + ")"
         elif good:
             good.sort(key=lambda c: (c["vstatus"] != "verified", not SA_GEO.search(c["final"] or c["url"] or ""), len(c["key"])))
@@ -520,9 +525,15 @@ def audit(con, previous_csv=None):
                 status = "unresolved"
                 reason = f"unresolved: live check '{b['reason'][:60]}'" + (f"; secondary evidence insufficient ({', '.join(e['type'] for e in oks) or 'none'} of {', '.join(ev_types)})" if s else "; secondary evidence not yet collected")
                 evidence = " | ".join(f"{e['type']}: {e.get('detail')} ({e.get('url')}, {e.get('date')})" for e in oks)
+            elif exc and ("no online ordering" in exc[0] or "serves another country" in exc[0]) and exc[1]["key"] not in sec:
+                # static HTML of a JS storefront, or a geo-redirect seen from this non-Saudi VM, is not proof of absence
+                status, key, url = "unresolved", exc[1]["key"], exc[1]["final"] or exc[1]["url"]
+                reason = f"unresolved: live check '{exc[1]['reason'][:60]}'; secondary evidence not yet collected"
             elif exc:
                 status, reason = "excluded", exc[0]
                 key, url, evidence = exc[1]["key"], exc[1]["final"] or exc[1]["url"], exc[1]["reason"][:200]
+                if key in sec:
+                    reason += "; secondary evidence (archives, app store, sitemap) also insufficient"
             elif cands:
                 c = cands[0]
                 status, key, url = "excluded", c["key"], c["final"] or c["url"]

@@ -257,7 +257,7 @@ async def check(clients, item):
     host = prefix.split("/")[0]
     prefix = re.sub(r"^www\d+\.", "", prefix)
     evs = await asyncio.gather(wayback_product(arch, prefix), cc_product(arch, prefix), sitemap_ev(live, host, prefix),
-                               app_store(live, item["name"], item["domains"]), bing_indexed(brw, prefix))
+                               app_store(live, item["name"], item["domains"]))
     ok = [e for e in evs if e.get("ok")]
     types = {e["type"] for e in ok}
     storefront = types & {"wayback_product", "commoncrawl_product", "sitemap", "bing_indexed"}
@@ -269,13 +269,19 @@ def save(con, item, res, ref_name):
     evs = [e for e in res["evidence"] if e.get("ok")]
     ev_text = " | ".join(f"{e['type']}: {e['detail']} ({e.get('url')}, {e.get('date')})" for e in evs)
     if res["verdict"] == "verified_secondary_evidence":
+        sf = item["url"]
+        for e in evs:
+            if e["type"] in ("wayback_product", "commoncrawl_product", "sitemap") and e.get("url"):
+                orig = re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", e["url"])
+                sf = "https://" + storefront_prefix(orig)
+                break
         con.execute("""UPDATE verifications SET status='verified_secondary_evidence', method='secondary',
                        reason=?, product_evidence=?, evidence_url=?, verified_at=?, store_name=CASE WHEN coalesce(store_name,'')='' THEN ? ELSE store_name END,
-                       final_url=CASE WHEN final_url IS NULL OR final_url='' THEN ? ELSE final_url END WHERE key=?""",
-                    ("verified_secondary_evidence: " + ev_text, evs[0].get("url"), evs[0].get("url"), db.now(), ref_name, item["url"], item["key"]))
+                       final_url=? WHERE key=?""",
+                    ("verified_secondary_evidence: " + ev_text, evs[0].get("url"), evs[0].get("url"), db.now(), ref_name, sf, item["key"]))
         if con.execute("SELECT changes()").fetchone()[0] == 0:
             con.execute("INSERT OR REPLACE INTO verifications(key, final_url, final_key, store_name, status, reason, evidence_url, product_evidence, verified_at, method) VALUES(?,?,?,?,?,?,?,?,?,?)",
-                        (item["key"], item["url"], item["key"], ref_name, "verified_secondary_evidence", "verified_secondary_evidence: " + ev_text, evs[0].get("url"), evs[0].get("url"), db.now(), "secondary"))
+                        (item["key"], sf, item["key"], ref_name, "verified_secondary_evidence", "verified_secondary_evidence: " + ev_text, evs[0].get("url"), evs[0].get("url"), db.now(), "secondary"))
         con.execute("UPDATE candidates SET status='verified' WHERE key=?", (item["key"],))
     con.execute("CREATE TABLE IF NOT EXISTS secondary_evidence(key TEXT PRIMARY KEY, prefix TEXT, verdict TEXT, evidence TEXT, ts TEXT)")
     con.execute("INSERT OR REPLACE INTO secondary_evidence VALUES(?,?,?,?,?)", (item["key"], res["prefix"], res["verdict"], json.dumps(res["evidence"], ensure_ascii=False), db.now()))
@@ -304,7 +310,7 @@ def unresolved_targets(con, per_ref=2):
                     db.add_candidates(con, [(f"https://{d}/", 5)], "reference:secondary_fallback", f"ref {ref_id}", 5)
                     cands.append((ident["key"], f"https://{d}/"))
             con.commit()
-        cands.sort(key=lambda kv: ("|" not in kv[0], len(kv[0])))
+        cands.sort(key=lambda kv: (not ("|" in kv[0] or re.match(r"(?:sa|ksa|saudi|en-sa|ar-sa)\.", kv[0]) or kv[0].endswith(".sa")), len(kv[0])))
         rows += [(k, u, name, doms) for k, u in cands[:per_ref] if k not in seen]
     return rows
 
