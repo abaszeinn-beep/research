@@ -36,6 +36,7 @@ def master_url(row):
 def clean_name(name, url):
     n = (name or "").strip()
     n = re.sub(r"\s+", " ", n)
+    n = n.strip(" \"'`“”‘’«»|-–—:،,.").strip()
     n = re.sub(r"^(?:متجر|store)\s*[:\-|]\s*", "", n, flags=re.I)
     if not n or n.startswith("salla.sa/") or len(n) < 2:
         host = urlsplit(url).hostname or url
