@@ -18,7 +18,7 @@ from playwright.async_api import async_playwright
 from . import db
 from .verify import Fetcher, verify_one, save, CHALLENGE
 
-REASONS = ("js_rendered_or_thin_page%", "partial_ecommerce_evidence_js_page%", "fetch_failed:http_error%", "insufficient_ecommerce_evidence%", "fetch_failed:timeout%")
+REASONS = ("weak_ecommerce_evidence%", "js_rendered_or_thin_page%", "partial_ecommerce_evidence_js_page%", "fetch_failed:http_error%", "insufficient_ecommerce_evidence%", "fetch_failed:timeout%")
 
 
 class BrowserFetcher(Fetcher):

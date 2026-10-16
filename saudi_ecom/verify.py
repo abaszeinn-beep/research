@@ -32,7 +32,20 @@ CHALLENGE = re.compile(r"just a moment\.\.\.|cf-chl|challenge-platform/h/|attent
 LISTING_HINT = re.compile(r"href=[\"'](?!data:)([^\"'#<>\s]{0,200}?(?:/products/?|/collections/all|/shop/?|/store/?|/categories/[^\"']+|/category/[^\"']+|/collections/[^\"']+|/c/[^\"']+|/-/c\d+|product-category/[^\"']+|/all-products|/catalog[^\"']*|/new-arrivals?|/offers)[^\"'#<>\s]{0,200})[\"']", re.I)
 
 
+FOREIGN_GEO = re.compile(r"^https?://(?:us|uk|ae|uae|eg|kw|qa|bh|om|jo|eu|intl|global|in|pk|tr|fr|de|ca|au)\.|/(?:en|ar)[-_](?:us|gb|ae|kw|qa|bh|om|eg|jo|in)(?:/|$)|/(?:us|uk|ae|uae|kw|qa|bh|om|eg|jo)(?:[-_](?:en|ar))?(?:/|$)|/(?:ae|kw|qa|bh|om|eg)-(?:en|ar)(?:/|$)", re.I)
+SA_GEO = re.compile(r"^https?://(?:sa|ksa|saudi)\.|[/_-](?:en|ar)[-_]sa\b|/sa(?:[-_/]|$)|/saudi|\.sa(?:/|$)", re.I)
 DEMO = re.compile(r"^(?:متجر تجريبي|متجر تجريبى|demo store|test store|my store|متجري|store name|اسم المتجر)$|متجر تجريبي|demo ?store|test ?store|متجر اختبار", re.I)
+
+
+def bucket(host: str) -> str:
+    """Hosts sharing one platform edge/rate limit are throttled together."""
+    for suf in ("myshopify.com", "zid.store", "salla.sa"):
+        if host == suf or host.endswith("." + suf):
+            return suf
+    return host
+
+
+BUCKET_LIMITS = {"salla.sa": (4, 0.25), "api.salla.dev": (4, 0.25), "myshopify.com": (3, 0.6), "zid.store": (3, 0.4)}
 
 
 class Fetcher:
@@ -51,9 +64,8 @@ class Fetcher:
 
     def _sem(self, host):
         if host not in self.host_sems:
-            n = 4 if host in ("salla.sa", "api.salla.dev") else self.per_host
-            if host in ("salla.sa", "api.salla.dev"):
-                self.host_gap[host] = 0.25
+            n, gap = BUCKET_LIMITS.get(host, (self.per_host, 0.5))
+            self.host_gap[host] = gap
             self.host_sems[host] = asyncio.Semaphore(n)
         return self.host_sems[host]
 
@@ -100,7 +112,7 @@ class Fetcher:
         if check_robots and not await self.allowed(url):
             self.stats["robots_disallowed"] += 1
             return None, url, "", {}, "robots_disallowed"
-        host = urlsplit(url).hostname or ""
+        host = bucket(urlsplit(url).hostname or "")
         delay = 2.0
         last_err = None
         for attempt in range(tries):
@@ -113,7 +125,7 @@ class Fetcher:
                 try:
                     st, final, text, hdrs = await asyncio.wait_for(self._raw_get(url, headers), 45)
                     self.stats["requests"] += 1
-                    base_gap = 0.25 if host in ("salla.sa", "api.salla.dev") else 0.5
+                    base_gap = BUCKET_LIMITS.get(host, (0, 0.5))[1]
                     if st == 429:
                         self.stats["http_429"] += 1
                         self.host_gap[host] = min(self.host_gap[host] * 1.5 + 0.2, 6.0)
@@ -244,7 +256,7 @@ async def sitemap_probe(f: Fetcher, base: str):
         for ch in prod_children[:1]:
             st2, _, t2, _, _ = await f.get(ch.strip(), tries=2)
             if st2 == 200:
-                locs = SITEMAP_PRODUCT.findall(t2)
+                locs = re.findall(r"<loc>\s*([^<\s]{1,500})\s*</loc>", t2) if re.search(r"product", ch, re.I) else SITEMAP_PRODUCT.findall(t2)
                 if locs:
                     return {"sitemap": ch.strip(), "product_urls": len(locs), "sample_url": locs[0].strip()}
     return None
@@ -523,7 +535,7 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             return done("rejected", f"charity_or_donations ({n_char} markers)")
     if physical is None and S.ORG.search(res["store_name"] or ""):
         return done("unverified", "organization_site_with_shop_features (manual review): " + S.ORG.search(res["store_name"]).group(0))
-    if plat not in ("salla", "zid", "shopify") and not (probe and probe.get("n")):
+    if plat in ("custom/unknown", "wix", "odoo", "nopcommerce", "wuilt", "woocommerce") and not (probe and probe.get("n")):
         strong_prod = a["n_product_links"] >= 3 or "Product" in a["ld_types"] or a["sar_prices"] >= 3 or bool(smp and smp.get("product_urls", 0) >= 5)
         if not (a["add_to_cart"] >= 1 and strong_prod):
             return done("unverified", "weak_ecommerce_evidence_custom_platform: " + ",".join(product_ev + purchase_ev))
@@ -532,6 +544,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if sev.get("shopify_shop_country") not in (None, "SA") and not any(k in sev for k in ("sa_tld", "sa_locale", "vat_number")):
         strong = "saudi_phone" in sev and ("sar_prices" in sev or "currency_SAR_code" in sev)
     res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
+    if FOREIGN_GEO.search(final) and not SA_GEO.search(final) and not any(k in sev for k in ("currency_SAR_code", "sar_prices", "sa_tld", "vat_number", "shopify_shop_country")):
+        return done("rejected", "redirects_to_non_saudi_storefront (geo/locale): " + final[:80])
     if score >= 4 and strong:
         res["status"] = "verified"
         note = []

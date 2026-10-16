@@ -12,6 +12,7 @@ import pandas as pd
 from . import db
 from .common import identity
 from .queries import NICHES, CITIES
+from .verify import SA_GEO
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..")
 XLSX = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.xlsx")
@@ -67,7 +68,7 @@ def dedup(con):
     rep_of = {}
     for gid, members in groups.items():
         # prefer the member whose key equals the final key (custom domain), then non-platform keys
-        members.sort(key=lambda m: (m[0] != m[1], m[4] is not None, len(m[0])))
+        members.sort(key=lambda m: (not SA_GEO.search(m[2] or ""), m[0] != m[1], m[4] is not None, len(m[0])))
         rep = members[0][0]
         for m in members:
             rep_of[m[0]] = rep
