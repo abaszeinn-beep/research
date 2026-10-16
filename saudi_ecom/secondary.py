@@ -29,7 +29,7 @@ from . import signals as S
 from .common import identity, registrable_domain
 from .discover_search import bing_decode
 from .reference import connect
-from .verify import SA_GEO
+from .verify import FOREIGN_GEO, SA_GEO
 
 UA_RESEARCH = {"User-Agent": "saudi-ecom-directory-research/1.0 (polite archive client)"}
 UA_BROWSER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
@@ -262,6 +262,17 @@ async def check(clients, item):
     prefix = re.sub(r"^www\d+\.", "", prefix)
     evs = await asyncio.gather(wayback_product(arch, prefix), cc_product(arch, prefix), sitemap_ev(live, host, prefix),
                                app_store(live, item["name"], item["domains"]))
+    if "/" not in prefix.strip("/") and not host.endswith(".sa") and not re.match(r"(?:sa|ksa|saudi|en-sa|ar-sa)\.", host):
+        # a multi-country root domain: archived pages only count if they are Saudi-path pages or clearly priced in SAR
+        for e in evs:
+            orig = re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", e.get("url") or "")
+            if not (item.get("global_root") or FOREIGN_GEO.search(orig)):
+                continue
+            if e.get("ok") and e["type"] in ("wayback_product", "commoncrawl_product") and not SA_GEO.search(orig):
+                m = re.search(r"with (\d+) SAR", e.get("detail", ""))
+                if not m or int(m.group(1)) < 5:
+                    e["ok"] = False
+                    e["detail"] += " (rejected: global root domain, not Saudi-specific)"
     ok = [e for e in evs if e.get("ok")]
     types = {e["type"] for e in ok}
     storefront = types & {"wayback_product", "commoncrawl_product", "sitemap", "bing_indexed"}
@@ -342,6 +353,9 @@ async def main(keys, limit, concurrency):
     con = connect()
     con.execute("CREATE TABLE IF NOT EXISTS secondary_evidence(key TEXT PRIMARY KEY, prefix TEXT, verdict TEXT, evidence TEXT, ts TEXT)")
     items = targets(con, keys, limit)
+    for it in items:
+        k = it["key"]
+        it["global_root"] = "|" not in k and bool(con.execute("SELECT 1 FROM candidates WHERE key IN (?,?,?)", (k + "|sa", "sa." + k, "ksa." + k)).fetchone())
     print(f"[secondary] {len(items)} targets", flush=True)
     sem = asyncio.Semaphore(concurrency)
     stats = {"verified_secondary_evidence": 0, "insufficient_secondary_evidence": 0}

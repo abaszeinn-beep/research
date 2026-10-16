@@ -88,7 +88,7 @@ DIGITAL = re.compile(
     r"بطاقات? (?:رقمية|شحن|سوا|ايتونز|قوقل|بلايستيشن|ستيم)|بطاقات الألعاب|شحن (?:ألعاب|العاب|شدات|جواهر)|شدات|ببجي|pubg|free ?fire|فري فاير|"
     r"gift ?cards?|digital (?:cards?|codes?|products?)|اشتراك(?:ات)? (?:نتفلكس|شاهد|سناب|بلس)|netflix|shahid|spotify|"
     r"itunes|playstation (?:plus|network) card|steam (?:wallet|card)|razer gold|"
-    r"دورات? (?:تدريبية|اونلاين|أونلاين)|كورس(?:ات)?|online courses?|ebooks?|كتب إلكترونية|ملفات (?:رقمية|pdf)|قوالب|templates|"
+    r"دورات? (?:تدريبية|اونلاين|أونلاين)|(?<!مايكل )كورس(?:ات)?|online courses?|ebooks?|كتب إلكترونية|ملفات (?:رقمية|pdf)|قوالب|templates|"
     r"تصاميم جاهزة|متابعين|followers|likes|خدمات (?:رقمية|التسويق|السوشيال)|استضافة|hosting|vpn|software licen[cs]e|مفاتيح تفعيل|license keys?",
     re.I,
 )
@@ -99,7 +99,7 @@ SERVICE = re.compile(
     r"تصميم (?:مواقع|شعارات|جرافيك)|web design|marketing agency|وكالة تسويق|برمجة تطبيقات",
     re.I,
 )
-SERVICE_NAME = re.compile(r"تدريب|التدريب|برنامج (?!العناية)|دبلوم|دورة|دورات|كورس|حقيبة تدريبية|ورشة|ورش عمل|استشار|جلسة (?!أرضية|ارضية|خارجية|عربية)|جلسات (?!أرضية|ارضية|خارجية)|زيارة|زيارات|\bvisits?\b|\bsessions?\b|consultation|\bcourses?\b|webinar|اشتراك|subscription|حجز|booking"
+SERVICE_NAME = re.compile(r"تدريب|التدريب|برنامج (?!العناية)|دبلوم|دورة|دورات|(?<!مايكل )كورس|حقيبة تدريبية|ورشة|ورش عمل|استشار|جلسة (?!أرضية|ارضية|خارجية|عربية)|جلسات (?!أرضية|ارضية|خارجية)|زيارة|زيارات|\bvisits?\b|\bsessions?\b|consultation|\bcourses?\b|webinar|اشتراك|subscription|حجز|booking"
                           r"|(?<!جهاز )(?<!أجهزة )فحص|(?<!جهاز )تحليل|تصميم شعار|تصميم هوية|logo design|خدمة|خدمات|\bservices?\b|صيانة|تنظيف (?:منازل|المنازل|شقق|خزانات|مكيفات|سجاد|كنب|مجالس)"
                           r"|مخيم|رحلة|تذكرة|تذاكر|\btickets?\b|بطاقة رقمية|(?<!بار)كود|\bcodes?\b|ملف pdf|\bpdf\b|ebook|كتاب إلكتروني|قالب (?:جاهز|تصميم|سيرة|بوربوينت|عرض|ووردبريس|كانفا|canva)|\btemplates?\b"
                           r"|ابشر|أبشر|وثيقة العمل الحر|تسجيل في|التسجيل في|التقديم على|تجديد (?:اقامة|إقامة|رخصة|جواز|الهوية|السجل|اشتراك|استمارة)"
@@ -113,7 +113,7 @@ SERVICE_NAME = re.compile(r"تدريب|التدريب|برنامج (?!العنا
                           r"|فورتنايت|fortnite|فيفا كوينز|fifa coins", re.I)
 RESTAURANT_NAME = re.compile(r"(?<!مستلزمات )(?<!معدات )(?<!تجهيزات )(?<!تجهيز )(?:مطعم|مطاعم)|(?<!supplies )\brestaurant\b(?! (?:supplies|equipment))|مشويات|مندي|مظبي|بوفيه", re.I)
 CHARITY_PRODUCT = re.compile(r"صدقة|تبرع|زكاة|سقيا|كفالة يتيم|كفالة أيتام|وقف خيري|donat(?:e|ion)", re.I)
-SERVICE_ORG = re.compile(r"للتدريب|تدريب|training|للخدمات|خدمات|services|مكتب|منصة|تعليمي|أكاديمية|academy|معقب|وكيلك|للاستشارات|consult", re.I)
+SERVICE_ORG = re.compile(r"للتدريب|تدريب|training|للخدمات|خدمات|\bservices\b|مكتب\b|منصة|منصة تعليمية|أكاديمية|academy|معقب|وكيلك|للاستشارات|consult", re.I)
 CHARITY = re.compile(r"جمعية|خيري|خيرية|تبرع|تبرعات|كفالة يتيم|كفالة|صدقة|زكاة|وقف خيري|أوقاف|donat(?:e|ion)|charity|sadaqah|zakat|non-?profit|غير ربحية", re.I)
 ORG = re.compile(r"نادي|جمعية|مستشفى|hospital|جامعة|university|مدرسة|مدارس|school|academy|أكاديمية|معهد|institute|كلية|college|وزارة|ministry|هيئة|authority|بلدية|municipality|غرفة تجارية|chamber of commerce|مجمع طبي|مجمع [^ ]+ الطبي|مجمع [^ ]+ [^ ]+ الطبي|مركز طبي|educational|تعليمي|تعليمية|للتدريب|تدريب|training|travel|tours|للسفر|سياحة|سفريات|طيران|hotel|فندق|فنادق|medical (?:complex|center)|عيادات|clinics|منصة|platform|مكتب محاماة|law firm|مكتب هندسي|consultants?|استشارات|شركة مقاولات|contracting|نقابة|federation|اتحاد|consultancy|consulting|عيادة|clinic\b|مستوصف|dental|طب الأسنان|^dr\.? |^د\. ?|برمجة|تطوير المواقع|تصميم المواقع|web design|software|digital agency|marketing agency|وكالة تسويق|recruitment|توظيف|staffing", re.I)
 RESTAURANT = re.compile(r"food menu|restaurant menu|قائمة الطعام|المنيو|مطعم|restaurant|order food|اطلب وجبتك|وجبات|meals?\b|burger|برجر|pizza|بيتزا|شاورما|shawarma|كافيه|cafe\b|توصيل الطعام|food delivery", re.I)
