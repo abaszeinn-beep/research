@@ -191,8 +191,11 @@ async def salla_probe(f: Fetcher, html: str, page_url: str):
     sample = next((p.get("url") for p in data if p.get("url")), None)
     names = [p.get("name") or "" for p in data][:30]
     cats = [((p.get("category") or {}).get("name") or "") for p in data][:30]
+    # Merchants routinely register shipped goods (abayas, printed mugs, gifts) as type "service"/"digital"; the API's
+    # is_require_shipping flag is the reliable signal that the item is a physical product.
+    ship_by_type = Counter((p.get("type") or "product") for p in data if p.get("is_require_shipping") and (p.get("type") or "product") in ("service", "digital", "codes"))
     return {"store_id": sid, "n": len(data), "types": dict(types), "statuses": dict(statuses), "currency": sorted(cur),
-            "sample_url": sample, "names": names, "cats": cats}
+            "sample_url": sample, "names": names, "cats": cats, "ship_by_type": dict(ship_by_type)}
 
 
 async def shopify_probe(f: Fetcher, base: str):
@@ -450,9 +453,12 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         if plat == "salla" and probe.get("types") is not None and isinstance(probe.get("types"), dict):
             t = probe["types"]
             phys = t.get("product", 0) + t.get("group_products", 0)
-            digital = t.get("digital", 0) + t.get("codes", 0)
-            service = t.get("service", 0) + t.get("booking", 0) + t.get("donating", 0)
+            sb = probe.get("ship_by_type") or {}
+            ship_dig, ship_svc = sb.get("digital", 0) + sb.get("codes", 0), sb.get("service", 0)
+            digital = t.get("digital", 0) + t.get("codes", 0) - ship_dig
+            service = t.get("service", 0) + t.get("booking", 0) + t.get("donating", 0) - ship_svc
             food = t.get("food", 0)
+            phys += ship_dig + ship_svc
             physical = phys
             if probe.get("n", 0) == 0:
                 return done("rejected", "no_products_listed (salla api returned 0 products)") | {"ecom_evidence": json.dumps(ecom, ensure_ascii=False)}
