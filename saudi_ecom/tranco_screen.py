@@ -340,7 +340,7 @@ def read_jsonl(path):
     return out
 
 
-async def run(shard, start, end, tranco, dbpath, conc, vconc, retry_errors=False, connect_timeout=7, part=0, parts=1):
+async def run(shard, start, end, tranco, dbpath, conc, vconc, retry_errors=False, connect_timeout=7, part=0, parts=1, resume_from=0):
     warnings.filterwarnings("ignore")
     loop = asyncio.get_running_loop()
     loop.set_default_executor(concurrent.futures.ThreadPoolExecutor(64))
@@ -395,8 +395,8 @@ async def run(shard, start, end, tranco, dbpath, conc, vconc, retry_errors=False
         queued.add(k)
         vqueue.put_nowait({"rank": rank, "origin": origin, "kind": hit["kind"], "screen_ev": hit.get("ev"), "ident": ident, "url": hit["url"]})
 
-    todo = [t for i, t in enumerate(todo) if i % parts == part]
-    if part != 0:
+    todo = [t for i, t in enumerate(t for t in todo if t[0] >= resume_from) if i % parts == part]
+    if part != 0 or resume_from:
         rechecks = []
     for r, d, ks in rechecks:
         for k in ks:
@@ -634,7 +634,7 @@ def saudi_ev_text(r):
     try:
         ev = json.loads(r.get("saudi_evidence") or "{}")
     except (ValueError, TypeError):
-        ev = {}
+        return str(r.get("saudi_evidence") or "")[:500]
     parts = [f"{k}={v}" if v is not True else k for k, v in ev.items()]
     if not parts and r.get("screen_ev"):
         parts = ["screen:" + ",".join(f"{k}={v}" if v is not True else k for k, v in r["screen_ev"].items() if k not in ("shop",))]
@@ -687,14 +687,19 @@ def write_outputs(shard, start, end, n_slice, n_known, final):
         w.writerows(out)
     os.replace(tmp, f"{OUT_DIR}/shard_{shard}.csv")
     c = Counter(x["status"] for x in out)
+    pp = f"{OUT_DIR}/work/shard_{shard}_prior.json"
+    prior = json.load(open(pp)) if os.path.exists(pp) else {}
     errs = sum(1 for s in screen if s.get("err") and s.get("err") != "dns_not_resolved")
     dns = sum(1 for s in screen if s.get("err") == "dns_not_resolved")
     summary = {"shard": shard, "rank_start": start, "rank_end": end, "tranco_list_id": open("data/raw/tranco_id").read().strip() if os.path.exists("data/raw/tranco_id") else None,
-               "domains_in_slice": n_slice, "skipped_as_known": n_known, "screened": len(screen),
-               "non_retail_skipped_fast": sum(1 for s in screen if s.get("class") == "non_retail_skip"),
+               "domains_in_slice": n_slice, "skipped_as_known": n_known, "screened": len(screen) + prior.get("screened", 0),
+               "non_retail_skipped_fast": sum(1 for s in screen if s.get("class") == "non_retail_skip") + prior.get("non_retail_skipped_fast", 0),
                "saudi_hits": len(recs), "verified": c["verified"], "verified_secondary_evidence": c["verified_secondary_evidence"],
                "unverified": c["unverified"], "rejected": c["rejected"],
-               "errors": errs, "dns_not_resolved": dns, "runtime_seconds": round(runtime), "complete": final}
+               "errors": errs + prior.get("errors", 0), "dns_not_resolved": dns + prior.get("dns_not_resolved", 0),
+               "runtime_seconds": round(runtime + prior.get("runtime_seconds", 0)), "complete": final}
+    if prior:
+        summary["resume_note"] = prior.get("note")
     json.dump(summary, open(f"{OUT_DIR}/shard_{shard}_summary.json", "w"), indent=2)
     return summary
 
@@ -711,6 +716,7 @@ if __name__ == "__main__":
     ap.add_argument("--retry-errors", action="store_true", help="re-screen domains whose last attempt failed to connect")
     ap.add_argument("--connect-timeout", type=float, default=7)
     ap.add_argument("--part", type=int, default=0)
+    ap.add_argument("--resume-from", type=int, default=0, help="only screen ranks >= this (earlier ranks were screened by a previous run)")
     ap.add_argument("--parts", type=int, default=1)
     ap.add_argument("--finalize", action="store_true", help="only rewrite the CSV + summary from the work files")
     ap.add_argument("--post", default="", help="comma list of post passes: retry,browser,secondary,qa")
@@ -724,4 +730,4 @@ if __name__ == "__main__":
         n_known = sum(1 for d in sl if registrable_domain(d) in known_roots)
         print(json.dumps(write_outputs(a.shard, a.start, a.end, len(sl), n_known, final=True), indent=1))
     else:
-        asyncio.run(run(a.shard, a.start, a.end, a.tranco, a.db, a.concurrency, a.verify_concurrency, a.retry_errors, a.connect_timeout, a.part, a.parts))
+        asyncio.run(run(a.shard, a.start, a.end, a.tranco, a.db, a.concurrency, a.verify_concurrency, a.retry_errors, a.connect_timeout, a.part, a.parts, a.resume_from))
