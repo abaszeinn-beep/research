@@ -486,6 +486,8 @@ def audit(con, previous_csv=None):
             r = ver[r["dup"]]
         return r
 
+    manual = {r[0]: (r[1], r[2], r[3]) for r in con.execute("SELECT name, status, reason, evidence FROM manual_resolutions")} if con.execute(
+        "SELECT name FROM sqlite_master WHERE name='manual_resolutions'").fetchall() else {}
     rows = []
     for ref_id, name, cat, tier, doms, sources, rank, kind in con.execute(
             "SELECT ref_id, name, category, tier, domains, sources, tranco_rank, kind FROM reference_stores").fetchall():
@@ -562,6 +564,8 @@ def audit(con, previous_csv=None):
                 status = "excluded"
                 info = nones.get(ref_id, {})
                 reason = f"excluded: no {MK.NAME} storefront found ({MK.NAME} URL variants" + (", Wayback CDX" if info.get("blocked") else "") + " checked)"
+        if status not in ("in_directory_primary", "in_directory_secondary") and name in manual:
+            status, reason, evidence = manual[name]
         if kind in ("tranco_sa", "wikidata", "appstore") and status != "in_directory_primary" and status != "in_directory_secondary":
             status = "screened_out"
         con.execute("UPDATE reference_stores SET status=?, best_key=?, best_url=?, reason=?, evidence=?, checked_at=? WHERE ref_id=?",
