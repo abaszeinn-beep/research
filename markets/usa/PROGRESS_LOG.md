@@ -52,3 +52,16 @@ sqlite3 data/usa_ecom.sqlite "DELETE FROM screen WHERE status='dead' AND (reason
 # retry secondary evidence for stores whose App Store lookup errored
 sqlite3 data/usa_ecom.sqlite "DELETE FROM secondary_evidence WHERE verdict='insufficient_secondary_evidence' AND evidence LIKE '%itunes_error%'"
 ```
+
+## Session 3 (takeover after billing interruption; 13:36-15:50Z)
+
+* Restored the 13:01Z snapshot, restarted screener (1-200k), verifier, secondary, checkpoint. Screening reached ~rank 42k
+  (~270 domains/min after the first hour); the remaining 42k-200k is NOT screened (resume with the commands in RESUME.md).
+* Common Crawl index (index.commoncrawl.org) became unreachable from this VM (connection refused; data.commoncrawl.org
+  still answers), so `discover_cc` crashed and CC product evidence returned nothing. Treated as a blocked channel.
+* Secondary evidence: Wayback CDX prefix query for whole hosts times out, so `wayback_product` now tolerates a timeout and
+  runs a second, product-path-filtered CDX query (120 s). Added e.g. LEGO, Tractor Supply, Camping World. Many big
+  bot-walled retailers (Best Buy, Macy's, Kroger, Walgreens, Petco, ...) still have only the App Store proof (one type), so
+  they stay unverified instead of being guessed.
+* Export at 15:50Z: 703 verified (635 primary, 68 secondary), 5,848 unverified rows. Audit: huge 24 in directory / 13
+  excluded / 32 unresolved; large 71 / 38 / 130.
