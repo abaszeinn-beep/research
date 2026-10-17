@@ -11,3 +11,11 @@
 [tranco] {'done': 2000, 'hits': 37, 'new': 30, 'fail': 1087} rate=7.2/s rank~2066
 [tranco] probe 197841 domains (ranks 1-200000), 2000 done before
 [tranco] {'done': 1000, 'hits': 9, 'new': 8, 'fail': 590} rate=7.8/s rank~3086
+[tranco] probe 196641 domains (ranks 1-200000), 3200 done before
+[tranco] {'done': 1000, 'hits': 14, 'new': 12, 'fail': 449} rate=31.5/s rank~4333
+[tranco] probe 195441 domains (ranks 1-200000), 4400 done before
+[tranco] {'done': 1000, 'hits': 10, 'new': 9, 'fail': 461} rate=6.9/s rank~5500
+[tranco] {'done': 2000, 'hits': 22, 'new': 18, 'fail': 851} rate=7.1/s rank~6506
+[tranco] {'done': 3000, 'hits': 36, 'new': 32, 'fail': 1269} rate=7.4/s rank~7503
+[tranco] {'done': 4000, 'hits': 45, 'new': 39, 'fail': 1711} rate=7.5/s rank~8506
+[tranco] {'done': 5000, 'hits': 65, 'new': 58, 'fail': 2120} rate=7.4/s rank~9454

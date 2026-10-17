@@ -5,3 +5,16 @@
 [reference] 40/213 {'accepted': 18, 'blocked': 31, 'cdx': 1, 'bing': 0, 'none': 21}
 [reference] 50/213 {'accepted': 22, 'blocked': 36, 'cdx': 3, 'bing': 0, 'none': 25}
 [reference] 60/213 {'accepted': 25, 'blocked': 38, 'cdx': 4, 'bing': 0, 'none': 31}
+[reference] resolving 264 refs
+[reference] 10/264 {'accepted': 2, 'blocked': 34, 'cdx': 2, 'bing': 0, 'none': 6}
+[reference] 20/264 {'accepted': 6, 'blocked': 37, 'cdx': 2, 'bing': 0, 'none': 12}
+[reference] 30/264 {'accepted': 10, 'blocked': 42, 'cdx': 2, 'bing': 0, 'none': 18}
+[reference] 40/264 {'accepted': 12, 'blocked': 45, 'cdx': 2, 'bing': 0, 'none': 26}
+[reference] 50/264 {'accepted': 19, 'blocked': 48, 'cdx': 2, 'bing': 0, 'none': 29}
+[reference] 60/264 {'accepted': 22, 'blocked': 51, 'cdx': 2, 'bing': 0, 'none': 36}
+[reference] 70/264 {'accepted': 26, 'blocked': 52, 'cdx': 2, 'bing': 0, 'none': 42}
+[reference] 80/264 {'accepted': 32, 'blocked': 54, 'cdx': 3, 'bing': 0, 'none': 45}
+[reference] 90/264 {'accepted': 35, 'blocked': 55, 'cdx': 3, 'bing': 0, 'none': 52}
+[reference] 100/264 {'accepted': 39, 'blocked': 57, 'cdx': 5, 'bing': 0, 'none': 56}
+[reference] 110/264 {'accepted': 42, 'blocked': 59, 'cdx': 5, 'bing': 0, 'none': 63}
+[reference] 120/264 {'accepted': 44, 'blocked': 61, 'cdx': 5, 'bing': 0, 'none': 71}

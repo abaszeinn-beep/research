@@ -1,0 +1,11 @@
+[wayback] qa,0 done hosts=3 new=3 {'http_503': 2, 'requests': 1, 'hosts': 3, 'new': 3}
+[wayback] qa,1 done hosts=6 new=6 {'http_503': 4, 'requests': 2, 'hosts': 9, 'new': 9}
+[wayback] qa,4 done hosts=7 new=7 {'http_503': 4, 'requests': 3, 'hosts': 16, 'new': 16}
+[wayback] qa,5 done hosts=2 new=2 {'http_503': 4, 'requests': 4, 'hosts': 18, 'new': 18}
+[wayback] qa,3 done hosts=9 new=9 {'http_503': 4, 'requests': 5, 'hosts': 27, 'new': 27}
+[wayback] qa,6 done hosts=5 new=5 {'http_503': 4, 'requests': 7, 'hosts': 38, 'new': 38}
+[wayback] qa,7 done hosts=5 new=5 {'http_503': 4, 'requests': 8, 'hosts': 43, 'new': 43}
+[wayback] qa,9 done hosts=0 new=0 {'http_503': 5, 'requests': 9, 'hosts': 43, 'new': 43}
+[wayback] qa,8 done hosts=4 new=4 {'http_503': 5, 'requests': 10, 'hosts': 47, 'new': 47}
+[wayback] qa,2 done hosts=13 new=13 {'http_503': 5, 'requests': 13, 'hosts': 85, 'new': 85}
+[wayback] qa,b at qa,batabit,~ {'http_503': 5, 'requests': 20, 'hosts': 194, 'new': 194}
