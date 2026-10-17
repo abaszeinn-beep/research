@@ -120,6 +120,13 @@ PRODUCT_LINK = re.compile(
     r"href=[\"'](?!data:)([^\"'<>\s]{0,200}?(?:/products?/[^\"'/?#]+|/p\d{5,}|/p/[^\"'/?#]+|-p-\d+|/item/[^\"'/?#]+|/dp/|"
     r"product_id=\d+|products_id=\d+|route=product/product|/product-page/|/[a-z0-9-]+-\d{4,}\.html|/[a-z0-9-]+/\d{5,}|/pd/|/shop/[a-z0-9-]+/[a-z0-9-]+)[^\"'<>\s]{0,200})[\"']",
     re.I)
+PRODUCT_CARD = re.compile(r"class=[\"'][^\"']*\b(?:product-item-link|product-miniature|woocommerce-LoopProduct-link|add_to_cart_button|"
+                          r"product_type_(?:simple|variable)|card-figure|productCard|product-card|product-tile|product_item|productitem|"
+                          r"grid-product|product-thumb|ProductItem|product-grid-item|productGrid|card__heading)\b", re.I)
+CARD_LINK = re.compile(r"<a[^>]+href=[\"']([^\"'#<>\s]{3,200})[\"'][^>]*class=[\"'][^\"']*\b(?:product-item-link|woocommerce-LoopProduct-link|"
+                       r"product-thumbnail|card-figure__link|product-title|product-name|productitem--image-link)\b", re.I)
+FOREIGN_TLD = re.compile(r"\.(?:de|fr|it|es|nl|be|pl|cz|sk|hu|ro|bg|gr|pt|se|no|dk|fi|ee|lv|lt|at|ch|ru|ua|by|kz|tr|il|ir|in|pk|bd|lk|id|my|th|vn|ph|"
+                         r"cn|tw|hk|jp|kr|br|ar|cl|pe|mx|uy|ve|ec|za|ng|ke|eg|ma|sa|ae|qa|kw|au|nz|uk|ie|ca|hr|si|rs|ba|md|ge|am|az|is)$")
 ADD_TO_CART = re.compile(r"add[ \-_]?to[ \-_]?(?:cart|bag|basket)|addtocart|add-to-cart|\?add-to-cart=|cart/add|data-product-id|product-form__cart|"
                          r"buy (?:it )?now|addToBag|add_to_cart", re.I)
 CART = re.compile(r"/cart\b|/checkout\b|/basket\b|shopping[ -]cart|mini-?cart|cart-count|cart_count|cart-icon|header__cart|view cart", re.I)
@@ -133,6 +140,10 @@ NON_PHYSICAL_NAME = re.compile(r"\b(?:e-?book|ebook|pdf|download(?:able)?|digita
                                r"course|masterclass|webinar|membership|subscription box|gift ?card|e-?gift|voucher|consultation|coaching|session|"
                                r"lesson|class|workshop|ticket|admission|registration|donation|license|software|plugin|theme|font|lut|"
                                r"service|appointment|booking|reading|tarot reading|sponsorship|deposit|tuition)\b", re.I)
+SAAS_SITE = re.compile(r"\b(?:request a demo|book a demo|get a demo|schedule a demo|free trial|start (?:your )?free trial|start for free|"
+                       r"sign up (?:for )?free|talk to sales|contact sales|per user|per seat|/mo\b|per month|billed annually|saas|"
+                       r"api docs|developer docs|integrations|enterprise plan|cloud platform|our platform|software platform|"
+                       r"cybersecurity|vulnerability|dashboard|workflow automation)\b", re.I)
 PLAN_NAME = re.compile(r"^(?:the )?(?:basic|standard|premium|pro|plus|starter|silver|gold(?:en)?|platinum|bronze|enterprise|business|personal|"
                        r"free|lite|advanced|ultimate|diamond|essential|professional|team|agency|monthly|annual|yearly|lifetime)"
                        r"(?: (?:plan|package|membership|listing|tier|license|subscription|account|access|ad|monthly|annual|yearly))?$", re.I)
@@ -224,8 +235,11 @@ def cheap_signals(html, url, headers):
     h = html[:HOME_BYTES]
     plat = detect_platform(h, headers, url)
     links = {m.group(1) for m in PRODUCT_LINK.finditer(h)}
+    cards = PRODUCT_CARD.findall(h)
+    if not links and cards:
+        links = {m.group(1) for m in CARD_LINK.finditer(h)}
     types, ld_cur = S.jsonld_types(h)
-    return {"platform": plat, "product_links": len(links), "links": list(links)[:40], "add_to_cart": len(ADD_TO_CART.findall(h)),
+    return {"platform": plat, "product_links": len(links), "links": list(links)[:40], "cards": len(cards), "add_to_cart": len(ADD_TO_CART.findall(h)),
             "cart": len(CART.findall(h)), "prices": len(PRICE.findall(h)), "ld_types": types, "ld_currency": ld_cur}
 
 
@@ -520,18 +534,33 @@ async def verify_store(site: Site, domain, rank, final, html, hdrs, c):
         if pd != froot:
             detail["shopify_primary_domain"] = probe["domain"]
 
+    # Clearly non-US storefronts are rejected on US relevance before spending requests on product evidence.
+    g0, e0, n0 = U.us_signals(html, text, final, {k: v for k, v in (probe or {}).items() if k in ("country", "currency")})
+    s0, r0 = U.decide_us(g0, e0, n0)
+    if s0 == "rejected" and not r0.startswith("no_us_signals"):
+        row["us_evidence"] = json.dumps(e0, ensure_ascii=False)[:600]
+        return done("rejected", r0 + " (homepage)")
+    if not g0["currency"] and not g0["location"] and FOREIGN_TLD.search(froot) and (n0.get("foreign_price_strings") or not c["prices"]):
+        return done("rejected", f"not_us_relevant (foreign ccTLD .{froot.rsplit('.', 1)[-1]}, no USD/US signals)")
+
     extra_html, extra_url = "", None
-    if c["product_links"] < 3 and not (probe and probe.get("n")):
+    if c["product_links"] < 3 and c["cards"] < 3 and not (probe and probe.get("n")):
         cands = [urljoin(final, m.group(1)) for m in LISTING_HINT.finditer(html[:800_000])]
         cands = [u for u in cands if same_site(u, final) and not re.search(r"\.(?:jpe?g|png|css|js)(?:\?|$)", u, re.I)]
+        default = {"woocommerce": "/shop/", "shopify": "/collections/all"}.get(plat)
+        if default:
+            cands.append(base + default)
         if cands:
             st2, fin2, h2, _, _ = await site.get(cands[0], total=15, tries=1)
+            if st2 != 200 and default and cands[0] != base + default:
+                st2, fin2, h2, _, _ = await site.get(base + default, total=15, tries=1)
             if st2 == 200:
                 extra_html, extra_url = h2, fin2
                 c2 = cheap_signals(h2, fin2, {})
-                for k in ("product_links", "add_to_cart", "cart", "prices"):
+                for k in ("product_links", "add_to_cart", "cart", "prices", "cards"):
                     c[k] = max(c[k], c2[k])
                 c["links"] = c["links"] or c2["links"]
+                c["cards"] = max(c["cards"], c2["cards"])
                 c["ld_types"] |= c2["ld_types"]
                 c["ld_currency"] |= c2["ld_currency"]
 
@@ -569,6 +598,8 @@ async def verify_store(site: Site, domain, rank, final, html, hdrs, c):
         product_ev.append(f"{probe['n']} products via {plat} {'products.json' if plat == 'shopify' else 'Store API'}")
     if c["product_links"] >= 2:
         product_ev.append(f"{c['product_links']} product links")
+    if c["cards"] >= 3:
+        product_ev.append(f"{c['cards']} product-card markers ({plat})")
     if c["ld_types"] & {"Product", "Offer", "AggregateOffer"}:
         product_ev.append("schema.org Product/Offer")
     if smp:
@@ -620,12 +651,20 @@ async def verify_store(site: Site, domain, rank, final, html, hdrs, c):
             return done("unverified", "js_rendered_partial_evidence: " + ",".join(product_ev + purchase_ev))
         if not purchase_ev:
             return done("rejected", "no_purchase_path (product markup only): " + ",".join(product_ev))
+        if "add-to-cart" not in purchase_ev:
+            return done("rejected", "no_products_found (homepage, listing page, platform API and sitemap checked; only cart/plugin markers: "
+                        + ",".join(purchase_ev) + ")")
         return done("unverified", "insufficient_product_evidence: " + ",".join(purchase_ev))
     if plat in ("custom/unknown", "wix", "wix-stores", "odoo", "squarespace-commerce", "godaddy-commerce", "square-online", "nopcommerce") or (plat == "woocommerce" and not (probe and probe.get("n"))):
-        strong = c["product_links"] >= 3 or bool(c["ld_types"] & {"Product", "Offer"}) or bool(smp and smp["product_urls"] >= 5) or "product page with price/offer" in product_ev
+        strong = c["product_links"] >= 3 or c["cards"] >= 3 or bool(c["ld_types"] & {"Product", "Offer"}) or bool(smp and smp["product_urls"] >= 5) or "product page with price/offer" in product_ev
         if not (c["add_to_cart"] >= 1 and strong):
             return done("unverified", "weak_ecommerce_evidence_generic_platform: " + ",".join(product_ev + purchase_ev))
     blob = title + " " + (S.meta(html, "description") or "") + " " + text[:8000]
+    n_saas = len(set(m.lower() for m in SAAS_SITE.findall(blob + " " + text[8000:30000])))
+    if n_saas >= 3 and not (probe and probe.get("n")) and plat in ("custom/unknown", "wix", "squarespace", "godaddy-commerce"):
+        return done("rejected", f"likely_saas_or_software ({n_saas} SaaS markers)")
+    if plat == "custom/unknown" and c["cart"] == 0 and not (c["ld_types"] & {"Product"}):
+        return done("unverified", "no_cart_or_checkout_path_found (custom platform; manual review): " + ",".join(product_ev + purchase_ev))
     weak_products = not (probe and probe.get("n")) and c["product_links"] < 10
     if weak_products:
         if len(RESTAURANT_SITE.findall(blob)) >= 3:
@@ -656,12 +695,12 @@ async def verify_store(site: Site, domain, rank, final, html, hdrs, c):
             pages = [base + "/policies/shipping-policy", base + "/pages/contact"]
         hints = [urljoin(final, m.group(1)) for m in CONTACT_HINT.finditer(html[:800000])]
         hints = [u for u in hints if same_site(u, final) and not re.search(r"\.(?:jpe?g|png|pdf|css|js)(?:\?|$)", u, re.I)]
-        hints.sort(key=lambda u: (0 if re.search(r"shipping|delivery", u, re.I) else 1 if "contact" in u.lower() else 2))
-        for u in list(dict.fromkeys(pages + hints))[:2]:
+        hints.sort(key=lambda u: (0 if re.search(r"shipping|delivery", u, re.I) else 1 if "contact" in u.lower() else 2 if re.search(r"terms|conditions", u, re.I) else 3))
+        for u in list(dict.fromkeys(pages + hints))[:3]:
             st4, fin4, h4, _, _ = await site.get(u, total=12, tries=1)
             if st4 == 200 and h4:
                 g2, e2, n2 = U.us_signals(h4, S.visible_text(h4), final, api)
-                for k in ("us_address", "us_phone", "us_shipping"):
+                for k in ("us_address", "us_phone", "us_shipping", "us_governing_law", "us_city_state"):
                     if k in e2 and k not in ev:
                         ev[k] = e2[k]
                         ev[k + "_page"] = fin4

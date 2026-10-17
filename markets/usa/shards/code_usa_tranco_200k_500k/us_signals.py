@@ -58,6 +58,7 @@ PRICE_FOREIGN_TEXT = re.compile(r"(?:CA\$|C\$|A\$|AU\$|NZ\$|HK\$|S\$|R\$|MX\$|£
 CITY_STATE = re.compile(r"(?<!Inc)(?<!LLC)(?<!Ltd)\b([A-Z][a-z]{2,}(?:[ .][A-Z][a-z]+){0,2}),\s(%s)\b(?![\s,]*\d)(?!-)" % "|".join(s for s in STATES if s not in ("IN", "OR", "ME", "OK", "HI", "DE", "PA")))
 US_TZ = re.compile(r"\"timezone_string\"\s*:\s*\"((?:America\\?/(?:New_York|Chicago|Denver|Los_Angeles|Phoenix|Anchorage|Detroit|Boise|Indiana\\?/\w+|"
                    r"Kentucky\\?/\w+|North_Dakota\\?/\w+|Adak|Juneau|Sitka|Nome|Yakutat|Metlakatla|Menominee|Puerto_Rico))|Pacific\\?/Honolulu|US\\?/\w+)\"")
+GOVERNING_LAW = re.compile(r"laws of the (?:State|Commonwealth) of (%s)\b|\b(%s) (?:limited liability company|corporation|LLC)\b" % (STATE_NAMES, STATE_NAMES))
 EN_US = re.compile(r"(?:lang|hreflang)=[\"']en[-_]US[\"']|og:locale[\"'][^>]*en_US", re.I)
 US_PATH = re.compile(r"^https?://(?:us|usa|shop-us|us-shop|store-us|en-us)\.|/(?:en[-_]us|us[-_]en|us|usa)(?:/|$)", re.I)
 
@@ -128,6 +129,10 @@ def us_signals(html: str, text: str, final_url: str, api: dict | None = None):
         if cs:
             ev["us_city_state"] = cs.group(0)[-40:]
             loc.append("us_city_state")
+    gl = GOVERNING_LAW.search(text[:400000])
+    if gl:
+        ev["us_governing_law"] = gl.group(0)[:60]
+        loc.append("us_governing_law")
     if api.get("timezone"):
         ev["store_timezone"] = api["timezone"]
         loc.append("store_timezone_US")
