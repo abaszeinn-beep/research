@@ -1,0 +1,54 @@
+# USA Ecommerce Directory — progress log
+
+Times are UTC (2026-10-17). Resume instructions are in `RESUME.md`.
+
+## Session 1
+
+* Generalized the Saudi pipeline into `markets/usa/mktecom` with a `Market` config (`market.py`); Saudi code and
+  deliverables untouched. Rewrote identity rules, signals (USD, US vs Canadian area codes, US addresses, US
+  shipping/legal terms, en-US locale), verifier decision, secondary evidence and exporter for the US.
+* Channel tests from this VM: Tranco list download works; Common Crawl index works (CC-MAIN-2026-39 latest, frequent
+  504s that need retries); Wayback CDX prefix queries time out (~120 s) so Wayback is only a short-timeout fallback;
+  Wikidata SPARQL works; iTunes Search API works (~20 calls/min); Bing returns 200 but was not used; DuckDuckGo
+  202, Mojeek 403, Brave 429; no search API keys are available (no paid services used).
+* Reference universe: curated `reference_brands.tsv` (~1.2k: 69 huge, 239 large, 905 medium; NRF Top 100, Fortune
+  500 retailers, DTC brands, global brands' US storefronts, B2B, plus Canadian/marketplace/defunct controls) +
+  Wikidata retail companies/chains/brands (~2.6k with official websites) → ~3.8k reference rows, all queued for
+  live verification.
+* Tranco homepage screener started on ranks 1–200k.
+* The VM reset once around 12:19 and lost the local DB; resumed from the pushed branch and added
+  `scripts/checkpoint.sh` (snapshot + commit + push every 30 min).
+
+## Session 2 (resumed after coordinator status check)
+
+* 12:56 Exporter tested: 239 verified at that point. Committed reference/secondary/exporter code.
+* 13:00 QA of non-verified reasons found false negatives among well-known US retailers whose homepages carry only
+  `$` prices (Walgreens, Purple, Ethan Allen, Foot Locker, Rite Aid, SharkNinja). Fixes: near-miss stores get one
+  legal/contact page (privacy/terms/shipping/contact link from the homepage) fetched and rescored; toll-free phone +
+  US place + ≥3 USD prices with no foreign indicator counts as a strong US signal; score ≥3.5 is enough when a US
+  street address/phone and ≥2 USD prices are present; ≥20 add-to-cart markers counts as retail markup. One new false
+  positive found in testing (Kochava, ad-tech on WordPress) → WooCommerce counts as a commerce platform only when
+  its Store API returns products. Canadian postal-code regex required a space (it matched hex colours like
+  `C7C7C7`). Regression sample of 60 previous decisions: no logic regressions. 478 near-miss candidates requeued.
+* 13:05 Shopify (and some Cloudflare-fronted DTC sites) answer HTTP 429 to the Python client for nearly every store,
+  including `*.myshopify.com`, while plain curl gets 200. Treated as bot filtering: no client switching. Shopify
+  candidates (incl. 12k `*.myshopify.com` from Common Crawl) deferred to priority -5; slow lane paused.
+* 13:10 Network saturation diagnosed: with screener 60 + verifier 40, 60–75% of Tranco domains failed DNS/connect
+  (live sites like langchain.com marked dead). Measured: bursts of ~3k connections/min are fine but sustained load
+  above ~400–500 new hosts/min breaks DNS/TCP. Deleted 6,687 suspect `dead` screen rows for re-screening, requeued
+  326 candidates with DNS/connect failures, restarted at screener 25 + verifier 24 (failures back to normal).
+* 13:20 Secondary evidence: Common Crawl lookup now asks the index for product-like paths when the first page is
+  only category/brand pages (Nordstrom case); iTunes calls paced (3.5 s) with retries (previous run hit
+  `itunes_error`). Verified so far by secondary evidence: Home Depot, Lowe's, Chewy, Dollar General,
+  Williams-Sonoma.
+
+### Maintenance commands
+
+```bash
+# requeue verifier DNS/connect failures after a saturation episode
+sqlite3 data/usa_ecom.sqlite "UPDATE candidates SET status='pending', priority=max(priority,4) WHERE status IN ('rejected','unverified') AND key IN (SELECT key FROM verifications WHERE reason LIKE 'dns%' OR reason LIKE 'fetch_failed%')"
+# re-screen Tranco rows that failed on DNS/connect
+sqlite3 data/usa_ecom.sqlite "DELETE FROM screen WHERE status='dead' AND (reason LIKE 'fetch_failed:Connect%' OR reason='dns_not_resolved' OR reason LIKE 'fetch_failed:ReadTimeout%')"
+# retry secondary evidence for stores whose App Store lookup errored
+sqlite3 data/usa_ecom.sqlite "DELETE FROM secondary_evidence WHERE verdict='insufficient_secondary_evidence' AND evidence LIKE '%itunes_error%'"
+```
