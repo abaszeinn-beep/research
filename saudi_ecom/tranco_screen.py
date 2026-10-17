@@ -108,12 +108,33 @@ class ScreenFetcher(Fetcher):
         return await asyncio.wait_for(super()._raw_get(url, headers, read_limit=min(read_limit, 1_000_000)), self.req_timeout)
 
 
-async def resolves(host):
-    try:
-        infos = await asyncio.get_running_loop().getaddrinfo(host, 443, type=socket.SOCK_STREAM)
-        return sorted({i[4][0] for i in infos})
-    except Exception:
-        return []
+DNS_TEMP_FAILS = [0]
+
+
+async def resolves(host, rec=None):
+    for attempt in range(3):
+        try:
+            infos = await asyncio.get_running_loop().getaddrinfo(host, 443, type=socket.SOCK_STREAM)
+            return sorted({i[4][0] for i in infos})
+        except socket.gaierror as e:
+            if e.errno != socket.EAI_AGAIN:
+                return []
+            await asyncio.sleep(2 + 3 * attempt)
+        except Exception:
+            return []
+    DNS_TEMP_FAILS[0] += 1
+    if rec is not None:
+        rec["dns_temp_fail"] = rec.get("dns_temp_fail", 0) + 1
+    return []
+
+
+def force_ipv4(loop):
+    """Halve DNS traffic (no AAAA lookups); IPv6 egress is not used from this VM anyway."""
+    orig = loop.getaddrinfo
+
+    async def gai(host, port, *, family=0, type=0, proto=0, flags=0):
+        return await orig(host, port, family=family or socket.AF_INET, type=type, proto=proto, flags=flags)
+    loop.getaddrinfo = gai
 
 
 def page_eval(html, url, final):
@@ -249,7 +270,7 @@ async def screen_domain(f: ScreenFetcher, rank, domain, state):
     rand = "zz" + "".join(random.choice(string.ascii_lowercase) for _ in range(10))
     subs = [f"{s}.{root}" for s in SAUDI_SUBS]
     sib = [f"{label}.sa", f"{label}.com.sa"] if label and len(label) >= 2 else []
-    res = await asyncio.gather(resolves(f"{rand}.{root}"), *(resolves(h) for h in subs), *(resolves(h) for h in sib))
+    res = await asyncio.gather(resolves(f"{rand}.{root}", rec), *(resolves(h, rec) for h in subs), *(resolves(h, rec) for h in sib))
     wildcard, sub_ips, sib_ips = res[0], res[1:1 + len(subs)], res[1 + len(subs):]
     for h, ips in zip(subs, sub_ips):
         if not ips or have_sa_variant:
@@ -267,7 +288,7 @@ async def screen_domain(f: ScreenFetcher, rank, domain, state):
             add_hit(f"https://{h}/", fin2, "saudi_subdomain_blocked", {}, st2, note=f"http_{st2}")
     for h, ips in zip(sib, sib_ips):
         if not ips:
-            ips = await resolves("www." + h)
+            ips = await resolves("www." + h, rec)
         if not ips:
             continue
         if h in state["sibling_seen"]:
@@ -292,6 +313,7 @@ async def screen_domain(f: ScreenFetcher, rank, domain, state):
 async def run_screen(shard, start, end, part, parts, concurrency):
     loop = asyncio.get_running_loop()
     loop.set_default_executor(concurrent.futures.ThreadPoolExecutor(max_workers=256))
+    force_ipv4(loop)
     wd = work_dir(shard)
     out_path = os.path.join(wd, f"screened_{part}.jsonl")
     done = set()
@@ -348,7 +370,117 @@ async def run_screen(shard, start, end, part, parts, concurrency):
     print(f"[screen {part}] finished {n[0]} in {time.time() - t0:.0f}s", flush=True)
 
 
+# ---------------------------------------------------------------- archived homepages of blocked domains
+
+ARCHIVE_UA = {"User-Agent": "saudi-ecom-directory-research/1.0 (polite archive client)"}
+
+
+async def archive_home(client, domain, page_url=None):
+    """Latest Wayback capture (<=365 days) of a page this VM cannot read live: Saudi locale links / Saudi shop signals."""
+    import datetime as dt
+    url = f"https://web.archive.org/web/{dt.datetime.utcnow():%Y%m%d}id_/{page_url or f'https://{domain}/'}"
+    for attempt in range(3):
+        try:
+            r = await client.get(url, timeout=60)
+        except httpx.HTTPError:
+            await asyncio.sleep(5 * (attempt + 1))
+            continue
+        if r.status_code in (429, 503):
+            await asyncio.sleep(20 * (attempt + 1))
+            continue
+        break
+    else:
+        return {"err": "archive_fetch_failed"}
+    if r.status_code != 200:
+        return {"err": f"archive_http_{r.status_code}"}
+    m = re.search(r"/web/(\d{14})", str(r.url))
+    ts = m.group(1) if m else ""
+    try:
+        age = (dt.datetime.utcnow() - dt.datetime.strptime(ts, "%Y%m%d%H%M%S")).days
+    except ValueError:
+        age = 9999
+    html = r.text[:1_000_000]
+    orig = re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", str(r.url))
+    out = {"ts": ts, "age_days": age, "orig": orig[:200]}
+    if age > 365:
+        out["err"] = "capture_too_old"
+        return out
+    ev = page_eval(html, f"https://{domain}/", orig)
+    out.update({"ecom": ev["ecom"], "strong": ev["strong"], "score": ev["score"], "title": ev["title"], "thin": ev["thin"]})
+    root = registrable_domain(domain)
+    links = []
+    for tag in HREFLANG_SA.findall(html[:400_000]):
+        mm = re.search(r"href=[\"']([^\"']+)", tag)
+        if mm:
+            links.append(mm.group(1))
+    for href in HREF.findall(html[:600_000]):
+        if SA_LINK.search(href):
+            links.append(href)
+    sa_links = []
+    for l in links:
+        l = re.sub(r"^(?:https?://web\.archive\.org)?/web/\d+(?:[a-z]{2}_)?/", "", l)
+        full = urljoin(orig, l)
+        h = (urlsplit(full).hostname or "").lower()
+        if h and registrable_domain(h) == root and (SA_GEO.search(full) or h.split(".")[0] in SAUDI_SUBS):
+            sa_links.append(full.split("#")[0])
+    out["sa_links"] = list(dict.fromkeys(sa_links))[:3]
+    out["hit"] = bool(out["sa_links"]) or is_hit(ev)
+    return out
+
+
+async def run_archive(shard, concurrency):
+    wd = work_dir(shard)
+    out_path = os.path.join(wd, "archive.jsonl")
+    done = set()
+    if os.path.exists(out_path):
+        with open(out_path) as fh:
+            done = {json.loads(l)["domain"] for l in fh if l.strip()}
+    todo = []
+    for rec in read_screened(shard):
+        h = rec.get("home") or {}
+        if rec.get("skip") or rec["domain"] in done or rec["domain"].endswith(".sa") or rec.get("hits"):
+            continue
+        if rec.get("error") or h.get("http") in BLOCKED_HTTP or h.get("err") in ("timeout", "robots_disallowed", "connect_error"):
+            todo.append(rec)
+    print(f"[archive] {len(todo)} blocked/unreachable domains", flush=True)
+    sem = asyncio.Semaphore(concurrency)
+    out = open(out_path, "a")
+    n = [0]
+    async with httpx.AsyncClient(headers=ARCHIVE_UA, follow_redirects=True) as client:
+        async def one(rec):
+            async with sem:
+                try:
+                    a = await asyncio.wait_for(archive_home(client, rec["domain"]), 200)
+                except Exception as e:
+                    a = {"err": f"{type(e).__name__}"}
+            hits = []
+            if a.get("hit"):
+                for u in a.get("sa_links") or [f"https://{rec['domain']}/"]:
+                    ident = identity(u)
+                    if ident:
+                        hits.append({"url": u, "key": ident["key"], "root": ident["root_domain"], "via": "archived_homepage",
+                                     "http": (rec.get("home") or {}).get("http"), "ecom": a.get("ecom"), "strong": a.get("strong"),
+                                     "score": a.get("score"), "title": a.get("title"), "note": f"wayback capture {a.get('ts')}"})
+                        break
+            out.write(json.dumps({"rank": rec["rank"], "domain": rec["domain"], "archive": a, "hits": hits}, ensure_ascii=False) + "\n")
+            out.flush()
+            n[0] += 1
+            if hits or n[0] % 100 == 0:
+                print(f"[archive] {n[0]}/{len(todo)} {rec['domain']} {a.get('err') or ''} hits={[h['url'] for h in hits]}", flush=True)
+        await asyncio.gather(*(one(r) for r in todo))
+    out.close()
+    open(os.path.join(wd, "archive.done"), "w").write(str(time.time()))
+
+
 # ---------------------------------------------------------------- verification
+
+def read_archive(shard):
+    p = os.path.join(work_dir(shard), "archive.jsonl")
+    if not os.path.exists(p):
+        return []
+    with open(p) as fh:
+        return [json.loads(l) for l in fh if l.strip()]
+
 
 def read_screened(shard):
     recs = []
@@ -362,17 +494,31 @@ def read_screened(shard):
     return recs
 
 
+SOFT_404 = re.compile(r"not found|\b404\b|page introuvable|不存在|找不到|nicht gefunden|no encontrada|non trovata|غير موجود|bulunamad", re.I)
+
+
+def keep_hit(h):
+    if h["via"] in ("homepage_blocked", "sa_sibling_blocked", "saudi_subdomain_blocked", "archived_homepage"):
+        return True
+    if SOFT_404.search(h.get("title") or ""):
+        return False
+    strong = set(h.get("strong") or []) - {"saudi_phone"}
+    if not is_saudi_specific(h["key"], h["url"]) and strong == {"sar_prices"} and (h.get("score") or 0) < 4.5:
+        return False
+    return True
+
+
 def hit_targets(shard, recheck):
     """Unique verification targets (one per identity key), keeping the best-ranked source domain."""
     roots, keys, _ = known_sets()
     tg = {}
-    for rec in read_screened(shard):
+    for rec in read_screened(shard) + read_archive(shard):
         if rec.get("skip") == "known_recheck":
             for c in recheck.get(registrable_domain(rec["domain"]), []):
                 tg.setdefault(c["key"], {**c, "rank": rec["rank"], "source_domain": rec["domain"], "via": "db_recheck_network_error", "screen": {}})
             continue
         for h in rec.get("hits", []):
-            if h["key"] in keys or h["root"] in roots:
+            if h["key"] in keys or h["root"] in roots or not keep_hit(h):
                 continue
             ident = identity(h["url"])
             if not ident:
@@ -412,6 +558,7 @@ async def run_secondary(t, res):
 
 
 async def run_verify(shard, watch, concurrency, sec_concurrency, parts):
+    force_ipv4(asyncio.get_running_loop())
     wd = work_dir(shard)
     out_path = os.path.join(wd, "verified.jsonl")
     done = {}
@@ -428,7 +575,18 @@ async def run_verify(shard, watch, concurrency, sec_concurrency, parts):
     sem_sec = asyncio.Semaphore(sec_concurrency)
     out = open(out_path, "a")
 
+    arch_client = httpx.AsyncClient(headers=ARCHIVE_UA, follow_redirects=True)
+
     async def one(t):
+        if t["via"] == "saudi_subdomain_blocked":
+            host = urlsplit(t["url"]).hostname
+            rand = "zz" + "".join(random.choice(string.ascii_lowercase) for _ in range(10))
+            a, b = await asyncio.gather(resolves(host), resolves(f"{rand}.{t['root_domain']}"))
+            if b and set(a) == set(b):
+                rec = {"key": t["key"], "status": "dropped", "reason": "wildcard DNS: Saudi subdomain is not a distinct site", "rank": t["rank"]}
+                out.write(json.dumps(rec) + "\n")
+                done[t["key"]] = rec
+                return
         try:
             res = await asyncio.wait_for(verify_one(f, {"key": t["key"], "url": t["url"], "root_domain": t["root_domain"],
                                                         "platform_hint": t.get("platform_hint")}), 240)
@@ -438,7 +596,29 @@ async def run_verify(shard, watch, concurrency, sec_concurrency, parts):
             res = {"key": t["key"], "final_url": t["url"], "status": "unverified", "reason": f"verifier_error:{type(e).__name__}:{str(e)[:80]}",
                    "verified_at": _now(), "evidence_url": t["url"]}
         res = tranco_guard(res, t)
-        if res["status"] == "unverified" and SECONDARY_REASONS.match(res.get("reason") or "") and is_saudi_specific(t["key"], res.get("final_url") or t["url"]):
+        run_sec = False
+        if res["status"] == "unverified" and SECONDARY_REASONS.match(res.get("reason") or "") and (
+                is_saudi_specific(t["key"], res.get("final_url") or t["url"]) or t["via"] == "archived_homepage"):
+            if t["via"] == "archived_homepage" or (t.get("screen") or {}).get("ecom"):
+                run_sec = True
+            else:
+                async with sem_sec:
+                    try:
+                        a = await asyncio.wait_for(archive_home(arch_client, urlsplit(t["url"]).hostname, t["url"]), 200)
+                    except Exception as e:
+                        a = {"err": type(e).__name__}
+                res["archive_check"] = a
+                if a.get("err"):
+                    res["reason"] += f"; no usable recent Wayback capture ({a['err']})"
+                elif a.get("ecom") or a.get("sa_links") or (set(a.get("strong") or []) - {"sa_tld", "saudi_phone"}):
+                    run_sec = True
+                elif a.get("thin"):
+                    res["reason"] += f"; Wayback capture {a.get('ts')} is a JS shell without ecommerce markers"
+                else:
+                    res["status"] = "rejected"
+                    res["reason"] = (f"no_ecommerce_evidence_in_archived_page (Wayback {a.get('ts')}: {a.get('title') or ''}); live: " + res["reason"])[:400]
+                    res["evidence_url"] = f"https://web.archive.org/web/{a.get('ts')}/{a.get('orig')}"
+        if run_sec:
             async with sem_sec:
                 try:
                     sec = await run_secondary(t, res)
@@ -571,6 +751,7 @@ def write_outputs(shard, start, end, partial=False, runtime=None):
     for s in screened:
         by_dom[s["domain"]] = s
     n_slice = len(load_slice(start, end))
+    archive = read_archive(shard)
     skipped_known = sum(1 for s in by_dom.values() if s.get("skip") in ("known", "known_recheck"))
     skipped_nonretail = sum(1 for s in by_dom.values() if s.get("skip") in ("nonretail_name", "marketplace"))
     screened_n = sum(1 for s in by_dom.values() if not s.get("skip"))
@@ -595,6 +776,9 @@ def write_outputs(shard, start, end, partial=False, runtime=None):
         "verified_secondary_evidence": counts["verified_secondary_evidence"],
         "unverified": counts["unverified"],
         "rejected": counts["rejected"],
+        "blocked_or_unreachable_checked_via_wayback": len(archive),
+        "wayback_capture_usable": sum(1 for x in archive if not x["archive"].get("err")),
+        "wayback_hits": sum(1 for x in archive if x.get("hits")),
         "errors": errors,
         "homepage_dns_not_resolved": no_dns,
         "runtime_seconds": runtime,
@@ -606,7 +790,7 @@ def write_outputs(shard, start, end, partial=False, runtime=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["screen", "verify", "export"])
+    ap.add_argument("cmd", choices=["screen", "archive", "verify", "export"])
     ap.add_argument("--shard", type=int, required=True)
     ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--end", type=int, default=0)
@@ -619,6 +803,8 @@ def main():
     a = ap.parse_args()
     if a.cmd == "screen":
         asyncio.run(run_screen(a.shard, a.start, a.end, a.part, a.parts, a.concurrency))
+    elif a.cmd == "archive":
+        asyncio.run(run_archive(a.shard, a.concurrency))
     elif a.cmd == "verify":
         asyncio.run(run_verify(a.shard, a.watch, a.concurrency, a.sec_concurrency, a.parts))
     else:
