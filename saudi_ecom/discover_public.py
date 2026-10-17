@@ -130,12 +130,7 @@ def ministry(client, con):
         print("[public] ministry page unavailable", flush=True)
         return []
     pdfs = sorted(set(re.findall(r"/ar/mediacenter/esv/\d+\.pdf", page.text)), key=lambda p: int(re.search(r"(\d+)", p).group(1)))
-    # a later wave is linked from the 2026 news item when that page lists more files
-    for extra in ("https://mc.gov.sa/ar/mediacenter/Pages/esvt.aspx",):
-        r = get(client, extra)
-        if r is not None and r.status_code == 200 and "just a moment" not in r.text[:400].lower():
-            pdfs += re.findall(r"/ar/mediacenter/esv\w*/\d+\.pdf", r.text)
-    pdfs = list(dict.fromkeys(pdfs))
+    pdfs = [p for p in pdfs if int(re.search(r"(\d+)", p).group(1)) <= 250]
     print(f"[public] ministry pdfs {len(pdfs)}", flush=True)
     try:
         import pymupdf
@@ -145,8 +140,12 @@ def ministry(client, con):
     out = []
     for path in pdfs:
         url = "https://mc.gov.sa" + path
-        r = get(client, url, timeout=40)
-        if r is None or r.status_code != 200 or not r.content.startswith(b"%PDF"):
+        try:
+            r = client.get(url, timeout=12)
+        except httpx.HTTPError:
+            print(f"[public] ministry skip {path}", flush=True)
+            continue
+        if r.status_code != 200 or not r.content.startswith(b"%PDF"):
             continue
         try:
             doc = pymupdf.open(stream=r.content, filetype="pdf")
@@ -175,7 +174,9 @@ def ministry(client, con):
                     "domains": hosts, "url": ("https://" + hosts[0] + "/") if hosts else None,
                     "source": f"ministry-of-commerce:esv {url} (fetched {db.now()[:10]})",
                     "legal": title[:180]})
-        time.sleep(0.15)
+        if len(out) % 10 == 0:
+            print(f"[public] ministry parsed {len(out)} {short[:40]}", flush=True)
+        time.sleep(0.05)
     return out
 
 

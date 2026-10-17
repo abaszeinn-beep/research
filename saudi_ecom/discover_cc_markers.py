@@ -122,11 +122,19 @@ async def main(rank_limit, concurrency, platform_crawls):
     con = db.connect()
     db.register_source(con, "cc_marker", "index", "Common Crawl CDX: Saudi locale paths on top Tranco domains, plus youcan.shop and wuilt.com")
     async with httpx.AsyncClient(headers=UA, follow_redirects=True, timeout=60) as client:
-        r = await get_with_retry(client, "https://index.commoncrawl.org/collinfo.json", None)
-        if r is None:
+        crawls = None
+        for attempt in range(3):
+            try:
+                r = await client.get("https://index.commoncrawl.org/collinfo.json", timeout=25)
+                if r.status_code == 200:
+                    crawls = r.json()
+                    break
+            except httpx.HTTPError as e:
+                print(f"[cc-marker] collinfo {type(e).__name__}", flush=True)
+            await asyncio.sleep(3)
+        if not crawls:
             print("[cc-marker] collinfo failed", flush=True)
             return
-        crawls = r.json()
         sem = asyncio.Semaphore(concurrency)
         await platform_pages(client, con, sem, crawls, platform_crawls)
         path = os.path.join(RAW, "tranco_latest.csv")

@@ -131,7 +131,7 @@ class Screener:
                 rp = None
                 try:
                     async with self.sem:
-                        st, _, txt = await asyncio.wait_for(self._read(base + "/robots.txt", 60_000), 4)
+                        st, _, txt = await asyncio.wait_for(self._read(base + "/robots.txt", 40_000), 2)
                     if st == 200 and "<html" not in txt[:400].lower():
                         rp = urllib.robotparser.RobotFileParser()
                         rp.parse(txt.splitlines())
@@ -156,7 +156,7 @@ class Screener:
         async with self.sem:
             self.host_last[host] = time.monotonic()
             try:
-                st, final, text = await asyncio.wait_for(self._read(url, limit), 9)
+                st, final, text = await asyncio.wait_for(self._read(url, limit), 6)
                 return st, final, text, None
             except (httpx.ConnectError, httpx.ConnectTimeout) as e:
                 msg = str(e).lower()
@@ -488,7 +488,7 @@ async def screen(con, rows, list_id, full_rank, path_rank, wide_rank, concurrenc
             # Forced /en-sa and /sa fetches are limited to the very top, to domains that
             # geo-redirect, and to roots already in the DB. Everyone else is judged from
             # the homepage plus any Saudi link the homepage itself publishes.
-            if skip_home or geo or not html or rank <= 8_000:
+            if skip_home or geo or not html or rank <= 2_000:
                 origin = f"https://www.{domain}"
                 for extra in (origin + "/en-sa/", origin + "/sa/"):
                     if extra not in links:
