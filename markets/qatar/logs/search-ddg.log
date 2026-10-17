@@ -7,3 +7,13 @@
 [search:ddg] blocked, backing off 60s
 [search:ddg] 10/2829 q='site:com.qa shop online' results=10 new=9 stats={'ddg_queries': 11, 'ddg_new': 23}
 [search:ddg] blocked, backing off 60s
+[search:ddg] 2831 queries pending (0 cached)
+[search:ddg] 0/2831 q='myshopify qatar QAR' results=10 new=10 stats={'ddg_queries': 1, 'ddg_new': 10}
+[search:ddg] 10/2831 q='site:com.qa shop online' results=0 new=0 stats={'ddg_queries': 11, 'ddg_new': 18}
+[search:ddg] blocked, backing off 60s
+[search:ddg] 20/2831 q='"المتجر الرسمي" قطر' results=9 new=5 stats={'ddg_queries': 21, 'ddg_new': 37}
+[search:ddg] 30/2831 q='best qatari perfume brands online' results=0 new=0 stats={'ddg_queries': 31, 'ddg_new': 50}
+[search:ddg] 40/2831 q='lagoona mall stores' results=0 new=0 stats={'ddg_queries': 41, 'ddg_new': 74}
+[search:ddg] 50/2831 q='magento qatar ecommerce website' results=0 new=0 stats={'ddg_queries': 51, 'ddg_new': 85}
+[search:ddg] 60/2831 q='buy doors online Doha QAR' results=10 new=6 stats={'ddg_queries': 61, 'ddg_new': 127}
+[search:ddg] blocked, backing off 60s

@@ -1,0 +1,7 @@
+[reference] resolving 213 refs
+[reference] 10/213 {'accepted': 5, 'blocked': 10, 'cdx': 0, 'bing': 0, 'none': 5}
+[reference] 20/213 {'accepted': 10, 'blocked': 19, 'cdx': 0, 'bing': 0, 'none': 10}
+[reference] 30/213 {'accepted': 16, 'blocked': 25, 'cdx': 1, 'bing': 0, 'none': 13}
+[reference] 40/213 {'accepted': 18, 'blocked': 31, 'cdx': 1, 'bing': 0, 'none': 21}
+[reference] 50/213 {'accepted': 22, 'blocked': 36, 'cdx': 3, 'bing': 0, 'none': 25}
+[reference] 60/213 {'accepted': 25, 'blocked': 38, 'cdx': 4, 'bing': 0, 'none': 31}

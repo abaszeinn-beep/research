@@ -13,13 +13,13 @@ from . import db
 from .common import identity
 from .queries import NICHES, CITIES
 from .verify import MARKET_GEO
+from .market import M, WORK_DIR
 
-OUT_DIR = os.path.join(os.path.dirname(__file__), "..")
-XLSX = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.xlsx")
-CSV = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.csv")
+OUT_DIR = WORK_DIR
+XLSX = M.xlsx
+CSV = M.csv
 REF_CSV = os.path.join(OUT_DIR, "data", "reference_universe.csv")
-# master directory as committed before the reference audit (commit 16cd9b5), to tell "already present" from "added"
-PREVIOUS_CSV = os.path.join(OUT_DIR, "data", "previous_master_16cd9b5.csv")
+PREVIOUS_CSV = None
 
 PLATFORM_SHARED = {"salla.sa", "zid.store", "myshopify.com", "expandcart.com", "matjrah.store", "youcan.shop", "wuilt.com", "salla.store", "company.site", "wixsite.com"}
 
@@ -107,16 +107,16 @@ def dedup(con):
     return len(dups)
 
 
-def fmt_saudi(ev):
+def fmt_market(ev):
     e = json_obj(ev)
     if not e and not isinstance(ev, str):
         return ""
     parts = []
-    lab = {"sa_tld": ".sa domain", "sa_locale": "Saudi locale (en-sa/ar-sa)", "currency_SAR_code": "SAR currency in store config",
-           "sar_prices": "SAR/ر.س prices", "saudi_phone": "Saudi phone", "vat_number": "Saudi VAT no.", "commercial_registration": "CR no.",
-           "maroof": "Maroof", "saudi_places": "Saudi cities/country", "saudi_payment_shipping": "Saudi payment/shipping",
-           "saudi_platform": "Saudi platform", "shopify_shop_country": "Shopify shop country", "shopify_base_currency": "Shopify base currency",
-           "other_currency": "other currency"}
+    lab = {"cctld": f".{M.tld} domain", "market_locale": f"{M.country} locale path/subdomain/hreflang (en-{M.code}/ar-{M.code})",
+           "currency_code": f"{M.currency} currency in store config", "local_prices": f"{M.currency} prices on page",
+           "local_phone": f"+{M.phone_cc} phone", "commercial_registration": "CR no.", "market_places": f"{M.country} cities/areas/malls",
+           "local_payment_shipping": "local payment/delivery", "shopify_shop_country": "Shopify shop country",
+           "shopify_base_currency": "Shopify base currency", "other_currency": "other currency", "woo_store_currency": "WooCommerce currency"}
     for k, v in e.items():
         if v is True:
             parts.append(lab.get(k, k))
@@ -153,7 +153,7 @@ def main():
         if e:
             n.append("product evidence: " + "; ".join(e.get("product_evidence") or []))
             n.append("purchase evidence: " + "; ".join(e.get("purchase_evidence") or []))
-        if r.reason and r.reason != "ecommerce+saudi evidence ok":
+        if r.reason and r.reason != "ecommerce+market evidence ok":
             n.append(r.reason)
         return " | ".join(x for x in n if x)
 
@@ -163,8 +163,8 @@ def main():
         "Registrable Root Domain": ver["Registrable Root Domain"],
         "Platform": ver.platform,
         "Industry / Category": ver.category,
-        "Saudi Relevance Evidence": ver.market_evidence.map(fmt_saudi),
-        "Saudi Score": ver.market_score,
+        "Market Relevance Evidence": ver.market_evidence.map(fmt_market),
+        "Market Score": ver.market_score,
         "Verification Source URL": ver.final_url,
         "Product Evidence URL": ver.product_evidence,
         "Verification Date (UTC)": ver.verified_at,
@@ -182,7 +182,7 @@ def main():
         "Reason": unv.reason,
         "Platform (detected)": unv.platform,
         "Name (if detected)": unv.store_name,
-        "Saudi Score": unv.market_score,
+        "Market Score": unv.market_score,
         "Checked At (UTC)": unv.verified_at,
         "Discovery Source": unv.first_source,
     })
@@ -225,6 +225,17 @@ def main():
     return len(master)
 
 
+GAPS = [
+    "Bot-protected large retailers (Akamai/Cloudflare 403) stay Unverified unless two independent secondary proofs exist (archives, sitemaps, App Store); no challenge was bypassed.",
+    "This VM is outside Qatar: global brands may geo-redirect or price in USD; Qatar paths (/en-qa, /qa-en, qa.) are probed explicitly but some geo-locked storefronts remain unresolved.",
+    "Shopify's edge rate-limits this IP (HTTP 429) for storefront HTML; Shopify stores are verified from public meta.json/products.json when HTML is throttled.",
+    "Search engines: Bing returns no organic results to this IP, Google is JS-gated, Brave 429, Mojeek/Ecosia/Qwant 403; DuckDuckGo Lite works intermittently with long backoffs, so long-tail search coverage is partial.",
+    "Common Crawl / crt.sh / Tranco only see sites that were crawled, certified or ranked; small Instagram-first sellers without their own website are out of scope or missed.",
+    "Category labels are keyword-based (Arabic + English) from title/meta/products; expect some misclassification.",
+    "Expansion: more DDG query templates per niche/area once the engine stops throttling; Wayback CDX for *.qa when archive.org is back online; more mall directories (several are JS-only).",
+]
+
+
 def coverage(con, ver, v, ndup):
     q = lambda s: pd.read_sql_query(s, con)
     out = []
@@ -239,7 +250,7 @@ def coverage(con, ver, v, ndup):
     out.append(("Verified stores by platform", plat))
     cities = Counter()
     for ev in ver.market_evidence:
-        for p in json_obj(ev).get("saudi_places", []):
+        for p in json_obj(ev).get("market_places", []):
             cities[p] += 1
     out.append(("Regions/cities mentioned on verified storefronts (multi-count)", pd.DataFrame(cities.most_common(), columns=["City/Region", "Stores mentioning"])))
     src = q("""SELECT s.source AS Source, count(*) AS Candidates, sum(c.status IN ('verified','duplicate')) AS 'Verified (incl. dup)',
@@ -253,20 +264,11 @@ def coverage(con, ver, v, ndup):
     cc = q("SELECT substr(job, instr(job,'|')+1, instr(substr(job, instr(job,'|')+1),'|')-1) AS Pattern, count(*) AS 'Index pages fetched', sum(n) AS 'Keys seen', sum(n_new) AS 'New candidates' FROM jobs WHERE kind='cc' AND status='done' GROUP BY 1")
     out.append(("Common Crawl CDX harvesting", cc))
     workers = q("SELECT name AS Worker, kind AS Kind, concurrency AS Concurrency, started AS Started, heartbeat AS 'Last heartbeat', info AS 'Last stats' FROM workers")
-    out.append(("Agent / worker utilization (code workers; no separate AI subagents were spawned)", workers))
+    out.append(("Agent / worker utilization (tmux code workers sharing one SQLite DB; no AI subagents were spawned)", workers))
     reasons = q("SELECT status AS Status, substr(reason,1,70) AS Reason, count(*) AS Count FROM verifications WHERE status!='verified' GROUP BY 1,2 ORDER BY 3 DESC LIMIT 40")
     out.append(("Top rejection / unverified reasons", reasons))
     niche_cats = sorted({c for c, _, _ in NICHES})
-    gaps = pd.DataFrame({"Remaining gaps / expansion opportunities": [
-        "Bot-protected large retailers (Akamai/Cloudflare 403) need a real-browser pass (Playwright) or manual check; listed in Unverified with reason blocked_or_challenge.",
-        "Salla/Zid stores on custom domains are only found when a salla.sa/<slug> redirect, search result, or showcase links to them; no content-search index was available (PublicWWW/BuiltWith are paid).",
-        "Common Crawl only covers pages that were crawled; small/new stores absent from CC and search results are missed.",
-        "Shopify/WooCommerce Saudi stores on .com domains are found mainly via search; Bing returns 10 results/page and throttles, so long-tail coverage is partial.",
-        "Google search requires JS (blocked); DuckDuckGo html throttles after ~2 queries (anomaly page); Brave 429; Mojeek 403; Yandex/Startpage captcha.",
-        "Category labels are keyword-based (Arabic+English) from title/meta/products; expect some misclassification.",
-        "Salla API product 'type' gives reliable physical/digital split for Salla; for other platforms digital/service exclusion is heuristic.",
-        "Further expansion: more Bing query templates per niche/city; Common Crawl for more historical crawls of *.sa; mall tenant directories; Maroof (requires JS/auth, not used).",
-    ]})
+    gaps = pd.DataFrame({"Remaining gaps / expansion opportunities": GAPS})
     out.append(("Remaining gaps and expansion opportunities", gaps))
     return out
 
