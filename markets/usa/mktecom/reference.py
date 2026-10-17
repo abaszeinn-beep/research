@@ -163,6 +163,8 @@ def audit(con):
             status = "in_directory (primary)"
         elif st == "verified_secondary_evidence":
             status = "in_directory (secondary evidence)"
+        elif key in NO_ONLINE_STORE:
+            status = "excluded: no online ordering (confirmed: " + NO_ONLINE_STORE[key] + ")"
         elif note == "marketplace" or reason.startswith(("excluded_marketplace", "redirects_to_marketplace")):
             status = "excluded: marketplace/aggregator"
         elif note == "non_us":
@@ -190,6 +192,12 @@ def audit(con):
                     "tranco_rank": rank, "status": status, "url": furl or url, "reason": reason[:200],
                     "evidence": f"{ev or ''} @ {ts or ''}".strip(" @"), "domains": root})
     return out
+
+
+NO_ONLINE_STORE = {
+    "rossstores.com": "Ross Dress for Less sells in stores only; rossstores.com is a corporate/store-locator site (live check: no cart, no products)",
+    "traderjoes.com": "Trader Joe's states it does not sell groceries online; traderjoes.com has no cart or checkout (live check: no purchase path)",
+}
 
 
 def main():
