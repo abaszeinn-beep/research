@@ -669,6 +669,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if S.CHARITY.search(name_title) or n_char >= 5:
         if not (physical and physical >= 3 and n_char < 5):
             return done("rejected", f"charity_or_donations ({n_char} markers)")
+    m_np = S.NONPHYSICAL_BIZ.search((res["store_name"] or "") + " | " + a["title"] + " | " + a["desc"][:300])
+    if m_np and not (physical and physical >= 3):
+        return done("rejected", "non_physical_business (digital/financial/IT/travel services): " + m_np.group(0)[:40])
     if physical is None and S.ORG.search(res["store_name"] or ""):
         return done("unverified", "organization_site_with_shop_features (manual review): " + S.ORG.search(res["store_name"]).group(0))
     if plat in ("custom/unknown", "wix", "odoo", "nopcommerce", "wuilt", "woocommerce") and not (probe and probe.get("n")):

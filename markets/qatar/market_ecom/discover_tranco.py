@@ -94,6 +94,8 @@ async def probe(con, top, concurrency, start):
     print(f"[tranco] probe {len(rows)} domains (ranks {start}-{top}), {len(done)} done before", flush=True)
     db.register_source(con, "tranco:probe", "ranking", f"Tranco {TRANCO_ID} top-{top} homepages probed for {M.country} hreflang/locale/subdomain links")
     f = Fetcher(concurrency, 1)
+    import httpx
+    f.client.timeout = httpx.Timeout(12.0, connect=6.0)
     stats = {"done": 0, "hits": 0, "new": 0, "fail": 0}
     pend = []
     t0 = time.time()

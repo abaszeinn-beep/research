@@ -62,7 +62,7 @@ class MarketConfig:
             rf"^https?://(?:{c}|{words}|en-{c}|ar-{c})\.|[/_-](?:en|ar)[-_]{c}\b|/{c}(?:[-_/]|$)|/(?:{words})|\.{self.tld}(?:/|$|:)",
             re.I)
         cur = self.currency_rx
-        self.price_rx = re.compile(rf"(?:\d[\d,.]*\s*(?:{cur}))|(?:(?:{cur})\s*\d)", re.I)
+        self.price_rx = re.compile(rf"(?:(?<![\d,.])\d[\d,.]{{0,15}}\s{{0,3}}(?:{cur}))|(?:(?:{cur})\s{{0,3}}\d)", re.I)
         self.currency_code_rx = re.compile(
             rf"[\"'](?:currency|currency_code|currencyCode|priceCurrency|active)[\"']\s*:\s*[\"']{self.currency}[\"']|data-currency=[\"']{self.currency}"
             rf"|Shopify\.currency\s*=\s*\{{[^}}]*{self.currency}|currency={self.currency}|<meta[^>]+(?:product:price:currency|og:price:currency)[^>]+{self.currency}",

@@ -68,7 +68,7 @@ PRODUCT_LINK = re.compile(
 from .market import M
 
 PRICE_LOCAL = M.price_rx
-PRICE_ANY = re.compile(r"(?:\d[\d,.]*\s*(?:AED|د\.إ|KWD|د\.ك|QAR|ر\.ق|SAR|ر\.س|BHD|OMR|USD|EGP|ج\.م|JOD|\$|€|£))|(?:(?:AED|KWD|QAR|SAR|BHD|OMR|USD|EGP|\$|€|£)\s*\d)", re.I)
+PRICE_ANY = re.compile(r"(?:(?<![\d,.])\d[\d,.]{0,15}\s{0,3}(?:AED|د\.إ|KWD|د\.ك|QAR|ر\.ق|SAR|ر\.س|BHD|OMR|USD|EGP|ج\.م|JOD|\$|€|£))|(?:(?:AED|KWD|QAR|SAR|BHD|OMR|USD|EGP|\$|€|£)\s*\d)", re.I)
 LOCAL_CURRENCY_CODE = M.currency_code_rx
 _CODES = [c for c in ["AED", "KWD", "QAR", "SAR", "BHD", "OMR", "USD", "EGP", "JOD", "EUR", "GBP", "MAD", "TRY", "INR", "PKR"] if c != M.currency]
 OTHER_CURRENCY_CODE = re.compile(r"[\"'](?:currency|currency_code|currencyCode|priceCurrency|active)[\"']\s*:\s*[\"'](" + "|".join(_CODES) + r")[\"']", re.I)
@@ -111,6 +111,13 @@ CHARITY_PRODUCT = re.compile(r"صدقة|تبرع|زكاة|سقيا|كفالة ي
 SERVICE_ORG = re.compile(r"للتدريب|تدريب|training|للخدمات|خدمات|\bservices\b|مكتب\b|منصة|منصة تعليمية|أكاديمية|academy|معقب|وكيلك|للاستشارات|consult", re.I)
 CHARITY = re.compile(r"جمعية|خيري|خيرية|تبرع|تبرعات|كفالة يتيم|كفالة|صدقة|زكاة|وقف خيري|أوقاف|donat(?:e|ion)|charity|sadaqah|zakat|non-?profit|غير ربحية", re.I)
 ORG = re.compile(r"نادي|جمعية|مستشفى|hospital|جامعة|university|مدرسة|مدارس|school|academy|أكاديمية|معهد|institute|كلية|college|وزارة|ministry|هيئة|authority|بلدية|municipality|غرفة تجارية|chamber of commerce|مجمع طبي|مجمع [^ ]+ الطبي|مجمع [^ ]+ [^ ]+ الطبي|مركز طبي|educational|تعليمي|تعليمية|للتدريب|تدريب|training|travel|tours|للسفر|سياحة|سفريات|طيران|hotel|فندق|فنادق|medical (?:complex|center)|عيادات|clinics|منصة|platform|مكتب محاماة|law firm|مكتب هندسي|consultants?|استشارات|شركة مقاولات|contracting|نقابة|federation|اتحاد|consultancy|consulting|عيادة|clinic\b|مستوصف|dental|طب الأسنان|^dr\.? |^د\. ?|برمجة|تطوير المواقع|تصميم المواقع|web design|software|digital agency|marketing agency|وكالة تسويق|recruitment|توظيف|staffing", re.I)
+NONPHYSICAL_BIZ = re.compile(
+    r"web ?hosting|\bhosting\b|domain (?:names?|registration|registrar)|official \.\w{2,3} domain|\.qa domains?|\bvps\b|cloud servers?|dedicated servers?|ssl certificates?|"
+    r"استضافة|حجز (?:نطاق|دومين|الدومين)|تسجيل (?:النطاقات|الدومين)|e-?wallet|mobile money|\bmoney\b|payment (?:gateway|solutions?)|fintech|"
+    r"insurance|تأمين|\bbank(?:ing)?\b|(?<![\u0600-\u06FF])بنك|exchange house|صرافة|money transfer|remittance|recharge cards?|top-?up|e-?vouchers?|"
+    r"software (?:solutions|company|development)|it solutions|digital marketing|seo services|web development|app development|تطوير (?:المواقع|التطبيقات)|"
+    r"(?:event|flight|match) tickets|travel agency|tours? (?:&|and) travels?|سياحة وسفر|car rental|تأجير سيارات|limousine|real estate|عقارات|courier services?|cargo services?|freight forwarding",
+    re.I)
 RESTAURANT = re.compile(r"food menu|restaurant menu|قائمة الطعام|المنيو|مطعم|restaurant|order food|اطلب وجبتك|وجبات|meals?\b|burger|برجر|pizza|بيتزا|شاورما|shawarma|كافيه|cafe\b|توصيل الطعام|food delivery", re.I)
 
 CATEGORIES = [
