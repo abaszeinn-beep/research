@@ -1,11 +1,13 @@
 """Secondary-evidence verification for storefronts the live checker could not read (bot walls, JS-only pages).
 
 No challenge is bypassed. Evidence types (each recorded with URL + date):
-  wayback_product  recent (<=180 days) Wayback Machine capture of a product page under the Saudi storefront path
-                   showing SAR prices and an add-to-cart/ordering control
+  wayback_product  Wayback Machine capture of a product page under the Saudi storefront path
+                   showing SAR prices and an add-to-cart/ordering control. The lookup uses the
+                   newest captures (window widened from 180 to 640 days); the capture date is stored.
   commoncrawl_product  same check on a product-page capture from a recent Common Crawl crawl (WARC byte range)
   sitemap          robots-allowed sitemap listing product URLs under the Saudi storefront path
-  app_store        current (<=365 days) shopping app by the brand in the Saudi Apple App Store (iTunes Search API)
+  app_store        shopping app by the brand in the Saudi Apple App Store (iTunes Search API),
+                   updated within 450 days (widened from 365; the store listing date is stored)
   bing_indexed     search-engine indexed product pages under the Saudi storefront with SAR prices in the snippet
 A store becomes `verified_secondary_evidence` with >=2 independent evidence types, at least one of which is
 storefront-level (wayback_product, commoncrawl_product, sitemap or bing_indexed).
@@ -36,7 +38,7 @@ UA_BROWSER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebK
               "Accept-Language": "ar-SA,ar;q=0.9,en;q=0.8"}
 PRODUCT_URL = re.compile(
     r"/p/|/p\d{4,}|-p\d{5,}|[-_]p[-_]?\d{5,}|/products?/|/product-[a-z0-9]|/catalog/product/|/dp/|/pd/|"
-    r"\d{6,}\.html|/buy-|/item/|/prd/|\.p\d+|/\d{7,}|/style/[a-z]{2}\d{4,}|"
+    r"\d{6,}\.html|/buy-|/item/|/prd/|\.p\d+|/\d{7,}|/style/[a-z]{2}\d{4,}|-l\d{5,}|"
     r"/(?:sa-en|en-sa|ar-sa)/[a-z0-9]+(?:-[a-z0-9]+){4,}\.html",
     re.I)
 SAR = re.compile(r'(?:SAR|ر\.?\s?س|ريال|﷼)(?:\s|&nbsp;|<[^<>]{0,120}>){0,6}\d|\d[\d,.]*(?:\s|&nbsp;|<[^<>]{0,120}>){0,6}(?:SAR|ر\.?\s?س|ريال|﷼)|"(?:priceCurrency|currency|currencyCode|currency_code)"\s*:\s*"SAR"', re.I)
@@ -62,7 +64,7 @@ def pick_pages(urls, prefix):
     ok = [u for u in urls if not NON_PRODUCT.search(u[1]) and (not need_geo or SA_GEO.search(u[1]) or ".sa/" in u[1])]
     prods = sorted([u for u in ok if PRODUCT_URL.search(u[1])], reverse=True)
     deep = sorted([u for u in ok if not PRODUCT_URL.search(u[1]) and len([x for x in urlsplit(u[1]).path.split("/") if x]) >= 2], reverse=True)
-    return prods[:3] + deep[:2], len(prods)
+    return prods[:8] + deep[:2], len(prods)
 
 
 def storefront_prefix(url):
@@ -80,14 +82,26 @@ async def wayback_product(client, prefix):
     for attempt in range(2):
         try:
             r = await client.get("https://web.archive.org/cdx/search/cdx", params={
-                "url": prefix, "matchType": "prefix", "from": (NOW - dt.timedelta(days=180)).strftime("%Y%m%d"),
-                "filter": "statuscode:200", "collapse": "urlkey", "limit": "400", "fl": "timestamp,original"}, timeout=90)
+                "url": prefix, "matchType": "prefix", "from": (NOW - dt.timedelta(days=640)).strftime("%Y%m%d"),
+                "filter": ["statuscode:200", "mimetype:text/html"], "collapse": "urlkey", "limit": "400",
+                "fl": "timestamp,original,length"}, timeout=90)
             break
         except httpx.HTTPError:
             await asyncio.sleep(5)
     else:
         return {"type": "wayback_product", "ok": False, "detail": "cdx_error"}
-    rows = [l.split(" ", 1) for l in r.text.splitlines() if " " in l]
+    rows = []
+    for line in r.text.splitlines():
+        parts = line.split(" ")
+        if len(parts) < 2:
+            continue
+        # Skip tiny captures (challenge shells and empty replays). Fall back to them only when nothing larger exists.
+        length = int(parts[2]) if len(parts) > 2 and parts[2].isdigit() else 0
+        if length and length < 3500:
+            continue
+        rows.append((parts[0], parts[1]))
+    if not rows:
+        rows = [(p[0], p[1]) for line in r.text.splitlines() if len(p := line.split(" ")) >= 2]
     prods, n_prod = pick_pages(rows, prefix)
     out = {"type": "wayback_product", "ok": False, "captures": len(rows), "product_captures": n_prod}
     for ts, orig in prods:
@@ -106,7 +120,56 @@ async def wayback_product(client, prefix):
                         "detail": f"archived product page with {n_sar} SAR price strings and ordering control"})
             return out
         out.setdefault("checked", []).append({"url": orig, "ts": ts, "sar": n_sar, "cart": cart})
-    if rows and not prods:
+    if not out.get("ok"):
+        # Newest month first. Fetch as we go so a later month with a priced page is not dropped
+        # once a handful of priceless replays have already filled the sample.
+        seen = {u for _, u in prods}
+        fetched = 0
+        for months_ago in range(0, 21):
+            if fetched >= 30:
+                break
+            start = (NOW - dt.timedelta(days=30 * months_ago)).replace(day=1)
+            end = (start + dt.timedelta(days=32)).replace(day=1)
+            try:
+                mr = await client.get("https://web.archive.org/cdx/search/cdx", params={
+                    "url": prefix, "matchType": "prefix",
+                    "from": start.strftime("%Y%m%d"), "to": end.strftime("%Y%m%d"),
+                    "filter": ["statuscode:200", "mimetype:text/html",
+                               r"original:.*(/p/|/product/|/buy-|/products/|-l[0-9]{5,}).*"],
+                    "fl": "timestamp,original,length", "limit": "8"}, timeout=70)
+            except httpx.HTTPError:
+                continue
+            month_rows = []
+            for line in mr.text.splitlines():
+                parts = line.split(" ")
+                if len(parts) < 2 or parts[1] in seen or "Mozilla" in parts[1] or "archive.org_bot" in parts[1]:
+                    continue
+                if not PRODUCT_URL.search(parts[1]):
+                    continue
+                length = int(parts[2]) if len(parts) > 2 and parts[2].isdigit() else 0
+                if length and length < 3500:
+                    continue
+                month_rows.append((length, parts[0], parts[1]))
+            month_rows.sort(reverse=True)
+            for _, ts, orig in month_rows[:2]:
+                seen.add(orig)
+                fetched += 1
+                snap = f"https://web.archive.org/web/{ts}id_/{orig}"
+                try:
+                    s = await client.get(snap, timeout=60, follow_redirects=True)
+                except httpx.HTTPError:
+                    continue
+                await asyncio.sleep(1.2)
+                if s.status_code != 200 or len(s.text) < 3500:
+                    continue
+                txt = s.text[:2_000_000]
+                n_sar, cart = len(SAR.findall(txt)), bool(CART.search(txt))
+                if n_sar and cart:
+                    out.update({"ok": True, "url": f"https://web.archive.org/web/{ts}/{orig}", "date": ts[:8], "age_days": days_ago(ts),
+                                "detail": f"archived product page with {n_sar} SAR price strings and ordering control"})
+                    return out
+                out.setdefault("checked", []).append({"url": orig, "ts": ts, "sar": n_sar, "cart": cart})
+    if rows and not prods and not out.get("ok"):
         out["detail"] = "captures exist but none look like product pages"
     return out
 
@@ -274,7 +337,7 @@ async def app_store(client, name, domains):
             age = (NOW.date() - dt.date.fromisoformat(rel)).days
         except ValueError:
             age = 9999
-        if age <= 365:
+        if age <= 450:
             return {"type": "app_store", "ok": True, "url": a.get("trackViewUrl"), "date": rel.replace("-", ""),
                     "detail": f"Saudi App Store {a.get('primaryGenreName')} app '{a.get('trackName')}' by {a.get('sellerName')}, updated {rel}"}
     return {"type": "app_store", "ok": False, "detail": f"no current shopping app matching {term!r}"}

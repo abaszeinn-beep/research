@@ -65,11 +65,11 @@ Huawei	Mobiles & Accessories	major	huawei.com consumer.huawei.com	user_brief
 Xiaomi	Mobiles & Accessories	major	mi.com	user_brief
 Dyson	Home Appliances	major	dyson.com dyson.sa	user_brief
 Logitech	Computers & Electronics	medium	logitech.com	user_brief
-Toys R Us	Toys & Hobbies	major	toysrusmena.com toysrus.sa	user_brief
+Toys R Us	Toys & Hobbies	major	toysrus.com.sa toysrus.sa toysrusmena.com	user_brief
 Hamleys	Toys & Hobbies	major	hamleys.com hamleys.sa	user_brief
 LEGO	Toys & Hobbies	major	lego.com lego.saudiblocks.com saudiblocks.com	user_brief
 Zara	Fashion & Apparel	major	zara.com	user_brief
-H&M	Fashion & Apparel	major	hm.com	user_brief
+H&M	Fashion & Apparel	major	hm.com sa.hm.com	user_brief
 Centrepoint Lifestyle	Department Store / General	medium	lifestyleshops.com	wikipedia:Landmark Group
 Shoe Mart	Shoes	medium	shoemartstores.com	wikipedia:Landmark Group
 Home Box	Furniture	medium	homeboxstores.com	wikipedia:Landmark Group
@@ -254,7 +254,7 @@ LG	Home Appliances	major	lg.com	analyst_seed
 Bose	Computers & Electronics	medium	bose.com bose.sa	analyst_seed
 JBL	Computers & Electronics	medium	jbl.com jbl.sa	analyst_seed
 Canon	Computers & Electronics	medium	canon-me.com	analyst_seed
-Sharaf DG	Computers & Electronics	major	sharafdg.com	analyst_seed
+Sharaf DG	Computers & Electronics	major	sharafdg.com saudi.sharafdg.com	analyst_seed
 Xcite	Computers & Electronics	medium	xcite.com.sa	analyst_seed
 Al Khunaizan	Home Appliances	medium	alkhunaizan.sa	analyst_seed
 Al Hassan Shaker / Hassan Shaker	Home Appliances	medium	shaker.com.sa	analyst_seed
@@ -321,7 +321,7 @@ Carter's	Fashion - Kids	medium	carters.com.sa	analyst_seed
 The Children's Place	Fashion - Kids	medium	childrensplace.sa childrensplace.com.sa	analyst_seed
 Okaidi	Fashion - Kids	medium	okaidi.sa okaidi.com	analyst_seed
 Mothercare online	Baby & Maternity	medium	mothercare.com.sa	analyst_seed
-Obeikan Bookstore	Books & Stationery	major	obeikanbookstore.com obeikan.com.sa	analyst_seed
+Obeikan Bookstore	Books & Stationery	major	obeikan.com.sa obeikan.store obeikanbookstore.com	analyst_seed
 Jamalon	Books & Stationery	medium	jamalon.com	analyst_seed
 Virgin Books / Kinokuniya	Books & Stationery	medium	kinokuniya.com	analyst_seed
 Al Rushd Bookstore	Books & Stationery	medium	rushd.com.sa alrushd.com	analyst_seed
