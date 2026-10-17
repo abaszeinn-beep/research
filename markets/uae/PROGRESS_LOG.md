@@ -30,3 +30,7 @@ Metrics snapshots every 10 minutes: `logs/progress_metrics.jsonl`.
 * Excluded-majors recheck: Emax, Lifestyle, Ajmal and Toys R Us UAE had been excluded as "no storefront" because their domains were wrong or 403; they are now `unresolved` with the bot-wall reason. Uniqlo (no UAE store, `/ae/en/` 404), SHEIN (geo-redirect), noon/Amazon.ae/Dubizzle/Talabat (aggregators), Arabian Oud (store closed) stay excluded.
 * Pending Common Crawl `.ae` queue drained in priority order (verifier-4/-1/-2): 25,129 pending -> 1.
 * Note: Akamai returned 200 to `curl` but 403 to httpx for `dubaidutyfree.com/productSitemap.xml`; the curl result was not used as evidence, to avoid choosing a client to get past a bot wall.
+
+## Final pass on the 7 unresolved majors (2026-10-17 ~23:30 UTC)
+
+Retried live (plain client), Wayback (CDX 12-month windows, with outage backoff), Common Crawl, sitemaps and App Store/Google Play with the corrected domains. No new verified stores: Lulu, Emax, Lifestyle, Ajmal return 403 and have no archive captures (only app-level proofs); Joyalukkas is a JS-only PWA; Dubai Duty Free has a single proof (its live host timed out); Toys R Us UAE is excluded (toysrusmena.com is a catalogue site without cart, toysrus.ae does not resolve). Shoemart live recheck: every shoemartstores.com page returns 403 (and Common Crawl has no captures), so its homepage-level Wayback proof could not be upgraded; it stays `verified_secondary_evidence` and is flagged as the weakest secondary entry. Google Play search lists apps but gives no storefront-level evidence.
