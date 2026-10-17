@@ -267,6 +267,7 @@ class Fetcher:
         self.shop_lock = asyncio.Lock()
         self.ip_cache: dict[str, bool] = {}
         self.resolver = None
+        self.shopify_mode = ""
 
     async def is_shopify_host(self, host):
         if host in self.ip_cache:
@@ -731,6 +732,10 @@ async def process(f: Fetcher, domain, rank):
     skip = U.fast_skip(domain)
     if skip:
         return {"stage": "skipped", "status": "skipped", "reason": skip}
+    if f.shopify_mode in ("defer", "only"):
+        shop = await f.is_shopify_host(domain) or await f.is_shopify_host("www." + domain)
+        if (f.shopify_mode == "defer") == shop:
+            return {"stage": "deferred", "status": "deferred", "reason": "shopify_mode=" + f.shopify_mode}
     label = registrable_domain(domain).split(".")[0]
     if label in MARKETPLACES and registrable_domain(domain) == domain:
         row = mk_row(domain, rank, store_name=label, canonical_storefront_url=f"https://{domain}/", status="rejected",
@@ -785,7 +790,7 @@ def connect(worker):
     return con
 
 
-async def main(worker, nworkers, concurrency, limit, redo, shopify_rps):
+async def main(worker, nworkers, concurrency, limit, redo, shopify_rps, shopify_mode=''):
     con = connect(worker)
     con.execute("CREATE TABLE IF NOT EXISTS redo_log(domain TEXT, old_status TEXT, old_reason TEXT, ts TEXT)")
     if redo:
@@ -807,6 +812,7 @@ async def main(worker, nworkers, concurrency, limit, redo, shopify_rps):
     print(f"[w{worker}] todo={len(todo)} redo={bool(redo)}", flush=True)
     con.commit()
     f = Fetcher(concurrency, shopify_rps)
+    f.shopify_mode = shopify_mode
     await f.start()
     q: asyncio.Queue = asyncio.Queue()
     for t in todo:
@@ -836,6 +842,8 @@ async def main(worker, nworkers, concurrency, limit, redo, shopify_rps):
                 res = {"stage": "screen", "status": "error", "reason": f"pipeline_error:{type(e).__name__}:{str(e)[:80]}"}
             stats[res["status"]] += 1
             stats["total"] += 1
+            if res["status"] == "deferred":
+                continue
             pending_rows.append((dom, rank, res["stage"], res["status"], res.get("reason", "")[:500],
                                  json.dumps(res.get("row"), ensure_ascii=False) if res.get("row") else None,
                                  json.dumps(res.get("detail"), ensure_ascii=False, default=list)[:4000] if res.get("detail") else None,
@@ -874,6 +882,7 @@ if __name__ == "__main__":
     ap.add_argument("--concurrency", type=int, default=200)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--redo", default="", help="SQL condition on results; re-process matching domains of this worker")
+    ap.add_argument("--shopify-mode", default="", choices=["", "defer", "only"], help="defer: skip Shopify-hosted domains; only: process only them")
     ap.add_argument("--shopify-rps", type=float, default=0.0, help="global pacing for Shopify-hosted requests (0 = off)")
     a = ap.parse_args()
     try:
@@ -881,4 +890,4 @@ if __name__ == "__main__":
         uvloop.install()
     except ImportError:
         pass
-    asyncio.run(main(a.worker, a.nworkers, a.concurrency, a.limit, a.redo, a.shopify_rps))
+    asyncio.run(main(a.worker, a.nworkers, a.concurrency, a.limit, a.redo, a.shopify_rps, a.shopify_mode))
