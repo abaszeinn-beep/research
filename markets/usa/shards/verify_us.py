@@ -44,11 +44,16 @@ MENU = re.compile(r"\b(?:americano|latte|cappuccino|espresso|macchiato|mocha|fra
                   r"sandwich|sub|hoagie|wrap|salad|bowl|combo|meal|platter|fries|wings|burger|pizza|calzone|taco|entr[eé]e|appetizer|breakfast|lunch|dinner|"
                   r"plates?|omelet|pancakes?|waffles?|bagel|toast|soup|noodles?|ramen|pho|sushi|roll|curry|kebab|gyro|bbq plate|side of|add on|catering tray)\b", re.I)
 
-BUCKETS = {"wixsite.com": (6, 0.2), "square.site": (6, 0.2), "bigcartel.com": (4, 0.3), "mybigcommerce.com": (4, 0.3),
+BUCKETS = {"wix-edge": (14, 0.05), "wixsite.com": (6, 0.2), "square.site": (6, 0.2), "bigcartel.com": (4, 0.3), "mybigcommerce.com": (4, 0.3),
            "company.site": (4, 0.3), "squarespace.com": (4, 0.3), "3dcartstores.com": (3, 0.4), "weebly.com": (4, 0.3)}
 
 
+SHARED_EDGE: dict[str, str] = {}
+
+
 def bucket(host: str) -> str:
+    if host in SHARED_EDGE:
+        return SHARED_EDGE[host]
     for suf in BUCKETS:
         if host == suf or host.endswith("." + suf):
             return suf
@@ -284,13 +289,19 @@ async def probe_square(f, html, base):
     return out or None
 
 
+PRICE_ATTR = re.compile(r'data-price-amount="\d|itemprop="price"[^>]{0,60}content="\d|property="(?:product:price:amount|og:price:amount)"|og:type"\s+content="product', re.I)
+BIGC_CARD = re.compile(r'<a[^>]+href="([^"#]+)"[^>]*(?:data-event-type="product-click"|class="[^"]*(?:card-figure__link|product-item-link|woocommerce-LoopProduct-link|product-thumbnail|product-item-photo)[^"]*")'
+                       r'|class="[^"]*(?:card-figure__link|product-item-link|woocommerce-LoopProduct-link|product-thumbnail|product-item-photo)[^"]*"[^>]*href="([^"#]+)"', re.I)
+
+
 def analyze(html, url):
     text = S.visible_text(html, limit=MAX_BYTES)
     links = [m.group(1) for m in S.PRODUCT_LINK.finditer(html[:MAX_BYTES])]
+    links += [a or b for a, b in BIGC_CARD.findall(html[:MAX_BYTES])]
     return {"text": text, "title": S.title_of(html), "desc": S.meta(html, "description") or S.meta(html, "og:description") or "",
             "platform": S.detect_platform(html, url), "links": links,
             "atc": len(S.ADD_TO_CART.findall(html[:MAX_BYTES])), "cart": len(S.CART_CHECKOUT.findall(html[:MAX_BYTES])),
-            "ld": S.jsonld_types(html)[0], "prices": len(S.PRICE_DOLLAR.findall(text)) + len(S.PRICE_USD.findall(text))}
+            "ld": S.jsonld_types(html)[0], "prices": len(S.PRICE_DOLLAR.findall(text)) + len(S.PRICE_USD.findall(text)) + len(PRICE_ATTR.findall(html[:MAX_BYTES]))}
 
 
 def pick_product_urls(final, root, a, probe, cand, n=2):
@@ -356,6 +367,10 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
 
     if cand.get("root_domain") in MARKETPLACE_ROOTS:
         return done("rejected", "excluded_marketplace: " + MARKETPLACE_ROOTS[cand["root_domain"]])
+    if cand.get("platform_hint") == "wix" and cand.get("root_domain") != "wixsite.com":
+        h0 = urlsplit(url).hostname or ""
+        for h in {h0, h0[4:] if h0.startswith("www.") else "www." + h0}:
+            SHARED_EDGE[h] = "wix-edge"
     st, final, html, hdrs, err = await f.get(url)
     if st is None and (err or "").split(":")[0] in ("connect_error", "timeout") and url.startswith("https://") and cand.get("platform_hint") not in ("wix", "square", "bigcartel"):
         host = urlsplit(url).hostname or ""
@@ -539,7 +554,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
 
     if plat == "shopify":
         return done("rejected", "shopify_store (out of shard scope: non-Shopify platforms)")
-    strong_product = bool(probe and probe.get("n")) or bool(pa and (pa["prices"] or "Product" in pa["ld"])) or sq_ok
+    strong_product = (bool(probe and probe.get("n")) or bool(pa and (pa["prices"] or "Product" in pa["ld"])) or sq_ok
+                      or bool(pa and pa["atc"] and len(a["links"]) >= 5))
     has_purchase = bool(purchase_ev) or (plat in ("bigcommerce", "magento", "salesforce-commerce", "volusion", "shift4shop", "bigcartel", "ecwid", "prestashop", "opencart", "shopware") and a["cart"] >= 1)
     if not product_ev and not purchase_ev:
         if len(a["text"]) < 1500 and html.count("<script") >= 3:
