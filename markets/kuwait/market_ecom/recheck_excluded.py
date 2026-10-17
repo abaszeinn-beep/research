@@ -91,7 +91,7 @@ async def appstore_sellers(c, names):
         for a in r.json().get("results", []):
             su = a.get("sellerUrl") or ""
             key = re.sub(r"[^a-z0-9]", "", q.lower())
-            if su and key and key in re.sub(r"[^a-z0-9]", "", (a["trackName"] + su).lower()):
+            if su and key and key in re.sub(r"[^a-z0-9]", "", registrable_domain(urlsplit(su).hostname or "").lower()):
                 out[ref_id] = (su, a["trackName"], a.get("currentVersionReleaseDate", "")[:10], a["trackViewUrl"])
                 break
     return out
