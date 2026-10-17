@@ -191,13 +191,14 @@ class ScreenFetcher(V.Fetcher):
 
 
 DNS_SEM: asyncio.Semaphore | None = None
+DNS_LIMIT = 48
 
 
 def dns_sem() -> asyncio.Semaphore:
     """One limit for every lookup path: the VPC resolver drops queries when thousands arrive in a burst."""
     global DNS_SEM
     if DNS_SEM is None:
-        DNS_SEM = asyncio.Semaphore(48)
+        DNS_SEM = asyncio.Semaphore(DNS_LIMIT)
     return DNS_SEM
 
 
@@ -257,7 +258,7 @@ class Screener:
         self.known_keys = known_keys
         self.f = ScreenFetcher(concurrency, 1)
         self.dns = aiodns.DNSResolver(timeout=3, tries=2)
-        self.pool = ProcessPoolExecutor(max_workers=3, mp_context=multiprocessing.get_context("forkserver"))
+        self.pool = ProcessPoolExecutor(max_workers=2, mp_context=multiprocessing.get_context("forkserver"))
         self.stats = Counter()
 
     async def resolves(self, host) -> bool:
@@ -484,6 +485,8 @@ def write_outputs(shard, work, meta):
 
 async def main(a):
     warnings.filterwarnings("ignore")
+    global DNS_LIMIT
+    DNS_LIMIT = a.dns_limit
     install_dns_cache(asyncio.get_running_loop())
     t0 = time.time()
     work = os.path.join(ROOT, "data", "cache", f"tranco_shard_{a.shard}")
@@ -518,17 +521,33 @@ async def main(a):
         to_screen.append((r, root))
     meta |= {"skipped_known": skipped_known, "rechecked_known_network_errors": len({e[1][2] for e in rechecks})}
 
-    screen_path = os.path.join(work, "screen.jsonl")
+    # screener processes each append to their own file; the verifier process reads all of them
+    screen_path = os.path.join(work, f"screen_p{a.part}.jsonl" if a.role == "screen" else "screen.jsonl")
     res_path = os.path.join(work, "results.jsonl")
+
+    def screen_files():
+        return sorted(os.path.join(work, f) for f in os.listdir(work) if f.startswith("screen") and f.endswith(".jsonl"))
+
+    read_offsets: dict = {}
+
+    def new_screen_lines():
+        for fp in screen_files():
+            with open(fp, encoding="utf-8") as fh:
+                fh.seek(read_offsets.get(fp, 0))
+                while True:
+                    line = fh.readline()
+                    if not line.endswith("\n"):
+                        break
+                    read_offsets[fp] = fh.tell()
+                    yield json.loads(line)
+
     done_domains, done_keys, pending_hits = set(), set(), []
     if os.path.exists(res_path):
         for line in open(res_path, encoding="utf-8"):
             done_keys.add(json.loads(line)["key"])
-    if os.path.exists(screen_path):
-        for line in open(screen_path, encoding="utf-8"):
-            s = json.loads(line)
-            done_domains.add(s["domain"])
-            pending_hits += [(s["rank"], h) for h in s["hits"]]
+    for s in new_screen_lines():
+        done_domains.add(s["domain"])
+        pending_hits += [(s["rank"], h) for h in s["hits"]]
     sc = Screener(a.shard, known_roots, known_keys, a.concurrency)
     vf = V.Fetcher(a.verify_concurrency, 2)
     vq: asyncio.Queue = asyncio.Queue()
@@ -538,6 +557,8 @@ async def main(a):
     lock = asyncio.Lock()
 
     def enqueue(rank, h, cand=None):
+        if a.role == "screen":
+            return
         cand = cand or identity(h["final"]) or identity(h["url"])
         if not cand:
             return
@@ -637,8 +658,7 @@ async def main(a):
     def screen_counts():
         c = Counter()
         hits = set()
-        for line in open(screen_path, encoding="utf-8"):
-            s = json.loads(line)
+        for s in (json.loads(line) for fp in screen_files() for line in open(fp, encoding="utf-8") if line.endswith("\n")):
             if s.get("skip"):
                 c["skipped_non_retail"] += 1
                 continue
@@ -668,17 +688,38 @@ async def main(a):
             print(f"[shard{a.shard}] checkpoint {json.dumps(s)} {dict(stats)} req={sc.f.stats['requests']}", flush=True)
 
     todo = [(r, d) for r, d in to_screen if d not in done_domains]
+    if a.role == "screen":
+        todo = [x for i, x in enumerate(todo) if i % a.parts == a.part]
+    elif a.role == "verify":
+        todo = []
     print(f"[shard{a.shard}] slice={len(slice_rows)} known={skipped_known} recheck_entries={len(rechecks)} to_screen={len(to_screen)} remaining={len(todo)} pending_verify={vq.qsize()}", flush=True)
     async with httpx.AsyncClient(headers=SEC.UA_RESEARCH, follow_redirects=True) as arch, \
             httpx.AsyncClient(headers=SEC.UA_BROWSER, follow_redirects=True) as live, \
             httpx.AsyncClient(headers=SEC.UA_BROWSER, follow_redirects=True) as brw:
-        workers = [asyncio.create_task(verifier()) for _ in range(a.verify_workers)]
-        workers += [asyncio.create_task(secondary_worker((arch, live, brw))) for _ in range(a.secondary_workers)]
-        cp = asyncio.create_task(checkpoint())
+        workers, cp = [], None
+        if a.role != "screen":
+            workers = [asyncio.create_task(verifier()) for _ in range(a.verify_workers)]
+            workers += [asyncio.create_task(secondary_worker((arch, live, brw))) for _ in range(a.secondary_workers)]
+            cp = asyncio.create_task(checkpoint())
+        if a.role == "verify":
+            while True:
+                finished = all(os.path.exists(os.path.join(work, f"screen_p{i}.done")) for i in range(a.parts))
+                for s in new_screen_lines():
+                    for h in s["hits"]:
+                        enqueue(s["rank"], h)
+                if finished and vq.empty() and sq.empty():
+                    break
+                await asyncio.sleep(20)
         tasks = [asyncio.create_task(screen_one(r, d)) for r, d in todo]
         for i in range(0, len(tasks), 2000):
             await asyncio.gather(*tasks[i:i + 2000])
             print(f"[shard{a.shard}] screened {min(i + 2000, len(tasks))}/{len(tasks)} {dict(stats)} req={sc.f.stats['requests']}", flush=True)
+        if a.role == "screen":
+            screen_fh.close()
+            open(os.path.join(work, f"screen_p{a.part}.done"), "w").write(db.now())
+            print(f"[shard{a.shard}] screener part {a.part} finished", flush=True)
+            sc.pool.shutdown()
+            return
         await vq.join()
         await sq.join()
         for w in workers:
@@ -705,5 +746,9 @@ if __name__ == "__main__":
     ap.add_argument("--verify-workers", type=int, default=16)
     ap.add_argument("--secondary-workers", type=int, default=3)
     ap.add_argument("--secondary-timeout", type=int, default=420)
+    ap.add_argument("--role", choices=["all", "screen", "verify"], default="all")
+    ap.add_argument("--part", type=int, default=0)
+    ap.add_argument("--parts", type=int, default=1)
+    ap.add_argument("--dns-limit", type=int, default=48)
     ap.add_argument("--checkpoint-every", type=int, default=300)
     asyncio.run(main(ap.parse_args()))
