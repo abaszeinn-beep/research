@@ -127,8 +127,36 @@ def fmt_market(ev):
     return "; ".join(parts)
 
 
+REVIEW_TSV = os.path.join(os.path.dirname(__file__), "data", "manual_review.tsv")
+REVIEW_STATUS = {"reject": "rejected", "unverified": "unverified", "name": None}
+
+
+def apply_manual_review(con):
+    """Human QA decisions (key, decision, value/reason): override verifier status or fix a store name; re-applied on every export."""
+    if not os.path.exists(REVIEW_TSV):
+        return 0
+    n = 0
+    with open(REVIEW_TSV, encoding="utf-8") as fh:
+        for line in fh:
+            if line.startswith("#") or not line.strip():
+                continue
+            key, decision, text = (line.rstrip("\n").split("\t") + ["", ""])[:3]
+            if decision == "name":
+                con.execute("UPDATE verifications SET store_name=? WHERE key=?", (text, key))
+            elif decision in REVIEW_STATUS:
+                st = REVIEW_STATUS[decision]
+                con.execute("UPDATE verifications SET status=?, reason=?, method='manual_review' WHERE key=? AND status IN ('verified','verified_secondary_evidence')",
+                            (st, "manual_review: " + text, key))
+                if con.execute("SELECT changes()").fetchone()[0]:
+                    con.execute("UPDATE candidates SET status=? WHERE key=?", (st, key))
+            n += 1
+    con.commit()
+    return n
+
+
 def main():
     con = db.connect()
+    apply_manual_review(con)
     ndup = dedup(con)
     v = pd.read_sql_query(
         """SELECT v.*, c.url, c.root_domain, c.first_source, c.source_detail, c.platform_hint,

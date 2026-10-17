@@ -32,3 +32,9 @@
 [search:ddg] 100/2831 q='شراء مستلزمات العمرة اون لاين قطر ر.ق' results=0 new=0 stats={'ddg_queries': 101, 'ddg_new': 252}
 [search:ddg] blocked, backing off 60s
 [search:ddg] blocked, backing off 120s
+[search:ddg] 110/2831 q='متجر أجهزة ذكية اونلاين قطر' results=10 new=3 stats={'ddg_queries': 111, 'ddg_new': 278}
+[search:ddg] blocked, backing off 60s
+[search:ddg] blocked, backing off 60s
+[search:ddg] blocked, backing off 120s
+[search:ddg] 120/2831 q='شراء طاولات اون لاين قطر ر.ق' results=10 new=0 stats={'ddg_queries': 121, 'ddg_new': 301}
+[search:ddg] blocked, backing off 60s

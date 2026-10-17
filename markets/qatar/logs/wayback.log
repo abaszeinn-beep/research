@@ -9,3 +9,6 @@
 [wayback] qa,8 done hosts=4 new=4 {'http_503': 5, 'requests': 10, 'hosts': 47, 'new': 47}
 [wayback] qa,2 done hosts=13 new=13 {'http_503': 5, 'requests': 13, 'hosts': 85, 'new': 85}
 [wayback] qa,b at qa,batabit,~ {'http_503': 5, 'requests': 20, 'hosts': 194, 'new': 194}
+[wayback] qa,c at qa,cbq,~ {'http_503': 12, 'requests': 40, 'hosts': 553, 'new': 549, 'ConnectError': 6}
+[wayback] qa,c at qa,circuitstore,~ {'http_503': 19, 'requests': 60, 'hosts': 755, 'new': 747, 'ConnectError': 6, 'ReadTimeout': 1, 'http_504': 1}
+[wayback] qa,d at qa,dior,~ {'http_503': 21, 'requests': 80, 'hosts': 1010, 'new': 999, 'ConnectError': 7, 'ReadTimeout': 2, 'http_504': 2}

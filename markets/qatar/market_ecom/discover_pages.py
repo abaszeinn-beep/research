@@ -3,7 +3,7 @@
 Modes:
   --sitemap URL [--include REGEX]   crawl pages listed in a sitemap (recursively) and harvest outbound links
   --pages URL...                    harvest outbound links from given pages
-  --expand-queries FILE             run each query on Bing, then harvest outbound links from each result page
+  --expand-queries FILE             run each query on DuckDuckGo, then harvest outbound links from each result page
 """
 from __future__ import annotations
 
@@ -16,7 +16,8 @@ import httpx
 
 from . import db
 from .common import DEFAULT_HEADERS, identity, registrable_domain, clean_host
-from .discover_search import Bing
+from .discover_search import DDG
+from .market import M
 
 HREF = re.compile(r'href=["\'](https?://[^"\'#\s>]+)', re.I)
 LOC = re.compile(r"<loc>\s*([^<\s]+)\s*</loc>", re.I)
@@ -102,20 +103,24 @@ async def main(a):
             n = await harvest_pages(client, sem, con, a.pages, src, a.priority)
             print(f"[pages] {src} new candidates: {n}", flush=True)
         if a.expand_queries:
-            bing = Bing(client)
-            db.register_source(con, "listicle:bing", "listicles/rankings", "Pages returned by Bing for 'best/top Saudi online stores' style queries; outbound links harvested")
+            engine = DDG(client)
+            db.register_source(con, "listicle:ddg", "listicles/rankings", f"Pages returned by DuckDuckGo for 'best/top {M.country} online stores' style queries; outbound links harvested")
             qs = [l.strip() for l in open(a.expand_queries, encoding="utf-8") if l.strip()]
             for q in qs:
                 if db.job_done(con, "listicle_query", q):
                     continue
                 res = []
-                for p in range(2):
-                    r = await bing.search(q, p)
+                for p in range(1):
+                    r = await engine.search(q, p)
                     if not r:
                         break
                     res += r
                 pages = [u for u in dict.fromkeys(res) if identity(u) is None or True]
-                n = await harvest_pages(client, sem, con, pages[:20], "listicle:bing", a.priority)
+                if not pages:
+                    print(f"[pages] listicle q={q!r} no results (blocked?), will retry on next run", flush=True)
+                    await asyncio.sleep(30)
+                    continue
+                n = await harvest_pages(client, sem, con, pages[:8], "listicle:ddg", a.priority)
                 db.mark_job(con, "listicle_query", q, "done", len(pages), n)
                 print(f"[pages] listicle q={q!r} pages={len(pages)} new={n}", flush=True)
 

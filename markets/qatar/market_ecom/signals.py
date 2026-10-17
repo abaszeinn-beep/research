@@ -16,9 +16,10 @@ PARKED = re.compile(
     r"index of /|default web site page|future home of something quite cool|"
     r"web hosting by|under construction|الموقع تحت الإنشاء|تحت الانشاء|"
     r"site not found|no such app|there is nothing here|domain not configured|"
-    r"this site can.t be reached",
+    r"this site can.t be reached|nameshield|ce nom de domaine|this domain name is registered|domain name has been registered",
     re.I,
 )
+TEMPLATE_DEMO = re.compile(r"lorem ipsum dolor sit amet|i-m-a-product|I[’']m a product|this is a sample product|product title here", re.I)
 PARKED_TITLE = re.compile(r"coming soon|under construction|404|not found|قريبا|قريباً|parked|for sale|suspended|default page|welcome to nginx|index of", re.I)
 CLOSED = re.compile(
     r"المتجر مغلق|المتجر (?:حاليا|حالياً) (?:قيد الصيانة|مغلق)|متجر مغلق|store is (?:currently )?closed|"
@@ -116,7 +117,8 @@ NONPHYSICAL_BIZ = re.compile(
     r"استضافة|حجز (?:نطاق|دومين|الدومين)|تسجيل (?:النطاقات|الدومين)|e-?wallet|mobile money|\bmoney\b|payment (?:gateway|solutions?)|fintech|"
     r"insurance|تأمين|\bbank(?:ing)?\b|(?<![\u0600-\u06FF])بنك|exchange house|صرافة|money transfer|remittance|recharge cards?|top-?up|e-?vouchers?|"
     r"software (?:solutions|company|development)|it solutions|digital marketing|seo services|web development|app development|تطوير (?:المواقع|التطبيقات)|"
-    r"(?:event|flight|match) tickets|travel agency|tours? (?:&|and) travels?|سياحة وسفر|car rental|تأجير سيارات|limousine|real estate|عقارات|courier services?|cargo services?|freight forwarding",
+    r"(?:event|flight|match) tickets|travel agency|tours? (?:&|and) travels?|سياحة وسفر|car rental|تأجير سيارات|limousine|real estate|عقارات|courier services?|cargo services?|freight forwarding|"
+    r"fitness studio|yoga studio|pilates studio|business cent(?:er|re)|surveying|engineering consultan\w*",
     re.I)
 RESTAURANT = re.compile(r"food menu|restaurant menu|قائمة الطعام|المنيو|مطعم|restaurant|order food|اطلب وجبتك|وجبات|meals?\b|burger|برجر|pizza|بيتزا|شاورما|shawarma|كافيه|cafe\b|توصيل الطعام|food delivery", re.I)
 

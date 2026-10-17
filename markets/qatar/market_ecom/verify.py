@@ -483,6 +483,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         a["ld_types"] |= a2["ld_types"]
         a["ld_currency"] |= a2["ld_currency"]
 
+    if a["local_prices"] < 3 and len(S.TEMPLATE_DEMO.findall(html[:1_500_000] + extra_html[:1_500_000])) >= 2:
+        return done("rejected", "theme_demo_content (placeholder products / lorem ipsum)")
+
     ecom = {"platform": plat, "product_links": a["n_product_links"], "add_to_cart_markers": a["add_to_cart"],
             "cart_checkout_markers": a["cart"], "jsonld": sorted(a["ld_types"] & {"Product", "Offer", "AggregateOffer", "ItemList", "Store", "OnlineStore"})}
     product_names, api_currency = [], set(a["ld_currency"])
