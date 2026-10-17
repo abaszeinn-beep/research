@@ -19,6 +19,8 @@ SHARD = "usa_other_platforms"
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_COLS = ["store_name", "canonical_storefront_url", "root_domain", "platform", "category", "status", "us_evidence",
             "verification_url", "verification_utc", "discovery_source", "tranco_rank", "reason"]
+SHARED_ROOTS = {"wixsite.com", "editorx.io", "square.site", "company.site", "mybigcommerce.com", "bigcartel.com", "3dcartstores.com",
+               "azurewebsites.net", "ecwid.com", "myvolusion.com", "volusion.store", "squarespace.com", "weebly.com", "wordpress.com"}
 MAX_BYTES = 85_000_000
 STATUS_RANK = {"verified": 0, "verified_secondary_evidence": 1, "unverified": 2, "rejected": 3}
 TRANCO_ZIP = os.path.join(db.WORK, "tranco_top1m.csv.zip")
@@ -85,7 +87,7 @@ def build_rows(con, tranco):
             "status": status, "us_evidence": compact_evidence(usev),
             "verification_url": (prod if status.startswith("verified") and prod else evurl) or final_url or "",
             "verification_utc": vat or "", "discovery_source": "; ".join(sorted(srcs.get(key, [])))[:200],
-            "tranco_rank": tranco.get(rd, "") if rd else "", "reason": (reason or "")[:300], "_key": key,
+            "tranco_rank": "" if (not rd or rd in SHARED_ROOTS) else tranco.get(rd, ""), "reason": (reason or "")[:300], "_key": key,
         }
         cur = best.get(group)
         if cur is None or STATUS_RANK[status] < STATUS_RANK[cur["status"]] or (

@@ -7,7 +7,7 @@ import os
 
 from . import db
 from .common_us import MARKETPLACE_ROOTS  # noqa: F401
-from .export import OUT_DIR, load_tranco
+from .export import OUT_DIR, SHARED_ROOTS, load_tranco
 
 PATH = os.path.join(OUT_DIR, "usa_other_platforms_pending_queue.tsv.gz")
 
@@ -21,7 +21,7 @@ def dump():
         for key, url, root, plat, pr, hits in con.execute(
                 "SELECT key,url,root_domain,platform_hint,priority,hits FROM candidates WHERE status IN ('pending','in_progress') "
                 "ORDER BY priority DESC, hits DESC"):
-            fh.write(f"{key}\t{url}\t{root}\t{plat or ''}\t{pr:.1f}\t{hits}\t{tr.get(root, '')}\n")
+            fh.write(f"{key}\t{url}\t{root}\t{plat or ''}\t{pr:.1f}\t{hits}\t{'' if root in SHARED_ROOTS else tr.get(root, '')}\n")
             n += 1
     print("pending rows", n, os.path.getsize(PATH))
 

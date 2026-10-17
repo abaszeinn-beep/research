@@ -13,7 +13,7 @@ PLATFORM_TIER = {"salesforce-commerce": 60, "magento": 45, "bigcommerce": 45, "s
                  "volusion": 20, "prestashop": 15, "woocommerce": 15, "opencart": 12, "ecwid": 10, "squarespace": 8,
                  "wix": 6, "square": 5, "bigcartel": 4}
 SHARED = {"wixsite.com", "editorx.io", "square.site", "company.site", "mybigcommerce.com", "bigcartel.com", "3dcartstores.com",
-          "myvolusion.com", "volusion.store", "squarespace.com", "weebly.com", "wordpress.com"}
+          "azurewebsites.net", "ecwid.com", "myvolusion.com", "volusion.store", "squarespace.com", "weebly.com", "wordpress.com"}
 
 
 def tranco_bonus(rank):
@@ -32,7 +32,8 @@ def main():
         s = PLATFORM_TIER.get(plat or "", 10)
         if root not in SHARED:
             s += 25
-        s += tranco_bonus(tr.get(root))
+        if root not in SHARED:
+            s += tranco_bonus(tr.get(root))
         s += 6 * math.log10(1 + (hits or 0))
         if tld == "us":
             s += 3
