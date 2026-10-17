@@ -31,10 +31,18 @@ from .common import NON_STORE_ROOTS, clean_host, identity, registrable_domain
 UA = {"User-Agent": "saudi-ecom-directory-research/1.0 (public-source harvester)",
       "Accept-Language": "ar-SA,ar;q=0.9,en;q=0.7"}
 SKIP_ROOTS = NON_STORE_ROOTS | {
-    "youtu.be", "youtu.be", "gstatic.com", "googletagmanager.com", "clarity.ms",
+    "youtu.be", "gstatic.com", "googletagmanager.com", "clarity.ms",
     "hyros.com", "perspectivefunnel.com", "schema.org", "w3.org", "apple.com",
     "itunes.apple.com", "apps.apple.com", "play.google.com", "wa.me", "t.me",
     "mc.gov.sa", "gov.sa", "wikipedia.org", "wikidata.org", "wikimedia.org",
+    "gravatar.com", "ytimg.com", "ggpht.com", "googleusercontent.com",
+    "cloudflare.com", "cloudfront.net", "akamaihd.net", "jsdelivr.net", "unpkg.com",
+    "gmpg.org", "wordpress.org", "wordpress.com", "wp.com", "yoast.com", "w.org",
+    "foodnavigator.com", "jstor.org", "accessmylibrary.com", "doubleclick.net",
+    "googlesyndication.com", "google-analytics.com", "facebook.net", "fbcdn.net",
+    "cdninstagram.com", "medium.com", "blogspot.com", "shopify.com", "salla.com",
+    "semrush.com", "ahrefs.com", "moz.com", "hotjar.com", "typekit.net",
+    "fonts.gstatic.com", "bootstrapcdn.com", "jquery.com", "cloudflareinsights.com",
 }
 SOCIAL = ("facebook.com", "instagram.com", "twitter.com", "x.com", "tiktok.com", "snapchat.com",
           "linkedin.com", "youtube.com", "youtu.be", "pinterest.com", "whatsapp.com")
@@ -185,28 +193,40 @@ def zid_stories(client):
     if r is None or r.status_code != 200:
         print("[public] zid success page unavailable", flush=True)
         return []
-    names = re.findall(r'\\"alt\\":\\"([^\\"]{2,60})\\"', r.text) or re.findall(r'"alt":"([^"]{2,60})"', r.text)
-    names = list(dict.fromkeys(names))
-    print(f"[public] zid story names {len(names)}: {names[:12]}", flush=True)
+    alts = re.findall(r'\\"alt\\":\\"([^\\"]{2,60})\\"', r.text) or re.findall(r'"alt":"([^"]{2,60})"', r.text)
+    labels = set(re.findall(r'\\"children\\":\\"([^\\"]{2,60})\\"', r.text) or re.findall(r'"children":"([^"]{2,60})"', r.text))
+    names = [n for n in dict.fromkeys(alts) if n in labels and "icon" not in n.lower() and not n.startswith("+")]
+    print(f"[public] zid story names {len(names)}: {names}", flush=True)
     out = []
     for name in names:
         slug = re.sub(r"[^a-z0-9]", "", name.lower())
         if len(slug) < 4:
             continue
         # the story page names the merchant; keep a host only when DNS has an address
-        hosts = []
-        for host in (f"{slug}.com", f"{slug}.sa", f"{slug}.com.sa"):
-            try:
-                socket.getaddrinfo(host, 443, socket.AF_INET)
-                hosts.append(host)
-            except socket.gaierror:
-                continue
+        found = itunes_seller(client, name)
+        hosts = [found[0]] if found else []
+        seller_note = f" | {found[2]}" if found else ""
         if not hosts:
-            print(f"[public] zid {name}: no resolving host", flush=True)
+            # accept slug.sa / slug.com.sa / slug.com only when the homepage names the brand
+            token = re.sub(r"[^a-z0-9]", "", name.lower())
+            for host in (f"{slug}.sa", f"{slug}.com.sa", f"{slug}.com"):
+                try:
+                    socket.getaddrinfo(host, 443, socket.AF_INET)
+                except socket.gaierror:
+                    continue
+                try:
+                    page = client.get(f"https://{host}/", timeout=8)
+                except httpx.HTTPError:
+                    continue
+                if page.status_code == 200 and token in re.sub(r"[^a-z0-9]", "", page.text[:80_000].lower()):
+                    hosts.append(host)
+                    break
+        if not hosts:
+            print(f"[public] zid {name}: no official url", flush=True)
             continue
         out.append({"name": name, "category": "Department Store / General", "tier": "medium",
                     "domains": hosts, "url": f"https://{hosts[0]}/",
-                    "source": "zid.sa/en/success-stories (fetched " + db.now()[:10] + ")"})
+                    "source": "zid.sa/en/success-stories (fetched " + db.now()[:10] + ")" + seller_note})
     return out
 
 
@@ -250,7 +270,8 @@ def wikipedia(client):
                         hosts = []
                         for u in links:
                             root = roots_of(u if u.startswith("http") else "https://" + u)
-                            if root:
+                            # citation and news domains dominate extlinks; keep Saudi storefront hosts
+                            if root and (root.endswith(".sa") or root.endswith(".com.sa")):
                                 hosts.append(root)
                         if hosts:
                             out.append({"name": page.get("title") or titles[0], "category": cat.split(":", 1)[-1].replace("_", " "),
@@ -287,7 +308,7 @@ def wikidata(client):
     for b in r.json().get("results", {}).get("bindings", []):
         site = b.get("site", {}).get("value") or ""
         root = roots_of(site)
-        if not root:
+        if not root or not (root.endswith(".sa") or root.endswith(".com.sa")):
             continue
         qid = (b.get("item", {}).get("value") or "").rsplit("/", 1)[-1]
         out.append({"name": b.get("itemLabel", {}).get("value") or root, "category": "Retail",
@@ -312,7 +333,10 @@ def itunes_seller(client, term):
     for app in r.json().get("results") or []:
         if app.get("primaryGenreName") not in {"Shopping", "Food & Drink", "Lifestyle"}:
             continue
-        if want not in norm_name(app.get("trackName") or "") and want not in norm_name(app.get("sellerName") or ""):
+        track = norm_name(app.get("trackName") or "")
+        seller = norm_name(app.get("sellerName") or "")
+        # short Arabic names substring-match unrelated apps; require equality, or a long contained name
+        if want != track and want != seller and not (len(want) >= 8 and (want in track or want in seller)):
             continue
         root = roots_of(app.get("sellerUrl") or "")
         if root:
@@ -371,22 +395,26 @@ def appstore(client, limit=80):
 
 
 def html_portfolio(client, url, source, category="Agency portfolio"):
+    """Client sites linked as homepages. Body text is not scraped: articles and mall chrome embed CDNs, news, and SEO hosts."""
     r = get(client, url)
-    if r is None or r.status_code != 200 or "just a moment" in r.text[:300].lower() or "vercel" in r.text[:1500].lower() and "checkpoint" in r.text[:1500].lower():
+    if r is None or r.status_code != 200 or "just a moment" in r.text[:300].lower() or ("vercel" in r.text[:1500].lower() and "checkpoint" in r.text[:1500].lower()):
         print(f"[public] blocked or down {url} {None if r is None else r.status_code}", flush=True)
         return []
+    own = roots_of(url)
     domains = []
-    for host in set(re.findall(r"\b(?:[a-z0-9-]+\.)+(?:sa|com\.sa|com|store|net)\b", r.text, re.I)):
-        root = roots_of("https://" + host)
-        if root and root != roots_of(url):
-            domains.append(root)
-    # also real hrefs
     for href in re.findall(r'href=["\'](https?://[^"\']+)', r.text, re.I):
         root = roots_of(href)
-        if root and root != roots_of(url):
-            domains.append(root)
+        if not root or root == own or root in SKIP_ROOTS:
+            continue
+        path = urlsplit(href).path or "/"
+        if not re.fullmatch(r"/(?:en|ar|shop|store)?/?", path):
+            continue
+        # ranking articles only contribute Saudi ccTLDs; agency portfolios may link a .com client shop
+        if source.startswith(("article:", "mall:", "google-play")) and not (root.endswith(".sa") or root.endswith(".com.sa")):
+            continue
+        domains.append(root)
     domains = list(dict.fromkeys(domains))
-    print(f"[public] {url} domains {len(domains)}", flush=True)
+    print(f"[public] {url} homepage hrefs {len(domains)}", flush=True)
     return [{"name": d, "category": category, "tier": "medium", "domains": [d], "url": f"https://{d}/",
              "source": f"{source} {url} (fetched {db.now()[:10]})"} for d in domains]
 
@@ -449,13 +477,11 @@ def main():
             ("wikipedia", wikipedia(client)),
             ("wikidata", wikidata(client)),
         ]
+        # Google Play category HTML, Cenomi mall chrome, and ranking articles do not
+        # publish official seller URLs. They were fetched once and the non-store hosts dropped.
         pages = [
             ("https://skylightad.com/en/work/", "agency:skylight"),
             ("https://www.zalal.sa/en/zalal-work-examples", "agency:zalal"),
-            ("https://toteel.com/blog/%d9%85%d8%aa%d8%a7%d8%ac%d8%b1-%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a%d8%a9-%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9/", "article:toteel"),
-            ("https://www.ijjad.com/best-ecommerce-retail-brands-saudi-arabia-2026", "article:ijjad"),
-            ("https://centers.cenomi.com/sa-en/malls/", "mall:cenomi"),
-            ("https://play.google.com/store/apps/category/SHOPPING?hl=en&gl=SA", "google-play:shopping-sa"),
         ]
         for url, tag in pages:
             batches.append((tag, html_portfolio(client, url, tag)))

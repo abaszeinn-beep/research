@@ -36,7 +36,7 @@ async def platform_pages(client, con, sem, crawls, max_crawls):
                 n = int(row[0])
             else:
                 async with sem:
-                    r = await get_with_retry(client, crawl["cdx-api"], {"url": pattern, "matchType": "domain", "showNumPages": "true"})
+                    r = await get_with_retry(client, crawl["cdx-api"], {"url": pattern, "matchType": "domain", "showNumPages": "true"}, tries=2)
                 if r is None or r.status_code != 200:
                     print(f"[cc-marker] no size {crawl['id']} {pattern}", flush=True)
                     continue
@@ -53,7 +53,7 @@ async def platform_pages(client, con, sem, crawls, max_crawls):
                 async with sem:
                     r = await get_with_retry(client, crawl["cdx-api"], {
                         "url": pattern, "matchType": "domain", "output": "json", "fl": "url", "page": str(page),
-                    })
+                    }, tries=2)
                 if r is None or r.status_code != 200:
                     db.mark_job(con, "cc", job, "failed")
                     continue
@@ -83,27 +83,15 @@ async def saudi_paths(client, con, sem, crawl, domains):
                 r = await get_with_retry(client, api, {
                     "url": f"{domain}/{path}", "matchType": "prefix", "output": "json",
                     "fl": "url,status", "filter": "status:200", "limit": "3",
-                }, tries=4)
-                await asyncio.sleep(0.2)
-            if r is None or r.status_code != 200:
+                }, tries=2)
+            await asyncio.sleep(0.05)
+            if r is None or r.status_code != 200 or not r.text.strip():
                 continue
-            for line in r.text.splitlines():
-                if "http" in line and identity(line if line.startswith("http") else ""):
-                    found.append(line)
-                else:
-                    # json objects
-                    if '"url"' in line:
-                        try:
-                            import json
-                            found.append(json.loads(line)["url"])
-                        except Exception:
-                            pass
+            for url, _pr in harvest(r.text, 7):
+                found.append(url)
             if found:
                 break
-        urls = []
-        for u in found:
-            if identity(u):
-                urls.append((u, 7))
+        urls = [(u, 7) for u in dict.fromkeys(found) if identity(u)]
         added = db.add_candidates(con, urls, source="cc_marker:sa-path", detail=cid) if urls else 0
         db.mark_job(con, "cc_marker", job, "done", len(urls), added, cid)
         new += added
@@ -121,17 +109,18 @@ async def saudi_paths(client, con, sem, crawl, domains):
 async def main(rank_limit, concurrency, platform_crawls):
     con = db.connect()
     db.register_source(con, "cc_marker", "index", "Common Crawl CDX: Saudi locale paths on top Tranco domains, plus youcan.shop and wuilt.com")
-    async with httpx.AsyncClient(headers=UA, follow_redirects=True, timeout=60) as client:
+    async with httpx.AsyncClient(headers=UA, follow_redirects=True, timeout=40) as client:
         crawls = None
         for attempt in range(3):
             try:
-                r = await client.get("https://index.commoncrawl.org/collinfo.json", timeout=25)
+                r = await client.get("https://index.commoncrawl.org/collinfo.json", timeout=20)
                 if r.status_code == 200:
                     crawls = r.json()
                     break
+                print(f"[cc-marker] collinfo http {r.status_code}", flush=True)
             except httpx.HTTPError as e:
                 print(f"[cc-marker] collinfo {type(e).__name__}", flush=True)
-            await asyncio.sleep(3)
+            await asyncio.sleep(2)
         if not crawls:
             print("[cc-marker] collinfo failed", flush=True)
             return
