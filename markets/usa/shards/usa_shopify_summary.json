@@ -1,74 +1,78 @@
 {
   "shard": "usa_shopify",
-  "generated_utc": "2026-10-17T14:10:46Z",
+  "generated_utc": "2026-10-17T16:03:18Z",
   "inputs_discovered": 562599,
   "inputs_discovered_by_kind": {
     "custom": 477698,
     "myshopify": 84901
   },
-  "screened": 16892,
-  "pending_not_screened": 545707,
-  "duplicates_merged": 1122,
-  "rows_in_csv": 15760,
-  "verified": 8313,
+  "screened": 28188,
+  "pending_not_screened": 534411,
+  "duplicates_merged": 1985,
+  "rows_in_csv": 26203,
+  "verified": 13986,
   "verified_secondary_evidence": 0,
-  "unverified": 408,
-  "rejected": 7039,
+  "unverified": 1473,
+  "rejected": 10744,
   "errors": 0,
   "verified_by_category": {
-    "Apparel & Fashion": 2308,
-    "Home & Kitchen": 630,
-    "Jewelry & Watches": 593,
-    "Books, Media & Stationery": 565,
-    "Beauty & Personal Care": 484,
-    "Food & Beverage": 450,
-    "Gifts, Party & Seasonal": 314,
-    "Bags & Accessories": 285,
-    "Tools, Hardware & Industrial": 282,
-    "Arts, Crafts & Sewing": 272,
-    "General Merchandise": 263,
-    "Electronics & Accessories": 243,
-    "Sports & Outdoors": 227,
-    "Health & Wellness": 198,
-    "Toys, Games & Hobbies": 176,
-    "Footwear": 162,
-    "Automotive & Powersports": 160,
-    "Furniture": 150,
-    "Pet Supplies": 150,
-    "Garden & Outdoor Living": 110,
-    "Baby & Kids": 94,
-    "Musical Instruments & Gear": 62,
-    "Firearms Accessories & Tactical": 60,
-    "Religious & Spiritual": 35,
-    "Office & School Supplies": 24,
-    "Vape, Smoke & Tobacco": 16
+    "Apparel & Fashion": 3759,
+    "Home & Kitchen": 1059,
+    "Jewelry & Watches": 1011,
+    "Books, Media & Stationery": 949,
+    "Beauty & Personal Care": 786,
+    "Food & Beverage": 776,
+    "Gifts, Party & Seasonal": 548,
+    "Tools, Hardware & Industrial": 499,
+    "Bags & Accessories": 472,
+    "General Merchandise": 467,
+    "Arts, Crafts & Sewing": 431,
+    "Electronics & Accessories": 425,
+    "Sports & Outdoors": 384,
+    "Health & Wellness": 359,
+    "Automotive & Powersports": 302,
+    "Toys, Games & Hobbies": 293,
+    "Furniture": 289,
+    "Footwear": 274,
+    "Pet Supplies": 226,
+    "Garden & Outdoor Living": 176,
+    "Baby & Kids": 145,
+    "Musical Instruments & Gear": 117,
+    "Firearms Accessories & Tactical": 106,
+    "Religious & Spiritual": 50,
+    "Office & School Supplies": 44,
+    "Vape, Smoke & Tobacco": 39
   },
   "verified_by_discovery_source": {
-    "cc-columnar-shopify-paths": 13214,
-    "cc-columnar-myshopify": 1813,
-    "cc-cdx-myshopify": 23
+    "cc-columnar-shopify-paths": 21785,
+    "cc-columnar-myshopify": 2413,
+    "cc-cdx-myshopify": 29
   },
   "top_rejection_and_unverified_reasons": {
-    "non_usd_base_currency": 4897,
-    "not_a_shopify_storefront": 825,
-    "non_us_merchant": 556,
-    "dns_not_resolved": 361,
-    "canadian_merchant": 131,
-    "no_physical_products": 120,
-    "does_not_ship_to_US": 104,
-    "all sampled physical products sold out / unavailable": 85,
-    "bot_wall_or_rate_limited": 77,
-    "products.json unavailable": 67,
-    "no product page with add-to-cart found": 48,
-    "meta.json disallowed by robots.txt": 48,
-    "candidate_time_cap_exceeded": 37,
-    "shopify storefront but meta.json unavailable": 37,
-    "no_published_products": 31,
-    "products.json and product .js unavailable": 7,
-    "shopify_store_unavailable": 7,
-    "primary_domain_dns_not_resolved": 5,
-    "bot_wall_on_storefront": 2,
-    "password_protected_or_coming_soon_storefront": 2
+    "non_usd_base_currency": 7430,
+    "not_a_shopify_storefront": 1318,
+    "non_us_merchant": 944,
+    "unreachable": 787,
+    "dns_not_resolved": 381,
+    "canadian_merchant": 220,
+    "no_physical_products": 211,
+    "does_not_ship_to_US": 164,
+    "products.json unavailable": 127,
+    "all sampled physical products sold out / unavailable": 122,
+    "candidate_time_cap_exceeded": 116,
+    "bot_wall_or_rate_limited": 107,
+    "no product page with add-to-cart found": 78,
+    "meta.json disallowed by robots.txt": 64,
+    "shopify storefront but meta.json unavailable": 54,
+    "no_published_products": 53,
+    "shopify_store_unavailable": 13,
+    "products.json and product .js unavailable": 10,
+    "primary_domain_dns_not_resolved": 6,
+    "storefront_unreachable": 5,
+    "bot_wall_on_storefront": 3,
+    "password_protected_or_coming_soon_storefront": 2,
+    "no_products_listed": 1,
+    "storefront_http_404": 1
   },
   "runtime_verify_seconds": 188,
   "concurrency_used": {
@@ -102,8 +106,8 @@
     "usa_shopify.csv"
   ],
   "pending_queue_file": "usa_shopify_pending_queue.csv.gz",
-  "pending_queue_rows": 545707,
-  "verified_with_tranco_rank": 3200,
+  "pending_queue_rows": 534411,
+  "verified_with_tranco_rank": 5677,
   "verified_top_by_tranco": [
     [
       "ea.com",
@@ -166,12 +170,20 @@
       2457
     ],
     [
+      "arizona.edu",
+      2523
+    ],
+    [
       "undp.org",
       2914
     ],
     [
       "panasonic.com",
       2997
+    ],
+    [
+      "nyc.gov",
+      3132
     ],
     [
       "caltech.edu",
@@ -226,6 +238,10 @@
       4727
     ],
     [
+      "dallasnews.com",
+      5451
+    ],
+    [
       "geocaching.com",
       5555
     ],
@@ -252,18 +268,6 @@
     [
       "callofduty.com",
       6831
-    ],
-    [
-      "akc.org",
-      7042
-    ],
-    [
-      "epson.com",
-      7060
-    ],
-    [
-      "thredup.com",
-      7103
     ]
   ]
 }
