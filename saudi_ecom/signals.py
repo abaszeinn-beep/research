@@ -112,6 +112,7 @@ SERVICE_NAME = re.compile(r"تدريب|التدريب|برنامج (?!العنا
                           r"|يوتيوب بريميوم|youtube premium|كرانشي ?رول|crunchyroll|شات ?جي ?بي ?تي|chatgpt|كاسبرسكاي|kaspersky|مفتاح ويندوز|windows key|office 365|اوفيس 365"
                           r"|فورتنايت|fortnite|فيفا كوينز|fifa coins", re.I)
 RESTAURANT_SUPPLY_NAME = re.compile(r"مستلزمات|معدات|تجهيزات|لوازم|أدوات|ادوات|equipment|supply|supplies|machinery", re.I)
+KITCHEN_EQUIPMENT_PRODUCT = re.compile(r"جهاز|ماكينة|مكينة|خلاط|فرن|ثلاجة|قطاعة|محمصة|فرامة|سخان|مبرد|معدات|\bmachine\b|\boven\b|\bmixer\b|\bgrinder\b|\brefrigerator\b|\bfryer\b|\btray\b", re.I)
 RESTAURANT_NAME = re.compile(r"(?<!مستلزمات )(?<!معدات )(?<!تجهيزات )(?<!تجهيز )(?:مطعم|مطاعم)|(?<!supplies )\brestaurant\b(?! (?:supplies|equipment))|مشويات|مندي|مظبي|بوفيه", re.I)
 CHARITY_PRODUCT = re.compile(r"صدقة|تبرع|زكاة|سقيا|كفالة|وقف خيري|إفطار صائم|افطار صائم|إطعام|اطعام|كسوة الشتاء|(?<![\u0600-\u06FF])أوقف|donat(?:e|ion)", re.I)
 SERVICE_ORG = re.compile(r"للتدريب|تدريب|training|للخدمات|خدمات|\bservices\b|مكتب\b|منصة|منصة تعليمية|أكاديمية|academy|معقب|وكيلك|للاستشارات|consult", re.I)
