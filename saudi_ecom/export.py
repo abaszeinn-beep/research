@@ -47,10 +47,19 @@ def clean_name(name, url):
     return n[:120]
 
 
-def store_identity_ids(ev):
+def json_obj(ev):
+    if not isinstance(ev, str) or not ev.strip():
+        return {}
     try:
-        e = json.loads(ev or "{}")
+        out = json.loads(ev)
     except ValueError:
+        return {}
+    return out if isinstance(out, dict) else {}
+
+
+def store_identity_ids(ev):
+    e = json_obj(ev)
+    if not e and not isinstance(ev, str):
         return None
     p = e.get("probe") or {}
     if p.get("store_id"):
@@ -99,10 +108,9 @@ def dedup(con):
 
 
 def fmt_saudi(ev):
-    try:
-        e = json.loads(ev or "{}")
-    except ValueError:
-        return ev or ""
+    e = json_obj(ev)
+    if not e and not isinstance(ev, str):
+        return ""
     parts = []
     lab = {"sa_tld": ".sa domain", "sa_locale": "Saudi locale (en-sa/ar-sa)", "currency_SAR_code": "SAR currency in store config",
            "sar_prices": "SAR/ر.س prices", "saudi_phone": "Saudi phone", "vat_number": "Saudi VAT no.", "commercial_registration": "CR no.",
@@ -141,12 +149,10 @@ def main():
             n.append(f"discovered as {r.key}, resolves to {r.final_url}")
         if r.subcategory:
             n.append(f"secondary category: {r.subcategory}")
-        try:
-            e = json.loads(r.ecom_evidence or "{}")
+        e = json_obj(r.ecom_evidence)
+        if e:
             n.append("product evidence: " + "; ".join(e.get("product_evidence") or []))
             n.append("purchase evidence: " + "; ".join(e.get("purchase_evidence") or []))
-        except ValueError:
-            pass
         if r.reason and r.reason != "ecommerce+saudi evidence ok":
             n.append(r.reason)
         return " | ".join(x for x in n if x)
@@ -233,11 +239,8 @@ def coverage(con, ver, v, ndup):
     out.append(("Verified stores by platform", plat))
     cities = Counter()
     for ev in ver.saudi_evidence:
-        try:
-            for p in json.loads(ev or "{}").get("saudi_places", []):
-                cities[p] += 1
-        except ValueError:
-            pass
+        for p in json_obj(ev).get("saudi_places", []):
+            cities[p] += 1
     out.append(("Regions/cities mentioned on verified storefronts (multi-count)", pd.DataFrame(cities.most_common(), columns=["City/Region", "Stores mentioning"])))
     src = q("""SELECT s.source AS Source, count(*) AS Candidates, sum(c.status IN ('verified','duplicate')) AS 'Verified (incl. dup)',
                       sum(c.status='rejected') AS Rejected, sum(c.status='unverified') AS Unverified, sum(c.status IN ('pending','in_progress')) AS Pending
