@@ -28,6 +28,7 @@ from .common import registrable_domain
 from .market import M
 from .reference import connect
 
+ITUNES_LOCK = asyncio.Lock()
 UA_RESEARCH = {"User-Agent": "mkt-ecom-directory-research/1.0 (polite archive client)"}
 UA_BROWSER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
               "Accept-Language": M.accept_language}
@@ -107,6 +108,25 @@ async def cc_product(client, prefix, crawls):
         if rows:
             break
     prods = [j for j in rows if PRODUCT_URL.search(j["url"])]
+    if rows and not prods:
+        # first page of the index is alphabetical (often /brands/, /c/ ...); ask the index for product-like paths only
+        h = urlsplit("https://" + rows[0]["url"].split("://", 1)[-1]).hostname or hosts[0]
+        for crawl in crawls[:2]:
+            try:
+                r = await client.get(f"https://index.commoncrawl.org/{crawl}-index", params={
+                    "url": h + path + "*", "output": "json", "limit": "60",
+                    "filter": ["status:200", "mime:text/html", r"~url:.*(/p/|/s/|/products?/|/ip/|/dp/|/pd/|/prd/|/item/|/sku/|/style/|\d{6,}\.html|-p\d{5,}).*"]}, timeout=120)
+            except httpx.HTTPError:
+                continue
+            for line in r.text.splitlines():
+                try:
+                    j = json.loads(line)
+                except ValueError:
+                    continue
+                if "url" in j and not NON_PRODUCT.search(j["url"]):
+                    prods.append(j)
+            if prods:
+                break
     out = {"type": "commoncrawl_product", "ok": False, "captures": len(rows), "product_captures": len(prods)}
     for j in (prods[:6] or rows[-3:]):
         off, ln = int(j["offset"]), int(j["length"])
@@ -215,10 +235,20 @@ def name_tokens(name):
 async def app_store(client, name, domain):
     toks = name_tokens(name) or [domain.split(".")[0]]
     term = " ".join(toks[:3])
-    try:
-        r = await client.get("https://itunes.apple.com/search", params={"term": term, "country": M.appstore_country, "entity": "software", "limit": "10"}, timeout=30)
-        res = r.json().get("results", [])
-    except Exception:
+    res = None
+    for attempt in range(4):
+        async with ITUNES_LOCK:
+            await asyncio.sleep(3.5)  # iTunes Search API allows roughly 20 calls/minute
+            try:
+                r = await client.get("https://itunes.apple.com/search", params={"term": term, "country": M.appstore_country, "entity": "software", "limit": "10"}, timeout=30)
+                if r.status_code == 200:
+                    res = r.json().get("results", [])
+            except Exception:
+                pass
+        if res is not None:
+            break
+        await asyncio.sleep(4 * 2 ** attempt)
+    if res is None:
         return {"type": "app_store", "ok": False, "detail": "itunes_error"}
     label = domain.split(".")[0]
     generic = {"toys", "fashion", "beauty", "home", "kids", "baby", "market", "shop", "store", "online", "mall", "sport", "sports", "wear", "outlet", "depot"}
@@ -308,7 +338,7 @@ async def main(keys, limit, concurrency, include_wikidata):
                 try:
                     res = await asyncio.wait_for(check((arch, live), it, crawls), 400)
                 except Exception as e:
-                    print("[secondary] error", it["key"], type(e).__name__, flush=True)
+                    print("[secondary] error", it["key"], type(e).__name__, str(e)[:120], flush=True)
                     return
             save(con, it, res)
             stats[res["verdict"]] += 1
