@@ -88,7 +88,7 @@ CATS = [
     ("Jewelry & Watches", r"jewel|necklace|bracelet|earring|\brings?\b|pendant|\bwatch(?:es)?\b|anklet|diamond|sterling silver|14k|gemstone|engagement"),
     ("Apparel & Fashion", r"shirt|\btee\b|tees\b|dress|hoodie|sweatshirt|\bpants\b|jeans|legging|jacket|coat\b|apparel|clothing|\btops?\b|skirt|shorts|swim|bikini|lingerie|\bbra\b|socks?\b|\bhats?\b|\bcaps?\b|beanie|scarf|tank|romper|jumpsuit|sweater|cardigan|blouse|outfit|uniform|pajama|joggers|polo|vest\b|kimono|boutique"),
     ("Footwear", r"shoes?\b|sneaker|\bboots?\b|sandal|slipper|\bheels?\b|loafer|footwear|clogs?\b|insoles?"),
-    ("Bags & Accessories", r"\bbags?\b|handbag|purse|wallet|backpack|\btote|sunglass|eyewear|\bbelts?\b|keychain|accessor|luggage"),
+    ("Bags & Accessories", r"\bbags?\b|handbag|purse|wallet|backpack|\btote|sunglass|eyewear|\bbelts?\b|keychain|luggage|crossbody|clutch"),
     ("Beauty & Personal Care", r"skin ?care|serum|moisturi|cleanser|lotion|makeup|cosmetic|lipstick|lip gloss|mascara|\bnails?\b|hair ?care|shampoo|conditioner|fragrance|perfume|cologne|\bsoaps?\b|body wash|beard|\blash|\bwigs?\b|hair extension|deodorant|bath bomb|beauty|body butter|sunscreen"),
     ("Health & Wellness", r"supplement|vitamin|protein|capsule|probiotic|collagen|wellness|\bcbd\b|hemp|kratom|tincture|gumm(?:y|ies)|\bhealth|medical|first aid|\bbrace\b|massage|nutrition|electrolyte|pre-?workout"),
     ("Food & Beverage", r"coffee|\bteas?\b|snack|candy|chocolate|sauce|spice|seasoning|jerky|\bhoney\b|cookie|baked|\bfood|gourmet|\bwine|\bbeer\b|spirits|whiskey|bourbon|beverage|\bdrinks?\b|syrup|\bjam\b|popcorn|\bnuts\b|olive oil|\bbbq\b|\bmeat|seafood|cheese|pantry|bakery"),

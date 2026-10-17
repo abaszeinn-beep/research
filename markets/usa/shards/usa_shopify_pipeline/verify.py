@@ -29,7 +29,8 @@ import urllib.robotparser
 from collections import Counter, defaultdict, deque
 from urllib.parse import urlsplit
 
-import httpx
+from curl_cffi.requests import AsyncSession
+from curl_cffi.requests.errors import RequestsError as CurlError
 
 sys.path.insert(0, os.path.dirname(__file__))
 from common import HEADERS, connect, registrable, utcnow, set_meta, get_meta  # noqa: E402
@@ -82,9 +83,8 @@ class Limiter:
 
 class Fetcher:
     def __init__(self, concurrency, per_host=2, gap=0.35):
-        limits = httpx.Limits(max_connections=concurrency * 4, max_keepalive_connections=concurrency * 2)
-        self.client = httpx.AsyncClient(headers=HEADERS, follow_redirects=True, limits=limits, verify=False,
-                                        timeout=httpx.Timeout(15.0, connect=8.0), max_redirects=8)
+        self.client = AsyncSession(headers=HEADERS, timeout=20, max_clients=concurrency * 3, verify=False,
+                                   allow_redirects=True, max_redirects=8)
         self.lim = Limiter(concurrency, 8, concurrency * 2)
         self.per_host, self.gap = per_host, gap
         self.host_sem = {}
@@ -100,19 +100,13 @@ class Fetcher:
         return self.host_sem[h]
 
     async def _raw(self, url):
-        async with self.client.stream("GET", url) as r:
-            chunks, size = [], 0
-            async for ch in r.aiter_bytes():
-                chunks.append(ch)
-                size += len(ch)
-                if size >= MAX_BYTES:
-                    break
-            body = b"".join(chunks)
-            try:
-                text = body.decode(r.encoding or "utf-8", errors="replace")
-            except LookupError:
-                text = body.decode("utf-8", errors="replace")
-            return r.status_code, str(r.url), text, r.headers
+        r = await self.client.get(url)
+        body = r.content[:MAX_BYTES]
+        try:
+            text = body.decode(r.encoding or "utf-8", errors="replace")
+        except LookupError:
+            text = body.decode("utf-8", errors="replace")
+        return r.status_code, str(r.url), text, r.headers
 
     async def allowed(self, url):
         sp = urlsplit(url)
@@ -166,19 +160,26 @@ class Fetcher:
                                 delay = max(delay, min(float(ra), 30) if ra.isdigit() else 8)
                         else:
                             return st, final, text, hdrs, None
-                    except (httpx.ConnectError, httpx.ConnectTimeout) as e:
-                        m = str(e)
-                        if any(s in m for s in ("Name or service not known", "No address associated", "nodename nor servname", "getaddrinfo")):
-                            return None, url, "", {}, "dns_not_resolved"
-                        err = "ssl_error" if "SSL" in m or "certificate" in m.lower() else "connect_error"
-                    except (httpx.ReadTimeout, httpx.WriteTimeout, httpx.PoolTimeout, asyncio.TimeoutError):
+                    except asyncio.TimeoutError:
                         err = "timeout"
                         if attempt >= 1:
                             break
-                    except httpx.TooManyRedirects:
-                        return None, url, "", {}, "too_many_redirects"
-                    except (httpx.HTTPError, UnicodeError, ValueError, OSError) as e:
-                        err = f"http_error:{type(e).__name__}"
+                    except (CurlError, UnicodeError, ValueError, OSError) as e:
+                        m = str(e)
+                        if "Could not resolve host" in m:
+                            return None, url, "", {}, "dns_not_resolved"
+                        if "Maximum" in m and "redirect" in m:
+                            return None, url, "", {}, "too_many_redirects"
+                        if "timed out" in m or "Timeout" in m:
+                            err = "timeout"
+                            if attempt >= 1:
+                                break
+                        elif "SSL" in m or "certificate" in m:
+                            err = "ssl_error"
+                        elif "Failed to connect" in m or "Connection refused" in m or "Couldn't connect" in m:
+                            err = "connect_error"
+                        else:
+                            err = f"http_error:{m[:60]}"
             await asyncio.sleep(delay + random.random())
             delay = min(delay * 2, 20)
         self.stats["failed_fetch"] += 1
@@ -370,6 +371,10 @@ class Verifier:
             tags.extend(t if isinstance(t, list) else str(t or "").split(",")[:8])
         out["category"] = S.categorize(types, titles, tags[:400], out.get("store_name") or "", mj.get("description") or "")
         ev["physical_products_sampled"] = f"{len(phys)}/{len(prods)}"
+        x = json.loads(out["extra"])
+        x["top_types"] = [t for t, _ in Counter(t for t in types if t).most_common(6)]
+        x["sample_titles"] = titles[:8]
+        out["extra"] = json.dumps(x, ensure_ascii=False)
         if not avail:
             return done("unverified", "all sampled physical products sold out / unavailable", verification_url=pfinal, us_evidence=evs())
 
@@ -473,7 +478,7 @@ async def main(concurrency, stores_in_flight, max_n, min_priority, idle_exit, re
     rep.cancel()
     set_meta(con, "verify_runtime_s", (get_meta(con, "verify_runtime_s", 0) or 0) + time.time() - t0)
     print(f"[verify] finished {processed} {dict(v.stats)} {dict(f.stats)}", flush=True)
-    await f.client.aclose()
+    await f.client.close()
 
 
 if __name__ == "__main__":

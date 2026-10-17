@@ -1,0 +1,96 @@
+{
+  "shard": "usa_shopify",
+  "generated_utc": "2026-10-17T12:48:34Z",
+  "inputs_discovered": 518600,
+  "inputs_discovered_by_kind": {
+    "custom": 448260,
+    "myshopify": 70340
+  },
+  "screened": 2313,
+  "pending_not_screened": 516287,
+  "duplicates_merged": 14,
+  "rows_in_csv": 2298,
+  "verified": 830,
+  "verified_secondary_evidence": 0,
+  "unverified": 52,
+  "rejected": 1416,
+  "errors": 0,
+  "verified_by_category": {
+    "Apparel & Fashion": 192,
+    "Books, Media & Stationery": 67,
+    "Home & Kitchen": 64,
+    "Beauty & Personal Care": 62,
+    "Jewelry & Watches": 62,
+    "Food & Beverage": 56,
+    "Bags & Accessories": 45,
+    "Tools, Hardware & Industrial": 41,
+    "Gifts, Party & Seasonal": 28,
+    "Sports & Outdoors": 27,
+    "Arts, Crafts & Sewing": 23,
+    "Health & Wellness": 21,
+    "Pet Supplies": 21,
+    "Electronics & Accessories": 19,
+    "General Merchandise": 16,
+    "Footwear": 15,
+    "Furniture": 15,
+    "Automotive & Powersports": 14,
+    "Baby & Kids": 11,
+    "Toys, Games & Hobbies": 9,
+    "Garden & Outdoor Living": 7,
+    "Musical Instruments & Gear": 6,
+    "Firearms Accessories & Tactical": 4,
+    "Religious & Spiritual": 4,
+    "Vape, Smoke & Tobacco": 1
+  },
+  "verified_by_discovery_source": {
+    "cc-columnar-shopify-paths": 1203,
+    "cc-columnar-myshopify": 969
+  },
+  "top_rejection_and_unverified_reasons": {
+    "non_usd_base_currency": 1270,
+    "not_a_shopify_storefront": 64,
+    "non_us_merchant": 45,
+    "canadian_merchant": 19,
+    "all sampled physical products sold out / unavailable": 12,
+    "unreachable": 11,
+    "no_physical_products": 10,
+    "bot_wall_or_rate_limited": 9,
+    "products.json unavailable": 7,
+    "does_not_ship_to_US": 6,
+    "no product page with add-to-cart found": 5,
+    "meta.json disallowed by robots.txt": 4,
+    "shopify storefront but meta.json unavailable": 3,
+    "products.json and product .js unavailable": 1,
+    "dns_not_resolved": 1,
+    "no_published_products": 1
+  },
+  "runtime_verify_seconds": 61,
+  "concurrency_used": {
+    "global_http_requests_peak": 152,
+    "stores_in_flight": 320,
+    "per_host": 2,
+    "per_host_min_gap_s": 0.35,
+    "columnar_parquet_workers": 6
+  },
+  "requests": {
+    "requests": 2717,
+    "robots_disallowed": 1,
+    "failed_fetch": 5
+  },
+  "snapshots_used": {
+    "cc_columnar_myshopify_and_shopify_paths": [
+      "CC-MAIN-2026-17",
+      "CC-MAIN-2026-21",
+      "CC-MAIN-2026-25",
+      "CC-MAIN-2026-39"
+    ],
+    "cc_cdx_api": [],
+    "wayback_cdx": []
+  },
+  "index_jobs_done": {
+    "columnar": 5895
+  },
+  "csv_files": [
+    "usa_shopify.csv"
+  ]
+}

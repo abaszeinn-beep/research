@@ -20,7 +20,7 @@ _TLD = tldextract.TLDExtract(suffix_list_urls=(), cache_dir=None)
 
 BROWSER_UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
               "Chrome/124.0 Safari/537.36")
-HEADERS = {"User-Agent": BROWSER_UA,
+HEADERS = {"User-Agent": "usa-ecom-directory-research/1.0 (+https://github.com/abaszeinn-beep/research; store verification)",
            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/json;q=0.8,*/*;q=0.7",
            "Accept-Language": "en-US,en;q=0.9"}
 INDEX_UA = {"User-Agent": "usa-ecom-directory-research/1.0 (polite index client)"}
@@ -141,10 +141,15 @@ CREATE TABLE IF NOT EXISTS meta (k TEXT PRIMARY KEY, v TEXT);
 def connect(path: str = DB_PATH) -> sqlite3.Connection:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     con = sqlite3.connect(path, timeout=120, isolation_level=None)
-    con.execute("PRAGMA journal_mode=WAL")
-    con.execute("PRAGMA synchronous=NORMAL")
-    con.executescript(SCHEMA)
-    return con
+    for attempt in range(30):
+        try:
+            con.execute("PRAGMA journal_mode=WAL")
+            con.execute("PRAGMA synchronous=NORMAL")
+            con.executescript(SCHEMA)
+            return con
+        except sqlite3.OperationalError:
+            time.sleep(1 + attempt)
+    raise RuntimeError("database stays locked")
 
 
 def add_candidates(con, items, source: str) -> int:
