@@ -111,7 +111,9 @@ SERVICE_NAME = re.compile(r"تدريب|التدريب|برنامج (?!العنا
                           r"|رعاية منزلية|مقدمة رعاية|تمريض|ممرضة|عاملة منزلية|\bexams?\b|preparation|scfhs|دعوة إلكترونية|دعوات إلكترونية|دعوة الكترونية"
                           r"|يوتيوب بريميوم|youtube premium|كرانشي ?رول|crunchyroll|شات ?جي ?بي ?تي|chatgpt|كاسبرسكاي|kaspersky|مفتاح ويندوز|windows key|office 365|اوفيس 365"
                           r"|فورتنايت|fortnite|فيفا كوينز|fifa coins", re.I)
-RESTAURANT_NAME = re.compile(r"(?<!مستلزمات )(?<!معدات )(?<!تجهيزات )(?<!تجهيز )(?:مطعم|مطاعم)|(?<!supplies )\brestaurant\b(?! (?:supplies|equipment))|مشويات|مندي|مظبي|بوفيه", re.I)
+RESTAURANT_NAME = re.compile(r"(?<!مستلزمات )(?<!معدات )(?<!تجهيزات )(?<!تجهيز )(?:مطعم|مطاعم)|(?<!supplies )\brestaurant\b(?! (?:supplies|equipment))|مشويات|مندي|مظبي|بوفيه"
+                             r"|(?<!supplies )\bcatering\b(?! (?:supplies|equipment))|كيترينج|كاترينج", re.I)
+FINANCIAL_ORG = re.compile(r"(?<!power )(?<!power-)\bbank\b(?!s? (?:card|gift))|(?<!باور )بنك|بيت التمويل|مصرف|\binsurance\b|تأمين|takaful|تكافل|exchange company|للصرافة|صرافة|\bbrokerage\b|وساطة مالية", re.I)
 CHARITY_PRODUCT = re.compile(r"صدقة|تبرع|زكاة|سقيا|كفالة يتيم|كفالة أيتام|وقف خيري|donat(?:e|ion)", re.I)
 SERVICE_ORG = re.compile(r"للتدريب|تدريب|training|للخدمات|خدمات|\bservices\b|مكتب\b|منصة|منصة تعليمية|أكاديمية|academy|معقب|وكيلك|للاستشارات|consult", re.I)
 CHARITY = re.compile(r"جمعية|خيري|خيرية|تبرع|تبرعات|كفالة يتيم|كفالة|صدقة|زكاة|وقف خيري|أوقاف|donat(?:e|ion)|charity|sadaqah|zakat|non-?profit|غير ربحية", re.I)

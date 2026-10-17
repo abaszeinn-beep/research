@@ -575,6 +575,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             return done("rejected", f"charity_or_donations (product names: {n_ch}/{len(pnames)})")
     if S.RESTAURANT_NAME.search(res.get("store_name") or ""):
         return done("rejected", "restaurant_or_food_service (store name: " + S.RESTAURANT_NAME.search(res["store_name"]).group(0) + ")")
+    m_fin = S.FINANCIAL_ORG.search((res.get("store_name") or "") + " " + a["title"])
+    if m_fin:
+        return done("rejected", f"financial_institution_not_store (name/title: {m_fin.group(0)})")
     m_org = S.SERVICE_ORG.search(res.get("store_name") or "")
     if m_org and (physical is None or svc_share >= 0.25 or len(pnames) < 3):
         return done("unverified", f"service_style_store_name (manual review): {m_org.group(0)}; service-like products {svc_share:.0%}")
