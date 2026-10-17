@@ -7,3 +7,5 @@ data/raw/
 logs/*.log
 data/saudi_ecom.sqlite
 data/snapshot.sqlite
+data/raw/
+data/work/
