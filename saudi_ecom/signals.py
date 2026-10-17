@@ -36,7 +36,7 @@ PLATFORM_MARKERS = [
     ("shopify", re.compile(r"cdn\.shopify\.com|Shopify\.theme|shopify-section|myshopify\.com", re.I)),
     ("woocommerce", re.compile(r"woocommerce|wc-ajax|wp-content/plugins/woocommerce|wc-block", re.I)),
     ("magento", re.compile(r"Magento_|mage/cookies|text/x-magento-init|/static/version\d+/frontend/", re.I)),
-    ("salesforce-commerce", re.compile(r"demandware|/on/demandware\.store|dwanalytics|sfcc", re.I)),
+    ("salesforce-commerce", re.compile(r"demandware|/on/demandware\.store|dwanalytics|\bsfcc\b|\bsfcc[-_]", re.I)),
     ("sap-hybris", re.compile(r"/_ui/responsive|hybris|ACC\.config", re.I)),
     ("opencart", re.compile(r"index\.php\?route=(?:product|common|checkout)|catalog/view/theme", re.I)),
     ("prestashop", re.compile(r"prestashop|/modules/ps_|var prestashop", re.I)),
