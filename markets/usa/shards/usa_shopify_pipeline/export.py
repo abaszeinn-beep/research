@@ -34,6 +34,10 @@ def short_sources(s):
 
 def main(snapshot=False):
     con = connect()
+    try:
+        trk = dict(con.execute("SELECT domain, rank FROM tranco"))
+    except sqlite3.OperationalError:
+        trk = {}
     cand = {k: (kind, src, hint) for k, kind, src, hint in con.execute("SELECT key, kind, sources, hint FROM candidates")}
     dup_sources = defaultdict(set)
     rows = []
@@ -64,6 +68,8 @@ def main(snapshot=False):
                      "status": status, "us_evidence": usev or "", "verification_url": vurl or "",
                      "verification_utc": vutc or "", "discovery_source": short_sources(src), "tranco_rank": "",
                      "reason": reason or "", "_cand_host": key})
+    for r in rows:
+        r["tranco_rank"] = trk.get(r["root_domain"]) or trk.get(r["_cand_host"]) or ""
     for r in rows:
         if r["key"] in dup_sources:
             extra_src = sorted(x for x in dup_sources[r["key"]] if x)
@@ -154,6 +160,20 @@ def main(snapshot=False):
         "index_jobs_done": jobs,
         "csv_files": [os.path.basename(p) for p in (glob.glob(os.path.join(SHARD_DIR, f"{SHARD}*.csv")))],
     }
+    qpath = os.path.join(SHARD_DIR, f"{SHARD}_pending_queue.csv.gz")
+    n_q = 0
+    with gzip.open(qpath, "wt", newline="", encoding="utf-8", compresslevel=9) as qf:
+        qw = csv.writer(qf)
+        qw.writerow(["candidate_host", "kind", "priority", "tranco_rank", "discovery_source", "hint"])
+        for key, kind, pr, src, hint in con.execute(
+                "SELECT key, kind, priority, sources, hint FROM candidates WHERE state!='done' ORDER BY priority DESC, key"):
+            qw.writerow([key, kind, round(pr, 2), trk.get(key) or trk.get(registrable(key)) or "", short_sources(src), hint])
+            n_q += 1
+    summary["pending_queue_file"] = os.path.basename(qpath)
+    summary["pending_queue_rows"] = n_q
+    summary["verified_with_tranco_rank"] = sum(1 for r in final if r["status"] == "verified" and r["tranco_rank"])
+    summary["verified_top_by_tranco"] = [[r["root_domain"], r["tranco_rank"]] for r in sorted(
+        (r for r in final if r["status"] == "verified" and r["tranco_rank"]), key=lambda r: r["tranco_rank"])[:40]]
     summary.update(get_meta(con, "summary_notes", {}) or {})
     with open(os.path.join(SHARD_DIR, f"{SHARD}_summary.json"), "w") as f:
         json.dump(summary, f, indent=2)
