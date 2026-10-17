@@ -51,3 +51,17 @@
 [tranco] {'done': 19000, 'hits': 230, 'new': 198, 'fail': 8117} rate=5.7/s rank~33481
 [tranco] {'done': 20000, 'hits': 240, 'new': 208, 'fail': 8609} rate=5.5/s rank~34476
 [tranco] {'done': 21000, 'hits': 253, 'new': 218, 'fail': 9108} rate=5.3/s rank~35519
+[tranco] {'done': 22000, 'hits': 259, 'new': 224, 'fail': 9659} rate=5.0/s rank~36484
+[tranco] {'done': 23000, 'hits': 269, 'new': 233, 'fail': 10187} rate=4.9/s rank~37525
+[tranco] {'done': 24000, 'hits': 275, 'new': 239, 'fail': 10714} rate=4.7/s rank~38503
+[tranco] {'done': 25000, 'hits': 286, 'new': 248, 'fail': 11224} rate=4.5/s rank~39503
+[tranco] {'done': 26000, 'hits': 301, 'new': 262, 'fail': 11793} rate=4.3/s rank~40544
+[tranco] {'done': 27000, 'hits': 309, 'new': 270, 'fail': 12368} rate=4.2/s rank~41512
+[tranco] {'done': 28000, 'hits': 317, 'new': 276, 'fail': 13017} rate=4.0/s rank~42526
+[tranco] {'done': 29000, 'hits': 321, 'new': 279, 'fail': 13648} rate=3.9/s rank~43495
+[tranco] {'done': 30000, 'hits': 327, 'new': 285, 'fail': 14320} rate=3.8/s rank~44535
+[tranco] {'done': 31000, 'hits': 334, 'new': 291, 'fail': 14977} rate=3.7/s rank~45507
+[tranco] {'done': 32000, 'hits': 339, 'new': 296, 'fail': 15685} rate=3.6/s rank~46514
+[tranco] {'done': 33000, 'hits': 346, 'new': 304, 'fail': 16291} rate=3.5/s rank~47512
+[tranco] {'done': 34000, 'hits': 349, 'new': 307, 'fail': 16989} rate=3.4/s rank~48496
+[tranco] {'done': 35000, 'hits': 358, 'new': 314, 'fail': 17694} rate=3.3/s rank~49509

@@ -49,3 +49,11 @@
 | Paid search APIs | none configured; none purchased |
 
 No AI subagents were used; parallelism comes from asyncio workers in separate tmux sessions sharing one SQLite (WAL) DB.
+
+## 2026-10-17 (resumed after billing interruption)
+
+- **13:38** Took over: restored env (dnsmasq, Tranco, DB snapshot), requeued in-progress/transient failures, restarted verifier, Tranco probe, Wayback host walk, DDG search.
+- **14:00-14:30** Reference load/resolve, secondary-evidence pass, headless-browser pass (installed Chromium for Playwright).
+- **14:50** Checkpoint pushed (452 verified). Wayback walk then added ~6.1k new .qa hosts; verifier drained them.
+- **16:10** Wayback host walk finished; final secondary pass, reference link + audit. 16 major refs remain unresolved (below). Search engines: DDG mostly blocked (back-off cycles).
+- Unresolved majors: Lulu Hypermarket, Carrefour Qatar, Al Meera, Monoprix Qatar, Jumbo Electronics Qatar, Max Fashion, Home Centre, Baladna, Salam Stores, Apple, IKEA Qatar, Zara, Bath & Body Works, Shein, Sephora, Al Fardan Jewellery (bot-walled/geo-redirected or lacking two independent current proofs).
