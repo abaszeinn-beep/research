@@ -61,10 +61,42 @@ NETWORK_REASONS = ("rate_limited%", "fetch_failed:timeout%", "fetch_failed:conne
 SECONDARY_REASONS = re.compile(r"^(?:blocked_or_challenge|js_rendered|partial_ecommerce|robots_disallowed|fetch_failed|verification_timeout|rate_limited|http_5|http_403)")
 
 
+def state_path(shard):
+    return os.path.join(OUT_DIR, f"shard_{shard}_state.tar.gz")
+
+
 def work_dir(shard):
+    """Working files; restored from the committed state checkpoint when this VM has none."""
     d = os.path.join(ROOT, "data", "cache", "tranco", f"shard_{shard}")
-    os.makedirs(d, exist_ok=True)
+    if not os.path.isdir(d):
+        os.makedirs(d, exist_ok=True)
+        if os.path.exists(state_path(shard)):
+            import tarfile
+            with tarfile.open(state_path(shard)) as tf:
+                tf.extractall(d)
+        out_csv = os.path.join(OUT_DIR, f"shard_{shard}.csv")
+        if not os.path.exists(os.path.join(d, "carryover.csv")) and os.path.exists(out_csv):
+            import shutil
+            shutil.copy(out_csv, os.path.join(d, "carryover.csv"))
     return d
+
+
+def save_state(shard):
+    import tarfile
+    d = work_dir(shard)
+    tmp = state_path(shard) + ".tmp"
+    with tarfile.open(tmp, "w:gz") as tf:
+        for name in sorted(os.listdir(d)):
+            tf.add(os.path.join(d, name), arcname=name)
+    os.replace(tmp, state_path(shard))
+
+
+def carryover_rows(shard):
+    p = os.path.join(work_dir(shard), "carryover.csv")
+    if not os.path.exists(p):
+        return []
+    with open(p, newline="") as fh:
+        return list(csv.DictReader(fh))
 
 
 def load_slice(start, end):
@@ -325,6 +357,7 @@ async def run_screen(shard, start, end, part, parts, concurrency):
                 except (ValueError, KeyError):
                     pass
     roots, keys, recheck = known_sets()
+    carried = {int(r["tranco_rank"]) for r in carryover_rows(shard)}
     items = [(r, d) for i, (r, d) in enumerate(load_slice(start, end)) if i % parts == part and d not in done]
     print(f"[screen {part}/{parts}] {len(items)} domains to process ({len(done)} already done)", flush=True)
     f = ScreenFetcher(concurrency, 2)
@@ -343,7 +376,9 @@ async def run_screen(shard, start, end, part, parts, concurrency):
             except asyncio.QueueEmpty:
                 return
             root = registrable_domain(domain)
-            if root in roots:
+            if rank in carried:
+                rec = {"rank": rank, "domain": domain, "skip": "carryover_checkpoint_csv"}
+            elif root in roots:
                 rec = {"rank": rank, "domain": domain, "skip": "known_recheck" if root in recheck else "known"}
             elif NONRETAIL_TLD.search(root) or root in NON_STORE_ROOTS or NONRETAIL_NAME.search(domain):
                 rec = {"rank": rank, "domain": domain, "skip": "nonretail_name"}
@@ -713,6 +748,8 @@ def write_outputs(shard, start, end, partial=False, runtime=None):
     # collapse records that resolved to the same storefront (e.g. brand.com|sa and sa.brand.com redirecting together)
     best = {}
     for r in recs.values():
+        if r.get("status") not in STATUS_ORDER:
+            continue
         g = r.get("final_key") or r["key"]
         if g not in best or (STATUS_ORDER.get(r["status"], 9), r["rank"]) < (STATUS_ORDER.get(best[g]["status"], 9), best[g]["rank"]):
             best[g] = r
@@ -740,10 +777,14 @@ def write_outputs(shard, start, end, partial=False, runtime=None):
             "verification_utc": r.get("verified_at"),
             "reason": reason,
         })
+    have = {(r["root_domain"], r["canonical_storefront_url"]) for r in rows}
+    rows += [c for c in carryover_rows(shard) if (c["root_domain"], c["canonical_storefront_url"]) not in have]
+    rows.sort(key=lambda x: (STATUS_ORDER.get(x["status"], 9), int(x["tranco_rank"])))
     with open(os.path.join(OUT_DIR, f"shard_{shard}.csv"), "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=CSV_COLS)
         w.writeheader()
         w.writerows(rows)
+    save_state(shard)
     if partial:
         return rows
     screened = read_screened(shard)
@@ -766,6 +807,7 @@ def write_outputs(shard, start, end, partial=False, runtime=None):
         "domains_in_slice": n_slice,
         "domains_processed": len(by_dom),
         "skipped_as_known": skipped_known,
+        "carried_over_from_checkpoint_csv": sum(1 for s in by_dom.values() if s.get("skip") == "carryover_checkpoint_csv"),
         "rechecked_known_network_errors": sum(1 for s in by_dom.values() if s.get("skip") == "known_recheck"),
         "skipped_nonretail_by_name": skipped_nonretail,
         "screened": screened_n,
@@ -790,7 +832,7 @@ def write_outputs(shard, start, end, partial=False, runtime=None):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["screen", "archive", "verify", "export"])
+    ap.add_argument("cmd", choices=["screen", "archive", "verify", "checkpoint", "export"])
     ap.add_argument("--shard", type=int, required=True)
     ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--end", type=int, default=0)
@@ -807,6 +849,8 @@ def main():
         asyncio.run(run_archive(a.shard, a.concurrency))
     elif a.cmd == "verify":
         asyncio.run(run_verify(a.shard, a.watch, a.concurrency, a.sec_concurrency, a.parts))
+    elif a.cmd == "checkpoint":
+        write_outputs(a.shard, a.start, a.end, partial=True)
     else:
         rows, summary = write_outputs(a.shard, a.start, a.end, runtime=a.runtime)
         print(json.dumps(summary, indent=2))
