@@ -66,12 +66,96 @@ class ScreenFetcher(Fetcher):
             return None, url, "", {}, "timeout"
 
 
+DOH = ["https://cloudflare-dns.com/dns-query", "https://dns.google/resolve"]
+DOH_HOSTS = {"cloudflare-dns.com", "dns.google"}
+
+
+def install_public_dns(loop, concurrency=150):
+    """Resolve A records for this process via DNS-over-HTTPS.
+
+    The VPC resolver rate-limits (~40 lookups/s) and plain UDP DNS gets throttled at the VM's egress under
+    sustained load; DoH multiplexes over a couple of HTTP/2 connections. Raises the same gaierror codes as
+    libc so NXDOMAIN stays distinguishable from temporary failures."""
+    import ipaddress
+    client = httpx.AsyncClient(http2=True, timeout=httpx.Timeout(8.0, connect=6.0), headers={"accept": "application/dns-json"},
+                               limits=httpx.Limits(max_connections=8, max_keepalive_connections=8))
+    cache: dict[str, object] = {}
+    sem = asyncio.Semaphore(concurrency)
+    orig = loop.getaddrinfo
+    temp = socket.gaierror(socket.EAI_AGAIN, "Temporary failure in name resolution")
+
+    async def lookup(host):
+        if host in cache:
+            return cache[host]
+        res, servfail = temp, 0
+        async with sem:
+            for attempt in range(4):
+                try:
+                    r = await client.get(DOH[attempt % 2], params={"name": host, "type": "A"})
+                    j = r.json() if r.status_code == 200 else None
+                except (httpx.HTTPError, ValueError):
+                    j = None
+                if j is None:
+                    await asyncio.sleep(0.5 + attempt)
+                    continue
+                stt = j.get("Status")
+                if stt == 3:
+                    res = socket.gaierror(socket.EAI_NONAME, "Name or service not known")
+                    break
+                if stt == 2:
+                    servfail += 1
+                    if servfail >= 2:
+                        res = socket.gaierror(socket.EAI_NONAME, "Name or service not known (SERVFAIL)")
+                        break
+                    continue
+                if stt == 0:
+                    ips = [x["data"] for x in j.get("Answer") or [] if x.get("type") == 1]
+                    res = ips or socket.gaierror(-5, "No address associated with hostname")
+                    break
+        if res is not temp:
+            cache[host] = res
+        return res
+
+    async def getaddrinfo(host, port, *, family=0, type=0, proto=0, flags=0):
+        h = (host.decode() if isinstance(host, bytes) else host or "").lower().rstrip(".")
+        try:
+            ipaddress.ip_address(h)
+            return await orig(host, port, family=family, type=type, proto=proto, flags=flags)
+        except ValueError:
+            pass
+        if not h or "." not in h or h in DOH_HOSTS:
+            return await orig(host, port, family=family, type=type, proto=proto, flags=flags)
+        res = await lookup(h)
+        if isinstance(res, socket.gaierror):
+            raise res
+        p = int(port) if port not in (None, "") else 0
+        return [(socket.AF_INET, type or socket.SOCK_STREAM, proto or 6, "", (ip, p)) for ip in res]
+
+    loop.getaddrinfo = getaddrinfo
+    return lookup
+
+
 async def resolves(host):
+    """True / False (NXDOMAIN or no A record) / None (temporary DNS failure)."""
     try:
-        await asyncio.wait_for(asyncio.get_running_loop().getaddrinfo(host, 443, type=socket.SOCK_STREAM), 6)
+        await asyncio.wait_for(asyncio.get_running_loop().getaddrinfo(host, 443, type=socket.SOCK_STREAM), 20)
         return True
+    except socket.gaierror as e:
+        return None if e.errno == socket.EAI_AGAIN else False
     except Exception:
-        return False
+        return None
+
+
+async def tcp_port(host, timeout=7):
+    """First of 443/80 that accepts a TCP connection, else None (avoids stacking robots/www/http timeouts on dead hosts)."""
+    for port in (443, 80):
+        try:
+            _, w = await asyncio.wait_for(asyncio.open_connection(host, port), timeout)
+            w.close()
+            return port
+        except Exception:
+            continue
+    return None
 
 
 def commerce_ish(a):
@@ -102,7 +186,7 @@ def thin(html, a):
     return len(a["text"]) < 1200 and html.count("<script") >= 3
 
 
-async def screen_domain(f: ScreenFetcher, rank, domain):
+async def screen_domain(f: ScreenFetcher, rank, domain, connect_timeout=7):
     """Return dict(domain, rank, home_status, hits=[{url, kind, ev}], err)."""
     out = {"domain": domain, "rank": rank, "hits": [], "home": None, "err": None, "class": ""}
     root = registrable_domain(domain)
@@ -113,11 +197,23 @@ async def screen_domain(f: ScreenFetcher, rank, domain):
     is_sa = root.endswith(".sa")
 
     home_html, home_final, home_a = "", None, None
-    st, final, html, _, err = await f.quick(f"https://{domain}/")
-    if st is None and err in ("dns_not_resolved", "connect_error", "timeout") and not domain.startswith("www."):
-        st, final, html, _, err = await f.quick(f"https://www.{domain}/")
-    if st is None and err == "connect_error":
-        st, final, html, _, err = await f.quick(f"http://{domain}/")
+    hosts = [h for h in (domain, "www." + domain) if not domain.startswith("www.") or h == domain]
+    dres = await asyncio.gather(*(resolves(h) for h in hosts))
+    live = [h for h, ok in zip(hosts, dres) if ok]
+    st, final, html, err = None, None, "", ("dns_error" if None in dres else "dns_not_resolved")
+    if live:
+        port, host = None, None
+        for h in live:
+            port = await tcp_port(h, timeout=connect_timeout)
+            if port:
+                host = h
+                break
+        if not port:
+            err = "connect_error"
+        else:
+            st, final, html, _, err = await f.quick(f"{'https' if port == 443 else 'http'}://{host}/")
+            if st is None and err in ("connect_error", "timeout") and port == 443:
+                st, final, html, _, err = await f.quick(f"http://{host}/")
     out["home"] = st if st is not None else err
     if st is None:
         out["err"] = err
@@ -149,6 +245,8 @@ async def screen_domain(f: ScreenFetcher, rank, domain):
     subs = [f"{s}.{root}" for s in SA_SUBS]
     dns = await asyncio.gather(*(resolves(h) for h in subs + sib + [f"zq{random.randint(10**6, 10**7)}x.{root}"]))
     wildcard = dns[-1]
+    if None in dns[:-1]:
+        out["probe_dns_errors"] = dns[:-1].count(None)
     for h, ok in zip(subs, dns[:len(subs)]):
         if ok and not wildcard:
             probes.append(("subdomain", f"https://{h}/"))
@@ -221,6 +319,14 @@ def load_known(dbpath):
     return roots, keys, recheck
 
 
+def read_all(pattern):
+    import glob
+    out = []
+    for p in sorted(glob.glob(pattern)):
+        out += read_jsonl(p)
+    return out
+
+
 def read_jsonl(path):
     if not os.path.exists(path):
         return []
@@ -234,15 +340,17 @@ def read_jsonl(path):
     return out
 
 
-async def run(shard, start, end, tranco, dbpath, conc, vconc):
+async def run(shard, start, end, tranco, dbpath, conc, vconc, retry_errors=False, connect_timeout=7, part=0, parts=1):
     warnings.filterwarnings("ignore")
     loop = asyncio.get_running_loop()
-    loop.set_default_executor(concurrent.futures.ThreadPoolExecutor(256))
+    loop.set_default_executor(concurrent.futures.ThreadPoolExecutor(64))
+    install_public_dns(loop)
     os.makedirs(f"{OUT_DIR}/work", exist_ok=True)
-    screen_log = f"{OUT_DIR}/work/shard_{shard}_screen.jsonl"
-    verify_log = f"{OUT_DIR}/work/shard_{shard}_verify.jsonl"
-    meta_path = f"{OUT_DIR}/work/shard_{shard}_meta.json"
-    meta = json.load(open(meta_path)) if os.path.exists(meta_path) else {"started": time.time(), "runtime_prev": 0}
+    screen_log = f"{OUT_DIR}/work/shard_{shard}_screen.p{part}.jsonl"
+    verify_log = f"{OUT_DIR}/work/shard_{shard}_verify.p{part}.jsonl"
+    start_path = f"{OUT_DIR}/work/shard_{shard}_started"
+    if not os.path.exists(start_path):
+        open(start_path, "w").write(str(time.time()))
     t0 = time.time()
 
     rows = []
@@ -251,8 +359,10 @@ async def run(shard, start, end, tranco, dbpath, conc, vconc):
             if start <= int(r) <= end:
                 rows.append((int(r), d.strip().lower()))
     known_roots, known_keys, recheck = load_known(dbpath)
-    done_dom = {x["domain"] for x in read_jsonl(screen_log)}
-    done_keys = {x["key"] for x in read_jsonl(verify_log)}
+    last = {x["domain"]: x for x in read_jsonl(screen_log)}
+    retryable = ("connect_error", "timeout", "domain_timeout", "http_error:ConnectError", "dns_error")
+    done_dom = {d for d, x in last.items() if not (retry_errors and (x.get("err") or "").startswith(retryable) and not x.get("retried"))}
+    done_keys = {x["key"] for x in read_all(f"{OUT_DIR}/work/shard_{shard}_verify.p*.jsonl")}
     skipped, todo, rechecks = [], [], []
     for r, d in rows:
         rd = registrable_domain(d)
@@ -285,6 +395,9 @@ async def run(shard, start, end, tranco, dbpath, conc, vconc):
         queued.add(k)
         vqueue.put_nowait({"rank": rank, "origin": origin, "kind": hit["kind"], "screen_ev": hit.get("ev"), "ident": ident, "url": hit["url"]})
 
+    todo = [t for i, t in enumerate(todo) if i % parts == part]
+    if part != 0:
+        rechecks = []
     for r, d, ks in rechecks:
         for k in ks:
             if k not in queued:
@@ -301,7 +414,9 @@ async def run(shard, start, end, tranco, dbpath, conc, vconc):
     async def screen_one(r, d):
         async with sem:
             try:
-                res = await asyncio.wait_for(screen_domain(f, r, d), 150)
+                res = await asyncio.wait_for(screen_domain(f, r, d, connect_timeout), 150)
+                if retry_errors:
+                    res["retried"] = True
             except asyncio.TimeoutError:
                 res = {"domain": d, "rank": r, "hits": [], "home": "timeout", "err": "domain_timeout", "class": ""}
             except Exception as e:
@@ -356,28 +471,163 @@ async def run(shard, start, end, tranco, dbpath, conc, vconc):
             print(f"[shard{shard}] {round(el)}s screened={stats['screened']}/{len(todo) - len(done_dom)} hits={stats['hits']} vq={vqueue.qsize()} "
                   f"{dict((k, v) for k, v in stats.items() if k.startswith(('v:', 'class:', 'err', 'hit_known')))} req={f.stats['requests']}", flush=True)
             sfh.flush()
-            write_outputs(shard, start, end, len(rows), len(skipped), meta["runtime_prev"] + el, final=False)
+            if part == 0:
+                write_outputs(shard, start, end, len(rows), len(skipped), final=False)
 
     rep = asyncio.create_task(reporter())
     await asyncio.gather(screener(), *[verifier(i) for i in range(vconc)])
     rep.cancel()
     sfh.close()
     vfh.close()
-    meta["runtime_prev"] += time.time() - t0
-    json.dump(meta, open(meta_path, "w"))
-    write_outputs(shard, start, end, len(rows), len(skipped), meta["runtime_prev"], final=False)
+    write_outputs(shard, start, end, len(rows), len(skipped), final=False)
     print(f"[shard{shard}] stage1+http verify done {dict(stats)}", flush=True)
 
 
 def latest_by_key(shard):
     recs = {}
-    for x in read_jsonl(f"{OUT_DIR}/work/shard_{shard}_verify.jsonl"):
-        recs[x["key"]] = recs.get(x["key"], {}) | x if x.get("pass") != "http" else x
-    for p in ("browser", "secondary", "manual"):
-        for x in read_jsonl(f"{OUT_DIR}/work/shard_{shard}_{p}.jsonl"):
-            if x["key"] in recs and x.get("apply", True):
-                recs[x["key"]] = recs[x["key"]] | {k: v for k, v in x.items() if k != "apply"}
+    for x in read_all(f"{OUT_DIR}/work/shard_{shard}_verify.p*.jsonl"):
+        recs[x["key"]] = x
+    for x in read_jsonl(f"{OUT_DIR}/work/shard_{shard}_post.jsonl"):
+        if x["key"] in recs:
+            recs[x["key"]] = recs[x["key"]] | x
     return recs
+
+
+CONTENT_SAUDI = ("currency_SAR_code", "vat_number", "sa_tld", "saudi_platform", "shopify_shop_country")
+
+
+def content_saudi_ok(ev):
+    """Saudi evidence that does not come from the URL locale alone."""
+    if any(k in ev and ev[k] not in (None, False) for k in CONTENT_SAUDI if k != "shopify_shop_country") or ev.get("shopify_shop_country") == "SA":
+        return True
+    if (ev.get("sar_prices") or 0) >= 2:
+        return True
+    ph = str(ev.get("saudi_phone") or "")
+    return bool(re.search(r"966|^05", ph))
+
+
+async def postpass(shard, passes, conc):
+    """Second-stage passes over the hits; every result is appended to work/shard_<n>_post.jsonl."""
+    warnings.filterwarnings("ignore")
+    loop = asyncio.get_running_loop()
+    install_public_dns(loop)
+    post_path = f"{OUT_DIR}/work/shard_{shard}_post.jsonl"
+    fh = open(post_path, "a")
+
+    def emit(rec, pass_name, res):
+        out = {k: v for k, v in res.items() if k not in ("cat_text", "key")}
+        out.update({"key": rec["key"], "pass": pass_name})
+        fh.write(json.dumps(out, ensure_ascii=False) + "\n")
+        fh.flush()
+
+    def as_ident(r):
+        url = r.get("screen_url") or r.get("final_url")
+        ident = identity(url) or {}
+        return {"key": r["key"], "url": ident.get("url") if ident.get("key") == r["key"] else url,
+                "root_domain": r.get("root_domain"), "platform_hint": None}
+
+    if "retry" in passes:
+        recs = latest_by_key(shard)
+        todo = [r for r in recs.values() if r.get("status") == "unverified" and RECHECK_REASONS.search(r.get("reason") or "") or
+                re.search(r"blocked_or_challenge_http_(?:503|404)", (r.get("reason") or "")) and r.get("status") == "unverified"]
+        print(f"[post:retry] {len(todo)}", flush=True)
+        f = Fetcher(conc, 1)
+        for b in BUCKET_SLOW:
+            f.host_gap[b] = 3.0
+        sem = asyncio.Semaphore(conc)
+
+        async def one(r):
+            async with sem:
+                await asyncio.sleep(random.random() * 5)
+                try:
+                    res = await asyncio.wait_for(verify_one(f, as_ident(r)), 300)
+                except Exception as e:
+                    res = {"status": "unverified", "reason": f"retry_error:{type(e).__name__}"}
+                res["method"] = "http_retry"
+                emit(r, "retry", res)
+        await asyncio.gather(*(one(r) for r in todo))
+
+    if "browser" in passes:
+        from playwright.async_api import async_playwright
+        from .verify_browser import BrowserFetcher
+        recs = latest_by_key(shard)
+        todo = [r for r in recs.values() if r.get("status") == "unverified" and BROWSER_REASONS.search(r.get("reason") or "")
+                and (r["key"].endswith(".sa") or "|" in r["key"] or re.match(r"(?:sa|ksa|saudi)\.", r["key"]) or (r.get("saudi_score") or 0) >= 2)]
+        print(f"[post:browser] {len(todo)}", flush=True)
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            bf = BrowserFetcher(browser, conc)
+            sem = asyncio.Semaphore(conc)
+
+            async def one(r):
+                async with sem:
+                    try:
+                        res = await asyncio.wait_for(verify_one(bf, as_ident(r)), 300)
+                    except Exception as e:
+                        res = {"status": "unverified", "reason": f"{r.get('reason')}; browser_error:{type(e).__name__}"}
+                    res["method"] = "browser"
+                    if res.get("status") == "unverified" and str(res.get("reason", "")).startswith("browser_error"):
+                        res["reason"] = f"{r.get('reason')}; {res['reason']}"
+                    emit(r, "browser", res)
+            await asyncio.gather(*(one(r) for r in todo))
+            await browser.close()
+
+    if "secondary" in passes:
+        from . import secondary as SEC
+        recs = latest_by_key(shard)
+        todo = [r for r in recs.values() if r.get("status") == "unverified" and SECONDARY_REASONS.search(r.get("reason") or "")]
+        print(f"[post:secondary] {len(todo)}", flush=True)
+        sem = asyncio.Semaphore(conc)
+        async with httpx.AsyncClient(headers=SEC.UA_RESEARCH, follow_redirects=True) as arch, \
+                httpx.AsyncClient(headers=SEC.UA_BROWSER, follow_redirects=True) as live:
+            async def one(r):
+                k = r["key"]
+                url = r.get("final_url") or r.get("screen_url")
+                name = r.get("store_name") or ""
+                if not name or name == k:
+                    name = _TLD(urlsplit(url).hostname or k).domain or k
+                item = {"key": k, "url": url, "name": name, "domains": [r.get("root_domain") or registrable_domain(urlsplit(url).hostname or "")],
+                        "global_root": "|" not in k and not k.endswith(".sa") and not re.match(r"(?:sa|ksa|saudi)\.", k)}
+                async with sem:
+                    try:
+                        res = await asyncio.wait_for(SEC.check((arch, live, live), item), 600)
+                    except Exception as e:
+                        res = {"verdict": "secondary_error", "evidence": [], "error": type(e).__name__}
+                evs = [e for e in res.get("evidence", []) if e.get("ok")]
+                ev_text = " | ".join(f"{e['type']}: {e['detail']} ({e.get('url')}, {e.get('date')})" for e in evs)
+                if res["verdict"] == "verified_secondary_evidence":
+                    out = {"status": "verified_secondary_evidence", "reason": "verified_secondary_evidence: " + ev_text,
+                           "evidence_url": evs[0].get("url"), "verified_at": now_utc(), "method": "secondary",
+                           "store_name": r.get("store_name") or name}
+                else:
+                    out = {"reason": f"{r.get('reason')}; secondary evidence insufficient ({ev_text or 'none'})", "secondary_checked": now_utc()}
+                out["secondary_evidence"] = res.get("evidence")
+                emit(r, "secondary", out)
+                print(f"[post:secondary] {k} -> {res['verdict']} {[e['type'] for e in evs]}", flush=True)
+            await asyncio.gather(*(one(r) for r in todo))
+
+    if "qa" in passes:
+        recs = latest_by_key(shard)
+        n = 0
+        for r in recs.values():
+            if r.get("status") != "verified":
+                continue
+            try:
+                ev = json.loads(r.get("saudi_evidence") or "{}")
+            except ValueError:
+                ev = {}
+            if not content_saudi_ok(ev):
+                emit(r, "qa", {"status": "unverified", "reason": f"qa: Saudi relevance rests on the URL locale only ({r.get('reason')}; evidence {ev})"})
+                n += 1
+        print(f"[post:qa] downgraded {n}", flush=True)
+    fh.close()
+
+
+BUCKET_SLOW = ("salla.sa", "zid.store")
+
+
+def now_utc():
+    return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
 
 def saudi_ev_text(r):
@@ -412,9 +662,11 @@ COLS = ["store_name", "canonical_storefront_url", "root_domain", "tranco_rank", 
         "verification_url", "verification_utc", "reason"]
 
 
-def write_outputs(shard, start, end, n_slice, n_known, runtime, final):
+def write_outputs(shard, start, end, n_slice, n_known, final):
+    sp = f"{OUT_DIR}/work/shard_{shard}_started"
+    runtime = time.time() - float(open(sp).read()) if os.path.exists(sp) else 0
     recs = latest_by_key(shard)
-    screen = read_jsonl(f"{OUT_DIR}/work/shard_{shard}_screen.jsonl")
+    screen = list({x["domain"]: x for x in read_all(f"{OUT_DIR}/work/shard_{shard}_screen.p*.jsonl")}.values())
     out = []
     for r in recs.values():
         st = r.get("status") or "unverified"
@@ -456,5 +708,20 @@ if __name__ == "__main__":
     ap.add_argument("--db", default="data/saudi_ecom.sqlite")
     ap.add_argument("--concurrency", type=int, default=200)
     ap.add_argument("--verify-concurrency", type=int, default=24)
+    ap.add_argument("--retry-errors", action="store_true", help="re-screen domains whose last attempt failed to connect")
+    ap.add_argument("--connect-timeout", type=float, default=7)
+    ap.add_argument("--part", type=int, default=0)
+    ap.add_argument("--parts", type=int, default=1)
+    ap.add_argument("--finalize", action="store_true", help="only rewrite the CSV + summary from the work files")
+    ap.add_argument("--post", default="", help="comma list of post passes: retry,browser,secondary,qa")
     a = ap.parse_args()
-    asyncio.run(run(a.shard, a.start, a.end, a.tranco, a.db, a.concurrency, a.verify_concurrency))
+    if a.post:
+        asyncio.run(postpass(a.shard, a.post.split(","), a.concurrency))
+    elif a.finalize:
+        known_roots, _, recheck = load_known(a.db)
+        with open(a.tranco) as fh:
+            sl = [d for r, d in csv.reader(fh) if a.start <= int(r) <= a.end]
+        n_known = sum(1 for d in sl if registrable_domain(d) in known_roots)
+        print(json.dumps(write_outputs(a.shard, a.start, a.end, len(sl), n_known, final=True), indent=1))
+    else:
+        asyncio.run(run(a.shard, a.start, a.end, a.tranco, a.db, a.concurrency, a.verify_concurrency, a.retry_errors, a.connect_timeout, a.part, a.parts))
