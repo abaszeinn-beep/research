@@ -232,7 +232,9 @@ def coverage(con, ver, v, ndup):
     out = []
     totals = q("SELECT status AS 'Candidate status', count(*) AS Count FROM candidates GROUP BY 1 ORDER BY 2 DESC")
     totals.loc[len(totals)] = ["verified unique stores in Master Directory", len(ver)]
-    totals.loc[len(totals)] = ["duplicates merged (aliases/redirects/same store id)", ndup]
+    totals.loc[len(totals)] = ["  of which verified (primary: live storefront)", int((ver.status == "verified").sum())]
+    totals.loc[len(totals)] = ["  of which verified_secondary_evidence", int((ver.status == "verified_secondary_evidence").sum())]
+    totals.loc[len(totals)] = ["duplicates merged (aliases/redirects/same store id; their verification rows are excluded from the totals above)", ndup]
     out.append(("Summary counts", totals))
     cat = ver.category.value_counts().rename_axis("Category").reset_index(name="Verified stores")
     known = {c for c, _ in []}

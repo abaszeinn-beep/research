@@ -32,3 +32,8 @@ All times are 2026-10-17 UTC.
   degradation, ~5 min per 2,000 ranks); DDG blocked again; `reference retry-none` hung and was killed.
 - **~16:30 final.** `reference link`, `reference appstore`, `secondary` and `audit` run; snapshot and
   export refreshed: 353 verified (322 primary, 34 secondary incl. overlap per DB statuses), 927 unverified, 758 rejected.
+- **16:44 follow-up (majors).** Probed each unresolved major live. Primary (manual_live): Abyat (/kw/en product JSON-LD KWD, products sitemap), X-cite (KD prices, pdp sitemap), Ooredoo online store (store.ooredoo.com.kw devices, cart), The Sultan Center (Chromium: KD prices, product pages, cart). Secondary (CC capture + App Store kw): Zara, H&M (kw.hm.com), Namshi, Babyshop. Excluded: Alshaya corporate (group), Apple Kuwait (no Apple online store in Kuwait, apple.com/kw/buy is a reseller page). Unresolved with specific reasons: Faces, Shein, Zain, stc, Pottery Barn, West Elm. Wayback CDX/availability went 503 and Common Crawl index API 504, limiting archive proofs.
+- **Medium refs.** Ran secondary for all unresolved brand/mall refs, browser verification (250) and requeue of transient failures.
+- **Reconciliation.** 353 = 320 primary + 33 secondary among non-duplicate candidates; the earlier 322+34 included verification rows of 3 duplicate candidates. Export now prints primary/secondary split.
+- **Tranco.** Resumed with local dnsmasq and concurrency 12; ~70% of probes answered; reached rank ~38k.
+- **18:50 final.** 414 verified (363 primary, 51 secondary).
