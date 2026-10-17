@@ -25,7 +25,7 @@ PLATFORM_MARKERS = [
     ("shopify", re.compile(r"cdn\.shopify\.com|Shopify\.theme|myshopify\.com", re.I)),
     ("salesforce-commerce", re.compile(r"demandware\.static|/on/demandware\.store/|dwanalytics|demandware\.edgesuite", re.I)),
     ("magento", re.compile(r"Magento_|mage/cookies|text/x-magento-init|/static/version\d+/frontend/|Magento_PageCache|mage-cache-storage", re.I)),
-    ("bigcommerce", re.compile(r"cdn\d*\.bigcommerce\.com|stencil-utils|BCData|bigcommerce\.com/s-|data-stencil|mybigcommerce\.com", re.I)),
+    ("bigcommerce", re.compile(r"stencil-utils|BCData|data-stencil|bigcommerce\.com/s-[a-z0-9]+/stencil/|bigcommerce\.com/r-[a-z0-9]+/|mybigcommerce\.com|bigcommerce\.com/s-[a-z0-9]+/templates/", re.I)),
     ("woocommerce", re.compile(r"wp-content/plugins/woocommerce|woocommerce-(?:page|cart|checkout|no-js|js)|wc-block-|wc_add_to_cart_params|/wc/store/|wc-ajax=", re.I)),
     ("wix", re.compile(r"static\.wixstatic\.com|wixstores|wix-ecommerce|_wixCIDX|wix-bolt|X-Wix-|parastorage\.com", re.I)),
     ("squarespace", re.compile(r"static1\.squarespace\.com|squarespace-cdn\.com|Static\.SQUARESPACE_CONTEXT|sqs-add-to-cart|squarespace\.com/universal", re.I)),
