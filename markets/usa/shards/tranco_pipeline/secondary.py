@@ -70,6 +70,23 @@ class Wayback:
         age = (datetime.now(timezone.utc) - datetime.strptime(ts[:8], "%Y%m%d").replace(tzinfo=timezone.utc)).days
         return {"ts": ts, "age": age, "orig": orig, "url": f"https://web.archive.org/web/{ts}/{orig}"}
 
+    async def product_captures(self, host: str, n=3):
+        """Bounded regex-filtered CDX listing of recent product-like captures on this host (slow; used as fallback)."""
+        since = datetime.fromtimestamp(time.time() - MAX_AGE_DAYS * 86400, timezone.utc).strftime("%Y%m%d")
+        async with self.sem:
+            await self._pace()
+            r = await self.net.get(f"https://web.archive.org/cdx/search/cdx?url={host}/*&filter=statuscode:200&filter=mimetype:text/html"
+                                   f"&filter=original:.*(/products?/|/p/|/item/|-p-?[0-9]{{3,}}|/shop/.+/.+).*&from={since}&limit=-{n}"
+                                   "&fl=timestamp,original&collapse=urlkey", robots=False, timeout=45, tries=1)
+        out = []
+        if r.status == 200:
+            for line in r.text.strip().splitlines():
+                parts = line.split(" ", 1)
+                if len(parts) == 2 and parts[0].isdigit():
+                    age = (datetime.now(timezone.utc) - datetime.strptime(parts[0][:8], "%Y%m%d").replace(tzinfo=timezone.utc)).days
+                    out.append({"ts": parts[0], "orig": parts[1], "age": age, "url": f"https://web.archive.org/web/{parts[0]}/{parts[1]}"})
+        return out
+
     async def raw(self, ts: str, url: str):
         async with self.sem:
             await self._pace()
@@ -131,30 +148,38 @@ async def process(net: Net, wb: Wayback, domain: str, rank: int, home_url: str):
         links = [re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", l) for l in links]
         links = [l if l.startswith("http") else origin + "/" + l.lstrip("/") for l in links]
         links = [l for l in links if registrable_domain(re.sub(r"^https?://", "", l).split("/")[0]) == registrable_domain(domain)]
-        cands += sorted(set(links), key=lambda u: (0 if re.search(r"/products?/", u) else 1, len(u)))[:2]
-    for pu in cands[:3]:
-        snap = await wb.closest(pu)
-        if not snap:
-            continue
+        cands += sorted(set(links), key=lambda u: (0 if re.search(r"/products?/", u) else 1, len(u)))[:4]
+    async def check(snap, pu):
+        nonlocal proof_b, b_url, b_age, plat
         html = await wb.raw(snap["ts"], snap["orig"])
         if not html:
-            continue
+            return False
         types, _ = U.jsonld(html)
         low = html[:900_000].lower()
         txt = U.visible_text(html)
         has_price = bool(U.PRICE_USD.search(txt) or U.PRICE_OTHER.search(txt) or "pricecurrency" in low)
-        if (types & {"Product", "ProductGroup"} or re.search(r"og:type[\"'][^>]*content=[\"']product", low)) and has_price and \
-                (ATC_LOW.search(low) or plat == "shopify"):
+        is_product = bool(types & {"Product", "ProductGroup"} or re.search(r"og:type[\"'][^>]*content=[\"'](?:og:)?product", low))
+        p_plat = U.detect_platform(html, pu, low[:600_000])
+        ordering = bool(ATC_LOW.search(low)) or p_plat in U.ECOM_PLATFORMS or plat in U.ECOM_PLATFORMS
+        if is_product and has_price and ordering:
             proof_b = f"Wayback capture {snap['ts'][:8]} ({snap['age']} days old) of product page with price + ordering control"
             b_url, b_age = snap["url"], snap["age"]
             pages.append(html)
             texts.append(txt)
             if plat == "custom/unknown":
-                plat = U.detect_platform(html, pu)
+                plat = p_plat
+            return True
+        return False
+
+    for pu in cands[:6]:
+        snap = await wb.closest(pu)
+        if snap and await check(snap, pu):
             break
-    if not proof_a and not proof_b and not home_html:
-        rec["s"] = "sec_no_evidence"
-        return rec
+    if not proof_b:
+        host = re.sub(r"^https?://", "", origin)
+        for snap in await wb.product_captures(host):
+            if await check(snap, snap["orig"]):
+                break
     decision, ev, why = U.us_signals(pages, texts, origin, {}) if pages else ("weak", {}, "no archived pages")
     if decision == "weak" and home_html:
         pol = [re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", x) for x in
