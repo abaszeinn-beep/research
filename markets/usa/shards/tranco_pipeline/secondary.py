@@ -144,11 +144,13 @@ async def process(net: Net, wb: Wayback, domain: str, rank: int, home_url: str):
                 plat = U.detect_platform(home_html, origin)
     cands = list(prods[:: max(1, len(prods) // 3)][:2]) if prods else []
     if home_html:
-        links = [m.group(1) for m in U.PRODUCT_LINK.finditer(home_html[:900_000])]
+        links = [m.group(1) for m in U.PRODUCT_LINK.finditer(home_html[:900_000])] + \
+            [x for x in re.findall(r"href=[\"']([^\"'#<>\s]{3,300})[\"']", home_html[:900_000])
+             if re.search(r"product|/p/|/item/|/shop/[^/]+/[^/]+|\.html?$", x, re.I) and not re.search(r"categor|collection|/blog|/page|/cart|/account|\.(?:css|js|png|jpe?g)", x, re.I)]
         links = [re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", l) for l in links]
         links = [l if l.startswith("http") else origin + "/" + l.lstrip("/") for l in links]
         links = [l for l in links if registrable_domain(re.sub(r"^https?://", "", l).split("/")[0]) == registrable_domain(domain)]
-        cands += sorted(set(links), key=lambda u: (0 if re.search(r"/products?/", u) else 1, len(u)))[:4]
+        cands += sorted(set(links), key=lambda u: (0 if re.search(r"product", u, re.I) else 1, len(u)))[:4]
     async def check(snap, pu):
         nonlocal proof_b, b_url, b_age, plat
         html = await wb.raw(snap["ts"], snap["orig"])
@@ -175,11 +177,6 @@ async def process(net: Net, wb: Wayback, domain: str, rank: int, home_url: str):
         snap = await wb.closest(pu)
         if snap and await check(snap, pu):
             break
-    if not proof_b:
-        host = re.sub(r"^https?://", "", origin)
-        for snap in await wb.product_captures(host):
-            if await check(snap, snap["orig"]):
-                break
     decision, ev, why = U.us_signals(pages, texts, origin, {}) if pages else ("weak", {}, "no archived pages")
     if decision == "weak" and home_html:
         pol = [re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", x) for x in
