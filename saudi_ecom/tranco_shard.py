@@ -379,7 +379,10 @@ async def screen_domain(sc: Screener, st: State, domain: str, rank: int, known_r
                          or sig.get("riyal") or sig.get("saudi_shipping"))
             if soft404 and not saudi:
                 continue
-            if not vsig["parked"] and (vsig["hit"] or (vsig["is_commerce"] and (saudi or sig.get("sa_locale_url")))):
+            declared = u in alt_urls and bool(SA_GEO.search(vf)) and not vsig["adult"]
+            if not vsig["parked"] and (vsig["hit"] or declared or (vsig["is_commerce"] and (saudi or sig.get("sa_locale_url")))):
+                if declared:
+                    sig = sig | {"declared_hreflang_sa": u}
                 if await on_hit(ident, rank, domain, f"path_variant:{p}", sig | {"commerce": vsig["commerce"]}):
                     variants_hit += 1
                 break
