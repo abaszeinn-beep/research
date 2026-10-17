@@ -1,2 +1,55 @@
 [browser] 600 candidates
 [browser] 20/600 {'unverified': 15, 'verified': 5}
+[browser] 300 candidates
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/markets/qatar/market_ecom/verify_browser.py", line 107, in <module>
+    asyncio.run(main(a.concurrency, a.limit, a.keys))
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/markets/qatar/market_ecom/verify_browser.py", line 77, in main
+    browser = await p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 4177, in launch
+    await self._impl_obj.launch(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/playwright/_impl/_browser_type.py", line 101, in launch
+    await self._channel.send(
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+[browser] 300 candidates
+[browser] 20/300 {'rejected': 4, 'unverified': 16}
+[browser] 40/300 {'rejected': 5, 'unverified': 35}
+[browser] 60/300 {'rejected': 5, 'unverified': 55}
+[browser] 80/300 {'rejected': 7, 'unverified': 73}
+[browser] 100/300 {'rejected': 9, 'unverified': 91}
+[browser] 120/300 {'rejected': 10, 'unverified': 110}
+[browser] 140/300 {'rejected': 13, 'unverified': 127}
+[browser] 160/300 {'rejected': 15, 'unverified': 145}
+[browser] 180/300 {'rejected': 20, 'unverified': 158, 'verified': 2}
+[browser] 200/300 {'rejected': 21, 'unverified': 177, 'verified': 2}
+[browser] 220/300 {'rejected': 23, 'unverified': 194, 'verified': 3}
+[browser] 240/300 {'rejected': 27, 'unverified': 207, 'verified': 6}
+[browser] 260/300 {'rejected': 28, 'unverified': 226, 'verified': 6}
+[browser] 280/300 {'rejected': 29, 'unverified': 242, 'verified': 9}
+[browser] 300/300 {'rejected': 30, 'unverified': 261, 'verified': 9}
+[browser] done {'rejected': 30, 'unverified': 261, 'verified': 9}

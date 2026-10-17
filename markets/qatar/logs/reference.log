@@ -36,3 +36,5 @@
 [reference] resolving 14 refs
 [reference] 10/14 {'accepted': 5, 'blocked': 4, 'cdx': 0, 'bing': 0, 'none': 5}
 [reference] 14/14 {'accepted': 5, 'blocked': 4, 'cdx': 0, 'bing': 0, 'none': 9}
+[reference] resolving 7 refs
+[reference] 7/7 {'accepted': 0, 'blocked': 2, 'cdx': 0, 'bing': 0, 'none': 7}

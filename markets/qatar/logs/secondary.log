@@ -4,3 +4,83 @@
 [secondary] victoriassecret.com.qa -> verified_secondary_evidence ['commoncrawl_product', 'sitemap', 'app_store'] {'verified_secondary_evidence': 1, 'insufficient_secondary_evidence': 2}
 [secondary] next.qa -> verified_secondary_evidence ['wayback_product', 'commoncrawl_product', 'sitemap', 'app_store'] {'verified_secondary_evidence': 2, 'insufficient_secondary_evidence': 2}
 [secondary] victoriassecret.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 2, 'insufficient_secondary_evidence': 3}
+[secondary] 78 targets
+[secondary] philips.com.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 1, 'insufficient_secondary_evidence': 0}
+[secondary] apple.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 1, 'insufficient_secondary_evidence': 1}
+[secondary] victoriassecret.com.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 2, 'insufficient_secondary_evidence': 1}
+[secondary] next.qa -> verified_secondary_evidence ['wayback_product', 'sitemap', 'app_store'] {'verified_secondary_evidence': 3, 'insufficient_secondary_evidence': 1}
+[secondary] mi.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 3, 'insufficient_secondary_evidence': 2}
+[secondary] footlocker.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 4, 'insufficient_secondary_evidence': 2}
+[secondary] mi.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 4, 'insufficient_secondary_evidence': 3}
+[secondary] centrepointstores.com|qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 5, 'insufficient_secondary_evidence': 3}
+[secondary] muji.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 6, 'insufficient_secondary_evidence': 3}
+[secondary] qa.grandhyper.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 6, 'insufficient_secondary_evidence': 4}
+[secondary] galerieslafayette.qa -> verified_secondary_evidence ['wayback_product', 'sitemap'] {'verified_secondary_evidence': 7, 'insufficient_secondary_evidence': 4}
+[secondary] sportscorner.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 7, 'insufficient_secondary_evidence': 5}
+[secondary] widam.com.qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 7, 'insufficient_secondary_evidence': 6}
+[secondary] homeboxstores.com|qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 8, 'insufficient_secondary_evidence': 6}
+[secondary] decathlon.qa -> verified_secondary_evidence ['wayback_product', 'sitemap', 'app_store'] {'verified_secondary_evidence': 9, 'insufficient_secondary_evidence': 6}
+[secondary] floward.com|qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 10, 'insufficient_secondary_evidence': 6}
+[secondary] luluhypermarket.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 10, 'insufficient_secondary_evidence': 7}
+[secondary] carrefourqatar.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 10, 'insufficient_secondary_evidence': 8}
+[secondary] monoprix.qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 10, 'insufficient_secondary_evidence': 9}
+[secondary] ansargallery.com -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 11, 'insufficient_secondary_evidence': 9}
+[secondary] virginmegastore.qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 12, 'insufficient_secondary_evidence': 9}
+[secondary] family.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 13, 'insufficient_secondary_evidence': 9}
+[secondary] bluesalon.com -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 14, 'insufficient_secondary_evidence': 9}
+[secondary] namshi.com|qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 15, 'insufficient_secondary_evidence': 9}
+[secondary] ffc.qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 15, 'insufficient_secondary_evidence': 10}
+[secondary] maxfashion.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 15, 'insufficient_secondary_evidence': 11}
+[secondary] ar-qa.aivi.com -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 16, 'insufficient_secondary_evidence': 11}
+[secondary] en-qa.aivi.com -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 17, 'insufficient_secondary_evidence': 11}
+[secondary] homecentre.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 17, 'insufficient_secondary_evidence': 12}
+[secondary] centrepointstores.com|qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 18, 'insufficient_secondary_evidence': 12}
+[secondary] qa.grandhyper.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 18, 'insufficient_secondary_evidence': 13}
+[secondary] homeboxstores.com|qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 19, 'insufficient_secondary_evidence': 13}
+[secondary] salams.com -> insufficient_secondary_evidence ['wayback_product'] {'verified_secondary_evidence': 19, 'insufficient_secondary_evidence': 14}
+[secondary] galerieslafayette.qa -> verified_secondary_evidence ['wayback_product', 'sitemap'] {'verified_secondary_evidence': 20, 'insufficient_secondary_evidence': 14}
+[secondary] widam.com.qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 20, 'insufficient_secondary_evidence': 15}
+[secondary] qatardutyfree.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 20, 'insufficient_secondary_evidence': 16}
+[secondary] debenhams.com.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 20, 'insufficient_secondary_evidence': 17}
+[secondary] ourshopee.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 20, 'insufficient_secondary_evidence': 18}
+[secondary] qatar.microless.com -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 20, 'insufficient_secondary_evidence': 19}
+[secondary] alaneesqatar.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 20, 'insufficient_secondary_evidence': 20}
+[secondary] apple.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 20, 'insufficient_secondary_evidence': 21}
+[secondary] mi.com|qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 21}
+[secondary] geekay.com -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 22}
+[secondary] midasfurniture.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 23}
+[secondary] philips.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 24}
+[secondary] ace.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 25}
+[secondary] aceqatar.com -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 26}
+[secondary] zara.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 27}
+[secondary] zarahome.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 28}
+[secondary] bershka.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 29}
+[secondary] pullandbear.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 30}
+[secondary] massimodutti.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 31}
+[secondary] stradivarius.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 32}
+[secondary] oysho.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 21, 'insufficient_secondary_evidence': 33}
+[secondary] next.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 22, 'insufficient_secondary_evidence': 33}
+[secondary] gapqatar.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 22, 'insufficient_secondary_evidence': 34}
+[secondary] americaneagle.com.qa -> verified_secondary_evidence ['wayback_product', 'app_store'] {'verified_secondary_evidence': 23, 'insufficient_secondary_evidence': 34}
+[secondary] victoriassecret.com.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 24, 'insufficient_secondary_evidence': 34}
+[secondary] bathandbodyworks.com.qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 24, 'insufficient_secondary_evidence': 35}
+[secondary] gap.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 24, 'insufficient_secondary_evidence': 36}
+[secondary] muji.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 25, 'insufficient_secondary_evidence': 36}
+[secondary] calvinklein.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 25, 'insufficient_secondary_evidence': 37}
+[secondary] vogacloset.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 25, 'insufficient_secondary_evidence': 38}
+[secondary] decathlon.qa -> verified_secondary_evidence ['sitemap', 'app_store'] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 38}
+[secondary] sportscorner.qa -> insufficient_secondary_evidence ['wayback_product'] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 39}
+[secondary] kulud.qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 40}
+[secondary] adidas.com -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 41}
+[secondary] asqgrp.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 42}
+[secondary] kuludpharmacy.com -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 43}
+[secondary] floward.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 44}
+[secondary] mannai.com -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 45}
+[secondary] ademstravel.com -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 46}
+[secondary] aamotors.com.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 47}
+[secondary] aljaberwatches.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 48}
+[secondary] toyota.com.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 49}
+[secondary] aljaberwatches.com.qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 50}
+[secondary] qatar.aljazeeraperfumes.com -> insufficient_secondary_evidence ['sitemap'] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 51}
+[secondary] aljazeeraperfumes.com -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 52}
+[secondary] done {'verified_secondary_evidence': 26, 'insufficient_secondary_evidence': 52}
