@@ -620,6 +620,15 @@ async def postpass(shard, passes, conc):
                 emit(r, "qa", {"status": "unverified", "reason": f"qa: Saudi relevance rests on the URL locale only ({r.get('reason')}; evidence {ev})"})
                 n += 1
         print(f"[post:qa] downgraded {n}", flush=True)
+
+    if "manual" in passes:
+        mp = f"{OUT_DIR}/work/manual_qa.json"
+        overrides = json.load(open(mp)) if os.path.exists(mp) else {}
+        recs = latest_by_key(shard)
+        for k, (status, reason) in overrides.items():
+            if k in recs:
+                emit(recs[k], "manual", {"status": status, "reason": reason, "verified_at": now_utc(), "method": "manual_qa"})
+        print(f"[post:manual] applied {sum(1 for k in overrides if k in recs)}/{len(overrides)}", flush=True)
     fh.close()
 
 
