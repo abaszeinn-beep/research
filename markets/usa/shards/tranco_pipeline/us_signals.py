@@ -73,12 +73,24 @@ ADD_TO_CART = re.compile(
     re.I,
 )
 CART = re.compile(r"/cart\b|/checkout\b|/basket\b|mini-?cart|cart-count|cart_count|cart-icon|shopping[ -]?(?:cart|bag)|view cart|my cart", re.I)
-PRODUCT_LINK = re.compile(
-    r"href=[\"'](?!data:)([^\"'<>\s]{0,200}?(?:/products?/[^\"'/?#<>\s]+|/p/[^\"'/?#<>\s]+|/item/[^\"'/?#<>\s]+|"
-    r"/shop/[^\"'?#<>\s]+/[^\"'/?#<>\s]+|product_id=\d+|route=product/product|/product-page/|/[a-z0-9-]+-p\d{3,}(?:\.html?)?|"
-    r"/[a-z0-9-]{6,}\.html|/pd/[^\"'<>\s]+|/dp/[^\"'<>\s]+|products_id=\d+)[^\"'<>\s]{0,200})[\"']",
-    re.I,
-)
+HREF = re.compile(r"href=[\"']([^\"'<>\s]{1,400})[\"']", re.I)
+PRODUCT_PATH = re.compile(
+    r"/products?/[^/?#]+|/p/[^/?#]+|/item/[^/?#]+|/shop/[^?#]+/[^/?#]+|product_id=\d+|route=product/product|/product-page/|"
+    r"/[a-z0-9-]+-p\d{3,}(?:\.html?)?|/[a-z0-9-]{6,}\.html|/pd/|/dp/|products_id=\d+|--product--", re.I)
+
+
+class _ProductLinks:
+    """Linear-time replacement for a single big href regex: extract hrefs, then test each path."""
+
+    @staticmethod
+    def finditer(html: str):
+        for m in HREF.finditer(html):
+            v = m.group(1)
+            if not v.startswith("data:") and PRODUCT_PATH.search(v):
+                yield m
+
+
+PRODUCT_LINK = _ProductLinks()
 PRICE_USD = re.compile(r"(?<![A-Za-z])(?:US\s?\$|\$)\s?\d{1,5}(?:,\d{3})*(?:\.\d{2})?(?!\d)|\d+(?:\.\d{2})?\s?USD\b")
 PRICE_OTHER = re.compile(
     r"(?:€|£|¥|₹|₽|R\$|zł|kr\b|CHF|AU\$|A\$|C\$|CA\$|NZ\$|S\$|HK\$|MX\$|₩|₺|₴|Kč|Ft\b|lei\b|RM\s?\d|Rp\s?\d|₱|₫|฿|AED|SAR)"
@@ -235,8 +247,36 @@ TAG_RE = re.compile(r"<[^>]+>")
 SCRIPT_RE = re.compile(r"<(script|style|noscript|svg)[^>]*>.*?</\1>", re.I | re.S)
 
 
+def strip_blocks(html: str) -> str:
+    """Remove script/style/noscript/svg blocks by scanning for close tags (linear; no backtracking)."""
+    low = html.lower()
+    out, i, n = [], 0, len(html)
+    while i < n:
+        j = low.find("<", i)
+        if j < 0:
+            out.append(html[i:])
+            break
+        tag = None
+        for t in ("script", "style", "noscript", "svg"):
+            if low.startswith(t, j + 1):
+                tag = t
+                break
+        if tag is None:
+            out.append(html[i:j + 1])
+            i = j + 1
+            continue
+        out.append(html[i:j])
+        k = low.find("</" + tag, j)
+        if k < 0:
+            break
+        e = low.find(">", k)
+        i = n if e < 0 else e + 1
+        out.append(" ")
+    return "".join(out)
+
+
 def visible_text(html: str, limit=400_000) -> str:
-    t = SCRIPT_RE.sub(" ", html[:limit])
+    t = strip_blocks(html[:limit])
     t = TAG_RE.sub(" ", t)
     t = htmlmod.unescape(t)
     return re.sub(r"\s+", " ", t)
