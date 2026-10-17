@@ -9,7 +9,7 @@ recorded in the `jobs` / `queries` tables and skipped on restart; candidates car
 
 | File | Contents |
 |---|---|
-| `Saudi_Arabia_Ecommerce_Master_Directory.xlsx` | Sheet1 *Master Directory* (Store Name, Root Domain / Storefront URL — verified, deduplicated), Sheet2 *Verification Evidence*, Sheet3 *Unverified Candidates* (unverified + rejected + still-pending, with reasons), Sheet4 *Research Coverage* |
+| `Saudi_Arabia_Ecommerce_Master_Directory.xlsx` | *Master Directory* (verified, deduplicated), *Verification Evidence*, *Unverified Candidates*, *Major Retailer Coverage Audit*, *Research Coverage* |
 | `Saudi_Arabia_Ecommerce_Master_Directory.csv` | CSV of the Master Directory sheet |
 | `data/saudi_ecom.sqlite.gz` | gzip snapshot of the working DB (the live DB is `data/saudi_ecom.sqlite`) |
 | `logs/progress_metrics.jsonl` | metrics snapshot every 10 min (discovery rate over time) |
@@ -77,6 +77,24 @@ recorded in the `jobs` / `queries` tables and skipped on restart; candidates car
 | iTunes Search API (country=sa) | works (~20 req/min); used for App Store evidence and `sellerUrl` domain discovery |
 | Search API keys in env | none present |
 
+## Coverage round (2026-10-17)
+
+Continued on the live DB. Did not rebuild the pipeline and did not finish a local Tranco top-200k screen (four shard agents own that merge).
+
+| Channel | This round |
+|---|---|
+| Tranco list 64VVX (`data/raw/tranco_latest.csv`, not the older `data/raw/tranco.csv`) | Partial. `jobs.kind=tranco_screen`: 6,330 done, 2,285 transient retry. Five Saudi-storefront hits, all already verified (mi.com/sa, nike.sa, lg.com/sa, marksandspencer.sa, nespresso.com/sa). Local screener is stopped. |
+| Ministry of Commerce e-commerce PDFs (`mc.gov.sa/.../esv/N.pdf`, 97 files) | Works (pymupdf + NFKC). 13 storefronts became reference rows; 82 scorecards had a legal name and no URL (`sources` `ministry-name:*`, status `no-url`). |
+| Zid success stories | Works. Merchant names are the alt/children intersection. Official host only via App Store `sellerUrl` or a homepage that contains the brand. 7 rows. |
+| Wikipedia category API / Wikidata SPARQL | APIs work. Extlinks and the broad class filter also return news, banks, and non-retailers. Kept rows are Saudi hosts only; a re-run now inserts `.sa` / `.com.sa` hosts only. |
+| SkyLight portfolio `skylightad.com/en/work/` | Works. 16 client homepages. |
+| Saudi App Store shopping chart `sellerUrl` | Works. 7 new seller sites. |
+| Salla showcase, Zalal portfolio, Cenomi malls, Google Play category HTML | Salla is Cloudflare "Just a moment"; Zalal did not load; Cenomi returned page chrome, not tenants; Play HTML has no seller URLs. Not bypassed. |
+| Bing / DuckDuckGo / Mojeek / Brave | Bing answers with unrelated hosts (those pending rows were deleted). DDG anomaly block, Mojeek 403, Brave 429. |
+| Common Crawl CDX | `collinfo.json` listed 128 crawls (latest `CC-MAIN-2026-39`) once, then the index TLS connection failed (`SSL_ERROR_SYSCALL`) and one query returned HTTP 504. `data.commoncrawl.org` still serves the path lists (900 columnar parts for that crawl). No new CC candidates this round. `CC-MAIN-2026-39` `.sa` harvest was already done in session 4. |
+
+New modules: `saudi_ecom/discover_tranco.py`, `discover_public.py`, `discover_cc_markers.py`, `discover_search_retry.py`. Portfolio scraping reads homepage links only, so a re-run does not ingest CDN and news hosts from article HTML.
+
 ## How to resume
 
 ```bash
@@ -125,6 +143,13 @@ python3 -m saudi_ecom.reference audit
 python3 -m saudi_ecom.status
 python3 -m saudi_ecom.export
 python3 -m saudi_ecom.snapshot   # consistent compressed snapshot for git (drops cached page text)
+
+# coverage-round modules (resumable via jobs / reference_stores). Do not restart a full local
+# Tranco top-200k screen while the shard agents are merging that list.
+python3 -m saudi_ecom.discover_public --skip-appstore
+python3 -m saudi_ecom.discover_cc_markers --rank-limit 2500 --concurrency 4 --platform-crawls 2
+python3 -m saudi_ecom.verify --concurrency 12 --per-host 2 --worker cov --idle-exit 90 --where "AND (first_source LIKE 'public:%')"
+python3 -m saudi_ecom.secondary --keys blackbox.com.sa,boutiqaat.com|sa   # explicit keys only; the default sweep takes every unresolved ref
 ```
 
 Ad-hoc check of URLs without touching the DB: `python3 -m saudi_ecom.check_urls https://example.sa ...`
