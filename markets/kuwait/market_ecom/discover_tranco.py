@@ -12,7 +12,9 @@ from __future__ import annotations
 import argparse
 import asyncio
 import os
+import random
 import re
+import socket
 import time
 from urllib.parse import urljoin, urlsplit
 
@@ -95,6 +97,22 @@ async def _probe(client, rank, domain, sub=""):
     return rank, domain, status, sorted(links)
 
 
+async def wait_for_dns():
+    loop = asyncio.get_running_loop()
+    while True:
+        try:
+            await asyncio.wait_for(loop.getaddrinfo(f"probe-{random.getrandbits(40):x}.example.com", 443), 8)
+            return
+        except socket.gaierror as e:
+            if e.errno != socket.EAI_AGAIN:
+                return
+            print("[tranco] resolver not answering, waiting 60s", flush=True)
+            await asyncio.sleep(60)
+        except Exception:
+            print("[tranco] resolver not answering, waiting 60s", flush=True)
+            await asyncio.sleep(60)
+
+
 async def main(top, concurrency, chunk, start=1):
     con = db.connect()
     db.register_source(con, f"tranco:{TRANCO_ID}", "ranking", f"Tranco top-1M list {TRANCO_ID}: all .{'/.'.join(MK.TLDS)} domains + homepage probe of top {top} global domains for {MK.NAME} locale links/hreflang")
@@ -120,6 +138,7 @@ async def main(top, concurrency, chunk, start=1):
                 if root in NON_STORE_ROOTS or NON_COMMERCE_TLD.search(d) or SKIP_LABEL.search(d.split(".")[0]):
                     continue
                 todo.append((r, d))
+            await wait_for_dns()
             t0 = time.time()
             res = await asyncio.gather(*(probe(client, sem, r, d) for r, d in todo), return_exceptions=True)
             hits, ok = [], 0
@@ -135,7 +154,12 @@ async def main(top, concurrency, chunk, start=1):
                         hits.append((u, 9 if r <= 50_000 else 7))
             new = db.add_candidates(con, hits, f"tranco:{MK.ISO2}_locale_probe", f"list {TRANCO_ID} ranks {part[0][0]}-{part[-1][0]}")
             total_new += new
-            db.mark_job(con, "tranco_probe", job, "done", len(todo), new, f"ok={ok} hits={len(hits)}")
+            # A healthy chunk answers ~70%; a low ratio means the resolver was throttled, so redo it later.
+            degraded = len(todo) > 200 and ok < 0.45 * len(todo)
+            db.mark_job(con, "tranco_probe", job, "degraded" if degraded else "done", len(todo), new, f"ok={ok} hits={len(hits)}")
+            if degraded:
+                print(f"[tranco] {job} degraded (ok={ok}/{len(todo)}), pausing 180s", flush=True)
+                await asyncio.sleep(180)
             db.heartbeat(con, "discover_tranco", "code-worker(asyncio)", concurrency, {"chunk": job, "total_new": total_new})
             print(f"[tranco] {job} probed={len(todo)} ok={ok} hits={len(hits)} new={new} total_new={total_new} {time.time() - t0:.0f}s", flush=True)
 
