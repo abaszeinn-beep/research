@@ -152,10 +152,22 @@ async def wayback_product(client, prefix):
             "url": prefix, "matchType": "prefix", "from": (NOW - dt.timedelta(days=400)).strftime("%Y%m%d"),
             "filter": ["statuscode:200", "mimetype:text/html"], "collapse": "urlkey", "limit": "300",
             "fl": "timestamp,original,length"}, timeout=45)
+        rows = [l.split(" ") for l in r.text.splitlines() if len(l.split(" ")) >= 2]
     except httpx.HTTPError:
-        return {"type": "wayback_product", "ok": False, "detail": "cdx_timeout"}
-    rows = [l.split(" ") for l in r.text.splitlines() if len(l.split(" ")) >= 2]
+        rows = []
     prods = sorted([x for x in rows if PRODUCT_URL.search(x[1]) and not NON_PRODUCT.search(x[1])], reverse=True)[:4]
+    if not prods:
+        try:
+            r2 = await client.get("https://web.archive.org/cdx/search/cdx", params={
+                "url": prefix, "matchType": "prefix", "from": (NOW - dt.timedelta(days=400)).strftime("%Y%m%d"),
+                "filter": ["statuscode:200", "mimetype:text/html",
+                           "original:.*(/p/|/pd/|/ip/|/dp/|/product|/products/|/prod[0-9]|/sku|/item|/itm/|\\.p\\?|/pdp/).*"],
+                "collapse": "urlkey", "limit": "60", "fl": "timestamp,original,length"}, timeout=120)
+            rows2 = [l.split(" ") for l in r2.text.splitlines() if len(l.split(" ")) >= 2]
+            prods = sorted([x for x in rows2 if not NON_PRODUCT.search(x[1])], reverse=True)[:4]
+            rows = rows + rows2
+        except httpx.HTTPError:
+            pass
     out = {"type": "wayback_product", "ok": False, "captures": len(rows), "product_captures": len(prods)}
     for x in prods:
         ts, orig = x[0], x[1]
