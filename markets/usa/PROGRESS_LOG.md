@@ -65,3 +65,23 @@ sqlite3 data/usa_ecom.sqlite "DELETE FROM secondary_evidence WHERE verdict='insu
   they stay unverified instead of being guessed.
 * Export at 15:50Z: 703 verified (635 primary, 68 secondary), 5,848 unverified rows. Audit: huge 24 in directory / 13
   excluded / 32 unresolved; large 71 / 38 / 130.
+
+## Session 4 (coordinator follow-up: huge/large coverage first; 15:51-18:46Z)
+
+* VM was reset at the start (packages and DB lost): restored from snapshot, reinstalled deps, restarted workers.
+* Live verifier: when a strong-retail homepage lacks US markers, up to 4 fixed pages (/store-locator, /stores, /privacy ...)
+  are fetched and rescored. This did not change Costco/Albertsons/Safeway/Ulta (their pages are JS-heavy), so those were
+  fixed through secondary evidence instead (see below). Sherwin-Williams was already verified after the legal-page fix.
+* Secondary evidence now also uses: SEC EDGAR (latest 10-K <= 550 days old must mention the store domain next to
+  e-commerce/website language and the United States; subsidiary aliases such as Marshalls/HomeGoods -> TJX, Ralphs/Fred
+  Meyer -> Kroger), Google Play listing (US) linking to the store domain, and `live_storefront` (the live homepage showed
+  products and purchase controls but lacked US signals). Verdict rule: >=2 independent proofs and (a storefront-level
+  proof, or an SEC 10-K proof, or both Apple and Google app listings). Limitation: for global brands (Adidas, Zara, H&M)
+  the app listings are not US-specific. `recompute_secondary.py` re-applies the rule to stored evidence.
+* Reference-audit exclusions documented in code: Ross (stores only, rossstores.com is corporate), Trader Joe's (no online
+  ordering), airline lounges, hotels, Audible, FedEx Office, World Bank. TJX reference now points at tjmaxx.com.
+* Mall REIT directories: Simon's robots/terms prohibit scraping (not used); Macerich/Westfield/Brookfield expose no
+  accessible tenant directory; Shopify Plus case studies give 48 names without domains, BigCommerce showcase 404 (not
+  ingested). Common Crawl index still unreachable.
+* Tranco screen reached rank ~78.7k of 200k (about 240 domains/min). Export 18:46Z: 1,235 verified (911 primary,
+  324 secondary); 7,543 unverified rows.

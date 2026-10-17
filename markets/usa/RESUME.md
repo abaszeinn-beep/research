@@ -31,7 +31,7 @@ python3 -m mktecom.export               # xlsx + csv + evidence/unverified/refer
 python3 -m mktecom.snapshot             # data/usa_ecom.sqlite.gz
 ```
 
-Next ranges once 1–200k is screened: `mktecom.screen --start 200001 --end 1000000 --concurrency 25` (foreign
+Screening state: ranks 1–~78.7k done (screen table); the same command resumes where it stopped. Next ranges once 1–200k is screened: `mktecom.screen --start 200001 --end 1000000 --concurrency 25` (foreign
 ccTLDs are skipped beyond rank 200k unless `--no-skip-foreign`).
 
 Deferred lanes (start when Shopify stops answering HTTP 429, see "Rate limits"):
