@@ -479,8 +479,17 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
     res["product_evidence"] = (probe or {}).get("sample_url") or (smp or {}).get("sample_url") or (extra_url if extra_html else "") or ""
 
-    score, sev = S.market_signals(html + extra_html[:200000], a["text"] + " " + (a2text(extra_html) if extra_html else ""), url, final, plat, api_currency)
-    if "__address_us" in a["ld_types"] and "us_address" not in sev:
+    score, sev = rescore(html + extra_html[:200000], a["text"] + " " + (a2text(extra_html) if extra_html else ""),
+                         url, final, plat, api_currency, a["ld_types"], probe)
+    res["market_score"] = round(score, 2)
+    res["market_evidence"] = json.dumps(sev, ensure_ascii=False)
+    return await decide(f, res, done, t0, cand, url, final, html, extra_html, a, plat, probe, smp, physical,
+                        product_names, ecom, product_ev, purchase_ev, api_currency, score, sev)
+
+
+def rescore(html, text, url, final, plat, api_currency, ld_types, probe):
+    score, sev = S.market_signals(html, text, url, final, plat, api_currency)
+    if "__address_us" in ld_types and "us_address" not in sev:
         sev["us_address"] = "schema.org PostalAddress addressCountry=US"
         score += 2.0
     if probe and plat == "shopify" and probe.get("country"):
@@ -500,9 +509,48 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         else:
             sev["woo_store_currency"] = probe["currency"]
             score -= 3
-    res["market_score"] = round(score, 2)
-    res["market_evidence"] = json.dumps(sev, ensure_ascii=False)
+    return score, sev
 
+
+LEGAL_LINK = re.compile(r"""<a\b[^>]*href=["']([^"'#]+)["'][^>]*>\s*(?:<[^>]+>\s*)*([^<]{0,60}?(?:contact|privacy|terms|shipping|customer service|about us|legal|ccpa|do not sell)[^<]{0,40})<""", re.I)
+
+
+def legal_links(html, final):
+    out, seen = [], set()
+    host = urlsplit(final).netloc.split(":")[0].removeprefix("www.")
+    for m in LEGAL_LINK.finditer(html[:1_500_000]):
+        full = urljoin(final, m.group(1).strip())
+        h = (urlsplit(full).hostname or "").removeprefix("www.")
+        if not full.startswith("http") or not (h == host or h.endswith("." + host) or host.endswith("." + h)):
+            continue
+        t = m.group(2).lower()
+        pri = 0 if ("privacy" in t or "terms" in t or "ccpa" in t or "do not sell" in t) else 1 if ("contact" in t or "shipping" in t) else 2
+        if full not in seen:
+            seen.add(full)
+            out.append((pri, full))
+    out.sort(key=lambda x: x[0])
+    return [u for _, u in out]
+
+
+def judge(sev, final):
+    cur_key = f"currency_{M.currency}_code"
+    ship = " ".join(sev.get("shipping_payment") or [])
+    us_specific_ship = bool(re.search(r"usps|contiguous|lower 48|continental|sales tax|do not sell|ccpa|prop|ships? (?:from|within|to)|domestic|made in|american", ship))
+    any_foreign = any(k in sev for k in ("other_currency", "foreign_prices", "foreign_places", "foreign_cctld", "canadian_phone"))
+    strong = any(k in sev for k in ("cctld", "us_phone", "us_address")) or sev.get("shopify_shop_country") == M.shopify_country \
+        or (sev.get("locale") and MARKET_GEO.search(final)) or us_specific_ship \
+        or ((cur_key in sev or sev.get("woo_store_currency") == M.currency) and sev.get("locale") and not any_foreign) \
+        or (sev.get("local_prices", 0) >= 3 and "nanp_tollfree_phone" in sev and sev.get("places") and not any_foreign)
+    foreign_store = (sev.get("shopify_shop_country") not in (None, M.shopify_country)) or "foreign_cctld" in sev
+    if foreign_store:
+        # international store: needs local currency AND a local presence/shipping proof
+        strong = (cur_key in sev or sev.get("local_prices", 0) >= 3 and MARKET_GEO.search(final)) and \
+                 any(k in sev for k in ("us_phone", "us_address")) or (MARKET_GEO.search(final) and cur_key in sev) or (cur_key in sev and us_specific_ship)
+    return bool(strong), foreign_store
+
+
+async def decide(f, res, done, t0, cand, url, final, html, extra_html, a, plat, probe, smp, physical,
+                 product_names, ecom, product_ev, purchase_ev, api_currency, score, sev):
     cat_texts = [a["title"] + " " + res["store_name"], a["desc"], S.meta(html, "keywords") or "", " ".join(product_names), a["text"][:6000]]
     cat, sub = S.classify_category(cat_texts, [6, 4, 2, 2, 1])
     res["cat_text"] = "\x1f".join(t[:3000] for t in cat_texts)
@@ -543,8 +591,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if not (physical and physical >= 3) and len(saas_terms) >= 3 and len(saas_terms) > len(phys_terms):
         res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
         return done("rejected", f"saas_digital_or_media_site ({len(saas_terms)} SaaS/digital terms vs {len(phys_terms)} physical-goods terms: {', '.join(sorted(saas_terms)[:4])})")
-    strong_retail = (a["add_to_cart"] >= 5 and a["local_prices"] + a["any_prices"] >= 5) or bool(smp and smp.get("product_urls", 0) >= 50)
-    if plat not in COMMERCE_PLATFORMS and not (physical and physical >= 1) and len(phys_terms) < 3 and not strong_retail:
+    strong_retail = a["add_to_cart"] >= 20 or (a["add_to_cart"] >= 5 and a["local_prices"] + a["any_prices"] >= 5) or bool(smp and smp.get("product_urls", 0) >= 50)
+    commerce_plat = plat in COMMERCE_PLATFORMS and not (plat == "woocommerce" and not (probe and probe.get("n")))
+    if not commerce_plat and not (physical and physical >= 1) and len(phys_terms) < 3 and not strong_retail:
         res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
         return done("unverified", f"physical_goods_unclear (generic platform, {len(phys_terms)} physical-goods terms; manual review)")
 
@@ -561,22 +610,30 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
             return done("unverified", "weak_ecommerce_evidence_generic_platform: " + ",".join(product_ev + purchase_ev))
 
     cur_key = f"currency_{M.currency}_code"
-    ship = " ".join(sev.get("shipping_payment") or [])
-    us_specific_ship = bool(re.search(r"usps|contiguous|lower 48|continental|sales tax|do not sell|ccpa|prop|ships? (?:from|within|to)|domestic|made in|american", ship))
-    any_foreign = any(k in sev for k in ("other_currency", "foreign_prices", "foreign_places", "foreign_cctld", "canadian_phone"))
-    strong = any(k in sev for k in ("cctld", "us_phone", "us_address")) or sev.get("shopify_shop_country") == M.shopify_country \
-        or (sev.get("locale") and MARKET_GEO.search(final)) or us_specific_ship \
-        or ((cur_key in sev or sev.get("woo_store_currency") == M.currency) and sev.get("locale") and not any_foreign)
-    foreign_store = (sev.get("shopify_shop_country") not in (None, M.shopify_country)) or "foreign_cctld" in sev
-    if foreign_store:
-        # international store: needs local currency AND a local presence/shipping proof
-        strong = (cur_key in sev or sev.get("local_prices", 0) >= 3 and MARKET_GEO.search(final)) and \
-                 any(k in sev for k in ("us_phone", "us_address")) or (MARKET_GEO.search(final) and cur_key in sev) or (cur_key in sev and us_specific_ship)
+    strong, foreign_store = judge(sev, final)
+    if not (score >= 4 and strong) and not foreign_store and "other_currency" not in sev and "foreign_prices" not in sev:
+        # homepage lacks explicit US markers: legal/contact pages usually carry the US address, CCPA or US shipping terms
+        for lu in legal_links(html, final)[:2]:
+            st3, fin3, h3, _, _ = await f.get(lu, tries=1)
+            if st3 != 200 or not h3:
+                continue
+            l_html = html + extra_html[:200000] + h3[:400000]
+            l_text = a["text"] + " " + (a2text(extra_html) if extra_html else "") + " " + a2text(h3)
+            s2, sev2 = rescore(l_html, l_text, url, final, plat, api_currency, a["ld_types"], probe)
+            st2, fs2 = judge(sev2, final)
+            if s2 > score or (st2 and not strong):
+                sev2["legal_page"] = fin3[:150]
+                score, sev, strong, foreign_store = s2, sev2, st2, fs2
+                res["market_score"] = round(score, 2)
+                res["market_evidence"] = json.dumps(sev, ensure_ascii=False)
+            if score >= 4 and strong:
+                break
     res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
     if FOREIGN_GEO.search(final) and not MARKET_GEO.search(final) and not any(k in sev for k in (cur_key, "cctld", "us_address", "us_phone")) \
             and sev.get("shopify_shop_country") != M.shopify_country:
         return done("rejected", "redirects_to_non_market_storefront (geo/locale): " + final[:80])
-    if score >= 4 and strong:
+    hard_us = any(k in sev for k in ("us_address", "us_phone")) or sev.get("shopify_shop_country") == M.shopify_country
+    if strong and (score >= 4 or (score >= 3.5 and hard_us and sev.get("local_prices", 0) >= 2 and not foreign_store)):
         res["status"] = "verified"
         note = []
         if n_dig >= 3:

@@ -102,7 +102,7 @@ USA = Market(
         r"/(?:en|fr|es|de|it|nl|ja|pt)[-_](?:gb|uk|ca|au|nz|ie|de|fr|it|es|nl|jp|mx|br|in|ae|sa|eu|int)(?:/|$)|"
         r"/(?:uk|gb|ca|au|nz|ie|de|fr|it|es|nl|jp|mx|br|in|ae|eu|int|intl)(?:[-_/](?:en|fr|es|de|it))?(?:/|$)", re.I),
     foreign_cctld_re=re.compile(r"\.(?:ca|co\.uk|uk|com\.au|au|de|fr|it|es|nl|be|ch|at|se|no|dk|fi|ie|nz|co\.nz|jp|in|co\.in|br|com\.br|mx|com\.mx|pl|pt|cz|ru|cn|hk|sg|my|ph|za|co\.za|ae|sa|tr|kr|tw|ar|cl|co|eu)$", re.I),
-    foreign_place_re=re.compile(r"\bCanada\b|\b(?:Ontario|Quebec|British Columbia|Alberta|Manitoba|Saskatchewan|Nova Scotia|New Brunswick)\b|\b[ABCEGHJKLMNPRSTVXY]\d[A-Z] ?\d[A-Z]\d\b|\bUnited Kingdom\b|\bAustralia\b|\bGST\b|\bHST\b"),
+    foreign_place_re=re.compile(r"\bCanada\b|\b(?:Ontario|Quebec|British Columbia|Alberta|Manitoba|Saskatchewan|Nova Scotia|New Brunswick)\b|\b[ABCEGHJKLMNPRSTVXY]\d[A-Z] \d[A-Z]\d\b|\bUnited Kingdom\b|\bAustralia\b|\bGST\b|\bHST\b"),
     other_currencies=("CAD", "AUD", "GBP", "EUR", "NZD", "INR", "JPY", "MXN", "BRL", "SAR", "AED", "CHF", "SEK", "NOK", "DKK", "PLN", "SGD", "HKD", "ZAR", "PHP", "MYR", "KRW", "CNY", "TRY"),
     shopify_country="US",
     appstore_country="us",
