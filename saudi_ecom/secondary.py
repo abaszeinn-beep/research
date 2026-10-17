@@ -3,11 +3,11 @@
 No challenge is bypassed. Evidence types (each recorded with URL + date):
   wayback_product  Wayback Machine capture of a product page under the Saudi storefront path
                    showing SAR prices and an add-to-cart/ordering control. The lookup uses the
-                   newest captures (window widened from 180 to 640 days); the capture date is stored.
+                   newest captures (window: 365 days, so evidence is never older than ~12 months); the capture date is stored.
   commoncrawl_product  same check on a product-page capture from a recent Common Crawl crawl (WARC byte range)
   sitemap          robots-allowed sitemap listing product URLs under the Saudi storefront path
   app_store        shopping app by the brand in the Saudi Apple App Store (iTunes Search API),
-                   updated within 450 days (widened from 365; the store listing date is stored)
+                   updated within 365 days (the store listing date is stored)
   bing_indexed     search-engine indexed product pages under the Saudi storefront with SAR prices in the snippet
 A store becomes `verified_secondary_evidence` with >=2 independent evidence types, at least one of which is
 storefront-level (wayback_product, commoncrawl_product, sitemap or bing_indexed).
@@ -42,8 +42,8 @@ PRODUCT_URL = re.compile(
     r"/(?:sa-en|en-sa|ar-sa)/[a-z0-9]+(?:-[a-z0-9]+){4,}\.html",
     re.I)
 SAR = re.compile(r'(?:SAR|ر\.?\s?س|ريال|﷼)(?:\s|&nbsp;|<[^<>]{0,120}>){0,6}\d|\d[\d,.]*(?:\s|&nbsp;|<[^<>]{0,120}>){0,6}(?:SAR|ر\.?\s?س|ريال|﷼)|"(?:priceCurrency|currency|currencyCode|currency_code)"\s*:\s*"SAR"', re.I)
-CART = re.compile(r"add[\s_-]?to[\s_-]?(?:cart|bag|basket)|addToCart|أضف إلى (?:السلة|الحقيبة)|اضف للسلة|أضف للسلة|إضافة إلى (?:السلة|الحقيبة)|buy now|اشتر[يِ]? الآن|\"@type\"\s*:\s*\"Offer\"", re.I)
-SHOP_GENRES = {"Shopping", "Food & Drink", "Lifestyle", "Health & Fitness", "Medical"}
+CART = re.compile(r"add[\s_-]?to[\s_-]?(?:cart|bag|basket)|addToCart|أضف إلى (?:السلة|الحقيبة)|اضف للسلة|أضف للسلة|إضافة إلى (?:السلة|الحقيبة)|buy now|اشتر[يِ]? الآن", re.I)
+SHOP_GENRES = {"Shopping", "Food & Drink"}
 NOW = dt.datetime.now(dt.timezone.utc)
 
 
@@ -82,7 +82,7 @@ async def wayback_product(client, prefix):
     for attempt in range(2):
         try:
             r = await client.get("https://web.archive.org/cdx/search/cdx", params={
-                "url": prefix, "matchType": "prefix", "from": (NOW - dt.timedelta(days=640)).strftime("%Y%m%d"),
+                "url": prefix, "matchType": "prefix", "from": (NOW - dt.timedelta(days=365)).strftime("%Y%m%d"),
                 "filter": ["statuscode:200", "mimetype:text/html"], "collapse": "urlkey", "limit": "400",
                 "fl": "timestamp,original,length"}, timeout=90)
             break
@@ -337,7 +337,7 @@ async def app_store(client, name, domains):
             age = (NOW.date() - dt.date.fromisoformat(rel)).days
         except ValueError:
             age = 9999
-        if age <= 450:
+        if age <= 365:
             return {"type": "app_store", "ok": True, "url": a.get("trackViewUrl"), "date": rel.replace("-", ""),
                     "detail": f"Saudi App Store {a.get('primaryGenreName')} app '{a.get('trackName')}' by {a.get('sellerName')}, updated {rel}"}
     return {"type": "app_store", "ok": False, "detail": f"no current shopping app matching {term!r}"}
