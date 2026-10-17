@@ -146,8 +146,8 @@ class Net:
             return
         if status == 429:
             self.stats["edge_429"] += 1
-            self.rate = max(0.2, self.rate * 0.6)
-            self.next_slot = time.monotonic() + 20
+            self.rate = max(0.3, self.rate * 0.85)
+            self.next_slot = max(self.next_slot, time.monotonic() + 3)
         elif status and status < 500:
             self.rate = min(self.max_rate, self.rate + 0.02)
 
@@ -755,6 +755,7 @@ async def main():
     ap.add_argument("--rate", type=float, default=1.5, help="shopify mode: initial global req/s")
     ap.add_argument("--max-rate", type=float, default=4.0)
     ap.add_argument("--retry-status", default="", help="shopify mode: extra statuses to (re)process, e.g. rate_limited,rl")
+    ap.add_argument("--out-name", default="results_shopify", help="shopify mode output file stem (also its done-set)")
     ap.add_argument("--domains", default="", help="comma list for ad-hoc testing (results printed, not saved)")
     args = ap.parse_args()
     os.makedirs(WORK, exist_ok=True)
@@ -770,9 +771,9 @@ async def main():
     if args.mode == "shopify":
         net.rate, net.max_rate = args.rate, args.max_rate
         net.use_curl = True
-        done = done_set(prefix="results_shopify")
+        done = done_set(prefix=args.out_name)
         items = [(r, d) for r, d in deferred(args.retry_status) if d not in done]
-        out_path = os.path.join(WORK, "results_shopify.jsonl")
+        out_path = os.path.join(WORK, args.out_name + ".jsonl")
     else:
         items = load_slice(args.worker, args.of, args.tier or None)
         done = done_set()
