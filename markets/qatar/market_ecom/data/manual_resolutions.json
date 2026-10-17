@@ -7,7 +7,7 @@
   "name": "IKEA Qatar",
   "platform": "custom/unknown",
   "category": "Furniture & Home",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 200,
   "proofs": [
    {
@@ -26,7 +26,7 @@
   "name": "Al Meera",
   "platform": "custom/unknown",
   "category": "Grocery & Supermarket",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 200,
   "proofs": [
    {
@@ -45,7 +45,7 @@
   "name": "Salam Stores",
   "platform": "magento",
   "category": "Department Store",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 200,
   "proofs": [
    {
@@ -70,7 +70,7 @@
   "root": "luluhypermarket.com",
   "name": "Lulu Hypermarket",
   "category": "Grocery & Supermarket",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 403,
   "proofs": [
    {
@@ -101,7 +101,7 @@
   "root": "homecentre.com",
   "name": "Home Centre",
   "category": "Furniture & Home",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 403,
   "proofs": [
    {
@@ -126,7 +126,7 @@
   "root": "zara.com",
   "name": "Zara",
   "category": "Fashion & Apparel",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 403,
   "proofs": [
    {
@@ -151,7 +151,7 @@
   "root": "sephora.me",
   "name": "Sephora",
   "category": "Beauty & Cosmetics",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 403,
   "proofs": [
    {
@@ -176,7 +176,7 @@
   "root": "carrefourqatar.com",
   "name": "Carrefour Qatar",
   "category": "Grocery & Supermarket",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 200,
   "proofs": [
    {
@@ -201,7 +201,7 @@
   "root": "bathandbodyworks.com.qa",
   "name": "Bath & Body Works",
   "category": "Beauty & Cosmetics",
-  "verified_at": "2026-10-17T17:20:00Z",
+  "verified_at": "2026-10-17T17:53:00Z",
   "http": 403,
   "proofs": [
    {
@@ -265,5 +265,301 @@
   "evidence": "https://web.archive.org/web/20250819134213/https://www.maxfashion.com/qa/en/Women/Clothing/Arabian-Clothing/Abayas/MAX-Full-Length-Abaya-with-Floral-Appliques/p/OESS181ABY348BLACKDARK",
   "storefront": "https://www.maxfashion.com/qa/en/",
   "key": "maxfashion.com|qa"
+ },
+ {
+  "ref": "Ourshopee",
+  "action": "verified_secondary_evidence",
+  "key": "ourshopee.com|qa",
+  "storefront": "https://ourshopee.com/qatar-en/",
+  "root": "ourshopee.com",
+  "name": "Ourshopee",
+  "platform": "custom/unknown",
+  "category": "Electronics & Appliances",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 376 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260811081316/https://ourshopee.com/qatar-en/apple-iphone-14-128gb-5g-purple-single-sim-esim-internationa/PN4027/p/",
+    "date": "20260811"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'Ourshopee - Online Shopping' by OurShopee FZE, updated 2026-10-14",
+    "url": "https://apps.apple.com/qa/app/ourshopee-online-shopping/id1226954989",
+    "date": "20261014"
+   }
+  ]
+ },
+ {
+  "ref": "Pull&Bear",
+  "action": "verified_secondary_evidence",
+  "key": "pullandbear.com|qa",
+  "storefront": "https://www.pullandbear.com/qa/",
+  "root": "pullandbear.com",
+  "name": "Pull&Bear",
+  "platform": "custom/unknown",
+  "category": "Fashion & Apparel",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 1 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260712213550/https://www.pullandbear.com/qa/ar/%D8%A7%D9%84%D8%B1%D8%AC%D8%A7%D9%84/%D9%85%D9%84%D8%A7%D8%A8%D8%B3/anime-n7253?celement=1030378186",
+    "date": "20260712"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'PULL&BEAR' by Industria de Diseno Textil, S.A., updated 2026-10-14",
+    "url": "https://apps.apple.com/qa/app/pull-bear/id388614277",
+    "date": "20261014"
+   }
+  ]
+ },
+ {
+  "ref": "Bershka",
+  "action": "verified_secondary_evidence",
+  "key": "bershka.com|qa",
+  "storefront": "https://www.bershka.com/qa/",
+  "root": "bershka.com",
+  "name": "Bershka",
+  "platform": "custom/unknown",
+  "category": "Fashion & Apparel",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 10 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260613215835/https://www.bershka.com/qa/ar/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D9%85%D9%84%D8%A7%D8%A8%D8%B3/%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-n3802.html",
+    "date": "20260613"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'BERSHKA' by Industria de Diseno Textil, S.A., updated 2026-10-15",
+    "url": "https://apps.apple.com/qa/app/bershka/id427769832",
+    "date": "20261015"
+   }
+  ]
+ },
+ {
+  "ref": "Oysho",
+  "action": "verified_secondary_evidence",
+  "key": "oysho.com|qa",
+  "storefront": "https://www.oysho.com/qa/",
+  "root": "oysho.com",
+  "name": "Oysho",
+  "platform": "custom/unknown",
+  "category": "Fashion & Apparel",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 10 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260712062634/https://www.oysho.com/qa/2-square-piping-hair-claws-l33180414",
+    "date": "20260712"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'OYSHO' by Industria de Diseno Textil, S.A., updated 2026-10-17",
+    "url": "https://apps.apple.com/qa/app/oysho/id464273021",
+    "date": "20261017"
+   }
+  ]
+ },
+ {
+  "ref": "Massimo Dutti",
+  "action": "verified_secondary_evidence",
+  "key": "massimodutti.com|qa",
+  "storefront": "https://www.massimodutti.com/qa/",
+  "root": "massimodutti.com",
+  "name": "Massimo Dutti",
+  "platform": "custom/unknown",
+  "category": "Fashion & Apparel",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 11 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20261006232223/https://www.massimodutti.com/qa/100-raffia-midsized-tote-bag-l06922605",
+    "date": "20261006"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'Massimo Dutti: Clothing store' by Industria de Diseno Textil, S.A., updated 2026-10-13",
+    "url": "https://apps.apple.com/qa/app/massimo-dutti-clothing-store/id373282826",
+    "date": "20261013"
+   }
+  ]
+ },
+ {
+  "ref": "Stradivarius",
+  "action": "verified_secondary_evidence",
+  "key": "stradivarius.com|qa",
+  "storefront": "https://www.stradivarius.com/qa/",
+  "root": "stradivarius.com",
+  "name": "Stradivarius",
+  "platform": "custom/unknown",
+  "category": "Fashion & Apparel",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 6 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260712091550/https://www.stradivarius.com/qa/d09-super-highwaist-skinny-jeans-l01450741",
+    "date": "20260712"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'Stradivarius - Clothing Store' by Industria de Diseno Textil, S.A., updated 2026-10-08",
+    "url": "https://apps.apple.com/qa/app/stradivarius-clothing-store/id421874087",
+    "date": "20261008"
+   }
+  ]
+ },
+ {
+  "ref": "VogaCloset",
+  "action": "verified_secondary_evidence",
+  "key": "vogacloset.com|qa",
+  "storefront": "https://vogacloset.com/qatar/",
+  "root": "vogacloset.com",
+  "name": "VogaCloset",
+  "platform": "custom/unknown",
+  "category": "Fashion & Apparel",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 14 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260713004429/https://vogacloset.com/qatar/ar/beauty/haircare/hair-treatments/joico-joico-blonde-life-brilliant-glow-brightening-oil-100ml-gsh-mp-jco1103066.html",
+    "date": "20260713"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'Vogacloset – Shop Fashion' by VogaCloset Limited, updated 2026-10-15",
+    "url": "https://apps.apple.com/qa/app/vogacloset-shop-fashion/id1226968215",
+    "date": "20261015"
+   }
+  ]
+ },
+ {
+  "ref": "Junaid Perfumes",
+  "action": "verified_secondary_evidence",
+  "key": "qa.junaidperfumes.com",
+  "storefront": "https://qa.junaidperfumes.com/",
+  "root": "junaidperfumes.com",
+  "name": "Junaid Perfumes",
+  "platform": "shopify",
+  "category": "Fragrances & Perfumes",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 12 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260618145623/https://qa.junaidperfumes.com/products/futaina-for-her-french-perfume-100-ml",
+    "date": "20260618"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'Junaid Perfumes جنيد للعطور' by SYED JUNAID ALAM W.L.L, updated 2026-09-20",
+    "url": "https://apps.apple.com/qa/app/junaid-perfumes-%D8%AC%D9%86%D9%8A%D8%AF-%D9%84%D9%84%D8%B9%D8%B7%D9%88%D8%B1/id6752561421",
+    "date": "20260920"
+   }
+  ]
+ },
+ {
+  "ref": "ACE Hardware Qatar",
+  "action": "verified",
+  "key": "aceqatar.com",
+  "storefront": "https://www.aceqatar.com/en/",
+  "root": "aceqatar.com",
+  "name": "ACE Hardware Qatar",
+  "platform": "custom/unknown",
+  "category": "Home Improvement & Hardware",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 200,
+  "proofs": [
+   {
+    "type": "live_product_page",
+    "detail": "live product page: 17 QAR price strings and add-to-cart control; archived Qatar capture 2026-03-14 also present",
+    "url": "https://www.aceqatar.com/en/products/3m-scotch-blue-sharp-lines-advanced-masking-tape-2093-2.4-x-4100-cm/2",
+    "date": "20261017"
+   }
+  ]
+ },
+ {
+  "ref": "Huda Beauty",
+  "action": "verified",
+  "key": "hudabeauty.com|qa",
+  "storefront": "https://hudabeauty.com/en-qa/",
+  "root": "hudabeauty.com",
+  "name": "Huda Beauty",
+  "platform": "shopify",
+  "category": "Beauty & Cosmetics",
+  "verified_at": "2026-10-17T17:53:00Z",
+  "http": 200,
+  "proofs": [
+   {
+    "type": "live_product_page",
+    "detail": "live Qatar (en-qa) product page: 139 QAR price strings and add-to-cart control",
+    "url": "https://hudabeauty.com/en-qa/products/easy-bake-pressed-powder-hb01500m",
+    "date": "20261017"
+   }
+  ]
+ },
+ {
+  "ref": "Dyson",
+  "action": "unresolved",
+  "reason": "unresolved: dyson.qa returns HTTP 403 live (not bypassed); only one current proof (archived Qatar page 2026-04-20); the Qatar app found is a device app (MyDyson), not a shopping app",
+  "evidence": "https://web.archive.org/web/20260420132039/https://www.dyson.qa/ar-QA/dyson/review/product/id/63003",
+  "storefront": "https://www.dyson.qa/",
+  "key": null
+ },
+ {
+  "ref": "Alanees Electronics",
+  "action": "unresolved",
+  "reason": "unresolved: alaneesqatar.qa returns HTTP 403 live (not bypassed); one current proof (archived Qatar product page 2026-08-10); no Qatar shopping app found",
+  "evidence": "https://web.archive.org/web/20260810171107/https://alaneesqatar.qa/product/apple-iphone-17-pro-max-512gb-cosmic-orange-in-qatar/",
+  "storefront": "https://alaneesqatar.qa/",
+  "key": null
+ },
+ {
+  "ref": "Games 4 U / Gameshop",
+  "action": "unresolved",
+  "reason": "unresolved: gameshop.qa live returns HTTP 500/429 to this client; one current proof (archived product page 2026-01-14); no shopping app found",
+  "evidence": "https://web.archive.org/web/20260114103222/https://www.gameshop.qa/product/assassins-creed-syndicate-xbox-one-2/",
+  "storefront": "https://www.gameshop.qa/",
+  "key": null
+ },
+ {
+  "ref": "Charlotte Tilbury",
+  "action": "unresolved",
+  "reason": "unresolved: qa.charlottetilbury.com returns HTTP 403 live (not bypassed); one current proof (archived Qatar product page 2026-05-18); no Qatar shopping app found",
+  "evidence": "https://web.archive.org/web/20260518041612/https://www.qa.charlottetilbury.com/ar/buy-air-brush-one-size",
+  "storefront": "https://www.qa.charlottetilbury.com/",
+  "key": null
+ },
+ {
+  "ref": "Calvin Klein",
+  "action": "unresolved",
+  "reason": "unresolved: calvinklein.qa returns HTTP 403 live (not bypassed); one current proof (archived Qatar page 2025-11-22); no Qatar shopping app found",
+  "evidence": "https://web.archive.org/web/20251122044217/https://www.calvinklein.qa/ar/kids-black-friday-early.html",
+  "storefront": "https://www.calvinklein.qa/",
+  "key": null
+ },
+ {
+  "ref": "Malabar Gold & Diamonds",
+  "action": "unresolved",
+  "reason": "unresolved: live check shows cart/checkout markers but no Qatar price/product evidence in static HTML; no Qatar-path product captures in Wayback (qa, en-qa, qa-en prefixes) and no Qatar shopping app found",
+  "evidence": "Wayback CDX prefix queries 2026-10-17 returned 0 captures",
+  "storefront": "https://www.malabargoldanddiamonds.com/",
+  "key": null
  }
 ]

@@ -57,3 +57,13 @@ No AI subagents were used; parallelism comes from asyncio workers in separate tm
 - **14:50** Checkpoint pushed (452 verified). Wayback walk then added ~6.1k new .qa hosts; verifier drained them.
 - **16:10** Wayback host walk finished; final secondary pass, reference link + audit. 16 major refs remain unresolved (below). Search engines: DDG mostly blocked (back-off cycles).
 - Unresolved majors: Lulu Hypermarket, Carrefour Qatar, Al Meera, Monoprix Qatar, Jumbo Electronics Qatar, Max Fashion, Home Centre, Baladna, Salam Stores, Apple, IKEA Qatar, Zara, Bath & Body Works, Shein, Sephora, Al Fardan Jewellery (bot-walled/geo-redirected or lacking two independent current proofs).
+
+## 2026-10-17 session 3 (coordinator follow-up: resolve unresolved majors first)
+
+- **16:39** Fresh VM; restored DB from snapshot (queue was already drained: 1 pending), restarted verifier and the Tranco probe from its saved job state.
+- **~17:00-17:50** Probed each unresolved major: live fetches, robots-allowed sitemaps, headless-browser renders, Wayback product-path CDX
+  (`scripts/major_probe.py`), Qatar App Store. Added `manual_resolve.py` + `manual_resolutions.json`; audit now honours `ref_overrides`.
+  Majors: 16 unresolved -> 3 unresolved (+1 new, Malabar), 13 resolved (IKEA, Al Meera, Salam Stores live-verified; Jumbo mapped to its
+  online store JS.QA; Lulu, Home Centre, Zara, Sephora, Carrefour, Bath & Body Works secondary; Apple, Baladna, Al Fardan excluded with reasons).
+- **~17:10-17:50** `scripts/batch_probe.py` over the medium/no-storefront brand refs: +2 live-verified (ACE Hardware Qatar, Huda Beauty),
+  +8 secondary (Ourshopee, Pull&Bear, Bershka, Oysho, Massimo Dutti, Stradivarius, VogaCloset, Junaid Perfumes); 5 single-proof brands left unresolved with reasons.

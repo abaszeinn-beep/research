@@ -7,11 +7,11 @@ CUR = re.compile(r'(?:QAR|QR|ر\.ق|ريال)\s?[\d,.]+|[\d,.]+\s?(?:QAR|QR|ر\.
 CART = re.compile(r'add[\s_-]?to[\s_-]?(?:cart|bag|basket)|addToCart|أضف إلى|اضف الى|buy now|"@type"\s*:\s*"Offer"', re.I)
 H = {"User-Agent": "qatar-ecom-directory-research/1.0 (polite archive client)"}
 
-async def cdx(c, prefix, rx, frm):
-    for _ in range(3):
+async def cdx(c, prefix, rx, frm, MT="prefix"):
+    for _ in range(2):
         try:
-            r = await c.get("https://web.archive.org/cdx/search/cdx", params={"url": prefix, "matchType": "prefix", "filter": ["statuscode:200", f"original:{rx}"],
-                            "from": frm, "limit": "60", "fl": "timestamp,original", "collapse": "urlkey"}, timeout=120)
+            r = await c.get("https://web.archive.org/cdx/search/cdx", params={"url": prefix, "matchType": MT, "filter": ["statuscode:200", f"original:{rx}"],
+                            "from": frm, "limit": "60", "fl": "timestamp,original", "collapse": "urlkey"}, timeout=45)
             if r.status_code == 200:
                 return [l.split(" ", 1) for l in r.text.splitlines() if " " in l]
         except httpx.HTTPError:
@@ -20,8 +20,9 @@ async def cdx(c, prefix, rx, frm):
     return None
 
 async def probe(c, name, prefix, rx):
+    MT = "host" if prefix.endswith("@host") else "prefix"; prefix = prefix.replace("@host", "")
     frm = (dt.date.today() - dt.timedelta(days=400)).strftime("%Y%m%d")
-    caps = await cdx(c, prefix, rx, frm)
+    caps = await cdx(c, prefix, rx, frm, MT)
     out = {"name": name, "prefix": prefix, "captures": None if caps is None else len(caps), "ok": False}
     if not caps:
         return out
@@ -46,4 +47,5 @@ async def main():
         res = await asyncio.gather(*(probe(c, *a.split("|", 2)) for a in sys.argv[1:]))
     for r in res:
         print(json.dumps(r, ensure_ascii=False), flush=True)
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())

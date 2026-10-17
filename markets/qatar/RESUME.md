@@ -69,3 +69,16 @@ This runs the reference audit, `market_ecom.export` (xlsx + csv, applies `market
 sqlite3 data/qatar_ecom.sqlite "UPDATE candidates SET status='pending' WHERE key IN (SELECT key FROM verifications
   WHERE reason LIKE 'dns_not_resolved%' OR reason LIKE 'fetch_failed:%' OR reason LIKE 'rate_limited%' OR reason LIKE 'verification_timeout%')"
 ```
+
+## Manual / targeted reference resolutions (session 3)
+
+- `market_ecom/data/manual_resolutions.json` holds hand-collected resolutions (verified primary, verified secondary with dated
+  proofs, exclusions and specific-reason unresolved) for reference brands. `python3 -m market_ecom.manual_resolve` applies it
+  idempotently (writes candidates/verifications, `reference_urls` via=manual, and `ref_overrides`); `reference audit` applies
+  overrides last. Re-run it after restoring the DB and before the audit/export.
+- `scripts/major_probe.py` (Wayback product-path CDX probe + QAR/cart check on the archived page) and `scripts/batch_probe.py`
+  (7 Qatar path patterns per brand + Qatar App Store lookup, output `logs/batch_probe.jsonl`, resumable) produced the proofs.
+  Host-wide CDX queries time out; always use product-path prefixes.
+- After a VM re-provision the committed `data/qatar_ecom.sqlite.gz` is the source of truth (the plain `.sqlite` may be 0 bytes: delete it
+  and re-run `scripts/setup_env.sh`).
+- Chromium for the browser pass: `python3 -m playwright install chromium --with-deps`.
