@@ -38,6 +38,7 @@ class MarketConfig:
     non_store_suffixes: tuple = ()  # gov/edu suffixes that are never stores
     accept_language: str = "en-US,en;q=0.9,ar;q=0.8"
     itunes_country: str = ""
+    timezone: str = "UTC"
     ddg_region: str = "wt-wt"
     marketplaces: dict = field(default_factory=dict)
     non_store_roots: set = field(default_factory=set)
@@ -111,7 +112,7 @@ QATAR = MarketConfig(
                 r"free (?:shipping|delivery) (?:in|across|within) qatar|ships? (?:to|within) qatar",
     registration_rx=r"(?:C\.?\s?R\.?\s?(?:No|Number|#)|Commercial Registration(?: No| Number)?|CR\s?No|السجل التجاري|سجل تجاري|رقم السجل)\s*[:.#]?\s*\d{4,7}\b",
     non_store_suffixes=(".gov.qa", ".edu.qa", ".sch.qa", ".mil.qa"),
-    accept_language="en-QA,en;q=0.9,ar-QA;q=0.8,ar;q=0.7",
+    accept_language="en-QA,en;q=0.9,ar-QA;q=0.8,ar;q=0.7", timezone="Asia/Qatar",
     itunes_country="qa",
     ddg_region="xa-en",
     marketplaces={
@@ -162,7 +163,7 @@ SAUDI = MarketConfig(
     cities=[r"Saudi Arabia", r"\bKSA\b", r"\bRiyadh\b", r"\bJeddah\b", "السعودية", "الرياض", "جدة"],
     pay_ship_rx=r"\bmada\b|مدى|stc ?pay|سمسا|\bSMSA\b|البريد السعودي|naqel|aramex|tamara|tabby",
     non_store_suffixes=(".gov.sa", ".edu.sa", ".sch.sa"),
-    accept_language="ar-SA,ar;q=0.9,en-US;q=0.8,en;q=0.7", itunes_country="sa", ddg_region="xa-ar",
+    accept_language="ar-SA,ar;q=0.9,en-US;q=0.8,en;q=0.7", itunes_country="sa", timezone="Asia/Riyadh", ddg_region="xa-ar",
     marketplaces={"noon.com": "marketplace", "amazon.sa": "marketplace"},
     local_platform_names=("salla", "zid"),
 )

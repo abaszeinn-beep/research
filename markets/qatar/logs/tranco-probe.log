@@ -25,3 +25,7 @@
 [tranco] {'done': 1000, 'hits': 10, 'new': 6, 'fail': 429} rate=6.8/s rank~12506
 [tranco] {'done': 2000, 'hits': 19, 'new': 14, 'fail': 851} rate=7.3/s rank~13476
 [tranco] {'done': 3000, 'hits': 29, 'new': 22, 'fail': 1300} rate=7.7/s rank~14327
+[tranco] {'done': 4000, 'hits': 44, 'new': 35, 'fail': 1720} rate=7.4/s rank~15478
+[tranco] {'done': 5000, 'hits': 56, 'new': 45, 'fail': 2161} rate=7.5/s rank~16493
+[tranco] {'done': 6000, 'hits': 68, 'new': 55, 'fail': 2571} rate=7.3/s rank~17176
+[tranco] {'done': 7000, 'hits': 85, 'new': 69, 'fail': 2976} rate=7.2/s rank~18490

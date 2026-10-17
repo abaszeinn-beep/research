@@ -38,3 +38,12 @@
 [verify:v1] {'rejected': 35, 'total': 90, 'verified': 11, 'unverified': 44, 'per_min': 30.0, 'requests': 159, 'http_429': 91}
 [verify:v1] {'rejected': 60, 'total': 140, 'verified': 15, 'unverified': 65, 'per_min': 35.0, 'requests': 235, 'http_429': 151}
 [verify:v1] {'rejected': 83, 'total': 203, 'verified': 22, 'unverified': 98, 'per_min': 40.6, 'requests': 366, 'http_429': 184}
+[verify:v1] {'rejected': 120, 'total': 277, 'verified': 28, 'unverified': 129, 'per_min': 46.2, 'requests': 517, 'http_429': 221}
+[verify:v1] {'rejected': 193, 'total': 386, 'verified': 32, 'unverified': 161, 'per_min': 55.1, 'requests': 607, 'http_429': 259}
+[verify:v1] {'rejected': 229, 'total': 447, 'verified': 34, 'unverified': 184, 'per_min': 55.9, 'requests': 675, 'http_429': 300}
+[verify:v1] {'rejected': 245, 'total': 481, 'verified': 35, 'unverified': 201, 'per_min': 53.4, 'requests': 698, 'http_429': 319}
+[verify:v1] {'rejected': 310, 'total': 575, 'verified': 40, 'unverified': 225, 'per_min': 57.5, 'requests': 811, 'http_429': 357}
+[verify:v1] {'rejected': 350, 'total': 701, 'verified': 62, 'unverified': 289, 'per_min': 63.7, 'requests': 1182, 'http_429': 399}
+[verify:v1] {'rejected': 436, 'total': 861, 'verified': 64, 'unverified': 361, 'per_min': 71.7, 'requests': 1619, 'http_429': 421}
+[verify:v1] {'rejected': 533, 'total': 1032, 'verified': 72, 'unverified': 427, 'per_min': 79.3, 'requests': 2112, 'http_429': 442}
+[verify:v1] {'rejected': 628, 'total': 1197, 'verified': 77, 'unverified': 492, 'per_min': 85.5, 'requests': 2455, 'http_429': 471}

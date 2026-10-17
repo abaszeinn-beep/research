@@ -8,3 +8,15 @@
 [search:ddg] blocked, backing off 60s
 [pages] listicle q='list of online stores in Qatar' pages=0 new=0
 [pages] https://ecommerce.gov.qa/directory/ links=48 new=20
+[pages] listicle q='list of online stores in Qatar' pages=10 new=20
+[search:ddg] blocked, backing off 60s
+[pages] listicle q='best online stores Qatar 2025' no results (blocked?), will retry on next run
+[search:ddg] blocked, backing off 120s
+[pages] listicle q='best online stores Qatar 2026' no results (blocked?), will retry on next run
+[search:ddg] blocked, backing off 240s
+[pages] listicle q='Qatar online shopping websites list' no results (blocked?), will retry on next run
+[pages] listicle q='popular shopping websites Qatar' no results (blocked?), will retry on next run
+[pages] https://electronyat.qa/en links=9 new=1
+[pages] https://www.gorafeeq.com/en/home/market/electronics-1 links=9 new=2
+[pages] listicle q='best websites to buy electronics online Qatar' pages=10 new=3
+[pages] https://en-qa.aivi.com/home links=4 new=3

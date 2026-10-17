@@ -31,3 +31,8 @@
 [reference] 230/264 {'accepted': 64, 'blocked': 79, 'cdx': 7, 'bing': 0, 'none': 159}
 [reference] 240/264 {'accepted': 65, 'blocked': 82, 'cdx': 7, 'bing': 0, 'none': 168}
 [reference] 250/264 {'accepted': 66, 'blocked': 82, 'cdx': 8, 'bing': 0, 'none': 176}
+[reference] 260/264 {'accepted': 66, 'blocked': 82, 'cdx': 8, 'bing': 0, 'none': 186}
+[reference] 264/264 {'accepted': 66, 'blocked': 82, 'cdx': 8, 'bing': 0, 'none': 190}
+[reference] resolving 14 refs
+[reference] 10/14 {'accepted': 5, 'blocked': 4, 'cdx': 0, 'bing': 0, 'none': 5}
+[reference] 14/14 {'accepted': 5, 'blocked': 4, 'cdx': 0, 'bing': 0, 'none': 9}

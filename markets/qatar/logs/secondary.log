@@ -1,0 +1,6 @@
+[secondary] 192 targets
+[secondary] boots.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 1}
+[secondary] philips.com.qa -> insufficient_secondary_evidence ['sitemap'] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 2}
+[secondary] victoriassecret.com.qa -> verified_secondary_evidence ['commoncrawl_product', 'sitemap', 'app_store'] {'verified_secondary_evidence': 1, 'insufficient_secondary_evidence': 2}
+[secondary] next.qa -> verified_secondary_evidence ['wayback_product', 'commoncrawl_product', 'sitemap', 'app_store'] {'verified_secondary_evidence': 2, 'insufficient_secondary_evidence': 2}
+[secondary] victoriassecret.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 2, 'insufficient_secondary_evidence': 3}

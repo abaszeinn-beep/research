@@ -16,6 +16,7 @@ from urllib.parse import urlsplit
 from playwright.async_api import async_playwright
 
 from . import db
+from .market import M
 from .verify import Fetcher, verify_one, save, CHALLENGE
 
 REASONS = ("weak_ecommerce_evidence%", "js_rendered_or_thin_page%", "partial_ecommerce_evidence_js_page%", "fetch_failed:http_error%", "insufficient_ecommerce_evidence%", "fetch_failed:timeout%")
@@ -33,7 +34,7 @@ class BrowserFetcher(Fetcher):
         if check_robots and not await self.allowed(url):
             return None, url, "", {}, "robots_disallowed"
         async with self.page_sem:
-            ctx = await self.browser.new_context(locale="ar-SA", timezone_id="Asia/Riyadh",
+            ctx = await self.browser.new_context(locale=f"en-{M.iso}", timezone_id=M.timezone,
                                                  user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
                                                  viewport={"width": 1366, "height": 900})
             page = await ctx.new_page()

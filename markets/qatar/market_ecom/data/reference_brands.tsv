@@ -9,11 +9,11 @@ Monoprix Qatar	Grocery & Food	major	monoprix.qa monoprixqatar.com	user_brief
 Jarir Bookstore Qatar	Books & Stationery	major	jarir.com	user_brief
 Virgin Megastore Qatar	Computers & Electronics	major	virginmegastore.qa virginmegastore.com	user_brief
 Ansar Gallery	Department Store / General	major	ansargallery.com ansargallery.qa	user_brief
-Family Food Centre	Grocery & Food	major	ffc.qa familyfoodcentre.com ffcqatar.com	user_brief
+Family Food Centre	Grocery & Food	major	ffc.qa familyfoodcentre.com ffcqatar.com family.qa	user_brief
 Blue Salon	Department Store / General	major	bluesalon.com	user_brief
 Ali Bin Ali	Jewelry & Watches	major	alibinali.com	user_brief
-Jumbo Electronics Qatar	Computers & Electronics	major	jumbo.qa jumboelectronics.com.qa jumboqatar.com	user_brief
-Fifty One East	Department Store / General	major	fiftyoneeast.com	user_brief
+Jumbo Electronics Qatar	Computers & Electronics	major	jumbo.qa jumboelectronics.com.qa jumboqatar.com jumbo.com.qa	user_brief
+Fifty One East	Department Store / General	major	fiftyoneeast.com 51east.com.qa www.51east.com.qa	user_brief
 Namshi	Fashion & Apparel	major	namshi.com	analyst_seed
 AIVI / 6th Street	Fashion & Apparel	major	6thstreet.com aivi.com	group:Apparel Group
 Ounass	Fashion & Apparel	major	ounass.qa ounass.com	analyst_seed
@@ -130,7 +130,7 @@ Columbia	Sports, Fitness & Outdoor	medium	columbia.com	analyst_seed
 Lacoste	Fashion & Apparel	medium	lacoste.com	group:Chalhoub
 Level Shoes	Shoes	medium	levelshoes.com	group:Chalhoub
 Tryano	Department Store / General	medium	tryano.com	group:Chalhoub
-Sephora	Beauty & Cosmetics	major	sephora.qa sephora.com	group:Chalhoub
+Sephora	Beauty & Cosmetics	major	sephora.qa sephora.com sephora.me	group:Chalhoub
 Wojooh / Faces	Beauty & Cosmetics	medium	wojooh.com faces.com	group:Chalhoub
 Huda Beauty	Beauty & Cosmetics	medium	hudabeauty.com	analyst_seed
 Kiko Milano	Beauty & Cosmetics	medium	kikocosmetics.com	analyst_seed
@@ -141,7 +141,7 @@ NYX	Beauty & Cosmetics	medium	nyxcosmetics.com	analyst_seed
 Golden Scent	Perfumes & Oud	medium	goldenscent.com	analyst_seed
 Boutiqaat	Beauty & Cosmetics	medium	boutiqaat.com	analyst_seed
 VogaCloset	Fashion & Apparel	medium	vogacloset.com	analyst_seed
-Arabian Oud	Perfumes & Oud	major	arabianoud.com	analyst_seed
+Arabian Oud	Perfumes & Oud	major	arabianoud.com arabianoud.qa	analyst_seed
 Ajmal Perfumes	Perfumes & Oud	medium	ajmal.com	analyst_seed
 Rasasi	Perfumes & Oud	medium	rasasi.com	analyst_seed
 Abdul Samad Al Qurashi	Perfumes & Oud	medium	asqgrp.com	analyst_seed
@@ -149,12 +149,12 @@ Swiss Arabian	Perfumes & Oud	medium	swissarabian.com	analyst_seed
 Al Haramain Perfumes	Perfumes & Oud	medium	alharamainperfumes.com	analyst_seed
 Lattafa	Perfumes & Oud	medium	lattafa.com	analyst_seed
 Ibraheem Al Qurashi	Perfumes & Oud	medium	ibraqperfumes.com	analyst_seed
-Al Majed Oud	Perfumes & Oud	major	almajedoud.com almajedoud.qa	analyst_seed
+Al Majed Oud	Perfumes & Oud	major	almajedoud.com almajedoud.qa almajed4oud.com	analyst_seed
 Junaid Perfumes	Perfumes & Oud	medium	junaidperfumes.com	analyst_seed
 Ard Al Zaafaran	Perfumes & Oud	medium	ardalzaafaran.com	analyst_seed
-Al Fardan Jewellery	Jewelry & Watches	major	alfardanjewellery.com	analyst_seed
+Al Fardan Jewellery	Jewelry & Watches	major	alfardanjewellery.com alfardanfinejewellery.com	analyst_seed
 Damas	Jewelry & Watches	medium	damasjewellery.com	analyst_seed
-Malabar Gold & Diamonds	Jewelry & Watches	major	malabargoldanddiamonds.com	analyst_seed
+Malabar Gold & Diamonds	Jewelry & Watches	major	malabargoldanddiamonds.com malabargoldanddiamonds.qa	analyst_seed
 Joyalukkas	Jewelry & Watches	medium	joyalukkas.com	analyst_seed
 Kalyan Jewellers	Jewelry & Watches	medium	kalyanjewellers.net	analyst_seed
 Pandora	Jewelry & Watches	medium	pandora.net	analyst_seed
@@ -173,7 +173,7 @@ Early Learning Centre	Toys & Hobbies	medium	elc.com elc.qa	analyst_seed
 Mumzworld	Baby & Maternity	major	mumzworld.com	analyst_seed
 FirstCry	Baby & Maternity	medium	firstcry.qa firstcry.ae	analyst_seed
 Toy Triangle	Toys & Hobbies	medium	toytriangle.com	analyst_seed
-Wellcare Pharmacy	Pharmacy & Wellness	major	wellcare.qa wellcarepharmacy.com wellcareqatar.com	analyst_seed
+Wellcare Pharmacy	Pharmacy & Wellness	major	wellcare.qa wellcarepharmacy.com wellcareqatar.com wellcareonline.com	analyst_seed
 Aster Pharmacy	Pharmacy & Wellness	medium	asterpharmacy.qa aster.qa	analyst_seed
 Kulud Pharmacy	Pharmacy & Wellness	medium	kuludpharmacy.com kulud.qa	analyst_seed
 Life Pharmacy	Pharmacy & Wellness	medium	lifepharmacy.com	analyst_seed

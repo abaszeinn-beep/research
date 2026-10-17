@@ -12,3 +12,6 @@
 [wayback] qa,c at qa,cbq,~ {'http_503': 12, 'requests': 40, 'hosts': 553, 'new': 549, 'ConnectError': 6}
 [wayback] qa,c at qa,circuitstore,~ {'http_503': 19, 'requests': 60, 'hosts': 755, 'new': 747, 'ConnectError': 6, 'ReadTimeout': 1, 'http_504': 1}
 [wayback] qa,d at qa,dior,~ {'http_503': 21, 'requests': 80, 'hosts': 1010, 'new': 999, 'ConnectError': 7, 'ReadTimeout': 2, 'http_504': 2}
+[wayback] qa,c at qa,creativecircle,~ {'http_503': 30, 'requests': 100, 'hosts': 1269, 'new': 1256, 'ConnectError': 9, 'ReadTimeout': 2, 'http_504': 4}
+[wayback] qa,b giving up for now at qa,blinkmena,~
+[wayback] qa,a at qa,antheatre,~ {'http_503': 40, 'requests': 120, 'hosts': 1504, 'new': 1484, 'ConnectError': 9, 'ReadTimeout': 5, 'http_504': 4}
