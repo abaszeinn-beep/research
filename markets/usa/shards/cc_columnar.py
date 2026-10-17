@@ -81,7 +81,7 @@ _local = threading.local()
 def _con():
     if not hasattr(_local, "con"):
         c = duckdb.connect()
-        c.execute("INSTALL httpfs; LOAD httpfs; SET threads=3; SET memory_limit='1200MB'; SET preserve_insertion_order=false; SET http_timeout=120000; SET http_retries=6;")
+        c.execute("INSTALL httpfs; LOAD httpfs; SET threads=2; SET memory_limit='600MB'; SET preserve_insertion_order=false; SET http_timeout=120000; SET http_retries=6;")
         _local.con = c
     return _local.con
 

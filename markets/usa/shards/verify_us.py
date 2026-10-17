@@ -171,8 +171,8 @@ class Fetcher:
                         m = str(e)
                         if "Name or service not known" in m or "No address associated" in m or "nodename nor servname" in m:
                             return None, url, "", {}, "dns_not_resolved"
-                        last = "connect_error"
-                        if attempt >= 0 and "SSL" in m:
+                        last = "connect_error" + (":" + re.sub(r"\s+", " ", m)[:60] if m else "")
+                        if "SSL" in m and "WRONG_VERSION" not in m and attempt >= 1:
                             break
                     except (httpx.ReadTimeout, httpx.WriteTimeout, httpx.PoolTimeout, asyncio.TimeoutError):
                         last = "timeout"
@@ -293,7 +293,7 @@ def analyze(html, url):
             "ld": S.jsonld_types(html)[0], "prices": len(S.PRICE_DOLLAR.findall(text)) + len(S.PRICE_USD.findall(text))}
 
 
-def pick_product_url(final, root, a, probe, cand):
+def pick_product_urls(final, root, a, probe, cand, n=2):
     host = urlsplit(final).netloc
     opts = []
     if probe and probe.get("sample_url"):
@@ -305,16 +305,40 @@ def pick_product_url(final, root, a, probe, cand):
     s = cand.get("sample_url")
     if s and PRODUCT_URL.search(s) and not NON_PRODUCT_URL.search(s):
         opts.append(s)
+    out = []
     for u in opts:
         try:
             uh = urlsplit(u).netloc
         except ValueError:
             continue
-        if uh == host or (root and uh.endswith(root)):
-            if "/product-category/" in u:
-                continue
-            return u.replace("http://", "https://", 1) if final.startswith("https://") else u
-    return None
+        if (uh == host or (root and uh.endswith(root))) and "/product-category/" not in u:
+            u = u.replace("http://", "https://", 1) if final.startswith("https://") else u
+            if u not in out:
+                out.append(u)
+        if len(out) >= n:
+            break
+    return out
+
+
+INFO_LINK = re.compile(r"href=[\"']([^\"'#<>\s]{0,200}(?:contact|about|shipping|delivery|policies|policy|faq|location|store-info|terms)[^\"'#<>\s]{0,80})[\"']", re.I)
+
+
+async def fetch_info_pages(f, final, html, n=2):
+    host = urlsplit(final).netloc
+    seen, texts, htmls, urls = set(), [], [], []
+    for m in INFO_LINK.finditer(html[:MAX_BYTES]):
+        u = urljoin(final, m.group(1))
+        if urlsplit(u).netloc != host or u in seen or re.search(r"\.(?:pdf|jpg|png)$|privacy|cookie|login|account", u, re.I):
+            continue
+        seen.add(u)
+        if len(seen) > n:
+            break
+        st, fin, h, _, _ = await f.get(u, tries=1)
+        if st == 200 and h:
+            htmls.append(h[:400000])
+            texts.append(S.visible_text(h, limit=400000)[:100000])
+            urls.append(fin)
+    return " ".join(htmls), " ".join(texts), urls
 
 
 async def verify_one(f: Fetcher, cand: dict) -> dict:
@@ -333,7 +357,7 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if cand.get("root_domain") in MARKETPLACE_ROOTS:
         return done("rejected", "excluded_marketplace: " + MARKETPLACE_ROOTS[cand["root_domain"]])
     st, final, html, hdrs, err = await f.get(url)
-    if st is None and err in ("connect_error", "timeout") and url.startswith("https://") and cand.get("platform_hint") not in ("wix", "square", "bigcartel"):
+    if st is None and (err or "").split(":")[0] in ("connect_error", "timeout") and url.startswith("https://") and cand.get("platform_hint") not in ("wix", "square", "bigcartel"):
         host = urlsplit(url).hostname or ""
         alt = url.replace("://", "://www.", 1) if not host.startswith("www.") and host.count(".") == 1 else "http://" + url[8:]
         st, final, html, hdrs, err = await f.get(alt, tries=1)
@@ -379,6 +403,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if m or "password-page" in html[:30000] and short:
         return done("rejected", "store_closed_or_maintenance" + (": " + m.group(0) if m else ""))
 
+    if re.search(r"(?:^|[.\-/])(?:demo|sandbox|staging|test|dev)\d*[.\-]|-demo\.|demo-store|teststore", key, re.I) or re.match(r"^(?:demo|test) ?store$", res["store_name"] or "", re.I):
+        return done("rejected", "demo_or_test_store")
     root = fid["root_domain"] if fid else ""
     base = f"{urlsplit(final).scheme}://{urlsplit(final).netloc}/"
     if fid and fid["platform_hint"] is None and fid["key"].endswith("|us"):
@@ -407,11 +433,11 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         api["timezone"] = tzm.group(1)
 
     # product page
-    purl = pick_product_url(final, root, a, probe, cand)
-    p_html, p_final, p_st = "", None, None
+    purls = pick_product_urls(final, root, a, probe, cand)
+    p_html, p_final, p_st, perr = "", None, None, None
     pa = None
-    if purl:
-        p_st, p_final, p_html, _, perr = await f.get(purl, tries=1)
+    for purl in purls:
+        p_st, p_final, p_html, _, perr = await f.get(purl, tries=2)
         if p_st == 200 and p_html:
             pa = analyze(p_html, p_final)
             if plat == "squarespace" and not (probe or {}).get("product_type"):
@@ -421,8 +447,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
                     for k in ("currency", "country", "timezone"):
                         if sq.get(k):
                             api[k] = sq[k]
-        else:
-            p_html = ""
+            break
+        p_html = ""
+    product_fetch_failed = bool(purls) and pa is None and (perr or (p_st or 0) >= 500)
     ecom = {"platform": plat, "platform_note": plat_note, "home_product_links": len(a["links"]), "home_add_to_cart": a["atc"],
             "home_cart_markers": a["cart"], "home_prices": a["prices"], "jsonld": sorted(a["ld"] & {"Product", "Offer", "AggregateOffer", "ItemList", "OnlineStore", "Store"})}
     if probe:
@@ -518,6 +545,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         if len(a["text"]) < 1500 and html.count("<script") >= 3:
             return done("unverified", "js_rendered_or_thin_page (no ecommerce evidence in static HTML)")
         return done("rejected", "no_ecommerce_evidence (no products / cart found)")
+    if (not strong_product or not has_purchase) and product_fetch_failed:
+        return done("unverified", f"product_page_fetch_failed:{perr or p_st} (retry later); " + ",".join(product_ev + purchase_ev))
     if not strong_product or not has_purchase:
         return done("unverified", "insufficient_ecommerce_evidence: " + (",".join(product_ev + purchase_ev) or "none"))
 
@@ -540,6 +569,14 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         return done("unverified", "possible_multi_vendor_marketplace (manual review)")
 
     ust, ureason = S.us_verdict(score, ev)
+    if ust == "unverified" and (ev.get("currency_USD") or ev.get("usd_prices") or ev.get("dollar_prices")):
+        ih, it, iurls = await fetch_info_pages(f, final, html)
+        if it:
+            score, ev = S.us_signals(blob_html + ih, blob_text + " " + it, final, api)
+            ev["info_pages"] = iurls[:2]
+            res["us_score"] = round(score, 2)
+            res["us_evidence"] = json.dumps(ev, ensure_ascii=False)
+            ust, ureason = S.us_verdict(score, ev)
     if ust == "verified":
         notes = []
         if n_dig >= 4:
@@ -624,7 +661,11 @@ async def main(concurrency, per_host, worker, where, idle_exit, max_total):
             if out:
                 batch = out[:]
                 del out[:len(batch)]
-                await asyncio.to_thread(save_many, con, batch)
+                try:
+                    save_many(con, batch)
+                except Exception as e:
+                    out.extend(batch)
+                    print(f"[verify:{worker}] save failed, will retry: {e!r}", flush=True)
 
     async def reporter():
         while True:
