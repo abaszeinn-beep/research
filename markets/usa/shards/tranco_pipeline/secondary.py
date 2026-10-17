@@ -41,6 +41,10 @@ ROBOTS_PLATFORM = [("shopify", re.compile(r"we use shopify|/checkouts/|/\d+/chec
 PRODUCT_LOC = re.compile(r"<loc>\s*(https?://[^<\s]{0,300}?(?:/products?/[^<\s]+|/p/[^<\s]+|/item/[^<\s]+|/pd/[^<\s]+|-p\d{3,}[^<\s]*|\.html))\s*</loc>", re.I)
 
 
+class WaybackError(Exception):
+    pass
+
+
 class Wayback:
     def __init__(self, net: Net, conc: int, gap: float):
         self.net, self.sem, self.gap, self.last = net, asyncio.Semaphore(conc), gap, 0.0
@@ -61,7 +65,10 @@ class Wayback:
             r = await self.net.get("https://web.archive.org/cdx/search/cdx?url=" + quote(url, safe="") +
                                    f"&filter=statuscode:200&fl=timestamp,original&from={since}&limit=-1",
                                    robots=False, timeout=30, tries=2)
-        if r.status != 200 or not r.text.strip():
+        if r.status != 200:
+            self.net.stats["wb_err_%s" % (r.status or r.err)] += 1
+            raise WaybackError(str(r.status or r.err))
+        if not r.text.strip():
             return None
         parts = r.text.strip().splitlines()[-1].split(" ", 1)
         if len(parts) != 2 or not parts[0].isdigit():
@@ -243,7 +250,7 @@ async def main():
         await net.close()
         return
     out_path = os.path.join(WORK, "results_secondary.jsonl")
-    done = {r["d"] for r in iter_results("results_secondary")}
+    done = {r["d"] for r in iter_results("results_secondary") if r.get("s") not in ("sec_wb_error", "sec_timeout", "sec_error")}
     latest = {}
     for r in iter_results("results_w"):
         latest[r["d"]] = r
@@ -268,6 +275,9 @@ async def main():
                 return
             try:
                 rec = await asyncio.wait_for(process(net, wb, d, rank, u), 400)
+            except WaybackError as e:
+                rec = {"d": d, "r": rank, "s": "sec_wb_error", "e": str(e)}
+                await asyncio.sleep(10)
             except asyncio.TimeoutError:
                 rec = {"d": d, "r": rank, "s": "sec_timeout"}
             except Exception as e:  # noqa: BLE001
@@ -282,7 +292,8 @@ async def main():
         while True:
             await asyncio.sleep(60)
             n = sum(v for k, v in cnt.items() if not k.startswith("row_"))
-            print(f"[{now_utc()}] secondary done={n} rate={n / (time.time() - t0):.2f}/s remaining={q.qsize()} {dict(cnt)}", flush=True)
+            print(f"[{now_utc()}] secondary done={n} rate={n / (time.time() - t0):.2f}/s remaining={q.qsize()} {dict(cnt)} "
+                  f"wb={ {k: v for k, v in net.stats.items() if k.startswith('wb_')} }", flush=True)
 
     rep = asyncio.create_task(reporter())
     await asyncio.gather(*(runner() for _ in range(args.concurrency)))

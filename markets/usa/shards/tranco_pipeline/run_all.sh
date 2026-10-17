@@ -12,7 +12,7 @@ cmd_for() {
   case "$1" in
     usa-w[0-3]) i=${1#usa-w}; echo "python3 $P/worker.py --worker $i --of 4 --concurrency 200 2>&1 | tee -a logs/usa_w$i.log";;
     usa-shopify) echo "while true; do python3 $P/worker.py --mode shopify --concurrency 40 --shopify-concurrency 24 --rate 6 --max-rate 12 2>&1 | tee -a logs/usa_shopify.log; sleep 120; done";;
-    usa-secondary) echo "while true; do python3 $P/secondary.py --concurrency 30 --wayback-concurrency 3 --wayback-gap 0.6 2>&1 | tee -a logs/usa_secondary.log; sleep 300; done";;
+    usa-secondary) echo "while true; do python3 $P/secondary.py --concurrency 10 --wayback-concurrency 2 --wayback-gap 1.0 2>&1 | tee -a logs/usa_secondary.log; sleep 300; done";;
     usa-checkpoint) echo "bash $P/checkpoint.sh loop 2>&1 | tee -a logs/usa_checkpoint.log";;
   esac
 }
