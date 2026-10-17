@@ -15,23 +15,23 @@ from .common import identity
 
 ECOM_PATH = re.compile(
     r"/(?:products?|collections|cart|checkout|shop|store|category|categories|catalog|item|p/|"
-    r"index\.php\?route=product|product-category|brand|offers|%D9%85%D9%86%D8%AA%D8%AC|منتج)|"
+    r"index\.php\?route=product|product-category|brand|offers)|"
     r"/p\d{5,}|-p-\d+|\.html$",
     re.I,
 )
 
 PATTERNS = {
     # pattern: (matchType, base priority, max crawls)
-    "salla.sa": ("prefix", 5, 40),
-    "zid.store": ("domain", 5, 40),
-    "salla.store": ("domain", 5, 20),
-    "sa": ("domain", 1, 3),
-    "myshopify.com": ("domain", 1, 3),
-    "matjrah.store": ("domain", 2, 10),
-    "expandcart.com": ("domain", 1, 4),
+    "myshopify.com": ("domain", 2, 6),
+    "mybigcommerce.com": ("domain", 2, 8),
+    "square.site": ("domain", 1, 4),
+    "company.site": ("domain", 1, 4),
+    "bigcartel.com": ("domain", 1, 4),
+    "shoplightspeed.com": ("domain", 1, 6),
+    "us": ("domain", 0, 2),
 }
 
-UA = {"User-Agent": "saudi-ecom-directory-research/1.0 (+https://github.com; polite CDX client)"}
+UA = {"User-Agent": "mkt-ecom-directory-research/1.0 (polite CDX client)"}
 
 
 async def get_with_retry(client, url, params, tries=7):
@@ -143,7 +143,7 @@ async def main(patterns, concurrency, max_crawls_override=None):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--patterns", default="salla.sa,zid.store,salla.store,sa,myshopify.com")
+    ap.add_argument("--patterns", default="myshopify.com,mybigcommerce.com,square.site,company.site,bigcartel.com,shoplightspeed.com")
     ap.add_argument("--concurrency", type=int, default=3)
     ap.add_argument("--max-crawls", type=int, default=None)
     a = ap.parse_args()

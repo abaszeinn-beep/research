@@ -81,7 +81,9 @@ LOCALE_ATTR = re.compile(r"(?:lang|hreflang|content)=[\"'](?:%s)[\"']|og:locale[
 PHYSICAL = re.compile(r"free shipping|shipping|ships (?:free|in|within|from)|in stock|out of stock|sold out|add to (?:cart|bag|basket)|"
                       r"size guide|size chart|pick ?up in store|in-store pickup|curbside|returns? policy|free returns|easy returns|track (?:your )?order|"
                       r"store locator|find a store|order status|gift registry|shop by (?:category|brand|department)|new arrivals|best ?sellers|"
-                      r"\bsizes?\b|\bcolors?\b|quantity|\bqty\b|wishlist|compare at|regular price|sale price", re.I)
+                      r"\bsizes?\b|\bcolors?\b|quantity|\bqty\b|wishlist|compare at|regular price|sale price|pickup|delivery|departments?|registr(?:y|ies)|reorder|"
+                      r"clearance|rollbacks?|weekly ad|coupons|same[- ]day|shop all|shop now|shop (?:women|men|kids|home|deals)|deals|brands|in stores?|"
+                      r"curbside|ship to home|free delivery|order online|buy online|add to wish ?list|my cart|your cart|view cart|shopping (?:cart|bag)", re.I)
 SAAS = re.compile(r"free trial|start (?:your )?free|sign up (?:for )?free|try (?:it )?(?:for )?free|per (?:user|seat|agent|host)|/mo\b|/month|/yr\b|"
                   r"billed (?:annually|monthly|yearly)|pricing plans?|subscription plans?|\bSaaS\b|\bAPI\b|download (?:now|the app|for free|free)|"
                   r"get started(?: for)? free|book a demo|request a demo|schedule a demo|watch (?:now|live|free)|streaming|episodes?|"

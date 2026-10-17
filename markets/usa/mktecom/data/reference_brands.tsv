@@ -1,0 +1,1249 @@
+# name	domain	tier	category	source
+Walmart	walmart.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Amazon	amazon.com	huge	Marketplace	NRF Top 100; Fortune 500
+Costco	costco.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Kroger	kroger.com	huge	Grocery & Food	NRF Top 100; Fortune 500
+The Home Depot	homedepot.com	huge	Home Improvement & Hardware	NRF Top 100; Fortune 500
+Walgreens	walgreens.com	huge	Pharmacy & Medical Supplies	NRF Top 100; Fortune 500
+Target	target.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+CVS Pharmacy	cvs.com	huge	Pharmacy & Medical Supplies	NRF Top 100; Fortune 500
+Lowe's	lowes.com	huge	Home Improvement & Hardware	NRF Top 100; Fortune 500
+Albertsons	albertsons.com	huge	Grocery & Food	NRF Top 100; Fortune 500
+Apple Store	apple.com/us	huge	Computers & Electronics	NRF Top 100
+Ahold Delhaize USA (Stop & Shop)	stopandshop.com	huge	Grocery & Food	NRF Top 100
+Giant Food	giantfood.com	large	Grocery & Food	NRF Top 100 (Ahold Delhaize)
+Food Lion	foodlion.com	large	Grocery & Food	NRF Top 100 (Ahold Delhaize)
+Hannaford	hannaford.com	large	Grocery & Food	NRF Top 100 (Ahold Delhaize)
+Publix	publix.com	huge	Grocery & Food	NRF Top 100; Fortune 500
+Best Buy	bestbuy.com	huge	Computers & Electronics	NRF Top 100; Fortune 500
+TJX (T.J. Maxx)	tjmaxx.tjx.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Marshalls	marshalls.com	large	Department Store / General Merchandise	NRF Top 100 (TJX)
+HomeGoods	homegoods.com	large	Home Decor	NRF Top 100 (TJX)
+Sierra	sierra.com	large	Sports, Fitness & Outdoor	NRF Top 100 (TJX)
+Aldi	aldi.us	huge	Grocery & Food	NRF Top 100
+H-E-B	heb.com	huge	Grocery & Food	NRF Top 100
+Dollar General	dollargeneral.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Macy's	macys.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Bloomingdale's	bloomingdales.com	large	Department Store / General Merchandise	NRF Top 100 (Macy's)
+Dollar Tree	dollartree.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Family Dollar	familydollar.com	large	Department Store / General Merchandise	NRF Top 100
+Meijer	meijer.com	huge	Department Store / General Merchandise	NRF Top 100
+Ross Stores	rossstores.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Wakefern (ShopRite)	shoprite.com	huge	Grocery & Food	NRF Top 100
+Albertsons Safeway	safeway.com	huge	Grocery & Food	NRF Top 100 (Albertsons)
+Vons	vons.com	large	Grocery & Food	NRF Top 100 (Albertsons)
+Jewel-Osco	jewelosco.com	large	Grocery & Food	NRF Top 100 (Albertsons)
+Shaw's	shaws.com	large	Grocery & Food	NRF Top 100 (Albertsons)
+Acme Markets	acmemarkets.com	large	Grocery & Food	NRF Top 100 (Albertsons)
+Ralphs	ralphs.com	large	Grocery & Food	NRF Top 100 (Kroger)
+Fred Meyer	fredmeyer.com	large	Grocery & Food	NRF Top 100 (Kroger)
+King Soopers	kingsoopers.com	large	Grocery & Food	NRF Top 100 (Kroger)
+Harris Teeter	harristeeter.com	large	Grocery & Food	NRF Top 100 (Kroger)
+Fry's Food	frysfood.com	large	Grocery & Food	NRF Top 100 (Kroger)
+Smith's Food and Drug	smithsfoodanddrug.com	large	Grocery & Food	NRF Top 100 (Kroger)
+Rite Aid	riteaid.com	large	Pharmacy & Medical Supplies	NRF Top 100
+Nordstrom	nordstrom.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Nordstrom Rack	nordstromrack.com	large	Department Store / General Merchandise	NRF Top 100 (Nordstrom)
+Kohl's	kohls.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Gap	gap.com	huge	Fashion & Apparel	NRF Top 100; Fortune 500
+Old Navy	oldnavy.gap.com	huge	Fashion & Apparel	NRF Top 100 (Gap Inc.)
+Banana Republic	bananarepublic.gap.com	large	Fashion & Apparel	NRF Top 100 (Gap Inc.)
+Athleta	athleta.gap.com	large	Fashion - Activewear & Streetwear	NRF Top 100 (Gap Inc.)
+Hy-Vee	hy-vee.com	huge	Grocery & Food	NRF Top 100
+Wegmans	wegmans.com	huge	Grocery & Food	NRF Top 100
+Tractor Supply	tractorsupply.com	huge	Garden & Agriculture	NRF Top 100; Fortune 500
+Dell Technologies	dell.com	huge	Computers & Electronics	NRF Top 100
+Bath & Body Works	bathandbodyworks.com	huge	Personal Care & Grooming	NRF Top 100; Fortune 500
+Victoria's Secret	victoriassecret.com	huge	Fashion - Women	NRF Top 100; Fortune 500
+AutoZone	autozone.com	huge	Automotive Parts & Accessories	NRF Top 100; Fortune 500
+O'Reilly Auto Parts	oreillyauto.com	huge	Automotive Parts & Accessories	NRF Top 100; Fortune 500
+Advance Auto Parts	advanceautoparts.com	huge	Automotive Parts & Accessories	NRF Top 100; Fortune 500
+NAPA Auto Parts	napaonline.com	large	Automotive Parts & Accessories	Fortune 500 (Genuine Parts)
+Ulta Beauty	ulta.com	huge	Beauty & Cosmetics	NRF Top 100; Fortune 500
+Sephora	sephora.com	huge	Beauty & Cosmetics	NRF Top 100
+Dick's Sporting Goods	dickssportinggoods.com	huge	Sports, Fitness & Outdoor	NRF Top 100; Fortune 500
+Golf Galaxy	golfgalaxy.com	large	Sports, Fitness & Outdoor	NRF Top 100 (Dick's)
+Burlington	burlington.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Chewy	chewy.com	huge	Pets	NRF Top 100; Fortune 500
+Wayfair	wayfair.com	huge	Furniture	NRF Top 100; Fortune 500
+Williams-Sonoma	williams-sonoma.com	huge	Kitchen & Dining	NRF Top 100; Fortune 500
+Pottery Barn	potterybarn.com	large	Furniture	NRF Top 100 (Williams-Sonoma)
+West Elm	westelm.com	large	Furniture	NRF Top 100 (Williams-Sonoma)
+Pottery Barn Kids	potterybarnkids.com	large	Furniture	NRF Top 100 (Williams-Sonoma)
+Rejuvenation	rejuvenation.com	medium	Lighting & Electrical	Williams-Sonoma portfolio
+Mark and Graham	markandgraham.com	medium	Flowers, Gifts & Party	Williams-Sonoma portfolio
+Petco	petco.com	huge	Pets	NRF Top 100; Fortune 500
+PetSmart	petsmart.com	huge	Pets	NRF Top 100
+Bass Pro Shops	basspro.com	huge	Sports, Fitness & Outdoor	NRF Top 100
+Cabela's	cabelas.com	large	Hunting, Firearms Accessories & Tactical	NRF Top 100 (Bass Pro)
+Academy Sports + Outdoors	academy.com	huge	Sports, Fitness & Outdoor	NRF Top 100; Fortune 500
+Hobby Lobby	hobbylobby.com	huge	Arts, Crafts & Sewing	NRF Top 100
+Michaels	michaels.com	huge	Arts, Crafts & Sewing	NRF Top 100
+JOANN	joann.com	large	Arts, Crafts & Sewing	NRF Top 100 (closed 2025)
+Big Lots	biglots.com	large	Department Store / General Merchandise	NRF Top 100
+Ollie's Bargain Outlet	ollies.us	large	Department Store / General Merchandise	NRF Top 100
+Five Below	fivebelow.com	large	Department Store / General Merchandise	NRF Top 100
+GameStop	gamestop.com	huge	Gaming	NRF Top 100; Fortune 500
+Dillard's	dillards.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Belk	belk.com	large	Department Store / General Merchandise	NRF Top 100
+JCPenney	jcpenney.com	huge	Department Store / General Merchandise	NRF Top 100
+Saks Fifth Avenue	saksfifthavenue.com	large	Department Store / General Merchandise	NRF Top 100
+Saks OFF 5TH	saksoff5th.com	large	Department Store / General Merchandise	NRF Top 100
+Neiman Marcus	neimanmarcus.com	large	Department Store / General Merchandise	NRF Top 100
+Bergdorf Goodman	bergdorfgoodman.com	large	Department Store / General Merchandise	Neiman Marcus Group
+Sam's Club	samsclub.com	huge	Department Store / General Merchandise	NRF Top 100 (Walmart)
+BJ's Wholesale Club	bjs.com	huge	Department Store / General Merchandise	NRF Top 100; Fortune 500
+Sherwin-Williams	sherwin-williams.com	huge	Home Improvement & Hardware	NRF Top 100; Fortune 500
+Ace Hardware	acehardware.com	huge	Home Improvement & Hardware	NRF Top 100
+True Value	truevalue.com	large	Home Improvement & Hardware	NRF Top 100
+Do it Best	doitbest.com	large	Home Improvement & Hardware	NRF Top 100
+Menards	menards.com	huge	Home Improvement & Hardware	NRF Top 100
+Harbor Freight Tools	harborfreight.com	huge	Home Improvement & Hardware	NRF Top 100
+Floor & Decor	flooranddecor.com	large	Building Materials	NRF Top 100; Fortune 500
+LL Flooring	llflooring.com	medium	Building Materials	Retail chain
+Bed Bath & Beyond	bedbathandbeyond.com	large	Bedding & Bath	NRF Top 100 (now Beyond Inc.)
+Overstock	overstock.com	large	Furniture	Beyond Inc.
+IKEA US	ikea.com/us	huge	Furniture	NRF Top 100
+Ashley Furniture	ashleyfurniture.com	huge	Furniture	NRF Top 100
+Rooms To Go	roomstogo.com	large	Furniture	NRF Top 100
+RH	rh.com	large	Furniture	NRF Top 100; Fortune 500
+Crate & Barrel	crateandbarrel.com	large	Furniture	Retail chain
+CB2	cb2.com	medium	Furniture	Crate & Barrel
+La-Z-Boy	la-z-boy.com	large	Furniture	Retail chain
+Havertys	havertys.com	medium	Furniture	Retail chain
+Bob's Discount Furniture	mybobs.com	large	Furniture	Retail chain
+Raymour & Flanigan	raymourflanigan.com	large	Furniture	Retail chain
+Mattress Firm	mattressfirm.com	large	Bedding & Bath	NRF Top 100
+Sleep Number	sleepnumber.com	large	Bedding & Bath	Retail chain
+Ethan Allen	ethanallen.com	large	Furniture	Retail chain
+Arhaus	arhaus.com	large	Furniture	Retail chain
+Pier 1	pier1.com	medium	Home Decor	Retail brand (online-only)
+Kirkland's Home	kirklands.com	medium	Home Decor	Retail chain
+At Home	athome.com	large	Home Decor	Retail chain
+Container Store	containerstore.com	large	Home Decor	Retail chain
+Lovesac	lovesac.com	medium	Furniture	Retail chain
+Article	article.com	medium	Furniture	DTC brand list
+Burrow	burrow.com	medium	Furniture	DTC brand list
+Joybird	joybird.com	medium	Furniture	DTC brand list
+Interior Define	interiordefine.com	medium	Furniture	DTC brand list
+Floyd	floydhome.com	medium	Furniture	DTC brand list
+Casper	casper.com	medium	Bedding & Bath	DTC brand list
+Purple	purple.com	large	Bedding & Bath	DTC brand list
+Tuft & Needle	tuftandneedle.com	medium	Bedding & Bath	DTC brand list
+Saatva	saatva.com	medium	Bedding & Bath	DTC brand list
+Nectar Sleep	nectarsleep.com	medium	Bedding & Bath	DTC brand list
+Avocado Green Mattress	avocadogreenmattress.com	medium	Bedding & Bath	DTC brand list
+Brooklinen	brooklinen.com	medium	Bedding & Bath	DTC brand list
+Parachute Home	parachutehome.com	medium	Bedding & Bath	DTC brand list
+Boll & Branch	bollandbranch.com	medium	Bedding & Bath	DTC brand list
+Snowe	snowehome.com	medium	Bedding & Bath	DTC brand list
+Lowe's Foods	lowesfoods.com	medium	Grocery & Food	Regional grocery
+Ingles Markets	ingles-markets.com	medium	Grocery & Food	Regional grocery
+Giant Eagle	gianteagle.com	large	Grocery & Food	NRF Top 100
+Southeastern Grocers (Winn-Dixie)	winndixie.com	large	Grocery & Food	NRF Top 100
+Raley's	raleys.com	medium	Grocery & Food	Regional grocery
+Schnucks	schnucks.com	medium	Grocery & Food	Regional grocery
+Weis Markets	weismarkets.com	medium	Grocery & Food	Regional grocery
+Stater Bros	staterbros.com	medium	Grocery & Food	Regional grocery
+WinCo Foods	wincofoods.com	large	Grocery & Food	NRF Top 100
+Sprouts Farmers Market	sprouts.com	large	Grocery & Food	NRF Top 100; Fortune 500
+Whole Foods Market	wholefoodsmarket.com	huge	Grocery & Food	NRF Top 100 (Amazon)
+Trader Joe's	traderjoes.com	huge	Grocery & Food	NRF Top 100 (no online ordering)
+Save Mart	savemart.com	medium	Grocery & Food	Regional grocery
+Price Chopper	pricechopper.com	medium	Grocery & Food	Regional grocery
+Tops Markets	topsmarkets.com	medium	Grocery & Food	Regional grocery
+Fareway	fareway.com	medium	Grocery & Food	Regional grocery
+Brookshire's	brookshires.com	medium	Grocery & Food	Regional grocery
+Market Basket	shopmarketbasket.com	medium	Grocery & Food	Regional grocery (no online ordering)
+Gelson's	gelsons.com	medium	Grocery & Food	Regional grocery
+Bristol Farms	bristolfarms.com	medium	Grocery & Food	Regional grocery
+Thrive Market	thrivemarket.com	large	Grocery & Food	Online grocery
+FreshDirect	freshdirect.com	large	Grocery & Food	Online grocery
+Misfits Market	misfitsmarket.com	medium	Grocery & Food	Online grocery
+Imperfect Foods	imperfectfoods.com	medium	Grocery & Food	Online grocery
+Weee!	sayweee.com	medium	Grocery & Food	Online grocery
+Gopuff	gopuff.com	large	Grocery & Food	Online retailer (own inventory)
+Boxed	boxed.com	medium	Grocery & Food	Online retailer
+Omaha Steaks	omahasteaks.com	medium	Grocery & Food	DTC food
+Harry & David	harryanddavid.com	large	Flowers, Gifts & Party	1-800-Flowers portfolio
+1-800-Flowers	1800flowers.com	large	Flowers, Gifts & Party	Online retailer
+FTD	ftd.com	medium	Flowers, Gifts & Party	Online retailer
+ProFlowers	proflowers.com	medium	Flowers, Gifts & Party	Online retailer
+Teleflora	teleflora.com	medium	Flowers, Gifts & Party	Online retailer
+The Bouqs	bouqs.com	medium	Flowers, Gifts & Party	DTC brand list
+Edible Arrangements	ediblearrangements.com	medium	Flowers, Gifts & Party	Retail chain
+Shari's Berries	berries.com	medium	Candy, Chocolate & Bakery	1-800-Flowers portfolio
+Cheryl's Cookies	cheryls.com	medium	Candy, Chocolate & Bakery	1-800-Flowers portfolio
+Godiva	godiva.com	medium	Candy, Chocolate & Bakery	Brand
+Ghirardelli	ghirardelli.com	medium	Candy, Chocolate & Bakery	Brand
+See's Candies	sees.com	medium	Candy, Chocolate & Bakery	Brand
+Russell Stover	russellstover.com	medium	Candy, Chocolate & Bakery	Brand
+Lindt US	lindtusa.com	medium	Candy, Chocolate & Bakery	Global brand US storefront
+Hershey's Store	hersheystore.com	medium	Candy, Chocolate & Bakery	Brand
+Sugarfina	sugarfina.com	medium	Candy, Chocolate & Bakery	DTC brand list
+Dylan's Candy Bar	dylanscandybar.com	medium	Candy, Chocolate & Bakery	Retail chain
+Insomnia Cookies	insomniacookies.com	medium	Candy, Chocolate & Bakery	Retail chain
+Goldbelly	goldbelly.com	medium	Grocery & Food	Online marketplace (food)
+Starbucks Store	starbucks.com	large	Coffee & Tea	Brand
+Peet's Coffee	peets.com	medium	Coffee & Tea	Brand
+Blue Bottle Coffee	bluebottlecoffee.com	medium	Coffee & Tea	Brand
+Stumptown Coffee	stumptowncoffee.com	medium	Coffee & Tea	Brand
+Intelligentsia	intelligentsia.com	medium	Coffee & Tea	Brand
+Lavazza US	lavazza.com/en-us	medium	Coffee & Tea	Global brand US storefront
+Nespresso US	nespresso.com/us	large	Coffee & Tea	Global brand US storefront
+Keurig	keurig.com	large	Home Appliances	Brand
+Death Wish Coffee	deathwishcoffee.com	medium	Coffee & Tea	DTC brand list
+Black Rifle Coffee	blackriflecoffee.com	medium	Coffee & Tea	DTC brand list
+Atlas Coffee Club	atlascoffeeclub.com	medium	Coffee & Tea	DTC brand list
+Trade Coffee	drinktrade.com	medium	Coffee & Tea	DTC brand list
+Teavana	teavana.com	medium	Coffee & Tea	Brand
+Adagio Teas	adagio.com	medium	Coffee & Tea	Online retailer
+Harney & Sons	harney.com	medium	Coffee & Tea	Brand
+David's Tea US	davidstea.com/us	medium	Coffee & Tea	Global brand US storefront
+Total Wine & More	totalwine.com	large	Beverages, Wine & Spirits	Retail chain
+Wine.com	wine.com	large	Beverages, Wine & Spirits	Online retailer
+Drizly	drizly.com	medium	Beverages, Wine & Spirits	Delivery aggregator (closed 2024)
+BevMo	bevmo.com	medium	Beverages, Wine & Spirits	Retail chain
+ReserveBar	reservebar.com	medium	Beverages, Wine & Spirits	Online retailer
+Vivino	vivino.com	medium	Beverages, Wine & Spirits	Marketplace
+Naked Wines US	nakedwines.com	medium	Beverages, Wine & Spirits	Online retailer
+Winc	winc.com	medium	Beverages, Wine & Spirits	DTC brand list
+Liquid Death	liquiddeath.com	medium	Beverages, Wine & Spirits	DTC brand list
+Olipop	drinkolipop.com	medium	Beverages, Wine & Spirits	DTC brand list
+Athletic Brewing	athleticbrewing.com	medium	Beverages, Wine & Spirits	DTC brand list
+Duane Reade	duanereade.com	medium	Pharmacy & Medical Supplies	Walgreens
+GNC	gnc.com	large	Health, Vitamins & Supplements	Retail chain
+The Vitamin Shoppe	vitaminshoppe.com	large	Health, Vitamins & Supplements	Retail chain
+Vitacost	vitacost.com	large	Health, Vitamins & Supplements	Online retailer (Kroger)
+iHerb	iherb.com	large	Health, Vitamins & Supplements	Online retailer
+Swanson Vitamins	swansonvitamins.com	medium	Health, Vitamins & Supplements	Online retailer
+Puritan's Pride	puritan.com	medium	Health, Vitamins & Supplements	Online retailer
+Bodybuilding.com	bodybuilding.com	medium	Health, Vitamins & Supplements	Online retailer
+Ritual	ritual.com	medium	Health, Vitamins & Supplements	DTC brand list
+Athletic Greens (AG1)	drinkag1.com	medium	Health, Vitamins & Supplements	DTC brand list
+Hims	forhims.com	medium	Health, Vitamins & Supplements	DTC brand list (telehealth)
+Hers	forhers.com	medium	Health, Vitamins & Supplements	DTC brand list (telehealth)
+Nature Made	naturemade.com	medium	Health, Vitamins & Supplements	Brand
+Optimum Nutrition	optimumnutrition.com	medium	Health, Vitamins & Supplements	Brand
+Vital Proteins	vitalproteins.com	medium	Health, Vitamins & Supplements	Brand
+Olly	olly.com	medium	Health, Vitamins & Supplements	Brand
+Goli	goli.com	medium	Health, Vitamins & Supplements	DTC brand list
+Hydro Flask	hydroflask.com	medium	Kitchen & Dining	Brand
+1-800 Contacts	1800contacts.com	large	Eyewear	Online retailer
+Warby Parker	warbyparker.com	large	Eyewear	DTC brand list
+Zenni Optical	zennioptical.com	large	Eyewear	Online retailer
+GlassesUSA	glassesusa.com	medium	Eyewear	Online retailer
+LensCrafters	lenscrafters.com	large	Eyewear	Retail chain
+Sunglass Hut	sunglasshut.com	large	Eyewear	Retail chain
+Ray-Ban US	ray-ban.com/usa	large	Eyewear	Global brand US storefront
+Oakley US	oakley.com/en-us	large	Eyewear	Global brand US storefront
+Pearle Vision	pearlevision.com	medium	Eyewear	Retail chain
+Eyebuydirect	eyebuydirect.com	medium	Eyewear	Online retailer
+Contacts Direct	contactsdirect.com	medium	Eyewear	Online retailer
+Medline	medline.com	large	Pharmacy & Medical Supplies	B2B supplier
+McKesson Medical-Surgical	mms.mckesson.com	large	Pharmacy & Medical Supplies	B2B supplier
+Henry Schein	henryschein.com	large	Pharmacy & Medical Supplies	B2B supplier
+Vitality Medical	vitalitymedical.com	medium	Pharmacy & Medical Supplies	Online retailer
+Allegro Medical	allegromedical.com	medium	Pharmacy & Medical Supplies	Online retailer
+Parachute Health	parachutehealth.com	medium	Pharmacy & Medical Supplies	Service (excluded)
+Figs	wearfigs.com	medium	Fashion & Apparel	DTC brand list
+Cherokee Uniforms	cherokeeuniforms.com	medium	Fashion & Apparel	Brand
+Uniform Advantage	uniformadvantage.com	medium	Fashion & Apparel	Online retailer
+Scrubs & Beyond	scrubsandbeyond.com	medium	Fashion & Apparel	Retail chain
+Newegg	newegg.com	large	Computers & Electronics	Online retailer
+B&H Photo Video	bhphotovideo.com	large	Computers & Electronics	Online retailer
+Adorama	adorama.com	large	Computers & Electronics	Online retailer
+Micro Center	microcenter.com	large	Computers & Electronics	Retail chain
+Crutchfield	crutchfield.com	large	Computers & Electronics	Online retailer
+Abt Electronics	abt.com	medium	Computers & Electronics	Retailer
+P.C. Richard & Son	pcrichard.com	medium	Home Appliances	Regional retailer
+Conn's HomePlus	conns.com	medium	Home Appliances	Retail chain
+Monoprice	monoprice.com	medium	Computers & Electronics	Online retailer
+Sweetwater	sweetwater.com	large	Music & Instruments	Online retailer
+Guitar Center	guitarcenter.com	large	Music & Instruments	Retail chain
+Musician's Friend	musiciansfriend.com	medium	Music & Instruments	Online retailer
+Sam Ash	samash.com	medium	Music & Instruments	Retail chain (closed 2024)
+Fender	fender.com	medium	Music & Instruments	Brand
+Gibson	gibson.com	medium	Music & Instruments	Brand
+Zzounds	zzounds.com	medium	Music & Instruments	Online retailer
+Lenovo US	lenovo.com/us	large	Computers & Electronics	Global brand US storefront
+HP Store	hp.com/us-en	large	Computers & Electronics	Brand
+Microsoft Store	microsoft.com/en-us/store	large	Computers & Electronics	Brand
+Samsung US	samsung.com/us	large	Computers & Electronics	Global brand US storefront
+LG US	lg.com/us	large	Home Appliances	Global brand US storefront
+Sony Electronics	electronics.sony.com	large	Computers & Electronics	Brand
+Bose	bose.com	large	Computers & Electronics	Brand
+Sonos	sonos.com	medium	Computers & Electronics	Brand
+Logitech US	logitech.com/en-us	medium	Computers & Electronics	Global brand US storefront
+Razer US	razer.com	medium	Gaming	Global brand
+Corsair	corsair.com	medium	Gaming	Brand
+Alienware	dell.com/en-us/gaming/alienware	medium	Gaming	Brand
+ASUS Store US	shop.asus.com/us	medium	Computers & Electronics	Global brand US storefront
+Acer Store US	store.acer.com/en-us	medium	Computers & Electronics	Global brand US storefront
+Google Store	store.google.com/us	large	Computers & Electronics	Brand
+Garmin	garmin.com/en-US	large	Computers & Electronics	Brand
+GoPro	gopro.com/en/us	medium	Computers & Electronics	Brand
+DJI Store US	store.dji.com	medium	Computers & Electronics	Global brand
+Anker	anker.com	medium	Mobiles & Accessories	Global brand
+Belkin	belkin.com	medium	Mobiles & Accessories	Brand
+OtterBox	otterbox.com	medium	Mobiles & Accessories	Brand
+ZAGG	zagg.com	medium	Mobiles & Accessories	Brand
+Casetify	casetify.com	medium	Mobiles & Accessories	Brand
+PopSockets	popsockets.com	medium	Mobiles & Accessories	DTC brand list
+Mous	mous.co/en-us	medium	Mobiles & Accessories	Global brand US storefront
+Peak Design	peakdesign.com	medium	Bags & Luggage	DTC brand list
+Verizon	verizon.com	large	Mobiles & Accessories	Carrier store
+AT&T	att.com	large	Mobiles & Accessories	Carrier store
+T-Mobile	t-mobile.com	large	Mobiles & Accessories	Carrier store
+Boost Mobile	boostmobile.com	medium	Mobiles & Accessories	Carrier store
+Cricket Wireless	cricketwireless.com	medium	Mobiles & Accessories	Carrier store
+Back Market	backmarket.com	medium	Marketplace	Marketplace
+Gazelle	gazelle.com	medium	Mobiles & Accessories	Refurbished retailer
+Ring	ring.com	medium	Computers & Electronics	Brand
+Arlo	arlo.com	medium	Computers & Electronics	Brand
+SimpliSafe	simplisafe.com	medium	Computers & Electronics	Brand
+Wyze	wyze.com	medium	Computers & Electronics	Brand
+Eufy	eufy.com	medium	Computers & Electronics	Global brand
+Roku	roku.com	medium	Computers & Electronics	Brand
+Vizio	vizio.com	medium	Computers & Electronics	Brand
+TCL US	tcl.com/us	medium	Computers & Electronics	Global brand US storefront
+Hisense US	hisense-usa.com	medium	Computers & Electronics	Global brand US storefront
+Dyson US	dyson.com	large	Home Appliances	Global brand US storefront
+Shark	sharkclean.com	large	Home Appliances	Brand
+Ninja	ninjakitchen.com	large	Home Appliances	Brand
+iRobot	irobot.com	medium	Home Appliances	Brand
+KitchenAid	kitchenaid.com	large	Home Appliances	Brand
+Whirlpool	whirlpool.com	large	Home Appliances	Brand
+GE Appliances	geappliances.com	large	Home Appliances	Brand
+Maytag	maytag.com	medium	Home Appliances	Brand
+Frigidaire	frigidaire.com	medium	Home Appliances	Brand
+Cuisinart	cuisinart.com	medium	Home Appliances	Brand
+Breville US	breville.com/us	medium	Home Appliances	Global brand US storefront
+Vitamix	vitamix.com	medium	Home Appliances	Brand
+Instant Brands	instantbrands.com	medium	Home Appliances	Brand
+Hamilton Beach	hamiltonbeach.com	medium	Home Appliances	Brand
+Traeger	traeger.com	medium	Home Appliances	Brand
+Weber	weber.com	medium	Home Appliances	Brand
+Solo Stove	solostove.com	medium	Home Appliances	DTC brand list
+Blue Apron	blueapron.com	medium	Grocery & Food	Meal kit (excluded scope check)
+HelloFresh US	hellofresh.com	large	Grocery & Food	Meal kit
+Home Chef	homechef.com	medium	Grocery & Food	Meal kit
+Factor	factor75.com	medium	Grocery & Food	Prepared meals (food service)
+AJ Madison	ajmadison.com	medium	Home Appliances	Online retailer
+Appliances Connection	appliancesconnection.com	medium	Home Appliances	Online retailer
+Build.com	build.com	medium	Home Improvement & Hardware	Online retailer
+Ferguson	ferguson.com	large	Home Improvement & Hardware	B2B supplier
+Lumber Liquidators	lumberliquidators.com	medium	Building Materials	Retail chain
+84 Lumber	84lumber.com	medium	Building Materials	Retail chain
+Grainger	grainger.com	huge	Industrial & Tools	B2B supplier; Fortune 500
+Fastenal	fastenal.com	large	Industrial & Tools	B2B supplier; Fortune 500
+MSC Industrial	mscdirect.com	large	Industrial & Tools	B2B supplier
+McMaster-Carr	mcmaster.com	large	Industrial & Tools	B2B supplier
+Global Industrial	globalindustrial.com	large	Industrial & Tools	B2B supplier
+Zoro	zoro.com	large	Industrial & Tools	B2B supplier
+Uline	uline.com	large	Packaging & Shipping Supplies	B2B supplier
+Northern Tool	northerntool.com	large	Industrial & Tools	Retail chain
+Tool Barn	toolbarn.com	medium	Industrial & Tools	Online retailer
+Acme Tools	acmetools.com	medium	Industrial & Tools	Online retailer
+Tractor Tools Direct	tractortoolsdirect.com	medium	Garden & Agriculture	Online retailer
+Rural King	ruralking.com	large	Garden & Agriculture	Retail chain
+Atwoods	atwoods.com	medium	Garden & Agriculture	Retail chain
+Orscheln Farm & Home	orschelnfarmhome.com	medium	Garden & Agriculture	Retail chain
+Blain's Farm & Fleet	farmandfleet.com	medium	Garden & Agriculture	Retail chain
+Fleet Farm	fleetfarm.com	medium	Garden & Agriculture	Retail chain
+Coastal Farm & Ranch	coastalcountry.com	medium	Garden & Agriculture	Retail chain
+Valley Vet Supply	valleyvet.com	medium	Pets	Online retailer
+Dover Saddlery	doversaddlery.com	medium	Pets	Retailer
+SmartPak	smartpakequine.com	medium	Pets	Online retailer
+Jeffers Pet	jefferspet.com	medium	Pets	Online retailer
+Pet Supplies Plus	petsuppliesplus.com	large	Pets	Retail chain
+Petland	petland.com	medium	Pets	Retail chain
+BarkBox	barkbox.com	medium	Pets	DTC brand list
+The Farmer's Dog	thefarmersdog.com	medium	Pets	DTC brand list
+Ollie Pets	myollie.com	medium	Pets	DTC brand list
+Wild One	wildone.com	medium	Pets	DTC brand list
+1-800-PetMeds	1800petmeds.com	medium	Pets	Online pharmacy
+Entirely Pets	entirelypets.com	medium	Pets	Online retailer
+Petflow	petflow.com	medium	Pets	Online retailer
+Chewy Pharmacy	chewy.com	large	Pets	Duplicate root
+Burpee	burpee.com	medium	Garden & Agriculture	Brand
+Gardener's Supply	gardeners.com	medium	Garden & Agriculture	Online retailer
+Jackson & Perkins	jacksonandperkins.com	medium	Garden & Agriculture	Brand
+Johnny's Selected Seeds	johnnyseeds.com	medium	Garden & Agriculture	Brand
+Fast Growing Trees	fast-growing-trees.com	medium	Garden & Agriculture	Online retailer
+The Sill	thesill.com	medium	Garden & Agriculture	DTC brand list
+Bloomscape	bloomscape.com	medium	Garden & Agriculture	DTC brand list
+Brighter Blooms	brighterblooms.com	medium	Garden & Agriculture	Online retailer
+Nature Hills Nursery	naturehills.com	medium	Garden & Agriculture	Online retailer
+Park Seed	parkseed.com	medium	Garden & Agriculture	Brand
+Armstrong Garden Centers	armstronggarden.com	medium	Garden & Agriculture	Retail chain
+REI	rei.com	huge	Sports, Fitness & Outdoor	NRF Top 100
+Big 5 Sporting Goods	big5sportinggoods.com	large	Sports, Fitness & Outdoor	Retail chain
+Hibbett	hibbett.com	large	Shoes	Retail chain
+Scheels	scheels.com	large	Sports, Fitness & Outdoor	Retail chain
+Sportsman's Warehouse	sportsmans.com	large	Hunting, Firearms Accessories & Tactical	Retail chain
+Dunham's Sports	dunhamssports.com	medium	Sports, Fitness & Outdoor	Retail chain
+Moosejaw	moosejaw.com	medium	Sports, Fitness & Outdoor	Online retailer
+Backcountry	backcountry.com	large	Sports, Fitness & Outdoor	Online retailer
+Steep & Cheap	steepandcheap.com	medium	Sports, Fitness & Outdoor	Online retailer
+evo	evo.com	medium	Sports, Fitness & Outdoor	Online retailer
+Campmor	campmor.com	medium	Sports, Fitness & Outdoor	Online retailer
+Sierra Trading Post	sierra.com	medium	Sports, Fitness & Outdoor	Duplicate
+Patagonia	patagonia.com	large	Sports, Fitness & Outdoor	Brand
+The North Face	thenorthface.com	large	Sports, Fitness & Outdoor	Brand (VF Corp)
+Columbia Sportswear	columbia.com	large	Sports, Fitness & Outdoor	Brand; Fortune 1000
+Marmot	marmot.com	medium	Sports, Fitness & Outdoor	Brand
+Arc'teryx	arcteryx.com/us	large	Sports, Fitness & Outdoor	Global brand US storefront
+Black Diamond	blackdiamondequipment.com	medium	Sports, Fitness & Outdoor	Brand
+Osprey	osprey.com/us	medium	Bags & Luggage	Brand
+Yeti	yeti.com	large	Sports, Fitness & Outdoor	Brand
+Orvis	orvis.com	medium	Sports, Fitness & Outdoor	Brand
+L.L.Bean	llbean.com	large	Sports, Fitness & Outdoor	Brand
+Eddie Bauer	eddiebauer.com	medium	Sports, Fitness & Outdoor	Brand
+Duluth Trading	duluthtrading.com	medium	Fashion & Apparel	Brand
+Carhartt	carhartt.com	large	Fashion & Apparel	Brand
+Filson	filson.com	medium	Fashion & Apparel	Brand
+Fjällräven US	fjallraven.com/us	medium	Bags & Luggage	Global brand US storefront
+Cotopaxi	cotopaxi.com	medium	Sports, Fitness & Outdoor	DTC brand list
+Kühl	kuhl.com	medium	Sports, Fitness & Outdoor	Brand
+Smartwool	smartwool.com	medium	Fashion & Apparel	Brand
+Darn Tough	darntough.com	medium	Fashion & Apparel	Brand
+Rogue Fitness	roguefitness.com	medium	Sports, Fitness & Outdoor	Brand
+Peloton	onepeloton.com	large	Sports, Fitness & Outdoor	Brand
+NordicTrack	nordictrack.com	medium	Sports, Fitness & Outdoor	Brand
+Bowflex	bowflex.com	medium	Sports, Fitness & Outdoor	Brand
+Tonal	tonal.com	medium	Sports, Fitness & Outdoor	DTC brand list
+Hydrow	hydrow.com	medium	Sports, Fitness & Outdoor	DTC brand list
+Titan Fitness	titan.fitness	medium	Sports, Fitness & Outdoor	Online retailer
+Fitness Factory	fitnessfactory.com	medium	Sports, Fitness & Outdoor	Online retailer
+Golf Galaxy	golfgalaxy.com	medium	Sports, Fitness & Outdoor	Duplicate
+PGA TOUR Superstore	pgatoursuperstore.com	large	Sports, Fitness & Outdoor	Retail chain
+Golfsmith	golfsmith.com	medium	Sports, Fitness & Outdoor	Brand (defunct)
+TaylorMade	taylormadegolf.com	medium	Sports, Fitness & Outdoor	Brand
+Callaway Golf	callawaygolf.com	medium	Sports, Fitness & Outdoor	Brand
+Titleist	titleist.com	medium	Sports, Fitness & Outdoor	Brand
+Rawlings	rawlings.com	medium	Sports, Fitness & Outdoor	Brand
+Wilson	wilson.com/en-us	medium	Sports, Fitness & Outdoor	Brand
+Tennis Warehouse	tennis-warehouse.com	medium	Sports, Fitness & Outdoor	Online retailer
+JustBats	justbats.com	medium	Sports, Fitness & Outdoor	Online retailer
+Baseball Monkey	baseballmonkey.com	medium	Sports, Fitness & Outdoor	Online retailer
+SoccerPro	soccerpro.com	medium	Sports, Fitness & Outdoor	Online retailer
+Pure Hockey	purehockey.com	medium	Sports, Fitness & Outdoor	Retail chain
+Hockey Monkey	hockeymonkey.com	medium	Sports, Fitness & Outdoor	Online retailer
+Lacrosse Unlimited	lacrosseunlimited.com	medium	Sports, Fitness & Outdoor	Retail chain
+Tactics	tactics.com	medium	Sports, Fitness & Outdoor	Online retailer
+Zumiez	zumiez.com	large	Fashion - Activewear & Streetwear	Retail chain
+CCS	shop-ccs.com	medium	Sports, Fitness & Outdoor	Online retailer
+Fanatics	fanatics.com	huge	Sports, Fitness & Outdoor	Online retailer
+NFL Shop	nflshop.com	large	Sports, Fitness & Outdoor	Fanatics
+MLB Shop	mlbshop.com	large	Sports, Fitness & Outdoor	Fanatics
+NBA Store	store.nba.com	large	Sports, Fitness & Outdoor	Fanatics
+Lids	lids.com	large	Fashion & Apparel	Retail chain
+Rally House	rallyhouse.com	medium	Fashion & Apparel	Retail chain
+Trek Bikes	trekbikes.com/us/en_US	large	Bikes & Micromobility	Brand
+Specialized	specialized.com/us/en	large	Bikes & Micromobility	Brand
+Cannondale	cannondale.com/en-us	medium	Bikes & Micromobility	Brand
+Rad Power Bikes	radpowerbikes.com	medium	Bikes & Micromobility	DTC brand list
+Aventon	aventon.com	medium	Bikes & Micromobility	DTC brand list
+Lectric eBikes	lectricebikes.com	medium	Bikes & Micromobility	DTC brand list
+Jenson USA	jensonusa.com	medium	Bikes & Micromobility	Online retailer
+Competitive Cyclist	competitivecyclist.com	medium	Bikes & Micromobility	Online retailer
+Performance Bicycle	performancebike.com	medium	Bikes & Micromobility	Online retailer
+Segway US	store.segway.com	medium	Bikes & Micromobility	Global brand
+Nike US	nike.com	huge	Shoes	Brand; Fortune 500
+Adidas US	adidas.com/us	huge	Shoes	Global brand US storefront
+Under Armour	underarmour.com	large	Fashion - Activewear & Streetwear	Brand
+Lululemon US	shop.lululemon.com	huge	Fashion - Activewear & Streetwear	Global brand US storefront
+Puma US	us.puma.com	large	Shoes	Global brand US storefront
+New Balance	newbalance.com	large	Shoes	Brand
+Reebok	reebok.com	medium	Shoes	Brand
+Asics US	asics.com/us/en-us	large	Shoes	Global brand US storefront
+Brooks Running	brooksrunning.com	medium	Shoes	Brand
+Hoka	hoka.com/en/us	large	Shoes	Brand (Deckers)
+On Running US	on.com/en-us	large	Shoes	Global brand US storefront
+Saucony	saucony.com	medium	Shoes	Brand
+Skechers	skechers.com	large	Shoes	Brand
+Vans	vans.com	large	Shoes	Brand (VF Corp)
+Converse	converse.com	large	Shoes	Brand (Nike)
+Timberland	timberland.com	medium	Shoes	Brand
+UGG	ugg.com	large	Shoes	Brand (Deckers)
+Teva	teva.com	medium	Shoes	Brand (Deckers)
+Crocs	crocs.com	large	Shoes	Brand
+Dr. Martens US	drmartens.com/us	medium	Shoes	Global brand US storefront
+Birkenstock US	birkenstock.com/us	medium	Shoes	Global brand US storefront
+Clarks US	clarks.com/en-us	medium	Shoes	Global brand US storefront
+Steve Madden	stevemadden.com	large	Shoes	Brand
+Sam Edelman	samedelman.com	medium	Shoes	Brand
+Cole Haan	colehaan.com	medium	Shoes	Brand
+Allbirds	allbirds.com	medium	Shoes	DTC brand list
+Rothy's	rothys.com	medium	Shoes	DTC brand list
+Wolverine	wolverine.com	medium	Shoes	Brand
+Merrell	merrell.com	medium	Shoes	Brand
+Keen	keenfootwear.com	medium	Shoes	Brand
+Red Wing	redwingshoes.com	medium	Shoes	Brand
+Sperry	sperry.com	medium	Shoes	Brand
+Florsheim	florsheim.com	medium	Shoes	Brand
+Johnston & Murphy	johnstonmurphy.com	medium	Shoes	Brand
+Allen Edmonds	allenedmonds.com	medium	Shoes	Brand
+Naturalizer	naturalizer.com	medium	Shoes	Brand
+Famous Footwear	famousfootwear.com	large	Shoes	Retail chain
+DSW	dsw.com	large	Shoes	Retail chain
+Foot Locker	footlocker.com	huge	Shoes	NRF Top 100; Fortune 500
+Champs Sports	champssports.com	large	Shoes	Foot Locker
+Finish Line	finishline.com	large	Shoes	JD Sports
+JD Sports US	jdsports.com	large	Shoes	Global brand US storefront
+Shoe Carnival	shoecarnival.com	large	Shoes	Retail chain
+Shoe Show	shoeshowmega.com	medium	Shoes	Retail chain
+Rack Room Shoes	rackroomshoes.com	medium	Shoes	Retail chain
+Zappos	zappos.com	large	Shoes	Online retailer (Amazon)
+6pm	6pm.com	medium	Shoes	Online retailer (Amazon)
+Shoes.com	shoes.com	medium	Shoes	Online retailer
+Payless	payless.com	medium	Shoes	Brand
+Journeys	journeys.com	medium	Shoes	Retail chain
+Kith	kith.com	medium	Fashion - Activewear & Streetwear	Retailer
+Undefeated	undefeated.com	medium	Shoes	Retailer
+Concepts	cncpts.com	medium	Shoes	Retailer
+Flight Club	flightclub.com	medium	Shoes	Resale retailer (GOAT)
+Stadium Goods	stadiumgoods.com	medium	Shoes	Resale retailer
+Snipes USA	snipesusa.com	medium	Shoes	Retail chain
+Villa	ruvilla.com	medium	Shoes	Retail chain
+Shoe Palace	shoepalace.com	medium	Shoes	Retail chain
+American Eagle	ae.com	large	Fashion & Apparel	NRF Top 100
+Aerie	ae.com/us/en/c/aerie	medium	Fashion - Women	American Eagle
+Abercrombie & Fitch	abercrombie.com	large	Fashion & Apparel	Fortune 500
+Hollister	hollisterco.com	large	Fashion & Apparel	Abercrombie & Fitch
+Urban Outfitters	urbanoutfitters.com	large	Fashion & Apparel	NRF Top 100
+Anthropologie	anthropologie.com	large	Fashion - Women	Urban Outfitters Inc.
+Free People	freepeople.com	large	Fashion - Women	Urban Outfitters Inc.
+Nuuly	nuuly.com	medium	Fashion & Apparel	Rental (service)
+J.Crew	jcrew.com	large	Fashion & Apparel	Brand
+Madewell	madewell.com	large	Fashion & Apparel	J.Crew Group
+J.Crew Factory	factory.jcrew.com	medium	Fashion & Apparel	J.Crew Group
+Express	express.com	large	Fashion & Apparel	Retail chain
+Ann Taylor	anntaylor.com	large	Fashion - Women	Retail chain
+LOFT	loft.com	large	Fashion - Women	Retail chain
+Lane Bryant	lanebryant.com	large	Fashion - Women	Retail chain
+Torrid	torrid.com	large	Fashion - Women	Retail chain
+Chico's	chicos.com	large	Fashion - Women	Retail chain
+White House Black Market	whbm.com	medium	Fashion - Women	Chico's FAS
+Soma	soma.com	medium	Fashion - Women	Chico's FAS
+Talbots	talbots.com	medium	Fashion - Women	Retail chain
+Coldwater Creek	coldwatercreek.com	medium	Fashion - Women	Brand
+J.Jill	jjill.com	medium	Fashion - Women	Retail chain
+Christopher & Banks	christopherandbanks.com	medium	Fashion - Women	Brand
+Maurices	maurices.com	medium	Fashion - Women	Retail chain
+Catherines	catherines.com	medium	Fashion - Women	Brand
+Avenue	avenue.com	medium	Fashion - Women	Brand
+Ashley Stewart	ashleystewart.com	medium	Fashion - Women	Retail chain
+Eloquii	eloquii.com	medium	Fashion - Women	Brand
+Universal Standard	universalstandard.com	medium	Fashion - Women	DTC brand list
+Dress Barn	dressbarn.com	medium	Fashion - Women	Brand (online-only)
+Cato	catofashions.com	medium	Fashion - Women	Retail chain
+Rainbow Shops	rainbowshops.com	medium	Fashion - Women	Retail chain
+Charlotte Russe	charlotterusse.com	medium	Fashion - Women	Retail chain
+Windsor	windsorstore.com	medium	Fashion - Women	Retail chain
+Forever 21	forever21.com	large	Fashion & Apparel	Retail chain
+Hot Topic	hottopic.com	large	Fashion & Apparel	Retail chain
+BoxLunch	boxlunch.com	medium	Fashion & Apparel	Hot Topic Inc.
+Tilly's	tillys.com	medium	Fashion & Apparel	Retail chain
+PacSun	pacsun.com	large	Fashion & Apparel	Retail chain
+Aéropostale	aeropostale.com	medium	Fashion & Apparel	Retail chain
+Buckle	buckle.com	medium	Fashion & Apparel	Retail chain
+Garage	garageclothing.com/us	medium	Fashion - Women	Global brand US storefront
+Francesca's	francescas.com	medium	Fashion - Women	Retail chain
+Altar'd State	altardstate.com	medium	Fashion - Women	Retail chain
+Lulus	lulus.com	medium	Fashion - Women	Online retailer
+Revolve	revolve.com	large	Fashion & Apparel	Online retailer
+FWRD	fwrd.com	medium	Fashion & Apparel	Online retailer (Revolve)
+Fashion Nova	fashionnova.com	large	Fashion & Apparel	Online retailer
+Princess Polly US	us.princesspolly.com	medium	Fashion - Women	Global brand US storefront
+Showpo US	showpo.com/us	medium	Fashion - Women	Global brand US storefront
+Hello Molly US	hellomolly.com	medium	Fashion - Women	Global brand
+White Fox Boutique US	whitefoxboutique.com	medium	Fashion - Women	Global brand
+Edikted	edikted.com	medium	Fashion - Women	DTC brand list
+Meshki US	meshki.us	medium	Fashion - Women	Global brand US storefront
+Oh Polly US	ohpolly.com	medium	Fashion - Women	Global brand
+PrettyLittleThing US	prettylittlething.us	medium	Fashion - Women	Global brand US storefront
+Boohoo US	us.boohoo.com	medium	Fashion & Apparel	Global brand US storefront
+boohooMAN US	us.boohooman.com	medium	Fashion - Men	Global brand US storefront
+Nasty Gal US	nastygal.com/us	medium	Fashion - Women	Global brand US storefront
+ASOS US	asos.com/us	large	Fashion & Apparel	Global brand US storefront
+Shein US	us.shein.com	huge	Fashion & Apparel	Global brand US storefront
+Zara US	zara.com/us	huge	Fashion & Apparel	Global brand US storefront
+H&M US	hm.com/en_us	huge	Fashion & Apparel	Global brand US storefront
+Uniqlo US	uniqlo.com/us	large	Fashion & Apparel	Global brand US storefront
+Mango US	shop.mango.com/us	medium	Fashion & Apparel	Global brand US storefront
+Massimo Dutti US	massimodutti.com/us	medium	Fashion & Apparel	Global brand US storefront
+Bershka US	bershka.com/us	medium	Fashion & Apparel	Global brand US storefront
+Pull&Bear US	pullandbear.com/us	medium	Fashion & Apparel	Global brand US storefront
+COS US	cos.com/en-us	medium	Fashion & Apparel	Global brand US storefront
+& Other Stories US	stories.com/en-us	medium	Fashion - Women	Global brand US storefront
+Arket US	arket.com/en-us	medium	Fashion & Apparel	Global brand US storefront
+Reformation	thereformation.com	medium	Fashion - Women	DTC brand list
+Everlane	everlane.com	medium	Fashion & Apparel	DTC brand list
+Quince	quince.com	large	Fashion & Apparel	DTC brand list
+Aritzia US	aritzia.com/us	medium	Fashion - Women	Global brand US storefront
+Abercrombie Kids	abercrombie.com	medium	Fashion - Kids	Duplicate
+Carter's	carters.com	large	Fashion - Kids	Brand
+OshKosh B'gosh	oshkosh.com	medium	Fashion - Kids	Carter's
+The Children's Place	childrensplace.com	large	Fashion - Kids	Retail chain
+Gymboree	gymboree.com	medium	Fashion - Kids	Brand
+Janie and Jack	janieandjack.com	medium	Fashion - Kids	Brand
+Hanna Andersson	hannaandersson.com	medium	Fashion - Kids	Brand
+Primary	primary.com	medium	Fashion - Kids	DTC brand list
+Tea Collection	teacollection.com	medium	Fashion - Kids	DTC brand list
+Burt's Bees Baby	burtsbeesbaby.com	medium	Baby & Maternity	Brand
+Kickee Pants	kickeepants.com	medium	Fashion - Kids	DTC brand list
+Little Sleepies	littlesleepies.com	medium	Fashion - Kids	DTC brand list
+buybuy BABY	buybuybaby.com	large	Baby & Maternity	Retail chain
+Babylist	babylist.com	medium	Baby & Maternity	Registry retailer
+Pottery Barn Kids	potterybarnkids.com	medium	Baby & Maternity	Duplicate
+Motherhood Maternity	motherhood.com	medium	Baby & Maternity	Retail chain
+Seraphine US	seraphine.com/en-us	medium	Baby & Maternity	Global brand US storefront
+Ingrid & Isabel	ingridandisabel.com	medium	Baby & Maternity	Brand
+UPPAbaby	uppababy.com	medium	Baby & Maternity	Brand
+Graco	gracobaby.com	medium	Baby & Maternity	Brand
+Owlet	owletcare.com	medium	Baby & Maternity	Brand
+Hatch	hatch.co	medium	Baby & Maternity	DTC brand list
+Lovevery	lovevery.com	medium	Toys & Hobbies	DTC brand list
+Honest Company	honest.com	medium	Baby & Maternity	DTC brand list
+Hello Bello	hellobello.com	medium	Baby & Maternity	DTC brand list
+Coterie	coterie.com	medium	Baby & Maternity	DTC brand list
+Ralph Lauren	ralphlauren.com	large	Fashion & Apparel	Brand; Fortune 500
+Tommy Hilfiger US	usa.tommy.com	large	Fashion & Apparel	Global brand US storefront
+Calvin Klein US	calvinklein.us	large	Fashion & Apparel	Global brand US storefront
+Levi's	levi.com	large	Fashion & Apparel	Brand
+Wrangler	wrangler.com	medium	Fashion & Apparel	Brand (Kontoor)
+Lee	lee.com	medium	Fashion & Apparel	Brand (Kontoor)
+Guess	guess.com/us	large	Fashion & Apparel	Brand
+Lucky Brand	luckybrand.com	medium	Fashion & Apparel	Brand
+True Religion	truereligion.com	medium	Fashion & Apparel	Brand
+7 For All Mankind	7forallmankind.com	medium	Fashion & Apparel	Brand
+AG Jeans	agjeans.com	medium	Fashion & Apparel	Brand
+Hudson Jeans	hudsonjeans.com	medium	Fashion & Apparel	Brand
+DL1961	dl1961.com	medium	Fashion & Apparel	Brand
+Frame	frame-store.com	medium	Fashion & Apparel	Brand
+Mother Denim	motherdenim.com	medium	Fashion & Apparel	Brand
+Citizens of Humanity	citizensofhumanity.com	medium	Fashion & Apparel	Brand
+Good American	goodamerican.com	medium	Fashion - Women	DTC brand list
+Banana Republic Factory	bananarepublicfactory.gapfactory.com	medium	Fashion & Apparel	Gap Inc.
+Gap Factory	gapfactory.com	medium	Fashion & Apparel	Gap Inc.
+Brooks Brothers	brooksbrothers.com	medium	Fashion - Men	Brand
+Jos. A. Bank	josbank.com	medium	Fashion - Men	Retail chain
+Men's Wearhouse	menswearhouse.com	large	Fashion - Men	Retail chain
+Bonobos	bonobos.com	medium	Fashion - Men	DTC brand list
+Indochino	indochino.com	medium	Fashion - Men	DTC brand list
+SuitSupply US	suitsupply.com/en-us	medium	Fashion - Men	Global brand US storefront
+Vineyard Vines	vineyardvines.com	medium	Fashion & Apparel	Brand
+Southern Tide	southerntide.com	medium	Fashion & Apparel	Brand
+Peter Millar	petermillar.com	medium	Fashion - Men	Brand
+Johnnie-O	johnnie-o.com	medium	Fashion - Men	Brand
+Faherty	fahertybrand.com	medium	Fashion & Apparel	DTC brand list
+Todd Snyder	toddsnyder.com	medium	Fashion - Men	Brand
+Mack Weldon	mackweldon.com	medium	Fashion - Men	DTC brand list
+Chubbies	chubbiesshorts.com	medium	Fashion - Men	DTC brand list
+Rhone	rhone.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Vuori	vuoriclothing.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Outdoor Voices	outdoorvoices.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Alo Yoga	aloyoga.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Gymshark US	gymshark.com	medium	Fashion - Activewear & Streetwear	Global brand
+Fabletics	fabletics.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Savage X Fenty	savagex.com	medium	Fashion - Women	DTC brand list
+Skims	skims.com	medium	Fashion - Women	DTC brand list
+Spanx	spanx.com	medium	Fashion - Women	Brand
+Hanes	hanes.com	medium	Fashion & Apparel	Brand
+Champion	champion.com	medium	Fashion - Activewear & Streetwear	Brand
+Fruit of the Loom	fruit.com	medium	Fashion & Apparel	Brand
+Jockey	jockey.com	medium	Fashion & Apparel	Brand
+Gildan	gildan.com	medium	Fashion & Apparel	Brand
+Bombas	bombas.com	medium	Fashion & Apparel	DTC brand list
+Stance	stance.com	medium	Fashion & Apparel	Brand
+Third Love	thirdlove.com	medium	Fashion - Women	DTC brand list
+Adore Me	adoreme.com	medium	Fashion - Women	DTC brand list
+Frederick's of Hollywood	fredericks.com	medium	Fashion - Women	Brand
+Cacique	lanebryant.com	medium	Fashion - Women	Duplicate
+Andie Swim	andieswim.com	medium	Fashion - Women	DTC brand list
+Summersalt	summersalt.com	medium	Fashion - Women	DTC brand list
+Swimsuits For All	swimsuitsforall.com	medium	Fashion - Women	Online retailer
+Lands' End	landsend.com	large	Fashion & Apparel	Brand
+Talbots	talbots.com	medium	Fashion - Women	Duplicate
+Coach	coach.com	large	Bags & Luggage	Brand (Tapestry)
+Coach Outlet	coachoutlet.com	medium	Bags & Luggage	Tapestry
+Kate Spade	katespade.com	large	Bags & Luggage	Brand (Tapestry)
+Kate Spade Outlet	katespadeoutlet.com	medium	Bags & Luggage	Tapestry
+Michael Kors US	michaelkors.com	large	Bags & Luggage	Brand (Capri)
+Tory Burch	toryburch.com	medium	Bags & Luggage	Brand
+Vera Bradley	verabradley.com	medium	Bags & Luggage	Brand
+Fossil	fossil.com/en-us	medium	Jewelry & Watches	Brand
+Dooney & Bourke	dooney.com	medium	Bags & Luggage	Brand
+Samsonite	shop.samsonite.com	medium	Bags & Luggage	Brand
+Tumi	tumi.com	medium	Bags & Luggage	Brand
+Away	awaytravel.com	medium	Bags & Luggage	DTC brand list
+Monos	monos.com	medium	Bags & Luggage	DTC brand list
+Herschel Supply US	herschel.com	medium	Bags & Luggage	Global brand
+JanSport	jansport.com	medium	Bags & Luggage	Brand
+Travelpro	travelpro.com	medium	Bags & Luggage	Brand
+Briggs & Riley	briggs-riley.com	medium	Bags & Luggage	Brand
+eBags	ebags.com	medium	Bags & Luggage	Online retailer
+Luggage Pros	luggagepros.com	medium	Bags & Luggage	Online retailer
+Calpak	calpaktravel.com	medium	Bags & Luggage	DTC brand list
+Béis	beistravel.com	medium	Bags & Luggage	DTC brand list
+Louis Vuitton US	us.louisvuitton.com	large	Bags & Luggage	Global brand US storefront
+Gucci US	gucci.com/us	large	Fashion & Apparel	Global brand US storefront
+Prada US	prada.com/us	medium	Fashion & Apparel	Global brand US storefront
+Burberry US	us.burberry.com	medium	Fashion & Apparel	Global brand US storefront
+Chanel US	chanel.com/us	large	Fashion & Apparel	Global brand US storefront
+Dior US	dior.com/en_us	large	Fashion & Apparel	Global brand US storefront
+Hermès US	hermes.com/us	large	Bags & Luggage	Global brand US storefront
+Saint Laurent US	ysl.com/en-us	medium	Fashion & Apparel	Global brand US storefront
+Balenciaga US	balenciaga.com/en-us	medium	Fashion & Apparel	Global brand US storefront
+Versace US	versace.com/us	medium	Fashion & Apparel	Global brand US storefront
+Givenchy US	givenchy.com/us	medium	Fashion & Apparel	Global brand US storefront
+Fendi US	fendi.com/us-en	medium	Fashion & Apparel	Global brand US storefront
+Valentino US	valentino.com/en-us	medium	Fashion & Apparel	Global brand US storefront
+Bottega Veneta US	bottegaveneta.com/en-us	medium	Bags & Luggage	Global brand US storefront
+Moncler US	moncler.com/en-us	medium	Fashion & Apparel	Global brand US storefront
+Canada Goose US	canadagoose.com/us	medium	Fashion & Apparel	Global brand US storefront
+Hugo Boss US	hugoboss.com/us	medium	Fashion & Apparel	Global brand US storefront
+Lacoste US	lacoste.com/us	medium	Fashion & Apparel	Global brand US storefront
+Diesel US	diesel.com/en-us	medium	Fashion & Apparel	Global brand US storefront
+Superdry US	superdry.com/us	medium	Fashion & Apparel	Global brand US storefront
+Ted Baker US	tedbaker.com/us	medium	Fashion & Apparel	Global brand US storefront
+AllSaints US	allsaints.com/us	medium	Fashion & Apparel	Global brand US storefront
+Barbour US	barbour.com/us	medium	Fashion & Apparel	Global brand US storefront
+Ralph Lauren Polo Factory	ralphlauren.com	medium	Fashion & Apparel	Duplicate
+Kenneth Cole	kennethcole.com	medium	Fashion & Apparel	Brand
+DKNY	dkny.com	medium	Fashion & Apparel	Brand
+Karl Lagerfeld US	karllagerfeld.com/us	medium	Fashion & Apparel	Global brand US storefront
+Marc Jacobs	marcjacobs.com	medium	Bags & Luggage	Brand
+Rebecca Minkoff	rebeccaminkoff.com	medium	Bags & Luggage	Brand
+Mansur Gavriel	mansurgavriel.com	medium	Bags & Luggage	Brand
+Cuyana	cuyana.com	medium	Bags & Luggage	DTC brand list
+Senreve	senreve.com	medium	Bags & Luggage	DTC brand list
+Telfar	telfar.net	medium	Bags & Luggage	Brand
+Tiffany & Co. US	tiffany.com	large	Jewelry & Watches	Brand
+Kay Jewelers	kay.com	large	Jewelry & Watches	Signet
+Zales	zales.com	large	Jewelry & Watches	Signet
+Jared	jared.com	large	Jewelry & Watches	Signet
+Blue Nile	bluenile.com	large	Jewelry & Watches	Signet
+James Allen	jamesallen.com	medium	Jewelry & Watches	Signet
+Helzberg Diamonds	helzberg.com	medium	Jewelry & Watches	Retail chain
+Brilliant Earth	brilliantearth.com	medium	Jewelry & Watches	DTC brand list
+Mejuri US	mejuri.com	medium	Jewelry & Watches	Global brand
+Kendra Scott	kendrascott.com	medium	Jewelry & Watches	Brand
+Pandora US	us.pandora.net	large	Jewelry & Watches	Global brand US storefront
+Alex and Ani	alexandani.com	medium	Jewelry & Watches	Brand
+David Yurman	davidyurman.com	medium	Jewelry & Watches	Brand
+Cartier US	cartier.com/en-us	medium	Jewelry & Watches	Global brand US storefront
+Swarovski US	swarovski.com/en-US	medium	Jewelry & Watches	Global brand US storefront
+Claire's	claires.com/us	medium	Jewelry & Watches	Retail chain
+Gorjana	gorjana.com	medium	Jewelry & Watches	DTC brand list
+BaubleBar	baublebar.com	medium	Jewelry & Watches	DTC brand list
+Ana Luisa	analuisa.com	medium	Jewelry & Watches	DTC brand list
+Monica Vinader US	monicavinader.com/us	medium	Jewelry & Watches	Global brand US storefront
+Ross-Simons	ross-simons.com	medium	Jewelry & Watches	Online retailer
+JTV	jtv.com	medium	Jewelry & Watches	Online retailer
+Shane Co.	shaneco.com	medium	Jewelry & Watches	Retail chain
+Ritani	ritani.com	medium	Jewelry & Watches	Online retailer
+Jomashop	jomashop.com	medium	Jewelry & Watches	Online retailer
+Ashford	ashford.com	medium	Jewelry & Watches	Online retailer
+Watches of Switzerland US	watchesofswitzerland.com	medium	Jewelry & Watches	Retail chain
+Timex	timex.com	medium	Jewelry & Watches	Brand
+Movado	movado.com	medium	Jewelry & Watches	Brand
+Citizen Watch US	citizenwatch.com/us	medium	Jewelry & Watches	Global brand US storefront
+Seiko US	seikousa.com	medium	Jewelry & Watches	Global brand US storefront
+Casio US	casio.com/us	medium	Jewelry & Watches	Global brand US storefront
+Invicta	invictastores.com	medium	Jewelry & Watches	Brand
+MVMT	mvmt.com	medium	Jewelry & Watches	DTC brand list
+Daniel Wellington US	danielwellington.com/us	medium	Jewelry & Watches	Global brand US storefront
+Estée Lauder	esteelauder.com	large	Beauty & Cosmetics	Brand
+Clinique	clinique.com	large	Beauty & Cosmetics	Estée Lauder
+MAC Cosmetics	maccosmetics.com	large	Beauty & Cosmetics	Estée Lauder
+Bobbi Brown	bobbibrowncosmetics.com	medium	Beauty & Cosmetics	Estée Lauder
+Origins	origins.com	medium	Beauty & Cosmetics	Estée Lauder
+Aveda	aveda.com	medium	Personal Care & Grooming	Estée Lauder
+Too Faced	toofaced.com	medium	Beauty & Cosmetics	Estée Lauder
+Smashbox	smashbox.com	medium	Beauty & Cosmetics	Estée Lauder
+Tom Ford Beauty	tomfordbeauty.com	medium	Beauty & Cosmetics	Estée Lauder
+Jo Malone US	jomalone.com	medium	Fragrance	Estée Lauder
+Le Labo	lelabofragrances.com	medium	Fragrance	Estée Lauder
+Lancôme US	lancome-usa.com	large	Beauty & Cosmetics	L'Oréal US storefront
+Kiehl's	kiehls.com	medium	Beauty & Cosmetics	L'Oréal
+Urban Decay	urbandecay.com	medium	Beauty & Cosmetics	L'Oréal
+NYX Professional Makeup	nyxcosmetics.com	medium	Beauty & Cosmetics	L'Oréal
+Maybelline	maybelline.com	medium	Beauty & Cosmetics	L'Oréal
+L'Oréal Paris US	lorealparisusa.com	medium	Beauty & Cosmetics	L'Oréal US storefront
+CeraVe	cerave.com	medium	Beauty & Cosmetics	L'Oréal
+La Roche-Posay US	laroche-posay.us	medium	Beauty & Cosmetics	L'Oréal US storefront
+SkinCeuticals	skinceuticals.com	medium	Beauty & Cosmetics	L'Oréal
+IT Cosmetics	itcosmetics.com	medium	Beauty & Cosmetics	L'Oréal
+Giorgio Armani Beauty US	giorgioarmanibeauty-usa.com	medium	Beauty & Cosmetics	L'Oréal US storefront
+YSL Beauty US	yslbeautyus.com	medium	Beauty & Cosmetics	L'Oréal US storefront
+Shiseido US	shiseido.com/us/en	medium	Beauty & Cosmetics	Global brand US storefront
+Clarins US	clarinsusa.com	medium	Beauty & Cosmetics	Global brand US storefront
+Dior Beauty	dior.com/en_us/beauty	medium	Beauty & Cosmetics	Duplicate
+Charlotte Tilbury US	charlottetilbury.com/us	medium	Beauty & Cosmetics	Global brand US storefront
+Fenty Beauty	fentybeauty.com	medium	Beauty & Cosmetics	Brand
+Rare Beauty	rarebeauty.com	medium	Beauty & Cosmetics	Brand
+Glossier	glossier.com	medium	Beauty & Cosmetics	DTC brand list
+Kylie Cosmetics	kyliecosmetics.com	medium	Beauty & Cosmetics	Brand
+Huda Beauty	hudabeauty.com	medium	Beauty & Cosmetics	Global brand
+Anastasia Beverly Hills	anastasiabeverlyhills.com	medium	Beauty & Cosmetics	Brand
+Benefit Cosmetics	benefitcosmetics.com/en-us	medium	Beauty & Cosmetics	Brand
+Tarte	tartecosmetics.com	medium	Beauty & Cosmetics	Brand
+e.l.f. Cosmetics	elfcosmetics.com	medium	Beauty & Cosmetics	Brand
+ColourPop	colourpop.com	medium	Beauty & Cosmetics	DTC brand list
+Morphe	morphe.com	medium	Beauty & Cosmetics	Brand
+Milani	milanicosmetics.com	medium	Beauty & Cosmetics	Brand
+Revlon	revlon.com	medium	Beauty & Cosmetics	Brand
+Covergirl	covergirl.com	medium	Beauty & Cosmetics	Brand
+Laura Mercier	lauramercier.com	medium	Beauty & Cosmetics	Brand
+NARS	narscosmetics.com	medium	Beauty & Cosmetics	Brand
+Laneige US	us.laneige.com	medium	Beauty & Cosmetics	Global brand US storefront
+Drunk Elephant	drunkelephant.com	medium	Beauty & Cosmetics	Brand
+Tatcha	tatcha.com	medium	Beauty & Cosmetics	Brand
+Sunday Riley	sundayriley.com	medium	Beauty & Cosmetics	Brand
+Summer Fridays	summerfridays.com	medium	Beauty & Cosmetics	DTC brand list
+The Ordinary US	theordinary.com/en-us	medium	Beauty & Cosmetics	Global brand US storefront
+Paula's Choice	paulaschoice.com	medium	Beauty & Cosmetics	Brand
+Murad	murad.com	medium	Beauty & Cosmetics	Brand
+Dermalogica	dermalogica.com	medium	Beauty & Cosmetics	Brand
+Peter Thomas Roth	peterthomasroth.com	medium	Beauty & Cosmetics	Brand
+First Aid Beauty	firstaidbeauty.com	medium	Beauty & Cosmetics	Brand
+Olaplex	olaplex.com	medium	Personal Care & Grooming	Brand
+Briogeo	briogeohair.com	medium	Personal Care & Grooming	DTC brand list
+Function of Beauty	functionofbeauty.com	medium	Personal Care & Grooming	DTC brand list
+Prose	prose.com	medium	Personal Care & Grooming	DTC brand list
+Ouai	theouai.com	medium	Personal Care & Grooming	DTC brand list
+Bumble and bumble	bumbleandbumble.com	medium	Personal Care & Grooming	Estée Lauder
+Living Proof	livingproof.com	medium	Personal Care & Grooming	Brand
+Sally Beauty	sallybeauty.com	large	Beauty & Cosmetics	Retail chain
+CosmoProf	cosmoprofbeauty.com	medium	Beauty & Cosmetics	B2B retailer
+Dermstore	dermstore.com	medium	Beauty & Cosmetics	Online retailer
+Beautylish	beautylish.com	medium	Beauty & Cosmetics	Online retailer
+SkinStore	skinstore.com	medium	Beauty & Cosmetics	Online retailer
+Bluemercury	bluemercury.com	medium	Beauty & Cosmetics	Retail chain (Macy's)
+Space NK US	spacenk.com/us	medium	Beauty & Cosmetics	Global brand US storefront
+Credo Beauty	credobeauty.com	medium	Beauty & Cosmetics	Retailer
+Ipsy	ipsy.com	medium	Beauty & Cosmetics	Subscription box
+Birchbox	birchbox.com	medium	Beauty & Cosmetics	Subscription box
+FabFitFun	fabfitfun.com	medium	Beauty & Cosmetics	Subscription box
+Lush US	lush.com/us/en_us	medium	Personal Care & Grooming	Global brand US storefront
+The Body Shop US	thebodyshop.com/en-us	medium	Personal Care & Grooming	Global brand US storefront
+L'Occitane US	usa.loccitane.com	medium	Personal Care & Grooming	Global brand US storefront
+Kiehl's	kiehls.com	medium	Beauty & Cosmetics	Duplicate
+Sol de Janeiro	soldejaneiro.com	medium	Personal Care & Grooming	Brand
+Native	nativecos.com	medium	Personal Care & Grooming	DTC brand list
+Dr. Squatch	drsquatch.com	medium	Personal Care & Grooming	DTC brand list
+Harry's	harrys.com	medium	Personal Care & Grooming	DTC brand list
+Dollar Shave Club	dollarshaveclub.com	medium	Personal Care & Grooming	DTC brand list
+Manscaped	manscaped.com	medium	Personal Care & Grooming	DTC brand list
+Billie	mybillie.com	medium	Personal Care & Grooming	DTC brand list
+Gillette	gillette.com	medium	Personal Care & Grooming	Brand
+Quip	getquip.com	medium	Personal Care & Grooming	DTC brand list
+Hims & Hers	forhims.com	medium	Personal Care & Grooming	Duplicate
+Philips US	usa.philips.com	medium	Personal Care & Grooming	Global brand US storefront
+Braun US	braun.com/en-us	medium	Personal Care & Grooming	Global brand US storefront
+Oral-B	oralb.com	medium	Personal Care & Grooming	Brand
+Bath & Body Works	bathandbodyworks.com	medium	Personal Care & Grooming	Duplicate
+Yankee Candle	yankeecandle.com	medium	Home Decor	Brand
+Bath & Body Works White Barn	bathandbodyworks.com	medium	Home Decor	Duplicate
+Voluspa	voluspa.com	medium	Home Decor	Brand
+Homesick	homesick.com	medium	Home Decor	DTC brand list
+Diptyque US	diptyqueparis.com/en_us	medium	Fragrance	Global brand US storefront
+Byredo US	byredo.com/us_en	medium	Fragrance	Global brand US storefront
+Maison Francis Kurkdjian US	franciskurkdjian.com/us-en	medium	Fragrance	Global brand US storefront
+Creed US	creedboutique.com	medium	Fragrance	Global brand US storefront
+Fragrancenet	fragrancenet.com	medium	Fragrance	Online retailer
+FragranceX	fragrancex.com	medium	Fragrance	Online retailer
+Perfumania	perfumania.com	medium	Fragrance	Retail chain
+Scentbird	scentbird.com	medium	Fragrance	Subscription
+Phlur	phlur.com	medium	Fragrance	DTC brand list
+Snif	snif.co	medium	Fragrance	DTC brand list
+Toys"R"Us	toysrus.com	large	Toys & Hobbies	Brand (now online via Macy's)
+LEGO US	lego.com/en-us	huge	Toys & Hobbies	Global brand US storefront
+Mattel Shop	shop.mattel.com	large	Toys & Hobbies	Brand
+Hasbro Pulse	hasbropulse.com	medium	Toys & Hobbies	Brand
+Build-A-Bear	buildabear.com	medium	Toys & Hobbies	Retail chain
+American Girl	americangirl.com	medium	Toys & Hobbies	Brand
+FAO Schwarz	faoschwarz.com	medium	Toys & Hobbies	Brand
+Melissa & Doug	melissaanddoug.com	medium	Toys & Hobbies	Brand
+Fat Brain Toys	fatbraintoys.com	medium	Toys & Hobbies	Online retailer
+Learning Express	learningexpress.com	medium	Toys & Hobbies	Retail chain
+Barnes & Noble	barnesandnoble.com	huge	Books, Media & Stationery	NRF Top 100
+Books-A-Million	booksamillion.com	large	Books, Media & Stationery	Retail chain
+Half Price Books	hpb.com	medium	Books, Media & Stationery	Retail chain
+Powell's Books	powells.com	medium	Books, Media & Stationery	Independent retailer
+Bookshop.org	bookshop.org	medium	Books, Media & Stationery	Online retailer
+ThriftBooks	thriftbooks.com	medium	Books, Media & Stationery	Online retailer
+Better World Books	betterworldbooks.com	medium	Books, Media & Stationery	Online retailer
+Christianbook	christianbook.com	medium	Religious & Spiritual	Online retailer
+Lifeway	lifeway.com	medium	Religious & Spiritual	Retailer
+Deseret Book	deseretbook.com	medium	Religious & Spiritual	Retailer
+Hallmark	hallmark.com	medium	Books, Media & Stationery	Brand
+Papyrus	papyrusonline.com	medium	Books, Media & Stationery	Brand
+Paper Source	papersource.com	medium	Books, Media & Stationery	Retail chain
+Erin Condren	erincondren.com	medium	Books, Media & Stationery	DTC brand list
+Moleskine US	us.moleskine.com	medium	Books, Media & Stationery	Global brand US storefront
+Blick Art Materials	dickblick.com	large	Arts, Crafts & Sewing	Retailer
+Jerry's Artarama	jerrysartarama.com	medium	Arts, Crafts & Sewing	Retailer
+Cricut	cricut.com/en-us	medium	Arts, Crafts & Sewing	Brand
+Oriental Trading	orientaltrading.com	large	Party, Costumes & Seasonal	Online retailer
+Party City	partycity.com	large	Party, Costumes & Seasonal	Retail chain (closed 2025)
+Spirit Halloween	spirithalloween.com	medium	Party, Costumes & Seasonal	Retail chain
+HalloweenCostumes.com	halloweencostumes.com	medium	Party, Costumes & Seasonal	Online retailer
+Fun.com	fun.com	medium	Party, Costumes & Seasonal	Online retailer
+Mardel	mardel.com	medium	Religious & Spiritual	Retail chain
+Craft Warehouse	craftwarehouse.com	medium	Arts, Crafts & Sewing	Regional retailer
+Fabric.com	fabric.com	medium	Arts, Crafts & Sewing	Online retailer
+Mood Fabrics	moodfabrics.com	medium	Arts, Crafts & Sewing	Retailer
+Fat Quarter Shop	fatquartershop.com	medium	Arts, Crafts & Sewing	Online retailer
+LoveCrafts US	lovecrafts.com/en-us	medium	Arts, Crafts & Sewing	Global brand US storefront
+WeCrochet	crochet.com	medium	Arts, Crafts & Sewing	Online retailer
+Staples	staples.com	huge	Office & School Supplies	NRF Top 100
+Office Depot	officedepot.com	huge	Office & School Supplies	NRF Top 100
+Quill	quill.com	medium	Office & School Supplies	Staples
+W.B. Mason	wbmason.com	medium	Office & School Supplies	B2B supplier
+Vistaprint US	vistaprint.com	medium	Office & School Supplies	Print services (custom goods)
+Shutterfly	shutterfly.com	medium	Flowers, Gifts & Party	Custom photo products
+Things Remembered	thingsremembered.com	medium	Flowers, Gifts & Party	Online retailer
+Personalization Mall	personalizationmall.com	medium	Flowers, Gifts & Party	1-800-Flowers
+Uncommon Goods	uncommongoods.com	medium	Flowers, Gifts & Party	Online retailer
+Brookstone	brookstone.com	medium	Flowers, Gifts & Party	Brand
+Sharper Image	sharperimage.com	medium	Flowers, Gifts & Party	Brand
+Spencer's	spencersonline.com	medium	Flowers, Gifts & Party	Retail chain
+Hammacher Schlemmer	hammacher.com	medium	Flowers, Gifts & Party	Catalog retailer
+QVC	qvc.com	huge	Department Store / General Merchandise	NRF Top 100 (Qurate)
+HSN	hsn.com	large	Department Store / General Merchandise	Qurate
+Ballard Designs	ballarddesigns.com	medium	Home Decor	Qurate
+Frontgate	frontgate.com	medium	Furniture	Qurate
+Garnet Hill	garnethill.com	medium	Bedding & Bath	Qurate
+Grandin Road	grandinroad.com	medium	Home Decor	Qurate
+Zulily	zulily.com	medium	Department Store / General Merchandise	Online retailer (relaunched)
+Kmart	kmart.com	medium	Department Store / General Merchandise	Retail brand
+Sears	sears.com	medium	Department Store / General Merchandise	Retail brand
+Boscov's	boscovs.com	medium	Department Store / General Merchandise	Regional department store
+Von Maur	vonmaur.com	medium	Department Store / General Merchandise	Regional department store
+Bealls	beallsflorida.com	medium	Department Store / General Merchandise	Regional department store
+Gabe's	gabesstores.com	medium	Department Store / General Merchandise	Retail chain
+Century 21	c21stores.com	medium	Department Store / General Merchandise	Retail chain
+Tuesday Morning	tuesdaymorning.com	medium	Home Decor	Retail chain (closed)
+Bluestem (Fingerhut)	fingerhut.com	medium	Department Store / General Merchandise	Online retailer
+Blair	blair.com	medium	Fashion & Apparel	Catalog retailer
+Haband	haband.com	medium	Fashion & Apparel	Catalog retailer
+Woot	woot.com	medium	Department Store / General Merchandise	Online retailer (Amazon)
+Meh	meh.com	medium	Department Store / General Merchandise	Online retailer
+Ocean State Job Lot	oceanstatejoblot.com	medium	Department Store / General Merchandise	Regional retailer
+Fred's	fredsinc.com	medium	Department Store / General Merchandise	Defunct
+Duluth Pack	duluthpack.com	medium	Bags & Luggage	Brand
+Camping World	campingworld.com	large	Automotive Parts & Accessories	Retail chain; Fortune 500
+Pep Boys	pepboys.com	large	Automotive Parts & Accessories	Retail chain
+CarParts.com	carparts.com	medium	Automotive Parts & Accessories	Online retailer
+RockAuto	rockauto.com	large	Automotive Parts & Accessories	Online retailer
+Summit Racing	summitracing.com	large	Automotive Parts & Accessories	Online retailer
+JEGS	jegs.com	medium	Automotive Parts & Accessories	Online retailer
+4 Wheel Parts	4wheelparts.com	medium	Automotive Parts & Accessories	Retail chain
+ExtremeTerrain	extremeterrain.com	medium	Automotive Parts & Accessories	Online retailer
+AmericanMuscle	americanmuscle.com	medium	Automotive Parts & Accessories	Online retailer
+RealTruck	realtruck.com	medium	Automotive Parts & Accessories	Online retailer
+CARiD	carid.com	medium	Automotive Parts & Accessories	Online retailer
+1A Auto	1aauto.com	medium	Automotive Parts & Accessories	Online retailer
+Parts Geek	partsgeek.com	medium	Automotive Parts & Accessories	Online retailer
+LKQ Online	lkqonline.com	medium	Automotive Parts & Accessories	Online retailer
+Discount Tire	discounttire.com	large	Tires & Wheels	Retail chain
+Tire Rack	tirerack.com	large	Tires & Wheels	Online retailer
+SimpleTire	simpletire.com	medium	Tires & Wheels	Online retailer
+Priority Tire	prioritytire.com	medium	Tires & Wheels	Online retailer
+Les Schwab	lesschwab.com	medium	Tires & Wheels	Retail chain
+Big O Tires	bigotires.com	medium	Tires & Wheels	Retail chain
+Firestone Complete Auto Care	firestonecompleteautocare.com	medium	Tires & Wheels	Retail chain
+Goodyear	goodyear.com	medium	Tires & Wheels	Brand
+Chemical Guys	chemicalguys.com	medium	Automotive Parts & Accessories	Brand
+WeatherTech	weathertech.com	medium	Automotive Parts & Accessories	Brand
+RevZilla	revzilla.com	medium	Automotive Parts & Accessories	Online retailer
+Cycle Gear	cyclegear.com	medium	Automotive Parts & Accessories	Retail chain
+J&P Cycles	jpcycles.com	medium	Automotive Parts & Accessories	Online retailer
+Rocky Mountain ATV/MC	rockymountainatvmc.com	medium	Automotive Parts & Accessories	Online retailer
+West Marine	westmarine.com	medium	Automotive Parts & Accessories	Retail chain
+Defender Marine	defender.com	medium	Automotive Parts & Accessories	Online retailer
+Harley-Davidson	harley-davidson.com/us/en	medium	Automotive Parts & Accessories	Brand
+Brownells	brownells.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+MidwayUSA	midwayusa.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+Palmetto State Armory	palmettostatearmory.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+Cheaper Than Dirt	cheaperthandirt.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+Optics Planet	opticsplanet.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+Natchez Shooting Supplies	natchezss.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+Sportsman's Guide	sportsmansguide.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+Gander Outdoors	ganderoutdoors.com	medium	Sports, Fitness & Outdoor	Brand
+Vortex Optics	vortexoptics.com	medium	Hunting, Firearms Accessories & Tactical	Brand
+5.11 Tactical	511tactical.com	medium	Hunting, Firearms Accessories & Tactical	Brand
+Galls	galls.com	medium	Hunting, Firearms Accessories & Tactical	Retailer
+Tactical Distributors	tacticaldistributors.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+Lancaster Archery	lancasterarchery.com	medium	Hunting, Firearms Accessories & Tactical	Online retailer
+Tackle Warehouse	tacklewarehouse.com	medium	Sports, Fitness & Outdoor	Online retailer
+TackleDirect	tackledirect.com	medium	Sports, Fitness & Outdoor	Online retailer
+Ace Hardware	acehardware.com	medium	Home Improvement & Hardware	Duplicate
+Lumens	lumens.com	medium	Lighting & Electrical	Online retailer
+Lamps Plus	lampsplus.com	medium	Lighting & Electrical	Retail chain
+Bellacor	bellacor.com	medium	Lighting & Electrical	Online retailer
+Destination Lighting	destinationlighting.com	medium	Lighting & Electrical	Online retailer
+1000Bulbs	1000bulbs.com	medium	Lighting & Electrical	Online retailer
+Lightology	lightology.com	medium	Lighting & Electrical	Online retailer
+Shades of Light	shadesoflight.com	medium	Lighting & Electrical	Online retailer
+Schoolhouse	schoolhouse.com	medium	Lighting & Electrical	Brand
+YLighting	ylighting.com	medium	Lighting & Electrical	Online retailer
+Platt Electric Supply	platt.com	medium	Lighting & Electrical	B2B supplier
+Graybar	graybar.com	medium	Lighting & Electrical	B2B supplier
+DigiKey	digikey.com	large	Electronic Components	B2B distributor
+Mouser Electronics	mouser.com	large	Electronic Components	B2B distributor
+Arrow Electronics	arrow.com	large	Electronic Components	B2B distributor; Fortune 500
+Newark	newark.com	medium	Electronic Components	B2B distributor
+Jameco	jameco.com	medium	Electronic Components	Online retailer
+SparkFun	sparkfun.com	medium	Electronic Components	Online retailer
+Adafruit	adafruit.com	medium	Electronic Components	Online retailer
+Allied Electronics	alliedelec.com	medium	Electronic Components	B2B distributor
+Parts Express	parts-express.com	medium	Electronic Components	Online retailer
+Pololu	pololu.com	medium	Electronic Components	Online retailer
+Webstaurant Store	webstaurantstore.com	large	Industrial & Tools	B2B supplier
+KaTom	katom.com	medium	Industrial & Tools	B2B supplier
+Restaurant Depot	restaurantdepot.com	medium	Grocery & Food	B2B wholesale
+Sysco	sysco.com	large	Grocery & Food	B2B distributor; Fortune 500
+US Foods	usfoods.com	large	Grocery & Food	B2B distributor; Fortune 500
+Gordon Food Service	gfs.com	medium	Grocery & Food	B2B distributor
+Chef'Store	chefstore.com	medium	Grocery & Food	B2B wholesale
+Dollar Tree Wholesale	dollartree.com	medium	Department Store / General Merchandise	Duplicate
+Central Restaurant Products	centralrestaurant.com	medium	Industrial & Tools	B2B supplier
+CDW	cdw.com	large	Computers & Electronics	B2B reseller; Fortune 500
+Insight	insight.com	medium	Computers & Electronics	B2B reseller; Fortune 500
+Connection	connection.com	medium	Computers & Electronics	B2B reseller
+Zones	zones.com	medium	Computers & Electronics	B2B reseller
+Provantage	provantage.com	medium	Computers & Electronics	Online retailer
+TigerDirect	tigerdirect.com	medium	Computers & Electronics	Online retailer
+Discount School Supply	discountschoolsupply.com	medium	Office & School Supplies	Online retailer
+Lakeshore Learning	lakeshorelearning.com	medium	Toys & Hobbies	Retailer
+School Specialty	schoolspecialty.com	medium	Office & School Supplies	B2B supplier
+Really Good Stuff	reallygoodstuff.com	medium	Office & School Supplies	Online retailer
+Steelcase Store	store.steelcase.com	medium	Furniture	Brand
+Herman Miller	hermanmiller.com	medium	Furniture	Brand (MillerKnoll)
+Design Within Reach	dwr.com	medium	Furniture	MillerKnoll
+Knoll	knoll.com	medium	Furniture	MillerKnoll
+Branch Furniture	branchfurniture.com	medium	Furniture	DTC brand list
+Autonomous	autonomous.ai	medium	Furniture	DTC brand list
+Fully	fully.com	medium	Furniture	Brand
+Uplift Desk	upliftdesk.com	medium	Furniture	DTC brand list
+Secretlab US	secretlab.co/en-us	medium	Furniture	Global brand US storefront
+Serta	serta.com	medium	Bedding & Bath	Brand
+Tempur-Pedic	tempurpedic.com	medium	Bedding & Bath	Brand
+Sealy	sealy.com	medium	Bedding & Bath	Brand
+Beautyrest	beautyrest.com	medium	Bedding & Bath	Brand
+Helix Sleep	helixsleep.com	medium	Bedding & Bath	DTC brand list
+Leesa	leesa.com	medium	Bedding & Bath	DTC brand list
+Bear Mattress	bearmattress.com	medium	Bedding & Bath	DTC brand list
+Brentwood Home	brentwoodhome.com	medium	Bedding & Bath	DTC brand list
+Coop Sleep Goods	coopsleepgoods.com	medium	Bedding & Bath	DTC brand list
+Pillow Cube	pillowcube.com	medium	Bedding & Bath	DTC brand list
+Riley Home	rileyhome.com	medium	Bedding & Bath	DTC brand list
+Cozy Earth	cozyearth.com	medium	Bedding & Bath	DTC brand list
+Bedsure	bedsurehome.com	medium	Bedding & Bath	Brand
+Pottery Barn Teen	pbteen.com	medium	Furniture	Williams-Sonoma
+Serena & Lily	serenaandlily.com	medium	Furniture	Brand
+McGee & Co	mcgeeandco.com	medium	Home Decor	Brand
+Lulu and Georgia	luluandgeorgia.com	medium	Home Decor	Brand
+Rugs USA	rugsusa.com	medium	Home Decor	Online retailer
+Ruggable	ruggable.com	medium	Home Decor	DTC brand list
+Revival Rugs	revivalrugs.com	medium	Home Decor	DTC brand list
+Loloi	loloirugs.com	medium	Home Decor	Brand
+Society6	society6.com	medium	Marketplace	Print-on-demand marketplace
+Minted	minted.com	medium	Home Decor	Marketplace/brand
+Framebridge	framebridge.com	medium	Home Decor	DTC brand list
+Artifact Uprising	artifactuprising.com	medium	Home Decor	DTC brand list
+The Inside	theinside.com	medium	Furniture	DTC brand list
+Albany Park	albanypark.com	medium	Furniture	DTC brand list
+Castlery US	castlery.com/us	medium	Furniture	Global brand US storefront
+Living Spaces	livingspaces.com	medium	Furniture	Retail chain
+American Signature Furniture	americansignaturefurniture.com	medium	Furniture	Retail chain
+Value City Furniture	valuecityfurniture.com	medium	Furniture	Retail chain
+Badcock	badcock.com	medium	Furniture	Retail chain
+Art Van	artvan.com	medium	Furniture	Defunct
+Nebraska Furniture Mart	nfm.com	medium	Furniture	Retailer (Berkshire)
+Jordan's Furniture	jordans.com	medium	Furniture	Retailer (Berkshire)
+Gardner-White	gardner-white.com	medium	Furniture	Regional retailer
+Mathis Brothers	mathisbrothers.com	medium	Furniture	Regional retailer
+Slumberland	slumberland.com	medium	Furniture	Regional retailer
+Scandinavian Designs	scandinaviandesigns.com	medium	Furniture	Regional retailer
+Room & Board	roomandboard.com	medium	Furniture	Retailer
+Mitchell Gold + Bob Williams	mgbwhome.com	medium	Furniture	Brand
+Z Gallerie	zgallerie.com	medium	Home Decor	Retailer
+World Market	worldmarket.com	large	Home Decor	Retail chain
+Le Creuset US	lecreuset.com	medium	Kitchen & Dining	Global brand US storefront
+Sur La Table	surlatable.com	medium	Kitchen & Dining	Retail chain
+All-Clad	all-clad.com	medium	Kitchen & Dining	Brand
+Lodge Cast Iron	lodgecastiron.com	medium	Kitchen & Dining	Brand
+Caraway	carawayhome.com	medium	Kitchen & Dining	DTC brand list
+Made In Cookware	madeincookware.com	medium	Kitchen & Dining	DTC brand list
+Our Place	fromourplace.com	medium	Kitchen & Dining	DTC brand list
+HexClad	hexclad.com	medium	Kitchen & Dining	DTC brand list
+Great Jones	greatjonesgoods.com	medium	Kitchen & Dining	DTC brand list
+Misen	misen.com	medium	Kitchen & Dining	DTC brand list
+OXO	oxo.com	medium	Kitchen & Dining	Brand
+Pyrex	pyrexhome.com	medium	Kitchen & Dining	Brand
+Corelle	corelle.com	medium	Kitchen & Dining	Brand
+Lenox	lenox.com	medium	Kitchen & Dining	Brand
+Waterford US	waterford.com/en-us	medium	Kitchen & Dining	Global brand US storefront
+Fiesta Factory Direct	fiestafactorydirect.com	medium	Kitchen & Dining	Brand
+Stanley	stanley1913.com	medium	Kitchen & Dining	Brand
+Owala	owalalife.com	medium	Kitchen & Dining	Brand
+Contigo	gocontigo.com	medium	Kitchen & Dining	Brand
+Zwilling US	zwilling.com/us	medium	Kitchen & Dining	Global brand US storefront
+Cutco	cutco.com	medium	Kitchen & Dining	Brand
+Wüsthof US	wusthof.com	medium	Kitchen & Dining	Global brand
+Food52	food52.com	medium	Kitchen & Dining	Online retailer
+Crate & Kids	crateandbarrel.com	medium	Furniture	Duplicate
+Bed Bath & Beyond Canada	bedbathandbeyond.ca	medium	Bedding & Bath	Canada (non-US)
+Home Depot Canada	homedepot.ca	medium	Home Improvement & Hardware	Canada (non-US)
+Canadian Tire	canadiantire.ca	large	Department Store / General Merchandise	Canada (non-US)
+Hudson's Bay	thebay.com	large	Department Store / General Merchandise	Canada (non-US; closed 2025)
+Lowe's Canada	rona.ca	medium	Home Improvement & Hardware	Canada (non-US)
+Mark's	marks.com	medium	Fashion & Apparel	Canada (non-US)
+SportChek	sportchek.ca	medium	Sports, Fitness & Outdoor	Canada (non-US)
+Shoppers Drug Mart	shoppersdrugmart.ca	medium	Pharmacy & Medical Supplies	Canada (non-US)
+Wawa	wawa.com	large	Grocery & Food	Convenience (food service)
+7-Eleven	7-eleven.com	large	Grocery & Food	Convenience (delivery app)
+Casey's	caseys.com	large	Grocery & Food	Convenience (food service)
+Sheetz	sheetz.com	large	Grocery & Food	Convenience (food service)
+QuikTrip	quiktrip.com	large	Grocery & Food	Convenience
+Circle K	circlek.com	large	Grocery & Food	Convenience
+Murphy USA	murphyusa.com	large	Grocery & Food	Convenience; Fortune 500
+Speedway	speedway.com	large	Grocery & Food	Convenience
+Dunkin'	dunkindonuts.com	large	Coffee & Tea	Restaurant (excluded)
+Hy-Vee Aisles Online	hy-vee.com	medium	Grocery & Food	Duplicate
+ShopRite from Home	shoprite.com	medium	Grocery & Food	Duplicate
+Instacart	instacart.com	large	Marketplace	Aggregator
+DoorDash	doordash.com	large	Marketplace	Aggregator
+eBay	ebay.com	huge	Marketplace	Marketplace
+Etsy	etsy.com	huge	Marketplace	Marketplace
+Temu	temu.com	huge	Marketplace	Marketplace
+AliExpress	aliexpress.us	large	Marketplace	Marketplace
+Poshmark	poshmark.com	large	Marketplace	Marketplace
+Mercari	mercari.com	large	Marketplace	Marketplace
+Wish	wish.com	medium	Marketplace	Marketplace
+StockX	stockx.com	large	Marketplace	Marketplace
+GOAT	goat.com	large	Marketplace	Marketplace
+Reverb	reverb.com	medium	Marketplace	Marketplace
+Chairish	chairish.com	medium	Marketplace	Marketplace
+1stDibs	1stdibs.com	medium	Marketplace	Marketplace
+Farfetch	farfetch.com	large	Marketplace	Marketplace
+The RealReal	therealreal.com	large	Fashion & Apparel	Consignment retailer
+ThredUp	thredup.com	large	Fashion & Apparel	Resale retailer
+Rent the Runway	renttherunway.com	medium	Fashion & Apparel	Rental (service)
+Vestiaire Collective	vestiairecollective.com	medium	Marketplace	Marketplace
+Depop	depop.com	medium	Marketplace	Marketplace
+Grailed	grailed.com	medium	Marketplace	Marketplace
+Swappa	swappa.com	medium	Marketplace	Marketplace
+Net-a-Porter US	net-a-porter.com/en-us	large	Fashion & Apparel	Global retailer US storefront
+Mr Porter US	mrporter.com/en-us	medium	Fashion - Men	Global retailer US storefront
+Mytheresa US	mytheresa.com/us/en	medium	Fashion & Apparel	Global retailer US storefront
+SSENSE US	ssense.com/en-us	medium	Fashion & Apparel	Global retailer US storefront
+MatchesFashion	matchesfashion.com	medium	Fashion & Apparel	Defunct (2024)
+Shopbop	shopbop.com	large	Fashion & Apparel	Online retailer (Amazon)
+Moda Operandi	modaoperandi.com	medium	Fashion & Apparel	Online retailer
+Intermix	intermixonline.com	medium	Fashion - Women	Retail chain
+Bloomingdale's Outlet	bloomingdales.com	medium	Department Store / General Merchandise	Duplicate
+Hautelook	hautelook.com	medium	Fashion & Apparel	Defunct (Nordstrom Rack)
+Gilt	gilt.com	medium	Fashion & Apparel	Online retailer
+Rue La La	ruelala.com	medium	Fashion & Apparel	Online retailer
+Off Saks	saksoff5th.com	medium	Department Store / General Merchandise	Duplicate
+Stitch Fix	stitchfix.com	medium	Fashion & Apparel	Styling subscription retailer
+Trunk Club	trunkclub.com	medium	Fashion & Apparel	Defunct
+Tradesy	tradesy.com	medium	Marketplace	Defunct
+Kohl's Sephora	kohls.com	medium	Department Store / General Merchandise	Duplicate
+Belk Outlet	belk.com	medium	Department Store / General Merchandise	Duplicate
+Peapod	peapod.com	medium	Grocery & Food	Defunct (Stop & Shop)
+Shipt	shipt.com	medium	Marketplace	Aggregator
+Walmart Grocery	walmart.com	medium	Grocery & Food	Duplicate
+Target Circle	target.com	medium	Department Store / General Merchandise	Duplicate
+Dick's House of Sport	dickssportinggoods.com	medium	Sports, Fitness & Outdoor	Duplicate
+Shein Marketplace	shein.com	medium	Fashion & Apparel	Duplicate
+Halara	thehalara.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Cider	shopcider.com	medium	Fashion - Women	DTC brand list
+Cupshe	cupshe.com	medium	Fashion - Women	DTC brand list
+Zaful	zaful.com	medium	Fashion & Apparel	Cross-border retailer
+Romwe	romwe.com	medium	Fashion & Apparel	Cross-border retailer
+Lulu's	lulus.com	medium	Fashion - Women	Duplicate
+Petal & Pup US	petalandpup.com	medium	Fashion - Women	Global brand
+Baltic Born	balticborn.com	medium	Fashion - Women	DTC brand list
+Pink Lily	pinklily.com	medium	Fashion - Women	DTC brand list
+Shop Avara	avara.com	medium	Fashion - Women	DTC brand list
+Vici Collection	vicicollection.com	medium	Fashion - Women	DTC brand list
+Tuckernuck	tuckernuck.com	medium	Fashion - Women	DTC brand list
+Dynamite US	dynamiteclothing.com/us	medium	Fashion - Women	Global brand US storefront
+Evereve	evereve.com	medium	Fashion - Women	Retail chain
+Draper James	draperjames.com	medium	Fashion - Women	Brand
+Sezane US	sezane.com/us	medium	Fashion - Women	Global brand US storefront
+Rouje US	rouje.com/us	medium	Fashion - Women	Global brand US storefront
+Ganni US	ganni.com/us	medium	Fashion - Women	Global brand US storefront
+Staud	staud.clothing	medium	Fashion - Women	Brand
+Veronica Beard	veronicabeard.com	medium	Fashion - Women	Brand
+Theory	theory.com	medium	Fashion & Apparel	Brand
+Vince	vince.com	medium	Fashion & Apparel	Brand
+Rag & Bone	rag-bone.com	medium	Fashion & Apparel	Brand
+Club Monaco	clubmonaco.com	medium	Fashion & Apparel	Brand
+Equipment	equipmentfr.com	medium	Fashion - Women	Brand
+Joie	joie.com	medium	Fashion - Women	Brand
+Alice + Olivia	aliceandolivia.com	medium	Fashion - Women	Brand
+Diane von Furstenberg	dvf.com	medium	Fashion - Women	Brand
+Lilly Pulitzer	lillypulitzer.com	medium	Fashion - Women	Brand
+Johnny Was	johnnywas.com	medium	Fashion - Women	Brand
+Soft Surroundings	softsurroundings.com	medium	Fashion - Women	Brand
+Sundance Catalog	sundancecatalog.com	medium	Fashion & Apparel	Brand
+Boden US	bodenusa.com	medium	Fashion & Apparel	Global brand US storefront
+Toad&Co	toadandco.com	medium	Fashion & Apparel	Brand
+prAna	prana.com	medium	Fashion & Apparel	Brand
+Tommy Bahama	tommybahama.com	medium	Fashion & Apparel	Brand
+Psycho Bunny	psychobunny.com	medium	Fashion - Men	Brand
+Taylor Stitch	taylorstitch.com	medium	Fashion - Men	DTC brand list
+Buck Mason	buckmason.com	medium	Fashion - Men	DTC brand list
+Proper Cloth	propercloth.com	medium	Fashion - Men	DTC brand list
+Ministry of Supply	ministryofsupply.com	medium	Fashion - Men	DTC brand list
+Public Rec	publicrec.com	medium	Fashion - Men	DTC brand list
+True Classic	trueclassictees.com	medium	Fashion - Men	DTC brand list
+Fresh Clean Threads	freshcleanthreads.com	medium	Fashion - Men	DTC brand list
+Cuts Clothing	cutsclothing.com	medium	Fashion - Men	DTC brand list
+Ten Thousand	tenthousand.cc	medium	Fashion - Activewear & Streetwear	DTC brand list
+Tracksmith	tracksmith.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Janji	janji.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Oiselle	oiselle.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Girlfriend Collective	girlfriend.com	medium	Fashion - Activewear & Streetwear	DTC brand list
+Set Active	setactive.co	medium	Fashion - Activewear & Streetwear	DTC brand list
+Beyond Yoga	beyondyoga.com	medium	Fashion - Activewear & Streetwear	Brand
+Sweaty Betty US	sweatybetty.com/us	medium	Fashion - Activewear & Streetwear	Global brand US storefront
+Supreme	supremenewyork.com	medium	Fashion - Activewear & Streetwear	Brand
+Stüssy	stussy.com	medium	Fashion - Activewear & Streetwear	Brand
+Palace US	shop-usa.palaceskateboards.com	medium	Fashion - Activewear & Streetwear	Global brand US storefront
+Fear of God	fearofgod.com	medium	Fashion & Apparel	Brand
+Essentials	fearofgod.com	medium	Fashion & Apparel	Duplicate
+Off-White US	off---white.com/en-us	medium	Fashion & Apparel	Global brand US storefront
+BAPE US	us.bape.com	medium	Fashion - Activewear & Streetwear	Global brand US storefront
+Carhartt WIP US	carhartt-wip.com/en-us	medium	Fashion - Activewear & Streetwear	Global brand US storefront
+Obey	obeyclothing.com	medium	Fashion - Activewear & Streetwear	Brand
+HUF	hufworldwide.com	medium	Fashion - Activewear & Streetwear	Brand
+Brixton	brixton.com	medium	Fashion & Apparel	Brand
+Quiksilver	quiksilver.com	medium	Fashion & Apparel	Brand
+Billabong	billabong.com	medium	Fashion & Apparel	Brand
+Roxy	roxy.com	medium	Fashion - Women	Brand
+Volcom	volcom.com	medium	Fashion & Apparel	Brand
+Hurley	hurley.com	medium	Fashion & Apparel	Brand
+O'Neill	oneill.com	medium	Fashion & Apparel	Brand
+RVCA	rvca.com	medium	Fashion & Apparel	Brand
+Salty Crew	saltycrew.com	medium	Fashion & Apparel	Brand
+Vissla	vissla.com	medium	Fashion & Apparel	Brand
+Rip Curl US	ripcurl.com/us	medium	Fashion & Apparel	Global brand US storefront
+Oakley	oakley.com/en-us	medium	Eyewear	Duplicate
+Costa Del Mar	costadelmar.com	medium	Eyewear	Brand
+Maui Jim	mauijim.com	medium	Eyewear	Brand
+Goodr	goodr.com	medium	Eyewear	DTC brand list
+Knockaround	knockaround.com	medium	Eyewear	DTC brand list
+Diff Eyewear	diffeyewear.com	medium	Eyewear	DTC brand list
+Felix Gray	felixgray.com	medium	Eyewear	DTC brand list
+Pair Eyewear	paireyewear.com	medium	Eyewear	DTC brand list
+Liingo	liingoeyewear.com	medium	Eyewear	DTC brand list

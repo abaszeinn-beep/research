@@ -313,15 +313,13 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         elif st in (404, 402, 403) or st is None:
             pass
 
-    st, final, html, hdrs, err = await f.get(url)
-    if st is None and err == "connect_error" and url.startswith("https://"):
-        st, final, html, hdrs, err = await f.get("http://" + url[8:], tries=2)
+    st, final, html, hdrs, err = await f.get(url, tries=2)
     if st is None and err != "robots_disallowed":
         host = urlsplit(url).hostname
         alt = None
         if host and not host.startswith("www.") and cand.get("platform_hint") is None:
             alt = url.replace("://", "://www.", 1)
-        if alt and err != "timeout":
+        if alt and err not in ("timeout", "connect_error"):
             st, final, html, hdrs, err2 = await f.get(alt, tries=2)
             err = err if st is None else None
     res["http_status"] = st
@@ -545,7 +543,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if not (physical and physical >= 3) and len(saas_terms) >= 3 and len(saas_terms) > len(phys_terms):
         res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
         return done("rejected", f"saas_digital_or_media_site ({len(saas_terms)} SaaS/digital terms vs {len(phys_terms)} physical-goods terms: {', '.join(sorted(saas_terms)[:4])})")
-    if plat not in COMMERCE_PLATFORMS and not (physical and physical >= 1) and len(phys_terms) < 3:
+    strong_retail = (a["add_to_cart"] >= 5 and a["local_prices"] + a["any_prices"] >= 5) or bool(smp and smp.get("product_urls", 0) >= 50)
+    if plat not in COMMERCE_PLATFORMS and not (physical and physical >= 1) and len(phys_terms) < 3 and not strong_retail:
         res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
         return done("unverified", f"physical_goods_unclear (generic platform, {len(phys_terms)} physical-goods terms; manual review)")
 

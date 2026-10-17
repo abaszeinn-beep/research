@@ -1,4 +1,7 @@
-"""Dedup pass + Excel/CSV export of the directory."""
+"""Dedup pass + Excel/CSV export of the directory (market-parameterized).
+
+  python3 -m mktecom.export
+"""
 from __future__ import annotations
 
 import json
@@ -10,38 +13,36 @@ from urllib.parse import urlsplit
 import pandas as pd
 
 from . import db
-from .common import identity
-from .queries import NICHES, CITIES
-from .verify import SA_GEO
+from .common import identity, SHARED_SUBDOMAIN_PLATFORMS
+from .market import M, US_STATES
+from .verify import MARKET_GEO
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..")
-XLSX = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.xlsx")
-CSV = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.csv")
-REF_CSV = os.path.join(OUT_DIR, "data", "reference_universe.csv")
-# master directory as committed before the reference audit (commit 16cd9b5), to tell "already present" from "added"
-PREVIOUS_CSV = os.path.join(OUT_DIR, "data", "previous_master_16cd9b5.csv")
-
-PLATFORM_SHARED = {"salla.sa", "zid.store", "myshopify.com", "expandcart.com", "matjrah.store", "youcan.shop", "wuilt.com", "salla.store", "company.site", "wixsite.com"}
+BASE = f"{M.prefix}_Ecommerce_Master_Directory"
+XLSX = os.path.join(OUT_DIR, BASE + ".xlsx")
+CSV = os.path.join(OUT_DIR, BASE + ".csv")
+UNVERIFIED_CSV = os.path.join(OUT_DIR, "data", f"{M.prefix}_Unverified_Candidates.csv.gz")
+EVIDENCE_CSV = os.path.join(OUT_DIR, "data", f"{M.prefix}_Verification_Evidence.csv")
+REF_CSV = os.path.join(OUT_DIR, "data", f"{M.prefix}_reference_universe.csv")
+XLSX_ROW_CAP = 1_000_000
+UNVERIFIED_SHEET_CAP = 150_000
 
 
 def master_url(row):
-    final = row["final_url"] or row["url"]
+    final = row["final_url"] if isinstance(row["final_url"], str) and row["final_url"] else row["url"]
     ident = identity(final) or identity(row["url"])
-    if ident and ident["root_domain"] in PLATFORM_SHARED:
-        return ident["url"].rstrip("/")
-    if ident and "|" in ident["key"]:
-        return ident["url"]
-    sp = urlsplit(final)
-    host = sp.hostname or ident["root_domain"]
+    if not ident:
+        return final
+    if ident["root_domain"] in SHARED_SUBDOMAIN_PLATFORMS or "|" in ident["key"]:
+        return ident["url"].rstrip("/") + ("/" if "|" in ident["key"] else "")
+    host = urlsplit(final).hostname or ident["root_domain"]
     return f"https://{host}/"
 
 
 def clean_name(name, url):
-    n = (name or "").strip()
-    n = re.sub(r"\s+", " ", n)
-    n = n.strip(" \"'`“”‘’«»|-–—:،,.").strip()
-    n = re.sub(r"^(?:متجر|store)\s*[:\-|]\s*", "", n, flags=re.I)
-    if not n or n.startswith("salla.sa/") or len(n) < 2:
+    n = re.sub(r"\s+", " ", (name or "").strip())
+    n = n.strip(" \"'`“”‘’«»|-–—:,.").strip()
+    if not n or len(n) < 2:
         host = urlsplit(url).hostname or url
         n = host.replace("www.", "")
     return n[:120]
@@ -58,12 +59,7 @@ def json_obj(ev):
 
 
 def store_identity_ids(ev):
-    e = json_obj(ev)
-    if not e and not isinstance(ev, str):
-        return None
-    p = e.get("probe") or {}
-    if p.get("store_id"):
-        return f"salla_store_id:{p['store_id']}"
+    p = json_obj(ev).get("probe") or {}
     if p.get("myshopify_domain"):
         return f"shopify:{p['myshopify_domain']}"
     return None
@@ -77,15 +73,11 @@ def dedup(con):
     for key, fkey, furl, ev, url, ph in rows:
         gid = store_identity_ids(ev) or fkey or key
         groups[gid].append((key, fkey, furl, url, ph))
-    # second-level union: final_key groups that share a store id
     rep_of = {}
     for gid, members in groups.items():
-        # prefer the member whose key equals the final key (custom domain), then non-platform keys
-        members.sort(key=lambda m: (not SA_GEO.search(m[2] or ""), m[0] != m[1], m[4] is not None, len(m[0])))
-        rep = members[0][0]
+        members.sort(key=lambda m: (not MARKET_GEO.search(m[2] or ""), m[0] != m[1], m[4] is not None, len(m[0])))
         for m in members:
-            rep_of[m[0]] = rep
-    # final-key collisions across different gids
+            rep_of[m[0]] = members[0][0]
     by_final = defaultdict(set)
     for gid, members in groups.items():
         for m in members:
@@ -107,23 +99,22 @@ def dedup(con):
     return len(dups)
 
 
-def fmt_saudi(ev):
+LABELS = {"cctld": ".us domain", "locale": "en-US locale/path", f"currency_{M.currency}_code": f"{M.currency} currency in store config",
+          "local_prices": "$ prices", "us_phone": "US phone (US area code)", "nanp_tollfree_phone": "US/CA toll-free phone",
+          "us_address": "US street address/ZIP", "places": "US states/cities", "shipping_payment": "US shipping/payment/legal terms",
+          "shopify_shop_country": "Shopify shop country", "shopify_base_currency": "Shopify base currency", "woo_store_currency": "WooCommerce currency"}
+
+
+def fmt_market(ev):
     e = json_obj(ev)
-    if not e and not isinstance(ev, str):
-        return ""
     parts = []
-    lab = {"sa_tld": ".sa domain", "sa_locale": "Saudi locale (en-sa/ar-sa)", "currency_SAR_code": "SAR currency in store config",
-           "sar_prices": "SAR/ر.س prices", "saudi_phone": "Saudi phone", "vat_number": "Saudi VAT no.", "commercial_registration": "CR no.",
-           "maroof": "Maroof", "saudi_places": "Saudi cities/country", "saudi_payment_shipping": "Saudi payment/shipping",
-           "saudi_platform": "Saudi platform", "shopify_shop_country": "Shopify shop country", "shopify_base_currency": "Shopify base currency",
-           "other_currency": "other currency"}
     for k, v in e.items():
         if v is True:
-            parts.append(lab.get(k, k))
+            parts.append(LABELS.get(k, k))
         elif isinstance(v, list):
-            parts.append(f"{lab.get(k, k)}: {', '.join(map(str, v))}")
+            parts.append(f"{LABELS.get(k, k)}: {', '.join(map(str, v))}")
         else:
-            parts.append(f"{lab.get(k, k)}: {v}")
+            parts.append(f"{LABELS.get(k, k)}: {v}")
     return "; ".join(parts)
 
 
@@ -137,10 +128,8 @@ def main():
     ver = v[(v.status.isin(["verified", "verified_secondary_evidence"])) & (v.duplicate_of.isna())].copy()
     ver["Master URL"] = ver.apply(master_url, axis=1)
     ver["Store Name"] = [clean_name(n, u) for n, u in zip(ver.store_name, ver["Master URL"])]
-    ver["Registrable Root Domain"] = [
-        (identity(u) or {}).get("root_domain") or r for u, r in zip(ver.final_url.fillna(ver.url), ver.root_domain)]
+    ver["Registrable Root Domain"] = [(identity(u) or {}).get("root_domain") or r for u, r in zip(ver.final_url.fillna(ver.url), ver.root_domain)]
     ver = ver.drop_duplicates("Master URL").sort_values(["Store Name"], key=lambda s: s.str.lower())
-
     master = ver[["Store Name", "Master URL"]].rename(columns={"Master URL": "Root Domain / Storefront URL"})
 
     def notes(r):
@@ -153,18 +142,18 @@ def main():
         if e:
             n.append("product evidence: " + "; ".join(e.get("product_evidence") or []))
             n.append("purchase evidence: " + "; ".join(e.get("purchase_evidence") or []))
-        if r.reason and r.reason != "ecommerce+saudi evidence ok":
-            n.append(r.reason)
+        if r.reason and r.reason != "ecommerce+market evidence ok":
+            n.append(r.reason[:600])
         return " | ".join(x for x in n if x)
 
     evidence = pd.DataFrame({
         "Store Name": ver["Store Name"],
         "Canonical Storefront URL": ver["Master URL"],
         "Registrable Root Domain": ver["Registrable Root Domain"],
-        "Platform": ver.platform,
-        "Industry / Category": ver.category,
-        "Saudi Relevance Evidence": ver.saudi_evidence.map(fmt_saudi),
-        "Saudi Score": ver.saudi_score,
+        "Platform": ver.platform.fillna("").replace("", "unknown (secondary evidence)"),
+        "Industry / Category": ver.category.fillna("").replace("", "General / Unclassified"),
+        "US Market-Relevance Evidence": ver.market_evidence.map(fmt_market),
+        "Market Score": ver.market_score,
         "Verification Source URL": ver.final_url,
         "Product Evidence URL": ver.product_evidence,
         "Verification Date (UTC)": ver.verified_at,
@@ -173,99 +162,117 @@ def main():
         "Notes": ver.apply(notes, axis=1),
     })
 
-    unv = v[v.status.isin(["unverified", "rejected"])].copy()
-    unv = unv.sort_values(["status", "reason"], ascending=[False, True])
+    unv = v[v.status.isin(["unverified", "rejected"])].copy().sort_values(["status", "reason"], ascending=[False, True])
     unverified = pd.DataFrame({
-        "Candidate URL": unv.url,
-        "Final URL": unv.final_url,
-        "Status": unv.status,
-        "Reason": unv.reason,
-        "Platform (detected)": unv.platform,
-        "Name (if detected)": unv.store_name,
-        "Saudi Score": unv.saudi_score,
-        "Checked At (UTC)": unv.verified_at,
-        "Discovery Source": unv.first_source,
+        "Candidate URL": unv.url, "Final URL": unv.final_url, "Status": unv.status, "Reason": unv.reason,
+        "Platform (detected)": unv.platform, "Name (if detected)": unv.store_name, "Market Score": unv.market_score,
+        "Checked At (UTC)": unv.verified_at, "Discovery Source": unv.first_source,
     })
     pending = pd.read_sql_query("SELECT url AS 'Candidate URL', status AS Status, first_source AS 'Discovery Source' FROM candidates WHERE status IN ('pending','in_progress')", con)
     if len(pending):
         pending["Reason"] = "not yet checked (queue not exhausted when exported)"
         unverified = pd.concat([unverified, pending], ignore_index=True)
+    # Unverified first in the sheet (most actionable), then pending, then rejected.
+    order = {"unverified": 0, "pending": 1, "in_progress": 1, "rejected": 2}
+    unverified = unverified.sort_values("Status", key=lambda s: s.map(order).fillna(3), kind="stable")
+    unverified.to_csv(UNVERIFIED_CSV, index=False, compression="gzip")
 
-    cov = coverage(con, ver, v, ndup)
     from . import reference
     rcon = reference.connect()
-    ref_rows = reference.audit(rcon, PREVIOUS_CSV)
+    ref_rows = reference.audit(rcon)
     ref_df = pd.DataFrame(ref_rows)
-    audit_df = ref_df[ref_df.kind.isin(["brand", "mall"])] if len(ref_df) else ref_df
-    audit_df = pd.concat([audit_df, ref_df[~ref_df.kind.isin(["brand", "mall"]) & ref_df.status.str.startswith("in_directory")]], ignore_index=True) if len(ref_df) else ref_df
-    audit_sheet = pd.DataFrame({
-        "Reference Store": audit_df.name, "Tier": audit_df.tier, "Category": audit_df.category,
-        "Reference Source(s)": audit_df.sources, "Tranco Rank": audit_df.tranco_rank,
-        "Coverage Status": audit_df.status, "Storefront URL": audit_df.url, "Reason": audit_df.reason,
-        "Evidence": audit_df.evidence, "Known Domains": audit_df.domains,
-    }).sort_values(["Coverage Status", "Tier", "Reference Store"]) if len(audit_df) else pd.DataFrame()
-    ref_df.to_csv(REF_CSV, index=False, encoding="utf-8-sig")
+    if len(ref_df):
+        ref_df.to_csv(REF_CSV, index=False)
+        tier_order = {"huge": 0, "large": 1, "medium": 2, "recognized": 3}
+        audit_df = ref_df[(ref_df.kind == "brand") | ref_df.status.str.startswith("in_directory") | ref_df.tier.isin(["large", "medium"])]
+        audit_sheet = pd.DataFrame({
+            "Store": audit_df.name, "Tier": audit_df.tier, "Category": audit_df.category, "Reference Source(s)": audit_df.sources,
+            "Tranco Rank": audit_df.tranco_rank, "Status": audit_df.status, "URL": audit_df.url, "Evidence": audit_df.evidence,
+            "Reason": audit_df.reason,
+        })
+        audit_sheet = audit_sheet.assign(_t=audit_sheet.Tier.map(tier_order)).sort_values(["_t", "Status", "Store"]).drop(columns="_t")
+    else:
+        audit_sheet = pd.DataFrame()
 
+    cov = coverage(con, ver, v, ndup, ref_df)
+    evidence.to_csv(EVIDENCE_CSV, index=False)
     with pd.ExcelWriter(XLSX, engine="openpyxl") as xw:
         master.to_excel(xw, sheet_name="Master Directory", index=False)
         evidence.to_excel(xw, sheet_name="Verification Evidence", index=False)
-        unverified.to_excel(xw, sheet_name="Unverified Candidates", index=False)
-        audit_sheet.to_excel(xw, sheet_name="Major Retailer Coverage Audit", index=False)
+        cap = unverified.head(UNVERIFIED_SHEET_CAP)
+        if len(unverified) > UNVERIFIED_SHEET_CAP:
+            cap = pd.concat([pd.DataFrame({"Candidate URL": [f"[sheet capped at {UNVERIFIED_SHEET_CAP:,} of {len(unverified):,} rows; full list in data/{os.path.basename(UNVERIFIED_CSV)}]"]}), cap])
+        cap.to_excel(xw, sheet_name="Unverified Candidates", index=False)
         startrow = 0
         for title, df in cov:
             pd.DataFrame({title: []}).to_excel(xw, sheet_name="Research Coverage", index=False, startrow=startrow)
             df.to_excel(xw, sheet_name="Research Coverage", index=False, startrow=startrow + 1)
             startrow += len(df) + 4
+        audit_sheet.to_excel(xw, sheet_name="Major Retailer Coverage Audit", index=False)
         for ws in xw.book.worksheets:
             for col in ws.columns:
                 width = min(max(len(str(c.value or "")) for c in list(col)[:300]) + 2, 70)
                 ws.column_dimensions[col[0].column_letter].width = max(width, 12)
-    master.to_csv(CSV, index=False, encoding="utf-8-sig")
-    print(f"exported: verified={len(master)} duplicates_merged={ndup} unverified_rows={len(unverified)} -> {XLSX}")
+    master.to_csv(CSV, index=False)
+    print(f"exported: verified={len(master)} (primary={int((ver.status == 'verified').sum())}, secondary={int((ver.status == 'verified_secondary_evidence').sum())}) "
+          f"duplicates_merged={ndup} unverified_rows={len(unverified)} -> {XLSX}")
     return len(master)
 
 
-def coverage(con, ver, v, ndup):
+def coverage(con, ver, v, ndup, ref_df):
     q = lambda s: pd.read_sql_query(s, con)
     out = []
     totals = q("SELECT status AS 'Candidate status', count(*) AS Count FROM candidates GROUP BY 1 ORDER BY 2 DESC")
     totals.loc[len(totals)] = ["verified unique stores in Master Directory", len(ver)]
+    totals.loc[len(totals)] = ["  of which live-verified (primary)", int((ver.status == "verified").sum())]
+    totals.loc[len(totals)] = ["  of which verified_secondary_evidence", int((ver.status == "verified_secondary_evidence").sum())]
     totals.loc[len(totals)] = ["duplicates merged (aliases/redirects/same store id)", ndup]
     out.append(("Summary counts", totals))
-    cat = ver.category.value_counts().rename_axis("Category").reset_index(name="Verified stores")
-    known = {c for c, _ in []}
-    out.append(("Verified stores by category", cat))
-    plat = ver.platform.value_counts().rename_axis("Platform").reset_index(name="Verified stores")
-    out.append(("Verified stores by platform", plat))
-    cities = Counter()
-    for ev in ver.saudi_evidence:
-        for p in json_obj(ev).get("saudi_places", []):
-            cities[p] += 1
-    out.append(("Regions/cities mentioned on verified storefronts (multi-count)", pd.DataFrame(cities.most_common(), columns=["City/Region", "Stores mentioning"])))
+    out.append(("Verified stores by category", ver.category.fillna("General / Unclassified").replace("", "General / Unclassified").value_counts().rename_axis("Category").reset_index(name="Verified stores")))
+    out.append(("Verified stores by platform", ver.platform.fillna("unknown").replace("", "unknown").value_counts().rename_axis("Platform").reset_index(name="Verified stores")))
+    states = Counter()
+    for ev in ver.market_evidence:
+        e = json_obj(ev)
+        for p in e.get("places", []):
+            states[p] += 1
+        a = e.get("us_address") or ""
+        m = re.match(r"([A-Z]{2})\b", a)
+        if m and m.group(1) in US_STATES:
+            states[US_STATES[m.group(1)] + " (address)"] += 1
+    out.append(("US states / metros named on verified storefronts (multi-count; address = state in a US street address)",
+                pd.DataFrame(states.most_common(), columns=["State / metro", "Stores mentioning"])))
+    missing = [s for s in US_STATES.values() if not any(k.startswith(s) for k in states)]
+    out.append(("States with no verified storefront mentioning them", pd.DataFrame({"State": missing or ["(none: all 50 states + DC appear)"]})))
     src = q("""SELECT s.source AS Source, count(*) AS Candidates, sum(c.status IN ('verified','duplicate')) AS 'Verified (incl. dup)',
                       sum(c.status='rejected') AS Rejected, sum(c.status='unverified') AS Unverified, sum(c.status IN ('pending','in_progress')) AS Pending
                FROM candidate_sources s JOIN candidates c USING(key) GROUP BY 1 ORDER BY 3 DESC""")
     out.append(("Discovery sources (a candidate may have several sources)", src))
-    reg = q("SELECT source AS Source, type AS Type, description AS Description, status AS Status, notes AS Notes FROM sources")
-    out.append(("Sources / directories registry", reg))
-    qs = q("SELECT engine AS Engine, workstream AS Workstream, status AS Status, count(*) AS Queries, sum(n_results) AS Results, sum(n_new) AS 'New candidates' FROM queries GROUP BY 1,2,3 ORDER BY 1,4 DESC")
-    out.append(("Searches performed (by engine and workstream)", qs))
-    cc = q("SELECT substr(job, instr(job,'|')+1, instr(substr(job, instr(job,'|')+1),'|')-1) AS Pattern, count(*) AS 'Index pages fetched', sum(n) AS 'Keys seen', sum(n_new) AS 'New candidates' FROM jobs WHERE kind='cc' AND status='done' GROUP BY 1")
-    out.append(("Common Crawl CDX harvesting", cc))
-    workers = q("SELECT name AS Worker, kind AS Kind, concurrency AS Concurrency, started AS Started, heartbeat AS 'Last heartbeat', info AS 'Last stats' FROM workers")
-    out.append(("Agent / worker utilization (code workers; no separate AI subagents were spawned)", workers))
-    reasons = q("SELECT status AS Status, substr(reason,1,70) AS Reason, count(*) AS Count FROM verifications WHERE status!='verified' GROUP BY 1,2 ORDER BY 3 DESC LIMIT 40")
-    out.append(("Top rejection / unverified reasons", reasons))
-    niche_cats = sorted({c for c, _, _ in NICHES})
+    try:
+        scr = q("SELECT status AS 'Screen result', count(*) AS Domains, min(rank) AS 'Best rank', max(rank) AS 'Worst rank' FROM screen GROUP BY 1 ORDER BY 2 DESC")
+        out.append(("Tranco top-1M homepage screen", scr))
+    except Exception:
+        pass
+    out.append(("Sources / directories registry", q("SELECT source AS Source, type AS Type, description AS Description, status AS Status, notes AS Notes FROM sources")))
+    try:
+        out.append(("Searches performed (by engine and workstream)", q("SELECT engine AS Engine, workstream AS Workstream, status AS Status, count(*) AS Queries, sum(n_results) AS Results, sum(n_new) AS 'New candidates' FROM queries GROUP BY 1,2,3 ORDER BY 1,4 DESC")))
+    except Exception:
+        pass
+    out.append(("Common Crawl CDX harvesting", q("SELECT substr(job, instr(job,'|')+1, instr(substr(job, instr(job,'|')+1),'|')-1) AS Pattern, count(*) AS 'Index pages fetched', sum(n) AS 'Keys seen', sum(n_new) AS 'New candidates' FROM jobs WHERE kind='cc' AND status='done' GROUP BY 1")))
+    out.append(("Worker utilization (parallel code workers; no AI subagents were available/spawned)", q("SELECT name AS Worker, kind AS Kind, concurrency AS Concurrency, started AS Started, heartbeat AS 'Last heartbeat', info AS 'Last stats' FROM workers")))
+    out.append(("Top rejection / unverified reasons", q("SELECT status AS Status, substr(reason,1,70) AS Reason, count(*) AS Count FROM verifications WHERE status NOT IN ('verified','verified_secondary_evidence') GROUP BY 1,2 ORDER BY 3 DESC LIMIT 50")))
+    if len(ref_df):
+        rc = ref_df.groupby(["tier", ref_df.status.str.split(":").str[0].str.split(" \\(").str[0]]).size().reset_index(name="Refs")
+        rc.columns = ["Tier", "Coverage status", "Refs"]
+        out.append(("Reference-universe coverage by tier", rc))
     gaps = pd.DataFrame({"Remaining gaps / expansion opportunities": [
-        "Bot-protected large retailers (Akamai/Cloudflare 403) need a real-browser pass (Playwright) or manual check; listed in Unverified with reason blocked_or_challenge.",
-        "Salla/Zid stores on custom domains are only found when a salla.sa/<slug> redirect, search result, or showcase links to them; no content-search index was available (PublicWWW/BuiltWith are paid).",
-        "Common Crawl only covers pages that were crawled; small/new stores absent from CC and search results are missed.",
-        "Shopify/WooCommerce Saudi stores on .com domains are found mainly via search; Bing returns 10 results/page and throttles, so long-tail coverage is partial.",
-        "Google search requires JS (blocked); DuckDuckGo html throttles after ~2 queries (anomaly page); Brave 429; Mojeek 403; Yandex/Startpage captcha.",
-        "Category labels are keyword-based (Arabic+English) from title/meta/products; expect some misclassification.",
-        "Salla API product 'type' gives reliable physical/digital split for Salla; for other platforms digital/service exclusion is heuristic.",
-        "Further expansion: more Bing query templates per niche/city; Common Crawl for more historical crawls of *.sa; mall tenant directories; Maroof (requires JS/auth, not used).",
+        "Egress from this VM saturates around ~600 new domains/minute (DNS and NAT time out above that), which bounds Tranco screening and verification throughput.",
+        "Tranco: see the screen table for how far down the ranking the homepage screen got; ranks beyond were not screened unless found via another channel.",
+        "Bot-walled retailers (Akamai/Cloudflare/PerimeterX/Vercel 403/429) are verified only with two independent secondary proofs; otherwise listed as Unverified with the reason.",
+        "Search engines: Google requires JS, DuckDuckGo returns HTTP 202 anomaly pages, Brave 429, Mojeek 403 from this VM; no search API keys were configured.",
+        "Shopify throttles this VM's IP platform-wide after bursts, so myshopify.com candidates from Common Crawl are verified slowly (slow lane).",
+        "Category labels are keyword-based (title/meta/product names) and can be wrong for multi-category stores.",
+        "Small stores are covered only when they appear in Tranco top ranks, Common Crawl platform host lists, Wikidata, or the reference list.",
+        "Opportunities: screen Tranco beyond the ranks completed; more Common Crawl crawls for platform hosts; mall tenant directories (Simon/Brookfield/Macerich/Westfield) and Shopify/BigCommerce showcases.",
     ]})
     out.append(("Remaining gaps and expansion opportunities", gaps))
     return out
