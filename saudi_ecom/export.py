@@ -246,6 +246,14 @@ def coverage(con, ver, v, ndup):
                       sum(c.status='rejected') AS Rejected, sum(c.status='unverified') AS Unverified, sum(c.status IN ('pending','in_progress')) AS Pending
                FROM candidate_sources s JOIN candidates c USING(key) GROUP BY 1 ORDER BY 3 DESC""")
     out.append(("Discovery sources (a candidate may have several sources)", src))
+    tr = q("""SELECT c.first_source AS 'Tranco shard (first discovery)',
+                     CASE c.first_source WHEN 'tranco_shard_1' THEN '1-50,000' WHEN 'tranco_shard_2' THEN '50,001-100,000'
+                          WHEN 'tranco_shard_3' THEN '100,001-150,000' ELSE '150,001-200,000' END AS 'Tranco rank range',
+                     count(*) AS 'Unique Saudi-signal hits', sum(v.status IN ('verified','verified_secondary_evidence')) AS 'Verified (incl. dup)',
+                     sum(v.status='unverified') AS Unverified, sum(v.status='rejected') AS Rejected
+              FROM candidates c JOIN verifications v USING(key) WHERE c.first_source LIKE 'tranco_shard_%' GROUP BY 1 ORDER BY 1""")
+    if len(tr):
+        out.append(("Tranco top-200k coverage (homepage Saudi signals, Saudi-path links, sibling .sa domains; merged from 4 shards, hits already in the DB are not recounted)", tr))
     reg = q("SELECT source AS Source, type AS Type, description AS Description, status AS Status, notes AS Notes FROM sources")
     out.append(("Sources / directories registry", reg))
     qs = q("SELECT engine AS Engine, workstream AS Workstream, status AS Status, count(*) AS Queries, sum(n_results) AS Results, sum(n_new) AS 'New candidates' FROM queries GROUP BY 1,2,3 ORDER BY 1,4 DESC")
