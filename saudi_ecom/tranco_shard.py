@@ -47,6 +47,7 @@ NON_RETAIL_LABEL = re.compile(
     r"akamai|akamaized|cloudfront|fastly|edgekey|edgesuite|azureedge|googlevideo|gvt\d|nflxvideo|ttvnw|doubleclick|"
     r"bank|banking|casino|bet|betting|poker|porn|sex|xxx|news|gazette|times|daily|tribune|herald|journal|radio|tv|"
     r"wiki|forum|university|college|school|church|hospital)(?:\d*)(?:[-.]|$)", re.I)
+ADULT_GAMBLING = re.compile(r"porn|xxx|\bsex|سكس|نيك|escort|hentai|casino|kasino|\bslots?\b|slot ?online|\btogel|toto\b|\bbet(?:ting)?\b|judi|gacor|poker|baccarat|bandar|قمار|مراهنات", re.I)
 NON_RETAIL_CONTENT = re.compile(r'"@type"\s*:\s*"(?:NewsArticle|NewsMediaOrganization)"|og:type["\'][^>]*content=["\']article', re.I)
 
 SAR_STRONG = re.compile(r"\d[\d,.]*\s*(?:ر\.?\s?س|SAR|﷼)(?![A-Za-z])|(?<![A-Za-z])(?:SAR|ر\.?\s?س|﷼)\s*\d", re.I)
@@ -225,11 +226,12 @@ def page_signals(html: str, final_url: str) -> dict:
         sig["saudi_title"] = SAUDI_TITLE.search(meta_txt).group(0)
     shop_words = bool(SHOP_WORDS.search(meta_txt))
     challenge = bool((CHALLENGE.search(head[:5000]) or DENIED.search(title)) and len(text) < 5000)
+    adult = bool(ADULT_GAMBLING.search(meta_txt))
     strong = bool(sig.get("platform") or sig.get("sar_currency_code") or sig.get("shopify_sar") or n_sar >= 2)
     n_medium = sum(1 for k in ("riyal", "phone_966", "saudi_shipping", "hreflang_sa", "sa_locale_url", "saudi_title") if sig.get(k)) + (1 if n_sar else 0)
     if sig.get("sa_tld") and not sig.get("sa_locale_url"):
         n_medium += 1
-    hit = not parked and not challenge and (strong or (n_medium >= 1 and is_commerce) or n_medium >= 2
+    hit = not parked and not challenge and not adult and (strong or (n_medium >= 1 and is_commerce) or n_medium >= 2
                                             or (sig.get("saudi_title") and shop_words)) and not (news and not strong)
     alts = []
     for tag in HREFLANG_ALT.findall(head[:300_000]):
@@ -238,6 +240,7 @@ def page_signals(html: str, final_url: str) -> dict:
             alts.append(m.group(1))
     return {"sig": sig, "commerce": commerce, "is_commerce": is_commerce, "hit": hit, "parked": parked, "challenge": challenge, "alts": alts,
             "geo_hint": bool(GEO_HINT.search(head[:300_000]) or SA_LINK.search(head[:300_000]) or sig.get("hreflang_sa")),
+            "sa_link": bool(SA_LINK.search(head[:300_000]) or sig.get("hreflang_sa")), "adult": adult,
             "title": title[:120], "len": len(text)}
 
 
@@ -252,6 +255,8 @@ def fast_skip(domain: str) -> str | None:
     label = _TLD(domain).domain or ""
     if NON_RETAIL_LABEL.search(label) or NON_RETAIL_LABEL.search(domain.split(".")[0]):
         return "infra_or_nonretail_name"
+    if re.search(r"porn|xxx|sex|toto|togel|slot|casino|gacor|judi|poker|bet365|hentai|escort", label, re.I):
+        return "adult_or_gambling_name"
     return None
 
 
@@ -315,6 +320,8 @@ async def screen_domain(sc: Screener, st: State, domain: str, rank: int, known_r
         home_sig = await analyze_page(html, final)
         if home_sig["parked"]:
             outcome = "parked"
+        elif home_sig["adult"]:
+            return "adult_or_gambling", home_sig["title"][:80]
         elif home_sig["challenge"]:
             outcome, detail = "blocked", f"challenge_page_http_{s}"
             if is_sa:
@@ -352,8 +359,8 @@ async def screen_domain(sc: Screener, st: State, domain: str, rank: int, known_r
                 continue
             if ident["key"] in known_keys or ident["root_domain"] in MARKETPLACE_ROOTS:
                 continue
-            if vs in (401, 403) or (vs >= 400 and CHALLENGE.search(vh[:5000])):
-                if home_sig["is_commerce"] and SA_GEO.search(vf):
+            if vs in (401, 403, 429, 503):
+                if home_sig["is_commerce"] and home_sig["sa_link"] and SA_GEO.search(vf):
                     if await on_hit(ident, rank, domain, f"path_variant_blocked:{p}", {"sa_locale_url": vf, "blocked": vs}):
                         variants_hit += 1
                     break
@@ -363,7 +370,7 @@ async def screen_domain(sc: Screener, st: State, domain: str, rank: int, known_r
             vsig = await analyze_page(vh, vf)
             sig = vsig["sig"]
             if vsig["challenge"]:
-                if home_sig["is_commerce"] or u in alt_urls:
+                if home_sig["is_commerce"] and (home_sig["sa_link"] or u in alt_urls):
                     if await on_hit(ident, rank, domain, f"path_variant_blocked:{p}", {"sa_locale_url": vf, "blocked": "challenge_200"}):
                         variants_hit += 1
                     break
@@ -406,8 +413,9 @@ async def screen_domain(sc: Screener, st: State, domain: str, rank: int, known_r
             continue  # redirected back to the global site
         if vident["key"] in known_keys or vident["root_domain"] in known_roots and vident["root_domain"] != root or vident["root_domain"] in MARKETPLACE_ROOTS:
             continue
-        if vs in (401, 403) or (vs >= 400 and CHALLENGE.search(vh[:5000])):
-            if kind == "subdomain":
+        parent_shop = bool(home_sig and (home_sig["is_commerce"] or home_sig["sa_link"]) and not home_sig["adult"])
+        if vs in (401, 403, 429, 503):
+            if kind == "subdomain" and parent_shop:
                 if await on_hit(vident, rank, domain, f"{kind}_blocked:{host}", {"sa_locale_url": vf, "blocked": vs}):
                     variants_hit += 1
             continue
@@ -418,7 +426,7 @@ async def screen_domain(sc: Screener, st: State, domain: str, rank: int, known_r
         if vsig["parked"]:
             continue
         if vsig["challenge"]:
-            if kind == "subdomain" and await on_hit(vident, rank, domain, f"{kind}_blocked:{host}", {"sa_locale_url": vf, "blocked": "challenge_200"}):
+            if kind == "subdomain" and parent_shop and await on_hit(vident, rank, domain, f"{kind}_blocked:{host}", {"sa_locale_url": vf, "blocked": "challenge_200"}):
                 variants_hit += 1
             continue
         if vsig["hit"] or (kind == "sibling" and vsig["is_commerce"] and (sig.get("sa_tld") or sig.get("phone_966"))):
@@ -622,6 +630,10 @@ async def run(a):
             if a.start <= rank <= a.end:
                 sl.append((rank, dom.strip().lower()))
     summary = {"shard": a.shard, "rank_start": a.start, "rank_end": a.end, "tranco_list_id": a.list_id, "domains_in_slice": len(sl)}
+    if a.retry_errors:
+        n = st.con.execute("DELETE FROM screened WHERE outcome='error'").rowcount
+        st.con.commit()
+        print(f"[shard] retrying {n} domains whose screen failed with network errors", flush=True)
     done = st.screened_set()
     skipped_known, recheck, todo = [], [], []
     for rank, dom in sl:
@@ -694,6 +706,8 @@ async def run(a):
                        "evidence_url": hit["url"], "verified_at": now()}
             if res.get("status") == "rejected" and (DENIED.search(res.get("store_name") or "") or CHALLENGE.search(res.get("store_name") or "")):
                 res["status"], res["reason"] = "unverified", "blocked_or_challenge_http_200 (bot-wall page served with 200; was: " + (res.get("reason") or "")[:80] + ")"
+            if res.get("status") == "verified" and S.SERVICE_NAME.search(res.get("store_name") or ""):
+                res["status"], res["reason"] = "unverified", "service_like_store_name (manual review): " + S.SERVICE_NAME.search(res["store_name"]).group(0)
             row_out = result_row(hit, res)
             fk = res.get("final_key")
             if fk and fk != key and fk in known_keys:
@@ -839,6 +853,7 @@ if __name__ == "__main__":
     ap.add_argument("--no-secondary", action="store_true")
     ap.add_argument("--workers", type=int, default=3)
     ap.add_argument("--no-browser", action="store_true")
+    ap.add_argument("--retry-errors", action="store_true")
     ap.add_argument("--browser-concurrency", type=int, default=4)
     ap.add_argument("--limit", type=int, default=0, help="screen only the first N remaining domains (testing)")
     a = ap.parse_args()
