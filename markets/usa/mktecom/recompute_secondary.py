@@ -12,9 +12,7 @@ from . import db, secondary as S
 from .reference import connect
 
 
-def verdict_of(evs):
-    ok = {e["type"] for e in evs if e.get("ok")}
-    return "verified_secondary_evidence" if len(ok) >= 2 and (ok & S.STOREFRONT_TYPES or "sec_edgar" in ok or {"app_store", "google_play"} <= ok) else "insufficient_secondary_evidence"
+verdict_of = S.verdict_of
 
 
 async def main():
@@ -28,8 +26,9 @@ async def main():
             if any(e["type"] == "sec_edgar" and e.get("ok") for e in evs):
                 new_e = await S.sec_edgar(live, name or key, root or key.split("|")[0])
                 evs = [new_e if e["type"] == "sec_edgar" else e for e in evs]
+            evs = [S.live_storefront(con, key) if e["type"] == "live_storefront" else e for e in evs]
             v = verdict_of(evs)
-            if v == old and not any(e["type"] == "sec_edgar" for e in evs):
+            if v == old and not any(e["type"] in ("sec_edgar", "live_storefront") for e in evs):
                 continue
             item = {"key": key, "name": name or key, "root": root}
             if v == "verified_secondary_evidence":

@@ -74,6 +74,7 @@ async def cc_crawls(client):
         r = await client.get("https://index.commoncrawl.org/collinfo.json", timeout=30)
         return [c["id"] for c in r.json()[:3]]
     except Exception:
+        CC_UP["ok"] = False
         return ["CC-MAIN-2026-39", "CC-MAIN-2026-34"]
 
 
@@ -146,7 +147,7 @@ async def cc_product(client, prefix, crawls):
     return out
 
 
-async def wayback_product(client, prefix):
+async def _wayback_once(client, prefix):
     host = prefix.split("/")[0]
     try:
         r = await client.get("https://web.archive.org/cdx/search/cdx", params={
@@ -181,6 +182,16 @@ async def wayback_product(client, prefix):
             out.update({"ok": True, "url": f"https://web.archive.org/web/{ts}/{orig}", "date": ts[:8], "age_days": days_ago(ts),
                         "detail": f"archived product page with {n_loc} {M.currency} price strings and ordering control"})
             return out
+    return out
+
+
+async def wayback_product(client, prefix):
+    out = None
+    for attempt in range(3):
+        out = await _wayback_once(client, prefix)
+        if out.get("ok") or out.get("captures", 0) > 0 or attempt == 2:
+            return out
+        await asyncio.sleep(8 * (attempt + 1))
     return out
 
 
@@ -286,6 +297,21 @@ async def app_store(client, name, domain):
 
 EDGAR_UA = {"User-Agent": "mkt-ecom-directory-research research-contact@example.com", "Accept-Encoding": "gzip, deflate"}
 EDGAR_ALIASES = {
+    "coach.com": "TAPESTRY|coach", "katespade.com": "TAPESTRY|kate spade", "stuartweitzman.com": "TAPESTRY|stuart weitzman",
+    "thenorthface.com": "V F|north face", "vans.com": "V F|vans", "timberland.com": "V F|timberland", "kipling-usa.com": "V F|kipling",
+    "tommy.com": "PVH|tommy hilfiger", "usa.tommy.com": "PVH|tommy hilfiger", "calvinklein.us": "PVH|calvin klein",
+    "nordstrom.com": "NORDSTROM", "nordstromrack.com": "NORDSTROM|nordstrom rack", "urbanoutfitters.com": "URBAN OUTFITTERS",
+    "anthropologie.com": "URBAN OUTFITTERS|anthropologie", "freepeople.com": "URBAN OUTFITTERS|free people",
+    "ugg.com": "DECKERS OUTDOOR|ugg", "hoka.com": "DECKERS OUTDOOR|hoka", "underarmour.com": "UNDER ARMOUR", "converse.com": "NIKE|converse",
+    "nike.com": "NIKE", "columbia.com": "COLUMBIA SPORTSWEAR", "kay.com": "SIGNET JEWELERS|kay", "zales.com": "SIGNET JEWELERS|zales",
+    "esteelauder.com": "ESTEE LAUDER COMPANIES|estee lauder", "sallybeauty.com": "SALLY BEAUTY", "tesla.com": "TESLA|shop.tesla.com",
+    "shop.tesla.com": "TESLA|shop.tesla.com", "ford.com": "FORD MOTOR|ford", "gm.com": "GENERAL MOTORS", "honeywell.com": "HONEYWELL INTERNATIONAL",
+    "ti.com": "TEXAS INSTRUMENTS|ti store", "kitchenaid.com": "WHIRLPOOL|kitchenaid", "bigfive.com": "BIG 5 SPORTING GOODS|big 5",
+    "dsw.com": "DESIGNER BRANDS|dsw", "vitacost.com": "KROGER|vitacost", "rh.com": "RH", "arhaus.com": "ARHAUS", "fastenal.com": "FASTENAL",
+    "zoro.com": "GRAINGER|zoro", "crocs.com": "CROCS", "stevemadden.com": "STEVEN MADDEN", "lids.com": "FANATICS", "mouser.com": "BERKSHIRE HATHAWAY|mouser",
+    "orientaltrading.com": "BERKSHIRE HATHAWAY|oriental trading", "digikey.com": "", "revolve.com": "REVOLVE GROUP", "lululemon.com": "LULULEMON ATHLETICA",
+    "mattressfirm.com": "TEMPUR SEALY INTERNATIONAL|mattress firm", "napaonline.com": "GENUINE PARTS|napa", "express.com": "EXPRESS", "landsend.com": "LANDS END",
+    "winndixie.com": "", "wincofoods.com": "", "sony.com": "", "electronics.sony.com": "", "dyson.com": "", "nintendo.com": "",
     "marshalls.com": "TJX COMPANIES", "homegoods.com": "TJX COMPANIES", "tjx.com": "TJX COMPANIES", "tjmaxx.com": "TJX COMPANIES",
     "ralphs.com": "KROGER", "fredmeyer.com": "KROGER", "kingsoopers.com": "KROGER", "harristeeter.com": "KROGER",
     "frysfood.com": "KROGER", "smithsfoodanddrug.com": "KROGER", "familydollar.com": "DOLLAR TREE",
@@ -316,6 +342,9 @@ async def sec_edgar(client, name, root, brand_url_name=None):
         except Exception:
             _EDGAR["tickers"] = []
     alias = EDGAR_ALIASES.get(root)
+    brand_term = None
+    if alias and "|" in alias:
+        alias, brand_term = alias.split("|", 1)
     if alias == "":
         return {"type": "sec_edgar", "ok": False, "detail": "not an SEC registrant (private or foreign filer)"}
     want = _norm_co(alias or re.split(r"[(/]", name)[0])
@@ -346,7 +375,10 @@ async def sec_edgar(client, name, root, brand_url_name=None):
         txt = re.sub(r"\s+", " ", txt)
         label = root.split(".")[0]
         brand = want.split(" ")[0]
-        mention = [m.start() for m in re.finditer(re.escape(label) + r"\.com|" + re.escape(label.replace("-", " ")) + r"\b", txt)]
+        pat = re.escape(label) + r"\.com|" + re.escape(label.replace("-", " ")) + r"\b"
+        if brand_term:
+            pat += "|" + re.escape(brand_term)
+        mention = [m.start() for m in re.finditer(pat, txt)]
         us = "united states" in txt
         for i in mention:
             window = txt[max(0, i - 1200): i + 1200]
@@ -385,7 +417,7 @@ async def google_play(client, name, domain):
 
 
 def live_storefront(con, key):
-    row = con.execute("SELECT final_url, ecom_evidence, market_evidence, verified_at, reason FROM verifications WHERE key=?", (key,)).fetchone()
+    row = con.execute("SELECT final_url, ecom_evidence, market_evidence, verified_at, reason, market_score FROM verifications WHERE key=?", (key,)).fetchone()
     if not row or not row[1]:
         return {"type": "live_storefront", "ok": False, "detail": "no live evidence"}
     try:
@@ -395,28 +427,41 @@ def live_storefront(con, key):
         return {"type": "live_storefront", "ok": False, "detail": "bad json"}
     foreign = any(k in m for k in ("other_currency", "foreign_prices", "foreign_cctld"))
     if e.get("product_evidence") and e.get("purchase_evidence") and not foreign:
+        if (row[5] or 0) < 2 or not m:
+            return {"type": "live_storefront", "ok": False, "detail": f"live store but weak US signals (score={row[5]})"}
         return {"type": "live_storefront", "ok": True, "url": row[0], "date": (row[3] or "")[:10].replace("-", ""),
                 "detail": "live homepage shows products (" + "; ".join(e["product_evidence"][:2]) + ") and purchase controls (" + "; ".join(e["purchase_evidence"][:2]) + ")"}
     return {"type": "live_storefront", "ok": False, "detail": "no product+purchase evidence on live homepage"}
 
 
+US_SPECIFIC = {"commoncrawl_product", "wayback_product", "wayback_jsonld", "sitemap", "live_storefront", "sec_edgar"}
+
+
+def verdict_of(evs):
+    ok = {e["type"] for e in evs if e.get("ok")}
+    return "verified_secondary_evidence" if len(ok) >= 2 and ok & US_SPECIFIC else "insufficient_secondary_evidence"
+
+
+CC_UP = {"ok": None}
+
+
 async def check(clients, item, crawls, con=None):
     arch, live = clients
     prefix = re.sub(r"^www\d+\.", "www.", storefront_prefix(item["url"]))
-    evs = await asyncio.gather(cc_product(arch, prefix, crawls), sitemap_ev(live, prefix), app_store(live, item["name"], item["root"]))
-    ok = {e["type"] for e in evs if e.get("ok")}
-    if len(ok) == 1 and ok & {"sitemap", "app_store"}:
-        evs = list(evs) + [await wayback_product(arch, prefix)]
-    ok = {e["type"] for e in evs if e.get("ok")}
-    if len(ok) < 2 or not (ok & STOREFRONT_TYPES):
-        extra = await asyncio.gather(sec_edgar(live, item["name"], item["root"]), google_play(live, item["name"], item["root"]))
-        evs = list(evs) + list(extra)
-        if con is not None:
-            evs.append(live_storefront(con, item["key"]))
-    ok = {e["type"] for e in evs if e.get("ok")}
-    storefront = ok & STOREFRONT_TYPES
-    verdict = "verified_secondary_evidence" if len(ok) >= 2 and (storefront or "sec_edgar" in ok or {"app_store", "google_play"} <= ok) else "insufficient_secondary_evidence"
-    return {"key": item["key"], "prefix": prefix, "verdict": verdict, "evidence": evs}
+    tasks = [sitemap_ev(live, prefix), sec_edgar(live, item["name"], item["root"])]
+    if CC_UP["ok"] is not False:
+        tasks.append(cc_product(arch, prefix, crawls))
+    evs = list(await asyncio.gather(*tasks))
+    if any(e["type"] == "commoncrawl_product" and e.get("captures", 1) == 0 and not e.get("ok") for e in evs) and CC_UP["ok"] is None:
+        CC_UP["ok"] = None
+    if not any(e.get("ok") for e in evs):
+        evs.append(await wayback_product(arch, prefix))
+    if con is not None:
+        evs.append(live_storefront(con, item["key"]))
+    if any(e.get("ok") and e["type"] in US_SPECIFIC for e in evs):
+        evs.append(await app_store(live, item["name"], item["root"]))
+        evs.append(await google_play(live, item["name"], item["root"]))
+    return {"key": item["key"], "prefix": prefix, "verdict": verdict_of(evs), "evidence": evs}
 
 
 def save(con, item, res):
@@ -442,6 +487,10 @@ SECONDARY_REASONS = ("blocked_or_challenge%", "js_rendered%", "partial_ecommerce
                      "weak_market%", "insufficient_market%", "no_ecommerce_evidence%", "service_style%", "likely_services%")
 
 
+URL_OVERRIDE = {"tesla.com": "https://shop.tesla.com/", "sony.com": "https://electronics.sony.com/", "ti.com": "https://www.ti.com/store/ti/en/",
+                "ford.com": "https://shop.ford.com/", "nintendo.com": "https://www.nintendo.com/us/store/"}
+
+
 def targets(con, keys, limit, include_wikidata):
     if keys:
         q = f"SELECT c.key, coalesce(v.final_url, c.url), coalesce(r.name, v.store_name, c.key), c.root_domain FROM candidates c LEFT JOIN verifications v USING(key) LEFT JOIN reference_stores r ON r.key=c.key WHERE c.key IN ({','.join('?' * len(keys))})"
@@ -454,6 +503,7 @@ def targets(con, keys, limit, include_wikidata):
             WHERE r.kind IN {kinds} AND coalesce(r.note,'')='' AND c.status IN ('unverified','rejected') AND ({cond})
             AND r.key NOT IN (SELECT key FROM secondary_evidence)
             ORDER BY CASE r.tier WHEN 'huge' THEN 0 WHEN 'large' THEN 1 WHEN 'medium' THEN 2 ELSE 3 END LIMIT ?""", (*SECONDARY_REASONS, limit)).fetchall()
+    rows = [(k, URL_OVERRIDE.get(d or "", u), n, d) for k, u, n, d in rows]
     return [{"key": k, "url": u if u.startswith("http") else "https://" + u, "name": n, "root": d or registrable_domain(urlsplit(u).hostname or "")} for k, u, n, d in rows]
 
 
