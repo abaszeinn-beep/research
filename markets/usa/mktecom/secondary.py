@@ -170,6 +170,10 @@ async def _wayback_once(client, prefix):
             rows = rows + rows2
         except httpx.HTTPError:
             pass
+    if not prods:
+        generic = [x for x in rows if re.search(r"/[^/?]+/[A-Za-z0-9_-]{6,}(?:\.html|\.p)?(?:\?|$)", x[1]) and not NON_PRODUCT.search(x[1])
+                   and not re.search(r"/(?:c|category|categories|collections?|browse|search|help|stores?|locations?)/?(?:$|\?)", x[1], re.I)]
+        prods = sorted(generic, reverse=True)[:6]
     out = {"type": "wayback_product", "ok": False, "captures": len(rows), "product_captures": len(prods)}
     for x in prods:
         ts, orig = x[0], x[1]
@@ -484,7 +488,7 @@ def save(con, item, res):
 
 SECONDARY_REASONS = ("blocked_or_challenge%", "js_rendered%", "partial_ecommerce%", "insufficient_ecommerce%", "robots_disallowed%",
                      "fetch_failed%", "verification_timeout%", "rate_limited%", "weak_ecommerce%", "http_5%", "physical_goods_unclear%",
-                     "weak_market%", "insufficient_market%", "no_ecommerce_evidence%", "service_style%", "likely_services%")
+                     "weak_market%", "insufficient_market%", "secondary_evidence_insufficient%", "no_ecommerce_evidence%", "service_style%", "likely_services%")
 
 
 URL_OVERRIDE = {"tesla.com": "https://shop.tesla.com/", "sony.com": "https://electronics.sony.com/", "ti.com": "https://www.ti.com/store/ti/en/",
