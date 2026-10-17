@@ -613,7 +613,11 @@ async def decide(f, res, done, t0, cand, url, final, html, extra_html, a, plat, 
     strong, foreign_store = judge(sev, final)
     if not (score >= 4 and strong) and not foreign_store and "other_currency" not in sev and "foreign_prices" not in sev:
         # homepage lacks explicit US markers: legal/contact pages usually carry the US address, CCPA or US shipping terms
-        for lu in legal_links(html, final)[:2]:
+        fixed = [urljoin(final, x) for x in ("/store-locator", "/stores", "/find-a-store", "/locations", "/privacy-policy", "/privacy", "/help")]
+        cand_pages = legal_links(html, final)[:2]
+        if strong_retail:
+            cand_pages += [u for u in fixed if u not in cand_pages][:4]
+        for lu in cand_pages:
             st3, fin3, h3, _, _ = await f.get(lu, tries=1)
             if st3 != 200 or not h3:
                 continue

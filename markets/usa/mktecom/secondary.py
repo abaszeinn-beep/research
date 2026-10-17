@@ -32,6 +32,7 @@ ITUNES_LOCK = asyncio.Lock()
 UA_RESEARCH = {"User-Agent": "mkt-ecom-directory-research/1.0 (polite archive client)"}
 UA_BROWSER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
               "Accept-Language": M.accept_language}
+STOREFRONT_TYPES = {"commoncrawl_product", "wayback_product", "wayback_jsonld", "sitemap", "live_storefront"}
 PRODUCT_URL = re.compile(
     r"/p/|/p\d{4,}|-p\d{5,}|[-_]p[-_]?\d{5,}|/products?/|/product-[a-z0-9]|/catalog/product/|/dp/|/pd/|/ip/|/sku/|"
     r"\d{6,}\.html|/buy-|/item/|/prd/|\.p\d+|/\d{7,}|/style/|/shop/[a-z0-9-]+/[a-z0-9-]+-\d{4,}", re.I)
@@ -283,7 +284,123 @@ async def app_store(client, name, domain):
     return {"type": "app_store", "ok": False, "detail": f"no current shopping app matching {term!r}"}
 
 
-async def check(clients, item, crawls):
+EDGAR_UA = {"User-Agent": "mkt-ecom-directory-research research-contact@example.com", "Accept-Encoding": "gzip, deflate"}
+EDGAR_ALIASES = {
+    "marshalls.com": "TJX COMPANIES", "homegoods.com": "TJX COMPANIES", "tjx.com": "TJX COMPANIES", "tjmaxx.com": "TJX COMPANIES",
+    "ralphs.com": "KROGER", "fredmeyer.com": "KROGER", "kingsoopers.com": "KROGER", "harristeeter.com": "KROGER",
+    "frysfood.com": "KROGER", "smithsfoodanddrug.com": "KROGER", "familydollar.com": "DOLLAR TREE",
+    "oldnavy.com": "GAP INC", "gap.com": "GAP INC", "bananarepublic.com": "GAP INC", "athleta.com": "GAP INC",
+    "potterybarn.com": "WILLIAMS SONOMA", "westelm.com": "WILLIAMS SONOMA", "williams-sonoma.com": "WILLIAMS SONOMA",
+    "rh.com": "RH", "dell.com": "DELL TECHNOLOGIES", "samsclub.com": "WALMART", "walmart.com": "WALMART",
+    "safeway.com": "ALBERTSONS COMPANIES", "albertsons.com": "ALBERTSONS COMPANIES", "bjs.com": "BJS WHOLESALE CLUB HOLDINGS",
+    "oreillyauto.com": "O REILLY AUTOMOTIVE", "ikea.com": "", "hp.com": "HP INC", "ray-ban.com": "",
+    "victoriassecret.com": "VICTORIAS SECRET", "bathandbodyworks.com": "BATH & BODY WORKS", "harborfreight.com": "",
+    "gamestop.com": "GAMESTOP", "jcpenney.com": "", "dillards.com": "DILLARDS", "academy.com": "ACADEMY SPORTS",
+    "autozone.com": "AUTOZONE", "petco.com": "PETCO HEALTH", "sweetwater.com": "", "guitarcenter.com": "",
+    "garmin.com": "GARMIN", "dyson.com": "", "lenovo.com": "", "sony.com": "", "lg.com": "",
+}
+_EDGAR = {"tickers": None}
+
+
+def _norm_co(n):
+    n = re.sub(r"[^a-z0-9& ]", " ", n.lower().replace("'", ""))
+    n = re.sub(r"\b(inc|corp|corporation|co|company|companies|holdings|the|new|de|plc|ltd|group|stores|class a|us|usa)\b", " ", n)
+    return re.sub(r"\s+", " ", n).strip()
+
+
+async def sec_edgar(client, name, root, brand_url_name=None):
+    if _EDGAR["tickers"] is None:
+        try:
+            r = await client.get("https://www.sec.gov/files/company_tickers.json", headers=EDGAR_UA, timeout=40)
+            _EDGAR["tickers"] = [(_norm_co(v["title"]), v["cik_str"], v["title"]) for v in r.json().values()]
+        except Exception:
+            _EDGAR["tickers"] = []
+    alias = EDGAR_ALIASES.get(root)
+    if alias == "":
+        return {"type": "sec_edgar", "ok": False, "detail": "not an SEC registrant (private or foreign filer)"}
+    want = _norm_co(alias or re.split(r"[(/]", name)[0])
+    if not want:
+        return {"type": "sec_edgar", "ok": False, "detail": "no name"}
+    hits = [t for t in _EDGAR["tickers"] if t[0] == want] or [t for t in _EDGAR["tickers"] if t[0].startswith(want + " ") or want.startswith(t[0] + " ") and len(t[0]) >= 4]
+    if not hits:
+        return {"type": "sec_edgar", "ok": False, "detail": f"no SEC registrant matching {want!r}"}
+    _, cik, title = hits[0]
+    try:
+        r = await client.get(f"https://data.sec.gov/submissions/CIK{int(cik):010d}.json", headers=EDGAR_UA, timeout=40)
+        rec = r.json()["filings"]["recent"]
+    except Exception:
+        return {"type": "sec_edgar", "ok": False, "detail": "submissions_fetch_failed"}
+    for form, fdate, doc, acc in zip(rec["form"], rec["filingDate"], rec["primaryDocument"], rec["accessionNumber"]):
+        if form != "10-K":
+            continue
+        age = (NOW.date() - dt.date.fromisoformat(fdate)).days
+        if age > 550:
+            break
+        url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{acc.replace('-', '')}/{doc}"
+        await asyncio.sleep(0.3)
+        try:
+            d = await client.get(url, headers=EDGAR_UA, timeout=90)
+        except httpx.HTTPError:
+            return {"type": "sec_edgar", "ok": False, "detail": "10k_fetch_failed"}
+        txt = re.sub(r"<[^>]+>", " ", d.text).lower()
+        txt = re.sub(r"\s+", " ", txt)
+        label = root.split(".")[0]
+        brand = want.split(" ")[0]
+        mention = [m.start() for m in re.finditer(re.escape(label) + r"\.com|" + re.escape(label.replace("-", " ")) + r"\b", txt)]
+        ecom = re.search(r"e-commerce|ecommerce|online sales|digital sales|online channel|websites?|online stores?", txt)
+        us = "united states" in txt
+        if mention and ecom and us:
+            i = mention[0]
+            snippet = txt[max(0, i - 120): i + 160]
+            return {"type": "sec_edgar", "ok": True, "url": url, "date": fdate.replace("-", ""),
+                    "detail": f"{title} 10-K filed {fdate} names {label}.com and describes online/e-commerce sales in the United States: ...{snippet}..."}
+        return {"type": "sec_edgar", "ok": False, "detail": f"10-K {fdate} of {title} does not name {label}.com with ecommerce language"}
+    return {"type": "sec_edgar", "ok": False, "detail": "no recent 10-K"}
+
+
+async def google_play(client, name, domain):
+    toks = name_tokens(name) or [domain.split(".")[0]]
+    label = domain.split(".")[0]
+    try:
+        r = await client.get("https://play.google.com/store/search", params={"q": " ".join(toks[:3]), "c": "apps", "hl": "en", "gl": "US"}, timeout=30)
+    except httpx.HTTPError:
+        return {"type": "google_play", "ok": False, "detail": "play_fetch_failed"}
+    ids = []
+    for i in re.findall(r"details\?id=([A-Za-z0-9._]+)", r.text):
+        if i not in ids:
+            ids.append(i)
+    for pid in ids[:5]:
+        await asyncio.sleep(1.5)
+        try:
+            d = await client.get("https://play.google.com/store/apps/details", params={"id": pid, "hl": "en", "gl": "US"}, timeout=30)
+        except httpx.HTTPError:
+            continue
+        if d.status_code != 200:
+            continue
+        t = d.text.lower()
+        if len(label) >= 4 and re.search(r"https?://[a-z0-9.-]*" + re.escape(label) + r"\.", t) and ("shopping" in t or "shop" in t):
+            return {"type": "google_play", "ok": True, "url": f"https://play.google.com/store/apps/details?id={pid}", "date": NOW.strftime("%Y%m%d"),
+                    "detail": f"Google Play listing {pid} (US) links to {label} domain; listing live on check date"}
+    return {"type": "google_play", "ok": False, "detail": "no matching Google Play listing"}
+
+
+def live_storefront(con, key):
+    row = con.execute("SELECT final_url, ecom_evidence, market_evidence, verified_at, reason FROM verifications WHERE key=?", (key,)).fetchone()
+    if not row or not row[1]:
+        return {"type": "live_storefront", "ok": False, "detail": "no live evidence"}
+    try:
+        e = json.loads(row[1])
+        m = json.loads(row[2] or "{}")
+    except ValueError:
+        return {"type": "live_storefront", "ok": False, "detail": "bad json"}
+    foreign = any(k in m for k in ("other_currency", "foreign_prices", "foreign_cctld"))
+    if e.get("product_evidence") and e.get("purchase_evidence") and not foreign:
+        return {"type": "live_storefront", "ok": True, "url": row[0], "date": (row[3] or "")[:10].replace("-", ""),
+                "detail": "live homepage shows products (" + "; ".join(e["product_evidence"][:2]) + ") and purchase controls (" + "; ".join(e["purchase_evidence"][:2]) + ")"}
+    return {"type": "live_storefront", "ok": False, "detail": "no product+purchase evidence on live homepage"}
+
+
+async def check(clients, item, crawls, con=None):
     arch, live = clients
     prefix = re.sub(r"^www\d+\.", "www.", storefront_prefix(item["url"]))
     evs = await asyncio.gather(cc_product(arch, prefix, crawls), sitemap_ev(live, prefix), app_store(live, item["name"], item["root"]))
@@ -291,8 +408,14 @@ async def check(clients, item, crawls):
     if len(ok) == 1 and ok & {"sitemap", "app_store"}:
         evs = list(evs) + [await wayback_product(arch, prefix)]
     ok = {e["type"] for e in evs if e.get("ok")}
-    storefront = ok & {"commoncrawl_product", "wayback_product", "sitemap"}
-    verdict = "verified_secondary_evidence" if len(ok) >= 2 and storefront else "insufficient_secondary_evidence"
+    if len(ok) < 2 or not (ok & STOREFRONT_TYPES):
+        extra = await asyncio.gather(sec_edgar(live, item["name"], item["root"]), google_play(live, item["name"], item["root"]))
+        evs = list(evs) + list(extra)
+        if con is not None:
+            evs.append(live_storefront(con, item["key"]))
+    ok = {e["type"] for e in evs if e.get("ok")}
+    storefront = ok & STOREFRONT_TYPES
+    verdict = "verified_secondary_evidence" if len(ok) >= 2 and (storefront or ("sec_edgar" in ok and len(ok) >= 3)) else "insufficient_secondary_evidence"
     return {"key": item["key"], "prefix": prefix, "verdict": verdict, "evidence": evs}
 
 
@@ -302,7 +425,7 @@ def save(con, item, res):
     con.execute("CREATE TABLE IF NOT EXISTS secondary_evidence(key TEXT PRIMARY KEY, prefix TEXT, verdict TEXT, evidence TEXT, ts TEXT)")
     if res["verdict"] == "verified_secondary_evidence":
         sf = "https://" + res["prefix"]
-        prod = next((e.get("url") for e in evs if e["type"] in ("commoncrawl_product", "wayback_product")), None) or evs[0].get("url")
+        prod = next((e.get("url") for e in evs if e["type"] in ("commoncrawl_product", "wayback_product", "live_storefront")), None) or evs[0].get("url")
         n = con.execute("""UPDATE verifications SET status='verified_secondary_evidence', method='secondary', reason=?, product_evidence=?,
                        evidence_url=?, verified_at=?, store_name=CASE WHEN coalesce(store_name,'')='' THEN ? ELSE store_name END, final_url=?,
                        final_key=coalesce(final_key, key) WHERE key=?""",
@@ -316,7 +439,7 @@ def save(con, item, res):
 
 SECONDARY_REASONS = ("blocked_or_challenge%", "js_rendered%", "partial_ecommerce%", "insufficient_ecommerce%", "robots_disallowed%",
                      "fetch_failed%", "verification_timeout%", "rate_limited%", "weak_ecommerce%", "http_5%", "physical_goods_unclear%",
-                     "weak_market%", "insufficient_market%")
+                     "weak_market%", "insufficient_market%", "no_ecommerce_evidence%", "service_style%", "likely_services%")
 
 
 def targets(con, keys, limit, include_wikidata):
@@ -328,7 +451,7 @@ def targets(con, keys, limit, include_wikidata):
         kinds = "('brand','wikidata')" if include_wikidata else "('brand')"
         rows = con.execute(f"""SELECT r.key, coalesce(v.final_url, r.url), r.name, r.root_domain FROM reference_stores r
             JOIN candidates c ON c.key=r.key LEFT JOIN verifications v ON v.key=r.key
-            WHERE r.kind IN {kinds} AND coalesce(r.note,'')='' AND c.status IN ('unverified') AND ({cond})
+            WHERE r.kind IN {kinds} AND coalesce(r.note,'')='' AND c.status IN ('unverified','rejected') AND ({cond})
             AND r.key NOT IN (SELECT key FROM secondary_evidence)
             ORDER BY CASE r.tier WHEN 'huge' THEN 0 WHEN 'large' THEN 1 WHEN 'medium' THEN 2 ELSE 3 END LIMIT ?""", (*SECONDARY_REASONS, limit)).fetchall()
     return [{"key": k, "url": u if u.startswith("http") else "https://" + u, "name": n, "root": d or registrable_domain(urlsplit(u).hostname or "")} for k, u, n, d in rows]
@@ -348,7 +471,7 @@ async def main(keys, limit, concurrency, include_wikidata):
         async def one(it):
             async with sem:
                 try:
-                    res = await asyncio.wait_for(check((arch, live), it, crawls), 400)
+                    res = await asyncio.wait_for(check((arch, live), it, crawls, con), 600)
                 except Exception as e:
                     print("[secondary] error", it["key"], type(e).__name__, str(e)[:120], flush=True)
                     return
