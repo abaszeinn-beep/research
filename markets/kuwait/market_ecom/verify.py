@@ -41,13 +41,32 @@ DEMO = re.compile(r"^(?:متجر تجريبي|متجر تجريبى|demo store|t
 
 def bucket(host: str) -> str:
     """Hosts sharing one platform edge/rate limit are throttled together."""
-    for suf in ("myshopify.com", "zid.store", "salla.sa"):
+    for suf in ("myshopify.com", "zid.store", "salla.sa", "ordable.com"):
         if host == suf or host.endswith("." + suf):
             return suf
     return host
 
 
-BUCKET_LIMITS = {"salla.sa": (4, 0.25), "api.salla.dev": (4, 0.25), "myshopify.com": (3, 0.6), "zid.store": (3, 0.4)}
+BUCKET_LIMITS = {"salla.sa": (4, 0.25), "api.salla.dev": (4, 0.25), "myshopify.com": (3, 0.6), "zid.store": (3, 0.4),
+                 "shopify-edge": (4, 0.5), "ordable.com": (3, 0.4)}
+_EDGE_CACHE: dict[str, str] = {}
+
+
+async def edge_bucket(host: str) -> str:
+    """Custom-domain Shopify stores share Shopify's per-client rate limit; bucket them by edge IP range."""
+    b = bucket(host)
+    if b != host:
+        return b
+    if host in _EDGE_CACHE:
+        return _EDGE_CACHE[host]
+    try:
+        infos = await asyncio.wait_for(asyncio.get_running_loop().getaddrinfo(host, 443), 8)
+        ips = {i[4][0] for i in infos}
+    except Exception:
+        ips = set()
+    out = "shopify-edge" if any(ip.startswith("23.227.38.") for ip in ips) else host
+    _EDGE_CACHE[host] = out
+    return out
 
 
 class Fetcher:
@@ -120,7 +139,7 @@ class Fetcher:
         if check_robots and not await self.allowed(url):
             self.stats["robots_disallowed"] += 1
             return None, url, "", {}, "robots_disallowed"
-        host = bucket(urlsplit(url).hostname or "")
+        host = await edge_bucket(urlsplit(url).hostname or "")
         delay = 2.0
         last_err = None
         for attempt in range(tries):
@@ -344,9 +363,16 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         alt = None
         if host and not host.startswith("www.") and cand.get("platform_hint") is None:
             alt = url.replace("://", "://www.", 1)
+        elif host and host.startswith("www.") and err in ("dns_not_resolved", "connect_error"):
+            alt = url.replace("://www.", "://", 1)
         if alt and err != "timeout":
             st, final, html, hdrs, err2 = await f.get(alt, tries=2)
             err = err if st is None else None
+    if st is None and err == "dns_not_resolved":
+        await asyncio.sleep(2)
+        h = urlsplit(url).hostname or ""
+        if await asyncio.get_running_loop().run_in_executor(None, dns_ok, h):
+            err = "connect_error"
     res["http_status"] = st
     res["final_url"] = final
     if st is None:
@@ -569,7 +595,7 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         purchase_ev.append("add-to-cart markers")
     if a["cart"] >= 2:
         purchase_ev.append("cart/checkout markers")
-    if plat in ("salla", "zid", "shopify", "woocommerce", "magento", "salesforce-commerce", "opencart", "prestashop", "bigcommerce", "expandcart", "youcan", "matjrah", "sap-hybris", "vtex", "ecwid", "ordable", "zyda", "shopline", "tijarah") :
+    if plat in ("salla", "zid", "shopify", "woocommerce", "magento", "salesforce-commerce", "opencart", "prestashop", "bigcommerce", "expandcart", "youcan", "matjrah", "sap-hybris", "vtex", "ecwid", "ordable", "zyda", "mnasati", "shopline", "tijarah") :
         purchase_ev.append(f"{plat} commerce platform (cart/checkout built-in)")
     ecom["product_evidence"] = product_ev
     ecom["purchase_evidence"] = purchase_ev
@@ -628,6 +654,11 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
         if n_srv >= 6 and not a["add_to_cart"]:
             return done("rejected", f"likely_services ({n_srv} service markers)")
 
+    menu_terms = {m.lower() for m in S.MENU_SECTIONS.findall(a["title"] + " " + a["text"][:12000] + " " + " ".join(product_names))}
+    food_platform = bool(S.FOOD_ORDERING_PLATFORM.search(html[:400000])) or plat in ("zyda", "mnasati")
+    if cat in ("Grocery & Food", "General / Unclassified", "Chocolates & Sweets", "Coffee, Tea & Dates") or food_platform:
+        if len(menu_terms) >= 5 or (food_platform and len(menu_terms) >= 3):
+            return done("rejected", f"restaurant_or_food_service (menu sections: {', '.join(sorted(menu_terms)[:6])})")
     name_title = (res["store_name"] or "") + " " + a["title"]
     n_char = len(S.CHARITY.findall(name_title + " " + a["desc"] + " " + a["text"][:8000]))
     if S.CHARITY.search(name_title) or n_char >= 5:
@@ -644,6 +675,8 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     if sev.get("shopify_shop_country") not in (None, MK.CC) and not any(k in sev for k in ("mkt_tld", "mkt_locale", "currency_code")):
         strong = "mkt_phone" in sev and "mkt_prices" in sev
     if sev.get("shopify_shop_country") == MK.CC and not any(k in sev for k in ("mkt_tld", "mkt_locale", "currency_code", "mkt_prices", "mkt_phone")):
+        strong = False
+    if not any(k in sev for k in ("mkt_tld", "currency_code", "mkt_prices", "mkt_phone")) and sev.get("shopify_shop_country") != MK.CC:
         strong = False
     res["ecom_evidence"] = json.dumps(ecom, ensure_ascii=False)
     if FOREIGN_GEO.search(final) and not MKT_GEO.search(final) and not any(k in sev for k in ("currency_code", "mkt_prices", "mkt_tld", "shopify_shop_country")):

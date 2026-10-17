@@ -43,7 +43,7 @@ async def get_with_retry(client, url, params, tries=7):
             r = await client.get(url, params=params, timeout=180)
             if r.status_code == 200:
                 return r
-            if r.status_code == 404:
+            if r.status_code in (400, 404):
                 return r
         except (httpx.HTTPError, asyncio.TimeoutError):
             pass
@@ -87,8 +87,8 @@ async def run_job(client, con, sem, crawl, api, pattern, mt, page, base_pr, stat
         db.mark_job(con, "cc", job, "failed")
         stats["failed"] += 1
         return
-    if r.status_code == 404:
-        db.mark_job(con, "cc", job, "done", 0, 0, "404 no captures")
+    if r.status_code in (400, 404):
+        db.mark_job(con, "cc", job, "done", 0, 0, f"{r.status_code} no captures / page out of range")
         return
     items = harvest(r.text, base_pr)
     new = db.add_candidates(con, items, source=f"commoncrawl:{pattern}", detail=crawl)
@@ -99,7 +99,7 @@ async def run_job(client, con, sem, crawl, api, pattern, mt, page, base_pr, stat
 
 
 async def num_pages(client, api, pattern, mt):
-    r = await get_with_retry(client, api, {"url": pattern, "matchType": mt, "showNumPages": "true"})
+    r = await get_with_retry(client, api, {"url": pattern, "matchType": mt, "showNumPages": "true"}, tries=3)
     if r is None or r.status_code != 200:
         return None
     try:
@@ -131,14 +131,12 @@ async def main(patterns, concurrency, max_crawls_override=None):
                     async with sem:
                         n = await num_pages(client, c["cdx-api"], pattern, mt)
                     if n is None:
-                        print(f"[cc] could not size {c['id']} {pattern}", flush=True)
-                        continue
+                        n = 12 if pattern == "kw" else None
+                        print(f"[cc] could not size {c['id']} {pattern}; fallback pages={n}", flush=True)
+                        if n is None:
+                            continue
                     db.mark_job(con, "ccpages", key, "done", n, 0, str(n))
-                for p in range(n):
-                    tasks.append(run_job(client, con, sem, c["id"], c["cdx-api"], pattern, mt, p, pr, stats))
-            # Run each pattern's jobs before moving on so high-yield patterns finish first.
-            await asyncio.gather(*tasks)
-            tasks = []
+                await asyncio.gather(*[run_job(client, con, sem, c["id"], c["cdx-api"], pattern, mt, p, pr, stats) for p in range(n)])
             db.heartbeat(con, "discover_cc", "code-worker(asyncio)", concurrency, dict(stats))
         print("[cc] done", dict(stats), flush=True)
 

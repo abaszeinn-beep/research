@@ -91,7 +91,7 @@ NON_STORE_ROOTS = {
     "alanba.com.kw", "kuna.net.kw", "timeskuwait.com", "248am.com", "q8india.com", "kuwaitlocal.com",
     "e.gov.kw", "paci.gov.kw", "moci.gov.kw", "kockw.com", "kpc.com.kw",
     "nbk.com", "kfh.com", "boubyan.com", "gulfbank.com.kw", "knet.com.kw", "myfatoorah.com", "upayments.com",
-    "tap.company", "deema.me", "ordable.com", "zyda.com", "cari.com", "carriage.com", "talabat.com", "deliveroo.com.kw",
+    "tap.company", "deema.me", "ordable.com", "itsordable.com", "kaspersky.com", "shopify.dev", "zyda.com", "cari.com", "carriage.com", "talabat.com", "deliveroo.com.kw",
     "deliveroo.com", "v-thru.com", "jahez.net", "keeta.com", "4sale.com", "q84sale.com", "opensooq.com", "kw.opensooq.com",
     "kw.dubizzle.com", "dubizzle.com.kw", "mourjan.com", "kuwait.craigslist.org", "dhl.com", "aramex.com",
 }

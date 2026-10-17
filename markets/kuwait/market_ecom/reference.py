@@ -516,7 +516,10 @@ def audit(con, previous_csv=None):
             primary = g["vstatus"] == "verified"
             status = "in_directory_primary" if primary else "in_directory_secondary"
             was = murl.rstrip("/") in prev
-            reason = ("already present before reference audit" if was else "added by reference audit") + ("" if primary else " (secondary evidence)")
+            if prev:
+                reason = ("already present before reference audit" if was else "added by reference audit") + ("" if primary else " (secondary evidence)")
+            else:
+                reason = "verified live storefront" if primary else "verified on secondary evidence (archives / sitemap / app store)"
             evidence = (g["reason"] or "") + (f" | evidence: {g['ev_url']}" if g["ev_url"] else "") + f" | checked {g['ts']}"
         else:
             exc = None

@@ -57,6 +57,7 @@ PLATFORM_MARKERS = [
     ("shopline", re.compile(r"myshopline\.com|shoplineapp|cdn\.shoplineapp", re.I)),
     ("squarespace", re.compile(r"static1\.squarespace\.com|squarespace-commerce|Static\.SQUARESPACE_CONTEXT", re.I)),
     ("tijarah", re.compile(r"tijarah\.(?:co|app)", re.I)),
+    ("mnasati", re.compile(r"powered by mnasati|mnasati\.com", re.I)),
 ]
 
 ADD_TO_CART = re.compile(
@@ -115,6 +116,13 @@ CHARITY_PRODUCT = re.compile(r"صدقة|تبرع|زكاة|سقيا|كفالة ي
 SERVICE_ORG = re.compile(r"للتدريب|تدريب|training|للخدمات|خدمات|\bservices\b|مكتب\b|منصة|منصة تعليمية|أكاديمية|academy|معقب|وكيلك|للاستشارات|consult", re.I)
 CHARITY = re.compile(r"جمعية|خيري|خيرية|تبرع|تبرعات|كفالة يتيم|كفالة|صدقة|زكاة|وقف خيري|أوقاف|donat(?:e|ion)|charity|sadaqah|zakat|non-?profit|غير ربحية", re.I)
 ORG = re.compile(r"نادي|جمعية|مستشفى|hospital|جامعة|university|مدرسة|مدارس|school|academy|أكاديمية|معهد|institute|كلية|college|وزارة|ministry|هيئة|authority|بلدية|municipality|غرفة تجارية|chamber of commerce|مجمع طبي|مجمع [^ ]+ الطبي|مجمع [^ ]+ [^ ]+ الطبي|مركز طبي|educational|تعليمي|تعليمية|للتدريب|تدريب|training|travel|tours|للسفر|سياحة|سفريات|طيران|hotel|فندق|فنادق|medical (?:complex|center)|عيادات|clinics|منصة|platform|مكتب محاماة|law firm|مكتب هندسي|consultants?|استشارات|شركة مقاولات|contracting|نقابة|federation|اتحاد|consultancy|consulting|عيادة|clinic\b|مستوصف|dental|طب الأسنان|^dr\.? |^د\. ?|برمجة|تطوير المواقع|تصميم المواقع|web design|software|digital agency|marketing agency|وكالة تسويق|recruitment|توظيف|staffing", re.I)
+MENU_SECTIONS = re.compile(
+    r"\b(?:salads?|mezz?e|mezza|appetizers?|starters?|main (?:dishes|courses?)|sandwich(?:es)?|burgers?|wraps?|pizzas?|pastas?|soups?|"
+    r"breakfast|kids meals?|combo(?:s| meals?)?|meals?|add[- ]?ons|sides|beverages|hot drinks|cold drinks|iced drinks|frappes?|mojitos?|"
+    r"milkshakes?|smoothies|shawarma|grills?|platters?|desserts|crepes|waffles|fries|nuggets|bowls|sushi|maki|noodles|rice dishes|"
+    r"family meals?|lunch|dinner)\b|سلطات|مقبلات|أطباق رئيسية|اطباق رئيسية|ساندويش|سندويش|سندوتشات|برجر|بيتزا|شوربات|فطور|وجبات|وجبة|"
+    r"مشروبات (?:ساخنة|باردة)|مشروبات|عصائر|حلويات|إضافات|اضافات|مشويات|شاورما|بوكسات|بوكس عائلي|غداء|عشاء", re.I)
+FOOD_ORDERING_PLATFORM = re.compile(r"powered by mnasati|mnasati\.com|zyda\.com|cdn\.zyda|ordable|\bfoodics\b|order\.online|tryotter|deliverect|rewardz|takeaway menu", re.I)
 RESTAURANT = re.compile(r"food menu|restaurant menu|قائمة الطعام|المنيو|مطعم|restaurant|order food|اطلب وجبتك|وجبات|meals?\b|burger|برجر|pizza|بيتزا|شاورما|shawarma|كافيه|cafe\b|توصيل الطعام|food delivery", re.I)
 
 CATEGORIES = [
@@ -268,7 +276,7 @@ def detect_platform(html: str, url: str):
         found.insert(0, "zyda")
     # precedence: specific SaaS before generic
     for p in ["salla", "zid", "shopify", "magento", "salesforce-commerce", "sap-hybris", "woocommerce", "opencart",
-              "prestashop", "bigcommerce", "expandcart", "youcan", "matjrah", "wuilt", "ordable", "zyda", "shopline", "tijarah", "ecwid", "wix",
+              "prestashop", "bigcommerce", "expandcart", "youcan", "matjrah", "wuilt", "ordable", "zyda", "mnasati", "shopline", "tijarah", "ecwid", "wix",
               "squarespace", "vtex", "nopcommerce", "odoo"]:
         if p in found:
             return p

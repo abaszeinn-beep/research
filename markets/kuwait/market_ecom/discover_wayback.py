@@ -17,11 +17,10 @@ UA = {"User-Agent": "market-ecom-directory-research/1.0 (polite CDX client)"}
 
 PATTERNS = {
     # name: (url, matchType, extra filters, base priority)
-    "salla.sa": ("salla.sa/", "prefix", [], 5),
-    "zid.store": ("zid.store", "domain", ["!original:https?://(?:assets|media|static|sso|cdn|test-media|media-ngo|catalog|mails|custom-themes)\\..*"], 5),
-    "salla.store": ("salla.store", "domain", [], 5),
-    "matjrah.store": ("matjrah.store", "domain", [], 2),
-    "sa": ("sa", "domain", ["!original:.*\\.(?:gov|edu|sch)\\.sa.*", "mimetype:text/html"], 1),
+    "com.kw": ("com.kw", "domain", ["mimetype:text/html", "statuscode:200"], 3),
+    "kw": ("kw", "domain", ["!original:.*\\.(?:gov|edu|org|net)\\.kw.*", "mimetype:text/html", "statuscode:200"], 2),
+    "ordable.com": ("ordable.com", "domain", ["mimetype:text/html"], 3),
+    "salla.sa": ("salla.sa/", "prefix", [], 0),
 }
 
 
@@ -96,7 +95,7 @@ async def main(patterns, since, page_lines, max_pages):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--patterns", default="salla.sa,zid.store,salla.store")
+    ap.add_argument("--patterns", default="com.kw,ordable.com")
     ap.add_argument("--since", default="2024")
     ap.add_argument("--page-lines", type=int, default=50000)
     ap.add_argument("--max-pages", type=int, default=1000)

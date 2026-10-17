@@ -1,14 +1,14 @@
 """Secondary-evidence verification for storefronts the live checker could not read (bot walls, JS-only pages).
 
 No challenge is bypassed. Evidence types (each recorded with URL + date):
-  wayback_product  Wayback Machine capture of a product page under the Saudi storefront path
-                   showing SAR prices and an add-to-cart/ordering control. The lookup uses the
+  wayback_product  Wayback Machine capture of a product page under the market storefront path
+                   showing market-currency prices and an add-to-cart/ordering control. The lookup uses the
                    newest captures (window widened from 180 to 640 days); the capture date is stored.
   commoncrawl_product  same check on a product-page capture from a recent Common Crawl crawl (WARC byte range)
-  sitemap          robots-allowed sitemap listing product URLs under the Saudi storefront path
-  app_store        shopping app by the brand in the Saudi Apple App Store (iTunes Search API),
+  sitemap          robots-allowed sitemap listing product URLs under the market storefront path
+  app_store        shopping app by the brand in the market Apple App Store (iTunes Search API),
                    updated within 450 days (widened from 365; the store listing date is stored)
-  bing_indexed     search-engine indexed product pages under the Saudi storefront with SAR prices in the snippet
+  bing_indexed     search-engine indexed product pages under the market storefront with market-currency prices in the snippet
 A store becomes `verified_secondary_evidence` with >=2 independent evidence types, at least one of which is
 storefront-level (wayback_product, commoncrawl_product, sitemap or bing_indexed).
 
@@ -32,16 +32,18 @@ from .common import identity, registrable_domain
 from .discover_search import bing_decode
 from .reference import connect
 from .verify import FOREIGN_GEO, SA_GEO
+from . import market as MK
 
 UA_RESEARCH = {"User-Agent": "market-ecom-directory-research/1.0 (polite archive client)"}
 UA_BROWSER = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-              "Accept-Language": "ar-SA,ar;q=0.9,en;q=0.8"}
+              "Accept-Language": MK.ACCEPT_LANGUAGE}
 PRODUCT_URL = re.compile(
     r"/p/|/p\d{4,}|-p\d{5,}|[-_]p[-_]?\d{5,}|/products?/|/product-[a-z0-9]|/catalog/product/|/dp/|/pd/|"
     r"\d{6,}\.html|/buy-|/item/|/prd/|\.p\d+|/\d{7,}|/style/[a-z]{2}\d{4,}|-l\d{5,}|"
-    r"/(?:sa-en|en-sa|ar-sa)/[a-z0-9]+(?:-[a-z0-9]+){4,}\.html",
+    r"/(?:kw-en|en-kw|ar-kw)/[a-z0-9]+(?:-[a-z0-9]+){4,}\.html",
     re.I)
-SAR = re.compile(r'(?:SAR|ر\.?\s?س|ريال|﷼)(?:\s|&nbsp;|<[^<>]{0,120}>){0,6}\d|\d[\d,.]*(?:\s|&nbsp;|<[^<>]{0,120}>){0,6}(?:SAR|ر\.?\s?س|ريال|﷼)|"(?:priceCurrency|currency|currencyCode|currency_code)"\s*:\s*"SAR"', re.I)
+CUR = MK.CUR_TOKENS
+SAR = re.compile(rf'(?:{CUR})(?:\s|&nbsp;|<[^<>]{{0,120}}>){{0,6}}\d|\d[\d,.]*(?:\s|&nbsp;|<[^<>]{{0,120}}>){{0,6}}(?:{CUR})|"(?:priceCurrency|currency|currencyCode|currency_code)"\s*:\s*"{MK.CURRENCY}"', re.I)
 CART = re.compile(r"add[\s_-]?to[\s_-]?(?:cart|bag|basket)|addToCart|أضف إلى (?:السلة|الحقيبة)|اضف للسلة|أضف للسلة|إضافة إلى (?:السلة|الحقيبة)|buy now|اشتر[يِ]? الآن|\"@type\"\s*:\s*\"Offer\"", re.I)
 SHOP_GENRES = {"Shopping", "Food & Drink", "Lifestyle", "Health & Fitness", "Medical"}
 NOW = dt.datetime.now(dt.timezone.utc)
@@ -61,7 +63,7 @@ NON_PRODUCT = re.compile(r"/(?:account|login|cart|checkout|help|faq|about|contac
 def pick_pages(urls, prefix):
     """Product-looking URLs first, then other deep pages; host-only storefronts accept any page on the host."""
     need_geo = "/" in prefix.strip("/")
-    ok = [u for u in urls if not NON_PRODUCT.search(u[1]) and (not need_geo or SA_GEO.search(u[1]) or ".sa/" in u[1])]
+    ok = [u for u in urls if not NON_PRODUCT.search(u[1]) and (not need_geo or SA_GEO.search(u[1]) or MK.on_market_tld(urlsplit(u[1]).hostname or ""))]
     prods = sorted([u for u in ok if PRODUCT_URL.search(u[1])], reverse=True)
     deep = sorted([u for u in ok if not PRODUCT_URL.search(u[1]) and len([x for x in urlsplit(u[1]).path.split("/") if x]) >= 2], reverse=True)
     return prods[:8] + deep[:2], len(prods)
@@ -117,7 +119,7 @@ async def wayback_product(client, prefix):
         n_sar, cart = len(SAR.findall(txt)), bool(CART.search(txt))
         if n_sar and cart:
             out.update({"ok": True, "url": f"https://web.archive.org/web/{ts}/{orig}", "date": ts[:8], "age_days": days_ago(ts),
-                        "detail": f"archived product page with {n_sar} SAR price strings and ordering control"})
+                        "detail": f"archived product page with {n_sar} {MK.CURRENCY} price strings and ordering control"})
             return out
         out.setdefault("checked", []).append({"url": orig, "ts": ts, "sar": n_sar, "cart": cart})
     if not out.get("ok"):
@@ -166,7 +168,7 @@ async def wayback_product(client, prefix):
                 n_sar, cart = len(SAR.findall(txt)), bool(CART.search(txt))
                 if n_sar and cart:
                     out.update({"ok": True, "url": f"https://web.archive.org/web/{ts}/{orig}", "date": ts[:8], "age_days": days_ago(ts),
-                                "detail": f"archived product page with {n_sar} SAR price strings and ordering control"})
+                                "detail": f"archived product page with {n_sar} {MK.CURRENCY} price strings and ordering control"})
                     return out
                 out.setdefault("checked", []).append({"url": orig, "ts": ts, "sar": n_sar, "cart": cart})
     if rows and not prods and not out.get("ok"):
@@ -178,7 +180,7 @@ CC_CRAWLS = ["CC-MAIN-2026-39", "CC-MAIN-2026-34"]
 
 
 async def cc_product(client, prefix):
-    """Product page under the Saudi storefront in a recent Common Crawl crawl (WARC record fetched by byte range)."""
+    """Product page under the market storefront in a recent Common Crawl crawl (WARC record fetched by byte range)."""
     import gzip
     host_prefix = prefix if re.match(r"^www\.", prefix) or prefix.count(".") >= 2 else "www." + prefix
     rows = []
@@ -219,7 +221,7 @@ async def cc_product(client, prefix):
         n_sar, cart = len(SAR.findall(body)), bool(CART.search(body))
         if n_sar and cart:
             out.update({"ok": True, "url": j["url"], "date": j["timestamp"][:8], "age_days": days_ago(j["timestamp"]),
-                        "detail": f"Common Crawl capture ({j['filename'].split('/')[1]}) of product page with {n_sar} SAR price strings and ordering control",
+                        "detail": f"Common Crawl capture ({j['filename'].split('/')[1]}) of product page with {n_sar} {MK.CURRENCY} price strings and ordering control",
                         "warc": f"{j['filename']}@{off}+{ln}"})
             return out
         out.setdefault("checked", []).append({"url": j["url"], "sar": n_sar, "cart": cart})
@@ -245,10 +247,10 @@ async def sitemap_ev(client, base_host, prefix):
     if r.status_code != 200 or "<html" in r.text[:300].lower():
         return {"type": "sitemap", "ok": False, "detail": f"robots_http_{r.status_code}"}
     maps = re.findall(r"(?im)^\s*sitemap:\s*(\S+)", r.text)
-    sa_maps = [m for m in maps if SA_GEO.search(m) or "sa" in m.lower()] or maps
+    sa_maps = [m for m in maps if SA_GEO.search(m) or MK.ISO2 in m.lower()] or maps
 
     def productish(locs):
-        return [l for l in locs if PRODUCT_URL.search(l) and (SA_GEO.search(l) or ".sa/" in l or ".sa." in l)]
+        return [l for l in locs if PRODUCT_URL.search(l) and (SA_GEO.search(l) or MK.on_market_tld(urlsplit(l).hostname or ""))]
 
     async def read_map(url):
         try:
@@ -269,36 +271,30 @@ async def sitemap_ev(client, base_host, prefix):
         prods = productish(locs)
         if len(prods) >= 5:
             return {"type": "sitemap", "ok": True, "url": sm, "date": NOW.strftime("%Y%m%d"),
-                    "detail": f"{len(prods)} Saudi-storefront product URLs in sitemap", "sample": prods[:3]}
+                    "detail": f"{len(prods)} {MK.NAME}-storefront product URLs in sitemap", "sample": prods[:3]}
         children = [l for l in locs if re.search(r"\.xml(?:\.gz)?$", l, re.I) or "sitemap" in l.lower()]
         preferred = [c for c in children if re.search(r"product", c, re.I)]
-        rest = [c for c in children if c not in preferred and (SA_GEO.search(c) or "sa" in c.lower())]
+        rest = [c for c in children if c not in preferred and (SA_GEO.search(c) or MK.ISO2 in c.lower())]
         ordered = preferred or rest or children
         for ch in ordered[:3]:
             cl = await read_map(ch) or []
-            cp = productish(cl) if not re.search(r"product", ch, re.I) else [l for l in cl if SA_GEO.search(l) or ".sa/" in l or ".sa." in l]
+            cp = productish(cl) if not re.search(r"product", ch, re.I) else [l for l in cl if SA_GEO.search(l) or MK.on_market_tld(urlsplit(l).hostname or "")]
             if not cp and re.search(r"product", ch, re.I):
                 cp = productish(cl)
             if len(cp) >= 5:
                 return {"type": "sitemap", "ok": True, "url": ch, "date": NOW.strftime("%Y%m%d"),
-                        "detail": f"{len(cp)} Saudi-storefront product URLs in sitemap", "sample": cp[:3]}
-    return {"type": "sitemap", "ok": False, "detail": "no Saudi product URLs in accessible sitemaps"}
+                        "detail": f"{len(cp)} {MK.NAME}-storefront product URLs in sitemap", "sample": cp[:3]}
+    return {"type": "sitemap", "ok": False, "detail": f"no {MK.NAME} product URLs in accessible sitemaps"}
 
 
-# Brand search terms that the Saudi App Store lists under a different title than the reference name.
-APP_ALIASES = {
-    "6th street": ["AIVI"],
-    "american eagle": ["AE Aerie"],
-    "lego": ["LEGO KSA"],
-    "redtag": ["REDTAG"],
-    "red tag": ["REDTAG"],
-}
+# Brand search terms that the market App Store lists under a different title than the reference name.
+APP_ALIASES = {"6thstreet": ["AIVI"], "6thstreet aivi": ["AIVI"], "american eagle": ["AE Aerie"]}
 
 
 def name_tokens(name):
     base = re.sub(r"^[^:]+:\s*", "", name)
     base = re.split(r"[/(]", base)[0]
-    return [t for t in re.findall(r"[a-z0-9&']{3,}", base.lower()) if t not in {"the", "and", "store", "online", "shop", "ksa", "saudi", "com", "net", "org", "www"}]
+    return [t for t in re.findall(r"[a-z0-9&']{3,}", base.lower()) if t not in {"the", "and", "store", "online", "shop", "kuwait", "kw", "com", "net", "org", "www", "alshaya", "landmark", "chalhoub", "apparel", "group", "alghanim"}]
 
 
 async def app_store(client, name, domains):
@@ -313,7 +309,7 @@ async def app_store(client, name, domains):
     res = []
     try:
         for t in terms:
-            r = await client.get("https://itunes.apple.com/search", params={"term": t, "country": "sa", "entity": "software", "limit": "8"}, timeout=30)
+            r = await client.get("https://itunes.apple.com/search", params={"term": t, "country": MK.ISO2, "entity": "software", "limit": "8"}, timeout=30)
             res.extend(r.json().get("results", []))
     except Exception:
         return {"type": "app_store", "ok": False, "detail": "itunes_error"}
@@ -339,14 +335,14 @@ async def app_store(client, name, domains):
             age = 9999
         if age <= 450:
             return {"type": "app_store", "ok": True, "url": a.get("trackViewUrl"), "date": rel.replace("-", ""),
-                    "detail": f"Saudi App Store {a.get('primaryGenreName')} app '{a.get('trackName')}' by {a.get('sellerName')}, updated {rel}"}
+                    "detail": f"{MK.NAME} App Store {a.get('primaryGenreName')} app '{a.get('trackName')}' by {a.get('sellerName')}, updated {rel}"}
     return {"type": "app_store", "ok": False, "detail": f"no current shopping app matching {term!r}"}
 
 
 async def bing_indexed(client, prefix):
-    q = f"site:{prefix.rstrip('/')} SAR"
+    q = f"site:{prefix.rstrip('/')} {MK.CURRENCY}"
     try:
-        r = await client.get("https://www.bing.com/search", params={"q": q, "cc": "SA", "setlang": "en"}, timeout=30)
+        r = await client.get("https://www.bing.com/search", params={"q": q, "cc": MK.CC, "setlang": "en"}, timeout=30)
     except httpx.HTTPError:
         return {"type": "bing_indexed", "ok": False, "detail": "bing_error"}
     await asyncio.sleep(3)
@@ -357,12 +353,12 @@ async def bing_indexed(client, prefix):
             continue
         u = bing_decode(m.group(1)) or ""
         text = htmlmod.unescape(re.sub(r"<[^>]+>", " ", block[:4000]))
-        if prefix.split("/")[0] in u and (SA_GEO.search(u) or ".sa/" in u) and SAR.search(text):
+        if prefix.split("/")[0] in u and (SA_GEO.search(u) or MK.on_market_tld(urlsplit(u).hostname or "")) and SAR.search(text):
             hits.append(u)
     if len(hits) >= 2:
         return {"type": "bing_indexed", "ok": True, "url": f"https://www.bing.com/search?q={quote(q)}", "date": NOW.strftime("%Y%m%d"),
-                "detail": f"{len(hits)} indexed Saudi-storefront pages with SAR prices", "sample": hits[:3]}
-    return {"type": "bing_indexed", "ok": False, "detail": f"{len(hits)} indexed pages with SAR"}
+                "detail": f"{len(hits)} indexed market-storefront pages with market-currency prices", "sample": hits[:3]}
+    return {"type": "bing_indexed", "ok": False, "detail": f"{len(hits)} indexed pages with market-currency prices"}
 
 
 async def check(clients, item):
@@ -372,17 +368,17 @@ async def check(clients, item):
     prefix = re.sub(r"^www\d+\.", "", prefix)
     evs = await asyncio.gather(wayback_product(arch, prefix), cc_product(arch, prefix), sitemap_ev(live, host, prefix),
                                app_store(live, item["name"], item["domains"]))
-    if "/" not in prefix.strip("/") and not host.endswith(".sa") and not re.match(r"(?:sa|ksa|saudi|en-sa|ar-sa)\.", host):
-        # a multi-country root domain: archived pages only count if they are Saudi-path pages or clearly priced in SAR
+    if "/" not in prefix.strip("/") and not MK.on_market_tld(host) and host.split(".")[0] not in MK.LOCALE_LABELS:
+        # a multi-country root domain: archived pages only count if they are market-path pages or clearly priced in the market currency
         for e in evs:
             orig = re.sub(r"^https?://web\.archive\.org/web/\d+(?:id_)?/", "", e.get("url") or "")
             if not (item.get("global_root") or FOREIGN_GEO.search(orig)):
                 continue
             if e.get("ok") and e["type"] in ("wayback_product", "commoncrawl_product") and not SA_GEO.search(orig):
-                m = re.search(r"with (\d+) SAR", e.get("detail", ""))
+                m = re.search(rf"with (\d+) {MK.CURRENCY}", e.get("detail", ""))
                 if not m or int(m.group(1)) < 5:
                     e["ok"] = False
-                    e["detail"] += " (rejected: global root domain, not Saudi-specific)"
+                    e["detail"] += f" (rejected: global root domain, not {MK.NAME}-specific)"
     ok = [e for e in evs if e.get("ok")]
     types = {e["type"] for e in ok}
     storefront = types & {"wayback_product", "commoncrawl_product", "sitemap", "bing_indexed"}
@@ -423,7 +419,7 @@ SECONDARY_REASONS = ("blocked_or_challenge%", "js_rendered%", "partial_ecommerce
 
 
 def unresolved_targets(con, per_ref=2):
-    """Brand refs the audit left unresolved: their existing non-verified candidates (Saudi-path keys first), else root domains."""
+    """Brand refs the audit left unresolved: their existing non-verified candidates (market-path keys first), else root domains."""
     seen = {r[0] for r in con.execute("SELECT key FROM secondary_evidence")}
     rows = []
     for ref_id, name, doms in con.execute("SELECT ref_id, name, domains FROM reference_stores WHERE kind IN ('brand','mall') AND status='unresolved'").fetchall():
@@ -440,7 +436,7 @@ def unresolved_targets(con, per_ref=2):
                     db.add_candidates(con, [(f"https://{d}/", 5)], "reference:secondary_fallback", f"ref {ref_id}", 5)
                     cands.append((ident["key"], f"https://{d}/"))
             con.commit()
-        cands.sort(key=lambda kv: (not ("|" in kv[0] or re.match(r"(?:sa|ksa|saudi|en-sa|ar-sa)\.", kv[0]) or kv[0].endswith(".sa")), len(kv[0])))
+        cands.sort(key=lambda kv: (not ("|" in kv[0] or kv[0].split(".")[0] in MK.LOCALE_LABELS or MK.on_market_tld(kv[0])), len(kv[0])))
         rows += [(k, u, name, doms) for k, u in cands[:per_ref] if k not in seen]
     return rows
 
@@ -470,7 +466,7 @@ async def main(keys, limit, concurrency):
     items = targets(con, keys, limit)
     for it in items:
         k = it["key"]
-        it["global_root"] = "|" not in k and bool(con.execute("SELECT 1 FROM candidates WHERE key IN (?,?,?)", (k + "|sa", "sa." + k, "ksa." + k)).fetchone())
+        it["global_root"] = "|" not in k and bool(con.execute("SELECT 1 FROM candidates WHERE key IN (?,?,?)", (k + "|" + MK.ISO2, MK.ISO2 + "." + k, "kuwait." + k)).fetchone())
     print(f"[secondary] {len(items)} targets", flush=True)
     sem = asyncio.Semaphore(concurrency)
     stats = {"verified_secondary_evidence": 0, "insufficient_secondary_evidence": 0}

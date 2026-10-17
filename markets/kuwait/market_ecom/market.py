@@ -23,12 +23,12 @@ MARKETS = {
         "accept_language": "ar-KW,ar;q=0.9,en-US;q=0.8,en;q=0.7",
         "places_re": (
             r"دولة الكويت|الكويت|Kuwait|"
-            r"العاصمة|حولي|السالمية|الفروانية|الجهراء|الأحمدي|الاحمدي|مبارك الكبير|الفحيحيل|المنقف|الجابرية|الشويخ|الري|"
-            r"خيطان|الرقعي|صباح السالم|الفنطاس|المهبولة|السالمي|الشرق|المرقاب|بنيد القار|الرميثية|مشرف|الزهراء|العارضية|"
-            r"الأفنيوز|الافنيوز|مجمع 360|الكوت مول|مارينا مول|العاصمة مول|الحمراء|سوق شرق|الخيران|"
+            r"حولي|السالمية|الفروانية|الجهراء|الأحمدي|الاحمدي|مبارك الكبير|الفحيحيل|المنقف|الجابرية|الشويخ|"
+            r"خيطان|الرقعي|صباح السالم|الفنطاس|المهبولة|المرقاب|بنيد القار|الرميثية|العارضية|"
+            r"الأفنيوز|الافنيوز|مجمع 360|الكوت مول|مارينا مول|العاصمة مول|سوق شرق|"
             r"\bHawalli\b|\bSalmiya\b|\bFarwaniya\b|\bJahra\b|\bAhmadi\b|Mubarak Al[- ]Kabeer|\bFahaheel\b|\bMangaf\b|\bJabriya\b|"
-            r"\bShuwaikh\b|\bAl[- ]Rai\b|\bKhaitan\b|\bRigga[ie]\b|\bSabah Al[- ]Salem\b|\bFintas\b|\bMahboula\b|\bSharq\b|\bMirqab\b|"
-            r"\bRumaithiya\b|\bMishref\b|\bArdiya\b|The Avenues|360 Mall|Al Kout Mall|Marina Mall|Assima Mall|Al Hamra|Gate Mall|"
+            r"\bShuwaikh\b|\bAl[- ]Rai\b|\bKhaitan\b|\bRigga[ie]\b|\bSabah Al[- ]Salem\b|\bFintas\b|\bMahboula\b|\bMirqab\b|"
+            r"\bRumaithiya\b|\bMishref\b|\bArdiya\b|The Avenues Kuwait|360 Mall|Al Kout Mall|Marina Mall|Assima Mall|Gate Mall Kuwait|"
             r"\bMurouj\b|Souq Sharq|Al Khiran"
         ),
         "pay_ship_re": r"\bK-?NET\b|كي ?نت|كي-نت|\bknet\b|Upayments|MyFatoorah|ماي فاتورة|\bTap Payments\b|Deema|ديما|توصيل داخل الكويت|delivery (?:in|across|within) kuwait|kuwait delivery|same[- ]day delivery kuwait|Kuwait Post|بريد الكويت",

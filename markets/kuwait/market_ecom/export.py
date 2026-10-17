@@ -13,15 +13,17 @@ from . import db
 from .common import identity
 from .queries import NICHES, CITIES
 from .verify import SA_GEO
+from . import market as MK
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..")
-XLSX = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.xlsx")
-CSV = os.path.join(OUT_DIR, "Saudi_Arabia_Ecommerce_Master_Directory.csv")
+XLSX = os.path.join(OUT_DIR, f"{MK.PREFIX}_Ecommerce_Master_Directory.xlsx")
+CSV = os.path.join(OUT_DIR, f"{MK.PREFIX}_Ecommerce_Master_Directory.csv")
 REF_CSV = os.path.join(OUT_DIR, "data", "reference_universe.csv")
 # master directory as committed before the reference audit (commit 16cd9b5), to tell "already present" from "added"
-PREVIOUS_CSV = os.path.join(OUT_DIR, "data", "previous_master_16cd9b5.csv")
+PREVIOUS_CSV = None
 
-PLATFORM_SHARED = {"salla.sa", "zid.store", "myshopify.com", "expandcart.com", "matjrah.store", "youcan.shop", "wuilt.com", "salla.store", "company.site", "wixsite.com"}
+PLATFORM_SHARED = {"salla.sa", "zid.store", "myshopify.com", "expandcart.com", "matjrah.store", "youcan.shop", "wuilt.com", "salla.store", "company.site", "wixsite.com",
+                   "ordable.com", "zyda.com", "myshopline.com", "mybigcommerce.com", "square.site", "ecwid.com"}
 
 
 def master_url(row):
@@ -112,11 +114,11 @@ def fmt_saudi(ev):
     if not e and not isinstance(ev, str):
         return ""
     parts = []
-    lab = {"sa_tld": ".sa domain", "sa_locale": "Saudi locale (en-sa/ar-sa)", "currency_SAR_code": "SAR currency in store config",
-           "sar_prices": "SAR/ر.س prices", "saudi_phone": "Saudi phone", "vat_number": "Saudi VAT no.", "commercial_registration": "CR no.",
-           "maroof": "Maroof", "saudi_places": "Saudi cities/country", "saudi_payment_shipping": "Saudi payment/shipping",
-           "saudi_platform": "Saudi platform", "shopify_shop_country": "Shopify shop country", "shopify_base_currency": "Shopify base currency",
-           "other_currency": "other currency"}
+    lab = {"mkt_tld": f".{MK.TLDS[0]} domain", "mkt_locale": f"{MK.NAME} locale/storefront path", "currency_code": "store currency",
+           "mkt_prices": f"{MK.CURRENCY} prices (count)", "mkt_phone": f"{MK.NAME} phone", "commercial_registration": "commercial licence no.",
+           "mkt_places": f"{MK.NAME} areas/country", "mkt_payment_shipping": f"{MK.NAME} payment/shipping (KNET etc.)",
+           "shopify_shop_country": "Shopify shop country", "shopify_base_currency": "Shopify base currency",
+           "other_currency": "other currency", "salla_store_currency": "Salla store currency", "woo_store_currency": "WooCommerce store currency"}
     for k, v in e.items():
         if v is True:
             parts.append(lab.get(k, k))
@@ -153,7 +155,7 @@ def main():
         if e:
             n.append("product evidence: " + "; ".join(e.get("product_evidence") or []))
             n.append("purchase evidence: " + "; ".join(e.get("purchase_evidence") or []))
-        if r.reason and r.reason != "ecommerce+saudi evidence ok":
+        if r.reason and r.reason != "ecommerce+market evidence ok":
             n.append(r.reason)
         return " | ".join(x for x in n if x)
 
@@ -163,8 +165,8 @@ def main():
         "Registrable Root Domain": ver["Registrable Root Domain"],
         "Platform": ver.platform,
         "Industry / Category": ver.category,
-        "Saudi Relevance Evidence": ver.market_evidence.map(fmt_saudi),
-        "Saudi Score": ver.market_score,
+        "Market Relevance Evidence": ver.market_evidence.map(fmt_saudi),
+        "Market Score": ver.market_score,
         "Verification Source URL": ver.final_url,
         "Product Evidence URL": ver.product_evidence,
         "Verification Date (UTC)": ver.verified_at,
@@ -182,7 +184,7 @@ def main():
         "Reason": unv.reason,
         "Platform (detected)": unv.platform,
         "Name (if detected)": unv.store_name,
-        "Saudi Score": unv.market_score,
+        "Market Score": unv.market_score,
         "Checked At (UTC)": unv.verified_at,
         "Discovery Source": unv.first_source,
     })
@@ -239,7 +241,7 @@ def coverage(con, ver, v, ndup):
     out.append(("Verified stores by platform", plat))
     cities = Counter()
     for ev in ver.market_evidence:
-        for p in json_obj(ev).get("saudi_places", []):
+        for p in json_obj(ev).get("mkt_places", []):
             cities[p] += 1
     out.append(("Regions/cities mentioned on verified storefronts (multi-count)", pd.DataFrame(cities.most_common(), columns=["City/Region", "Stores mentioning"])))
     src = q("""SELECT s.source AS Source, count(*) AS Candidates, sum(c.status IN ('verified','duplicate')) AS 'Verified (incl. dup)',
@@ -253,20 +255,21 @@ def coverage(con, ver, v, ndup):
     cc = q("SELECT substr(job, instr(job,'|')+1, instr(substr(job, instr(job,'|')+1),'|')-1) AS Pattern, count(*) AS 'Index pages fetched', sum(n) AS 'Keys seen', sum(n_new) AS 'New candidates' FROM jobs WHERE kind='cc' AND status='done' GROUP BY 1")
     out.append(("Common Crawl CDX harvesting", cc))
     workers = q("SELECT name AS Worker, kind AS Kind, concurrency AS Concurrency, started AS Started, heartbeat AS 'Last heartbeat', info AS 'Last stats' FROM workers")
-    out.append(("Agent / worker utilization (code workers; no separate AI subagents were spawned)", workers))
+    out.append(("Agent / worker utilization (asyncio code workers in separate tmux processes; no AI subagents were spawned)", workers))
+    cats = pd.DataFrame({"Category searched (query workstream)": sorted({c for c, _, _ in NICHES})})
+    out.append(("Categories covered by generated queries", cats))
+    regs = pd.DataFrame({"Area (Arabic)": [a for a, _ in CITIES], "Area (English)": [e for _, e in CITIES]})
+    out.append((f"{MK.NAME} governorates/areas used in queries and relevance signals", regs))
+    if con.execute("SELECT name FROM sqlite_master WHERE name='appstore_apps'").fetchone():
+        out.append(("App Store shopping apps harvested (seller websites -> candidates)", q("SELECT genre AS Genre, count(*) AS Apps FROM appstore_apps GROUP BY 1 ORDER BY 2 DESC")))
+    tp = q("SELECT count(*) AS 'Rank chunks done', sum(n) AS 'Domains probed', sum(n_new) AS 'New candidates', min(job) AS 'First chunk', max(ts) AS 'Last update' FROM jobs WHERE kind='tranco_probe' AND status='done'")
+    out.append(("Tranco top-1M homepage probe for market locale links", tp))
     reasons = q("SELECT status AS Status, substr(reason,1,70) AS Reason, count(*) AS Count FROM verifications WHERE status!='verified' GROUP BY 1,2 ORDER BY 3 DESC LIMIT 40")
     out.append(("Top rejection / unverified reasons", reasons))
     niche_cats = sorted({c for c, _, _ in NICHES})
-    gaps = pd.DataFrame({"Remaining gaps / expansion opportunities": [
-        "Bot-protected large retailers (Akamai/Cloudflare 403) need a real-browser pass (Playwright) or manual check; listed in Unverified with reason blocked_or_challenge.",
-        "Salla/Zid stores on custom domains are only found when a salla.sa/<slug> redirect, search result, or showcase links to them; no content-search index was available (PublicWWW/BuiltWith are paid).",
-        "Common Crawl only covers pages that were crawled; small/new stores absent from CC and search results are missed.",
-        "Shopify/WooCommerce Saudi stores on .com domains are found mainly via search; Bing returns 10 results/page and throttles, so long-tail coverage is partial.",
-        "Google search requires JS (blocked); DuckDuckGo html throttles after ~2 queries (anomaly page); Brave 429; Mojeek 403; Yandex/Startpage captcha.",
-        "Category labels are keyword-based (Arabic+English) from title/meta/products; expect some misclassification.",
-        "Salla API product 'type' gives reliable physical/digital split for Salla; for other platforms digital/service exclusion is heuristic.",
-        "Further expansion: more Bing query templates per niche/city; Common Crawl for more historical crawls of *.sa; mall tenant directories; Maroof (requires JS/auth, not used).",
-    ]})
+    gaps_file = os.path.join(OUT_DIR, "data", "coverage_gaps.txt")
+    lines = [l.strip() for l in open(gaps_file, encoding="utf-8")] if os.path.exists(gaps_file) else []
+    gaps = pd.DataFrame({"Remaining gaps / expansion opportunities": [l for l in lines if l]})
     out.append(("Remaining gaps and expansion opportunities", gaps))
     return out
 

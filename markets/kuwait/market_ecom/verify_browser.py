@@ -33,7 +33,7 @@ class BrowserFetcher(Fetcher):
         if check_robots and not await self.allowed(url):
             return None, url, "", {}, "robots_disallowed"
         async with self.page_sem:
-            ctx = await self.browser.new_context(locale="ar-SA", timezone_id="Asia/Riyadh",
+            ctx = await self.browser.new_context(locale="ar-KW", timezone_id="Asia/Kuwait",
                                                  user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
                                                  viewport={"width": 1366, "height": 900})
             page = await ctx.new_page()
