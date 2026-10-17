@@ -17,3 +17,7 @@ Metrics snapshots every 10 minutes: `logs/progress_metrics.jsonl`.
 * **12:50** Added verifier-4 (non-Shopify, priority 0–4, concurrency 48). Homepage probe concurrency lowered to 40 because the resolver times out under load.
 * **13:00** Browser pass: removed the `AutomationControlled` launch flag and the wait-for-challenge step so bot walls are never worked around; challenge pages stay unverified.
 * **13:08** Claim order shuffled within a priority level (CC rows arrive alphabetically and clustered on shared hosting, which drew HTTP 429s).
+* **13:36 (takeover after billing stop)** Resumed from checkpoint 3817cf8 (405 verified). Reinstalled env, re-downloaded Tranco and Wikidata, reset in_progress rows, restarted verifiers 1/2/4 and reference resolver.
+* **14:00–16:10** Verifiers ran (~120/min, many HTTP 429 on shared-hosting `.ae` hosts). Reference `link` + `audit` fixed (the slow `retry-none` was killed). Playwright browsers re-installed; browser pass (bot walls are not worked around) and secondary-evidence pass run twice.
+* **16:20** Reference-linked pending brands raised to priority 20 and verified; most remaining majors are Akamai/Cloudflare 403s from this US VM -> unresolved by name.
+* **16:40** Final export: 3,756 verified (3,694 primary + 62 secondary); 25,129 candidates still pending (low-priority Common Crawl `.ae` hosts, priority 1-3) were not reached.
