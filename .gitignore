@@ -7,3 +7,10 @@ data/raw/
 logs/*.log
 data/saudi_ecom.sqlite
 data/snapshot.sqlite
+markets/*/data/raw/
+markets/*/data/*.sqlite
+markets/*/data/*.sqlite-wal
+markets/*/data/*.sqlite-shm
+markets/*/data/snapshot.sqlite
+markets/*/data/cache/
+markets/*/logs/*.log
