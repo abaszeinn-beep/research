@@ -107,6 +107,7 @@ class Net:
         self.max_rate = 0.0
         self.next_slot = 0.0
         self.rate_lock = asyncio.Lock()
+        self.use_curl = False
 
     async def start(self):
         self.dns = aiodns.DNSResolver(timeout=5, tries=2)
@@ -150,7 +151,43 @@ class Net:
         elif status and status < 500:
             self.rate = min(self.max_rate, self.rate + 0.02)
 
+    async def _curl_get(self, url, max_bytes, timeout, headers=None) -> Resp:
+        marker = "\n__CURLMETA__"
+        cmd = ["curl", "-s", "-k", "-L", "--max-redirs", "8", "--compressed", "--connect-timeout", "7",
+               "--max-time", str(int(timeout)), "-A", UA, "-H", "Accept: " + HEADERS["Accept"],
+               "-H", "Accept-Language: " + HEADERS["Accept-Language"],
+               "-w", marker + "%{http_code} %{url_effective} %{content_type}", url]
+        try:
+            p = await asyncio.create_subprocess_exec(*cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.DEVNULL)
+            out, _ = await asyncio.wait_for(p.communicate(), timeout + 5)
+        except (asyncio.TimeoutError, OSError):
+            try:
+                p.kill()
+            except Exception:  # noqa: BLE001
+                pass
+            return Resp(url=url, err="timeout")
+        rc = p.returncode
+        text = out.decode("utf-8", errors="replace")
+        body, _, meta_s = text.rpartition(marker)
+        parts = meta_s.split(" ", 2)
+        code = int(parts[0]) if parts and parts[0].isdigit() else 0
+        if rc == 6:
+            return Resp(url=url, err="dns")
+        if rc in (35, 51, 58, 60):
+            return Resp(url=url, err="ssl")
+        if rc == 47:
+            return Resp(url=url, err="too_many_redirects")
+        if rc == 28:
+            return Resp(url=url, err="timeout")
+        if rc == 7 or code == 0:
+            return Resp(url=url, err="connect" if rc == 7 else f"http_error:curl_{rc}")
+        self.stats["requests"] += 1
+        hdrs = {"Content-Type": parts[2] if len(parts) > 2 else ""}
+        return Resp(code, parts[1] if len(parts) > 1 else url, body[:max_bytes], hdrs)
+
     async def _get(self, url, max_bytes, timeout, headers=None) -> Resp:
+        if self.use_curl:
+            return await self._curl_get(url, max_bytes, timeout, headers)
         try:
             async with self.session.get(url, timeout=aiohttp.ClientTimeout(total=timeout, sock_connect=7, sock_read=timeout),
                                         headers=headers, allow_redirects=True, max_redirects=8) as r:
@@ -724,6 +761,7 @@ async def main():
     net = Net(args.concurrency, args.shopify_concurrency)
     await net.start()
     v = Verifier(net, shopify_mode=args.mode == "shopify")
+    net.use_curl = args.mode == "shopify"
     if args.domains:
         for d in args.domains.split(","):
             print(json.dumps(await v.process(d.strip(), 0), ensure_ascii=False))
@@ -731,6 +769,7 @@ async def main():
         return
     if args.mode == "shopify":
         net.rate, net.max_rate = args.rate, args.max_rate
+        net.use_curl = True
         done = done_set(prefix="results_shopify")
         items = [(r, d) for r, d in deferred(args.retry_status) if d not in done]
         out_path = os.path.join(WORK, "results_shopify.jsonl")
