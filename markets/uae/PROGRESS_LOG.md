@@ -21,3 +21,12 @@ Metrics snapshots every 10 minutes: `logs/progress_metrics.jsonl`.
 * **14:00–16:10** Verifiers ran (~120/min, many HTTP 429 on shared-hosting `.ae` hosts). Reference `link` + `audit` fixed (the slow `retry-none` was killed). Playwright browsers re-installed; browser pass (bot walls are not worked around) and secondary-evidence pass run twice.
 * **16:20** Reference-linked pending brands raised to priority 20 and verified; most remaining majors are Akamai/Cloudflare 403s from this US VM -> unresolved by name.
 * **16:40** Final export: 3,756 verified (3,694 primary + 62 secondary); 25,129 candidates still pending (low-priority Common Crawl `.ae` hosts, priority 1-3) were not reached.
+
+## Follow-up: resolve the 16 unresolved majors (2026-10-17, 16:55-23:00 UTC)
+
+* The VM had been replaced; DB restored from `data/uae_ecom.sqlite.gz`, environment and Playwright reinstalled.
+* New tools: `deep_check.py` (follows robots-allowed category -> product links with a normal UA; a 403/challenge/waiting-room is final), `wb_probe.py` / `wb_batch*.py` (Wayback CDX with product-path filters, last 14 months; retries while archive.org says "Temporarily Offline"), `majors_resolve.py` (records evidence per major: Wayback product page with AED + cart/Offer JSON-LD, Common Crawl product capture, public sitemap with UAE product URLs, UAE App Store listing), `secondary2.py` (same Wayback probe for unresolved medium/GCC refs).
+* Majors outcome: 13 of 16 resolved (Level Shoes and Huda Beauty primary via live product pages with AED JSON-LD + Add to Bag; Adidas, Babyshop, Carrefour UAE, Malabar, Namshi, Sharaf DG, Shoemart, Styli, H&M, Boots, du shop secondary). Boots' real UAE storefront is `ae.boots.com` (the reference listed `boots.ae`, which does not serve a shop). Dubai Duty Free, Joyalukkas and Lulu stay unresolved (single proof / JS-only / no archive captures).
+* Excluded-majors recheck: Emax, Lifestyle, Ajmal and Toys R Us UAE had been excluded as "no storefront" because their domains were wrong or 403; they are now `unresolved` with the bot-wall reason. Uniqlo (no UAE store, `/ae/en/` 404), SHEIN (geo-redirect), noon/Amazon.ae/Dubizzle/Talabat (aggregators), Arabian Oud (store closed) stay excluded.
+* Pending Common Crawl `.ae` queue drained in priority order (verifier-4/-1/-2): 25,129 pending -> 1.
+* Note: Akamai returned 200 to `curl` but 403 to httpx for `dubaidutyfree.com/productSitemap.xml`; the curl result was not used as evidence, to avoid choosing a client to get past a bot wall.

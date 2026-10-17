@@ -82,6 +82,6 @@ bash scripts/checkpoint.sh "UAE checkpoint"
 
 Ad-hoc check without touching the DB: `python3 -m mkt_ecom.check_urls https://www.example.ae/`.
 
-## State at takeover end (2026-10-17 ~16:40Z)
+## State at end of follow-up (2026-10-17 ~23:00Z)
 
-Verified 3,756 (3,694 primary, 62 secondary). Remaining work: ~25k pending low-priority CC hosts (run verifier-4 on priority 1-3), more secondary passes for bot-walled majors (Sharaf DG, Lulu, Namshi, H&M, Adidas, Carrefour UAE, Styli...), brand audit 147 unresolved. Do not run `reference retry-none` piped (very slow); use `timeout`.
+Pending queue drained (1 left). Majors: 45 in directory (22 primary, 23 secondary), 3 unresolved (Lulu Hypermarket, Dubai Duty Free, Joyalukkas), plus Emax, Lifestyle, Ajmal, Toys R Us UAE unresolved (bot-walled/JS) and 7 excluded with reason. New helper modules: `deep_check`, `wb_probe`, `wb_batch*.py`, `majors_resolve`, `secondary2` (see PROGRESS_LOG). Next: more secondary passes for medium/GCC refs (58 medium + 42 GCC unresolved), retry Wayback when archive.org is back, retry unverified (bot-walled) hosts later. `reference retry-none` is very slow; wrap in `timeout`.
