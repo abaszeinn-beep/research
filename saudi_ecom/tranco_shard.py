@@ -606,6 +606,59 @@ async def browser_stage(st: State, a):
         await browser.close()
 
 
+def restore_from_checkpoint(st: State, out_dir: str, shard: int, sl):
+    """Rebuild state from the pushed shard CSV + summary (used when the local state DB was lost)."""
+    sp = os.path.join(out_dir, f"shard_{shard}_summary.json")
+    cp = os.path.join(out_dir, f"shard_{shard}.csv")
+    if not (os.path.exists(sp) and os.path.exists(cp)):
+        return {}
+    summ = json.load(open(sp))
+    through = int((summ.get("checkpoint") or {}).get("screened_through_rank") or 0)
+    if not through:
+        return {}
+    n_rows = 0
+    with open(cp, encoding="utf-8") as fh:
+        for r in csv.DictReader(fh):
+            if int(r["tranco_rank"]) > through:
+                continue
+            ident = identity(r["canonical_storefront_url"]) or {"key": r["canonical_storefront_url"], "url": r["canonical_storefront_url"],
+                                                                "root_domain": r["root_domain"], "platform_hint": None}
+            m = re.search(r" \[found via (\S+) of ([^\]]+)\]", r["reason"])
+            via, src = (m.group(1), m.group(2)) if m else ("homepage", "")
+            reason = re.sub(r" \[found via [^\]]*\]", "", r["reason"])
+            st.con.execute("INSERT OR IGNORE INTO hits(key,url,root_domain,rank,source_domain,via,screen_signals,platform_hint,state,ts) VALUES(?,?,?,?,?,?,?,?,?,?)",
+                           (ident["key"], r["canonical_storefront_url"], r["root_domain"], int(r["tranco_rank"]), src, via, r["saudi_evidence"],
+                            ident.get("platform_hint"), "done", now()))
+            res = {"status": r["status"], "reason": reason, "final_url": r["canonical_storefront_url"], "store_name": r["store_name"],
+                   "platform": r["platform"], "category": r["category"], "saudi_evidence": r["saudi_evidence"],
+                   "evidence_url": r["verification_url"], "product_evidence": r["verification_url"], "verified_at": r["verification_utc"]}
+            browser = "restored" if "headless-browser render" in reason or "(browser)" in reason else None
+            secondary = "restored" if r["status"] == "verified_secondary_evidence" or "secondary evidence insufficient" in reason else None
+            st.con.execute("INSERT OR REPLACE INTO results(key,row,ts,res,secondary,browser) VALUES(?,?,?,?,?,?)",
+                           (ident["key"], json.dumps(dict(r, tranco_rank=int(r["tranco_rank"])), ensure_ascii=False), now(),
+                            json.dumps(res, ensure_ascii=False), secondary, browser))
+            n_rows += 1
+    for rank, dom in sl:
+        if rank <= through:
+            st.con.execute("INSERT OR IGNORE INTO screened VALUES(?,?,?,?,?)", (dom, rank, "restored", "", now()))
+    st.con.commit()
+    print(f"[shard] restored checkpoint: through rank {through}, {n_rows} result rows", flush=True)
+    return summ["checkpoint"]
+
+
+def watermark(st: State, sl):
+    """Highest rank R such that every slice domain <= R is screened and every hit from ranks <= R is verified."""
+    screened = {r[0] for r in st.con.execute("SELECT domain FROM screened")}
+    pend = st.con.execute("SELECT min(rank) FROM hits WHERE state!='done'").fetchone()[0]
+    through = sl[0][0] - 1 if sl else 0
+    for rank, dom in sl:
+        if dom not in screened or (pend is not None and rank >= pend):
+            break
+        through = rank
+    oc = Counter(r[0] for r in st.con.execute("SELECT outcome FROM screened WHERE rank<=? AND outcome!='restored'", (through,)))
+    return through, oc
+
+
 async def run(a):
     import warnings
     warnings.filterwarnings("ignore")
@@ -629,7 +682,25 @@ async def run(a):
             rank = int(rank)
             if a.start <= rank <= a.end:
                 sl.append((rank, dom.strip().lower()))
+    sl.sort()
     summary = {"shard": a.shard, "rank_start": a.start, "rank_end": a.end, "tranco_list_id": a.list_id, "domains_in_slice": len(sl)}
+    prior = {}
+    if not st.con.execute("SELECT 1 FROM screened LIMIT 1").fetchone():
+        prior = restore_from_checkpoint(st, out_dir, a.shard, sl)
+    else:
+        row = st.con.execute("SELECT value FROM meta WHERE name='prior'").fetchone() if st.con.execute(
+            "SELECT 1 FROM sqlite_master WHERE name='meta'").fetchone() else None
+        prior = json.loads(row[0]) if row else {}
+    st.con.execute("CREATE TABLE IF NOT EXISTS meta(name TEXT PRIMARY KEY, value TEXT)")
+    st.con.execute("INSERT OR REPLACE INTO meta VALUES('prior', ?)", (json.dumps(prior),))
+    st.con.commit()
+    prior_oc = Counter(prior.get("screen_outcomes_through") or {})
+    a.prior_runtime += int(prior.get("runtime_seconds") or 0)
+
+    def checkpoint_info(el):
+        through, oc = watermark(st, sl)
+        return {"screened_through_rank": through, "screen_outcomes_through": dict(prior_oc + oc),
+                "runtime_seconds": round(el) + a.prior_runtime, "updated_utc": now()}
     if a.retry_errors:
         n = st.con.execute("DELETE FROM screened WHERE outcome='error'").rowcount
         st.con.commit()
@@ -761,7 +832,8 @@ async def run(a):
             el = time.time() - t0
             print(f"[shard] {round(el/60,1)}min left={dq.qsize()}/{total_todo} vq={vq.qsize()} {dict(stats)} req={sc.stats['requests']}", flush=True)
             if time.time() - last_push > a.push_every:
-                write_outputs(st, out_dir, a.shard, summary | {"in_progress": True, "runtime_seconds": round(el)})
+                cp = checkpoint_info(el)
+                write_outputs(st, out_dir, a.shard, summary | {"in_progress": True, "runtime_seconds": cp["runtime_seconds"], "checkpoint": cp})
                 await asyncio.to_thread(git_checkpoint, out_dir, a.shard, f"Tranco shard {a.shard}: checkpoint ({total_todo - dq.qsize()}/{total_todo} screened)")
                 last_push = time.time()
 
@@ -819,9 +891,10 @@ async def run(a):
             await asyncio.gather(*(one(h, r) for h, r in secondary_items))
 
     rep.cancel()
-    oc = Counter(r[0] for r in st.con.execute("SELECT outcome FROM screened"))
+    oc = prior_oc + Counter(r[0] for r in st.con.execute("SELECT outcome FROM screened WHERE outcome!='restored'"))
+    summary["checkpoint"] = checkpoint_info(time.time() - t0) | {"stages_complete": ["screen", "http_verify", "browser", "secondary"]}
     summary.update({
-        "screened": sum(v for k, v in oc.items() if k not in ("skipped_known",)),
+        "screened": sum(v for k, v in oc.items() if k not in ("skipped_known", "recheck")),
         "screen_outcomes": dict(oc),
         "saudi_hits": st.con.execute("SELECT count(*) FROM hits").fetchone()[0],
         "errors": oc["error"],
