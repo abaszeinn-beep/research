@@ -44,7 +44,7 @@ MENU = re.compile(r"\b(?:americano|latte|cappuccino|espresso|macchiato|mocha|fra
                   r"sandwich|sub|hoagie|wrap|salad|bowl|combo|meal|platter|fries|wings|burger|pizza|calzone|taco|entr[eé]e|appetizer|breakfast|lunch|dinner|"
                   r"plates?|omelet|pancakes?|waffles?|bagel|toast|soup|noodles?|ramen|pho|sushi|roll|curry|kebab|gyro|bbq plate|side of|add on|catering tray)\b", re.I)
 
-BUCKETS = {"wix-edge": (14, 0.05), "wixsite.com": (6, 0.2), "square.site": (6, 0.2), "bigcartel.com": (4, 0.3), "mybigcommerce.com": (4, 0.3),
+BUCKETS = {"wix-edge": (14, 0.05), "square-edge": (10, 0.05), "sqs-edge": (12, 0.05), "wixsite.com": (6, 0.2), "square.site": (6, 0.2), "bigcartel.com": (4, 0.3), "mybigcommerce.com": (4, 0.3),
            "company.site": (4, 0.3), "squarespace.com": (4, 0.3), "3dcartstores.com": (3, 0.4), "weebly.com": (4, 0.3)}
 
 
@@ -367,10 +367,11 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
 
     if cand.get("root_domain") in MARKETPLACE_ROOTS:
         return done("rejected", "excluded_marketplace: " + MARKETPLACE_ROOTS[cand["root_domain"]])
-    if cand.get("platform_hint") == "wix" and cand.get("root_domain") != "wixsite.com":
+    edge = {"wix": "wix-edge", "square": "square-edge", "squarespace": "sqs-edge"}.get(cand.get("platform_hint") or "")
+    if edge and cand.get("root_domain") not in ("wixsite.com", "square.site", "squarespace.com"):
         h0 = urlsplit(url).hostname or ""
         for h in {h0, h0[4:] if h0.startswith("www.") else "www." + h0}:
-            SHARED_EDGE[h] = "wix-edge"
+            SHARED_EDGE[h] = edge
     st, final, html, hdrs, err = await f.get(url)
     if st is None and (err or "").split(":")[0] in ("connect_error", "timeout") and url.startswith("https://") and cand.get("platform_hint") not in ("wix", "square", "bigcartel"):
         host = urlsplit(url).hostname or ""
