@@ -25,3 +25,10 @@ All times are 2026-10-17 UTC.
   export + commit + push every 20 min), Tranco `--start`, Common Crawl collinfo retry. Reinstalled a
   local dnsmasq cache and Playwright. Reloaded references and restarted all workers (commit `1f081ce`).
 - **12:45.** Browser verification loop started (Chromium, `ar-KW`, `Asia/Kuwait`, no CAPTCHA solving).
+- **13:36 takeover (billing stop).** New worker resumed from checkpoint `e1eb2ff`/`45082dd`: reinstalled deps,
+  dnsmasq cache and Chromium, reset 131 stale `in_progress` rows, ran `requeue` (245, later 266 rows),
+  restarted Tranco, CC, DDG search, reference and verify workers. Tranco raw list was missing
+  (git-ignored) and was re-downloaded (list 64VVX); Tranco probing reached rank ~18k only (resolver
+  degradation, ~5 min per 2,000 ranks); DDG blocked again; `reference retry-none` hung and was killed.
+- **~16:30 final.** `reference link`, `reference appstore`, `secondary` and `audit` run; snapshot and
+  export refreshed: 353 verified (322 primary, 34 secondary incl. overlap per DB statuses), 927 unverified, 758 rejected.
