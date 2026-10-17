@@ -441,6 +441,39 @@ async def screen_domain(sc: Screener, st: State, domain: str, rank: int, known_r
     return outcome, detail
 
 
+# Manual QA of verified rows (page reviewed by hand): key -> (status, reason)
+MANUAL_QA = {
+    "vidaxl.gr": ("rejected", "manual_qa: Greek vidaXL store (EUR); the 'Saudi phone' match was an 800 toll-free number"),
+    "graphisoft.com|sa": ("rejected", "manual_qa: software vendor (Archicad licences), digital-only"),
+    "rush.com.sa": ("rejected", "manual_qa: RUSH Car Wash is a car-wash service, not a product store"),
+    "aloha.sa": ("rejected", "manual_qa: general contracting / cleaning services company"),
+    "logicool.co.jp|sa": ("unverified", "manual_qa: Logitech Saudi page has no cart or SAR prices (where-to-buy only); manual review"),
+    "westerndigital.com|sa": ("unverified", "manual_qa: Western Digital /ar-sa shows one SAR price but no confirmed add-to-cart; manual review"),
+    "alange-soehne.com": ("unverified", "manual_qa: verified page resolved to /us-en; /sa-en has no cart in static HTML; manual review"),
+    "global.sa": ("unverified", "manual_qa: medical centre/clinic name with a small Zid catalogue; manual review"),
+    "she.sa": ("unverified", "manual_qa: lice-treatment centre (service business) with a WooCommerce shop; manual review"),
+    "cic.sa": ("unverified", "manual_qa: Construction Industries Company (B2B building products), purchase path unclear; manual review"),
+    "rodina.sa": ("unverified", "manual_qa: custom kitchens & aluminium works, priced projects rather than catalogue products; manual review"),
+}
+
+
+def apply_manual_qa(st: State, secondary_keys: set | None = None):
+    for key, (status, reason) in MANUAL_QA.items():
+        r = st.con.execute("SELECT row FROM results WHERE key=?", (key,)).fetchone()
+        if not r:
+            continue
+        row = json.loads(r[0])
+        if row["status"] != status or not row["reason"].startswith("manual_qa"):
+            row["status"], row["reason"] = status, reason + " (was: " + row["reason"][:120] + ")"
+            st.con.execute("UPDATE results SET row=? WHERE key=?", (json.dumps(row, ensure_ascii=False), key))
+    for key, r, sec in st.con.execute("SELECT key, row, secondary FROM results").fetchall():
+        row = json.loads(r)
+        if sec is None and row["status"] == "unverified" and SECONDARY_REASON.search(row["reason"]) and "secondary evidence" not in row["reason"]:
+            row["reason"] = (row["reason"] + "; secondary evidence not attempted (no retail-storefront signal / not a retail brand)")[:500]
+            st.con.execute("UPDATE results SET row=? WHERE key=?", (json.dumps(row, ensure_ascii=False), key))
+    st.con.commit()
+
+
 CSV_COLS = ["store_name", "canonical_storefront_url", "root_domain", "tranco_rank", "platform", "category", "status",
             "saudi_evidence", "verification_url", "verification_utc", "reason"]
 
@@ -855,13 +888,14 @@ async def run(a):
         hit = dict(zip(hit_cols, row[:-1]))
         res = json.loads(row[-1] or "{}")
         if res.get("status") == "unverified" and SECONDARY_REASON.search(res.get("reason") or ""):
-            secondary_items.append((hit, res))
+            if not a.secondary_keys or hit["key"] in a.secondary_keys:
+                secondary_items.append((hit, res))
 
     # Secondary evidence for hits the live verifier could not read (no bypass; archives, sitemaps, App Store).
     if secondary_items and not a.no_secondary:
         from . import secondary as SEC
         print(f"[shard] secondary evidence for {len(secondary_items)} hits", flush=True)
-        sem = asyncio.Semaphore(3)
+        sem = asyncio.Semaphore(a.secondary_concurrency)
         async with httpx.AsyncClient(headers=SEC.UA_RESEARCH, follow_redirects=True, timeout=60) as arch, \
                 httpx.AsyncClient(headers=SEC.UA_BROWSER, follow_redirects=True, timeout=30) as live, \
                 httpx.AsyncClient(headers=SEC.UA_BROWSER, follow_redirects=True, timeout=30) as brw:
@@ -904,6 +938,7 @@ async def run(a):
         "runtime_seconds": round(time.time() - t0) + a.prior_runtime,
         "generated_utc": now(),
     })
+    apply_manual_qa(st)
     write_outputs(st, out_dir, a.shard, summary)
     print("[shard] done", json.dumps(summary), flush=True)
     if a.push:
@@ -932,5 +967,8 @@ if __name__ == "__main__":
     ap.add_argument("--retry-errors", action="store_true")
     ap.add_argument("--browser-concurrency", type=int, default=4)
     ap.add_argument("--limit", type=int, default=0, help="screen only the first N remaining domains (testing)")
+    ap.add_argument("--secondary-keys", default="", help="comma-separated hit keys to run secondary evidence on (default: all eligible)")
+    ap.add_argument("--secondary-concurrency", type=int, default=3)
     a = ap.parse_args()
+    a.secondary_keys = {k for k in a.secondary_keys.split(",") if k}
     asyncio.run(run(a))
