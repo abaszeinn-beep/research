@@ -81,8 +81,38 @@ class Limiter:
         self.last_adjust = now
 
 
+class Rate:
+    """Request-start rate limiter (req/s) with multiplicative decrease on HTTP 429, slow recovery."""
+
+    def __init__(self, rps, lo=2.0, hi=None):
+        self.rps, self.lo, self.hi = rps, lo, hi or rps * 1.5
+        self.next_t = time.monotonic()
+        self.lock = asyncio.Lock()
+        self.last_cut = 0.0
+        self.last_up = time.monotonic()
+
+    async def wait(self):
+        async with self.lock:
+            now = time.monotonic()
+            if now - self.last_up > 30:
+                self.rps = min(self.hi, self.rps * 1.03)
+                self.last_up = now
+            t = max(now, self.next_t)
+            self.next_t = t + 1.0 / self.rps
+        if t > now:
+            await asyncio.sleep(t - now)
+
+    def hit_429(self):
+        now = time.monotonic()
+        if now - self.last_cut > 5:
+            self.rps = max(self.lo, self.rps * 0.8)
+            self.last_cut = now
+            self.last_up = now
+
+
 class Fetcher:
-    def __init__(self, concurrency, per_host=2, gap=0.35):
+    def __init__(self, concurrency, per_host=2, gap=0.35, rps=18.0, rps_max=None):
+        self.rate = Rate(rps, hi=rps_max or rps)
         self.client = AsyncSession(headers=HEADERS, timeout=20, max_clients=concurrency * 3, verify=False,
                                    allow_redirects=True, max_redirects=8)
         self.lim = Limiter(concurrency, 8, concurrency * 2)
@@ -146,12 +176,14 @@ class Fetcher:
                     await asyncio.sleep(wait)
                 self.host_last[host] = time.monotonic()
                 async with self.lim:
+                    await self.rate.wait()
                     try:
                         st, final, text, hdrs = await asyncio.wait_for(self._raw(url), 25)
                         self.stats["requests"] += 1
                         self.lim.record(st == 429)
                         if st == 429:
                             self.stats["http_429"] += 1
+                            self.rate.hit_429()
                             self.host_gap[host] = min(self.host_gap[host] * 2 + 0.5, 8)
                         if st in (429, 502, 503, 504) and attempt < tries - 1 and not S.CHALLENGE.search(text[:4000]):
                             err = f"http_{st}"
@@ -288,6 +320,9 @@ class Verifier:
         if nprod == 0:
             return done("rejected", "no_published_products (meta.json)", us_evidence=evs())
 
+        rb = self.f.robots.get(f"https://{fetch_host}")
+        if rb is not None and rb != "dns":
+            self.f.robots.setdefault(f"https://{dom}", rb)
         if dom != fetch_host.lower() and not await self.f.allowed(f"https://{dom}/"):
             return done("unverified", "storefront disallowed by robots.txt", us_evidence=evs())
         hurl = f"https://{dom}/"
@@ -310,7 +345,7 @@ class Verifier:
             out["canonical_url"] = f"https://{final_host}/"
             out["root_domain"] = registrable(final_host)
             ev["redirects_to"] = final_host
-        contact = S.us_contact_signals(html)
+        contact = S.us_contact_signals(html if len(html) < 500_000 else html[:250_000] + html[-250_000:])
         ev.update(contact)
         m = S.ACTIVE_CUR.search(html)
         if m:
@@ -414,16 +449,16 @@ class Verifier:
         self.save(key, r)
 
 
-async def main(concurrency, stores_in_flight, max_n, min_priority, idle_exit, retry):
+async def main(concurrency, stores_in_flight, max_n, min_priority, idle_exit, retry, shard=0, nshards=1, rps=18.0, rps_max=None):
     con = connect()
-    con.execute("UPDATE candidates SET state='pending' WHERE state='claimed'")
+    con.execute("UPDATE candidates SET state='pending' WHERE state='claimed' AND rowid % ? = ?", (nshards, shard))
     if retry:
         keys = [k for (k, r) in con.execute("SELECT key, reason FROM results WHERE status IN ('unverified','error')")
                 if any((r or "").startswith(x) for x in RETRYABLE)]
         con.executemany("UPDATE candidates SET state='pending' WHERE key=?", [(k,) for k in keys])
         con.executemany("DELETE FROM results WHERE key=?", [(k,) for k in keys])
         print(f"[verify] re-queued {len(keys)} retryable candidates", flush=True)
-    f = Fetcher(concurrency)
+    f = Fetcher(concurrency, rps=rps, rps_max=rps_max)
     v = Verifier(con, f)
     t0 = time.time()
     processed = 0
@@ -434,7 +469,7 @@ async def main(concurrency, stores_in_flight, max_n, min_priority, idle_exit, re
         idle_since = None
         while not stop:
             rows = con.execute("SELECT key, kind, fetch_host, hint FROM candidates WHERE state='pending' AND priority>=? "
-                               "ORDER BY priority DESC, rowid LIMIT 500", (min_priority,)).fetchall()
+                               "AND rowid % ? = ? ORDER BY priority DESC, rowid LIMIT 500", (min_priority, nshards, shard)).fetchall()
             if not rows:
                 idle_since = idle_since or time.time()
                 if time.time() - idle_since > idle_exit:
@@ -464,8 +499,8 @@ async def main(concurrency, stores_in_flight, max_n, min_priority, idle_exit, re
             await asyncio.sleep(60)
             el = time.time() - t0
             print(f"[verify] {processed} done in {el/60:.1f}m ({processed/el:.1f}/s) limit={f.lim.limit} "
-                  f"inflight={f.lim.inflight} {dict(v.stats)} {dict(f.stats)}", flush=True)
-            set_meta(con, "verify_stats_last", {"processed": processed, "elapsed_s": el, "limit": f.lim.limit,
+                  f"inflight={f.lim.inflight} rps={f.rate.rps:.1f} {dict(v.stats)} {dict(f.stats)}", flush=True)
+            set_meta(con, f"verify_stats_last_{shard}", {"processed": processed, "elapsed_s": el, "limit": f.lim.limit,
                                                 "stores_in_flight": stores_in_flight, **v.stats,
                                                 **{"f_" + k: n for k, n in f.stats.items()}})
             set_meta(con, "concurrency_peak", max(get_meta(con, "concurrency_peak", 0) or 0, f.lim.peak))
@@ -476,7 +511,7 @@ async def main(concurrency, stores_in_flight, max_n, min_priority, idle_exit, re
     stop = True
     prod.cancel()
     rep.cancel()
-    set_meta(con, "verify_runtime_s", (get_meta(con, "verify_runtime_s", 0) or 0) + time.time() - t0)
+    set_meta(con, f"verify_runtime_s_{shard}", (get_meta(con, f"verify_runtime_s_{shard}", 0) or 0) + time.time() - t0)
     print(f"[verify] finished {processed} {dict(v.stats)} {dict(f.stats)}", flush=True)
     await f.client.close()
 
@@ -489,7 +524,11 @@ if __name__ == "__main__":
     ap.add_argument("--min-priority", type=float, default=-99)
     ap.add_argument("--idle-exit", type=int, default=900)
     ap.add_argument("--retry", action="store_true", help="re-queue retryable unverified results first")
+    ap.add_argument("--rps", type=float, default=18.0, help="max request starts per second (adaptive on 429)")
+    ap.add_argument("--rps-max", type=float, default=None)
+    ap.add_argument("--shard", default="0/1", help="i/n: this process takes candidates with rowid %% n == i")
     a = ap.parse_args()
     import warnings
     warnings.filterwarnings("ignore")
-    asyncio.run(main(a.concurrency, a.stores, a.max, a.min_priority, a.idle_exit, a.retry))
+    si, sn = map(int, a.shard.split("/"))
+    asyncio.run(main(a.concurrency, a.stores, a.max, a.min_priority, a.idle_exit, a.retry, si, sn, a.rps, a.rps_max))
