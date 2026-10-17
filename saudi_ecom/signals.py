@@ -113,7 +113,7 @@ SERVICE_NAME = re.compile(r"تدريب|التدريب|برنامج (?!العنا
                           r"|فورتنايت|fortnite|فيفا كوينز|fifa coins", re.I)
 RESTAURANT_SUPPLY_NAME = re.compile(r"مستلزمات|معدات|تجهيزات|لوازم|أدوات|ادوات|equipment|supply|supplies|machinery", re.I)
 RESTAURANT_NAME = re.compile(r"(?<!مستلزمات )(?<!معدات )(?<!تجهيزات )(?<!تجهيز )(?:مطعم|مطاعم)|(?<!supplies )\brestaurant\b(?! (?:supplies|equipment))|مشويات|مندي|مظبي|بوفيه", re.I)
-CHARITY_PRODUCT = re.compile(r"صدقة|تبرع|زكاة|سقيا|كفالة يتيم|كفالة أيتام|وقف خيري|donat(?:e|ion)", re.I)
+CHARITY_PRODUCT = re.compile(r"صدقة|تبرع|زكاة|سقيا|كفالة|وقف خيري|إفطار صائم|افطار صائم|إطعام|اطعام|كسوة الشتاء|(?<![\u0600-\u06FF])أوقف|donat(?:e|ion)", re.I)
 SERVICE_ORG = re.compile(r"للتدريب|تدريب|training|للخدمات|خدمات|\bservices\b|مكتب\b|منصة|منصة تعليمية|أكاديمية|academy|معقب|وكيلك|للاستشارات|consult", re.I)
 CHARITY = re.compile(r"جمعية|خيري|خيرية|تبرع|تبرعات|كفالة يتيم|كفالة|صدقة|زكاة|وقف خيري|أوقاف|donat(?:e|ion)|charity|sadaqah|zakat|non-?profit|غير ربحية", re.I)
 ORG = re.compile(r"نادي|جمعية|مستشفى|hospital|جامعة|university|مدرسة|مدارس|school|academy|أكاديمية|معهد|institute|كلية|college|وزارة|ministry|هيئة|authority|بلدية|municipality|غرفة تجارية|chamber of commerce|مجمع طبي|مجمع [^ ]+ الطبي|مجمع [^ ]+ [^ ]+ الطبي|مركز طبي|educational|تعليمي|تعليمية|للتدريب|تدريب|training|travel|tours|للسفر|سياحة|سفريات|طيران|hotel|فندق|فنادق|medical (?:complex|center)|عيادات|clinics|منصة|platform|مكتب محاماة|law firm|مكتب هندسي|consultants?|استشارات|شركة مقاولات|contracting|نقابة|federation|اتحاد|consultancy|consulting|عيادة|clinic\b|مستوصف|dental|طب الأسنان|^dr\.? |^د\. ?|برمجة|تطوير المواقع|تصميم المواقع|web design|software|digital agency|marketing agency|وكالة تسويق|recruitment|توظيف|staffing", re.I)
