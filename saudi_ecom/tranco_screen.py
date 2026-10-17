@@ -190,7 +190,18 @@ class ScreenFetcher(V.Fetcher):
         return None, url, "", {}, last_err
 
 
-def install_dns_cache(loop, threads=96):
+DNS_SEM: asyncio.Semaphore | None = None
+
+
+def dns_sem() -> asyncio.Semaphore:
+    """One limit for every lookup path: the VPC resolver drops queries when thousands arrive in a burst."""
+    global DNS_SEM
+    if DNS_SEM is None:
+        DNS_SEM = asyncio.Semaphore(48)
+    return DNS_SEM
+
+
+def install_dns_cache(loop, threads=48):
     """Cache getaddrinfo per host and give it a large thread pool: the default 8-thread executor queues
     hundreds of concurrent lookups until httpx's connect timeout fires, which looks like dead hosts."""
     from concurrent.futures import ThreadPoolExecutor
@@ -204,7 +215,8 @@ def install_dns_cache(loop, threads=96):
         last = None
         for attempt in range(2):
             try:
-                return await loop.run_in_executor(pool, socket.getaddrinfo, host, port, family, type, proto, flags)
+                async with dns_sem():
+                    return await loop.run_in_executor(pool, socket.getaddrinfo, host, port, family, type, proto, flags)
             except socket.gaierror as e:
                 last = e
                 if e.errno in permanent:
@@ -250,7 +262,8 @@ class Screener:
 
     async def resolves(self, host) -> bool:
         try:
-            await asyncio.wait_for(self.dns.query_dns(host, "A"), 8)
+            async with dns_sem():
+                await asyncio.wait_for(self.dns.query_dns(host, "A"), 8)
             return True
         except Exception:
             return False
