@@ -7,3 +7,5 @@ data/raw/
 logs/*.log
 data/saudi_ecom.sqlite
 data/snapshot.sqlite
+data/usa_tranco_200k_500k/
+logs/usa_shard/
