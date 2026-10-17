@@ -122,14 +122,14 @@ async def probe(con, top, concurrency, chunk):
 async def dns(con, top, concurrency, chunk):
     import aiodns
     db.register_source(con, "tranco:dns_subdomain", "dns", f"DNS lookups of {'/'.join(sorted(M.host_variants))} for Tranco top-{top}")
-    resolver = aiodns.DNSResolver(timeout=4, tries=1)
+    resolver = aiodns.DNSResolver(nameservers=["1.1.1.1", "8.8.8.8"], timeout=4, tries=2)
     sem = asyncio.Semaphore(concurrency)
     labels = [h.split(".")[0] for h in M.host_variants]
 
     async def resolves(h):
         async with sem:
             try:
-                await resolver.query(h, "A")
+                await resolver.query_dns(h, "A")
                 return True
             except Exception:
                 return False
@@ -147,7 +147,7 @@ async def dns(con, top, concurrency, chunk):
         rnd = "".join(random.choice(string.ascii_lowercase) for _ in range(10))
         wild = await asyncio.gather(*(resolves(f"{rnd}.{d}") for d in ctrl_doms))
         wildcard = {d for d, w in zip(ctrl_doms, wild) if w}
-        items = [(f"https://{l}.{d}/", 8) for r, d, l in hits if d not in wildcard]
+        items = [(f"https://{l}.{d}/", 4 if r <= 50_000 else 2) for r, d, l in hits if d not in wildcard]
         new = db.add_candidates(con, items, "tranco:dns_subdomain", f"ranks {part[0][0]}-{part[-1][0]}")
         db.mark_job(con, "tranco", job, "done", len(items), new, f"wildcard={len(wildcard)}")
         print(f"[tranco] dns ranks {part[0][0]}-{part[-1][0]} hits={len(hits)} wildcard={len(wildcard)} new={new}", flush=True)

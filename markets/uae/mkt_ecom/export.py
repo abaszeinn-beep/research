@@ -260,16 +260,9 @@ def coverage(con, ver, v, ndup):
     reasons = q("SELECT status AS Status, substr(reason,1,70) AS Reason, count(*) AS Count FROM verifications WHERE status!='verified' GROUP BY 1,2 ORDER BY 3 DESC LIMIT 40")
     out.append(("Top rejection / unverified reasons", reasons))
     niche_cats = sorted({c for c, _, _ in NICHES})
-    gaps = pd.DataFrame({"Remaining gaps / expansion opportunities": [
-        "Bot-protected large retailers (Akamai/Cloudflare 403) need a real-browser pass (Playwright) or manual check; listed in Unverified with reason blocked_or_challenge.",
-        "Salla/Zid stores on custom domains are only found when a salla.sa/<slug> redirect, search result, or showcase links to them; no content-search index was available (PublicWWW/BuiltWith are paid).",
-        "Common Crawl only covers pages that were crawled; small/new stores absent from CC and search results are missed.",
-        "Shopify/WooCommerce Saudi stores on .com domains are found mainly via search; Bing returns 10 results/page and throttles, so long-tail coverage is partial.",
-        "Google search requires JS (blocked); DuckDuckGo html throttles after ~2 queries (anomaly page); Brave 429; Mojeek 403; Yandex/Startpage captcha.",
-        "Category labels are keyword-based (Arabic+English) from title/meta/products; expect some misclassification.",
-        "Salla API product 'type' gives reliable physical/digital split for Salla; for other platforms digital/service exclusion is heuristic.",
-        "Further expansion: more Bing query templates per niche/city; Common Crawl for more historical crawls of *.sa; mall tenant directories; Maroof (requires JS/auth, not used).",
-    ]})
+    gaps_path = os.path.join(OUT_DIR, "data", "gaps.txt")
+    lines = [l.strip() for l in open(gaps_path, encoding="utf-8")] if os.path.exists(gaps_path) else []
+    gaps = pd.DataFrame({"Remaining gaps / expansion opportunities": [l for l in lines if l]})
     out.append(("Remaining gaps and expansion opportunities", gaps))
     return out
 
