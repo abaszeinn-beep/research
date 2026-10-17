@@ -1,0 +1,80 @@
+{
+  "shard": "usa_tranco_200k_500k",
+  "slice": "Tranco top-1M ranks 200,001-500,000 (inclusive), all TLDs",
+  "tranco_list_id": "64VVX",
+  "generated_utc": "2026-10-17T12:32:05Z",
+  "inputs_in_slice": 300000,
+  "screened": 4600,
+  "screen_outcomes": {
+    "rejected": 172,
+    "unverified": 179,
+    "verified": 23,
+    "blocked": 779,
+    "error": 523,
+    "http_error": 134,
+    "non_store": 2353,
+    "robots_disallowed": 149,
+    "skipped": 288
+  },
+  "fast_skipped_non_retail": 288,
+  "store_hits": 374,
+  "store_hits_unique_storefronts": 374,
+  "verified": 23,
+  "verified_secondary_evidence": 0,
+  "unverified": 179,
+  "rejected": 172,
+  "duplicates_marked_rejected": 0,
+  "errors": 657,
+  "blocked_bot_wall_or_403": 779,
+  "robots_disallowed": 149,
+  "runtime_minutes": 0.6,
+  "finished": false,
+  "concurrency_used": "4 worker processes x 130 concurrent domains (asyncio/aiohttp, max 2 connections and >=0.4 s gap per host, robots.txt honored, 18 s request cap, 150 s per-domain cap); secondary pass 12 concurrent",
+  "verified_by_platform": {
+    "custom/unknown": 12,
+    "salesforce-commerce": 2,
+    "shopify": 2,
+    "bigcommerce": 2,
+    "magento": 2,
+    "woocommerce": 1,
+    "miva": 1,
+    "shift4shop": 1
+  },
+  "verified_by_category": {
+    "Home Improvement & Hardware": 5,
+    "Furniture": 3,
+    "Pharmacy & Wellness": 2,
+    "Books & Stationery": 2,
+    "Industrial & Tools": 2,
+    "Shoes": 1,
+    "Electronic Components": 1,
+    "Gaming": 1,
+    "Collectibles & Trading Cards": 1,
+    "Firearms, Hunting & Tactical": 1,
+    "Arts, Crafts & Handmade": 1,
+    "Computers & Electronics": 1,
+    "Chocolates & Sweets": 1,
+    "Mobiles & Accessories": 1
+  },
+  "rejection_reasons": {
+    "not_us_relevant": 67,
+    "no_purchase_path": 64,
+    "no_us_signals": 26,
+    "excluded_marketplace_or_platform": 5,
+    "catalog_or_affiliate_only": 3,
+    "no_products_listed": 2,
+    "non_us_store": 2,
+    "digital_products_platform": 1,
+    "canada_store": 1,
+    "mostly_digital_or_services_by_product_names": 1
+  },
+  "unverified_reasons": {
+    "insufficient_product_evidence": 116,
+    "weak_ecommerce_evidence_generic_platform": 31,
+    "js_rendered_partial_evidence": 17,
+    "weak_us_signals": 15
+  },
+  "files": [
+    "usa_tranco_200k_500k.csv"
+  ]
+}
