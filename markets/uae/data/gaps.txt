@@ -1,0 +1,5 @@
+Search engines are unusable from this VM (Bing irrelevant results, DuckDuckGo anomaly page, Google JS wall, Brave 429, Mojeek/Ecosia 403); long-tail stores on .com domains are found only through Tranco, App Store seller URLs, mall/brand references and Common Crawl .ae.
+This VM is US-based: global brands geo-redirect or bot-wall it (Akamai/Cloudflare); those stores rely on the headless-browser pass and on secondary evidence, never on bypassing.
+Common Crawl and Wayback cover .ae hosts well but UAE stores on .com/.shop/platform domains only when another channel links them.
+Platform-wide Shopify harvesting was not repeated: in the Saudi run only 30 of 14,220 myshopify stores were UAE (imported here as leads).
+Category labels are keyword-based (Arabic + English) and can be wrong for multi-category retailers.
