@@ -675,7 +675,7 @@ def claim(con, n, worker, where_extra=""):
         try:
             con.execute("BEGIN IMMEDIATE")
             rows = con.execute(
-                f"SELECT key,url,root_domain,platform_hint,priority FROM candidates WHERE status='pending' {where_extra} ORDER BY priority DESC, rowid LIMIT ?", (n,)
+                f"SELECT key,url,root_domain,platform_hint,priority FROM candidates WHERE status='pending' {where_extra} ORDER BY priority DESC, (rowid * 2654435761) % 1000003 LIMIT ?", (n,)
             ).fetchall()
             con.executemany("UPDATE candidates SET status='in_progress', last_attempt=? WHERE key=?", [(db.now(), r[0]) for r in rows])
             con.execute("COMMIT")

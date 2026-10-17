@@ -45,9 +45,6 @@ class BrowserFetcher(Fetcher):
                 except Exception:
                     pass
                 html = await page.content()
-                if CHALLENGE.search(html[:6000]):
-                    await page.wait_for_timeout(8000)
-                    html = await page.content()
                 st = resp.status if resp else 200
                 if st in (403, 503) and not CHALLENGE.search(html[:6000]) and len(html) > 20000:
                     st = 200
@@ -74,7 +71,7 @@ async def main(concurrency, limit, keys):
     print(f"[browser] {len(rows)} candidates", flush=True)
     db.heartbeat(con, "verify_browser", "code-worker(playwright)", concurrency, {"todo": len(rows)})
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+        browser = await p.chromium.launch(headless=True)
         f = BrowserFetcher(browser, concurrency)
         sem = asyncio.Semaphore(concurrency)
         stats = {}
