@@ -178,6 +178,7 @@ class ScreenFetcher(V.Fetcher):
                     msg = str(e)
                     if any(s in msg for s in ("Name or service not known", "No address associated", "nodename nor servname", "getaddrinfo failed")):
                         return None, url, "", {}, "dns_not_resolved"
+                    self.stats["ce:" + (type(e).__name__ + ":" + msg)[:70]] += 1
                     last_err = "connect_error"
                 except (httpx.ReadTimeout, httpx.WriteTimeout, httpx.PoolTimeout, asyncio.TimeoutError):
                     return None, url, "", {}, "timeout"
