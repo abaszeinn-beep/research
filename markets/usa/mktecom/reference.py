@@ -163,8 +163,10 @@ def audit(con):
             status = "in_directory (primary)"
         elif st == "verified_secondary_evidence":
             status = "in_directory (secondary evidence)"
-        elif key in NO_ONLINE_STORE:
-            status = "excluded: no online ordering (confirmed: " + NO_ONLINE_STORE[key] + ")"
+        elif key.split("|")[0] in NOT_A_STORE and st not in ("verified", "verified_secondary_evidence"):
+            status = "excluded: " + NOT_A_STORE[key.split("|")[0]]
+        elif key.split("|")[0] in NO_ONLINE_STORE:
+            status = "excluded: no online ordering (confirmed: " + NO_ONLINE_STORE[key.split("|")[0]] + ")"
         elif note == "marketplace" or reason.startswith(("excluded_marketplace", "redirects_to_marketplace")):
             status = "excluded: marketplace/aggregator"
         elif note == "non_us":
@@ -194,6 +196,13 @@ def audit(con):
     return out
 
 
+NOT_A_STORE = {
+    "delta.com": "airline lounge/travel service, not a physical-goods store", "aa.com": "airline lounge/travel service, not a physical-goods store",
+    "united.com": "airline lounge/travel service, not a physical-goods store", "ihg.com": "hotel/vacation-club service, not a physical-goods store",
+    "hilton.com": "hotel brand, not a physical-goods store", "hyatt.com": "hotel brand, not a physical-goods store",
+    "worldbank.org": "publications/organisation site, not a physical-goods store", "audible.com": "digital audiobooks (not physical goods)",
+    "fedex.com": "shipping/print services (not a physical-goods retailer)",
+}
 NO_ONLINE_STORE = {
     "rossstores.com": "Ross Dress for Less sells in stores only; rossstores.com is a corporate/store-locator site (live check: no cart, no products)",
     "traderjoes.com": "Trader Joe's states it does not sell groceries online; traderjoes.com has no cart or checkout (live check: no purchase path)",

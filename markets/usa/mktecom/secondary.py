@@ -347,13 +347,13 @@ async def sec_edgar(client, name, root, brand_url_name=None):
         label = root.split(".")[0]
         brand = want.split(" ")[0]
         mention = [m.start() for m in re.finditer(re.escape(label) + r"\.com|" + re.escape(label.replace("-", " ")) + r"\b", txt)]
-        ecom = re.search(r"e-commerce|ecommerce|online sales|digital sales|online channel|websites?|online stores?", txt)
         us = "united states" in txt
-        if mention and ecom and us:
-            i = mention[0]
-            snippet = txt[max(0, i - 120): i + 160]
-            return {"type": "sec_edgar", "ok": True, "url": url, "date": fdate.replace("-", ""),
-                    "detail": f"{title} 10-K filed {fdate} names {label}.com and describes online/e-commerce sales in the United States: ...{snippet}..."}
+        for i in mention:
+            window = txt[max(0, i - 1200): i + 1200]
+            if us and re.search(r"e-commerce|ecommerce|online sales|digital sales|online channel|online stores?|our websites?|website", window):
+                snippet = txt[max(0, i - 150): i + 200]
+                return {"type": "sec_edgar", "ok": True, "url": url, "date": fdate.replace("-", ""),
+                        "detail": f"{title} 10-K filed {fdate} mentions {label} next to e-commerce/website language (US operations): ...{snippet}..."}
         return {"type": "sec_edgar", "ok": False, "detail": f"10-K {fdate} of {title} does not name {label}.com with ecommerce language"}
     return {"type": "sec_edgar", "ok": False, "detail": "no recent 10-K"}
 
@@ -415,7 +415,7 @@ async def check(clients, item, crawls, con=None):
             evs.append(live_storefront(con, item["key"]))
     ok = {e["type"] for e in evs if e.get("ok")}
     storefront = ok & STOREFRONT_TYPES
-    verdict = "verified_secondary_evidence" if len(ok) >= 2 and (storefront or ("sec_edgar" in ok and len(ok) >= 3)) else "insufficient_secondary_evidence"
+    verdict = "verified_secondary_evidence" if len(ok) >= 2 and (storefront or "sec_edgar" in ok or {"app_store", "google_play"} <= ok) else "insufficient_secondary_evidence"
     return {"key": item["key"], "prefix": prefix, "verdict": verdict, "evidence": evs}
 
 
