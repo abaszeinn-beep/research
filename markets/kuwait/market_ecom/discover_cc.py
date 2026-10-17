@@ -113,7 +113,11 @@ async def main(patterns, concurrency, max_crawls_override=None):
     db.register_source(con, "commoncrawl", "index", "Common Crawl CDX index API (index.commoncrawl.org)")
     db.heartbeat(con, "discover_cc", "code-worker(asyncio)", concurrency, {"patterns": patterns})
     async with httpx.AsyncClient(headers=UA, follow_redirects=True) as client:
-        r = await get_with_retry(client, "https://index.commoncrawl.org/collinfo.json", None)
+        r = None
+        while r is None:
+            r = await get_with_retry(client, "https://index.commoncrawl.org/collinfo.json", None)
+            if r is None:
+                await asyncio.sleep(120)
         crawls = r.json()
         sem = asyncio.Semaphore(concurrency)
         stats = collections.Counter()

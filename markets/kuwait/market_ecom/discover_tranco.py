@@ -95,14 +95,14 @@ async def _probe(client, rank, domain, sub=""):
     return rank, domain, status, sorted(links)
 
 
-async def main(top, concurrency, chunk):
+async def main(top, concurrency, chunk, start=1):
     con = db.connect()
     db.register_source(con, f"tranco:{TRANCO_ID}", "ranking", f"Tranco top-1M list {TRANCO_ID}: all .{'/.'.join(MK.TLDS)} domains + homepage probe of top {top} global domains for {MK.NAME} locale links/hreflang")
     rows = ranks(top)
     cc = [(r, d) for r, d in rows if MK.on_market_tld(d)]
     n = db.add_candidates(con, [(f"https://{d}/", 8 if r <= 200_000 else 6) for r, d in cc], f"tranco:{MK.ISO2}tld", f"list {TRANCO_ID}")
     print(f"[tranco] {len(cc)} market-ccTLD domains -> {n} new candidates", flush=True)
-    glob = [(r, d) for r, d in rows if not MK.on_market_tld(d) and r <= top]
+    glob = [(r, d) for r, d in rows if not MK.on_market_tld(d) and start <= r <= top]
     limits = httpx.Limits(max_connections=concurrency * 2, max_keepalive_connections=0)
     hdrs = dict(DEFAULT_HEADERS)
     async with httpx.AsyncClient(headers=hdrs, follow_redirects=True, limits=limits, verify=False,
@@ -145,7 +145,8 @@ if __name__ == "__main__":
     ap.add_argument("--top", type=int, default=200_000)
     ap.add_argument("--concurrency", type=int, default=96)
     ap.add_argument("--chunk", type=int, default=2000)
+    ap.add_argument("--start", type=int, default=1)
     a = ap.parse_args()
     import warnings
     warnings.filterwarnings("ignore")
-    asyncio.run(main(a.top, a.concurrency, a.chunk))
+    asyncio.run(main(a.top, a.concurrency, a.chunk, a.start))

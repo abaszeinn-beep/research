@@ -12,10 +12,10 @@ def main():
     dst.commit()
     dst.execute("VACUUM")
     dst.close(); src.close()
-    with open(tmp, "rb") as fi, gzip.open(tmp.replace("snapshot.sqlite", "market_ecom.sqlite.gz"), "wb", compresslevel=9) as fo:
+    with open(tmp, "rb") as fi, gzip.open(tmp.replace("snapshot.sqlite", f"{db.MK.MARKET_ID}_ecom.sqlite.gz"), "wb", compresslevel=9) as fo:
         shutil.copyfileobj(fi, fo)
     os.remove(tmp)
-    print("snapshot written", os.path.getsize(tmp.replace("snapshot.sqlite", "market_ecom.sqlite.gz")))
+    print("snapshot written", os.path.getsize(tmp.replace("snapshot.sqlite", f"{db.MK.MARKET_ID}_ecom.sqlite.gz")))
 
 if __name__ == "__main__":
     main()

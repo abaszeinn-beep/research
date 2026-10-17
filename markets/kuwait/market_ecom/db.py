@@ -66,6 +66,12 @@ def now() -> str:
 def connect(path: str | None = None) -> sqlite3.Connection:
     path = path or DB_PATH
     os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    gz = os.path.join(os.path.dirname(os.path.abspath(path)), f"{MK.MARKET_ID}_ecom.sqlite.gz")
+    if not os.path.exists(path) and os.path.exists(gz):
+        import gzip, shutil
+        with gzip.open(gz, "rb") as fi, open(path + ".tmp", "wb") as fo:
+            shutil.copyfileobj(fi, fo)
+        os.replace(path + ".tmp", path)
     con = sqlite3.connect(path, timeout=120, isolation_level=None)
     con.execute("PRAGMA journal_mode=WAL")
     con.execute("PRAGMA busy_timeout=120000")
