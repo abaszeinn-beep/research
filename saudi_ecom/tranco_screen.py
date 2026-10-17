@@ -146,7 +146,7 @@ class ScreenFetcher(V.Fetcher):
         super().__init__(concurrency, per_host)
         limits = httpx.Limits(max_connections=concurrency * 2, max_keepalive_connections=concurrency // 2)
         self.client = httpx.AsyncClient(headers=DEFAULT_HEADERS, follow_redirects=True, limits=limits,
-                                        timeout=httpx.Timeout(10.0, connect=6.0), verify=False, max_redirects=8)
+                                        timeout=httpx.Timeout(10.0, connect=10.0), verify=False, max_redirects=8)
 
     async def get(self, url, headers=None, tries=2, check_robots=True, read_limit=700_000):
         if check_robots:
@@ -187,6 +187,54 @@ class ScreenFetcher(V.Fetcher):
                     last_err = f"http_error:{type(e).__name__}"
             await asyncio.sleep(2 + random.random())
         return None, url, "", {}, last_err
+
+
+def install_dns_cache(loop, threads=96):
+    """Cache getaddrinfo per host and give it a large thread pool: the default 8-thread executor queues
+    hundreds of concurrent lookups until httpx's connect timeout fires, which looks like dead hosts."""
+    from concurrent.futures import ThreadPoolExecutor
+    import socket
+    pool = ThreadPoolExecutor(threads)
+    cache: dict = {}
+    inflight: dict = {}
+    permanent = (socket.EAI_NONAME, getattr(socket, "EAI_NODATA", -5))
+
+    async def resolve(host, port, family, type, proto, flags):
+        last = None
+        for attempt in range(2):
+            try:
+                return await loop.run_in_executor(pool, socket.getaddrinfo, host, port, family, type, proto, flags)
+            except socket.gaierror as e:
+                last = e
+                if e.errno in permanent:
+                    break
+                await asyncio.sleep(1)
+        raise last
+
+    async def getaddrinfo(host, port, *, family=0, type=0, proto=0, flags=0):
+        key = (host, port, family, type, proto, flags)
+        if key in cache:
+            r = cache[key]
+            if isinstance(r, Exception):
+                raise r
+            return r
+        if key not in inflight:
+            inflight[key] = asyncio.ensure_future(resolve(*key))
+        fut = inflight[key]
+        try:
+            r = await asyncio.shield(fut)
+            cache[key] = r
+            return r
+        except socket.gaierror as e:
+            if e.errno in permanent:
+                cache[key] = e
+            raise
+        finally:
+            if fut.done():
+                inflight.pop(key, None)
+
+    loop.getaddrinfo = getaddrinfo
+    loop.set_default_executor(pool)
 
 
 class Screener:
@@ -422,6 +470,7 @@ def write_outputs(shard, work, meta):
 
 async def main(a):
     warnings.filterwarnings("ignore")
+    install_dns_cache(asyncio.get_running_loop())
     t0 = time.time()
     work = os.path.join(ROOT, "data", "cache", f"tranco_shard_{a.shard}")
     os.makedirs(work, exist_ok=True)
