@@ -72,7 +72,7 @@ Status: `python3 -m market_ecom.status`.
 
 `python3 -m market_ecom.manual` re-applies the hand-curated major resolutions (4 live-verified majors; excluded/unresolved overrides with reasons stored in `manual_resolutions`, consumed by `reference audit`). Run it before `reference audit`.
 Verified totals: Master Directory rows = verifications with status verified/verified_secondary_evidence and no `duplicate_of` (the 3 duplicate candidates' verification rows are excluded; this was the source of the earlier 353 vs 322+34 mismatch).
-Tranco list (`data/raw/tranco.csv`, git-ignored) must be re-downloaded from https://tranco-list.eu/download_daily/64VVX after a VM reset; probing reached rank ~38k (`--start 38001` to continue).
+Tranco list (`data/raw/tranco.csv`, git-ignored) must be re-downloaded from https://tranco-list.eu/download_daily/64VVX after a VM reset; probing reached rank ~52k (`--start 52001` to continue; one worker at concurrency 16, more overloads the resolver).
 
 ```bash
 cd /workspace/markets/kuwait
