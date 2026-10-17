@@ -1,0 +1,9 @@
+[search:ddg] 2831 queries pending (0 cached)
+[search:ddg] 0/2831 q='dog food store Al Wakrah Qatar online' results=10 new=9 stats={'ddg_queries': 1, 'ddg_new': 9}
+[search:ddg] blocked, backing off 60s
+[search:ddg] 2829 queries pending (2 cached)
+[search:ddg] blocked, backing off 60s
+[search:ddg] 0/2829 q='myshopify qatar QAR' results=0 new=0 stats={'ddg_queries': 1, 'ddg_new': 0}
+[search:ddg] blocked, backing off 60s
+[search:ddg] 10/2829 q='site:com.qa shop online' results=10 new=9 stats={'ddg_queries': 11, 'ddg_new': 23}
+[search:ddg] blocked, backing off 60s

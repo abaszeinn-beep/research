@@ -1,0 +1,217 @@
+# name	category	tier	domains (space separated; global + known/guessed Qatar)	source
+# source tags: user_brief = named in the task brief; analyst_seed = analyst brand knowledge (candidate only —
+# status comes from live/secondary verification); group:<name> = listed as a brand of that retail/franchise group.
+# Tranco ranks (list 64VVX) are attached automatically by market_ecom.reference.
+Lulu Hypermarket	Department Store / General	major	luluhypermarket.com lulu.qa	user_brief
+Carrefour Qatar	Grocery & Food	major	carrefourqatar.com carrefour.qa	user_brief
+Al Meera	Grocery & Food	major	almeera.com.qa almeera.qa almeera.online	user_brief
+Monoprix Qatar	Grocery & Food	major	monoprix.qa monoprixqatar.com	user_brief
+Jarir Bookstore Qatar	Books & Stationery	major	jarir.com	user_brief
+Virgin Megastore Qatar	Computers & Electronics	major	virginmegastore.qa virginmegastore.com	user_brief
+Ansar Gallery	Department Store / General	major	ansargallery.com ansargallery.qa	user_brief
+Family Food Centre	Grocery & Food	major	ffc.qa familyfoodcentre.com ffcqatar.com	user_brief
+Blue Salon	Department Store / General	major	bluesalon.com	user_brief
+Ali Bin Ali	Jewelry & Watches	major	alibinali.com	user_brief
+Jumbo Electronics Qatar	Computers & Electronics	major	jumbo.qa jumboelectronics.com.qa jumboqatar.com	user_brief
+Fifty One East	Department Store / General	major	fiftyoneeast.com	user_brief
+Namshi	Fashion & Apparel	major	namshi.com	analyst_seed
+AIVI / 6th Street	Fashion & Apparel	major	6thstreet.com aivi.com	group:Apparel Group
+Ounass	Fashion & Apparel	major	ounass.qa ounass.com	analyst_seed
+Max Fashion	Fashion & Apparel	major	maxfashion.com	group:Landmark Group
+Centrepoint	Department Store / General	major	centrepointstores.com	group:Landmark Group
+Home Centre	Furniture	major	homecentre.com	group:Landmark Group
+Babyshop	Baby & Maternity	major	babyshopstores.com	group:Landmark Group
+Splash	Fashion & Apparel	medium	splashfashions.com	group:Landmark Group
+Lifestyle	Department Store / General	medium	lifestyleshops.com	group:Landmark Group
+Shoe Mart	Shoes	medium	shoemartstores.com	group:Landmark Group
+Home Box	Furniture	medium	homeboxstores.com	group:Landmark Group
+Emax	Computers & Electronics	medium	emaxme.com	group:Landmark Group
+Shoexpress	Shoes	medium	shoexpress.com	group:Landmark Group
+Iconic	Fashion & Apparel	medium	iconicstores.com	group:Landmark Group
+Styli	Fashion & Apparel	medium	stylishop.com styli.com	group:Landmark Group
+Safari Hypermarket	Grocery & Food	major	safarihypermarket.com safari.qa	analyst_seed
+Grand Hypermarket	Grocery & Food	medium	grandhyper.com grandhypermarket.qa	analyst_seed
+Spar Qatar	Grocery & Food	medium	sparqatar.com spar.qa	analyst_seed
+Rawabi Hypermarket	Grocery & Food	medium	rawabihypermarket.com rawabi.qa	analyst_seed
+Nesto Hypermarket	Grocery & Food	medium	nestohypermarket.com nesto.qa	analyst_seed
+Baladna	Grocery & Food	major	baladna.com baladna.qa	analyst_seed
+Al Rawdah / Quality Hypermarket	Grocery & Food	medium	qualityhyper.com qualityhypermarket.qa	analyst_seed
+Mega Mart	Grocery & Food	medium	megamart.qa megamartqatar.com	analyst_seed
+Widam Food	Grocery & Food	medium	widam.qa widam.com.qa	analyst_seed
+Mahaseel	Grocery & Food	medium	mahaseel.qa mahaseel.com.qa	analyst_seed
+Hassad Food	Grocery & Food	medium	hassad.com	analyst_seed
+Zad Holding	Grocery & Food	medium	zad.qa zadholding.com	analyst_seed
+Rayyan Water	Grocery & Food	medium	rayyanwater.com alrayyanwater.com	analyst_seed
+Salam Stores	Department Store / General	major	salams.com salamstores.com salam.qa	analyst_seed
+Galeries Lafayette Doha	Department Store / General	major	galerieslafayette.qa galerieslafayettedoha.com	analyst_seed
+Printemps Doha	Department Store / General	major	printempsdoha.com printemps.qa	analyst_seed
+Debenhams	Department Store / General	medium	debenhams.com debenhams.com.qa	group:Alshaya
+Qatar Duty Free	Department Store / General	medium	qatardutyfree.com	analyst_seed
+Ourshopee	Department Store / General	medium	ourshopee.com	analyst_seed
+Sharaf DG	Computers & Electronics	medium	sharafdg.com	analyst_seed
+Microless	Computers & Electronics	medium	microless.com	analyst_seed
+Alanees Electronics	Computers & Electronics	medium	alaneesqatar.qa alanees.com.qa	tranco:64VVX
+Apple	Computers & Electronics	major	apple.com	analyst_seed
+Samsung	Mobiles & Accessories	major	samsung.com	analyst_seed
+Huawei	Mobiles & Accessories	medium	huawei.com consumer.huawei.com	analyst_seed
+Xiaomi	Mobiles & Accessories	medium	mi.com xiaomi.com	analyst_seed
+Dyson	Home Appliances	medium	dyson.qa dyson.com	analyst_seed
+Ooredoo Shop	Mobiles & Accessories	major	ooredoo.qa	analyst_seed
+Vodafone Qatar Shop	Mobiles & Accessories	major	vodafone.qa	analyst_seed
+Sony	Computers & Electronics	medium	sony.com	analyst_seed
+LG	Home Appliances	medium	lg.com	analyst_seed
+Philips	Home Appliances	medium	philips.com	analyst_seed
+Bose	Computers & Electronics	medium	bose.com boseqatar.com	analyst_seed
+Anker	Mobiles & Accessories	medium	anker.com	analyst_seed
+Canon	Computers & Electronics	medium	canon-me.com	analyst_seed
+Geekay Games	Gaming	medium	geekay.com	analyst_seed
+Games 4 U / Gameshop	Gaming	medium	gameshop.qa	analyst_seed
+IKEA Qatar	Furniture	major	ikea.com	analyst_seed
+Pan Emirates	Furniture	medium	panemirates.com	analyst_seed
+Danube Home	Furniture	major	danubehome.com	analyst_seed
+Marina Home Interiors	Furniture	medium	marinahomeinteriors.com	analyst_seed
+Pottery Barn	Furniture	medium	potterybarn.com potterybarn.com.qa	group:Alshaya
+Pottery Barn Kids	Furniture	medium	potterybarnkids.com potterybarnkids.com.qa	group:Alshaya
+West Elm	Furniture	medium	westelm.com westelm.com.qa	group:Alshaya
+Crate & Barrel	Furniture	medium	crateandbarrel.com crateandbarrel.qa	analyst_seed
+Zara Home	Home Decor	medium	zarahome.com	group:Inditex
+H&M Home	Home Decor	medium	hm.com	group:Alshaya
+Homes R Us	Furniture	medium	homesrus.qa homesrus.ae	analyst_seed
+Midas Furniture	Furniture	medium	midasfurniture.com	analyst_seed
+2XL Furniture	Furniture	medium	2xlme.com	analyst_seed
+ID Design	Furniture	medium	iddesignqatar.com iddesign.qa	analyst_seed
+Royal Furniture	Furniture	medium	royalfurniture.qa	analyst_seed
+ACE Hardware Qatar	Home Improvement & Hardware	medium	aceqatar.com ace.qa	analyst_seed
+Zara	Fashion & Apparel	major	zara.com	group:Inditex
+Bershka	Fashion & Apparel	medium	bershka.com	group:Inditex
+Pull&Bear	Fashion & Apparel	medium	pullandbear.com	group:Inditex
+Massimo Dutti	Fashion & Apparel	medium	massimodutti.com	group:Inditex
+Stradivarius	Fashion & Apparel	medium	stradivarius.com	group:Inditex
+Oysho	Fashion - Women	medium	oysho.com	group:Inditex
+H&M	Fashion & Apparel	major	hm.com	group:Alshaya
+Mango	Fashion & Apparel	medium	mango.com	group:Azadea
+Marks & Spencer	Department Store / General	major	marksandspencer.com marksandspencerme.com	group:Al Futtaim
+Next	Fashion & Apparel	medium	next.qa nextdirect.com	analyst_seed
+Gap	Fashion & Apparel	medium	gap.com gapqatar.com	group:Alshaya
+Old Navy	Fashion & Apparel	medium	oldnavy.com	analyst_seed
+American Eagle	Fashion & Apparel	medium	aeo.com.qa americaneagle.com.qa ae.com	group:Alshaya
+Victoria's Secret	Fashion - Women	medium	victoriassecret.com victoriassecret.com.qa	group:Alshaya
+Bath & Body Works	Beauty & Cosmetics	major	bathandbodyworks.com bathandbodyworks.com.qa bathandbodyworks.qa	group:Alshaya
+Mothercare	Baby & Maternity	medium	mothercare.com mothercare.com.qa mothercare.qa	group:Alshaya
+Boots	Pharmacy & Wellness	medium	boots.com boots.com.qa boots.qa	group:Alshaya
+Foot Locker	Shoes	medium	footlocker.com footlocker.qa footlocker.com.qa	group:Alshaya
+Muji	Home Decor	medium	muji.com muji.qa	group:Alshaya
+MAC Cosmetics	Beauty & Cosmetics	medium	maccosmetics.com maccosmetics.qa	group:Alshaya
+Charlotte Tilbury	Beauty & Cosmetics	medium	charlottetilbury.com	group:Alshaya
+Forever 21	Fashion & Apparel	medium	forever21.com	analyst_seed
+LC Waikiki	Fashion & Apparel	medium	lcwaikiki.qa lcw.com	analyst_seed
+DeFacto	Fashion & Apparel	medium	defacto.com defacto.qa	analyst_seed
+Koton	Fashion & Apparel	medium	koton.com	analyst_seed
+New Look	Fashion & Apparel	medium	newlook.com	analyst_seed
+River Island	Fashion & Apparel	medium	riverisland.com	analyst_seed
+Uniqlo	Fashion & Apparel	medium	uniqlo.com	analyst_seed
+Shein	Fashion & Apparel	major	shein.com	analyst_seed
+Adidas	Fashion - Sportswear & Streetwear	major	adidas.com adidas.qa	analyst_seed
+Nike	Fashion - Sportswear & Streetwear	major	nike.com	analyst_seed
+Puma	Fashion - Sportswear & Streetwear	medium	puma.com	analyst_seed
+Under Armour	Fashion - Sportswear & Streetwear	medium	underarmour.com underarmour.qa	analyst_seed
+Skechers	Shoes	medium	skechers.com skechers.qa	group:Apparel Group
+Aldo	Shoes	medium	aldoshoes.com aldoshoes.qa	group:Apparel Group
+Charles & Keith	Bags & Luggage	medium	charleskeith.com	group:Apparel Group
+Tommy Hilfiger	Fashion & Apparel	medium	tommy.com tommy.qa	group:Apparel Group
+Calvin Klein	Fashion & Apparel	medium	calvinklein.com calvinklein.qa	group:Apparel Group
+Aeropostale	Fashion & Apparel	medium	aeropostale.com	group:Apparel Group
+Nine West	Shoes	medium	ninewest.com	group:Apparel Group
+R&B Fashion	Fashion & Apparel	medium	rnb.com rnbfashion.com	group:Apparel Group
+Inglot	Beauty & Cosmetics	medium	inglot.com inglotcosmetics.com	group:Apparel Group
+Rituals	Beauty & Cosmetics	medium	rituals.com	group:Apparel Group
+Levi's	Fashion & Apparel	medium	levi.com	analyst_seed
+Columbia	Sports, Fitness & Outdoor	medium	columbia.com	analyst_seed
+Lacoste	Fashion & Apparel	medium	lacoste.com	group:Chalhoub
+Level Shoes	Shoes	medium	levelshoes.com	group:Chalhoub
+Tryano	Department Store / General	medium	tryano.com	group:Chalhoub
+Sephora	Beauty & Cosmetics	major	sephora.qa sephora.com	group:Chalhoub
+Wojooh / Faces	Beauty & Cosmetics	medium	wojooh.com faces.com	group:Chalhoub
+Huda Beauty	Beauty & Cosmetics	medium	hudabeauty.com	analyst_seed
+Kiko Milano	Beauty & Cosmetics	medium	kikocosmetics.com	analyst_seed
+The Body Shop	Beauty & Cosmetics	medium	thebodyshop.com thebodyshop.qa	analyst_seed
+L'Occitane	Beauty & Cosmetics	medium	loccitane.com	analyst_seed
+Yves Rocher	Beauty & Cosmetics	medium	yves-rocher.com	analyst_seed
+NYX	Beauty & Cosmetics	medium	nyxcosmetics.com	analyst_seed
+Golden Scent	Perfumes & Oud	medium	goldenscent.com	analyst_seed
+Boutiqaat	Beauty & Cosmetics	medium	boutiqaat.com	analyst_seed
+VogaCloset	Fashion & Apparel	medium	vogacloset.com	analyst_seed
+Arabian Oud	Perfumes & Oud	major	arabianoud.com	analyst_seed
+Ajmal Perfumes	Perfumes & Oud	medium	ajmal.com	analyst_seed
+Rasasi	Perfumes & Oud	medium	rasasi.com	analyst_seed
+Abdul Samad Al Qurashi	Perfumes & Oud	medium	asqgrp.com	analyst_seed
+Swiss Arabian	Perfumes & Oud	medium	swissarabian.com	analyst_seed
+Al Haramain Perfumes	Perfumes & Oud	medium	alharamainperfumes.com	analyst_seed
+Lattafa	Perfumes & Oud	medium	lattafa.com	analyst_seed
+Ibraheem Al Qurashi	Perfumes & Oud	medium	ibraqperfumes.com	analyst_seed
+Al Majed Oud	Perfumes & Oud	major	almajedoud.com almajedoud.qa	analyst_seed
+Junaid Perfumes	Perfumes & Oud	medium	junaidperfumes.com	analyst_seed
+Ard Al Zaafaran	Perfumes & Oud	medium	ardalzaafaran.com	analyst_seed
+Al Fardan Jewellery	Jewelry & Watches	major	alfardanjewellery.com	analyst_seed
+Damas	Jewelry & Watches	medium	damasjewellery.com	analyst_seed
+Malabar Gold & Diamonds	Jewelry & Watches	major	malabargoldanddiamonds.com	analyst_seed
+Joyalukkas	Jewelry & Watches	medium	joyalukkas.com	analyst_seed
+Kalyan Jewellers	Jewelry & Watches	medium	kalyanjewellers.net	analyst_seed
+Pandora	Jewelry & Watches	medium	pandora.net	analyst_seed
+Swarovski	Jewelry & Watches	medium	swarovski.com	analyst_seed
+Rivoli	Jewelry & Watches	medium	rivoligroup.com rivoli.qa	analyst_seed
+Al Majed Jewellery	Jewelry & Watches	medium	almajedjewellery.com	analyst_seed
+Tanishq	Jewelry & Watches	medium	tanishq.co.in	analyst_seed
+Decathlon Qatar	Sports, Fitness & Outdoor	major	decathlon.qa	analyst_seed
+Sun & Sand Sports	Sports, Fitness & Outdoor	major	sssports.com	analyst_seed
+Go Sport	Sports, Fitness & Outdoor	medium	go-sport.qa gosport.qa	analyst_seed
+Sports Corner	Sports, Fitness & Outdoor	medium	sportscorner.qa	analyst_seed
+Intersport	Sports, Fitness & Outdoor	medium	intersport.qa	analyst_seed
+Toys R Us	Toys & Hobbies	medium	toysrusmena.com toysrus.qa	group:Al Futtaim
+Hamleys	Toys & Hobbies	medium	hamleys.com hamleys.qa	analyst_seed
+Early Learning Centre	Toys & Hobbies	medium	elc.com elc.qa	analyst_seed
+Mumzworld	Baby & Maternity	major	mumzworld.com	analyst_seed
+FirstCry	Baby & Maternity	medium	firstcry.qa firstcry.ae	analyst_seed
+Toy Triangle	Toys & Hobbies	medium	toytriangle.com	analyst_seed
+Wellcare Pharmacy	Pharmacy & Wellness	major	wellcare.qa wellcarepharmacy.com wellcareqatar.com	analyst_seed
+Aster Pharmacy	Pharmacy & Wellness	medium	asterpharmacy.qa aster.qa	analyst_seed
+Kulud Pharmacy	Pharmacy & Wellness	medium	kuludpharmacy.com kulud.qa	analyst_seed
+Life Pharmacy	Pharmacy & Wellness	medium	lifepharmacy.com	analyst_seed
+iHerb	Pharmacy & Wellness	medium	iherb.com	analyst_seed
+GNC	Pharmacy & Wellness	medium	gnc.qa gnc.com	analyst_seed
+Holland & Barrett	Pharmacy & Wellness	medium	hollandandbarrett.com	analyst_seed
+Magrabi Optical	Healthcare & Medical Equipment	medium	magrabi.com	analyst_seed
+Grand Optics	Healthcare & Medical Equipment	medium	grandoptics.com	analyst_seed
+Eyewa	Healthcare & Medical Equipment	medium	eyewa.com	analyst_seed
+Yateem Optician	Healthcare & Medical Equipment	medium	yateemoptician.com	analyst_seed
+Bateel	Coffee, Tea & Dates	medium	bateel.com	analyst_seed
+Patchi	Chocolates & Sweets	medium	patchi.com	analyst_seed
+Godiva	Chocolates & Sweets	medium	godiva.com godivaarabia.com	analyst_seed
+Al Rifai	Grocery & Food	medium	alrifai.com	analyst_seed
+Lindt	Chocolates & Sweets	medium	lindt.com	analyst_seed
+Floward	Flowers, Gifts & Party	major	floward.com	analyst_seed
+Ferns N Petals	Flowers, Gifts & Party	medium	fnp.qa fnp.ae	analyst_seed
+Bloomingdale's	Department Store / General	medium	bloomingdales.com bloomingdales.qa	group:Al Tayer
+Harvey Nichols	Department Store / General	medium	harveynichols.com	analyst_seed
+Jashanmal	Department Store / General	medium	jashanmal.com	analyst_seed
+Al Mana Group	Fashion & Apparel	medium	almana.com	analyst_seed
+Kinokuniya	Books & Stationery	medium	kinokuniya.com	analyst_seed
+Borders	Books & Stationery	medium	bordersme.com	analyst_seed
+Mannai Trading	Computers & Electronics	medium	mannai.com	analyst_seed
+Techno Blue	Computers & Electronics	medium	technoblue.qa	analyst_seed
+Fono	Mobiles & Accessories	medium	fono.qa	analyst_seed
+Mobile Masters	Mobiles & Accessories	medium	mobilemasters.qa	analyst_seed
+Starlink Qatar	Mobiles & Accessories	medium	starlinkqatar.com starlink.qa	analyst_seed
+Tyre Plus	Automotive Parts & Accessories	medium	tyreplus.qa	analyst_seed
+Jaidah Group	Automotive Parts & Accessories	medium	jaidah.com	analyst_seed
+Al-Futtaim Auto / Toyota Abdullah Abdulghani	Automotive Parts & Accessories	medium	toyota.com.qa aamotors.com.qa	analyst_seed
+Qatar Bikes	Sports, Fitness & Outdoor	medium	qatarbikes.com	analyst_seed
+Pet Arabia	Pets	medium	petarabia.com	analyst_seed
+Pet Zone	Pets	medium	petzone.qa	analyst_seed
+Dr Nutrition	Pharmacy & Wellness	medium	drnutrition.com	analyst_seed
+Snoonu	Department Store / General	major	snoonu.com	user_brief (aggregator: to exclude)
+Talabat Mart	Grocery & Food	major	talabat.com	user_brief (aggregator: to exclude)
+noon	Department Store / General	major	noon.com	user_brief (marketplace: to exclude if serving Qatar)
+Amazon	Department Store / General	major	amazon.com amazon.ae	user_brief (marketplace: to exclude if serving Qatar)
+Qatar Living	Department Store / General	medium	qatarliving.com	user_brief (classifieds: to exclude)
+Q-Sale	Department Store / General	medium	qsale.qa	user_brief (classifieds: to exclude)

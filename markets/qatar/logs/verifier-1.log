@@ -1,0 +1,4 @@
+[verify:v1] {'rejected': 28, 'total': 80, 'unverified': 50, 'verified': 2, 'per_min': 80.0, 'requests': 220, 'http_429': 0}
+[verify:v1] {'rejected': 82, 'total': 161, 'unverified': 73, 'verified': 6, 'per_min': 80.5, 'requests': 403, 'http_429': 5}
+[verify:v1] {'rejected': 97, 'total': 199, 'unverified': 92, 'verified': 10, 'per_min': 66.3, 'requests': 504, 'http_429': 18}
+[verify:v1] {'rejected': 150, 'total': 354, 'unverified': 181, 'verified': 23, 'per_min': 88.5, 'requests': 868, 'http_429': 41}
