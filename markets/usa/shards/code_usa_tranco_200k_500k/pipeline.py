@@ -67,6 +67,15 @@ MARKETPLACES = {
     "teepublic": "print-on-demand marketplace", "spreadshirt": "print-on-demand marketplace", "zazzle": "print-on-demand marketplace",
     "society6": "print-on-demand marketplace", "cafepress": "print-on-demand marketplace", "threadless": "print-on-demand marketplace",
     "discogs": "marketplace", "abebooks": "marketplace", "biblio": "marketplace", "newegg": None, "walmart": None,
+    "shopline": "ecommerce SaaS vendor", "shoplazza": "ecommerce SaaS vendor", "volusion": "ecommerce SaaS vendor",
+    "ecwid": "ecommerce SaaS vendor", "lightspeedhq": "ecommerce SaaS vendor", "squarespace": "website SaaS vendor",
+    "wix": "website SaaS vendor", "weebly": "website SaaS vendor", "godaddy": "hosting/SaaS vendor", "bigcommerce": "ecommerce SaaS vendor",
+    "woocommerce": "ecommerce software vendor", "magento": "ecommerce software vendor", "prestashop": "ecommerce software vendor",
+    "opencart": "ecommerce software vendor", "shopware": "ecommerce software vendor", "nuvemshop": "ecommerce SaaS vendor",
+    "tiendanube": "ecommerce SaaS vendor", "shopbase": "ecommerce SaaS vendor", "sellfy": "digital SaaS vendor", "gumroad": "digital SaaS vendor",
+    "shift4shop": "ecommerce SaaS vendor", "3dcart": "ecommerce SaaS vendor", "cs-cart": "ecommerce software vendor", "x-cart": "ecommerce software vendor",
+    "miva": "ecommerce SaaS vendor", "americommerce": "ecommerce SaaS vendor", "spreecommerce": "ecommerce software vendor",
+    "printful": "print-on-demand service", "printify": "print-on-demand service", "gelato": "print-on-demand service",
     "wayfair": None, "target": None, "bestbuy": None, "overstock": None,
 }
 MARKETPLACES = {k: v for k, v in MARKETPLACES.items() if v}
