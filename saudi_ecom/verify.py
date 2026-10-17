@@ -622,7 +622,9 @@ async def verify_one(f: Fetcher, cand: dict) -> dict:
     name_title = (res["store_name"] or "") + " " + a["title"]
     n_char = len(S.CHARITY.findall(name_title + " " + a["desc"] + " " + a["text"][:8000]))
     if S.CHARITY.search(name_title) or n_char >= 5:
-        if not (physical and physical >= 3 and n_char < 5):
+        shipped_catalogue = bool(plat == "salla" and probe and probe.get("n", 0) >= 10 and physical and physical >= 0.8 * probe["n"]
+                                 and (probe.get("types") or {}).get("donating", 0) == 0)
+        if not (physical and physical >= 3 and n_char < 5) and not shipped_catalogue:
             return done("rejected", f"charity_or_donations ({n_char} markers)")
     if physical is None and S.ORG.search(res["store_name"] or ""):
         return done("unverified", "organization_site_with_shop_features (manual review): " + S.ORG.search(res["store_name"]).group(0))
