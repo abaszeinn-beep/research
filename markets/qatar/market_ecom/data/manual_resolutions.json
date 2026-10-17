@@ -1,0 +1,269 @@
+[
+ {
+  "ref": "IKEA Qatar",
+  "action": "verified",
+  "key": "ikea.com|qa",
+  "storefront": "https://www.ikea.com/qa/en/",
+  "name": "IKEA Qatar",
+  "platform": "custom/unknown",
+  "category": "Furniture & Home",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 200,
+  "proofs": [
+   {
+    "type": "live_product_page",
+    "detail": "live product page, schema.org Offer priceCurrency QAR, price 645, 'Add to bag'; Qatar product sitemaps prod-en-QA_1..5.xml listed in robots-allowed sitemap index",
+    "url": "https://www.ikea.com/qa/en/p/glostad-3-seat-sofa-knisa-dark-grey-40573285/",
+    "date": "20261017"
+   }
+  ]
+ },
+ {
+  "ref": "Al Meera",
+  "action": "verified",
+  "key": "almeera.com.qa",
+  "storefront": "https://www.almeera.com.qa/",
+  "name": "Al Meera",
+  "platform": "custom/unknown",
+  "category": "Grocery & Supermarket",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 200,
+  "proofs": [
+   {
+    "type": "live_listing_page",
+    "detail": "headless-browser render: grocery category listing with QAR prices (e.g. 5.00 QAR), cart, login, 'Delivering to', instant 40-min delivery; robots.txt allows all and lists sitemap",
+    "url": "https://www.almeera.com.qa/search-product?categoryId=1653",
+    "date": "20261017"
+   }
+  ]
+ },
+ {
+  "ref": "Salam Stores",
+  "action": "verified",
+  "key": "salams.com",
+  "storefront": "https://salams.com/",
+  "name": "Salam Stores",
+  "platform": "magento",
+  "category": "Department Store",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 200,
+  "proofs": [
+   {
+    "type": "live_listing_page",
+    "detail": "live Magento brand listing page: 16 'Add to Cart' controls with QAR prices (QAR 170.00 - 450.00); Qatar App Store shopping app 'Salams' by Al Salam Studio & Stores",
+    "url": "https://salams.com/brands/alfred-dunhill.html",
+    "date": "20261017"
+   }
+  ]
+ },
+ {
+  "ref": "Jumbo Electronics Qatar",
+  "action": "map",
+  "key": "js.qa",
+  "storefront": "https://js.qa/en"
+ },
+ {
+  "ref": "Lulu Hypermarket",
+  "action": "verified_secondary_evidence",
+  "key": "luluhypermarket.com|qa",
+  "storefront": "https://gcc.luluhypermarket.com/en-qa/",
+  "root": "luluhypermarket.com",
+  "name": "Lulu Hypermarket",
+  "category": "Grocery & Supermarket",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar (en-qa) product page with QAR prices and ordering control",
+    "url": "https://web.archive.org/web/20260518044833/https://gcc.luluhypermarket.com/en-qa/goody-marinara-pasta-sauce-420-g/p/1322424/",
+    "date": "20260518"
+   },
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar (ar-qa) product page with QAR prices and ordering control",
+    "url": "https://web.archive.org/web/20260516163622/https://gcc.luluhypermarket.com/ar-qa/happy-cow-austrian-processed-cheese-113-g/p/22438/",
+    "date": "20260516"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store Shopping app 'LuLu Hypermarket' by Lulu Group International, updated 2026-10-08",
+    "url": "https://apps.apple.com/qa/app/lulu-hypermarket/id6739010114?uo=4",
+    "date": "20261008"
+   }
+  ]
+ },
+ {
+  "ref": "Home Centre",
+  "action": "verified_secondary_evidence",
+  "key": "homecentre.com|qa",
+  "storefront": "https://www.homecentre.com/qa/en/",
+  "root": "homecentre.com",
+  "name": "Home Centre",
+  "category": "Furniture & Home",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with QAR prices and ordering control",
+    "url": "https://web.archive.org/web/20260124011909/https://www.homecentre.com/qa/en/Household/Storage/Storage-Solutions/Tall-Hangers/HOME-CENTRE-Jason-Clothes-Hanger-Rail/p/166057338",
+    "date": "20260124"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store Shopping app 'Home Centre' by Landmark Retail Limited, updated 2026-10-02",
+    "url": "https://apps.apple.com/qa/app/home-centre-%D9%87%D9%88%D9%85-%D8%B3%D9%86%D8%AA%D8%B1/id1161311546?uo=4",
+    "date": "20261002"
+   }
+  ]
+ },
+ {
+  "ref": "Zara",
+  "action": "verified_secondary_evidence",
+  "key": "zara.com|qa",
+  "storefront": "https://www.zara.com/qa/en/",
+  "root": "zara.com",
+  "name": "Zara",
+  "category": "Fashion & Apparel",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 5 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260521053824/https://www.zara.com/qa/ar/%D8%A7%D9%94%D9%81%D8%B1%D9%88%D9%84-%D8%A8%D8%AD%D9%8A%D8%A7%D9%83%D8%A9-%D9%83%D8%B1%D9%88%D8%B4%D9%8A%D9%87-p02209489.html",
+    "date": "20260521"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store Shopping app 'ZARA' by Industria de Diseno Textil, S.A., updated 2026-10-16",
+    "url": "https://apps.apple.com/qa/app/zara/id547951480?uo=4",
+    "date": "20261016"
+   }
+  ]
+ },
+ {
+  "ref": "Sephora",
+  "action": "verified_secondary_evidence",
+  "key": "sephora.me|qa",
+  "storefront": "https://www.sephora.me/qa-en/",
+  "root": "sephora.me",
+  "name": "Sephora",
+  "category": "Beauty & Cosmetics",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar (qa-en) product page with 5 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260711180801/https://www.sephora.me/qa-en/p/bond-repair-balm/P1000213158",
+    "date": "20260711"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store Shopping app 'Sephora UAE: Beauty & Makeup' by SEPHORA (Middle East app serving the qa-en store), updated 2026-10-09",
+    "url": "https://apps.apple.com/qa/app/sephora-uae-beauty-makeup/id1472302573",
+    "date": "20261009"
+   }
+  ]
+ },
+ {
+  "ref": "Carrefour Qatar",
+  "action": "verified_secondary_evidence",
+  "key": "carrefourqatar.com",
+  "storefront": "https://www.carrefourqatar.com/mafqat/en/",
+  "root": "carrefourqatar.com",
+  "name": "Carrefour Qatar",
+  "category": "Grocery & Supermarket",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 200,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with 11 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260618023049/https://www.carrefourqatar.com/mafqat/ar/auto-dishwash-tabs/finish-quantum-a-in1-lmn-50tb-520gr/p/962403",
+    "date": "20260618"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store Shopping app 'MAF Carrefour Online Shopping' by MAF Hypermarkets, updated 2026-10-15",
+    "url": "https://apps.apple.com/qa/app/maf-carrefour-online-shopping/",
+    "date": "20261015"
+   }
+  ]
+ },
+ {
+  "ref": "Bath & Body Works",
+  "action": "verified_secondary_evidence",
+  "key": "bathandbodyworks.com.qa",
+  "storefront": "https://www.bathandbodyworks.com.qa/",
+  "root": "bathandbodyworks.com.qa",
+  "name": "Bath & Body Works",
+  "category": "Beauty & Cosmetics",
+  "verified_at": "2026-10-17T17:20:00Z",
+  "http": 403,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar product page with QAR prices and ordering control",
+    "url": "https://web.archive.org/web/20260612021755/https://www.bathandbodyworks.com.qa/ar/buy-black-cherry-merlot-gentle-clean-foaming-refill",
+    "date": "20260612"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store Shopping app 'Bath&BodyWorks' by Mohamad Humoud Alshaya Co., updated 2026-08-17",
+    "url": "https://apps.apple.com/qa/app/bath-bodyworks/id1541576878?uo=4",
+    "date": "20260817"
+   }
+  ]
+ },
+ {
+  "ref": "Apple",
+  "action": "excluded",
+  "reason": "excluded: Apple has no online store for Qatar; apple.com/qa only lists 'Where to Buy' resellers (no cart/checkout)",
+  "evidence": "https://www.apple.com/qa/buy/ ('Buy online or in-store from an Apple reseller near you'), checked 2026-10-17",
+  "storefront": "https://www.apple.com/qa/",
+  "key": "apple.com|qa"
+ },
+ {
+  "ref": "Baladna",
+  "action": "excluded",
+  "reason": "excluded: baladna.com is a brand/information site (products, recipes, investor pages) with no prices, cart or checkout; ordering happens through third-party apps",
+  "evidence": "https://baladna.com/en/product/fresh-milk/full-fat-milk rendered in headless browser 2026-10-17: no price/add-to-cart",
+  "storefront": "https://baladna.com/en",
+  "key": "baladna.com.qa"
+ },
+ {
+  "ref": "Al Fardan Jewellery",
+  "action": "excluded",
+  "reason": "excluded: alfardanjewellery.com.qa is a brand/catalogue site with no cart or online ordering",
+  "evidence": "https://www.alfardanjewellery.com.qa/en rendered 2026-10-17: gallery/about only, no price or add-to-cart; App Store listing is a business catalogue app",
+  "storefront": "https://www.alfardanjewellery.com.qa/",
+  "key": "alfardanjewellery.com.qa"
+ },
+ {
+  "ref": "Shein",
+  "action": "unresolved",
+  "reason": "unresolved: shein.com geo-redirects the root to another country; shein.qa is an unrelated travel site; Qatar App Store lists the SHEIN shopping app (updated 2026-10-17) but no Qatar-path storefront or QAR product capture was found in robots-allowed/archived sources",
+  "evidence": "https://apps.apple.com/qa/app/shein-shopping-online/ (2026-10-17)",
+  "storefront": "https://www.shein.com/",
+  "key": "shein.com"
+ },
+ {
+  "ref": "Monoprix Qatar",
+  "action": "unresolved",
+  "reason": "unresolved: monoprix.qa serves a captcha challenge (sgcaptcha, not bypassed); Wayback has no Qatar product-page captures; only the Qatar App Store loyalty app 'Monoprix Qatar - M Loyalty' (2026-03-31) was found",
+  "evidence": "https://apps.apple.com/qa/app/monoprix-qatar-m-loyalty/ (2026-03-31)",
+  "storefront": "https://www.monoprix.qa/",
+  "key": "monoprix.qa"
+ },
+ {
+  "ref": "Max Fashion",
+  "action": "unresolved",
+  "reason": "unresolved: maxfashion.com/qa returns HTTP 403 to non-browser clients; newest archived Qatar product pages are from 2025-08-19 (older than 12 months) and Qatar App Store app 'Max Fashion' (Landmark, 2026-10-05) is the only current proof",
+  "evidence": "https://web.archive.org/web/20250819134213/https://www.maxfashion.com/qa/en/Women/Clothing/Arabian-Clothing/Abayas/MAX-Full-Length-Abaya-with-Floral-Appliques/p/OESS181ABY348BLACKDARK",
+  "storefront": "https://www.maxfashion.com/qa/en/",
+  "key": "maxfashion.com|qa"
+ }
+]

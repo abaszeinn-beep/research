@@ -1,0 +1,16 @@
+{"name": "Max", "prefix": "maxfashion.com/qa/en/", "captures": 0, "ok": false}
+{"name": "HomeCentre", "prefix": "homecentre.com/qa/en/", "captures": 2, "ok": true, "url": "https://web.archive.org/web/20260124011909/https://www.homecentre.com/qa/en/Household/Storage/Storage-Solutions/Tall-Hangers/HOME-CENTRE-Jason-Clothes-Hanger-Rail/p/166057338%22", "date": "20260124", "qar_strings": 2}
+{"name": "Lulu", "prefix": "gcc.luluhypermarket.com/en-qa/", "captures": 60, "ok": true, "url": "https://web.archive.org/web/20260518044833/https://gcc.luluhypermarket.com/en-qa/goody-marinara-pasta-sauce-420-g/p/1322424/", "date": "20260518", "qar_strings": 3}
+{"name": "Lulu-ar", "prefix": "gcc.luluhypermarket.com/ar-qa/", "captures": 19, "ok": true, "url": "https://web.archive.org/web/20260516163622/https://gcc.luluhypermarket.com/ar-qa/happy-cow-austrian-processed-cheese-113-g/p/22438/", "date": "20260516", "qar_strings": 3}
+{"name": "Zara", "prefix": "zara.com/qa/", "captures": 60, "ok": true, "url": "https://web.archive.org/web/20260521053824/https://www.zara.com/qa/ar/%D8%A7%D9%94%D9%81%D8%B1%D9%88%D9%84-%D8%A8%D8%AD%D9%8A%D8%A7%D9%83%D8%A9-%D9%83%D8%B1%D9%88%D8%B4%D9%8A%D9%87-p02209489.html", "date": "20260521", "qar_strings": 5}
+{"name": "BBW", "prefix": "bathandbodyworks.com.qa/", "captures": 0, "ok": false}
+{"name": "Sephora", "prefix": "sephora.me/qa-en/", "captures": 60, "ok": true, "url": "https://web.archive.org/web/20260711180801/https://www.sephora.me/qa-en/p/bond-repair-balm/P1000213158", "date": "20260711", "qar_strings": 5}
+{"name": "Sephoraqa", "prefix": "sephora.qa/", "captures": 0, "ok": false}
+{"name": "Carrefour", "prefix": "carrefourqatar.com/", "captures": 60, "ok": true, "url": "https://web.archive.org/web/20260618023049/https://www.carrefourqatar.com/mafqat/ar/auto-dishwash-tabs/finish-quantum-a-in1-lmn-50tb-520gr/p/962403", "date": "20260618", "qar_strings": 11}
+{"name": "Monoprix", "prefix": "monoprix.qa/", "captures": 0, "ok": false}
+{"name": "Sheinqa", "prefix": "qa.shein.com/", "captures": 0, "ok": false}
+{"name": "Shein-ar", "prefix": "ar.shein.com/", "captures": null, "ok": false}
+{"name": "Almeera", "prefix": "almeera.online/", "captures": 60, "ok": false, "sample": ["20260217114808", "https://almeera.online/images/product/4023103196650.jpg"]}
+{"name": "Almeera2", "prefix": "almeera.com.qa/", "captures": 0, "ok": false}
+{"name": "Baladna", "prefix": "baladna.com/en/product/", "captures": 60, "ok": false, "sample": ["20260611040431", "https://baladna.com/en/product/delights/greek-dessert-lemon-biscuit"]}
+{"name": "Salams", "prefix": "salams.com/", "captures": 60, "ok": true, "url": "https://web.archive.org/web/20251208125506/https://www.salams.com/brands/alfred-dunhill.html", "date": "20251208", "qar_strings": 8}

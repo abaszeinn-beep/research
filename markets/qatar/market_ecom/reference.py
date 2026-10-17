@@ -487,6 +487,7 @@ def audit(con, previous_csv=None):
         return r
 
     rows = []
+    has_ov = bool(con.execute("SELECT name FROM sqlite_master WHERE name='ref_overrides'").fetchall())
     for ref_id, name, cat, tier, doms, sources, rank, kind in con.execute(
             "SELECT ref_id, name, category, tier, domains, sources, tranco_rank, kind FROM reference_stores").fetchall():
         domains = doms.split()
@@ -560,6 +561,9 @@ def audit(con, previous_csv=None):
                 reason = f"excluded: no {M.country} storefront found ({M.country} URL variants" + (", Wayback CDX" if info.get("blocked") else "") + " checked)"
         if kind in ("tranco_cc", "wikidata") and status != "in_directory_primary" and status != "in_directory_secondary":
             status = "screened_out"
+        ov = con.execute("SELECT status, reason, evidence, url, key FROM ref_overrides WHERE ref_id=?", (ref_id,)).fetchone() if has_ov else None
+        if ov and status not in ("in_directory_primary", "in_directory_secondary"):
+            status, reason, evidence, url, key = ov[0], ov[1], ov[2], ov[3] or url, ov[4] or key
         con.execute("UPDATE reference_stores SET status=?, best_key=?, best_url=?, reason=?, evidence=?, checked_at=? WHERE ref_id=?",
                     (status, key, url, reason, evidence, db.now(), ref_id))
         rows.append(dict(ref_id=ref_id, name=name, category=cat, tier=tier, domains=doms, sources=", ".join(json.loads(sources)),
