@@ -85,3 +85,22 @@ sqlite3 data/usa_ecom.sqlite "DELETE FROM secondary_evidence WHERE verdict='insu
   ingested). Common Crawl index still unreachable.
 * Tranco screen reached rank ~78.7k of 200k (about 240 domains/min). Export 18:46Z: 1,235 verified (911 primary,
   324 secondary); 7,543 unverified rows.
+
+## Session 5 (tightened verdict, Playwright retry, full Tranco 1-200k; 18:47Z-~04:00Z)
+
+* VM reset again at start; restored snapshot and reinstalled deps (httpx, tldextract, openpyxl, pandas, playwright+chromium).
+* Verdict rule tightened: `verified_secondary_evidence` needs >=2 proofs AND at least one US-specific proof (US storefront
+  product page via Common Crawl/Wayback with USD + ordering control, robots-allowed product sitemap, SEC 10-K, or a live
+  storefront with US market score >= 2). Apple+Google app listings alone no longer count; they are only added as the second
+  proof after a US-specific one. `recompute_secondary.py` re-applied the rule: 82 stores downgraded (incl. Adidas, Zara,
+  Fanatics, H&M, Macy's, Bass Pro...).
+* Playwright retry (`verify_browser.py`, en-US, 75 s timeouts, honours robots, waits out but never solves challenges) over
+  716 unverified reference rows: 153 verified, 48 rejected, 515 still unverified (bot walls persist).
+* Secondary evidence: Wayback retries with backoff plus generic-URL fallback; EDGAR aliases for public parents (Tapestry, VF,
+  PVH, Nordstrom, Urban Outfitters, Deckers, Under Armour, Signet, Kroger banners, ...); URL overrides for Tesla/Sony/TI/Ford/
+  Nintendo shop hosts; secondary run over all ~490 remaining reference targets.
+* Exclusions added with reasons: GM, Toyota Motor NA, Honeywell (corporate sites, no store found).
+* Tranco 1-200k screened. Diagnosed false `dead` rows (ConnectError under load: 27/40 sample alive): deleted ~66k connect/DNS
+  failures and re-screened them with two screeners at concurrency 22 each; this recovered several thousand store-like domains.
+* Export: 2,667 verified (2,256 primary, 411 secondary), 18,271 unverified rows. Audit (huge in/excl/unres 48/8/13; large
+  146/30/63; medium 590/101/214).
