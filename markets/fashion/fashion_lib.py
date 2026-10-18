@@ -13,7 +13,7 @@ STOP = re.compile(r"^(home|login|sign ?in|register|cart|wishlist|contact|about|b
 def sslctx():
     c = ssl.create_default_context(); c.check_hostname=False; c.verify_mode=ssl.CERT_NONE; return c
 
-async def get(sess, url, timeout=12, maxb=600000):
+async def get(sess, url, timeout=30, maxb=600000):
     try:
         async with sess.get(url, timeout=aiohttp.ClientTimeout(total=timeout), allow_redirects=True, max_redirects=6) as r:
             b = await r.content.read(maxb)

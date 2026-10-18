@@ -12,13 +12,13 @@ out=open(sys.argv[1] if len(sys.argv)>1 else 'probe_main.jsonl','a'); done=set()
 async def main():
     conn=aiohttp.TCPConnector(limit=50,limit_per_host=2,ssl=sslctx(),ttl_dns_cache=300)
     async with aiohttp.ClientSession(connector=conn,headers={'User-Agent':UA,'Accept-Language':'en'}) as s:
-        sem=asyncio.Semaphore(45); n=0
+        sem=asyncio.Semaphore(30); n=0
         async def one(r):
             nonlocal n
             u=r['final_url'] or r['url'] or 'https://'+r['key'].split('|')[0]
             if not u.startswith('http'): u='https://'+u
             async with sem:
-                try: p=await asyncio.wait_for(probe(s,u),60)
+                try: p=await asyncio.wait_for(probe(s,u),90)
                 except Exception as e: p={'ok':False,'err':'timeout','url':u}
             p['key']=r['key']; p['name']=r['store_name']; p['dbcat']=r['category']; p['dbstatus']=r['status']; p['dbreason']=r['reason']; p['dbplat']=r['platform']
             out.write(json.dumps(p,ensure_ascii=False)+'\n'); n+=1

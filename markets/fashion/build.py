@@ -126,5 +126,39 @@ for p in NEW:
     for s,(name,typ,gen,ver) in NEWINC.items():
         if s in k:
             c=classify(p); add(name,p['final'],typ,gen,p.get('platform',''),'Large',ver,p['final'],(c[3] if c and c[3] else p.get('title','')),'new-discovery')
+
+V1='Verified'; VS='Verified (secondary evidence)'; UN='Unverified candidate – weak Qatar signal (fashion-classified)'
+LIVE='Unverified – Qatar storefront live, purchase path not confirmed (JS/static page)'
+ADD=[
+('Namshi','https://www.namshi.com/qatar-en/',FO,'Unisex','Custom (Next.js)','Large',VS,'https://www.namshi.com/qatar-en/buy-2xtremz-textured-dress-with-short-sleeves-and-pockets/Z3B43CABEDCDDD73D9CA8Z/p/','Common Crawl 2025-51/2026-17: 872 Qatar-store URLs incl. 228 clothing product pages (dresses etc.); Wayback archived QAR product page','brand-recheck'),
+('Ounass Qatar','https://www.ounass.qa/',FO,'Unisex','Custom','Large',V1,'https://www.ounass.qa/shop-emporio-armani-eagle-patch-zip-hoodie-for-kids-00438af14935_4067.html','Common Crawl: 402 ounass.qa URLs, 240 clothing paths (women/men/kids clothing); directory primary verification','brand-recheck'),
+('American Eagle Qatar','https://www.americaneagle.com.qa/',FO,'Unisex','Custom','Large',VS,'https://web.archive.org/web/20250322231222/https://www.americaneagle.com.qa/ar/american-eagle/shop-women/bottoms/shorts/','Common Crawl: 595 URLs on americaneagle.com.qa, 328 clothing paths (shop-women, aerie clothing); archived QAR product page','brand-recheck'),
+('Centrepoint Qatar','https://www.centrepointstores.com/qa/en/',HC,'Unisex','Custom','Large',VS,'https://web.archive.org/web/20220612014351/https://www.centrepointstores.com/qa/en/Women/Clothing/Dresses/SPLASH-Ruched-Printed-Midi-Shift-Dress-with-Short-Sleeves/p/1020622','Bot-walled (403). Wayback shows Qatar storefront Women/Clothing/Dresses (2022) and active archived QAR product page (2026-02)','brand-recheck'),
+('Carrefour Qatar','https://www.carrefourqatar.com/mafqat/en/',HC,'Unisex','Custom','Large',VS,'https://www.carrefourqatar.com/mafqat/en/men-t-shirt/mens-tshirt-ss-plain/p/981282','Common Crawl 200: Qatar product page men-t-shirt/mens-tshirt-ss-plain; directory secondary evidence (QAR prices, ordering control)','brand-recheck'),
+('PrettyLittleThing Qatar','https://www.prettylittlething.qa/',FO,'Women','Custom (Magento)','Large','Known major retailer – manually accepted (Cloudflare-protected, not bypassed)','https://www.prettylittlething.qa/animal-printed-onion-skin-bandeau-maxi-dress.html','Common Crawl: 2,083 prettylittlething.qa URLs, 399 clothing product/category pages (dresses, hoodies)','common-crawl'),
+('Chloé Qatar','https://www.chloe.com/qa/',HC,'Women','Salesforce Commerce Cloud','Large',UN,'https://www.chloe.com/qa/','Qatar-locale storefront (Ready-to-Wear and bags); DB key chloe.com|qa','brand-recheck'),
+('Calvin Klein Qatar','https://www.calvinklein.qa/',FO,'Unisex','Custom','Large','Known major retailer – manually accepted (403 bot-wall, not bypassed)','https://web.archive.org/web/20251122044217/https://www.calvinklein.qa/ar/kids-black-friday-early.html','Official Qatar domain calvinklein.qa archived 2025-11 with Qatar storefront promos; Common Crawl robots/403 only','brand-recheck'),
+('Printemps Doha','https://www.printemps.com/',HC,'Unisex','Custom','Large',UN,'https://www.printemps.com/','DB category Fashion - Women/Kids for Printemps Doha storefront (department store)','brand-recheck'),
+('ProSwimwear Qatar','https://www.proswimwear.qa/',FO,'Unisex','Custom','Medium',UN,'https://www.proswimwear.qa/','Common Crawl .qa host; live Arabic swimwear storefront with cart controls (swimwear counts as clothing)','common-crawl'),
+('Brands Outlet','https://brandsoutletglobal.com/',FO,'Unisex','Shopify','Medium',V1,'https://brandsoutletglobal.com/','Common Crawl .qa host brandsoutlet.qa (redirects); Shopify with QAR currency and cart; fashion brands outlet','common-crawl'),
+('KHAT','https://khat.qa/',FO,'Women','Shopify','Small',V1,'https://khat.qa/','Shopify, QAR currency, cart; nav: Abayas collections; was a directory store missed by first pass (fetch timeout)','timeout-retry'),
+('Kickers Qatar','https://kickers.qa/',HC,'Unisex','Shopify','Small',V1,'https://kickers.qa/','Shopify, QAR currency, nav Apparel / Polos / Lowers; missed by first pass (fetch timeout)','timeout-retry'),
+('La Perle','https://laperleline.qa/',FO,'Women','Custom','Small',V1,'https://laperleline.qa/','Abaya collection 2026 nav; QAR 950 price on homepage','timeout-retry'),
+('Aisope','https://aisope.qa/',HC,'Unisex','Custom','Small',V1,'https://aisope.qa/','50 product links with QR prices; nav T-shirts','timeout-retry'),
+('Voile Fashion','https://voilefashion.com/',FO,'Women','Shopify','Medium',V1,'https://voilefashion.com/','Shopify with QAR currency and cart; nav Abayas, hijabs, swimwear; found via Qatar App Store sellerUrl','app-store'),
+('LIN','https://lin.com.qa/',FO,'Women','Custom','Small',LIVE,'https://lin.com.qa/','Nav: Abayas, Dresses, Kaftan, Ready To Wear','timeout-retry'),
+('Kham','https://kham.qa/',FO,'Women','Custom','Small',LIVE,'https://kham.qa/','Nav: Abaya, Clothing, Kaftan & Jalabiya','timeout-retry'),
+('Laseta Designs','https://laseta.qa/',FO,'Women','Custom','Small',LIVE,'https://laseta.qa/','Nav: Hajj & Omrah Abaya, Daily Abaya, Classic Abayas','timeout-retry'),
+('Naya','https://naya.qa/',FO,'Women','Custom','Small',LIVE,'https://naya.qa/','Nav: Abaya','timeout-retry'),
+('Soleil','https://soleil.qa/',FO,'Women','Custom','Small',LIVE,'https://soleil.qa/','Nav: Ready To Wear','timeout-retry'),
+('Summer Salt','https://summer-salt.qa/',FO,'Women','Custom','Small',LIVE,'https://summer-salt.qa/','Title: Kaftans & Abayas Online Qatar','timeout-retry'),
+('Louzan Qatar','https://louzanqatar.com/',FO,'Women','Custom','Small',LIVE,'https://louzanqatar.com/','Title: Louzan Qatar luxury bespoke abayas','timeout-retry'),
+('Byerley','https://byerley.qa/',FO,'Men','Custom','Small',LIVE,'https://byerley.qa/','Nav: thobes, custom thobes, underwear','timeout-retry'),
+('Naseej','https://naseej.qa/',HC,'Men','WooCommerce','Small',LIVE,'https://naseej.qa/','Nav: pajamas, white thobe, jalabiya, homewear','timeout-retry'),
+]
+for a in ADD:
+    name,url,typ,gen,plat,tier,ver,evu,sig,src=a
+    add(name,url,typ,gen,plat,tier,ver,evu,sig,src)
+
 json.dump({'rows':list(rows.values()),'excluded':excluded},open('built.json','w'),ensure_ascii=False,indent=1)
 print(len(rows),collections.Counter(r['typ'] for r in rows.values()),collections.Counter(r['gen'] for r in rows.values()),collections.Counter(r['src'] for r in rows.values()))
