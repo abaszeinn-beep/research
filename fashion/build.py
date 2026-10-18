@@ -5,6 +5,7 @@ FASH=lambda c:(c or '').startswith('Fashion') and c!='Fashion - Kids'
 HEAVY={'Furniture','Home Decor','Bedding, Mattresses & Textiles','Kitchenware & Tableware','Cleaning & Household Supplies','Pets','Agriculture & Gardening','Automotive Parts & Accessories','Healthcare & Medical Equipment','Industrial & Tools','Building Materials','Lighting & Electrical','Home Appliances','Packaging & Supplies','Wholesale & B2B','Computers & Electronics','Mobiles & Accessories','Grocery & Food','Coffee, Tea & Dates','Chocolates & Sweets','Books & Stationery','Gaming','Pharmacy & Wellness','Office Supplies','Electronic Components','Home Improvement & Hardware','Beauty & Cosmetics','Personal Care & Grooming'}
 CLEAR={'عبايات','عباية','عبايه','abaya','abayas','thobe','thobes','ثوب','ثياب','فساتين','dress','dresses','lingerie','لانجري','clothing','apparel','ملابس','jalabiya','جلابية','garments','t-shirt','t-shirts','قمصان','hoodies','menswear','womenswear','ملابس داخلية','ready-to-wear','activewear','sportswear','kaftan','بشوت','سراويل','بناطيل'}
 NAMEHINT=re.compile(r'abaya|abaia|thobe|thawb|jalab|lingerie|fashion|wear\b|dress|cloth|apparel|boutique|outfit|عباي|ثوب|ثياب|أزياء|ازياء|فساتين|ملابس|موضة|لانجري|بوتيك|جلاب',re.I)
+NEG=re.compile(r'مغسلة|مغاسل|laundry|تنظيف|dry ?clean|تعليمي|educational|car ?care|driving|(?<![a-z])trips(?![a-z])|(?<![a-z])diver|(?<![a-z])rent(?![a-z])|تأجير|مقاول|clinic|عيادة|مدرسة|academy|فروسية|equestrian|horse|uniform|يونيفورم|ملابس طبية|تطريز بالكمبيوتر|embroider',re.I)
 def nm(*a): return " ".join(x or '' for x in a)
 def tier_map():
     t={}
@@ -14,6 +15,7 @@ def tier_map():
 TM=tier_map()
 def size_tier(key,url,plat,manual=False):
     if manual: return 'Brand-Major'
+    if re.search(r'zara|hm\.com|h&m|maxfashion|namshi|nike|adidas|puma|reebok|newbalance|decathlon|nayomi|oysho|stylishop|brandsforless|sivvi|mango|bershka|stradivarius|massimodutti|pullandbear|americaneagle|ounass|aivi|6thstreet|styli\.com|splash|centrepoint|rivafashion|lulu|carrefour|next\.|underarmour|sssports|victoria|guess\.|levi\.|giordano|skechers|lacoste|gap\.|shein|redtag',key+' '+url,re.I) and not key.startswith('salla.sa/') and '.zid.store' not in url: return 'Brand-Major'
     t=TM.get(key)
     if t and t[0]=='major': return 'Brand-Major'
     if t and t[0]=='medium': return 'Large'
@@ -25,10 +27,18 @@ def classify(r):
     nstrong=len(set(strong)); clear=any(x in CLEAR for x in strong)
     nameh=bool(NAMEHINT.search(nm(r['name'],r['key'])))
     ev=None; reason=None
-    if r['ok'] and nstrong:
-        need=3 if cat in HEAVY else 2
-        if nstrong>=need or (clear and (FASH(cat) or cat in ('Sports, Fitness & Outdoor','Department Store / General','General / Unclassified','Shoes','Bags & Luggage','Religious Products','Jewelry & Watches','Baby & Maternity','Fashion - Kids','Arts, Crafts & Handmade','Flowers, Gifts & Party','Perfumes & Oud','') or cat is None) and (nstrong>=2 or FASH(cat) or cat in('Department Store / General','General / Unclassified','Sports, Fitness & Outdoor'))):
-            ev=(r['signal'] or strong[0],'live')
+    if r.get('vstatus') in ('verified_secondary_evidence','verified_manual_major') and (FASH(cat) or cat in ('Sports, Fitness & Outdoor','Department Store / General')) and not r['ok'] or (r.get('vstatus') in ('verified_secondary_evidence','verified_manual_major') and not r['strong'] and (FASH(cat) or cat in ('Sports, Fitness & Outdoor','Department Store / General'))):
+        ev=('known major retailer; category '+cat+' (storefront bot-walled)','major-category')
+    if r['ok'] and nstrong and not NEG.search(nm(r['name'],r['key'])):
+        if FASH(cat) or cat=='Fashion - Kids':
+            need=1
+        elif cat in ('Department Store / General','General / Unclassified','Sports, Fitness & Outdoor','Baby & Maternity','Religious Products','Shoes','') or cat is None:
+            need=2
+        elif cat in HEAVY:
+            need=4
+        else:
+            need=3
+        if nstrong>=need and (clear or nstrong>=3): ev=(r['signal'] or strong[0],'live')
     if not ev and r['ok'] and len(set(weak))>=2 and (FASH(cat) or cat in('Department Store / General','Sports, Fitness & Outdoor')):
         ev=(",".join(weak),'live-weak')
     if not ev and FASH(cat) and nameh and cat!='Fashion - Kids':
@@ -40,7 +50,8 @@ def classify(r):
         if cat=='Fashion - Kids' : return None,'kids-only clothing'
         if FASH(cat): return None,'stored fashion category but no clothing signal in nav/categories'
         return None,'no clothing signal'
-    kids_only = r['kid'] and not (r['women'] or r['men'] or r['uni'] or r['adult'])
+    namekid=bool(re.search(r'أطفال|اطفال|(?<![a-z])kids?(?![a-z])|children|(?<![a-z])baby(?![a-z])|مواليد',r['name'] or '',re.I)) and not re.search(r'نسائ|رجال|women|men|ladies',r['name'] or '',re.I)
+    kids_only = (r['kid'] or namekid) and not (r['women'] or r['men'] or r['uni'] or r['adult'])
     if kids_only or cat=='Fashion - Kids' and not (r['women'] or r['men'] or r['uni'] or r['adult']): return None,'kids-only clothing'
     g=[]
     w=r['women'] or cat in('Fashion - Women','Fashion - Abayas & Modest'); mn=r['men'] or cat=='Fashion - Men'
