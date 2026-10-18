@@ -16,6 +16,7 @@ from . import db
 from .common import identity, SHARED_SUBDOMAIN_PLATFORMS
 from .market import M, US_STATES
 from .verify import MARKET_GEO
+from .merge_shards import unify_category
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..")
 BASE = f"{M.prefix}_Ecommerce_Master_Directory"
@@ -25,7 +26,7 @@ UNVERIFIED_CSV = os.path.join(OUT_DIR, "data", f"{M.prefix}_Unverified_Candidate
 EVIDENCE_CSV = os.path.join(OUT_DIR, "data", f"{M.prefix}_Verification_Evidence.csv")
 REF_CSV = os.path.join(OUT_DIR, "data", f"{M.prefix}_reference_universe.csv")
 XLSX_ROW_CAP = 1_000_000
-UNVERIFIED_SHEET_CAP = 150_000
+UNVERIFIED_SHEET_CAP = 20_000
 
 
 def master_url(row):
@@ -151,7 +152,8 @@ def main():
         "Canonical Storefront URL": ver["Master URL"],
         "Registrable Root Domain": ver["Registrable Root Domain"],
         "Platform": ver.platform.fillna("").replace("", "unknown (secondary evidence)"),
-        "Industry / Category": ver.category.fillna("").replace("", "General / Unclassified"),
+        "Industry / Category": ver.category.map(unify_category),
+        "Source Category": ver.category.fillna(""),
         "US Market-Relevance Evidence": ver.market_evidence.map(fmt_market),
         "Market Score": ver.market_score,
         "Verification Source URL": ver.final_url,
@@ -174,7 +176,8 @@ def main():
         unverified = pd.concat([unverified, pending], ignore_index=True)
     # Unverified first in the sheet (most actionable), then pending, then rejected.
     order = {"unverified": 0, "pending": 1, "in_progress": 1, "rejected": 2}
-    unverified = unverified.sort_values("Status", key=lambda s: s.map(order).fillna(3), kind="stable")
+    strong = unverified["Reason"].fillna("").str.match(r"^(blocked|rate_limited|js_rendered|partial|weak_ecommerce|insufficient_ecommerce|physical_goods_unclear|http_5|fetch_failed|verification_timeout|robots)")
+    unverified = unverified.assign(_o=unverified["Status"].map(order).fillna(3) * 2 + (~strong).astype(int)).sort_values("_o", kind="stable").drop(columns="_o")
     unverified.to_csv(UNVERIFIED_CSV, index=False, compression="gzip")
 
     from . import reference
@@ -185,11 +188,13 @@ def main():
         ref_df.to_csv(REF_CSV, index=False)
         tier_order = {"huge": 0, "large": 1, "medium": 2, "recognized": 3}
         audit_df = ref_df[(ref_df.kind == "brand") | ref_df.status.str.startswith("in_directory") | ref_df.tier.isin(["large", "medium"])]
+        md = pd.read_sql_query("SELECT name AS Store, rule AS 'Decision Rule', evidence AS 'Decision Evidence', decided_at AS 'Decision Date (UTC)' FROM major_decisions", con) if con.execute("SELECT 1 FROM sqlite_master WHERE name='major_decisions'").fetchone() else pd.DataFrame(columns=["Store", "Decision Rule", "Decision Evidence", "Decision Date (UTC)"])
         audit_sheet = pd.DataFrame({
             "Store": audit_df.name, "Tier": audit_df.tier, "Category": audit_df.category, "Reference Source(s)": audit_df.sources,
             "Tranco Rank": audit_df.tranco_rank, "Status": audit_df.status, "URL": audit_df.url, "Evidence": audit_df.evidence,
             "Reason": audit_df.reason,
         })
+        audit_sheet = audit_sheet.merge(md.drop_duplicates("Store"), on="Store", how="left")
         audit_sheet = audit_sheet.assign(_t=audit_sheet.Tier.map(tier_order)).sort_values(["_t", "Status", "Store"]).drop(columns="_t")
     else:
         audit_sheet = pd.DataFrame()
@@ -201,7 +206,7 @@ def main():
         evidence.to_excel(xw, sheet_name="Verification Evidence", index=False)
         cap = unverified.head(UNVERIFIED_SHEET_CAP)
         if len(unverified) > UNVERIFIED_SHEET_CAP:
-            cap = pd.concat([pd.DataFrame({"Candidate URL": [f"[sheet capped at {UNVERIFIED_SHEET_CAP:,} of {len(unverified):,} rows; full list in data/{os.path.basename(UNVERIFIED_CSV)}]"]}), cap])
+            cap = pd.concat([pd.DataFrame({"Candidate URL": [f"[sheet trimmed to the strongest {UNVERIFIED_SHEET_CAP:,} of {len(unverified):,} rows (unverified with blocked/partial/JS/insufficient-evidence reasons first); full list in markets/usa/data/{os.path.basename(UNVERIFIED_CSV)}]"]}), cap])
         cap.to_excel(xw, sheet_name="Unverified Candidates", index=False)
         startrow = 0
         for title, df in cov:
@@ -219,6 +224,53 @@ def main():
     return len(master)
 
 
+SOURCE_ORDER = ["main", "shard_shopify", "shard_other_platforms", "shard_tranco_200k_500k", "shard_tranco_500k_1m"]
+SOURCE_LABEL = {"main": "USA main pipeline (Tranco 1-200k, reference universe, Wikidata)", "shard_shopify": "Shopify shard",
+                "shard_other_platforms": "Other platforms shard (Square, Shift4Shop, Wix, Big Cartel, Woo, Ecwid, ...)",
+                "shard_tranco_200k_500k": "Tranco 200k-500k shard", "shard_tranco_500k_1m": "Tranco 500k-1M shard"}
+
+
+def shard_tables(con, ver):
+    import glob
+    gs = pd.read_sql_query("SELECT grp, source, status FROM group_sources", con)
+    if gs.empty:
+        return []
+    final = set(ver.final_key.fillna(ver.key)) | set(ver.key)
+    rows = []
+    gs["final_verified"] = gs.grp.isin(final)
+    ver_members = gs[gs.status.str.startswith("verified")]
+    per_grp = ver_members.groupby("grp").source.apply(lambda x: sorted(set(x)))
+    claim = {}
+    for g, srcs in per_grp.items():
+        if g in final:
+            claim[g] = next(s for s in SOURCE_ORDER if s in srcs)
+    claimed = pd.Series(claim).value_counts()
+    for src in SOURCE_ORDER:
+        sub = gs[gs.source == src]
+        vm = ver_members[(ver_members.source == src) & ver_members.grp.isin(final)]
+        excl = sum(1 for g, srcs in per_grp.items() if g in final and srcs == [src])
+        rows.append({"Source": SOURCE_LABEL[src], "Rows imported (after identity normalization)": len(sub),
+                     "Own verified rows": int(sub.status.str.startswith("verified").sum()),
+                     "Own rejected": int((sub.status == "rejected").sum()), "Own unverified": int((sub.status == "unverified").sum()),
+                     "Final verified stores this source verified (incl. overlap)": int(vm.grp.nunique()),
+                     "Final verified stores claimed by this source (first-claim order: main, Shopify, Other platforms, 200k-500k, 500k-1M)": int(claimed.get(src, 0)),
+                     "Final verified verified ONLY by this source": excl})
+    t1 = pd.DataFrame(rows)
+    sm = []
+    for f in sorted(glob.glob(os.path.join(OUT_DIR, "shards", "*_summary.json"))):
+        j = json.load(open(f))
+        flat = {k: v for k, v in j.items() if isinstance(v, (int, float, str)) and k != "generated_utc"}
+        sm.append(flat)
+    t2 = pd.DataFrame(sm) if sm else pd.DataFrame()
+    out = [("Per-shard / per-source contribution after merge and deduplication", t1)]
+    if len(t2):
+        out.append(("Shard run summaries (as reported by each shard branch)", t2))
+    ml = pd.read_sql_query("SELECT kind AS 'Merge rule', count(*) AS Groups FROM merge_log GROUP BY 1", con)
+    if len(ml):
+        out.append(("Merge conflict resolutions (hard rejection beat weak verify)", ml))
+    return out
+
+
 def coverage(con, ver, v, ndup, ref_df):
     q = lambda s: pd.read_sql_query(s, con)
     out = []
@@ -228,7 +280,8 @@ def coverage(con, ver, v, ndup, ref_df):
     totals.loc[len(totals)] = ["  of which verified_secondary_evidence", int((ver.status == "verified_secondary_evidence").sum())]
     totals.loc[len(totals)] = ["duplicates merged (aliases/redirects/same store id)", ndup]
     out.append(("Summary counts", totals))
-    out.append(("Verified stores by category", ver.category.fillna("General / Unclassified").replace("", "General / Unclassified").value_counts().rename_axis("Category").reset_index(name="Verified stores")))
+    out.extend(shard_tables(con, ver))
+    out.append(("Verified stores by category (unified taxonomy)", ver.category.map(unify_category).value_counts().rename_axis("Category").reset_index(name="Verified stores")))
     out.append(("Verified stores by platform", ver.platform.fillna("unknown").replace("", "unknown").value_counts().rename_axis("Platform").reset_index(name="Verified stores")))
     states = Counter()
     for ev in ver.market_evidence:

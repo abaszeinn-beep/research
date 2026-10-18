@@ -120,3 +120,7 @@ Unadapted copies (still Saudi-oriented, not used for the USA run): `discover_sea
 * LLM-known brands are seeds only (`reference_brands.tsv`); every directory row is live-verified or
   secondary-evidence verified.
 * No AI subagents were used; parallelism came from separate tmux worker processes sharing the SQLite DB.
+
+## Final merge
+
+Final directory: 28,409 verified stores (27,878 primary, 531 secondary). Rebuild with `scripts/final_merge.sh <premerge.sqlite.gz>` (restore, merge shards, apply `qa/rescreen_*.jsonl`, nonstore filter, replay `qa/major_decisions.jsonl`), then `python3 -m mktecom.export` and `python3 -m mktecom.snapshot`. Major retailers: US-HQ single-country retailers need two independent proofs (SEC 10-K, US-only app, or archived US USD product page within 365 days); global brands need one US storefront proof. Remaining unresolved majors are listed in the Major Retailer Coverage Audit sheet. Details in PROGRESS_LOG.md.

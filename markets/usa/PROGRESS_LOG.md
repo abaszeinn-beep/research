@@ -104,3 +104,15 @@ sqlite3 data/usa_ecom.sqlite "DELETE FROM secondary_evidence WHERE verdict='insu
   failures and re-screened them with two screeners at concurrency 22 each; this recovered several thousand store-like domains.
 * Export: 2,667 verified (2,256 primary, 411 secondary), 18,271 unverified rows. Audit (huge in/excl/unres 48/8/13; large
   146/30/63; medium 590/101/214).
+
+## Final merge (USA master)
+
+- Imported four shard CSVs (Shopify, Other platforms, Tranco 200k-500k, Tranco 500k-1M) via `git show origin/<branch>:<path>` into `shards/`; branches were not merged.
+- `mktecom/merge_shards.py`: identity normalization, dedup, conflict resolution (hard rejection beats weak verify; otherwise strongest verified row). 99 hard-reject-over-weak-verify groups.
+- `mktecom/rescreen.py` (homepage rules v2-v5 in `qa/rescreen_*.jsonl`), `mktecom/nonstore_filter.py` (adult, hosting/SaaS, nonprofit .org, attraction/media, foreign ccTLD), `mktecom/major_resolve.py` (major retailer decisions, `qa/major_decisions.jsonl`).
+- Reproduce: `scripts/final_merge.sh <premerge.sqlite.gz>`, then `python3 -m mktecom.export` and `python3 -m mktecom.snapshot`.
+- Final: 28,409 unique verified (27,878 primary, 531 secondary evidence); 48 export-level duplicates merged.
+- Per-source final verified: main 2,364; Shopify 13,894; Other platforms 7,314; Tranco 200k-500k 1,001; Tranco 500k-1M 6,384 (overlaps counted in each).
+- QA: rounds of ~150 stratified rows; non-Shopify error rate fell from ~24% to ~12.6% (round 4) to ~8% in the final round (110 live rows, 9 non-stores removed; other-platforms ~10%). Shopify QA was by name/evidence because live fetches are rate-limited (429).
+- Major retailers: huge unresolved 13 -> 8 (Stop & Shop, Bass Pro, Fanatics, H&M US, Meijer, Zara US, JCPenney, REI); large unresolved ~63 -> 47. Remaining are bot-walled with no archived US USD page and only an app listing.
+- Caveats: Common Crawl index unreachable; app listing cannot prove "US-only" so US-listing wording is used; .org/ccTLD rules are conservative; Square/Wix JS pages unjudgeable live; cannabis is a gray area.
