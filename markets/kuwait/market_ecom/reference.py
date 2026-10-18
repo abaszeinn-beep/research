@@ -501,7 +501,7 @@ def audit(con, previous_csv=None):
             keys.update(by_root.get(r, []))
         cands = [master_of(k) for k in keys if k in ver]
         cands = [c for c in cands if c]
-        good = [c for c in cands if c["cstatus"] == "verified" and c["vstatus"] in ("verified", "verified_secondary_evidence")]
+        good = [c for c in cands if c["cstatus"] == "verified" and c["vstatus"] in ("verified", "verified_secondary_evidence", "verified_manual_major")]
         status, url, reason, evidence, key = None, "", "", "", None
         if roots and roots <= PLATFORM_ROOTS:
             status, reason = "excluded", "excluded: ecommerce platform / non-store site, not a merchant"
@@ -517,9 +517,11 @@ def audit(con, previous_csv=None):
             url = murl
             primary = g["vstatus"] == "verified"
             status = "in_directory_primary" if primary else "in_directory_secondary"
+            if g["vstatus"] == "verified_manual_major":
+                status = "in_directory_manual_major"
             was = murl.rstrip("/") in prev
             if prev:
-                reason = ("already present before reference audit" if was else "added by reference audit") + ("" if primary else " (secondary evidence)")
+                reason = ("already present before reference audit" if was else "added by reference audit") + ("" if primary else (" (manually accepted known major retailer)" if status == "in_directory_manual_major" else " (secondary evidence)"))
             else:
                 reason = "verified live storefront" if primary else "verified on secondary evidence (archives / sitemap / app store)"
             evidence = (g["reason"] or "") + (f" | evidence: {g['ev_url']}" if g["ev_url"] else "") + f" | checked {g['ts']}"
@@ -564,9 +566,9 @@ def audit(con, previous_csv=None):
                 status = "excluded"
                 info = nones.get(ref_id, {})
                 reason = f"excluded: no {MK.NAME} storefront found ({MK.NAME} URL variants" + (", Wayback CDX" if info.get("blocked") else "") + " checked)"
-        if status not in ("in_directory_primary", "in_directory_secondary") and name in manual:
+        if not status.startswith("in_directory") and name in manual:
             status, reason, evidence = manual[name]
-        if kind in ("tranco_sa", "wikidata", "appstore") and status != "in_directory_primary" and status != "in_directory_secondary":
+        if kind in ("tranco_sa", "wikidata", "appstore") and not status.startswith("in_directory"):
             status = "screened_out"
         con.execute("UPDATE reference_stores SET status=?, best_key=?, best_url=?, reason=?, evidence=?, checked_at=? WHERE ref_id=?",
                     (status, key, url, reason, evidence, db.now(), ref_id))
