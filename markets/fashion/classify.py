@@ -44,6 +44,11 @@ async def probe(c,sem,key,url,name):
         woo="wp-content/plugins/woocommerce" in h or "woocommerce" in h[:200000].lower()
         if shop:
             out["platform"]="Shopify"
+            rr=await get(c,root+"/meta.json")
+            if rr is not None and rr.status_code==200:
+                try:
+                    mj=rr.json(); out["meta"]={k:mj.get(k) for k in ("name","country","currency","domain","myshopify_domain")}
+                except Exception: pass
             rr=await get(c,root+"/collections.json?limit=250")
             if rr is not None and rr.status_code==200:
                 try:

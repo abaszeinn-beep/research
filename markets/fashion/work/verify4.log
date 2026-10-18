@@ -1,0 +1,3 @@
+[verify:f4] {'unverified': 5, 'total': 8, 'verified': 1, 'rejected': 2, 'per_min': 8.0, 'requests': 22, 'http_429': 2, 'salla_gap': 0}
+[verify:f4] {'unverified': 5, 'total': 8, 'verified': 1, 'rejected': 2, 'per_min': 4.0, 'requests': 24, 'http_429': 4, 'salla_gap': 0}
+[verify:f4] finished {'unverified': 6, 'total': 10, 'verified': 1, 'rejected': 3}

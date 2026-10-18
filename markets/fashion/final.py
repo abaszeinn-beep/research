@@ -3,10 +3,14 @@ from urllib.parse import urlparse
 from build1 import D,V,db,feats
 from merge import load
 D.update(load(["work/probe_extra.jsonl"]))
+for _k,_o in load(["work/probe_deep.jsonl","work/probe_r3.jsonl","work/probe_shop.jsonl"]).items():
+    _n=_k.split(":",1)[-1]
+    if _n not in D or not D[_n].get("ok"): D[_n]=_o
 FS={r[0]:r[1] for r in db.execute("select key,first_source from candidates")}
 W,M,U="Women","Men","Unisex"; F,C="Fashion-only","Has clothing section"
 MAJ,LRG,MED,SML="Major (intl/regional chain)","Large","Medium","Small / local brand"
 VER,KNOWN,UNV="Verified","Known major retailer - manually accepted","Unverified - fashion-confirmed; weak Kuwait/e-commerce signal"
+LIVE="Verified - live re-check (KWD prices / cart on Kuwait storefront)"
 # key: (name, type, gender, tier, status)
 S={
 "abatiboutique.online":("Abati Boutique",F,W,SML,VER),
@@ -30,16 +34,13 @@ S={
 "kw.cos.com":("COS Kuwait",F,U,MAJ,VER),
 "kw.p3ly.com":("Bey3ly (P3ly) Kuwait",C,U,SML,VER),
 "lacoste.com.kw":("Lacoste Kuwait",F,U,MAJ,UNV),
-"guess.com.kw":("Guess Kuwait",F,U,MAJ,UNV),
 "maje.com.kw":("Maje Kuwait",F,W,LRG,VER),
 "marksandspencer.com.kw":("Marks & Spencer Kuwait",C,U,MAJ,VER),
 "michaelkors.com.kw":("Michael Kors Kuwait",C,U,LRG,VER),
 "toryburch.com.kw":("Tory Burch Kuwait",C,W,LRG,VER),
 "modish.com.kw":("Modish",F,W,MED,VER),
-"molk.com.kw":("Molk",F,U,SML,UNV),
 "mrmr.com.kw":("mrmr Fashion",F,W,LRG,VER),
 "nike.com.kw":("Nike Kuwait",F,U,MAJ,VER),
-"nassboutique.com":("Nass Boutique",F,W,SML,UNV),
 "shein.com":("SHEIN",F,U,MAJ,KNOWN),
 "sleepwearkuwait.com":("Sleepwear Kuwait",F,W,SML,VER),
 "souqsara.com.kw":("Souq Sara",C,U,SML,VER),
@@ -49,8 +50,6 @@ S={
 "wsfabaya.com":("WSF Abaya",F,W,SML,VER),
 "wynwoodkw.com":("Wynwood",F,U,SML,UNV),
 "lasenzakuwait.com":("La Senza Kuwait",F,W,LRG,UNV),
-"kashkha.shop":("Kashkha",F,W,SML,UNV),
-"lineskw.com":(".lines",C,U,SML,UNV),
 "sstylekw.com":("S Style Group",F,W,SML,UNV),
 "justladykw.com":("Just Lady",F,W,MED,VER),
 "oosha.store":("Oosha Store",F,W,SML,VER),
@@ -99,7 +98,7 @@ S={
 "valentino.com|kw":("Valentino Kuwait",C,U,LRG,KNOWN),
 "squatwolf.com|kw":("Squatwolf Kuwait",F,U,MED,VER),
 "desigual.com|kw":("Desigual Kuwait",F,W,LRG,VER),
-"kw.burberry.com":("Burberry Kuwait",F,U,MAJ,UNV),
+"kw.burberry.com":("Burberry Kuwait",F,U,MAJ,LIVE),
 "rivafashion.com|kw":("Riva Fashion",F,W,LRG,VER),
 "sj-abaya.com|kw":("SJ Abaya",F,W,SML,VER),
 "shadow.com.kw":("Shadow",F,W,SML,VER),
@@ -110,8 +109,7 @@ S={
 "hawraaabaya.com":("Hawraa Abaya",F,W,SML,VER),
 "thoubi.com":("Thoubi",F,M,SML,VER),
 "chickuwait.com":("CHIC Kuwait Luxury Outlet",C,U,MED,VER),
-"ambroseabayas.com":("Ambrose Abayas",F,W,SML,UNV),
-"harayerkw.com":("Harayer",F,W,SML,UNV),
+"ambroseabayas.com":("Ambrose Abayas",F,W,SML,LIVE),
 "lab.com.kw":("LAB",F,U,MED,VER),
 "blinktrends.com.kw":("Blink Trends",C,U,MED,VER),
 "luluhypermarket.com|kw":("Lulu Hypermarket Kuwait",C,U,MAJ,KNOWN),
@@ -119,14 +117,30 @@ S={
 "yesstyle.com":("YesStyle",C,U,MAJ,VER),
 "aloyoga.com/en-kw":("Alo Yoga Kuwait",F,U,LRG,KNOWN),
 "bottegaveneta.com/en-kw":("Bottega Veneta Kuwait",C,U,LRG,KNOWN),
+"darraferoz.com":("Darra Feroz (Wanderlust)",F,W,SML,VER),
+"stylishop.com/kw/en":("Styli Kuwait",F,U,MAJ,KNOWN),
+"dolcegabbana.com/en-kw":("Dolce & Gabbana Kuwait",F,U,LRG,LIVE),
+"versace.com/kw/en":("Versace Kuwait",F,U,LRG,KNOWN),
+"balenciaga.com/en-kw":("Balenciaga Kuwait",C,U,LRG,KNOWN),
+"moncler.com/en-kw":("Moncler Kuwait",F,U,LRG,KNOWN),
+"stradivarius.com/kw/en":("Stradivarius Kuwait",F,W,MAJ,KNOWN),
+"adidas.com.kw":("adidas Kuwait",C,U,MAJ,KNOWN),
+"calvinklein.com.kw":("Calvin Klein Kuwait",F,U,MAJ,KNOWN),
+"lifestyleshops.com/kw/en":("Lifestyle Kuwait (Landmark)",C,U,MAJ,KNOWN),
+"brandsforless.com/en-kw":("Brands For Less Kuwait",C,U,MAJ,KNOWN),
+"lcwaikiki.com.kw":("LC Waikiki Kuwait",F,U,MAJ,KNOWN),
+"vogacloset.com/kw":("Voga Closet Kuwait",F,U,LRG,KNOWN),
+"boutiqaat.com/en-kw":("Boutiqaat",C,U,LRG,KNOWN),
 }
-SITE={"aloyoga.com/en-kw":"https://www.aloyoga.com/en-kw","bottegaveneta.com/en-kw":"https://www.bottegaveneta.com/en-kw"}
+SITE={"aloyoga.com/en-kw":"https://www.aloyoga.com/en-kw","bottegaveneta.com/en-kw":"https://www.bottegaveneta.com/en-kw",
+"stylishop.com/kw/en":"https://stylishop.com/kw/en","dolcegabbana.com/en-kw":"https://www.dolcegabbana.com/en-kw/","versace.com/kw/en":"https://www.versace.com/kw/en/","balenciaga.com/en-kw":"https://www.balenciaga.com/en-kw","moncler.com/en-kw":"https://www.moncler.com/en-kw/","stradivarius.com/kw/en":"https://www.stradivarius.com/kw/en/","adidas.com.kw":"https://www.adidas.com.kw/","calvinklein.com.kw":"https://www.calvinklein.com.kw/","lifestyleshops.com/kw/en":"https://www.lifestyleshops.com/kw/en","brandsforless.com/en-kw":"https://www.brandsforless.com/en-kw","lcwaikiki.com.kw":"https://www.lcwaikiki.com.kw/","vogacloset.com/kw":"https://www.vogacloset.com/kw","boutiqaat.com/en-kw":"https://www.boutiqaat.com/en-kw/"}
 NEWKEYS=set(SITE)
 EXC={}
 def exc(key,name,reason): EXC[key]=(name,reason)
 import sys
 
 EXR={
+"molk.com.kw":"Multi-vendor marketplace (Kuwait/Saudi souq tabs, test items)","guess.com.kw":"Serves Guess UAE (AED prices); no Kuwait storefront evidence","oasis.com.kw":"Domain serves unrelated/Guess UAE content, not Oasis","coast.com.kw":"Domain is Coast Investment & Development, not the fashion brand","nassboutique.com":"UAE-based multi-brand boutique (AED); no Kuwait storefront","kashkha.shop":"Insufficient Kuwait evidence (AED/SAR currencies, 4 Kuwait mentions)","lineskw.com":"Multi-vendor booths marketplace (.lines)","harayerkw.com":"Saudi store (SAR prices) - not Kuwait","noon.com":"Marketplace (Noon)","farfetch.com":"Marketplace (Farfetch) - excluded; Kuwait locale bot-walled","net-a-porter.com":"Global luxury retailer, Kuwait locale bot-walled (403), no KWD evidence","mrporter.com":"Global luxury retailer, Kuwait locale bot-walled (403), no KWD evidence","ssense.com":"Global retailer, Kuwait locale bot-walled (403), no KWD evidence","defacto.com":"No Kuwait storefront (en-kw redirects to another country site)","koton.com":"No Kuwait storefront (en-kw/kw 404)","uniqlo.com":"No Kuwait e-commerce (kw pages 404)","levi.com":"No resolvable Kuwait storefront (levi.com.kw / gulf domains do not resolve)","tommy.com":"No Kuwait storefront (kw redirects to US site; tommyhilfiger.com.kw does not resolve)","puma.com":"No Kuwait storefront (puma.com.kw does not resolve; /kw redirects to US)","underarmour.com":"No Kuwait storefront resolvable","skechers.com":"Footwear-led; Kuwait storefront not resolvable","debenhams.com":"No Kuwait storefront resolvable","sivvi.com":"Redirects to Namshi (duplicate)","hunkemoller.com":"Kuwait path redirects to global site","calzedonia.com":"Kuwait path serves generic site without KWD/cart evidence","givenchy.com":"Kuwait path redirects to US site",
 "marksandspencerme.com|kw":"Duplicate: same store as Marks & Spencer Kuwait (marksandspencer.com.kw)",
 "ar-kw.sssports.com":"Duplicate: Arabic locale of Sun & Sand Sports Kuwait (en-kw.sssports.com)",
 "sssports.com":"Duplicate/non-Kuwait: UAE storefront of Sun & Sand Sports (Kuwait store is en-kw.sssports.com)",
