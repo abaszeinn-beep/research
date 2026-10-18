@@ -1,0 +1,1352 @@
+{
+ "rows": [
+  {
+   "name": "Zara Qatar",
+   "url": "https://www.zara.com/qa/en/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://web.archive.org/web/20260521053824/https://www.zara.com/qa/ar/%D8%A7%D9%94%D9%81%D8%B1%D9%88%D9%84-%D8%A8%D8%AD%D9%8A%D8%A7%D9%83%D8%A9-%D9%83%D8%B1%D9%88%D8%B4%D9%8A%D9%87-p02209489.html",
+   "sig": "DB category: Fashion & Apparel; live fetch http_403",
+   "src": "directory"
+  },
+  {
+   "name": "Nike Qatar",
+   "url": "https://www.nike.qa/en/home/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.nike.qa/en/home/",
+   "sig": "meta:Nike Qatar Official Online Store - Shop Shoes, Clothing, Bags & More Shop on Nik",
+   "src": "directory"
+  },
+  {
+   "name": "Muji Qatar",
+   "url": "https://www.muji.qa/en/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://www.muji.qa/en/",
+   "sig": "meta:Muji Qatar | Women's &#x26; Men's Clothing, Health &#x26; Beauty Get the best on",
+   "src": "directory"
+  },
+  {
+   "name": "Victoria's Secret Qatar",
+   "url": "https://www.victoriassecret.com.qa/en/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://www.victoriassecret.com.qa/en/",
+   "sig": "meta:Shop Bras, Panties &#x26; Lingerie Online | Victoria’s Secret Qatar Get the best",
+   "src": "directory"
+  },
+  {
+   "name": "Next Qatar",
+   "url": "https://www.next.qa/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://www.next.qa/Next-QA-AR-Products-1.xml.gz",
+   "sig": "DB category: General / Unclassified; live fetch http_403",
+   "src": "directory"
+  },
+  {
+   "name": "Bershka Qatar",
+   "url": "https://www.bershka.com/qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://web.archive.org/web/20260613215835/https://www.bershka.com/qa/ar/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D9%85%D9%84%D8%A7%D8%A8%D8%B3/%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-n3802.html",
+   "sig": "DB category: Fashion & Apparel; live fetch http_403",
+   "src": "directory"
+  },
+  {
+   "name": "6thStreet / AIVI Qatar",
+   "url": "https://ar-qa.aivi.com/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://ar-qa.aivi.com/",
+   "sig": "meta:Shop Online @ AIVI.com for Men, Women & Kids across GCC AIVI.com, an online shop",
+   "src": "directory"
+  },
+  {
+   "name": "Lichi",
+   "url": "https://lichi.com/qa/en",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom (Next.js)",
+   "tier": "Medium",
+   "ver": "Verified",
+   "evu": "https://lichi.com/qa/en",
+   "sig": "DRESSES VIEW",
+   "src": "directory"
+  },
+  {
+   "name": "Almotahajiba",
+   "url": "https://www.almotahajiba.com/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://www.almotahajiba.com/",
+   "sig": "meta:ALMOTAHAJIBA Shop modest fashion abayas &amp; jalabiyas online at Almotahajiba. ",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Tafaul Hub",
+   "url": "https://tafaul.com.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "woocommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://tafaul.com.qa/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Oysho Qatar",
+   "url": "https://www.oysho.com/qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://web.archive.org/web/20260712062634/https://www.oysho.com/qa/2-square-piping-hair-claws-l33180414",
+   "sig": "DB category: Fashion & Apparel; live fetch http_403",
+   "src": "directory"
+  },
+  {
+   "name": "Pull&Bear Qatar",
+   "url": "https://www.pullandbear.com/qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://web.archive.org/web/20260712213550/https://www.pullandbear.com/qa/ar/%D8%A7%D9%84%D8%B1%D8%AC%D8%A7%D9%84/%D9%85%D9%84%D8%A7%D8%A8%D8%B3/anime-n7253?celement=1030378186",
+   "sig": "DB category: Fashion & Apparel; live fetch http_403",
+   "src": "directory"
+  },
+  {
+   "name": "Massimo Dutti Qatar",
+   "url": "https://www.massimodutti.com/qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://web.archive.org/web/20261006232223/https://www.massimodutti.com/qa/100-raffia-midsized-tote-bag-l06922605",
+   "sig": "DB category: Fashion & Apparel; live fetch http_403",
+   "src": "directory"
+  },
+  {
+   "name": "Stradivarius Qatar",
+   "url": "https://www.stradivarius.com/qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://web.archive.org/web/20260712091550/https://www.stradivarius.com/qa/d09-super-highwaist-skinny-jeans-l01450741",
+   "sig": "DB category: Fashion & Apparel; live fetch http_403",
+   "src": "directory"
+  },
+  {
+   "name": "Dreams",
+   "url": "https://www.dreams.com.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "odoo",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://dreams.com.qa/",
+   "sig": "DB category: Fashion - Abayas & Modest; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Max Fashion Qatar",
+   "url": "https://www.maxfashion.com/qa/en/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "",
+   "tier": "Large",
+   "ver": "Known major retailer – manually accepted",
+   "evu": "https://web.archive.org/web/20250706160300/https://www.maxfashion.com/qa/en/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Matalan Qatar",
+   "url": "https://www.matalanme.com/qa_ar",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.matalanme.com/qa_ar/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Al Nasser Qatar",
+   "url": "https://qa.alnasser.net/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "shopify",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://qa.alnasser.net/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Shop Five",
+   "url": "https://www.shop5.qa/",
+   "typ": "Fashion-only",
+   "gen": "Men",
+   "plat": "shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://www.shop5.qa/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Marks & Spencer Qatar",
+   "url": "https://www.marksandspencer.qa/en/fashion",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.marksandspencerme.com/en-qa/",
+   "sig": "DB category: Fashion - Women; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Jaya",
+   "url": "https://jaya-qa.com/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "woocommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://jaya-qa.com/",
+   "sig": "DB category: Fashion - Abayas & Modest; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Riva Fashion",
+   "url": "https://www.rivafashion.com/en-qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "magento",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.rivafashion.com/en-qa/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Dart",
+   "url": "https://dartline.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://dartline.qa/wp-json/wc/store/v1/products/categories",
+   "sig": "DB category: Fashion - Abayas & Modest; live fetch thin page",
+   "src": "directory"
+  },
+  {
+   "name": "Gymshark Qatar",
+   "url": "https://www.gymshark.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.gymshark.qa/",
+   "sig": "meta:جيم شارك قطر - ملابس الجيم والتمرين تسوقوا أحدث الملابس الرياضية والإكسسوارات من",
+   "src": "directory"
+  },
+  {
+   "name": "Brands Qatar",
+   "url": "https://brandsco.qa/",
+   "typ": "Fashion-only",
+   "gen": "Men",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://brandsco.qa/",
+   "sig": "meta:BRANDS QATAR | The Men&#39;s Fashion Destination &ndash; brandsqatar Discover th",
+   "src": "directory"
+  },
+  {
+   "name": "Swish.qa",
+   "url": "https://swish.qa/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://swish.qa/collections.json",
+   "sig": "Our exclusive Clothes & Accessories boutique for Kids; Sportswear & Accesssories",
+   "src": "directory"
+  },
+  {
+   "name": "Adidas Qatar",
+   "url": "https://www.adidas.qa/en/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.adidas.qa/en/",
+   "sig": "Clothing",
+   "src": "directory"
+  },
+  {
+   "name": "Afraa Boutique",
+   "url": "https://afraaboutique.com/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://afraaboutique.com/wp-json/wc/store/v1/products/categories",
+   "sig": "Blazers; Clothing; Ready to wear",
+   "src": "directory"
+  },
+  {
+   "name": "Dar Al Qaftan",
+   "url": "https://daralqaftan.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://daralqaftan.qa/collections.json",
+   "sig": "meta:Dar Al Qaftan | دار القفطان &ndash; Moroccan Qaftans Handmade in Morocco, Delive",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Decathlon Qatar",
+   "url": "https://decathlon.qa/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Shopify",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://decathlon.qa/",
+   "sig": "meta:Shop Sports Gear and Equipment Online &ndash; Decathlon Qatar Discover a wide ra",
+   "src": "directory"
+  },
+  {
+   "name": "Desigual Qatar",
+   "url": "https://www.desigual.com/en_QA/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.desigual.com/en_QA/",
+   "sig": "meta:Desigual Qatar - Shop original clothes online Desigual ",
+   "src": "directory"
+  },
+  {
+   "name": "Squatwolf Qatar",
+   "url": "https://squatwolf.com/en-qa",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://squatwolf.com/en-qa",
+   "sig": "meta:SQUATWOLF - QA - Premium Gym Wear &amp; Workout Clothes SQUATWOLF is a premium g",
+   "src": "directory"
+  },
+  {
+   "name": "Digital Depot (Akasya)",
+   "url": "https://digitaldepot.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://digitaldepot.qa/",
+   "sig": "DB category: Fashion - Abayas & Modest; live fetch thin page",
+   "src": "directory"
+  },
+  {
+   "name": "Coudre",
+   "url": "https://coudre.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "WordPress",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://coudre.qa/",
+   "sig": "DB category: Fashion - Kids; live fetch thin page",
+   "src": "directory"
+  },
+  {
+   "name": "Doko Fashion Wear",
+   "url": "https://dokofashionwear.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://dokofashionwear.qa/",
+   "sig": "meta:Doko Fashion Wear - Premium Fashion in Qatar | Dohans Discover premium women&#39",
+   "src": "directory"
+  },
+  {
+   "name": "Fetch",
+   "url": "https://fetch.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://fetch.qa/",
+   "sig": "Men's Clothing; Womens's Clothing; Hoodies; T-Shirt; Dresses; MEN CLOTHING",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "FAZI",
+   "url": "https://fazi.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://fazi.qa/",
+   "sig": "meta:فازي | FAZI — عبايات فاخرة مصمّمة في قطر فازي — علامة قطرية متخصصة في تصميم العب",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Foot Locker Qatar",
+   "url": "https://www.footlocker.qa/en/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://www.footlocker.qa/en/",
+   "sig": "meta:Foot Locker Qatar | Exclusive Deals on Top Brands Shop exclusive deals on top br",
+   "src": "directory"
+  },
+  {
+   "name": "Fitwell",
+   "url": "https://fitwell.qa/",
+   "typ": "Has clothing section",
+   "gen": "Women",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://fitwell.qa/wp-json/wc/store/v1/products/categories",
+   "sig": "Hijab; Ladies Underwear; Maid Dress",
+   "src": "directory"
+  },
+  {
+   "name": "Azul",
+   "url": "https://www.azul.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://www.azul.qa/",
+   "sig": "All Abayas",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Giordano Qatar",
+   "url": "https://giordano.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Shopify",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://giordano.qa/collections.json",
+   "sig": "Briefs & Boxers; Cardigan & Sweaters; Hoodies & Sweatshirt; Innerware Tees; Jackets & Blazers; Jeans, Khakis, Pants & Joggers",
+   "src": "directory"
+  },
+  {
+   "name": "Sun & Sand Sports Qatar",
+   "url": "https://en-qa.sssports.com/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://en-qa.sssports.com/",
+   "sig": "Clothing; All Men's Clothing; Tops & T-Shirts; Polo Shirts; Pants; Shorts",
+   "src": "directory"
+  },
+  {
+   "name": "Hermosa QA",
+   "url": "https://hermosa.qa/",
+   "typ": "Has clothing section",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://hermosa.qa/collections.json",
+   "sig": "Ready-to-wear",
+   "src": "directory"
+  },
+  {
+   "name": "Vanilla Wear",
+   "url": "https://vanillawear-qa.com/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://vanillawear-qa.com/wp-json/wc/store/v1/products/categories",
+   "sig": "Pajamas; Underwear; Pajama Sets Soft styles for every night; Teens&#039; Pajamas Sweet dreams, your style; Pajamas Made for Slow Mornings; Underwear Everyday Essentials",
+   "src": "directory"
+  },
+  {
+   "name": "Eupathy",
+   "url": "https://eupathy.qa/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://eupathy.qa/",
+   "sig": "CLOTHING",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Instaura Lingerie",
+   "url": "https://instaura.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://instaura.qa/",
+   "sig": "DB category: Fashion - Women; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "FIGS",
+   "url": "https://www.wearfigs.com/en-QA/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://www.wearfigs.com/en-QA/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Dolce & Gabbana",
+   "url": "https://www.dolcegabbana.com/en-us/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Medium",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://www.dolcegabbana.com/en-us/",
+   "sig": "meta:Dolce&amp;Gabbana® Clothing, Beauty, Casa and Food &amp; Beverage Explore timele",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Maje Qatar",
+   "url": "https://www.maje.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://maje.qa/",
+   "sig": "DB category: Fashion - Women; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Mandala Qatar",
+   "url": "https://mandala.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://mandala.qa/collections.json",
+   "sig": "Activewear",
+   "src": "directory"
+  },
+  {
+   "name": "Malika Clothing",
+   "url": "https://www.malikaclothing.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://www.malikaclothing.qa/collections.json",
+   "sig": "Pakistani Suits; Ready to Wear",
+   "src": "directory"
+  },
+  {
+   "name": "Luna Couture",
+   "url": "https://lunacouture.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://lunacouture.qa/wp-json/wc/store/v1/products/categories",
+   "sig": "Abaya; READY TO WEAR",
+   "src": "directory"
+  },
+  {
+   "name": "Suitsupply",
+   "url": "https://suitsupply.com/en-qa/",
+   "typ": "Fashion-only",
+   "gen": "Men",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Large",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://suitsupply.com/en-qa/",
+   "sig": "Suits; Trousers; Knitwear & Sweaters; Coats & Vests; Jackets & Blazers; Shirts",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Off Pitch",
+   "url": "https://www.offpitch.qa/en",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom (Next.js)",
+   "tier": "Medium",
+   "ver": "Verified",
+   "evu": "https://www.offpitch.qa/en",
+   "sig": "meta:OFF PITCH (أوف بيتش) | Sportswear &amp; Club Kits in Qatar OFF PITCH (أوف بيتش):",
+   "src": "directory"
+  },
+  {
+   "name": "Peak Qatar",
+   "url": "https://peak.qa/ar/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://peak.qa/wp-json/wc/store/v1/products/categories",
+   "sig": "قميص",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Phati",
+   "url": "https://www.phati.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://www.phati.qa/",
+   "sig": "ALL ABAYAS; READY TO WEAR; Kaftans Selected kaftans; All Abayas; All Kaftans; Ready to Wear",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Nymphaea Abayas",
+   "url": "https://www.nymphaea.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://www.nymphaea.qa/",
+   "sig": "meta:Nymphaea Abayas &#8211; Nymphaea Abayas  ",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Mijade QA",
+   "url": "https://mijade.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://mijade.qa/wp-json/wc/store/v1/products/categories",
+   "sig": "Abaya",
+   "src": "directory"
+  },
+  {
+   "name": "My Abaya",
+   "url": "https://myabaya.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://myabaya.qa/",
+   "sig": "meta:MY ABAYA  ",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Romano",
+   "url": "https://romano.qa/en",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom (Next.js)",
+   "tier": "Medium",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://romano.qa/en",
+   "sig": "SHOP JACKETS; SHOP KNITWEAR",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Replay Qatar",
+   "url": "https://replayjeans.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Shopify",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://replayjeans.qa/",
+   "sig": "meta:Replay Jeans - Men&#39;s and Women&#39;s Clothing: Official Online Store &ndash;",
+   "src": "directory"
+  },
+  {
+   "name": "Sadil",
+   "url": "https://sadil.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://sadil.qa/collections.json",
+   "sig": "الشيلة ( غطاء الراس ); تنانير; عبايات; عبايات المناسبات; مراييل و عبايات مدرسية",
+   "src": "directory"
+  },
+  {
+   "name": "Rumi Earth",
+   "url": "https://www.rumi.co/?shpxid=85c5c1b5-7bf5-4d5f-b442-15f5e273a0d1",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://www.rumi.co/collections.json",
+   "sig": "Activewear; Black Clothes; Capri pants; Crop Top Bra; Dresses & Skirts; Full-Length Tops",
+   "src": "directory"
+  },
+  {
+   "name": "Sandro Qatar",
+   "url": "https://www.sandro.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://www.sandro.qa/",
+   "sig": "DB category: General / Unclassified; live fetch thin page",
+   "src": "directory"
+  },
+  {
+   "name": "Sama Store",
+   "url": "https://www.samastore.qa/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://www.samastore.qa/collections.json",
+   "sig": "Adult T-shirts Collection; Kids T-shirt Collection; T-shirt Collection",
+   "src": "directory"
+  },
+  {
+   "name": "Roma Style",
+   "url": "https://roumastyle.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://roumastyle.qa/wp-json/wc/store/v1/products/categories",
+   "sig": "فساتين وقطع متنوعة للمنزل",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Grizzly",
+   "url": "https://grizzly.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://grizzly.qa/",
+   "sig": "DB category: Fashion & Apparel; live fetch thin page",
+   "src": "directory"
+  },
+  {
+   "name": "Qfit",
+   "url": "https://qfit.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://qfit.qa/wp-json/wc/store/v1/products/categories",
+   "sig": "Full Sleeve Crew Neck T-Shirt; Hoodies & Jacket; Leggings and Tights; Polo T-Shirt; Round Neck T-Shirts; Shorts",
+   "src": "directory"
+  },
+  {
+   "name": "Out of the Blue",
+   "url": "https://outoftheblue.qa/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://outoftheblue.qa/",
+   "sig": "DB category: Fashion & Apparel; live fetch http_429",
+   "src": "directory"
+  },
+  {
+   "name": "Ted Baker Qatar",
+   "url": "https://www.tedbaker.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Shopify",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.tedbaker.qa/collections.json",
+   "sig": "Baby Clothes; Bestseller Dresses; Blouses & Shirts; Bomber Jackets; Boys Jackets & Coats; Boys Tops",
+   "src": "directory"
+  },
+  {
+   "name": "The Jacket Maker",
+   "url": "https://www.thejacketmaker.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://www.thejacketmaker.qa/",
+   "sig": "DB category: Fashion & Apparel; live fetch thin page",
+   "src": "directory"
+  },
+  {
+   "name": "Triumph & Sloggi Qatar",
+   "url": "https://www.shoptriumph.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://www.shoptriumph.qa/",
+   "sig": "meta:Triumph &amp; Sloggi Qatar − women&#39;s lingerie, shapewear &amp; more &ndash; ",
+   "src": "directory"
+  },
+  {
+   "name": "Trendy Corner",
+   "url": "https://trendycorner.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://trendycorner.qa/collections.json",
+   "sig": "Activewear; Coats & Jackets; Dresses & Jumpsuits; Sleepwear & Loungewear; Swimwear; Tops",
+   "src": "directory"
+  },
+  {
+   "name": "Skylink",
+   "url": "https://skylink.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "WooCommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://skylink.qa/wp-json/wc/store/v1/products/categories",
+   "sig": "DB category: Fashion - Women; live fetch thin page",
+   "src": "directory"
+  },
+  {
+   "name": "Dary",
+   "url": "https://dary.com.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://dary.com.qa/",
+   "sig": "DB category: Fashion - Abayas & Modest; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Emvano",
+   "url": "https://emvano.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://emvano.qa/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Nimbus",
+   "url": "https://nimbus.com.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "woocommerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://nimbus.com.qa/",
+   "sig": "DB category: Fashion & Apparel; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "SHEIN",
+   "url": "https://ar.shein.com/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Known major retailer – manually accepted",
+   "evu": "https://ar.shein.com/",
+   "sig": "meta:شي إن | موضة نساء على الإنترنت | تسوقوا الفساتين، والأحذية والحقائب اكتشفوا أحدث",
+   "src": "directory"
+  },
+  {
+   "name": "Undiz",
+   "url": "https://int.undiz.com/en_QA/home",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "salesforce-commerce",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://int.undiz.com/en_QA/",
+   "sig": "DB category: Fashion - Women; live fetch TimeoutError",
+   "src": "directory"
+  },
+  {
+   "name": "Balmain",
+   "url": "https://balmain.com/en-qa",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "shopify",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://balmain.com/",
+   "sig": "DB category: Bags & Luggage; live fetch http_429",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Luisa Spagnoli",
+   "url": "https://www.luisaspagnoli.com/en/qa",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Medium",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://www.luisaspagnoli.com/en/qa",
+   "sig": "meta:Luisa Spagnoli Online Shop - Clothing and Accessories Luisa Spagnoli Online Shop",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Chantelle",
+   "url": "https://chantelle.com/shop/en-qa?popup=popup-user-location&userCountry=US&lang=en",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom (Next.js)",
+   "tier": "Medium",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://chantelle.com/shop/en-qa?popup=popup-user-location&userCountry=US&lang=en",
+   "sig": "meta:Chantelle Qatar | Lingerie, Swimwear &amp; Nightwear for Women More than just a ",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Ami Paris",
+   "url": "https://www.amiparis.com/en-qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://www.amiparis.com/en-qa/",
+   "sig": "meta:Ami Paris Official Website | AMI PARIS Discover the Women&#39;s and Men&#39;s Co",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "Mac Duggal Qatar",
+   "url": "https://qa.macduggal.com/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Shopify",
+   "tier": "Small",
+   "ver": "Verified",
+   "evu": "https://qa.macduggal.com/",
+   "sig": "meta:Mac Duggal فساتين فاخرة - فساتين سهرة وكوكتيل وزفاف 34878fbe 34878fbe",
+   "src": "directory"
+  },
+  {
+   "name": "Valentino",
+   "url": "https://www.valentino.com/en-qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://www.valentino.com/en-qa/",
+   "sig": "Ready to Wear; Ready To Wear; Dresses; Gowns; Shirts and Tops; Coats and Outerwear",
+   "src": "unverified-candidates"
+  },
+  {
+   "name": "VogaCloset",
+   "url": "https://vogacloset.com/qatar/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://web.archive.org/web/20260713004429/https://vogacloset.com/qatar/ar/beauty/haircare/hair-treatments/joico-joico-blonde-life-brilliant-glow-brightening-oil-100ml-gsh-mp-jco1103066.html",
+   "sig": "DB category: Fashion & Apparel; live fetch http_403",
+   "src": "directory"
+  },
+  {
+   "name": "Mango Qatar",
+   "url": "https://shop.mango.com/qa/en/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "custom/unknown",
+   "tier": "Large",
+   "ver": "Verified (secondary evidence)",
+   "evu": "https://web.archive.org/web/20260617064834/https://shop.mango.com/qa/ar/c/%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84/%D8%A7%D9%88%D9%84%D8%A7%D8%AF-%D8%B5%D8%BA%D8%A7%D8%B1/%D8%A8%D9%84%D8%A7%D9%8A%D8%B2/9b255289",
+   "sig": "DB category: Fashion & Apparel; live fetch http_429",
+   "src": "directory"
+  },
+  {
+   "name": "Salam Stores",
+   "url": "https://salams.com/",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Magento",
+   "tier": "Large",
+   "ver": "Verified",
+   "evu": "https://salams.com/",
+   "sig": "Scarves; Clothing; Activewear; Coats & Jackets; Dresses; Hoodies & Sweatshirts",
+   "src": "directory"
+  },
+  {
+   "name": "Ace & Zian Women Clothing",
+   "url": "https://aceandzianwomenclothing.qa/",
+   "typ": "Fashion-only",
+   "gen": "Women",
+   "plat": "Custom/Other",
+   "tier": "Small",
+   "ver": "Unverified candidate – weak Qatar signal (fashion-classified)",
+   "evu": "https://aceandzianwomenclothing.qa/",
+   "sig": "meta:Ace&Zian Women Clothing | Quality Clothing & Fashion Wear Shop quality clothing ",
+   "src": "new-discovery"
+  },
+  {
+   "name": "Styli Qatar",
+   "url": "https://stylishop.com/qa/en",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Qatar-locale storefront (/qa/en); bot-light page, no QAR on homepage",
+   "evu": "https://stylishop.com/qa/en",
+   "sig": "meta:Styli for Online Fashion & Lifestyle Shopping in QAT Shop the latest fashion wit",
+   "src": "new-discovery"
+  },
+  {
+   "name": "Lacoste Qatar",
+   "url": "https://www.lacoste.qa/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Large",
+   "ver": "Known major retailer – Qatar storefront (lacoste.qa, QAR)",
+   "evu": "https://www.lacoste.qa/",
+   "sig": "meta:Polo shirts, shoes, leather goods | LACOSTE Online Boutique | Qatar Over 80 year",
+   "src": "new-discovery"
+  },
+  {
+   "name": "Burberry Qatar",
+   "url": "https://qa.burberry.com/",
+   "typ": "Fashion-only",
+   "gen": "Unisex",
+   "plat": "Custom/Other",
+   "tier": "Large",
+   "ver": "Qatar-locale storefront (qa.burberry.com); no QAR on homepage",
+   "evu": "https://qa.burberry.com/",
+   "sig": "meta:Burberry | Official Website &amp; Store Discover luxury British clothing, bags, ",
+   "src": "new-discovery"
+  },
+  {
+   "name": "Balenciaga Qatar",
+   "url": "https://www.balenciaga.com/en-qa",
+   "typ": "Has clothing section",
+   "gen": "Unisex",
+   "plat": "Salesforce Commerce Cloud",
+   "tier": "Large",
+   "ver": "Qatar-locale storefront (en-qa, QAR)",
+   "evu": "https://www.balenciaga.com/en-qa",
+   "sig": "meta:Balenciaga Official Online Boutique QA Discover the Balenciaga QA official onlin",
+   "src": "new-discovery"
+  }
+ ],
+ "excluded": [
+  [
+   "Souqly Qatar",
+   "souqly.com.qa",
+   "multi-vendor marketplace"
+  ],
+  [
+   "JS.QA",
+   "js.qa",
+   "general store; clothing not confirmed"
+  ],
+  [
+   "JS.QA",
+   "jumbosouq.com",
+   "general store; clothing not confirmed"
+  ],
+  [
+   "KASIMY TRADING",
+   "kasimy.com",
+   "home goods"
+  ],
+  [
+   "getit.qa",
+   "getit.qa",
+   "general store; clothing not confirmed"
+  ],
+  [
+   "By Fatma",
+   "byfatma.com",
+   "gift shop (apparel is minor accessories)"
+  ],
+  [
+   "localbazar.qa",
+   "localbazar.qa",
+   "multi-vendor marketplace"
+  ],
+  [
+   "Tawar Mall",
+   "tawarmall.net",
+   "mall directory / aggregator"
+  ],
+  [
+   "Tawar Mall",
+   "tawarmall.qa",
+   "mall directory / aggregator"
+  ],
+  [
+   "kiddostore.qa",
+   "kiddostore.qa",
+   "kids-only"
+  ],
+  [
+   "benrahim.qa",
+   "benrahim.qa",
+   "unclear (trading company)"
+  ],
+  [
+   "StoreCensus",
+   "storecensus.com|qa",
+   "directory (not a store)"
+  ],
+  [
+   "Colehaan.qa",
+   "colehaan.qa",
+   "shoes/bags/accessories-focused"
+  ],
+  [
+   "دكان",
+   "dokanonline.qa",
+   "unverified general store, fashion not confirmed"
+  ],
+  [
+   "Factory Online Shopping",
+   "factory.qa",
+   "textile industry directory"
+  ],
+  [
+   "FOG",
+   "fog.qa",
+   "printing services"
+  ],
+  [
+   "GETIT.QA",
+   "getitapp.qa",
+   "general store; clothing not confirmed"
+  ],
+  [
+   "Dohalist",
+   "dohalist.com",
+   "classifieds"
+  ],
+  [
+   "nitted.qa",
+   "nitted.qa",
+   "custom T-shirt printing service"
+  ],
+  [
+   "Mayfair - مايفير",
+   "mayfair.qa",
+   "perfume store"
+  ],
+  [
+   "STOREY",
+   "storey.shop",
+   "multi-brand marketplace"
+  ],
+  [
+   "Qunifromfactory",
+   "quniformfactory.qa",
+   "textile industry directory"
+  ],
+  [
+   "Qarma",
+   "qarmainspect.com",
+   "B2B software"
+  ],
+  [
+   "Mothercare Qatar",
+   "mothercare.qa",
+   "kids/baby-only"
+  ],
+  [
+   "PrettyLittleThing",
+   "prettylittlething.eu",
+   "no Qatar storefront signal"
+  ],
+  [
+   "Mumzworld",
+   "mumzworld.com|qa",
+   "baby/kids marketplace"
+  ],
+  [
+   "Mytheresa",
+   "mytheresa.qa",
+   "no Qatar storefront evidence"
+  ],
+  [
+   "safetywares",
+   "safetywares.qa",
+   "PPE / B2B workwear"
+  ],
+  [
+   "Qatar Kicks",
+   "qkicks.qa",
+   "sneakers-focused"
+  ],
+  [
+   "Qmax Qatar",
+   "qmax.qa",
+   "home goods (clothes racks only)"
+  ],
+  [
+   "verno",
+   "verno.qa",
+   "no clothing evidence"
+  ],
+  [
+   "The Perfume Factory",
+   "theperfumefactory.qa",
+   "textile industry directory"
+  ],
+  [
+   "Shamiya Store",
+   "shamiyastore.qa",
+   "kids-only (no adult signal)"
+  ],
+  [
+   "tinyWorld",
+   "tinyworld.qa",
+   "baby/kids-only"
+  ],
+  [
+   "Toda",
+   "toda.qa",
+   "no clothing evidence"
+  ],
+  [
+   "signinn.qa",
+   "signinn.qa",
+   "waterproofing/HVAC firm"
+  ],
+  [
+   "BOOHOOMAN",
+   "boohooman.com",
+   "non-Qatar storefront (no Qatar signal)"
+  ],
+  [
+   "Mumzworld",
+   "mumzworld.com",
+   "baby/kids marketplace"
+  ],
+  [
+   "SSK TRADING WLL",
+   "sskqatar.com",
+   "PPE / B2B workwear"
+  ],
+  [
+   "Customon",
+   "customon.com",
+   "non-Qatar print-on-demand site"
+  ],
+  [
+   "Hoodiego",
+   "hoodiego.com",
+   "non-Qatar print-on-demand site"
+  ],
+  [
+   "The Fashion Square",
+   "the-fashion-square.com",
+   "US storefront; no Qatar evidence"
+  ],
+  [
+   "Matching Couple Outfits, Women's Dress, Tankinis, Men's Shirts",
+   "dresslily.com",
+   "non-Qatar storefront"
+  ],
+  [
+   "Culture Circle",
+   "culture-circle.com|qa",
+   "sneakers/accessories resale; not a Qatar storefront"
+  ],
+  [
+   "NEW YORKER",
+   "newyorker.de|qa",
+   "German site; no Qatar storefront evidence"
+  ],
+  [
+   "theiconic.qa",
+   "theiconic.qa",
+   "Australian site; no Qatar storefront"
+  ]
+ ]
+}

@@ -1,0 +1,305 @@
+V nike.qa | Nike | Fashion & Appa | ('maybe', 'Has', 'Uni', 2) | meta:Nike Qatar Official Online Store - Shop Shoes, Clothing, Bags & M | Nike Qatar Official Online Store - Shop Shoes, Clo
+V aljasaraonline.qa | الجسارة أونلاين — Al J | Cleaning & Hou | ('maybe', 'Has', 'Wom', 1) | Abaya Wash (منظفات العباية) | الجسارة أونلاين | توصيل مياه ومنتجات منزلية في قطر
+V muji.qa | Muji Qatar | Pharmacy & Wel | ('maybe', 'Has', 'Uni', 2) | meta:Muji Qatar | Women's &#x26; Men's Clothing, Health &#x26; Beauty  | Muji Qatar | Women's &#x26; Men's Clothing, Health
+V victoriassecret.com.qa | Victoria’s Secret Qata | Baby & Materni | ('maybe', 'Has', 'Uni', 2) | meta:Shop Bras, Panties &#x26; Lingerie Online | Victoria’s Secret Qat | Shop Bras, Panties &#x26; Lingerie Online | Victor
+V next.qa | Select Your Country | General / Uncl | http_403 |  | 
+U souqly.com.qa | Souqly Qatar | Fashion - Wome | ('maybe', 'Has', 'Uni', 1) | Top Curations | Souqly Qatar | Fashion, Jewelry & Perfumes Buy Now
+V en-qa.aivi.com | Shop Online @ AIVI.com | Fashion - Kids | ('maybe', 'Has', 'Uni', 2) | meta:Shop Online @ AIVI.com for Men, Women & Kids across GCC AIVI.com, | Shop Online @ AIVI.com for Men, Women & Kids acros
+V js.qa | JS.QA | Flowers, Gifts | ('maybe', 'Has', 'Uni', 2) | meta:JS.QA - Qatar’s Leading Ecommerce Store Discover a wide range of  | JS.QA - Qatar’s Leading Ecommerce Store
+V lichi.com|qa | Lichi | Fashion - Wome | ('maybe', 'Has', 'Wom', 1) | DRESSES VIEW | LICHI - Online fashion store
+V primeshop.qa | E commence website in  | Mobiles & Acce | ('maybe', 'Has', 'Uni', 2) | meta:E commence website in Qatar ?️ Welcome to PrimeShop.qa – Qatar’s  | E commence website in Qatar
+U almotahajiba.com | ALMOTAHAJIBA | Fashion - Abay | ('maybe', 'Has', 'Wom', 2) | meta:ALMOTAHAJIBA Shop modest fashion abayas &amp; jalabiyas online at | ALMOTAHAJIBA
+V tafaul.com.qa | Tafaul Hub Qatar -Fash | Fashion & Appa | TimeoutError |  | 
+V jawdatop.com.qa | JawdaTop | General / Uncl | TimeoutError |  | 
+V noa.com.qa | NOA | General / Uncl | TimeoutError |  | 
+V ar-qa.aivi.com | Shop Online @ AIVI.com | Fashion - Kids | ('maybe', 'Has', 'Uni', 2) | meta:Shop Online @ AIVI.com for Men, Women & Kids across GCC AIVI.com, | Shop Online @ AIVI.com for Men, Women & Kids acros
+V jumbosouq.com | JS.QA | Flowers, Gifts | ('maybe', 'Has', 'Uni', 2) | meta:JS.QA - Qatar’s Leading Ecommerce Store Discover a wide range of  | JS.QA - Qatar’s Leading Ecommerce Store
+V iqalattar.com.qa | IQAL AL-ATTAR | Fashion - Abay | TimeoutError |  | 
+V ar-qa.sssports.com | Sun & Sand Sports | Sports, Fitnes | TimeoutError |  | 
+V binsufi.com.qa | Bin Sufi Trading W.L.L | General / Uncl | TimeoutError |  | 
+V dreams.com.qa | DREAMS | Fashion - Abay | TimeoutError |  | 
+V maxfashion.com|qa | Max Fashion | Fashion & Appa | TimeoutError |  | 
+V matalanme.com|qa | ماتالان: متجر الأزياء  | Fashion & Appa | TimeoutError |  | 
+V qa.alnasser.net | Al Nasser Qatar | Fashion & Appa | TimeoutError |  | 
+V shop5.qa | Shop Five | Fashion & Appa | TimeoutError |  | 
+V marksandspencerme.com|qa | Marks & Spencer Qatar | Fashion - Wome | TimeoutError |  | 
+V jaya-qa.com | JAYA | Fashion - Abay | TimeoutError |  | 
+V rivafashion.com|qa | Riva Fashion: Shop Wom | Fashion & Appa | TimeoutError |  | 
+V babyology.qa | Babyology | Baby & Materni | TimeoutError |  | 
+V darac.qa | Darac engineer | Sports, Fitnes | ('not', '', '', 0) |  | Darac engineer
+V dalu.qa | Dalu | General / Uncl | ('not', '', '', 0) |  | Dalu
+V rawabihypermarket.com | Rawabi Hypermarket | Grocery & Food | ('maybe', 'Has', 'Uni', 2) | meta:Rawabi Hypermarket - Qatar's Trusted Retailer Online Discover Raw | Rawabi Hypermarket - Qatar's Trusted Retailer Onli
+V dartline.qa | Dart | Fashion - Abay | ('not', '', '', 0) |  | Dart
+V beat.qa | BEAT | Fitness Studio | Sports, Fitnes | ('not', '', '', 0) |  | BEAT - Fitness Studio
+V bellecurve.qa | BelleCurve | General / Uncl | TimeoutError |  | 
+V gymshark.qa | جيم شارك قطر | Sports, Fitnes | ('maybe', 'Has', 'Uni', 2) | meta:جيم شارك قطر - ملابس الجيم والتمرين تسوقوا أحدث الملابس الرياضية  | جيم شارك قطر - ملابس الجيم والتمرين
+V brandsco.qa | brandsqatar | Fashion & Appa | ('maybe', 'Has', 'Men', 2) | meta:BRANDS QATAR | The Men&#39;s Fashion Destination &ndash; brandsqa | BRANDS QATAR | The Men&#39;s Fashion Destination &
+V kasimy.com | KASIMY TRADING | Sports, Fitnes | ('maybe', 'Has', 'Uni', 1) | Clothes Racks | Kasimy Trading | Online Shopping for Home, Kitchen
+U getit.qa |  |  | ('maybe', 'Has', 'Uni', 2) | meta:GETIT.QA | QATAR’S BEST ONLINE SHOPPING WEBSITE FOR DISCOUNTED DE | GETIT.QA | QATAR’S BEST ONLINE SHOPPING WEBSITE FO
+V byfatma.com | By Fatma | Flowers, Gifts | ('maybe', 'Has', 'Uni', 1) | Apparel & Accessories | الملابس والاكسسوارات | Gift Shop in Qatar with Delivery in 24-Hours
+V arabfamilymart.com | Arab Family Mart | Grocery & Food | ('maybe', 'Has', 'Uni', 1) | Top Selling | ArabCarts | Qatar’s Online Grocery for Fresh, Hala
+U localbazar.qa |  |  | ('fashion', 'Has', 'Wom', 3) | Abayas; Dresses; Jalabiyas | Local Bazar
+U en-qa.6thstreet.com | Shop Online @ AIVI.com | Fashion - Kids | ('maybe', 'Has', 'Uni', 2) | meta:Shop Online @ AIVI.com for Men, Women & Kids across GCC AIVI.com, | Shop Online @ AIVI.com for Men, Women & Kids acros
+V billjumla.com | Billjumla.com | Beauty & Cosme | ('maybe', 'Has', 'Uni', 2) | Denim; English Blazer | 
+V swish.qa | Swish.qa | Sports, Fitnes | ('maybe', 'Has', 'Uni', 2) | Our exclusive Clothes & Accessories boutique for Kids; Sportswear & Ac | Qatar&#39;s leading E-Commerce Store
+V tawarmall.net | Tawar Mall | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | Sportswear & Sports Goods; Undergarments | Tawar Mall
+V tawarmall.qa | Tawar Mall | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | Sportswear & Sports Goods; Undergarments | Tawar Mall
+U dailydeals.qa |  |  | ('maybe', 'Has', 'Uni', 1) | Irons & Garment Steamers | Daily Deals Qatar | Home, Kitchen &amp; Lifestyle
+U kiddostore.qa |  |  | ('maybe', 'Has', 'Uni', 1) | Top Deals | Home | Kiddo Store, multi-brand kids online store 
+V motorfix.qa | Motorfix | General / Uncl | ('maybe', 'Has', 'Uni', 2) | meta:MotorFix for Premium Carbon Fiber Motorcycle Parts | MotorFix Qat | MotorFix for Premium Carbon Fiber Motorcycle Parts
+V adidas.qa | Adidas Qatar | Shoes | ('fashion', 'Fas', 'Men', 3) | Clothing | adidas Official Online Store | adidas Qatar
+V startechstore.com | Startech Store | Computers & El | ('maybe', 'Has', 'Uni', 2) | meta:Discover top gadgets, electronics, and accessories with unbe &quo | Discover top gadgets, electronics, and accessories
+V afraaboutique.com | Afraa Boutique | Perfumes & Oud | ('fashion', 'Has', 'Uni', 3) | Blazers; Clothing; Ready to wear | Afraa Boutique
+V beautysouq.com.qa | Top Beauty Kraze | Beauty & Cosme | ('maybe', 'Has', 'Uni', 2) | meta:Shop top skincare brands &amp; combos at Beauty Souk Shop top ski | Shop top skincare brands &amp; combos at Beauty So
+U sportswear.com.qa |  |  | ('maybe', 'Has', 'Uni', 2) | meta:sportswear  sportswear | sportswear
+U aljameel.com.qa | Al jameel Showroom | General / Uncl | ('maybe', 'Has', 'Uni', 1) | خزانة ملابس | معرض الجميل &ndash; Al jameel Showroom
+U daralqaftan.qa |  |  | ('maybe', 'Has', 'Uni', 2) | meta:Dar Al Qaftan | دار القفطان &ndash; Moroccan Qaftans Handmade in  | Dar Al Qaftan | دار القفطان &ndash; Moroccan Qafta
+U wejhaat.com.qa |  |  | ('maybe', 'Has', 'Uni', 2) | meta:Home - Wejhaat Discover unforgettable travel experiences with Wej | Home - Wejhaat
+V decathlon.qa | Decathlon Qatar |  | ('maybe', 'Has', 'Uni', 2) | meta:Shop Sports Gear and Equipment Online &ndash; Decathlon Qatar Dis | Shop Sports Gear and Equipment Online &ndash; Deca
+V alasala.qa | Al Asala Feed الأصالة | General / Uncl | ('not', '', '', 0) |  | 
+U benrahim.qa |  |  | ('maybe', 'Has', 'Uni', 1) | Clothing | BEN RAHIM QATAR
+V desigual.com|qa | Desigual Qatar | Pets | ('maybe', 'Has', 'Uni', 2) | meta:Desigual Qatar - Shop original clothes online Desigual  | Desigual Qatar - Shop original clothes online
+U inch.com.qa | inch.com.qa | Bedding, Mattr | ('maybe', 'Has', 'Uni', 2) | meta:inch.com.qa &#8211; INCH Textile &amp; Garment   | inch.com.qa &#8211; INCH Textile &amp; Garment
+U storecensus.com|qa | StoreCensus | Wholesale & B2 | ('fashion', 'Has', 'Uni', 3) | Fashion & Apparel; Top Shopify Stores 2026; Top WooCommerce Stores 202 | WooCommerce Stores in Qatar | 1,224 Qatar Stores |
+V shopifyspy.com|qa | The Best Shopify Store | Sports, Fitnes | ('not', '', '', 0) |  | The Best Shopify Store for Qatar in 2026
+U fineartdesign.agency | Fineart | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | meta:Leading Digital Design Agency &amp; UX Design Agency for Exceptio | Leading Digital Design Agency &amp; UX Design Agen
+V squatwolf.com|qa | SQUATWOLF | Fashion & Appa | ('maybe', 'Has', 'Uni', 2) | meta:SQUATWOLF - QA - Premium Gym Wear &amp; Workout Clothes SQUATWOLF | SQUATWOLF - QA - Premium Gym Wear &amp; Workout Cl
+U superbcompanies.com | SuperbCompanies | Mobiles & Acce | ('maybe', 'Has', 'Uni', 2) | meta:Truthful IT Companies Ratings. Top IT Companies | SuperbCompanies | Truthful IT Companies Ratings. Top IT Companies | 
+V digitaldepot.qa | Digital Depot Trading | Fashion - Abay | ('not', '', '', 0) |  | 
+U parfum.qa |  |  | ('maybe', 'Has', 'Uni', 2) | Top 10 Men; Top 10 Women | Discover Luxury Perfumes from Qatar for Unforgetta
+V clevercomputer.qa | Clever Computer | Computers & El | ('maybe', 'Has', 'Uni', 2) | meta:Clever Computer - Buy latest Laptops Desktops Accessories |Qatar  | Clever Computer - Buy latest Laptops Desktops Acce
+U alqaleahsecurity.qa | Al Qaleah Security | Industrial & T | ('maybe', 'Has', 'Uni', 2) | meta:Al Qaleah Security &#8211; Elevate your security with top-tier se | Al Qaleah Security &#8211; Elevate your security w
+V alnaham.qa | Al Naham | Mobiles & Acce | ('maybe', 'Has', 'Uni', 2) | meta:Al Naham - Mobile Phone Solution in Qatar Shop top mobile brands  | Al Naham - Mobile Phone Solution in Qatar
+V clicknbuy.qa | Click N Buy Trading W. | Beauty & Cosme | ('maybe', 'Has', 'Uni', 1) | Apparels | Click N Buy Online Shopping Qatar &ndash; Click N 
+V dkb.qa | DKB-Fitness Terminal - | Sports, Fitnes | ('not', '', '', 0) |  | DKB Fitness Terminal |MMA And Personal Training In
+U dohalink.qa | Dohalink | Mobiles & Acce | ('maybe', 'Has', 'Uni', 2) | meta:Dohalink Shop the latest Apple, Samsung, and top mobile brands at | Dohalink
+V colehaan.qa | Colehaan.qa | Shoes | ('fashion', 'Has', 'Uni', 10) | All Coats And Jackets; Coats And Jackets; Comfort Dress; Men Coats; Me | Cole Haan Qatar | Shoes, Bags, Accessories For Men
+U dokanonline.qa | دكان | Department Sto | ('maybe', 'Has', 'Uni', 2) | meta:دكان | كل ما تحتاجه دكان — أزياء، جمال، منزل وتقنية. كل ما تحتاجه | دكان | كل ما تحتاجه
+V ridaya.qa | Ridaya Trading | Computers & El | ('maybe', 'Has', 'Uni', 2) | meta:Ridaya Trading Experience the best Online Shopping Qatar offers w | Ridaya Trading
+V kuludonline.com | Kulud Pharmacy | Pharmacy & Wel | ('maybe', 'Has', 'Uni', 1) | Bibs & Burp Clothes | Kulud Pharmacy - Online Pharmacy | 1 Hour Delivery
+V coudre.qa | COUDRE - Qatari Clothi | Fashion - Kids | ('not', '', '', 0) |  | Home - COUDRE
+U ecofab.qa | Interior solutions | Lighting & Ele | ('maybe', 'Has', 'Uni', 2) | meta:Eco-Friendly Interior Design Company in Qatar | Interior solution | Eco-Friendly Interior Design Company in Qatar | In
+V dxracer.qa | DXRACER QATAR | Gaming | ('maybe', 'Has', 'Uni', 2) | meta:Gaming Chair | Best Gaming Chair Brand For Gamers | DXRACER QATAR | Gaming Chair | Best Gaming Chair Brand For Gamers 
+V duhailsc.qa | Duhail Sports Club | Sports, Fitnes | ('not', '', '', 0) |  | Duhail Sports Club &#8211; Duhail Sports Club
+V maspaints.com | MAS Paint | Home Improveme | ('maybe', 'Has', 'Uni', 1) | 1k Base Coat Mix Color | MAS Paint &#8211; Mas Paint Qatar
+V dokofashionwear.qa | Doko Fashion Wear | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | meta:Doko Fashion Wear - Premium Fashion in Qatar | Dohans Discover pr | Doko Fashion Wear - Premium Fashion in Qatar | Doh
+U alferozqatar.com | Al Feroz International | Home Improveme | ('maybe', 'Has', 'Uni', 1) | Safety Jacket | Building Material Supplier - Al Feroz Internationa
+V angrybirdsworld.qa | Angry birds World | Pets | ('maybe', 'Has', 'Uni', 2) | Apparel; Top Up | The Best Theme Park in Qatar | Explore Angry Birds
+U factory.qa | Factory Online Shoppin | Bedding, Mattr | ('fashion', 'Has', 'Uni', 3) | wearing apparel; Wearing apparel; Crocheted apparel | Factory Online Shopping | Factory Ecommerce
+U arkan.qa | Al Arkan Holdings - | Industrial & T | ('maybe', 'Has', 'Uni', 2) | meta:Home Six - Al Arkan Holdings We Are Expert In This Field Grow You | Home Six - Al Arkan Holdings
+U ataa.qa | Ataa Alkhar | Furniture | ('maybe', 'Has', 'Uni', 2) | meta:Ataa Alkhar — مؤسسة ثاني الإنسانية منصة عطاء الخير من مؤسسة ثاني  | Ataa Alkhar — مؤسسة ثاني الإنسانية
+U fetch.qa | Fetch | Fashion & Appa | ('fashion', 'Fas', 'Uni', 12) | Men's Clothing; Womens's Clothing; Hoodies; T-Shirt; Dresses; MEN CLOT | Home | Fetch
+U fazi.qa | FAZI | Fashion - Abay | ('maybe', 'Has', 'Wom', 2) | meta:فازي | FAZI — عبايات فاخرة مصمّمة في قطر فازي — علامة قطرية متخصص | فازي | FAZI — عبايات فاخرة مصمّمة في قطر
+U atlantislaundry.qa |  |  | ('maybe', 'Has', 'Uni', 2) | meta:Home - Atlantis Laundry Fastest laundry service in Qatar Download | Home - Atlantis Laundry
+V armonico.qa | Armonico Italy | Mobiles & Acce | ('maybe', 'Has', 'Men', 1) | Jackets | Armonico Italy
+V edaar.qa | Edaar | Pets | ('maybe', 'Has', 'Wom', 1) | Top Picks | Edaar Qatar - Online Shopping
+U fog.qa | FOG | Packaging & Su | ('fashion', 'Has', 'Uni', 4) | T-Shirts; T-Shirt Printing | Printing Services in Qatar | Business Printing &am
+V footlocker.qa | Foot Locker Qatar | Fashion - Spor | ('maybe', 'Has', 'Uni', 2) | meta:Foot Locker Qatar | Exclusive Deals on Top Brands Shop exclusive  | Foot Locker Qatar | Exclusive Deals on Top Brands
+V fitwell.qa | Fitwell | Beauty & Cosme | ('fashion', 'Has', 'Wom', 3) | Hijab; Ladies Underwear; Maid Dress | Fitwell
+U azul.qa | Azul | Bedding, Mattr | ('maybe', 'Has', 'Wom', 1) | All Abayas | Home | Azul
+V garnetfurniture.qa | Garnet Furniture | Furniture | ('maybe', 'Has', 'Uni', 2) | meta:Top Furniture Seller in Qatar | Office and Commercial Furniture E | Top Furniture Seller in Qatar | Office and Commerc
+U focusq.qa | FocusQ Global | Mobiles & Acce | ('maybe', 'Has', 'Uni', 1) | Back to top ↑ | ICT Services & Software Development | FocusQ Qatar
+U samarkandstore.com | Samarkand Store | Books & Statio | ('maybe', 'Has', 'Uni', 1) | الصهيونية واليهودية عبد الوهاب المسيري​ QR 58.00 | Home | Samarkand Store
+U hailsecurity.qa | HAIL | Computers & El | ('maybe', 'Has', 'Uni', 2) | meta:Security System Company in Qatar | HAIL Discover top-notch securi | Security System Company in Qatar | HAIL
+V mokaandco.qa | Moka & Co | Coffee, Tea &  | ('maybe', 'Has', 'Uni', 1) | Top Flavour 100% Arabica Coffee Beans 1kg | Moka &amp; Co. Qatar | Coffee, Espresso Machines &
+V forall.qa | ForAll Trading | Sports, Fitnes | ('not', '', '', 0) |  | Electric bikes and scooters Forall-showroom, Doha 
+V getitapp.qa | GETIT.QA | Grocery & Food | ('maybe', 'Has', 'Uni', 2) | meta:GETIT.QA | QATAR’S BEST ONLINE SHOPPING WEBSITE FOR DISCOUNTED DE | GETIT.QA | QATAR’S BEST ONLINE SHOPPING WEBSITE FO
+V giordano.qa | Giordano Qatar | Fashion & Appa | ('fashion', 'Fas', 'Uni', 17) | Briefs & Boxers; Cardigan & Sweaters; Hoodies & Sweatshirt; Innerware  | Giordano Qatar Online Store | Shop Men, Women &amp
+V en-qa.sssports.com | Sun & Sand Sports | Sports, Fitnes | ('fashion', 'Fas', 'Uni', 32) | Clothing; All Men's Clothing; Tops & T-Shirts; Polo Shirts; Pants; Sho | Sun & Sand Sports Qatar: No.1 Sports Online & Reta
+V halaldar.qa | My Website | General / Uncl | ('not', '', '', 0) |  | Products | My Website
+V fitexpress.qa | FitExpress Qatar | Sports, Fitnes | ('not', '', '', 0) |  | FitExpress Qatar &#8211; Electro Muscle Stimulatio
+V futureqatar.qa | Future Qatar | Sports, Fitnes | ('not', '', '', 0) |  | Future Qatar &#8211; Healthcare and Fitness Produc
+V hermosa.qa | HERMOSA QA | Bedding, Mattr | ('maybe', 'Has', 'Wom', 1) | Ready-to-wear | HERMOSA QA
+U electromateqatar.com | Electromate Qatar | Computers & El | ('maybe', 'Has', 'Uni', 2) | meta:Electromate Qatar – Top Electronics &amp; Appliances in Doha Disc | Electromate Qatar – Top Electronics &amp; Applianc
+V emtop.qa | EMTOP QATAR | Home Improveme | ('maybe', 'Has', 'Uni', 1) | Top Air Tools in Qatar | Power Tools &amp; Hand Tools in Qatar | EMTOP Trus
+V k-dragonmart.qa | K Dragon Mart Online S | Furniture | ('maybe', 'Has', 'Uni', 2) | Children&#8217;s Swimwear; Clothing & Closet Storage | Home - K Dragon Mart Online Shopping | K-DragonMar
+V vanillawear-qa.com | Vanilla Wear | Fashion - Wome | ('fashion', 'Fas', 'Wom', 9) | Pajamas; Underwear; Pajama Sets Soft styles for every night; Teens&#03 | Vanilla Wear Qatar | Pajamas, Lingerie &amp; Women
+U startechnotrading.com | Star Techno Trading &  | Lighting & Ele | ('maybe', 'Has', 'Uni', 2) | meta:Building Materials Suppliers Qatar | Star Techno Trading Top-qual | Building Materials Suppliers Qatar | Star Techno T
+V hexa.qa | Hexa Fitness | Sports, Fitnes | ('not', '', '', 0) |  | Hexa Fitness — Qatar&#x27;s Trusted Gym Equipment 
+U eupathy.qa | EUPATHY.QA | Fashion - Wome | ('maybe', 'Has', 'Uni', 1) | CLOTHING | EUPATHY.QA - EUPATHY.QA
+V instaura.qa | INSTAURA LINGERIE | Fashion - Wome | TimeoutError |  | 
+V juniorcouture.qa | Junior Couture QA | Fashion & Appa | TimeoutError |  | 
+V kidzy.qa | Kidzy | Sports, Fitnes | TimeoutError |  | 
+V kendamil.qa | Kendamil Qatar | Baby & Materni | TimeoutError |  | 
+V lapelota.qa | La Pelota - Padel & Fi | Sports, Fitnes | TimeoutError |  | 
+V wearfigs.com|qa | FIGS | Fashion & Appa | TimeoutError |  | 
+U dolcegabbana.com | Dolce&Gabbana® Clothin | Fashion - Kids | ('maybe', 'Has', 'Uni', 2) | meta:Dolce&amp;Gabbana® Clothing, Beauty, Casa and Food &amp; Beverage | Dolce&amp;Gabbana® Clothing, Beauty, Casa and Food
+U delsol.com.mx | DelSol | Gaming | ('fashion', 'Has', 'Uni', 5) | Bermudas y Shorts; Brasieres y Tops; Jeans; Pantalones y Shorts; Pants | DelSol - Compra en la tienda de Del Sol y Woolwort
+U zan.kz | «Zan» деректер базасы | General / Uncl | ('maybe', 'Has', 'Uni', 2) | Top 100 documents; Top 100 All documents 972951 | Database «Zan» - Legislation of the Republic of Ka
+V mamasandpapas.qa | متجر بلومينغديلز اونلا | Fashion & Appa | TimeoutError |  | 
+V maje.qa | Maje QAT | Fashion - Wome | TimeoutError |  | 
+V sportscorner.qa | Sports Corner | Sports, Fitnes | http_403 |  | 
+U dohalist.com | Dohalist | Fashion & Appa | ('fashion', 'Fas', 'Uni', 12) | Clothing; Women&#039;s Clothing; Dresses; Skirts; Pants & Capris; Swea | Home - Dohalist - Marketplace - Classified Ads Scr
+V mandala.qa | Mandala Qatar | Sports, Fitnes | ('maybe', 'Has', 'Uni', 1) | Activewear | Mandala Qatar
+V marksandspencer.qa | Marks & Spencer Qatar | Fashion - Wome | ('fashion', 'Fas', 'Uni', 6) | Shop skirts; Shop tops; Shop trousers; Shop jackets | Marks &amp; Spencer Qatar | Quality Fashion for Wo
+U nonstoptravel.qa |  |  | ('maybe', 'Has', 'Uni', 2) | meta:Top Travel Services Providers in Qatar Non-Stop Tourism Providers | Top Travel Services Providers in Qatar
+V malikaclothing.qa | MalikaClothing.qa | Fashion - Kids | ('fashion', 'Fas', 'Wom', 4) | Pakistani Suits; Ready to Wear | Malika Clothing Qatar &ndash; MalikaClothing.qa
+U expertsinshopify.com | Experts in Shopify | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | meta:Shopify Development Company Dubai | Best Shopify Agency UAE | Exp | Shopify Development Company Dubai | Best Shopify A
+U nitted.qa |  |  | ('maybe', 'Has', 'Uni', 2) | meta:طباعة تيشرتات في قطر / نيتيد للطباعة و التصميم بجودة عالية و تصام | طباعة تيشرتات في قطر / نيتيد للطباعة و التصميم بجو
+V lunacouture.qa | Luna | Coffee, Tea &  | ('maybe', 'Has', 'Wom', 2) | Abaya; READY TO WEAR | Luna
+U nuancedigital.qa | Nuance Digital Marketi | General / Uncl | ('maybe', 'Has', 'Uni', 2) | meta:Best Digital Marketing Company in Qatar | Top Agency Nuance Digit | Best Digital Marketing Company in Qatar | Top Agen
+U mederi.qa | Mederi | Pharmacy & Wel | ('maybe', 'Has', 'Uni', 1) | Apparel | Mederi | Massage, recovery and wellness studio in 
+V oasis.qa | oasis | Sports, Fitnes | ('not', '', '', 0) |  | oasis
+V halamama.com | Halamama.com | Baby & Materni | http_429 |  | 
+U citycenterdoha.com | City Center Doha - | General / Uncl | ('maybe', 'Has', 'Uni', 2) | meta:City Center Doha | Leading Shopping Mall in Qatar City Center Doh | City Center Doha | Leading Shopping Mall in Qatar
+U suitsupply.com|qa | SUITSUPPLY | Fashion & Appa | ('fashion', 'Fas', 'Men', 18) | Suits; Trousers; Knitwear & Sweaters; Coats & Vests; Jackets & Blazers | Men&#x27;s Suits | Wedding, Formal &amp; Custom Su
+V mayfair.qa | Mayfair - مايفير | Perfumes & Oud | ('maybe', 'Has', 'Men', 1) | ملابس النوم | 
+V offpitch.qa | OFF PITCH — أوف بيتش | Fashion - Spor | ('maybe', 'Has', 'Uni', 2) | meta:OFF PITCH (أوف بيتش) | Sportswear &amp; Club Kits in Qatar OFF PI | OFF PITCH (أوف بيتش) | Sportswear &amp; Club Kits 
+V storey.shop | STOREY | Fashion - Wome | ('not', '', '', 0) |  | STOREY - Discover Local Brands
+V obg.qa | OBG | Fashion & Appa | ('not', '', '', 0) |  | OBG &#8211; Owl Business Group
+U selectedfirms.co|qa | SelectedFirms | Mobiles & Acce | ('fashion', 'Fas', 'Uni', 12) | Top Software Development Agency; Top Business Services Agency; Top Dig | Top Ecommerce Web Design Companies in Qatar (2026)
+V gpq.qa | General Product | Cleaning & Hou | ('maybe', 'Has', 'Wom', 1) | Bleach Clothes | General Product
+V souqq.qa | SOUQQ | Computers & El | ('maybe', 'Has', 'Uni', 2) | meta:Buy Electronics, Gadgets &amp; Educational Toys Online in Qatar | | Buy Electronics, Gadgets &amp; Educational Toys On
+U grassocean.qa | Grass Ocean | Sports, Fitnes | ('maybe', 'Has', 'Uni', 1) | 09 · Rubber mat مطاط أرضيات رياضية | SPC Flooring, Artificial Grass &amp; Wall Panels Q
+U peak.qa |  |  | ('fashion', 'Fas', 'Uni', 3) | قميص | الرئيسيه - Peak Qatar – Shoes &amp; Apparel
+U qarmainspect.com | Qarma | Chocolates & S | ('maybe', 'Has', 'Uni', 1) | Fashion & Apparel | Qarma |​ Simple Quality and Compliance Tools
+V groundoflaw.qa | Ground Of Law | General / Uncl | ('not', '', '', 0) |  | Ground Of Law &#8211; أرض القانون
+U phati.qa | Phati | Fashion - Wome | ('fashion', 'Has', 'Wom', 6) | ALL ABAYAS; READY TO WEAR; Kaftans Selected kaftans; All Abayas; All K | Phati
+V petshub.qa | Petshub.qa | Pets | ('maybe', 'Has', 'Uni', 2) | Accessories & Apparel For Cats; Accessories and Apparel For Dogs | Home - Petshub.qa
+V platinumkaraoke.qa | Platinum Karaoke Qatar | Flowers, Gifts | ('maybe', 'Has', 'Uni', 1) | Top of the Line Models | Best Karaoke Machines in the Qatar - Platinum Kara
+V oppolia.qa | OPPOLIA | Furniture | ('maybe', 'Has', 'Uni', 2) | meta:OPPOLIA | Premium Kitchen Cabinets, Wardrobes &amp; Interiors At  | OPPOLIA | Premium Kitchen Cabinets, Wardrobes &amp
+V mothercare.qa | Mothercare Qatar | Baby & Materni | ('maybe', 'Has', 'Uni', 2) | meta:Mothercare Qatar | Shop Your Baby &#x26; Child Essentials Shop ki | Mothercare Qatar | Shop Your Baby &#x26; Child Ess
+U nymphaea.qa |  |  | ('maybe', 'Has', 'Wom', 2) | meta:Nymphaea Abayas &#8211; Nymphaea Abayas   | Nymphaea Abayas &#8211; Nymphaea Abayas
+U pmc.qa | Pharmacy and More | Pharmacy & Wel | ('maybe', 'Has', 'Uni', 1) | Medical clothes | Pharmacy and More (PMC)
+U prettylittlething.eu | PrettyLittleThing | Fashion - Wome | ('maybe', 'Has', 'Wom', 2) | meta:Women&#x27;s Clothing | Shop Online Fashion | PLT ROW Shop the la | Women&#x27;s Clothing | Shop Online Fashion | PLT 
+V eyewa.com|qa | Eyewa | General / Uncl | ('not', '', '', 0) |  | 
+V aivi.com|qa | Shop Online @ AIVI.com | Fashion - Kids | ('maybe', 'Has', 'Uni', 2) | meta:Shop Online @ AIVI.com for Men, Women & Kids across GCC AIVI.com, | Shop Online @ AIVI.com for Men, Women & Kids acros
+U qatarfactories.qa |  |  | ('maybe', 'Has', 'Uni', 1) | Textiles & Clothing & Leather | Home | Qatar Factories
+V mumzworld.com|qa | Mumzworld | Baby & Materni | ('fashion', 'Has', 'Uni', 4) | school uniforms collection; Uniform Finder service | #1 Mother, Child &amp; Baby Shop in Qatar - Mumzwo
+V boutiqaat.com|qa | boutiqaat | Beauty & Cosme | ('maybe', 'Has', 'Uni', 2) | meta:Boutiqaat: Online Shopping for men and women Buy Beauty, Cosmetic | Boutiqaat: Online Shopping for men and women
+V mijade.qa | MIJADE QA | Fashion - Wome | ('maybe', 'Has', 'Wom', 1) | Abaya | MIJADE QA &#8211; Elegance Unveiled, Inspired by T
+U myabaya.qa | MY ABAYA | Fashion - Abay | ('maybe', 'Has', 'Wom', 2) | meta:MY ABAYA   | MY ABAYA
+V mobileinfo.qa | MobileINFO.QA | Mobiles & Acce | ('maybe', 'Has', 'Uni', 2) | meta:Mobile Price in Qatar | iPhone | Samsung | Xiaomi | Oppo | Mobile | Mobile Price in Qatar | iPhone | Samsung | Xiaomi 
+U rentsolutions.qa | Rent Solutions | Automotive Par | ('maybe', 'Has', 'Uni', 2) | meta:Rent Solutions Car Rental: Introducing our Deposit Free Option To | Rent Solutions Car Rental: Introducing our Deposit
+V myshopee.qa | www.myshopee.qa | Computers & El | ('maybe', 'Has', 'Wom', 1) | Top Rated | Best Shopping Site for Laptops, Used Laptos and mo
+V wajdfragrances.com | WAJD Fragrances | Perfumes & Oud | ('maybe', 'Has', 'Uni', 2) | meta:WAJD Fragrances | Luxury Extrait de Parfum, Made in Qatar WAJD is | WAJD Fragrances | Luxury Extrait de Parfum, Made i
+U romano.qa | Romano | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | SHOP JACKETS; SHOP KNITWEAR | Romano - Luxury Fashion &amp; Premium Quality
+V replayjeans.qa | Replay Shop | Fashion & Appa | ('maybe', 'Has', 'Uni', 2) | meta:Replay Jeans - Men&#39;s and Women&#39;s Clothing: Official Onlin | Replay Jeans - Men&#39;s and Women&#39;s Clothing:
+V mychoice.qa | MyChoice | Mobiles & Acce | ('maybe', 'Has', 'Uni', 1) | Clothing | MYCHOICE YOUR NEW FAVORITE ONLINE SHOPPING DESTINA
+U mytheresa.qa | Mytheresa | Fashion - Wome | ('fashion', 'Fas', 'Uni', 34) | Clothing; Interlocking G plissé silk midi dress; Leather blouson jacke | Mytheresa - The Finest Edit in Luxury
+V sadil.qa | Sadil | Fashion - Abay | ('fashion', 'Fas', 'Wom', 5) | الشيلة ( غطاء الراس ); تنانير; عبايات; عبايات المناسبات; مراييل و عباي | Sadil
+V rumi.qa | Rumi Earth | Sports, Fitnes | ('fashion', 'Has', 'Uni', 28) | Activewear; Black Clothes; Capri pants; Crop Top Bra; Dresses & Skirts | Rumi Earth Yoga | World&#39;s Best Eco-friendly &a
+V safetywares.qa | safetywares | Fashion - Kids | ('fashion', 'Has', 'Uni', 3) | Clothing; Disposable Suits; Welding Clothing | Home - safetywares
+U sanmica.qa | SANMICA® | Home Appliance | ('maybe', 'Has', 'Uni', 2) | meta:SANMICA® Premium Quality Home Appliances in Qatar Sanmica® Home A | SANMICA® Premium Quality Home Appliances in Qatar
+V sandro.qa | Sandro QAT | General / Uncl | ('not', '', '', 0) |  | 
+V samastore.qa | Sama Store | Bags & Luggage | ('fashion', 'Has', 'Uni', 3) | Adult T-shirts Collection; Kids T-shirt Collection; T-shirt Collection | Sama Store
+V scarletkids.qa | Scarlet Kids | Fashion - Wome | http_429 |  | 
+U qkicks.qa | Qatar Kicks | Fashion - Kids | ('maybe', 'Has', 'Uni', 2) | meta:Luxury Fashion in Qatar - Qatar Kicks Online Store | Qatar Kicks  | Luxury Fashion in Qatar - Qatar Kicks Online Store
+U qgreen.qa | Welcome To Q Green Tra | General / Uncl | ('maybe', 'Has', 'Uni', 2) | meta:Welcome To Q Green Trading and Contracting W.L.L In an era where  | Welcome To Q Green Trading and Contracting W.L.L
+U roumastyle.qa |  |  | ('maybe', 'Has', 'Wom', 1) | فساتين وقطع متنوعة للمنزل | روما ستايل &#8211; أناقة هادئة، حضور لا يُنسى
+V grizzly.qa | Grizzly | Fashion & Appa | ('not', '', '', 0) |  | Grizzly &#8211; Grizzly
+V qfit.qa | Qfit.qa - Online Shopp | Fashion & Appa | ('fashion', 'Fas', 'Uni', 15) | Full Sleeve Crew Neck T-Shirt; Hoodies & Jacket; Leggings and Tights;  | Qfit.qa - Online Shopping in Qatar
+V qmax.qa | Qmax Qatar | Perfumes & Oud | ('fashion', 'Has', 'Uni', 3) | Clothes Drying Racks; Clothes Hangers & Stands; Garment Steamers | Qmax Qatar | Best Online Shopping Website in Qatar
+V outoftheblue.qa | Out of the Blue | Fashion & Appa | http_429 |  | 
+V qontracshipping.qa | Qontrac Shipping | General / Uncl | ('not', '', '', 0) |  | Qontrac Shipping: Premier Ocean Freight &amp; Logi
+V thameen.qa | Thameen Jewellery | General / Uncl | ('not', '', '', 0) |  | 
+V tedbaker.qa | Ted Baker QAT | Fashion - Wome | ('fashion', 'Fas', 'Uni', 101) | Baby Clothes; Bestseller Dresses; Blouses & Shirts; Bomber Jackets; Bo | Ted Baker Qatar | Effortless British Fashion – Fre
+U seaqueen.qa | Best Mechanical Electr | Lighting & Ele | ('maybe', 'Has', 'Uni', 2) | meta:Best Mechanical Electrical Plumbing in Qatar Looking for the best | Best Mechanical Electrical Plumbing in Qatar
+U theaddress.qa | The Address Real Estat | Home Improveme | ('maybe', 'Has', 'Wom', 1) | Top Properties | Home || The Address Real Estate Property
+U sencor.qa | Sencor | Computers & El | ('maybe', 'Has', 'Uni', 1) | ماكينات إزالة أنسجة القماش من الملابس والأقمشة | Sencor - design and quality for you | Sencor - Let
+V thedome.qa | The Dome Padel Club | Books & Statio | ('maybe', 'Has', 'Uni', 1) | Clothing | Padel - The Dome Padel Club
+V thetimegallery.qa | Thetimegallery | General / Uncl | ('not', '', '', 0) |  | 
+V verno.qa | verno | Fashion & Appa | ('not', '', '', 0) |  | verno
+U thenews.qa |  |  | ('maybe', 'Has', 'Uni', 1) | الذكاء الاصطناعي المؤسسي في قطر: من الاستراتيجية إلى التنفيذ | اخبار قطر | اخر اخبار قطر والعالم لحظة بلحظة
+V thejacketmaker.qa | The Jacket Maker | Fashion & Appa | ('not', '', '', 0) |  | 
+V virtuocity.qa | Virtuocity Qatar | Gaming | ('maybe', 'Has', 'Uni', 1) | top up | Explore The Best Gaming Center in Qatar Now | Virt
+V serum.qa | SERUM | Beauty & Cosme | ('maybe', 'Has', 'Wom', 1) | Top picks | Serum &ndash; SERUM
+V thebarbellclub.qa | The Barbell Club Qatar | Sports, Fitnes | ('not', '', '', 0) |  | The Barbell Club Qatar | Home of the big lifts
+V shamiyastore.qa | Shamiya Store | Fashion - Kids | ('not', '', '', 0) |  | Shamiya Store
+U qupon.qa | Qupon | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | meta:Home | Qupon Browse the latest coupons and deals from top vendors | Home | Qupon
+V shoptriumph.qa | Shop Triumph | Fashion - Wome | ('maybe', 'Has', 'Wom', 2) | meta:Triumph &amp; Sloggi Qatar − women&#39;s lingerie, shapewear &amp | Triumph &amp; Sloggi Qatar − women&#39;s lingerie,
+V topvolley.qa | Top Volley | Sports, Fitnes | ('maybe', 'Has', 'Uni', 2) | meta:Top Volley Qatar | Volleyball Training for Youth &amp; Adults Top | Top Volley Qatar | Volleyball Training for Youth &
+V tinyworld.qa | tinyWorld | Baby & Materni | ('not', '', '', 0) |  | tinyWorld
+V toda.qa | Toda | Fashion & Appa | ('not', '', '', 0) |  | 
+U signinn.qa |  |  | ('fashion', 'Fas', 'Uni', 3) | SIGN INN Apparel | SIGN INN (Signinn) Qatar | Waterproofing, HVAC &am
+V topperformance.qa | Top Performance | Mobiles & Acce | ('maybe', 'Has', 'Uni', 2) | meta:Car Parts &amp; Performance Upgrades in Qatar &ndash; Top Perform | Car Parts &amp; Performance Upgrades in Qatar &nda
+U toptender.qa | Top Tender | Industrial & T | ('maybe', 'Has', 'Uni', 2) | meta:Top Tender &#8211; Construction Tenders &amp; Consultancy Service | Top Tender &#8211; Construction Tenders &amp; Cons
+U boohooman.com | BOOHOOMAN | Fashion & Appa | ('fashion', 'Fas', 'Uni', 77) | Long Sleeve T-Shirts; Lightweight Jackets; CLOTHING; Clothing; T-Shirt | BOOHOOMAN | Mens Clothes | Shop Online Fashion
+V shotokansportcenter.qa | Shotokan Sport Center | Sports, Fitnes | ('not', '', '', 0) |  | Shotokan Sport Center
+U sisq.qa |  |  | ('maybe', 'Has', 'Uni', 1) | School Uniform | Swiss International School, Qatar
+V toolstrading.qa | Toolstrading.qa | Industrial & T | ('maybe', 'Has', 'Uni', 1) | Pant Shirt | Toolstrading.qa &#8211; Toolstrading.qa
+V vodavoda.qa | vodavodaqa | Baby & Materni | ('not', '', '', 0) |  | VodaVoda Qatar &ndash; vodavodaqa
+V watad.qa | WATAD | Computers & El | ('maybe', 'Has', 'Uni', 1) | شبكات مبدل شبكة احترافي SKU: WTD-NET-220 ‏١٬٤٩٩ ر.ق.‏ متوفر | WATAD | وتد للحلول التقنية
+V trendycorner.qa | TRENDY CORNER | Baby & Materni | ('fashion', 'Has', 'Uni', 6) | Activewear; Coats & Jackets; Dresses & Jumpsuits; Sleepwear & Loungewe | TRENDY CORNER
+V walkingpad.qa | WalkingPad Qatar | Sports, Fitnes | ('not', '', '', 0) |  | Home - WalkingPad Qatar
+V sidrawater.qa | Sidra Water | Baby & Materni | ('not', '', '', 0) |  | Home - Sidra Water
+V smarteco.qa | smart eco | Lighting & Ele | ('maybe', 'Has', 'Uni', 2) | meta:Smart Eco Lighting Qatar | Smart Lighting &amp; LED Supplier &nda | Smart Eco Lighting Qatar | Smart Lighting &amp; LE
+V skylink.qa | Skylink | Fashion - Wome | ('not', '', '', 0) |  | Skylink
+V softlove.qa | Soft Love Qatar | Baby & Materni | TimeoutError |  | 
+V sportshub.qa | Leading sports Equipme | Sports, Fitnes | TimeoutError |  | 
+V coreinfo.com.qa | Coreinfo - Qatar | General / Uncl | TimeoutError |  | 
+V suno.qa | Radio Suno 91.7 FM - N | General / Uncl | TimeoutError |  | 
+V dary.com.qa | DARY | Fashion - Abay | TimeoutError |  | 
+V emvano.qa | EMVANO | Fashion & Appa | TimeoutError |  | 
+V nimbus.com.qa | NIMBUS | Fashion & Appa | TimeoutError |  | 
+V qdt.com.qa | QDT | General / Uncl | TimeoutError |  | 
+V mumzworld.com | Mumzworld | Baby & Materni | ('fashion', 'Has', 'Uni', 6) | school uniforms collection; Uniform Finder service; Clothes; Uniform | #1 Mother, Child &amp; Baby Shop in Qatar - Mumzwo
+V shein.com | SHEIN | Fashion & Appa | ('maybe', 'Has', 'Wom', 2) | meta:شي إن | موضة نساء على الإنترنت | تسوقوا الفساتين، والأحذية والحقا | شي إن | موضة نساء على الإنترنت | تسوقوا الفساتين، 
+U qatarscooters.com | Electric Scooters In Q | Sports, Fitnes | ('maybe', 'Has', 'Uni', 2) | meta:Electric Scooters In Qatar Discover top Electric Scooters in Qata | Electric Scooters In Qatar
+V tableartsqatar.com | Table Arts Qatar | Kitchenware &  | ('maybe', 'Has', 'Uni', 2) | meta:Table Arts Qatar - Premium Kitchenware, Tableware &amp; Appliance | Table Arts Qatar - Premium Kitchenware, Tableware 
+V sports-way.com | Sports Way | Sports, Fitnes | ('not', '', '', 0) |  | Gym Equipment &amp; Sports Tools in Qatar | Fitnes
+U salcoqatar.com | Salco | Home Improveme | ('maybe', 'Has', 'Uni', 2) | meta:Qatar&#039;s Top Plumbing &amp; Sanitary Solutions for 50+ Years  | Qatar&#039;s Top Plumbing &amp; Sanitary Solutions
+V qatarperfumeshop.com | Qatar perfume shop | Perfumes & Oud | ('maybe', 'Has', 'Uni', 2) | meta:Buy the Finest Perfumes in Qatar | Qatar Perfume Shop Explore the | Buy the Finest Perfumes in Qatar | Qatar Perfume S
+V qatarmoms.com | Qatar Moms | Baby & Materni | ('maybe', 'Has', 'Uni', 2) | meta:Qatar Moms - Your #1 Mother &amp; Baby Shop Qatar Mother and baby | Qatar Moms - Your #1 Mother &amp; Baby Shop Qatar
+V sskqatar.com | SSK TRADING WLL | Wholesale & B2 | ('maybe', 'Has', 'Wom', 1) | Safety Dress | PPE supplier in Qatar | Safety Equipment supplier 
+U zooplus.fr | Zooplus | Pets | ('maybe', 'Has', 'Uni', 1) | Top Marques | Animalerie en ligne : nourriture, accessoires | Zo
+V forcesportsshop.com | Force Sports Store | Sports, Fitnes | TimeoutError |  | 
+V romanceqa.com | Romance Trading | Department Sto | ('not', '', '', 0) |  | Romance Trading | Household essentials in Qatar
+V vibram.com|qa | Vibram | Sports, Fitnes | ClientConnectorDNSError |  | 
+V undiz.com|qa | Undiz | Fashion - Wome | TimeoutError |  | 
+U softwaresuggest.com | SoftwareSuggest: Top B | Mobiles & Acce | ('maybe', 'Has', 'Uni', 2) | meta:SoftwareSuggest: Top Business Software Reviews and Recommendation | SoftwareSuggest: Top Business Software Reviews and
+V marksandspencer.com|qa | Marks & Spencer Qatar | Fashion - Wome | ('fashion', 'Fas', 'Uni', 6) | Shop skirts; Shop tops; Shop trousers; Shop jackets | Marks &amp; Spencer Qatar | Quality Fashion for Wo
+U luisaspagnoli.com|qa | Luisa Spagnoli Online  | Fashion & Appa | ('maybe', 'Has', 'Wom', 2) | meta:Luisa Spagnoli Online Shop - Clothing and Accessories Luisa Spagn | Luisa Spagnoli Online Shop - Clothing and Accessor
+U balmain.com|qa | BALMAIN GLOBAL | Bags & Luggage | ('maybe', 'Has', 'Uni', 2) | meta:Balmain Official Website | Designer clothing &amp; bags  BALMAIN  | Balmain Official Website | Designer clothing &amp;
+U topcv.com | TopCV | Home Improveme | ('maybe', 'Has', 'Uni', 2) | meta:Best CV Writing Service | Professional CV Writers | TopCV TopCV i | Best CV Writing Service | Professional CV Writers 
+U elyrics.net | eLyrics.net | Toys & Hobbies | ('maybe', 'Has', 'Wom', 2) | Top Albums; Top Lyrics | Comprehensive Song Lyrics Archive | eLyrics.net
+U outsourceaccelerator.com | Outsource Accelerator | Books & Statio | ('maybe', 'Has', 'Uni', 2) | Top 40 BPO companies in the Philippines Read more; Philippines: the to | World’s Leading Outsourcing Marketplace &amp; Advi
+U zaqq.at | ZAQQ | Chocolates & S | ('maybe', 'Has', 'Wom', 1) | Manuell Top Seller Sommer | ZAQQ - Die Testsieger Barfußschuhe Manufaktur
+U customon.com | Customon | Fashion & Appa | ('fashion', 'Fas', 'Uni', 26) | Custom T-Shirts; Custom Hoodies; Custom Sweatshirts; Custom Tank Tops; | Custom T-shirts and Printing | Customon
+U pillsburylaw.com | Pillsbury Law | Fashion - Kids | ('maybe', 'Has', 'Uni', 2) | meta:Pillsbury Winthrop Shaw Pittman Pillsbury Winthrop Shaw Pittman i | Pillsbury Winthrop Shaw Pittman
+U hoodiego.com | Hoodiego | Fashion & Appa | ('fashion', 'Fas', 'Uni', 29) | Custom T-Shirts; Custom Hoodies; Custom Sweatshirts; Custom Tank Tops; | Custom T-shirts and Printing | Hoodiego
+U chantelle.com|qa | Chantelle | Fashion - Wome | ('maybe', 'Has', 'Wom', 2) | meta:Chantelle Qatar | Lingerie, Swimwear &amp; Nightwear for Women Mo | Chantelle Qatar | Lingerie, Swimwear &amp; Nightwe
+U the-fashion-square.com | The Fashion Square | Fashion & Appa | ('fashion', 'Fas', 'Uni', 18) | WOMEN CLOTHING; MEN CLOTHING; Women's Dresses; Women's Jackets; Women' | The Fashion Square | Curated Luxury &amp; Designer
+U bobst.com | BOBST | Packaging & Su | ('maybe', 'Has', 'Wom', 1) | Clothing & textile | BOBST
+U robeco.com | Robeco.com - The inves | General / Uncl | ('maybe', 'Has', 'Uni', 1) | Top stories | Robeco: Research-driven asset management | Robeco 
+U vizcom.com | Vizcom | Home Improveme | ('maybe', 'Has', 'Uni', 1) | Apparel | Vizcom | Turn Sketches into Full-Fidelity 3D Rende
+U dresslily.com | Matching Couple Outfit | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | meta:Matching Couple Outfits, Women's Dress, Tankinis, Men's Shirts Sh | Matching Couple Outfits, Women's Dress, Tankinis, 
+U mangazenkan.com | 漫画全巻ドットコム | Mobiles & Acce | ('fashion', 'Has', 'Uni', 3) | [紙/全巻セット]TOP; [中古コミック]TOP; [電子書籍]TOP | 漫画全巻ドットコム | コミックセット通販
+U gamejus.com | GAMEJUS | Jewelry & Watc | ('maybe', 'Has', 'Uni', 2) | meta:Game Top Up, Gift Cards &amp; Digital Services | GAMEJUS GAMEJUS  | Game Top Up, Gift Cards &amp; Digital Services | G
+U buildasign.com | Custom Signs, Banners, | Wholesale & B2 | ('maybe', 'Has', 'Uni', 1) | Apparel & Promotional | Custom Signs, Banners, Flags | 25% OFF + FREE Ship
+U bairesdev.com|qa | BairesDev | Mobiles & Acce | ('maybe', 'Has', 'Uni', 1) | Top 1% Talent | QA Software Testing Services | BairesDev
+U mmlafleur.com|qa | M.M.LaFleur | Mobiles & Acce | ('maybe', 'Has', 'Uni', 2) | meta:M.M.LaFleur | Live with Purpose, Dress with Ease M.M.LaFleur is a | M.M.LaFleur | Live with Purpose, Dress with Ease
+U crzyoga.com | CRZ YOGA US | Sports, Fitnes | ('maybe', 'Has', 'Uni', 2) | meta:CRZ YOGA US | Shop Technical Yoga Clothing &amp; Athleisure Appar | CRZ YOGA US | Shop Technical Yoga Clothing &amp; A
+U amiparis.com|qa | Ami Paris | Fashion - Kids | ('maybe', 'Has', 'Uni', 2) | meta:Ami Paris Official Website | AMI PARIS Discover the Women&#39;s a | Ami Paris Official Website | AMI PARIS
+U cozymeal.com|qa | Cozymeal | Chocolates & S | ('maybe', 'Has', 'Uni', 2) | meta:Cooking Classes in Qatar | Cozymeal Find and compare the best coo | Cooking Classes in Qatar | Cozymeal
+U culture-circle.com|qa | Culture Circle | Fashion - Spor | ('fashion', 'Fas', 'Wom', 17) | High tops; Low tops; Mid tops; Top 50 watches; Top 50 handbags; Top 50 | Culture Circle Qatar — Authentic Sneakers, Streetw
+U allmynursejobs.com|qa | Job Tags Qatar | Pharmacy & Wel | ('fashion', 'Has', 'Uni', 5) | apparel; Aviator Jacket; Biker Jacket; Born X Raised Hoodie; Born X Ra | Job Tags Qatar
+U goldpricez.com|qa | Gold Price Z | General / Uncl | ('maybe', 'Has', 'Uni', 2) | meta:Live Financial Market Data for Qatar | Gold Price Z Get the lates | Live Financial Market Data for Qatar | Gold Price 
+U newyorker.de|qa | NEW YORKER | Fashion - Wome | ('maybe', 'Has', 'Uni', 2) | meta:NEW YORKER | Dress for the moment Discover the latest fashion tre | NEW YORKER | Dress for the moment
+U madhyamam.com|qa | Madhyamam | Beauty & Cosme | ('maybe', 'Has', 'Uni', 2) | meta:Qatar | Gulf News | Malayalam News | Madhyamam Read the latest Gu | Qatar | Gulf News | Malayalam News | Madhyamam
+U jollymax.com|qa | JollyMax Qatar | Gaming | ('maybe', 'Has', 'Uni', 2) | meta:Free Download, Online Top up Game, Recharge App | JollyMax Qatar  | Free Download, Online Top up Game, Recharge App | 
+U kuoni.co.uk|qa | Kuoni | Books & Statio | ('maybe', 'Has', 'Uni', 1) | Explore Jamaica: our top multi-centre combos | Qatar Holidays | Book For 2026/2027 Now | Kuoni
+U top-rated.online|qa | Top-Rated.Online Trave | Sports, Fitnes | ('fashion', 'Has', 'Uni', 3) | Top-Rated .online | Best Places in Qatar - Top Rated Restaurants, Hote
+U qa.brompton.com | Brompton Bicycle | Sports, Fitnes | ('maybe', 'Has', 'Uni', 1) | Top tips for new owners | Brompton - The Foldable City Bike | Brompton Bicyc
+U fnac.qa | Fnac Qatar | Computers & El | ('maybe', 'Has', 'Uni', 2) | meta:Fnac Qatar | Electronics, Appliances, Books, Gaming &amp; Gifts D | Fnac Qatar | Electronics, Appliances, Books, Gamin
+U soccerway.com|qa | Soccerway | Furniture | ('maybe', 'Has', 'Uni', 2) | meta:Soccer Qatar - table, fixtures, live scores &amp; results | Socce | Soccer Qatar - table, fixtures, live scores &amp; 
+U qa.flets-w.com | よくあるご質問｜フレッツ光公式｜NTT西日本 | General / Uncl | ('maybe', 'Has', 'Uni', 1) | フレッツ光 TOP | よくあるご質問｜フレッツ光公式｜NTT西日本
+U worldcasinodirectory.com|qa | Qatar Casinos & Gambli | Sports, Fitnes | ('maybe', 'Has', 'Uni', 1) | Top Online Casinos | Qatar Casinos & Gambling
+U theiconic.qa |  |  | ('maybe', 'Has', 'Uni', 2) | meta:Clothes & Shoes | Sports, Beauty & More Online | THE ICONIC Austr | Clothes & Shoes | Sports, Beauty & More Online | T
+U dolcegabbana.com|qa | Dolce&Gabbana® Clothin | Fashion & Appa | ('maybe', 'Has', 'Uni', 2) | meta:Dolce&amp;Gabbana® Clothing, Beauty, Casa and Food &amp; Beverage | Dolce&amp;Gabbana® Clothing, Beauty, Casa and Food
+V qa.macduggal.com | Mac Duggal | Fashion - Wome | ('maybe', 'Has', 'Wom', 2) | meta:Mac Duggal فساتين فاخرة - فساتين سهرة وكوكتيل وزفاف 34878fbe 3487 | Mac Duggal فساتين فاخرة - فساتين سهرة وكوكتيل وزفا
+U footlocker.com|qa | Foot Locker | Shoes | ('fashion', 'Has', 'Uni', 8) | Clothing & Accessories; All Men&#x27;s Clothing; Shorts; T-shirts; Act | Qa | Foot Locker
+U recharge.com|qa | recharge.com | Flowers, Gifts | ('maybe', 'Has', 'Uni', 2) | meta:#1 in Global mobile top-up, Gift cards and Payment cards | rechar | #1 in Global mobile top-up, Gift cards and Payment
+U valentino.com|qa | Valentino Online Bouti | Bags & Luggage | ('fashion', 'Has', 'Uni', 14) | Ready to Wear; Ready To Wear; Dresses; Gowns; Shirts and Tops; Coats a | Valentino Online Boutique: The Maison Valentino Of
+U rndirectors.com|qa | RNDirectors.com | Mobiles & Acce | ('fashion', 'Has', 'Uni', 11) | #Clothing manufacturing in; #Clothing manufacturing in China; #Clothin | QA | RNDirectors.com
+U fgrealty.qa | FGREALTY | Industrial & T | ('maybe', 'Has', 'Uni', 2) | meta:Property Real Estate Finder Qatar | Buy, Rent with FGREALTY QA |  | Property Real Estate Finder Qatar | Buy, Rent with
+U hassad.com | Hassad Food | Grocery & Food | ('maybe', 'Has', 'Uni', 1) | الإستراتيجية | Hassad Food &#8211; Investment Arm in Food &amp; A
+V zara.com|qa | Zara | Fashion & Appa | http_403 |  | 
+V pullandbear.com|qa | Pull&Bear | Fashion & Appa | http_403 |  | 
+V stradivarius.com|qa | Stradivarius | Fashion & Appa | http_403 |  | 
+V oysho.com|qa | Oysho | Fashion & Appa | http_403 |  | 
+V bershka.com|qa | Bershka | Fashion & Appa | http_403 |  | 
+V massimodutti.com|qa | Massimo Dutti | Fashion & Appa | http_403 |  | 
+V vogacloset.com|qa | VogaCloset | Fashion & Appa | http_403 |  | 
+V shop.mango.com|qa | Mango | Fashion & Appa | http_429 |  | 
+V salams.com | Salam Stores | Department Sto | ('fashion', 'Fas', 'Uni', 38) | Scarves; Clothing; Activewear; Coats & Jackets; Dresses; Hoodies & Swe | Your Online Luxury Shopping Destination in Qatar |
