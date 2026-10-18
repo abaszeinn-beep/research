@@ -78,3 +78,12 @@ No AI subagents were used; parallelism comes from asyncio workers in separate tm
 - **19:40-00:00** Tranco top-200k probe completed (ranks 1-200,000) in three CPU-bound shards (DNS-limited at ~11 domains/s); ~14.7k DNS/timeout failures from overloaded windows were requeued and re-probed (16 extra hits).
   Tranco hits verified under strict rules; 8 verified rows demoted by manual review (foreign-only locale/currency-selector-only, classifieds, resale marketplace, missing QAR pricing); one store name fixed.
 - Browser pass on 261 Tranco Qatar-path candidates: 2 verified. Secondary (Wayback) pass on the same set was stopped after 16 targets (about 1.6 min each); remaining Tranco unverified Qatar-path candidates are listed in Unverified Candidates.
+
+## Manual major acceptance (2026-10-18)
+
+* Approved by the user: well-known major retailers left unresolved only because bot walls, captchas or geo-redirects stopped the two-proof rule are added with status `verified_manual_major` (sheet label: "Known major retailer – manually accepted"). Code: `market_ecom/manual_major.py`; the export adds a `Verification Status` column to the Master Directory and a count line in Research Coverage; the audit status is `in_directory_manual_major`.
+* **Accepted (3):** Monoprix Qatar `https://www.monoprix.qa/` (Qatar App Store loyalty app 2026-03-31, Wayback 2026-02-14; captcha not bypassed), Max Fashion `https://www.maxfashion.com/qa/en/` (Qatar App Store app 2026-10-05, Wayback captures 2025; live 403), SHEIN `https://ar.shein.com/` (Middle East storefront serving GCC countries with QAR among its currencies, Qatar App Store app 2026-10-17; `shein.com` itself geo-redirects, `shein.qa` is an unrelated travel site).
+* **Rejected (1):** Malabar Gold & Diamonds - the site has country storefronts for in, ae, uk and us only; Qatar pages are a physical store locator, `/qa/` returns HTTP 400, and the Qatar App Store listing (genre Lifestyle) does not prove a Qatar online store. Audit status `excluded`.
+* Light checks only (plain requests, Wayback availability API, iTunes Search); no bot wall was bypassed.
+* **Audit (major tier):** 22 primary, 17 secondary, 3 manually accepted, 13 excluded, 0 unresolved.
+* **Master Directory: 678 -> 681 stores.** xlsx, csv and `data/qatar_ecom.sqlite.gz` regenerated.
