@@ -98,3 +98,11 @@ Automated metrics snapshots every 10 minutes: `logs/progress_metrics.jsonl`.
 * **Remaining shard hits** (2,001 unverified/rejected rows not already in the DB) were inserted as candidates with the shard's own reason so the Unverified sheet is complete (method `tranco_shard_import`; not re-fetched).
 * **Export:** `export.py` now adds a *Tranco top-200k coverage* table to Research Coverage. Master Directory xlsx/csv regenerated (all five sheets); `data/saudi_ecom.sqlite.gz` refreshed. **Final verified unique stores: 6,794** (6,640 + 154; 6,734 live, 60 secondary evidence).
 * **Concerns:** shard-sourced unverified/rejected rows were not re-checked live; accepted `.sa` custom/WooCommerce stores rest on cart + SAR + Saudi-signal checks only (spot-check, not exhaustive); several Shopify Markets storefronts are excluded for lack of proof that they ship to Saudi Arabia.
+
+## Manual major acceptance (2026-10-18)
+
+* Approved by the user: well-known major retailers left unresolved only because bot walls, geo-blocks or stale archives stopped the two-proof rule are added with status `verified_manual_major` (sheet label: "Known major retailer – manually accepted"). Code: `saudi_ecom/manual_major.py`; the export now has a `Verification Status` column in the Master Directory and a count line in Research Coverage.
+* **Accepted (2):** Pull&Bear `https://www.pullandbear.com/sa/` (Saudi App Store listing updated 2026-10-14, Wayback product page with SAR price and ordering 2025-09-06; live site 403) and Sivvi `https://www.sivvi.com/saudi-en/` (Noon's fashion store; Saudi App Store listing 2025-09-19, Wayback product page 2025-03-06; live site times out).
+* **Rejected / kept excluded (1):** Philips - `philips.sa` is a brand catalogue with no SAR price or add-to-cart, nothing is sold online in KSA. The audit now marks it `excluded`.
+* **Audit (major tier):** 47 primary, 32 secondary, 2 manually accepted, 24 excluded, 2 unresolved (LC Waikiki, Redtag). Toys R Us also moved from unresolved to excluded (store closed / not launched) when the audit was re-run against the current DB.
+* **Master Directory: 6,794 -> 6,796 stores** (6,734 live-verified, 60 secondary evidence, 2 manually accepted). xlsx, csv and `data/saudi_ecom.sqlite.gz` regenerated.

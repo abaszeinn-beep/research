@@ -454,6 +454,9 @@ EXCLUDE_REASONS = [
 PLATFORM_ROOTS = {"salla.com", "salla.sa", "zid.sa", "tryzid.com", "shopify.com", "expandcart.com", "youcan.shop", "wuilt.com", "matjrah.com"}
 
 
+MANUAL_EXCLUDE = {"Philips": "excluded (manual review): Saudi philips.sa is a brand catalogue with no SAR prices or add-to-cart, sells nothing online in KSA"}
+
+
 def audit(con, previous_csv=None):
     """Assign each reference store a coverage status. Returns list of dict rows for the audit sheet."""
     from .common import MARKETPLACE_ROOTS, NON_STORE_ROOTS
@@ -496,7 +499,7 @@ def audit(con, previous_csv=None):
             keys.update(by_root.get(r, []))
         cands = [master_of(k) for k in keys if k in ver]
         cands = [c for c in cands if c]
-        good = [c for c in cands if c["cstatus"] == "verified" and c["vstatus"] in ("verified", "verified_secondary_evidence")]
+        good = [c for c in cands if c["cstatus"] == "verified" and c["vstatus"] in ("verified", "verified_secondary_evidence", "verified_manual_major")]
         status, url, reason, evidence, key = None, "", "", "", None
         if roots and roots <= PLATFORM_ROOTS:
             status, reason = "excluded", "excluded: ecommerce platform / non-store site, not a merchant"
@@ -512,8 +515,10 @@ def audit(con, previous_csv=None):
             url = murl
             primary = g["vstatus"] == "verified"
             status = "in_directory_primary" if primary else "in_directory_secondary"
+            if g["vstatus"] == "verified_manual_major":
+                status = "in_directory_manual_major"
             was = murl.rstrip("/") in prev
-            reason = ("already present before reference audit" if was else "added by reference audit") + ("" if primary else " (secondary evidence)")
+            reason = ("already present before reference audit" if was else "added by reference audit") + ("" if primary else (" (manually accepted known major retailer)" if status == "in_directory_manual_major" else " (secondary evidence)"))
             evidence = (g["reason"] or "") + (f" | evidence: {g['ev_url']}" if g["ev_url"] else "") + f" | checked {g['ts']}"
         else:
             exc = None
@@ -556,7 +561,9 @@ def audit(con, previous_csv=None):
                 status = "excluded"
                 info = nones.get(ref_id, {})
                 reason = "excluded: no Saudi storefront found (Saudi URL variants" + (", Wayback CDX" if info.get("blocked") else "") + " checked)"
-        if kind in ("tranco_sa", "wikidata") and status != "in_directory_primary" and status != "in_directory_secondary":
+        if name in MANUAL_EXCLUDE and status == "unresolved":
+            status, reason = "excluded", MANUAL_EXCLUDE[name]
+        if kind in ("tranco_sa", "wikidata") and not status.startswith("in_directory"):
             status = "screened_out"
         con.execute("UPDATE reference_stores SET status=?, best_key=?, best_url=?, reason=?, evidence=?, checked_at=? WHERE ref_id=?",
                     (status, key, url, reason, evidence, db.now(), ref_id))

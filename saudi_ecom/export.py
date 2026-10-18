@@ -21,6 +21,10 @@ REF_CSV = os.path.join(OUT_DIR, "data", "reference_universe.csv")
 # master directory as committed before the reference audit (commit 16cd9b5), to tell "already present" from "added"
 PREVIOUS_CSV = os.path.join(OUT_DIR, "data", "previous_master_16cd9b5.csv")
 
+VERIFIED_STATUSES = ("verified", "verified_secondary_evidence", "verified_manual_major")
+STATUS_LABEL = {"verified": "Verified", "verified_secondary_evidence": "Verified (secondary evidence)",
+                "verified_manual_major": "Known major retailer – manually accepted"}
+
 PLATFORM_SHARED = {"salla.sa", "zid.store", "myshopify.com", "expandcart.com", "matjrah.store", "youcan.shop", "wuilt.com", "salla.store", "company.site", "wixsite.com"}
 
 
@@ -71,7 +75,7 @@ def store_identity_ids(ev):
 
 def dedup(con):
     rows = con.execute(
-        "SELECT v.key, v.final_key, v.final_url, v.ecom_evidence, c.url, c.platform_hint FROM verifications v JOIN candidates c USING(key) WHERE v.status IN ('verified','verified_secondary_evidence')"
+        "SELECT v.key, v.final_key, v.final_url, v.ecom_evidence, c.url, c.platform_hint FROM verifications v JOIN candidates c USING(key) WHERE v.status IN ('verified','verified_secondary_evidence','verified_manual_major')"
     ).fetchall()
     groups = defaultdict(list)
     for key, fkey, furl, ev, url, ph in rows:
@@ -99,7 +103,7 @@ def dedup(con):
                     rep_of[k] = keep
     dups = [(rep, k) for k, rep in rep_of.items() if rep != k]
     con.execute("BEGIN IMMEDIATE")
-    con.execute("UPDATE verifications SET duplicate_of=NULL WHERE status IN ('verified','verified_secondary_evidence')")
+    con.execute("UPDATE verifications SET duplicate_of=NULL WHERE status IN ('verified','verified_secondary_evidence','verified_manual_major')")
     con.executemany("UPDATE verifications SET duplicate_of=? WHERE key=?", dups)
     con.executemany("UPDATE candidates SET status='duplicate' WHERE key=?", [(k,) for _, k in dups])
     con.executemany("UPDATE candidates SET status='verified' WHERE key=?", [(k,) for k in set(rep_of.values())])
@@ -134,7 +138,7 @@ def main():
         """SELECT v.*, c.url, c.root_domain, c.first_source, c.source_detail, c.platform_hint,
                   (SELECT group_concat(source, ', ') FROM candidate_sources s WHERE s.key=v.key) AS all_sources
            FROM verifications v JOIN candidates c USING(key)""", con)
-    ver = v[(v.status.isin(["verified", "verified_secondary_evidence"])) & (v.duplicate_of.isna())].copy()
+    ver = v[(v.status.isin(list(VERIFIED_STATUSES))) & (v.duplicate_of.isna())].copy()
     ver["Master URL"] = ver.apply(master_url, axis=1)
     ver["Store Name"] = [clean_name(n, u) for n, u in zip(ver.store_name, ver["Master URL"])]
     ver["Registrable Root Domain"] = [
@@ -142,6 +146,7 @@ def main():
     ver = ver.drop_duplicates("Master URL").sort_values(["Store Name"], key=lambda s: s.str.lower())
 
     master = ver[["Store Name", "Master URL"]].rename(columns={"Master URL": "Root Domain / Storefront URL"})
+    master["Verification Status"] = ver.status.map(STATUS_LABEL).values
 
     def notes(r):
         n = []
@@ -230,6 +235,7 @@ def coverage(con, ver, v, ndup):
     out = []
     totals = q("SELECT status AS 'Candidate status', count(*) AS Count FROM candidates GROUP BY 1 ORDER BY 2 DESC")
     totals.loc[len(totals)] = ["verified unique stores in Master Directory", len(ver)]
+    totals.loc[len(totals)] = ["of which: manually accepted known major retailers (verified_manual_major)", int((ver.status == "verified_manual_major").sum())]
     totals.loc[len(totals)] = ["duplicates merged (aliases/redirects/same store id)", ndup]
     out.append(("Summary counts", totals))
     cat = ver.category.value_counts().rename_axis("Category").reset_index(name="Verified stores")
