@@ -197,6 +197,9 @@ def audit(con):
 
 
 NOT_A_STORE = {
+    "gm.com": "manufacturer corporate site; no consumer web store found (live check: no cart/products; no shop subdomain located)",
+    "toyota.com": "vehicle-manufacturer corporate site; no consumer web store (live check: no purchase path)",
+    "honeywell.com": "industrial manufacturer corporate site; store.honeywell.com does not resolve; no online store found",
     "delta.com": "airline lounge/travel service, not a physical-goods store", "aa.com": "airline lounge/travel service, not a physical-goods store",
     "united.com": "airline lounge/travel service, not a physical-goods store", "ihg.com": "hotel/vacation-club service, not a physical-goods store",
     "hilton.com": "hotel brand, not a physical-goods store", "hyatt.com": "hotel brand, not a physical-goods store",
