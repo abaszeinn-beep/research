@@ -29,6 +29,11 @@ XLSX_ROW_CAP = 1_000_000
 UNVERIFIED_SHEET_CAP = 20_000
 
 
+VERIFIED_STATUSES = ("verified", "verified_secondary_evidence", "verified_manual_major")
+STATUS_LABEL = {"verified": "Verified", "verified_secondary_evidence": "Verified (secondary evidence)",
+                "verified_manual_major": "Known major retailer – manually accepted"}
+
+
 def master_url(row):
     final = row["final_url"] if isinstance(row["final_url"], str) and row["final_url"] else row["url"]
     ident = identity(final) or identity(row["url"])
@@ -68,7 +73,7 @@ def store_identity_ids(ev):
 
 def dedup(con):
     rows = con.execute(
-        "SELECT v.key, v.final_key, v.final_url, v.ecom_evidence, c.url, c.platform_hint FROM verifications v JOIN candidates c USING(key) WHERE v.status IN ('verified','verified_secondary_evidence')"
+        "SELECT v.key, v.final_key, v.final_url, v.ecom_evidence, c.url, c.platform_hint FROM verifications v JOIN candidates c USING(key) WHERE v.status IN ('verified','verified_secondary_evidence','verified_manual_major')"
     ).fetchall()
     groups = defaultdict(list)
     for key, fkey, furl, ev, url, ph in rows:
@@ -92,7 +97,7 @@ def dedup(con):
                     rep_of[k] = keep
     dups = [(rep, k) for k, rep in rep_of.items() if rep != k]
     con.execute("BEGIN IMMEDIATE")
-    con.execute("UPDATE verifications SET duplicate_of=NULL WHERE status IN ('verified','verified_secondary_evidence')")
+    con.execute("UPDATE verifications SET duplicate_of=NULL WHERE status IN ('verified','verified_secondary_evidence','verified_manual_major')")
     con.executemany("UPDATE verifications SET duplicate_of=? WHERE key=?", dups)
     con.executemany("UPDATE candidates SET status='duplicate' WHERE key=?", [(k,) for _, k in dups])
     con.executemany("UPDATE candidates SET status='verified' WHERE key=?", [(k,) for k in set(rep_of.values())])
@@ -126,12 +131,13 @@ def main():
         """SELECT v.*, c.url, c.root_domain, c.first_source, c.source_detail, c.platform_hint,
                   (SELECT group_concat(source, ', ') FROM candidate_sources s WHERE s.key=v.key) AS all_sources
            FROM verifications v JOIN candidates c USING(key)""", con)
-    ver = v[(v.status.isin(["verified", "verified_secondary_evidence"])) & (v.duplicate_of.isna())].copy()
+    ver = v[(v.status.isin(list(VERIFIED_STATUSES))) & (v.duplicate_of.isna())].copy()
     ver["Master URL"] = ver.apply(master_url, axis=1)
     ver["Store Name"] = [clean_name(n, u) for n, u in zip(ver.store_name, ver["Master URL"])]
     ver["Registrable Root Domain"] = [(identity(u) or {}).get("root_domain") or r for u, r in zip(ver.final_url.fillna(ver.url), ver.root_domain)]
     ver = ver.drop_duplicates("Master URL").sort_values(["Store Name"], key=lambda s: s.str.lower())
     master = ver[["Store Name", "Master URL"]].rename(columns={"Master URL": "Root Domain / Storefront URL"})
+    master["Verification Status"] = ver.status.map(STATUS_LABEL).values
 
     def notes(r):
         n = []
@@ -219,7 +225,7 @@ def main():
                 width = min(max(len(str(c.value or "")) for c in list(col)[:300]) + 2, 70)
                 ws.column_dimensions[col[0].column_letter].width = max(width, 12)
     master.to_csv(CSV, index=False)
-    print(f"exported: verified={len(master)} (primary={int((ver.status == 'verified').sum())}, secondary={int((ver.status == 'verified_secondary_evidence').sum())}) "
+    print(f"exported: verified={len(master)} (primary={int((ver.status == 'verified').sum())}, secondary={int((ver.status == 'verified_secondary_evidence').sum())}, manual_major={int((ver.status == 'verified_manual_major').sum())}) "
           f"duplicates_merged={ndup} unverified_rows={len(unverified)} -> {XLSX}")
     return len(master)
 
@@ -278,6 +284,7 @@ def coverage(con, ver, v, ndup, ref_df):
     totals.loc[len(totals)] = ["verified unique stores in Master Directory", len(ver)]
     totals.loc[len(totals)] = ["  of which live-verified (primary)", int((ver.status == "verified").sum())]
     totals.loc[len(totals)] = ["  of which verified_secondary_evidence", int((ver.status == "verified_secondary_evidence").sum())]
+    totals.loc[len(totals)] = ["  of which manually accepted known major retailers (verified_manual_major)", int((ver.status == "verified_manual_major").sum())]
     totals.loc[len(totals)] = ["duplicates merged (aliases/redirects/same store id)", ndup]
     out.append(("Summary counts", totals))
     out.extend(shard_tables(con, ver))
@@ -312,7 +319,7 @@ def coverage(con, ver, v, ndup, ref_df):
         pass
     out.append(("Common Crawl CDX harvesting", q("SELECT substr(job, instr(job,'|')+1, instr(substr(job, instr(job,'|')+1),'|')-1) AS Pattern, count(*) AS 'Index pages fetched', sum(n) AS 'Keys seen', sum(n_new) AS 'New candidates' FROM jobs WHERE kind='cc' AND status='done' GROUP BY 1")))
     out.append(("Worker utilization (parallel code workers; no AI subagents were available/spawned)", q("SELECT name AS Worker, kind AS Kind, concurrency AS Concurrency, started AS Started, heartbeat AS 'Last heartbeat', info AS 'Last stats' FROM workers")))
-    out.append(("Top rejection / unverified reasons", q("SELECT status AS Status, substr(reason,1,70) AS Reason, count(*) AS Count FROM verifications WHERE status NOT IN ('verified','verified_secondary_evidence') GROUP BY 1,2 ORDER BY 3 DESC LIMIT 50")))
+    out.append(("Top rejection / unverified reasons", q("SELECT status AS Status, substr(reason,1,70) AS Reason, count(*) AS Count FROM verifications WHERE status NOT IN ('verified','verified_secondary_evidence','verified_manual_major') GROUP BY 1,2 ORDER BY 3 DESC LIMIT 50")))
     if len(ref_df):
         rc = ref_df.groupby(["tier", ref_df.status.str.split(":").str[0].str.split(" \\(").str[0]]).size().reset_index(name="Refs")
         rc.columns = ["Tier", "Coverage status", "Refs"]

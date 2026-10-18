@@ -144,18 +144,21 @@ def resolve_status(con, key):
 
 def audit(con):
     out = []
+    manual_rej = {}
+    if con.execute("SELECT 1 FROM sqlite_master WHERE name='major_decisions'").fetchone():
+        manual_rej = {k: r for k, r in con.execute("SELECT key, reason FROM major_decisions WHERE decision='manual_reject'")}
     finals = {}
-    for k, fk, st in con.execute("SELECT key, final_key, status FROM verifications WHERE status IN ('verified','verified_secondary_evidence') AND duplicate_of IS NULL"):
+    for k, fk, st in con.execute("SELECT key, final_key, status FROM verifications WHERE status IN ('verified','verified_secondary_evidence','verified_manual_major') AND duplicate_of IS NULL"):
         if fk:
             finals.setdefault(fk, k)
     for ref_id, name, tier, cat, src, url, key, root, rank, kind, note in con.execute(
             "SELECT ref_id,name,tier,category,sources,url,key,root_domain,tranco_rank,kind,note FROM reference_stores"):
         st, furl, reason, ev, ts = resolve_status(con, key)
-        if st not in ("verified", "verified_secondary_evidence") and key in finals:
+        if st not in ("verified", "verified_secondary_evidence", "verified_manual_major") and key in finals:
             st, furl, reason, ev, ts = resolve_status(con, finals[key])
-        if st not in ("verified", "verified_secondary_evidence"):
+        if st not in ("verified", "verified_secondary_evidence", "verified_manual_major"):
             # another candidate on the same root domain (e.g. brand.com|usa) may be the verified US storefront
-            alt = con.execute("""SELECT v.key FROM verifications v JOIN candidates c USING(key) WHERE c.root_domain=? AND v.status IN ('verified','verified_secondary_evidence')
+            alt = con.execute("""SELECT v.key FROM verifications v JOIN candidates c USING(key) WHERE c.root_domain=? AND v.status IN ('verified','verified_secondary_evidence','verified_manual_major')
                                  AND v.duplicate_of IS NULL LIMIT 1""", (root,)).fetchone()
             if alt and root not in ("myshopify.com",):
                 st, furl, reason, ev, ts = resolve_status(con, alt[0])
@@ -163,7 +166,11 @@ def audit(con):
             status = "in_directory (primary)"
         elif st == "verified_secondary_evidence":
             status = "in_directory (secondary evidence)"
-        elif key.split("|")[0] in NOT_A_STORE and st not in ("verified", "verified_secondary_evidence"):
+        elif st == "verified_manual_major":
+            status = "in_directory (manually accepted major retailer)"
+        elif key in manual_rej:
+            status = "excluded: " + manual_rej[key]
+        elif key.split("|")[0] in NOT_A_STORE and st not in ("verified", "verified_secondary_evidence", "verified_manual_major"):
             status = "excluded: " + NOT_A_STORE[key.split("|")[0]]
         elif key.split("|")[0] in NO_ONLINE_STORE:
             status = "excluded: no online ordering (confirmed: " + NO_ONLINE_STORE[key.split("|")[0]] + ")"
