@@ -14,7 +14,7 @@ ACCEPT = [
     dict(key="lifestylestores.com|ae", name="Lifestyle", category="Fashion & Apparel", url="https://www.lifestyleshops.com/ae/",
          blocked="HTTP 403 bot wall on the live storefront and no recent archive capture",
          evidence="Landmark Group's Lifestyle department-store online shop for the UAE (/ae/); sister Landmark apps Max Fashion, Emax, Splash and Centrepoint listed in the UAE App Store (updated 2026-10-02..05); no dedicated Lifestyle app or recent archive proof found, so this acceptance rests on known-brand status",
-         evidence_url="https://apps.apple.com/ae/app/centrepoint-online-shopping/id1235099347"),
+         evidence_url="https://apps.apple.com/ae/app/centrepoint-online-shopping/id1161310479"),
     dict(key="ajmalperfume.com", name="Ajmal Perfumes", category="Perfumes & Oud", url="https://www.ajmalperfume.com/",
          blocked="HTTP 403 bot wall on the live storefront; Wayback captures date from 2022 (outside the 12-month window)",
          evidence="UAE App Store Shopping app 'Ajmal Perfume Online(Official)' by Ajmal International Trading Co LLC updated 2026-10-15; Wayback capture of ajmalperfume.com 2022-05-22",
