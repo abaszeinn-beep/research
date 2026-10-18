@@ -64,7 +64,7 @@ for key,r in U.items():
     d=db.get(key); cat=(d[3] if d else '') or ''
     name=nm(key,r,d)
     ok,why,ns,nw=classify(r,cat,name)
-    ok2=ok and cat not in ('Perfumes & Oud','Beauty & Cosmetics','Mobiles & Accessories','Pharmacy & Wellness') and ns>=4 and re.search(r'abaya|clothing|apparel|fashion|dress|wear|boutique|lingerie|ملابس|عباي|أزياء|ازياء|فساتين',(r.get('title','')+' '+r.get('desc','')+' '+name),re.I)
+    ok2=ok and cat not in ('Perfumes & Oud','Beauty & Cosmetics','Mobiles & Accessories','Pharmacy & Wellness') and ns>=3
     ecom=r.get('cart') or r.get('nprod',0)>0 or r.get('ncat',0)>0
     uae=host.endswith('.ae') or r.get('aed') or r.get('p971')
     strong=host.endswith('.ae') or (r.get('aed') and r.get('p971'))
@@ -73,14 +73,6 @@ for key,r in U.items():
         add(name=name,site=site,type='Has clothing section' if cat and not cat.startswith('Fashion') else 'Fashion-only',gender=gender(r,cat),platform=r.get('plat') or (d[2] if d else '') or '',tier=tier(key,name,r),status='Live-checked: clothing + cart + UAE signal (not in verified directory)',ev=r.get('ev') or site,signal=f"nav/collections; terms={','.join(list(r.get('terms',{}))[:6])}; cart={r.get('cart')} aed={r.get('aed')} p971={r.get('p971')}",source='Unverified candidates (promoted)',key=key,cat=cat)
     elif ok2:
         excl.append(dict(name=name,site=r.get('final') or r['url'],reason='Clothing signals but insufficient e-commerce/UAE evidence',cat=cat,key=key,source='Unverified candidates'))
-OV={'adidas.ae':('Fashion-only','Unisex'),'ounass.ae':('Fashion-only','Unisex'),'ae.hm.com':('Fashion-only','Unisex'),'zara.com|ae':('Fashion-only','Unisex'),'carrefouruae.com':('Has clothing section','Unisex'),'victoriassecret.ae':('Fashion-only','Women'),'michaelkors.ae':('Fashion-only','Unisex'),'hugoboss.ae':('Fashion-only','Unisex'),'aivi.com|ae':('Fashion-only','Unisex'),'bershka.com|ae':('Fashion-only','Unisex'),'ae.puma.com':('Fashion-only','Unisex'),'jashanmal.com':('Has clothing section','Unisex'),'maxfashion.com|ae':('Fashion-only','Unisex')}
-NAMES={'adidas.ae':'Adidas UAE','ae.hm.com':'H&M UAE','ae.puma.com':'PUMA UAE','aivi.com|ae':'6thStreet (AIVI)','bershka.com|ae':'Bershka UAE','carrefouruae.com':'Carrefour UAE','zara.com|ae':'Zara UAE','maxfashion.com|ae':'Max Fashion UAE','jashanmal.com':'Jashanmal','ounass.ae':'Ounass'}
-for x in list(excl):
-    if x['key'] in OV:
-        d=db[x['key']]; t,g=OV[x['key']]
-        stat={'verified':'Verified','verified_secondary_evidence':'Verified (secondary evidence)','verified_manual_major':'Known major retailer – manually accepted'}.get(d[4],d[4])
-        add(name=NAMES.get(x['key']) or nm(x['key'],V.get(x['key']),d),site=x['site'],type=t,gender=g,platform=d[2] or '',tier='Brand-Major',status=stat,ev=d[6] or x['site'],signal='known apparel retailer (live nav thin/bot-walled; classified from brand + directory)',source='Master Directory (major override)',key=x['key'],cat=x['cat'])
-        excl.remove(x)
 # majors
 have={urlparse(x['site']).netloc.replace('www.','') for x in rows}
 bases={re.sub(r'[^a-z]','',x['name'].lower().split(' uae')[0]) for x in rows}
@@ -90,10 +82,6 @@ for n,u,t,g,p in M:
     b=re.sub(r'[^a-z]','',n.lower().split(' uae')[0])
     if h in have or any(b in z for z in bases if len(b)>3): continue
     add(name=n,site=u,type=t,gender=g,platform=p,tier='Brand-Major',status='Known major retailer – manually accepted',ev=u,signal='Brand operates UAE storefront; site bot-walled / not live-verifiable from this environment',source='New discovery (franchise/brand lists)',key='major|'+h,cat='')
-for x in rows:
-    x['name']=re.sub(r'^Fashion: ','',x['name'])
-    if x['name'].startswith('Fashion: Massimo'): x['name']='Zara UAE'
-    if x['name'].startswith('Shop Online @ AIVI'): x['name']='6thStreet (AIVI)'
 # dedupe by site host+name
 seen=set();out=[]
 for x in rows:
