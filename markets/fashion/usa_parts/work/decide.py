@@ -9,7 +9,7 @@ df['fc']=df.cat.isin(FC)|df.refcat.fillna('').str.startswith('Fashion')
 WEAK={'tops','jackets','bras','shorts','coats','jerseys','jersey'}
 BADCATS=re.compile(r'Jewel|Shoes|Footwear|Bags|Eyewear|Electr|Computer|Book|Food|Grocery|Furniture|Home|Auto|Tools|Industrial|Pets|Religious|Music|Party|Gifts|Arts|Toys|Beauty|Mobile|Lighting|Health|Packaging|Firearms|Baby',re.I)
 MANUAL=json.load(open('/tmp/w/markets/fashion/usa_parts/work/manual.json')) if __import__('os').path.exists('/tmp/w/markets/fashion/usa_parts/work/manual.json') else {}
-APP=re.compile(r"cloth|apparel|fashion|wear|boutique|tee|shirt|thread|style|dress|closet|outfit|wardrobe|denim|jean|lingerie|swim|bikini|couture|garment|attire|hoodie|merch|gown|gear|collection|studio|label|atelier|vintage|mode|chic|glam|lux|trend|co\\.?$|supply|goods|shop|store|outfitters|market",re.I)
+APP=re.compile(r"cloth|apparel|fashion|wear|boutique|tee|shirt|thread|style|dress|closet|outfit|wardrobe|denim|jean|lingerie|swim|bikini|couture|garment|attire|hoodie|merch|gown|gear|collection|label|atelier|vintage|mode|chic|glam|lux|trend|co\\.?$|outfitters",re.I)
 NOTAPP=re.compile(r"restaurant|\bcandy\b|bullets|glassblow|railway|railroad|\bcafe\b|bakery|\bgrill\b|tavern|pizza|brewing|winery|distill|\bammo\b|bbq|steakhouse",re.I)
 def dom(u): return re.sub(r'^www\.','',urlparse(u).netloc.lower())
 def tier(r):
@@ -46,32 +46,32 @@ for r in df.itertuples():
             elif isinstance(r.tmatch,str) and r.tmatch: ok=True;status='Verified live (page title/meta)';ev=r.url;sig='title:'+r.tmatch
             else:
                 txt=name+' '+str(getattr(r,'title','') or '')+' '+d
-                if not NOTAPP.search(name): ok=True;status='Stored category only (live page has no parseable nav)'; ev=r.url;sig='stored category '+r.cat
+                if (APP.search(txt) or (tier(r)!='Small' or str(r.refcat).startswith('Fashion'))) and not NOTAPP.search(name): ok=True;status='Stored category only (live page has no parseable nav)'; ev=r.url;sig='stored category '+r.cat
                 else: ex('stored fashion category but no live/nav/name evidence');continue
         else:
             if kidonly: ex('kids-only signals');continue
             both=wom>0 and men>0
             bad=bool(BADCATS.search(r.cat)) or nonclo_name
             nameapp=bool(re.search(r'cloth|apparel|boutique|fashion|western wear|denim|lingerie|swimwear|\bwear\b|outfitters',name,re.I)) and not re.search(r'book|home|jewel|sweet|food|pool|hardware|furniture|baby|children|kids',name,re.I)
-            if nameapp and nclo>=1: good=True
+            if nameapp and len(core)>=1 and not re.search(r'Food|Book|Home|Pets|Religious|Industrial|Tools|Electr|Grocery|Furniture|Beauty|Arts',r.cat): good=True
             elif bad: good=len(core)>=3 and both
             else: good=len(core)>=3 or (len(core)>=2 and gen) or (bool(clo&{'clothing','apparel'}) and both and len(core)>=1)
             if good:
                 ok=True;status='Verified live (nav/sitemap clothing links)'
             else: ex('no adult clothing signal in live nav/sitemap');continue
-        wg='Women' if wom>0 else None; mg='Men' if men>0 else None
+        wg='Women' if wom>0 else None; mg='Men' if (men>=2 or (men>=1 and wom>0)) else None
         if r.cat=='Fashion - Women' or (r.refcat=='Fashion - Women'): wg='Women'
         if r.refcat=='Fashion - Men': mg='Men'
         if wg and mg: g='Unisex'
         elif wg: g='Women'
         elif mg: g='Men'
         else:
-            if re.search(r"\b(women|womens|ladies|woman|girl|lady|she)\b|boutique|dress",name,re.I): g='Women'
+            if re.search(r"\b(women|womens|ladies|woman|girl|lady|she)\b|boutique|dress|gown|lingerie",name,re.I): g='Women'
             elif re.search(r"\b(men|mens|man|guys)\b",name,re.I): g='Men'
             else: g='Unisex'
         inc('Fashion-only' if r.fc else 'Has clothing section',g,status,ev,sig)
     else:
-        if r.fc and not NAMENONCLO.search(name) and not NAMEBAD.search(name) and r.live.startswith('fail') and not NOTAPP.search(name):
+        if r.fc and not NAMENONCLO.search(name) and not NAMEBAD.search(name) and r.live.startswith('fail') and (APP.search(name+' '+d) or tier(r)!='Small' or str(r.refcat).startswith('Fashion')) and not NOTAPP.search(name):
             g='Women' if (r.cat=='Fashion - Women' or re.search(r"\b(women|womens|ladies|boutique|dress)\b",name,re.I)) else ('Men' if re.search(r"\b(men|mens)\b",name,re.I) else 'Unisex')
             inc('Fashion-only',g,'Stored category only (live check failed: %s)'%r.live,r.url,'stored category '+r.cat)
         else: ex('not fashion by stored category' if r.live=='notchecked' else 'live check failed/blocked; no fashion evidence')

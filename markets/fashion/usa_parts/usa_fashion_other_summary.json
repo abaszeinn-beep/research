@@ -1,39 +1,39 @@
 {
- "generated_utc": "2026-10-18T13:22:56.156683Z",
+ "generated_utc": "2026-10-18T13:23:54.764542Z",
  "non_shopify_rows_in_master": 10487,
  "rows_live_checked": 5967,
  "rows_not_live_checked_stored_category_not_fashion": 4520,
- "fashion_stores": 1571,
+ "fashion_stores": 1480,
  "by_type": {
-  "Fashion-only": 1325,
-  "Has clothing section": 246
+  "Fashion-only": 1237,
+  "Has clothing section": 243
  },
  "by_gender": {
-  "Unisex": 1247,
-  "Women": 258,
-  "Men": 66
+  "Unisex": 1182,
+  "Women": 264,
+  "Men": 34
  },
  "by_type_gender": {
-  "Fashion-only / Men": 59,
-  "Fashion-only / Unisex": 1025,
-  "Fashion-only / Women": 241,
-  "Has clothing section / Men": 7,
-  "Has clothing section / Unisex": 222,
-  "Has clothing section / Women": 17
+  "Fashion-only / Men": 29,
+  "Fashion-only / Unisex": 959,
+  "Fashion-only / Women": 249,
+  "Has clothing section / Men": 5,
+  "Has clothing section / Unisex": 223,
+  "Has clothing section / Women": 15
  },
  "by_platform": {
-  "square": 289,
-  "bigcartel": 224,
-  "custom/unknown": 152,
-  "wix": 134,
-  "woocommerce": 134,
-  "shift4shop": 119,
-  "ecwid": 118,
-  "bigcommerce": 109,
+  "square": 268,
+  "bigcartel": 217,
+  "custom/unknown": 149,
+  "woocommerce": 121,
+  "ecwid": 115,
+  "shift4shop": 113,
+  "bigcommerce": 108,
+  "wix": 105,
   "unknown": 73,
-  "salesforce-commerce": 72,
-  "magento": 52,
-  "squarespace": 33,
+  "salesforce-commerce": 70,
+  "magento": 50,
+  "squarespace": 31,
   "unknown (manual major)": 23,
   "sap-hybris": 8,
   "prestashop": 6,
@@ -44,40 +44,38 @@
   "zen-cart": 2,
   "lightspeed": 1,
   "commercetools": 1,
-  "oscommerce": 1,
   "miva": 1,
-  "nopcommerce": 1,
   "odoo": 1,
   "zencart": 1
  },
  "by_size_tier": {
-  "Small": 1366,
+  "Small": 1275,
   "Medium": 117,
   "Large": 49,
   "Brand-Major": 39
  },
  "by_verification_status": {
-  "Verified live (nav/sitemap clothing links)": 1135,
+  "Verified live (nav/sitemap clothing links)": 1127,
   "Verified live (weak nav signal; stored fashion category)": 158,
-  "Known major \u2013 stored/known category (bot-walled or JS site; no bypass)": 126,
-  "Stored category only (live page has no parseable nav)": 90,
+  "Known major \u2013 stored/known category (bot-walled or JS site; no bypass)": 134,
   "Verified live (page title/meta)": 27,
-  "Stored category only (live check failed: fail:403)": 16,
-  "Stored category only (live check failed: fail:ConnectTimeout)": 14,
+  "Stored category only (live page has no parseable nav)": 17,
+  "Stored category only (live check failed: fail:403)": 7,
+  "Stored category only (live check failed: fail:ConnectTimeout)": 7,
   "Stored category only (live check failed: fail:RemoteProtocolError)": 2,
-  "Stored category only (live check failed: fail:ConnectError)": 2,
-  "Stored category only (live check failed: fail:502)": 1
+  "Stored category only (live check failed: fail:ConnectError)": 1
  },
  "excluded_by_reason": {
-  "no adult clothing signal in live nav/sitemap": 3823,
-  "live check failed/blocked; no fashion evidence": 336,
+  "no adult clothing signal in live nav/sitemap": 3827,
+  "live check failed/blocked; no fashion evidence": 352,
   "kids-only signals": 217,
+  "stored fashion category but no live/nav/name evidence": 71,
   "non-fashion business (restaurant/food/etc.) with incidental merch": 14,
   "manual: kids-only / accessories-only / marketplace": 4,
   "manual: marketplace-style / not primarily apparel": 1,
   "name indicates non-clothing (shoes/jewelry/bags/B2B)": 1
  },
- "excluded_listed_rows": 4396,
+ "excluded_listed_rows": 4487,
  "notable_majors": [
   "Academy Sports + Outdoors",
   "adidas.com",
@@ -118,5 +116,24 @@
   "Victoria's Secret",
   "Welcome to Costco Wholesale",
   "Zara"
- ]
+ ],
+ "qa": {
+  "sample_size": 100,
+  "method": "random sample of output rows (seed 5, second pass after rule fixes) manually judged from name/URL/signal; earlier passes (seeds 7,11,21) found 8-12% error and drove rule fixes: weak single-word nav matches (dress/tops/jackets), kids-only over-trigger, gender-from-sitemap-slugs, stored-category-only rows tightened",
+  "precision_errors_found": 5,
+  "precision_error_rate": 0.05,
+  "error_examples": [
+   "Liquid Help Energy Drink",
+   "Emergency Breathing Systems",
+   "Sirdar (yarn)",
+   "Richardson Hats (caps only; borderline)",
+   "Creative Engraving Plus (borderline)"
+  ],
+  "recall_notes": "Rows whose stored category is not fashion/sports/general/blank and whose name has no apparel keyword (4,520) were not live-checked. Bot-walled majors classified from known category (manual.json), no bypass."
+ },
+ "notes": {
+  "master_non_shopify_definition": "platform != shopify from verifications/shards join (10,487 rows of 28,457 master); task brief estimated ~14.5k",
+  "live_check": "single polite homepage GET (+WooCommerce store API categories, +sitemap.xml fallback for JS homepages); 1,477 transient failures retried at lower concurrency; no bot-wall/CAPTCHA bypass",
+  "raw_live_data": "markets/fashion/usa_parts/work/live.jsonl.gz, live_retry.jsonl.gz, sm.jsonl.gz"
+ }
 }
