@@ -1,34 +1,50 @@
 {
- "total_added": 204,
+ "total_added": 115,
  "by_type": {
-  "Fashion-only": 195,
-  "Has clothing section": 9
+  "Fashion-only": 113,
+  "Has clothing section": 2
  },
  "by_gender": {
-  "Unisex": 97,
-  "Women": 97,
-  "Men": 10
+  "Unisex": 65,
+  "Women": 37,
+  "Men": 13
  },
  "by_size_tier": {
   "Brand-Major": 1,
-  "Medium": 24,
-  "Small": 178,
-  "Large": 1
+  "Medium": 15,
+  "Small": 97,
+  "Large": 2
  },
  "by_source": {
-  "Brand portfolios / curated apparel brands": 9,
-  "Tranco fashion-keyword domains": 155,
-  "Unverified-candidate re-verification": 25,
-  "Wikidata clothing brands/retailers": 15
+  "Brand portfolios / curated apparel brands": 13,
+  "Tranco fashion-keyword domains": 77,
+  "Wikidata clothing brands/retailers": 8,
+  "Unverified-candidate re-verification": 17
  },
  "by_verification": {
-  "Verified": 204
+  "Verified": 109,
+  "Verified (secondary evidence)": 4,
+  "Known major retailer \u2013 manually accepted": 2
  },
  "excluded_reasons": {
   "already_in_master": 2617,
-  "no_apparel_signal": 84,
-  "weak_apparel": 36,
-  "non_apparel_focus": 2,
-  "kids": 1
+  "no_apparel_signal": 68,
+  "weak_apparel": 29,
+  "b2b_custom_or_nonstore": 96,
+  "kids": 19,
+  "non_apparel_focus": 5
+ },
+ "channels": {
+  "unverified_candidate_retry": "265 transient-failure fashion-looking candidates re-verified (25 verified, new to master)",
+  "wikidata": "336 US clothing brands/retailers pulled; 120 new to DB, 119 already verified",
+  "brand_portfolios": "579 curated public/private apparel portfolio domains; 247 new to DB, 238 already in master",
+  "tranco_fashion_keyword": "1472 new domains (rank<=1M, fashion keywords) screened; ~160 verified",
+  "app_store": "not completed (iTunes DNS failures under load; secondary evidence pace too slow)",
+  "common_crawl_paths": "not run (CDX has no path-wildcard host search)"
+ },
+ "qa": {
+  "sample": 80,
+  "error_rate_first_pass": "~15-17% (B2B/wholesale/custom print, kids, gender)",
+  "error_rate_after_rule_fixes": "~9-11% on re-sample (mostly gender heuristics)"
  }
 }

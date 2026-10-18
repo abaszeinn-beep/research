@@ -30,6 +30,12 @@ UNI = re.compile(r"\b(unisex|gender[- ]neutral|all[- ]gender|for everyone|for al
 WOM_ONLY_WORDS = re.compile(r"\b(dresses|lingerie|bras?|skirts?|blouses?|bikinis?|maternity|boutique)\b", re.I)
 
 
+BAD = re.compile(r"wholesale|bulk (?:order|discount|pric)|blank (?:t-?shirts?|apparel|tees|garments)|blank(?:shirts)|design your own|custom (?:t-?shirts?|team|uniforms?|sports)|"
+                 r"png\b|vectors?\b|svg\b|run your boutique|manufacturer|screen print|embroider(?:y|ing) services|uniforms? (?:and|&) scrubs? (?:offers|stores?)|"
+                 r"private label|dropship|sewing|quilting|custom shirts|personalized (?:shirts|tees)|printed to order|print on demand|vancouver|toronto, canada|canadian dollars|\bCAD\b", re.I)
+BAD_NAME = re.compile(r"accessories|store\.international|eletees|uniformspec|wholesale|blank|bulk|boutiquesimplified|dressforms|militaryuniform|print\b|design", re.I)
+
+
 def classify(name: str, category: str, cat_text: str, url: str = ""):
     t = cat_text or ""
     head = " ".join((t.split("\x1f") + [""] * 3)[:3]) + " " + (name or "")
@@ -40,9 +46,16 @@ def classify(name: str, category: str, cat_text: str, url: str = ""):
     n_head = len(NONAPP.findall(head))
     cat_fash = bool(re.search(r"Apparel|Fashion", category or ""))
     kids = len(KIDS.findall(head))
-    w = len(re.findall(r"women'?s?|womens|ladies|female|her\b|dresses|lingerie|bikini|maternity|skirt", body, re.I))
-    m = len(re.findall(r"\bmen'?s?\b|\bmens\b|menswear|\bguys?\b|\bmale\b|\bhim\b", body, re.I))
+    w = len(re.findall(r"women'?s?|womens|ladies|female|womenswear|for her\b", body, re.I))
+    m = len(re.findall(r"(?<!wo)\bmen'?s?\b|\bmens\b|menswear|\bguys?\b|\bmale\b|for him\b|gentlem[ae]n", body, re.I))
+    wsoft = len(re.findall(r"boutique|dresses|lingerie|bikini|maternity|skirts?|gowns?|bridal|prom\b|blouses?|bras?\b", head, re.I))
     uni = bool(UNI.search(body))
+    if BAD.search(body[:4000]) or BAD_NAME.search((name or "") + " " + url):
+        return None, None, "b2b_custom_or_nonstore"
+    if len(KIDS.findall(body[:3000])) >= 3 and not re.search(r"\bwomen|\bmen'?s\b|adult", head, re.I):
+        return None, None, "kids"
+    if len(re.findall(r"\b(shoes|sneakers|footwear|jewelry|handbags)\b", head, re.I)) >= 2 and a_head < 2:
+        return None, None, "non_apparel_focus"
     if kids >= 2 and a_head < 3 and not re.search(r"women|men\b|adult", head, re.I):
         return None, None, "kids"
     if a < 3 and not cat_fash:
@@ -57,13 +70,25 @@ def classify(name: str, category: str, cat_text: str, url: str = ""):
         typ = "Has clothing section"
     else:
         return None, None, "weak_apparel"
-    if w >= 2 * m + 1 and w >= 2:
+    if (w >= 1 and w >= 3 * m and not re.search(r"workwear|reflective|uniform", head, re.I)) or (w == 0 and m == 0 and wsoft >= 1):
         g = "Women"
-    elif m >= 2 * w + 1 and m >= 2:
+    elif m >= 1 and m >= 3 * w and wsoft == 0:
         g = "Men"
     else:
         g = "Unisex"
     return typ, g, "ok"
+
+
+MANUAL_META = {  # rows verified by secondary evidence / known major without stored page text: (type, gender)
+    "2xist.com": ("Fashion-only", "Men"), "chubbies.com": ("Fashion-only", "Men"), "anatomie.com": ("Fashion-only", "Women"),
+    "cactusplantfleamarket.com": ("Fashion-only", "Unisex"), "ae.com": ("Fashion-only", "Unisex"),
+}
+MANUAL_MAJOR = [  # name, site, type, gender, tier, evidence (Wayback snapshot from the availability API)
+    ("Mountain Hardwear", "https://www.mountainhardwear.com/", "Fashion-only", "Unisex", "Large",
+     "http://web.archive.org/web/20260115101847/https://www.mountainhardwear.com/"),
+    ("Cato Fashions", "https://catofashions.com/", "Fashion-only", "Women", "Large",
+     "http://web.archive.org/web/20260809073830/https://www.catofashions.com/"),
+]
 
 
 def nb(u):
@@ -103,6 +128,8 @@ def main():
             rej["already_in_master"] += 1
             continue
         typ, g, why = classify(name, cat, ct or "", site)
+        if base in MANUAL_META:
+            typ, g = MANUAL_META[base]
         if not typ:
             rej[why] += 1
             continue
@@ -122,6 +149,9 @@ def main():
                    "fashion_tranco_kw": "Tranco fashion-keyword domains", "fashion_appstore": "US App Store fashion apps"}.get(src, "Unverified-candidate re-verification")
         out.append([name or base, site + "/", typ, g, plat or "", tier, vs, ev or site, srcname])
         stats[(typ, g)] += 1
+    for n, site, typ, g, tier, ev in MANUAL_MAJOR:
+        if nb(site) not in master and nb(site) not in {nb(r[1]) for r in out}:
+            out.append([n, site, typ, g, "", tier, "Known major retailer – manually accepted", ev, "Brand portfolios / curated apparel brands"])
     os.makedirs(a.out, exist_ok=True)
     out.sort(key=lambda r: (r[5] != "Brand-Major", r[0].lower()))
     with open(os.path.join(a.out, "usa_fashion_discovery.csv"), "w", newline="", encoding="utf-8") as f:
