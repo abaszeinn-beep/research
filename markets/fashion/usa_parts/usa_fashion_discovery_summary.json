@@ -1,0 +1,34 @@
+{
+ "total_added": 204,
+ "by_type": {
+  "Fashion-only": 195,
+  "Has clothing section": 9
+ },
+ "by_gender": {
+  "Unisex": 97,
+  "Women": 97,
+  "Men": 10
+ },
+ "by_size_tier": {
+  "Brand-Major": 1,
+  "Medium": 24,
+  "Small": 178,
+  "Large": 1
+ },
+ "by_source": {
+  "Brand portfolios / curated apparel brands": 9,
+  "Tranco fashion-keyword domains": 155,
+  "Unverified-candidate re-verification": 25,
+  "Wikidata clothing brands/retailers": 15
+ },
+ "by_verification": {
+  "Verified": 204
+ },
+ "excluded_reasons": {
+  "already_in_master": 2617,
+  "no_apparel_signal": 84,
+  "weak_apparel": 36,
+  "non_apparel_focus": 2,
+  "kids": 1
+ }
+}

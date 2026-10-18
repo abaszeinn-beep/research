@@ -57,11 +57,9 @@ def classify(name: str, category: str, cat_text: str, url: str = ""):
         typ = "Has clothing section"
     else:
         return None, None, "weak_apparel"
-    if (w >= 2 and m >= 2 and 0.4 <= w / max(m, 1) <= 2.5) or uni:
-        g = "Unisex" if uni and abs(w - m) < max(w, m) * 0.5 else "Women & Men"
-    elif w > m * 1.5 + 1 or (w >= 2 and m == 0):
+    if w >= 2 * m + 1 and w >= 2:
         g = "Women"
-    elif m > w * 1.5 + 1 or (m >= 2 and w == 0):
+    elif m >= 2 * w + 1 and m >= 2:
         g = "Men"
     else:
         g = "Unisex"
@@ -98,6 +96,8 @@ def main():
     seen = set()
     for key, url, src, final, name, plat, cat, st, reason, ev, ct, meth, cst in rows:
         site = (final or url).rstrip("/")
+        if re.match(r"https?://[^/]+/.+", site) and not re.search(r"/(us|en[-_]us|usa|market-us)(/|$)", site, re.I):
+            site = re.match(r"https?://[^/]+", site).group(0)
         base = re.sub(r"^https?://(www\.)?", "", site.lower()).split("/")[0]
         if nb(site) in master or base in master or base in seen:
             rej["already_in_master"] += 1
