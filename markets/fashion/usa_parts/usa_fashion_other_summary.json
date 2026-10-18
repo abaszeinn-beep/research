@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-18T13:23:54.764542Z",
+ "generated_utc": "2026-10-18T13:24:52.260128Z",
  "non_shopify_rows_in_master": 10487,
  "rows_live_checked": 5967,
  "rows_not_live_checked_stored_category_not_fashion": 4520,
@@ -49,10 +49,10 @@
   "zencart": 1
  },
  "by_size_tier": {
-  "Small": 1275,
-  "Medium": 117,
-  "Large": 49,
-  "Brand-Major": 39
+  "Small": 1264,
+  "Large": 106,
+  "Medium": 64,
+  "Brand-Major": 46
  },
  "by_verification_status": {
   "Verified live (nav/sitemap clothing links)": 1127,
@@ -86,16 +86,20 @@
   "BJ's Wholesale Club",
   "Cabela's",
   "Converse",
+  "Dick's Sporting Goods",
   "Dillard's",
   "Fanatics",
   "Finish Line",
   "Foot Locker",
+  "Gap Individual style for Women's, Men's, Baby & Kids' Clothing",
   "Gucci",
   "H&M",
   "Herm\u00e8s",
   "House of Burl",
   "JCPenney",
+  "Kohl's",
   "Lids",
+  "Lululemon US",
   "macys.com",
   "Madewell",
   "Meijer",
@@ -111,15 +115,18 @@
   "REI",
   "Saks Fifth Avenue",
   "Sam's Club",
+  "Target",
   "Tractor Supply",
+  "Under Armour",
   "Vans",
   "Victoria's Secret",
+  "Walmart.com",
   "Welcome to Costco Wholesale",
   "Zara"
  ],
  "qa": {
   "sample_size": 100,
-  "method": "random sample of output rows (seed 5, second pass after rule fixes) manually judged from name/URL/signal; earlier passes (seeds 7,11,21) found 8-12% error and drove rule fixes: weak single-word nav matches (dress/tops/jackets), kids-only over-trigger, gender-from-sitemap-slugs, stored-category-only rows tightened",
+  "method": "random sample of output rows (seed 5, final rules) manually judged from name/URL/signal; earlier passes (seeds 7,11,21) found 8-12% error and drove rule fixes (weak single-word nav matches, kids-only over-trigger, gender from sitemap slugs, stored-category-only rows tightened)",
   "precision_errors_found": 5,
   "precision_error_rate": 0.05,
   "error_examples": [
@@ -129,11 +136,11 @@
    "Richardson Hats (caps only; borderline)",
    "Creative Engraving Plus (borderline)"
   ],
-  "recall_notes": "Rows whose stored category is not fashion/sports/general/blank and whose name has no apparel keyword (4,520) were not live-checked. Bot-walled majors classified from known category (manual.json), no bypass."
+  "recall_notes": "4,520 rows with non-fashion stored category and no apparel keyword in name were not live-checked. Bot-walled majors classified from known category (work/manual.json); no bypass."
  },
  "notes": {
-  "master_non_shopify_definition": "platform != shopify from verifications/shards join (10,487 rows of 28,457 master); task brief estimated ~14.5k",
-  "live_check": "single polite homepage GET (+WooCommerce store API categories, +sitemap.xml fallback for JS homepages); 1,477 transient failures retried at lower concurrency; no bot-wall/CAPTCHA bypass",
-  "raw_live_data": "markets/fashion/usa_parts/work/live.jsonl.gz, live_retry.jsonl.gz, sm.jsonl.gz"
+  "master_non_shopify_definition": "platform != shopify (verifications/shards join): 10,487 of 28,457 master rows; brief estimated ~14.5k",
+  "live_check": "single polite homepage GET (+WooCommerce store API categories, sitemap.xml fallback for JS homepages); transient failures retried at lower concurrency; no bot-wall/CAPTCHA bypass",
+  "raw_live_data": "work/live.jsonl.gz, live_retry.jsonl.gz, sm.jsonl.gz"
  }
 }

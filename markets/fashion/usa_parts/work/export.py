@@ -3,6 +3,10 @@ O=pd.read_pickle('/tmp/O.pkl');E=pd.read_pickle('/tmp/E.pkl')
 P='/tmp/w/markets/fashion/usa_parts/'
 cols=['Store Name','Website','Type','Gender','Platform','Size Tier','Verification Status','Evidence URL','Source','Matched Signal']
 O=O.drop_duplicates('Website')
+big=O['Matched Signal'].fillna('').str.startswith('department/big-box')|O['Verification Status'].str.startswith('Known major')
+O.loc[big&(O['Size Tier'].isin(['Small','Medium'])),'Size Tier']='Large'
+bm=r'Walmart|Target$|Kohl|Lululemon|Gap Individual|Costco|Macy|Nordstrom|JCPenney|Nike|Dick|Zara|H&M|Victoria|Under Armour|adidas|Gucci|Burberry|Lids|Fanatics|Foot Locker|REI|Amazon'
+O.loc[O['Store Name'].str.contains(bm,regex=True)&big,'Size Tier']='Brand-Major'
 O['Store Name']=O['Store Name'].str.strip()
 O[cols].sort_values('Store Name',key=lambda s:s.str.lower()).to_csv(P+'usa_fashion_other.csv',index=False)
 E['Store Name']=E['Store Name'].astype(str)
