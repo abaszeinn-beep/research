@@ -1,0 +1,393 @@
+centrepointstores.com|Centrepoint Kuwait (Landmark)||http403
+3roodq8.com|3R Store|Gaming|ok
+mashatel.me|Mashatel|Agriculture & Gardening|ok
+eureka.com.kw|Eureka Electronics|Computers & Electronics|ok
+hypermax.com.jo|hypermax|General / Unclassified|ok
+homecentre.com|Home Centre Kuwait (Landmark)||http403
+kw.abdulsamadalqurashi.com|KW|Perfumes & Oud|ok
+jomla.ae|Jomla.ae|Wholesale & B2B|ok
+almutawaph.com.kw|Al Mutawa Ph|Pharmacy & Wellness|ok
+thahab.com|THAHAB KW|Bags & Luggage|http429
+kash5astore.com|Kash5astore|Sports, Fitness & Outdoor|ok
+yaboow.com|أسواق يابو - الكويت|Kitchenware & Tableware|ok
+novastorekw.com|Nova Store|Mobiles & Accessories|ok
+digits.com.kw|digits|Mobiles & Accessories|http429
+wibi.com.kw|WIBI (Want IT. Buy IT.)|Computers & Electronics|http429
+sinbadsupermarket.com|Sinbad Supermarket|Grocery & Food|http429
+pinoyhyper.com|Pinoy Hyper Kuwait|Mobiles & Accessories|http429
+stlm.com|Stlm|Grocery & Food|ok
+alnasser.net|Al Nasser|Fashion & Apparel|http429
+future.com.kw|Future Store|Mobiles & Accessories|http429
+ontime.com|ONTIME | Kuwait Official Store|Jewelry & Watches|http429
+tamm-store-kuwait.myshopify.com|Tamm Store Kuwait|General / Unclassified|http429
+safathome.com|Safat Home Alghanim|Furniture|ok
+mobax.com.kw|Mobax Kuwait|Mobiles & Accessories|ok
+ax.com.kw|AX Store|Gaming|ok
+healthhousekw.com|Health House|Pharmacy & Wellness|ok
+mycolors.com|MY COLORS|Beauty & Cosmetics|ok
+lojastoregt.com|kw|لوجا ستور للعطور|Perfumes & Oud|none
+bashrat.com|بشرات.كوم|Beauty & Cosmetics|ok
+jamalik-kw.com|Jamalik|Beauty & Cosmetics|ok
+blink.com.kw|Blink Kuwait|Mobiles & Accessories|fetch
+zue.com.kw|Zue For Pet Supplies Co.|Pets|http429
+kuwaitlivestock.com|Kuwait Livestock|Wholesale & B2B|ok
+aldurco.com|Aldur Almanthoor|Perfumes & Oud|http429
+kuwaitoptical.com|Kuwait Optical|Healthcare & Medical Equipment|ok
+zbaidikw.shop|زبيدي اكسبرس|Pharmacy & Wellness|ok
+ahmadkakouli.com|Ahmad Kakouli|Bedding, Mattresses & Textiles|fetch
+ayashhome.com|Ayash Home|Bedding, Mattresses & Textiles|ok
+sumafruits.com|Sumafruits|Grocery & Food|ok
+ikea.com|kw|IKEA Kuwait|Furniture|none
+level-up.gg|Level Up|Gaming|http429
+myfusioncart.com|Fusion Cart Kuwait|Toys & Hobbies|ok
+drops.me|kw|Drops|Grocery & Food|none
+fkjewellers.com|FK Jewellers|Jewelry & Watches|http429
+zara.com|kw|Zara Kuwait||none
+time-keeper.com|Time Keeper|Jewelry & Watches|http429
+emarketkw.com|eMarket Kuwait: Discover Kuwai|Mobiles & Accessories|ok
+bazar-kw.com|بازار الكويت|Computers & Electronics|ok
+homecentre.com|kw|Home Centre Kuwait (Landmark)||none
+centrepointstores.com|kw|Centrepoint Kuwait (Landmark)||none
+chipsorders.com|kw|Chips|Computers & Electronics|none
+restofair.com.kw|Restofair Kuwait|Healthcare & Medical Equipment|http429
+mighzalalarab.com|Mighzal Alarab|Jewelry & Watches|ok
+damasjewellery.com|kw|مجوهرات داماس|Jewelry & Watches|none
+coach.com.kw|Coach|Fashion & Apparel|ok
+maje.com.kw|Maje KW|Fashion & Apparel|http429
+alsirhanshoes.com|Al Sirhan Shoes|Shoes|ok
+mejuri.com.kw|Mejuri Kuwait|Jewelry & Watches|http429
+xcite.com|X-cite (Alghanim Electronics)|Electronics & Appliances|ok
+faces.com|kw|Faces|Beauty & Cosmetics|none
+cullinankw.com|كولينان للمجوهرات|Jewelry & Watches|ok
+attarkuwait.com|عطار الكويت|Beauty & Cosmetics|ok
+boutiqaat.com|boutiqaat|Beauty & Cosmetics|ok
+splashfashions.com|kw|Splash Kuwait (Landmark)||none
+hassonkw.com|Home | متجر حسون بالكويت|Home Appliances|ok
+kw.gissah.com|kw|Perfumes & Oud|ok
+darsafaqat.com|kw|Dar Safaqat|Coffee, Tea & Dates|none
+vieirakw.com|Vieira Kuwait|Jewelry & Watches|fetch
+marksandspencerme.com|kw|ماركس وسبنسر الكويت|Fashion & Apparel|none
+sj-abaya.com|kw|Sj Abaya|Fashion - Abayas & Modest|none
+aldirakw.com|الديرة ستور|Sports, Fitness & Outdoor|ok
+origbrand.com|اورجنال براند الكويت|Perfumes & Oud|ok
+ulumarket.com|يولو ماركت|Sports, Fitness & Outdoor|ok
+arzaqgrocery.store|أرزاق|Grocery & Food|ok
+saifalarab.com|Saif Al Arab|Home Improvement & Hardware|ok
+toyscentrekw.com|Toys Centre الكويت|Toys & Hobbies|ok
+ooroodkw.com|عروض الكويت|Kitchenware & Tableware|fetch
+tigro.app|Tigro|Toys & Hobbies|ok
+waleedtoys.com|WaleedToys|Toys & Hobbies|ok
+collectionkuwait.com|مكتبة كولكشن الكويت|Packaging & Supplies|ok
+alshayaperfumes.com|Alshaya Perfumes|Perfumes & Oud|http429
+tryriders.com|رايدرز|Wholesale & B2B|ok
+vecasakw.com|Vecasa|Home Decor|ok
+alidealkw.com|علي ديل|Mobiles & Accessories|fetch
+aswaqkw.com|ASWAQKW|Mobiles & Accessories|http429
+chocobee.com|ChocoBee|Chocolates & Sweets|ok
+techhivekw.com|Tech Hive|Computers & Electronics|http429
+chocoboutiquekw.com|شوكليت بوتيك|Jewelry & Watches|ok
+smartpetkw.com|Smart Pet Kuwait|Pets|ok
+tahnah.com|محمصة طحنة|Coffee, Tea & Dates|ok
+rootsroastery.net|محمصة روتس | Roots Roastery|Coffee, Tea & Dates|ok
+beyondroaster.com|BEYOND ROASTERY®|Coffee, Tea & Dates|ok
+need-care.com|kw|NEEDCARE|Healthcare & Medical Equipment|none
+wardshopkw.com|ورد شوب|Flowers, Gifts & Party|ok
+toys4home.com|تويز فور هوم - الكويت|Toys & Hobbies|ok
+babyshopstores.com|kw|Babyshop Kuwait||none
+sniggles.com.kw|Sniggles|Baby & Maternity|http429
+zmzmkw.com|مكتبـة زمــزم الإسـلاميــة|Religious Products|ok
+jarir.com|kw|مكتبة جرير، ليست مجرد مكتبة|Books & Stationery|none
+segadty.com|kw|سجادتي|Home Decor|none
+kw.hm.com|H&M Kuwait||http403
+levelshoes.com|تسوقوا أحذية فاخرة وحقائب وإكس|Bags & Luggage|ok
+kw.boots.com|Boots Kuwait|Shoes|ok
+perfumeskuwait.com|PerfumesKuwait.com|Perfumes & Oud|ok
+knothome.com|kw|Knothome Marketplace|Home Decor|none
+sadaahome.com|Sada Home|Home Decor|http429
+barakastorekw.com|baraka store|Religious Products|http429
+ktagr.com|Kuwait Agriculture Company|Grocery & Food|ok
+sweetstore-kw.com|Sweet Store Kuwait|Chocolates & Sweets|ok
+shockkw.com|Shock.kw|Flowers, Gifts & Party|ok
+vantevis.com|Vantevis Medical Company|Healthcare & Medical Equipment|ok
+jawadalsaffar.com|صفّار|Sports, Fitness & Outdoor|ok
+prosportskw.com|Pro Sports|Sports, Fitness & Outdoor|http429
+tasawuk.com|Tasawuk|Home Improvement & Hardware|ok
+decathlon.com.kw|Decathlon Kuwait|Sports, Fitness & Outdoor|http429
+gymstorekw.com|Gym Store|Sports, Fitness & Outdoor|http429
+fannan-kw.com|فنان الكويت|Arts, Crafts & Handmade|ok
+wsfabaya.com|WSF Abaya | Elegant Abayas & M|Fashion - Abayas & Modest|fetch
+rivafashion.com|kw|Riva Fashion: Shop Women's Clo|Fashion & Apparel|none
+tobrew.shop|to brew|Coffee, Tea & Dates|http429
+shotkw.com|شوت كويت | SHOTKW|Coffee, Tea & Dates|http429
+elixirkw.com|إلكسير|Perfumes & Oud|ok
+stardustperfume.com|Stardust Perfume Trading|Perfumes & Oud|fetch
+ajmal.com|Ajmal Perfumes|Perfumes & Oud|ok
+bouticare.com|kw|Bouticare|Beauty & Cosmetics|none
+huftkuwait.com|huft Kuwait|Pets|http429
+qadhakuwait.com|qadha kuwait|Agriculture & Gardening|http429
+alqamarshop.com|Alqamarshop|Computers & Electronics|http429
+maktabaexpresskw.com|مكتبة اكسبريس الكويت|Books & Stationery|http429
+shadow.com.kw|Shadow KW|Fashion - Abayas & Modest|fetch
+chickuwait.com|CHIC Kuwait Luxury Outlet|Fashion & Apparel|fetch
+maxfashion.com|kw|Max Fashion Kuwait (Landmark)||none
+qasrjamal.com|QasrJamal|Beauty & Cosmetics|http429
+khaleet.com|Khaleet|Perfumes & Oud|fetch
+kw.jashanmal.com|Jashanmal Kuwait|Home Appliances|fetch
+kw.getkuwa.com|Kuwa Supplements - Kuwait|Pharmacy & Wellness|ok
+khaleejinfotechkw.com|Khaleej Infotech|Computers & Electronics|http429
+tronyfi.com|Tronyfi|Computers & Electronics|fetch
+hardwarecornerkw.com|Hardware Corner|Home Improvement & Hardware|ok
+sunmoon-kw.com|SunMoon Hardware Tools & Car A|Home Improvement & Hardware|ok
+tooltechco.com|Tool Tech|Home Improvement & Hardware|ok
+goldenswordhardware.com|Golden Sword Hardware|Home Improvement & Hardware|ok
+kumail.shop|Kumail Electricals|Lighting & Electrical|ok
+noorshamsq8.com|Noor Al Shams Co.|Lighting & Electrical|fetch
+alsabahelectric.com|Al Sabah General Electric Stor|Lighting & Electrical|ok
+sporter.com|kw|Sporter||none
+alfaautoparts.com|alfaautoparts - Your Trusted P|Automotive Parts & Accessories|ok
+americaneagle.com.kw|American Eagle||fetch
+adhari.com.kw|عذاري|Cleaning & Household Supplies|ok
+b2b.com.kw|بي تو بي|Automotive Parts & Accessories|ok
+alrajhibank.com.kw|Al Rajhi Bank Kuwait|Mobiles & Accessories|ok
+bathandbodyworks.com.kw|Bath & Body Works Kuwait (Alsh||http403
+aquacool.com.kw|Aqua Cool Water|Pharmacy & Wellness|ok
+banquet.com.kw|Banquet Catering|Jewelry & Watches|ok
+ayoub.com.kw|Ayoub Mobile Store|Mobiles & Accessories|ok
+bindousr.com.kw|BIN DOUSR AUTOMOTIVE|Automotive Parts & Accessories|ok
+bissell.com.kw|BISSELL®|Home Decor|ok
+dyson.com.kw|Dyson Kuwait||http403
+creality.com.kw|Creality Kuwait|Computers & Electronics|ok
+deli.com.kw|deli|Books & Stationery|ok
+jamalihardware.com|Jamali Hardware|Home Improvement & Hardware|http429
+decaar.com.kw|DECAAR KUWAIT|Beauty & Cosmetics|ok
+festivity.com.kw|Festivity|Furniture|ok
+eagerpilots.com.kw|EAGER PILOTS|Chocolates & Sweets|ok
+falcon.com.kw|Falcon Store|Sports, Fitness & Outdoor|ok
+germainedecapuccini.com.kw|Germaine De Capuccini|Beauty & Cosmetics|fetch
+gofresh.com.kw|Go Fresh|Grocery & Food|ok
+ipack.com.kw|Packaging Solutions|Packaging & Supplies|ok
+kci.com.kw|Knowledge Is Power|Home Improvement & Hardware|ok
+makeupforever.com.kw|ميك اب فور ايفر الكويت|Beauty & Cosmetics|ok
+leewan.com.kw|Leewan Company|Building Materials|ok
+laderach.com.kw|Laderach Kuwait|Flowers, Gifts & Party|ok
+code.com.kw|Code|Sports, Fitness & Outdoor|ok
+arabica.com.kw|% ΔRΔBICΔ Malaysia|Kitchenware & Tableware|ok
+nasa.com.kw|Nasa International Computer|Gaming|ok
+sultan-center.com|The Sultan Center (TSC)|Supermarket & Grocery|ok
+lushkw.com|LUSH|Flowers, Gifts & Party|ok
+malabargoldanddiamonds.com|Malabar Gold & Diamonds|Jewelry & Watches|ok
+shopcurls.com|Shop Curls|Healthcare & Medical Equipment|fetch
+techgoodskw.com|Tech Goods|Mobiles & Accessories|fetch
+anytimekwt.com|Anytime & Anywhere|Beauty & Cosmetics|http429
+taw9eel.com|taw9eel|General / Unclassified|ok
+luluhypermarket.com|kw|Lulu Hypermarket Kuwait||none
+pharmalife-kw.com|Pharmalife-KW|Beauty & Cosmetics|http429
+livish.com|Livish|Beauty & Cosmetics|fetch
+orascomgo.com|Orascom Go|Grocery & Food|ok
+b2bfoods.com|B2B Foodstuff Kuwait|Wholesale & B2B|ok
+zayoom.com|Zayoom|Mobiles & Accessories|http429
+amberoud.com|Amber Oud|Perfumes & Oud|http429
+abreezabaya.com|Abreez|General / Unclassified|fetch
+qbuymart.com|QbuyMart|Grocery & Food|ok
+gant.com.kw|Gant Kuwait|Fashion & Apparel|http429
+toystorekw.com|توي ستور - toy store|Arts, Crafts & Handmade|ok
+colehaan.com.kw|Cole Haan|Shoes|http429
+kuwait.milanomena.com|MILANO KUWAIT|Shoes|http429
+kddc.com|KDD EShop|Grocery & Food|ok
+aquasan.com.kw|Aquasan|Mobiles & Accessories|ok
+hakimiautoparts.com|Hakimi Auto Parts|Automotive Parts & Accessories|ok
+aljeraiwistore.com|ALJERAIWI|Cleaning & Household Supplies|http429
+namshi.com|kw|Namshi Kuwait||none
+kcamp.com.kw|Kuwait Camp|Sports, Fitness & Outdoor|ok
+pilot.com.kw|Pilot|Books & Stationery|ok
+samsonite.com.kw|Samsonite||http403
+أبيار-الزراعيه.com|Abyar Agricultural - أبيار الز|Agriculture & Gardening|ok
+rafc.com.kw|Rahat Al Khaleej for wholesale|Home Appliances|ok
+sephora.com.kw|Sephora Kuwait||ok
+spirit.com.kw|أفضل صيدلية بالكويت|Pharmacy & Wellness|ok
+tcb.com.kw|The Coffee Boutique|Coffee, Tea & Dates|ok
+thecakeshop.com.kw|Cakeshop|Chocolates & Sweets|ok
+vortek.com.kw|Vortek Store|Mobiles & Accessories|ok
+flowerartkw.com|فلاور آرت الكويت|Flowers, Gifts & Party|ok
+yiacomedshop.com|Yiaco Med Shop|Healthcare & Medical Equipment|ok
+claires.com.kw|Claire's Kuwait (Alshaya)||http403
+tedbaker.kw|Ted Baker KW|General / Unclassified|http429
+blinktrends.com.kw|Blinktrends.com.kw|Fashion & Apparel|http429
+jarra.com.kw|Jarra|Kitchenware & Tableware|ok
+mnasati.com|MNASATI|Bags & Luggage|ok
+kw.ahmedalmaghribi.com|Buy Best Perfumes Online|Perfumes & Oud|ok
+behbehaniwatchworld.com.kw|Behbehani Watch World|Jewelry & Watches|ok
+kw.swissarabian.com|Swiss Arabian Kuwait|Perfumes & Oud|http429
+9round.com.kw|9Round Kickbox Fitness|Sports, Fitness & Outdoor|ok
+alshaheen.com.kw|Al Shaheen Nurseries Agricultu|Agriculture & Gardening|ok
+crocs.com.kw|Official Crocs Kuwait|Shoes|ok
+orp.com.kw|Off Road Performance|Sports, Fitness & Outdoor|ok
+sykespumps.com.kw|Sykes Pumps Kuwait|Industrial & Tools|ok
+potterybarn.com.kw|Pottery Barn Kuwait|Home & Furniture|http503
+tag.com.kw|TAG|General / Unclassified|ok
+sephora.me|kw|Sephora Kuwait||none
+joveychic.net|جوفي شيك الكويت متجر عطور للتس|Perfumes & Oud|ok
+westelm.com.kw|West Elm Kuwait|Home & Furniture|http503
+mpp.com.kw|Xena|Home Decor|ok
+campomarzio.com.kw|Campo Marzio GCC|Bags & Luggage|ok
+zgames.com.kw|ZGames Kuwait Online Store|Gaming|ok
+zoomzoon.store|zoomzoon|Personal Care & Grooming|ok
+dardreambookstore.com|دريم بوك|Books & Stationery|ok
+atlalbookstore.com|مكتبة أطلال|Books & Stationery|ok
+eldora-kw.com|ElDora|Chocolates & Sweets|http429
+alkadikw8.com|متجر الكادي الإلكتروني|Agriculture & Gardening|ok
+eitkw.com|Electronics in Touch Co.|Electronic Components|ok
+valido-kw.com|فاليدو للعطور|Perfumes & Oud|ok
+mashaer.store|مشاعر|Perfumes & Oud|ok
+bjbeauty.co|BJ BEAUTY|Beauty & Cosmetics|http429
+amalalkuwait.com|Amal Al Kuwait|Perfumes & Oud|http429
+almajedgallery.com|صالة الماجد للمفروشات|Bedding, Mattresses & Textiles|ok
+alamdar-auto.com|Alamdar Auto Spare Parts Co. K|Automotive Parts & Accessories|ok
+bluepassionkw.com|BluePassion|Grocery & Food|http429
+dhuha.com|Dhuha Bookstore|Books & Stationery|http429
+amtronics.co|Amtronics|Computers & Electronics|ok
+urbanrugs-kw.com|Urban Rugs Kuwait|Religious Products|http429
+ahlantools.com|Ahlan Tools|Sports, Fitness & Outdoor|http429
+frixhardware.com|frixhardware|Home Improvement & Hardware|http429
+yesstyle.com|YesStyle|Beauty & Cosmetics|http403
+abayaislamiya.com|Alabaya Alislamiya|Fashion - Abayas & Modest|http429
+kuwaitcorp.com|Kuwait Corporation|Industrial & Tools|ok
+desigual.com|kw|Desigual Kuwait|Pets|none
+barqroastery.com|محمصة برق|Coffee, Tea & Dates|ok
+babsaif.com|Bab Al Saif|Home Improvement & Hardware|http429
+modishkw.com|Modish||http429
+gulfstore.com|GulfStore.com|Mobiles & Accessories|http429
+allbirds.com.kw|Allbirds Kuwait|Shoes|http429
+evon.com.kw|EVON Group Company Kuwait|Building Materials|ok
+wholesalekw.com|Wholesale KW|Perfumes & Oud|http429
+dkhoun.com.sa|DKHOUN KUWAIT|Perfumes & Oud|http429
+thefinjansociety.com|TheFinjanSociety|Coffee, Tea & Dates|fetch
+kuwaitcavarat.com|KuwaitCavarat|Mobiles & Accessories|http429
+webstoreshops.com|Web Store|Mobiles & Accessories|http429
+poopourri.com.kw|Poo~Pourri|Pets|http429
+stationeryonlinekw.com|Stationery Online KW|Books & Stationery|http429
+spectrawidebook.store|Spectrawide Bookstore|Books & Stationery|fetch
+theenglishbookshop.com|The English Bookshop|Books & Stationery|http429
+cut.com.kw|CUT|Books & Stationery|http429
+althenayanhoney.com.kw|althenayanhoney|Grocery & Food|fetch
+giordano.com.kw|Giordano Online Shopping | Kuw|Fashion & Apparel|fetch
+modish.com.kw|Modish||http429
+thefaceshop.com.kw|The Face Shop|Beauty & Cosmetics|fetch
+sandro.com.kw|Sandro||http429
+triumph.com.kw|Triumph||fetch
+retrocity.com.kw|Retro City|Kitchenware & Tableware|http429
+wafi.com.kw|Wafi|Beauty & Cosmetics|http429
+speakcoffeeroaster.com|SpeakCoffeeRoaster|Coffee, Tea & Dates|http429
+kim-kimmy.kw|Kim & kimmy Kuwait|Baby & Maternity|http429
+horizoncoffeekw.com|HORIZON|Coffee, Tea & Dates|http429
+dior.com.kw|Dior Beauty Kuwait|Perfumes & Oud|http429
+mchose.com.kw|Mchose kuwait|Home Decor|http429
+naos.com.kw|Naos Care Kuwait|Beauty & Cosmetics|fetch
+beautyworld.com.kw|Beauty World|Beauty & Cosmetics|http429
+samedelman.com.kw|Sam Edelman Kuwait|Shoes|http429
+mf-food.com.kw|MF Food|Furniture|http429
+kiabi.kw|Kiabi Kuwait|Fashion & Apparel|http429
+tashkeeel.com|Tashkeeel Kuwait|Mobiles & Accessories|fetch
+engage.com.kw|Engage|Mobiles & Accessories|http429
+be3ah.com|Be3ah|Home Appliances|fetch
+specialabayakw.com|specialabaya|Fashion - Abayas & Modest|http429
+alfakhri.net|AlFakhri Sew Kuwait|Arts, Crafts & Handmade|http429
+fhkuwait.com|شركة فراغرانس هاوس للعطور|Perfumes & Oud|http429
+footlocker.com.kw|Foot Locker Kuwait|Fashion - Sportswear & Streetwear|ok
+abyat.com|kw|Abyat|Home & Furniture|none
+mothercare.com.kw|Mothercare Kuwait|Baby & Maternity|ok
+nextdirect.com|kw|Next|Fashion & Apparel|none
+ooredoo.com.kw|Ooredoo Kuwait Online Store|Telecom Devices & Electronics|ok
+boutiqaat.com|kw|boutiqaat|Beauty & Cosmetics|none
+magrabi.com|kw|MAGRABi Kuwait|Healthcare & Medical Equipment|none
+mumzworld.com|kw|Mumzworld|Baby & Maternity|none
+gait.com.kw|Gait|Mobiles & Accessories|ok
+charleskeith.com|kw|CHARLES & KEITH Kuwait|General / Unclassified|none
+eyewa.com|kw|Eyewa|General / Unclassified|none
+chopard.com|kw|Chopard®|Jewelry & Watches|none
+en-kw.crocsgulf.com|Official Crocs Kuwait|Shoes|ok
+aivi.com|kw|Shop Online @ AIVI.com for Men|Fashion - Kids|none
+belovedone.com|kw|BelovedOne|Flowers, Gifts & Party|none
+chanel.com|kw|Chanel||none
+kw.loccitane.com|L’Occitane Kuwait|Beauty & Cosmetics|ok
+limiteeperfumes.com|kw|Limitee Perfumes|Flowers, Gifts & Party|none
+etedalalhmaidi.com|kw|بوتيك إيتيدال الحميدي|Flowers, Gifts & Party|none
+athleta.com.kw|account|General / Unclassified|http406
+floward.com|kw|Floward||none
+best.com.kw|Best Al-Yousifi|General / Unclassified|ok
+hugoboss.com|kw|HUGO BOSS|Fashion & Apparel|none
+prada.com|kw|Prada|Bags & Luggage|none
+pecannbee.com.kw|Pecannbee|Grocery & Food|ok
+miumiu.com|kw|Miu Miu|Fashion & Apparel|none
+valentino.com|kw|Valentino Online Boutique: The|Bags & Luggage|none
+varsityheadwear.com.kw|Varsity Headwear ® All Rights |Sports, Fitness & Outdoor|ok
+squatwolf.com|kw|SQUATWOLF|Fashion & Apparel|none
+kw.junaidperfumes.com|Junaid Perfumes - Kuwait|Perfumes & Oud|ok
+mycolors.com|kw|MY COLORS|Beauty & Cosmetics|none
+chillibeans.com.kw|Chilli Beans||http429
+falke.com.kw|Falke||http429
+kipling.com.kw|Kipling||http429
+dkny.com.kw|DKNY||http429
+adawliah.com.kw|adawliahstore|Lighting & Electrical|http429
+bananarepublic.com.kw|BANANA REPUBLIC | Kuwait Offic|Fashion & Apparel|http429
+kw.mubkhar.com|Mubkhar Kuwait|Perfumes & Oud|http429
+oracle.com.kw|Oracle Kuwait|General / Unclassified|ok
+uspoloassn.com.kw|U.S. Polo Assn. Kuwait|Fashion & Apparel|fetch
+kuwaitgallery.com.kw|Kuwait Gallery|Perfumes & Oud|http429
+offersonly.com.kw|offersonly|Beauty & Cosmetics|http429
+clarksstores.com.kw|Clarks Kuwait|Shoes|http429
+shoploom.co|Loom|Jewelry & Watches|http429
+mogahwi.com.kw|Mogahwi Library Company|Books & Stationery|http429
+woodstocklaundry.com.kw|Woodstock Laundry | Kuwait|Fashion & Apparel|fetch
+naturehike.com.kw|Solid Outland|Sports, Fitness & Outdoor|fetch
+lab.com.kw|LAB|Fashion & Apparel|http429
+amakin.com.kw|AMAKIN® Kuwait|Perfumes & Oud|http429
+bythebunch.shop|BY THE BUNCH|Flowers, Gifts & Party|fetch
+florakuwait.com|FloraKuwait|Flowers, Gifts & Party|fetch
+flowersinkuwait.com|Flowers In Kuwait|Flowers, Gifts & Party|fetch
+coffeetoolskw.com|Coffee Tools|Coffee, Tea & Dates|http429
+oruroasters.com|ORU Roasters|Coffee, Tea & Dates|http429
+naseem.com.kw|Naseem|Home Appliances|fetch
+maktabakw.com|Maktabakw|Books & Stationery|http429
+nayra.style|NAYRA|Fashion - Abayas & Modest|http429
+itlkuwait.com|itlkuwait.com|Books & Stationery|http429
+taraformula.com.kw|Tara Kuwait|Personal Care & Grooming|http429
+veloria.com.kw|Veloria|Furniture|fetch
+nomination.kw|nomination|Jewelry & Watches|ok
+switch.com.kw|Switch Electronics|Mobiles & Accessories|http429
+xgimi.com.kw|XGIMI KW|Sports, Fitness & Outdoor|http429
+mh.com.kw|MH Spa & Salon|Pharmacy & Wellness|fetch
+ugm.com.kw|UGM Automotive|Automotive Parts & Accessories|fetch
+only-roses.com.kw|OnlyRoses KW|Flowers, Gifts & Party|http429
+kizik.com.kw|Kizik Kuwait|Shoes|http429
+kw.diesel.com|Diesel Kuwait|Fashion & Apparel|http429
+boutiquejz.com|BoutiqueJZ|Perfumes & Oud|http429
+en-kw.aivi.com|aivi|Fashion & Apparel|ok
+ar-kw.aivi.com|aivi|Shoes|ok
+zahabeautykw.com|Zaha Beauty KW|Beauty & Cosmetics|ok
+zosouq.com|Zosouq|Beauty & Cosmetics|fetch
+alsanaferbookshop.com|Al Sanafer Bookshop|Books & Stationery|ok
+comfortzone.com.kw|Comfort Zone Kuwait|Shoes|http429
+aesop.com.kw|Aesop Kuwait|Beauty & Cosmetics|http429
+patchi.com|Patchi Kuwait||http403
+alrifaiarabia.com|Al Homaizi Food Industries Co.|Coffee, Tea & Dates|ok
+massimodutti.com|kw|massimodutti.com|kw||none
+zarahome.com|kw|zarahome.com|kw||none
+pullandbear.com|kw|pullandbear.com|kw||none
+oysho.com|kw|oysho.com|kw||none
+bershka.com|kw|bershka.com|kw||none
+mango.com|kw|mango.com|kw||none
+primark.com.kw|برايمارك الكويت|Beauty & Cosmetics|ok
+newbalance.com.kw|New Balance Kuwait|Sports, Fitness & Outdoor|ok
+levelshoes.com|kw|تسوقوا أحذية فاخرة وحقائب وإكس|Bags & Luggage|none
+theperfumesmell.com|TPS|Perfumes & Oud|ok
+hilti.com.kw|Hilti Homepage|Mobiles & Accessories|ok
+rtc-electronics.com.kw|RTC Electronics|Computers & Electronics|ok
+sahla.com.kw|سهلة · SAHLA|Sports, Fitness & Outdoor|ok
+eurekasnack.com.kw|My Eureka|Grocery & Food|ok
+petsmarket.com|petsmarket.com|Pets|ok
+mapsofworld.com|kw|MapsofWorld.com|General / Unclassified|none
+vibram.com|kw|Vibram|Sports, Fitness & Outdoor|none
+stc.com.kw|stc Kuwait|Telecom Devices & Electronics|ok
+zain.com|Zain Kuwait eShop|Telecom Devices & Electronics|ok
+arashastore.com|ARASHA STORE|Fashion - Women|none

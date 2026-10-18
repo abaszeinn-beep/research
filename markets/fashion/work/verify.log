@@ -1,0 +1,17 @@
+[verify:f1] {'unverified': 21, 'total': 62, 'rejected': 40, 'verified': 1, 'per_min': 62.0, 'requests': 137, 'http_429': 13, 'salla_gap': 0}
+[verify:f1] {'unverified': 27, 'total': 73, 'rejected': 45, 'verified': 1, 'per_min': 36.5, 'requests': 157, 'http_429': 22, 'salla_gap': 0}
+[verify:f1] {'unverified': 41, 'total': 101, 'rejected': 59, 'verified': 1, 'per_min': 33.7, 'requests': 243, 'http_429': 37, 'salla_gap': 0}
+[verify:f1] {'unverified': 53, 'total': 133, 'rejected': 78, 'verified': 2, 'per_min': 33.2, 'requests': 292, 'http_429': 53, 'salla_gap': 0}
+[verify:f1] {'unverified': 68, 'total': 155, 'rejected': 85, 'verified': 2, 'per_min': 31.0, 'requests': 334, 'http_429': 63, 'salla_gap': 0}
+[verify:f1] {'unverified': 76, 'total': 174, 'rejected': 96, 'verified': 2, 'per_min': 29.0, 'requests': 379, 'http_429': 73, 'salla_gap': 0}
+[verify:f1] {'unverified': 88, 'total': 196, 'rejected': 106, 'verified': 2, 'per_min': 28.0, 'requests': 436, 'http_429': 93, 'salla_gap': 0}
+[verify:f1] {'unverified': 102, 'total': 231, 'rejected': 127, 'verified': 2, 'per_min': 28.9, 'requests': 516, 'http_429': 113, 'salla_gap': 0}
+[verify:f1] {'unverified': 104, 'total': 237, 'rejected': 131, 'verified': 2, 'per_min': 26.3, 'requests': 528, 'http_429': 117, 'salla_gap': 0}
+[verify:f1] {'unverified': 132, 'total': 280, 'rejected': 146, 'verified': 2, 'per_min': 28.0, 'requests': 638, 'http_429': 136, 'salla_gap': 0}
+[verify:f1] {'unverified': 150, 'total': 317, 'rejected': 165, 'verified': 2, 'per_min': 28.8, 'requests': 724, 'http_429': 154, 'salla_gap': 0}
+[verify:f1] {'unverified': 174, 'total': 358, 'rejected': 182, 'verified': 2, 'per_min': 29.8, 'requests': 805, 'http_429': 171, 'salla_gap': 0}
+[verify:f1] {'unverified': 195, 'total': 389, 'rejected': 192, 'verified': 2, 'per_min': 29.9, 'requests': 865, 'http_429': 192, 'salla_gap': 0}
+[verify:f1] {'unverified': 208, 'total': 414, 'rejected': 204, 'verified': 2, 'per_min': 29.6, 'requests': 924, 'http_429': 203, 'salla_gap': 0}
+[verify:f1] {'unverified': 211, 'total': 419, 'rejected': 206, 'verified': 2, 'per_min': 27.9, 'requests': 937, 'http_429': 211, 'salla_gap': 0}
+[verify:f1] {'unverified': 215, 'total': 424, 'rejected': 207, 'verified': 2, 'per_min': 26.5, 'requests': 942, 'http_429': 216, 'salla_gap': 0}
+[verify:f1] finished {'unverified': 215, 'total': 425, 'rejected': 207, 'verified': 3}

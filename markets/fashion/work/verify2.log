@@ -1,0 +1,15 @@
+[verify:f2] {'rejected': 25, 'total': 40, 'unverified': 15, 'per_min': 40.0, 'requests': 93, 'http_429': 23, 'salla_gap': 0}
+[verify:f2] {'rejected': 38, 'total': 64, 'unverified': 26, 'per_min': 32.0, 'requests': 147, 'http_429': 51, 'salla_gap': 0}
+[verify:f2] {'rejected': 49, 'total': 99, 'unverified': 50, 'per_min': 33.0, 'requests': 219, 'http_429': 82, 'salla_gap': 0}
+[verify:f2] {'rejected': 70, 'total': 141, 'unverified': 70, 'verified': 1, 'per_min': 35.2, 'requests': 312, 'http_429': 109, 'salla_gap': 0}
+[verify:f2] {'rejected': 97, 'total': 202, 'unverified': 104, 'verified': 1, 'per_min': 40.4, 'requests': 425, 'http_429': 132, 'salla_gap': 0}
+[verify:f2] {'rejected': 119, 'total': 242, 'unverified': 122, 'verified': 1, 'per_min': 40.3, 'requests': 510, 'http_429': 157, 'salla_gap': 0}
+[verify:f2] {'rejected': 133, 'total': 269, 'unverified': 135, 'verified': 1, 'per_min': 38.4, 'requests': 556, 'http_429': 174, 'salla_gap': 0}
+[verify:f2] {'rejected': 170, 'total': 358, 'unverified': 186, 'verified': 2, 'per_min': 44.7, 'requests': 722, 'http_429': 205, 'salla_gap': 0}
+[verify:f2] {'rejected': 185, 'total': 400, 'unverified': 213, 'verified': 2, 'per_min': 44.4, 'requests': 798, 'http_429': 227, 'salla_gap': 0}
+[verify:f2] {'rejected': 193, 'total': 424, 'unverified': 228, 'verified': 3, 'per_min': 42.4, 'requests': 855, 'http_429': 246, 'salla_gap': 0}
+[verify:f2] {'rejected': 196, 'total': 437, 'unverified': 237, 'verified': 4, 'per_min': 39.7, 'requests': 896, 'http_429': 255, 'salla_gap': 0}
+[verify:f2] {'rejected': 205, 'total': 460, 'unverified': 251, 'verified': 4, 'per_min': 38.3, 'requests': 961, 'http_429': 269, 'salla_gap': 0}
+[verify:f2] {'rejected': 209, 'total': 471, 'unverified': 258, 'verified': 4, 'per_min': 36.2, 'requests': 975, 'http_429': 279, 'salla_gap': 0}
+[verify:f2] {'rejected': 214, 'total': 476, 'unverified': 258, 'verified': 4, 'per_min': 34.0, 'requests': 980, 'http_429': 281, 'salla_gap': 0}
+[verify:f2] finished {'rejected': 216, 'total': 480, 'unverified': 260, 'verified': 4}

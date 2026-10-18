@@ -1,0 +1,4 @@
+[verify:f3] {'rejected': 15, 'total': 50, 'unverified': 26, 'verified': 9, 'per_min': 50.0, 'requests': 147, 'http_429': 3, 'salla_gap': 0}
+[verify:f3] {'rejected': 15, 'total': 50, 'unverified': 26, 'verified': 9, 'per_min': 25.0, 'requests': 147, 'http_429': 3, 'salla_gap': 0}
+[verify:f3] {'rejected': 15, 'total': 51, 'unverified': 27, 'verified': 9, 'per_min': 17.0, 'requests': 150, 'http_429': 6, 'salla_gap': 0}
+[verify:f3] finished {'rejected': 15, 'total': 52, 'unverified': 28, 'verified': 9}
