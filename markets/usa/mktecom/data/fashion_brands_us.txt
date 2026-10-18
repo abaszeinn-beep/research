@@ -1,0 +1,80 @@
+#portfolio:vf
+vans.com thenorthface.com timberland.com dickies.com jansport.com eastpak.com smartwool.com icebreaker.com napapijri.com kipling.com supreme.com altra.com
+#portfolio:pvh
+calvinklein.us tommy.com
+#portfolio:tapestry_capri
+coach.com katespade.com stuartweitzman.com michaelkors.com versace.com jimmychoo.com
+#portfolio:levis_gap_kontoor
+levi.com dockers.com signaturebylevistrauss.com gap.com oldnavy.com bananarepublic.com athleta.com intermix.com hillcity.com wrangler.com lee.com rockcreekoutfitters.com
+#portfolio:abercrombie_aeo_urban
+abercrombie.com hollisterco.com ae.com aerie.com urbanoutfitters.com anthropologie.com freepeople.com bhldn.com nuuly.com
+#portfolio:hanes_rl_carters_giii_oxford
+hanes.com championusa.com bali.com playtex.com maidenform.com barenecessities.com polo.com ralphlauren.com carters.com oshkosh.com gIII.com donnakaran.com dkny.com andrewmarc.com vilebrequin.com tommybahama.com lillypulitzer.com southerntide.com johnnie-o.com marlinsgolf.com beaufortbonnet.com duckhead.com
+#portfolio:columbia_nike_ua_wolverine
+columbia.com sorel.com mountainhardwear.com prana.com nike.com jordan.com converse.com underarmour.com wolverine.com merrell.com saucony.com keds.com sperry.com chacos.com hushpuppies.com
+#portfolio:lulu_activewear
+lululemon.com vuoriclothing.com aloyoga.com outdoorvoices.com girlfriend.com beyondyoga.com fabletics.com gymshark.com ryderwear.com rhone.com tenthousand.com ten-thousand.com public-rec.com bandier.com sweatybetty.com onzie.com varley.com sporty-and-rich.com alphalete.com
+#portfolio:authentic_whp
+authentic.com anneklein.com nautica.com brooksbrothers.com eddiebauer.com aeropostale.com forever21.com hunterbell.com juicycouture.com sperry.com champion.com volcom.com quiksilver.com billabong.com roxy.com dcshoes.com rvca.com
+#portfolio:dept_mall_chains
+macys.com nordstrom.com nordstromrack.com saksfifthavenue.com saksoff5th.com neimanmarcus.com bloomingdales.com dillards.com jcpenney.com kohls.com belk.com boscovs.com burlington.com tjmaxx.com marshalls.com ross.com stein-mart.com gabesstores.com lordandtaylor.com
+#portfolio:specialty_chains
+express.com jcrew.com jcrewfactory.com madewell.com ann-taylor.com anntaylor.com loft.com chicos.com whitehouseblackmarket.com soma.com talbots.com coldwatercreek.com christopherandbanks.com francesca.com vince.com theory.com clubmonaco.com alo.com zara.com hm.com uniqlo.com mango.com cos.com
+#portfolio:specialty_chains2
+victoriassecret.com pink.com bathandbodyworks.com torrid.com hottopic.com boxlunch.com zumiez.com tillys.com pacsun.com buckle.com cato.com rue21.com charlotterusse.com wetseal.com hollister.com americaneagle.com lanebryant.com catherines.com avenue.com ashleystewart.com fashiontofigure.com simplybe.com jessicalondon.com maurices.com dressbarn.com vera-bradley.com lulus.com revolve.com shopbop.com ssense.com
+#portfolio:mens
+menswearhouse.com josabank.com josbank.com kenneth-cole.com mizzenandmain.com bonobos.com buckmason.com taylorstitch.com asket.com bluffworks.com huckberry.com petermillar.com faherty.com fairharbor.com todd-snyder.com toddsnyder.com jmclaughlin.com lands-end.com landsend.com llbean.com orvis.com duluthtrading.com carhartt.com wrangler.com ariat.com cinch.com stetson.com bootbarn.com cavenders.com sheplers.com
+#portfolio:mens2
+suitsupply.com indochino.com brooklinen.com cuts.com cutsclothing.com stateandliberty.com proper-cloth.com properCloth.com untuckit.com tailorstore.com theblessedmind.com kittenfish.com rhone.com mack-weldon.com mackweldon.com meundies.com tommyjohn.com saxx.com saxxunderwear.com undergear.com 2xist.com jockey.com fruit.com gildan.com
+#portfolio:dtc_women
+reformation.com everlane.com girlfriend.com universalstandard.com eileenfisher.com ministry-of-supply.com ministryofsupply.com mmlafleur.com quince.com cuyana.com ba-sh.com doen.com cami-nyc.com lovers-friends.com showpo.com princesspolly.com white-fox-boutique.com whitefoxboutique.com hellomolly.com nastygal.com boohoo.com fashionnova.com shein.com prettylittlething.com missguided.com houseofcb.com cultgaia.com rails.com ramy-brook.com ulla-johnson.com staud.clothing stauds.com tibi.com veronicabeard.com alice-and-olivia.com aliceandolivia.com rebeccataylor.com rebeccaminkoff.com tory-burch.com toryburch.com kate-spade.com marc-jacobs.com marcjacobs.com 
+#portfolio:dtc_women2
+sezane.com aritzia.com skims.com savagex.com thirdlove.com parade.com negativeunderwear.com knix.com honeylove.com cuup.com lively.com adoreme.com hanky-panky.com hankypanky.com journelle.com freshpair.com yandy.com 
+#portfolio:swim
+solidandstriped.com summersalt.com andiebelle.com andieswim.com seafolly.com vitaminaswim.com onia.com shoshanna.com mikoh.com tigerlily.com miraclesuit.com swimsuitsforall.com swimoutlet.com everythingbutwater.com venus.com venus-fashion.com albionfit.com albionfit.com malibu-sugar.com ookioh.com
+#portfolio:streetwear
+stussy.com bape.com anti-social-social-club.com antisocialsocialclub.com kith.com palaceskateboards.com us.palaceskateboards.com fearofgod.com essentials.com essentialsfearofgod.com offwhite.com aimeleondore.com noahny.com carhartt-wip.com huf.com hufworldwide.com thrashermagazine.com thrasherstore.com obeyclothing.com diamondsupplyco.com undefeated.com ripndip.com ripndipclothing.com brain-dead.com braindead.com cactusplantfleamarket.com chromeheartsstore.com stoney.com 
+#portfolio:streetwear2
+represent.com representclo.com gallerydept.com gallery-dept.com amiri.com rhude.com sp5der.com spider.com hellstar.com broken-planet.com brokenplanetmarket.com cortezworld.com corteiz.com trapstar.com syna.world synaworld.com eric-emanuel.com ericemanuel.com
+#portfolio:denim
+ag-jeans.com agjeans.com 7forallmankind.com citizensofhumanity.com paige.com frame-store.com frame-denim.com mother-denim.com motherdenim.com jbrand.com joesjeans.com truereligion.com truereligionbrandjeans.com diesel.com guess.com lucky-brand.com luckybrand.com ag.com rag-bone.com ragandbone.com hudsonjeans.com madewell.com nudiejeans.com 3x1.com agolde.com re-done.com redone.com
+#portfolio:workwear
+workwearcentral.com carhartt.com dickies.com berne.com bernapparel.com ben-davis.com bendavis.com redkap.com walls.com wallsworkwear.com tru-spec.com truspec.com 5-11tactical.com 511tactical.com cintas.com figs.com fignsscrubs.com greysanatomy.com barco.com cherokeeuniforms.com scrubs-and-beyond.com scrubsandbeyond.com careismatic.com jaanuu.com 
+#portfolio:western_outdoor
+patagonia.com arcteryx.com rei.com backcountry.com moosejaw.com sierra.com sierratradingpost.com cabelas.com basspro.com academy.com dicks.com scheels.com sportsmans.com sportsmansguide.com realtree.com mossyoak.com sitka.com sitkagear.com kuiu.com kuiu.com filson.com pendleton-usa.com pendleton.com woolrich.com
+#portfolio:outdoor2
+outdoorresearch.com marmot.com blackdiamondequipment.com fjallraven.com helly-hansen.com hellyhansen.com cotopaxi.com topo-designs.com topodesigns.com kuhl.com kuhl.com royalrobbins.com tentree.com allbirds.com toadandco.com toadandco.com west-marine.com westmarine.com 
+#portfolio:modest
+mataharis.com mataharisclosets.com haverhill.com shukronline.com hijabhouse.com verona-collection.com veronacollection.com modanisa.com elanbyjeannette.com mode-sty.com modesty.com mimu-maxi.com 
+#portfolio:misc_us
+carters.com fanatics.com lids.com nflshop.com mlbshop.com nbastore.com shop.nhl.com fansedge.com pro-football-shop.com hanes.com 
+#portfolio:more
+oldnavy.gap.com bananarepublicfactory.com gapfactory.com brooksbrothers.com bloomingdales.com loft.com express.com jcpenney.com lordandtaylor.com stage-stores.com
+#portfolio:more2
+tuckernuck.com draperjames.com draperjames.com loverly.com hautelook.com 6pm.com zappos.com backcountry.com ruelala.com gilt.com thredup.com poshmark.com therealreal.com
+#portfolio:more3
+abercrombiekids.com spanx.com leonisa.com wacoal-america.com wacoal.com chantelle.com calvinklein.com tommyjohn.com ellen-tracy.com ellentracy.com 
+#portfolio:more4
+mademoiselle.com harper-wilde.com mate-the-label.com matethelabel.com pact.com pactapparel.com tentree.com threadless.com teespring.com customink.com spreadshirt.com printful.com redbubble.com 
+#portfolio:more5
+chubbies.com chubbiesshorts.com vineyardvines.com southernmarsh.com peterglenn.com thursdayboots.com rowingblazers.com rowingblazers.com sandro-paris.com maje.com theory.com helmutlang.com vince.com equipment.com equipmentfr.com 
+#portfolio:more6
+nicolemiller.com tadashi-shoji.com tadashishoji.com bcbg.com bcbgmaxazria.com herve-leger.com hervelegerstore.com badgleymischka.com jovani.com sherrihill.com mac-duggal.com macduggal.com dressesforalloccasions.com davidsbridal.com azazie.com birdygrey.com jennyyoo.com 
+#portfolio:more7
+newbalance.com asics.com brooks-running.com brooksrunning.com hoka.com on-running.com oofos.com puma.com adidas.com reebok.com fila.com kappa.com umbro.com champion.com russellathletic.com russell.com 
+#portfolio:more8
+sofiajeans.com cottonon.com forever21.com charlotterusse.com hm.com gap.com trinaturk.com tommy-bahama.com tommybahama.com reyn-spooner.com reynspooner.com hawaiianshirt.com aloha-shirts.com
+#portfolio:more9
+bombas.com stance.com happysocks.com darntough.com swiftwick.com 
+#portfolio:more10
+ugg.com teva.com hokaoneone.com deckers.com 
+#portfolio:more11
+anthropologie.com terrain.com urbanoutfitters.com 
+#portfolio:more12
+bluenotes.com aeropostale.com tilly.com 
+#portfolio:more13
+wearlively.com mizzenandmain.com ledbury.com thomaspink.com 
+#portfolio:more14
+peloton.com
+#portfolio:more15
+stitchfix.com rentTherunway.com renttherunway.com trunkclub.com nuuly.com armoire.style wearfigs.com hedley-bennett.com hedleyandbennett.com
