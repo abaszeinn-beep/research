@@ -93,3 +93,56 @@
 [tranco] {'done': 25000, 'hits': 278, 'new': 252, 'fail': 10221} rate=4.7/s rank~74512
 [tranco] {'done': 26000, 'hits': 284, 'new': 258, 'fail': 10743} rate=4.5/s rank~75513
 [tranco] {'done': 27000, 'hits': 291, 'new': 264, 'fail': 11284} rate=4.3/s rank~76522
+[tranco] probe 123441 domains (ranks 1-200000), 76400 done before
+[tranco] {'done': 1000, 'hits': 10, 'new': 5, 'fail': 345} rate=21.8/s rank~77545
+[tranco] {'done': 2000, 'hits': 18, 'new': 13, 'fail': 754} rate=11.9/s rank~78527
+[tranco] {'done': 3000, 'hits': 26, 'new': 21, 'fail': 1141} rate=11.5/s rank~79491
+[tranco] {'done': 4000, 'hits': 42, 'new': 36, 'fail': 1511} rate=11.5/s rank~80505
+[tranco] {'done': 5000, 'hits': 49, 'new': 44, 'fail': 1865} rate=10.7/s rank~81562
+[tranco] {'done': 6000, 'hits': 57, 'new': 51, 'fail': 2228} rate=10.6/s rank~82503
+[tranco] {'done': 7000, 'hits': 69, 'new': 62, 'fail': 2594} rate=10.5/s rank~83534
+[tranco] {'done': 8000, 'hits': 75, 'new': 68, 'fail': 2940} rate=10.0/s rank~84543
+[tranco] {'done': 9000, 'hits': 88, 'new': 79, 'fail': 3318} rate=9.8/s rank~85433
+[tranco] {'done': 10000, 'hits': 96, 'new': 84, 'fail': 3690} rate=9.4/s rank~86548
+[tranco] {'done': 11000, 'hits': 103, 'new': 89, 'fail': 4087} rate=9.0/s rank~87548
+[tranco] {'done': 12000, 'hits': 110, 'new': 95, 'fail': 4459} rate=8.7/s rank~88560
+[tranco] {'done': 13000, 'hits': 117, 'new': 98, 'fail': 4886} rate=8.3/s rank~89548
+[tranco] {'done': 14000, 'hits': 125, 'new': 106, 'fail': 5325} rate=8.0/s rank~90488
+[tranco] {'done': 15000, 'hits': 137, 'new': 117, 'fail': 5768} rate=7.7/s rank~91535
+[tranco] {'done': 16000, 'hits': 138, 'new': 118, 'fail': 6247} rate=7.4/s rank~92496
+[tranco] {'done': 17000, 'hits': 138, 'new': 118, 'fail': 6769} rate=7.1/s rank~93508
+[tranco] {'done': 18000, 'hits': 141, 'new': 121, 'fail': 7261} rate=6.9/s rank~94494
+[tranco] {'done': 19000, 'hits': 145, 'new': 125, 'fail': 7884} rate=6.6/s rank~95487
+[tranco] {'done': 20000, 'hits': 147, 'new': 126, 'fail': 8589} rate=6.3/s rank~96511
+[tranco] {'done': 21000, 'hits': 150, 'new': 128, 'fail': 9303} rate=6.1/s rank~97493
+[tranco] {'done': 22000, 'hits': 155, 'new': 132, 'fail': 10011} rate=5.9/s rank~98531
+[tranco] {'done': 23000, 'hits': 157, 'new': 133, 'fail': 10759} rate=5.6/s rank~99519
+[tranco] {'done': 24000, 'hits': 159, 'new': 135, 'fail': 11513} rate=5.4/s rank~100496
+[tranco] probe 99241 domains (ranks 1-200000), 100600 done before
+[tranco] {'done': 1000, 'hits': 6, 'new': 6, 'fail': 369} rate=27.4/s rank~101353
+[tranco] {'done': 2000, 'hits': 11, 'new': 11, 'fail': 833} rate=11.8/s rank~102804
+[tranco] {'done': 3000, 'hits': 21, 'new': 20, 'fail': 1258} rate=11.5/s rank~103736
+[tranco] probe 30868 domains (ranks 1-135000), 104000 done before
+[tranco] {'done': 1000, 'hits': 8, 'new': 8, 'fail': 541} rate=3.9/s rank~105139
+[tranco] {'done': 2000, 'hits': 14, 'new': 14, 'fail': 1092} rate=3.6/s rank~106178
+[tranco] probe 91073 domains (ranks 1-200000), 108768 done before
+[tranco] {'done': 1000, 'hits': 7, 'new': 4, 'fail': 532} rate=6.2/s rank~106597
+[tranco] {'done': 2000, 'hits': 15, 'new': 12, 'fail': 996} rate=7.2/s rank~107725
+[tranco] {'done': 3000, 'hits': 25, 'new': 22, 'fail': 1491} rate=6.2/s rank~108777
+[tranco] {'done': 4000, 'hits': 29, 'new': 26, 'fail': 2082} rate=5.2/s rank~109801
+[tranco] {'done': 5000, 'hits': 37, 'new': 33, 'fail': 2485} rate=6.0/s rank~110805
+[tranco] {'done': 6000, 'hits': 55, 'new': 49, 'fail': 2923} rate=6.3/s rank~111826
+[tranco] {'done': 7000, 'hits': 62, 'new': 56, 'fail': 3364} rate=6.6/s rank~112797
+[tranco] {'done': 8000, 'hits': 69, 'new': 62, 'fail': 3804} rate=6.9/s rank~113803
+[tranco] {'done': 9000, 'hits': 76, 'new': 69, 'fail': 4281} rate=7.0/s rank~114678
+[tranco] {'done': 10000, 'hits': 83, 'new': 75, 'fail': 4777} rate=7.1/s rank~115674
+[tranco] {'done': 11000, 'hits': 87, 'new': 78, 'fail': 5317} rate=7.2/s rank~116642
+[tranco] {'done': 12000, 'hits': 98, 'new': 86, 'fail': 5904} rate=7.1/s rank~117856
+[tranco] {'done': 13000, 'hits': 112, 'new': 98, 'fail': 6568} rate=7.0/s rank~118836
+[tranco] {'done': 14000, 'hits': 115, 'new': 101, 'fail': 7273} rate=6.9/s rank~119867
+[tranco] {'done': 15000, 'hits': 118, 'new': 104, 'fail': 7985} rate=6.8/s rank~120856
+[tranco] {'done': 16000, 'hits': 125, 'new': 111, 'fail': 8729} rate=6.7/s rank~121729
+[tranco] {'done': 17000, 'hits': 127, 'new': 113, 'fail': 9486} rate=6.6/s rank~122755
+[tranco] {'done': 18000, 'hits': 129, 'new': 115, 'fail': 10232} rate=6.5/s rank~123757
+[tranco] {'done': 19000, 'hits': 132, 'new': 118, 'fail': 11007} rate=6.4/s rank~124742
+[tranco] {'done': 20000, 'hits': 136, 'new': 122, 'fail': 11818} rate=6.3/s rank~125758

@@ -52,6 +52,11 @@ def apply(con):
         else:
             con.execute("INSERT OR REPLACE INTO ref_overrides VALUES(?,?,?,?,?,?,?)",
                         (ref_id, act, it["reason"], it.get("evidence", ""), it.get("storefront", ""), it.get("key"), now))
+    methods = ("path-pattern Wayback product probes (qa, en-qa, qa-en, qa/en, qa/ar, en_qa, qa_en, qatar, shop./qa./.com.qa host variants), "
+               "hreflang/selector links and robots.txt sitemaps on the brand site, Shopify /meta.json markets, live Qatar paths, Qatar App Store, GCC operator host variants")
+    for ref_id, doms in con.execute("SELECT ref_id, domains FROM reference_stores WHERE kind='brand' AND status='excluded' AND reason LIKE 'excluded: no%storefront found%'").fetchall():
+        if not con.execute("SELECT 1 FROM ref_overrides WHERE ref_id=?", (ref_id,)).fetchone():
+            con.execute("INSERT INTO ref_overrides VALUES(?,?,?,?,?,?,?)", (ref_id, "excluded", "excluded: no Qatar storefront found after extended search (" + methods + ", checked 2026-10-17)", "", "", None, now))
     con.commit()
 
 

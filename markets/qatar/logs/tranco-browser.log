@@ -1,0 +1,15 @@
+[browser] 261 candidates
+[browser] 20/261 {'unverified': 16, 'rejected': 4}
+[browser] 40/261 {'unverified': 33, 'rejected': 7}
+[browser] 60/261 {'unverified': 50, 'rejected': 9, 'verified': 1}
+[browser] 80/261 {'unverified': 69, 'rejected': 10, 'verified': 1}
+[browser] 100/261 {'unverified': 89, 'rejected': 10, 'verified': 1}
+[browser] 120/261 {'unverified': 109, 'rejected': 10, 'verified': 1}
+[browser] 140/261 {'unverified': 129, 'rejected': 10, 'verified': 1}
+[browser] 160/261 {'unverified': 149, 'rejected': 10, 'verified': 1}
+[browser] 180/261 {'unverified': 168, 'rejected': 11, 'verified': 1}
+[browser] 200/261 {'unverified': 187, 'rejected': 11, 'verified': 2}
+[browser] 220/261 {'unverified': 204, 'rejected': 14, 'verified': 2}
+[browser] 240/261 {'unverified': 224, 'rejected': 14, 'verified': 2}
+[browser] 260/261 {'unverified': 241, 'rejected': 17, 'verified': 2}
+[browser] done {'unverified': 242, 'rejected': 17, 'verified': 2}

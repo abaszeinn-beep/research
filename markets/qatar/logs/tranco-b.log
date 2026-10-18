@@ -1,0 +1,28 @@
+[tranco] probe 32985 domains (ranks 135001-168000), 104000 done before
+[tranco] {'done': 1000, 'hits': 9, 'new': 9, 'fail': 535} rate=3.5/s rank~136026
+[tranco] {'done': 2000, 'hits': 17, 'new': 16, 'fail': 1018} rate=3.7/s rank~136965
+[tranco] probe 23498 domains (ranks 150001-175000), 129168 done before
+[tranco] {'done': 1000, 'hits': 15, 'new': 14, 'fail': 424} rate=4.4/s rank~151009
+[tranco] {'done': 2000, 'hits': 26, 'new': 23, 'fail': 823} rate=4.4/s rank~152022
+[tranco] {'done': 3000, 'hits': 37, 'new': 31, 'fail': 1249} rate=4.0/s rank~152998
+[tranco] {'done': 4000, 'hits': 45, 'new': 38, 'fail': 1652} rate=4.1/s rank~154021
+[tranco] {'done': 5000, 'hits': 56, 'new': 47, 'fail': 2079} rate=3.9/s rank~155007
+[tranco] {'done': 6000, 'hits': 69, 'new': 59, 'fail': 2472} rate=3.8/s rank~156011
+[tranco] {'done': 7000, 'hits': 80, 'new': 71, 'fail': 2933} rate=3.8/s rank~156990
+[tranco] {'done': 8000, 'hits': 91, 'new': 82, 'fail': 3349} rate=3.7/s rank~158047
+[tranco] {'done': 9000, 'hits': 100, 'new': 90, 'fail': 3758} rate=3.6/s rank~158995
+[tranco] {'done': 10000, 'hits': 109, 'new': 100, 'fail': 4197} rate=3.6/s rank~160011
+[tranco] {'done': 11000, 'hits': 120, 'new': 106, 'fail': 4595} rate=3.6/s rank~161045
+[tranco] {'done': 12000, 'hits': 127, 'new': 112, 'fail': 5012} rate=3.6/s rank~161984
+[tranco] {'done': 13000, 'hits': 142, 'new': 127, 'fail': 5457} rate=3.6/s rank~162983
+[tranco] {'done': 14000, 'hits': 155, 'new': 139, 'fail': 5871} rate=3.5/s rank~163988
+[tranco] {'done': 15000, 'hits': 162, 'new': 147, 'fail': 6298} rate=3.5/s rank~164825
+[tranco] {'done': 16000, 'hits': 172, 'new': 157, 'fail': 6710} rate=3.5/s rank~166004
+[tranco] {'done': 17000, 'hits': 180, 'new': 163, 'fail': 7144} rate=3.5/s rank~166962
+[tranco] {'done': 18000, 'hits': 191, 'new': 172, 'fail': 7572} rate=3.5/s rank~168815
+[tranco] {'done': 19000, 'hits': 196, 'new': 177, 'fail': 8124} rate=3.4/s rank~170507
+[tranco] {'done': 20000, 'hits': 204, 'new': 185, 'fail': 8593} rate=3.4/s rank~171534
+[tranco] {'done': 21000, 'hits': 210, 'new': 191, 'fail': 9055} rate=3.4/s rank~172499
+[tranco] {'done': 22000, 'hits': 219, 'new': 200, 'fail': 9585} rate=3.4/s rank~173459
+[tranco] {'done': 23000, 'hits': 224, 'new': 204, 'fail': 10158} rate=3.4/s rank~174486
+[tranco] probe finished {'done': 23498, 'hits': 226, 'new': 205, 'fail': 10439}

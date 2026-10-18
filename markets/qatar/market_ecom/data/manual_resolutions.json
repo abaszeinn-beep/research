@@ -561,5 +561,31 @@
   "evidence": "Wayback CDX prefix queries 2026-10-17 returned 0 captures",
   "storefront": "https://www.malabargoldanddiamonds.com/",
   "key": null
+ },
+ {
+  "ref": "Mango",
+  "action": "verified_secondary_evidence",
+  "key": "shop.mango.com|qa",
+  "storefront": "https://shop.mango.com/qa/en/",
+  "root": "mango.com",
+  "name": "Mango",
+  "platform": "custom/unknown",
+  "category": "Fashion & Apparel",
+  "verified_at": "2026-10-17T20:00:00Z",
+  "http": 429,
+  "proofs": [
+   {
+    "type": "wayback_product",
+    "detail": "archived Qatar (shop.mango.com/qa/ar) page with 32 QAR price strings and ordering control",
+    "url": "https://web.archive.org/web/20260617064834/https://shop.mango.com/qa/ar/c/%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84/%D8%A7%D9%88%D9%84%D8%A7%D8%AF-%D8%B5%D8%BA%D8%A7%D8%B1/%D8%A8%D9%84%D8%A7%D9%8A%D8%B2/9b255289",
+    "date": "20260617"
+   },
+   {
+    "type": "app_store",
+    "detail": "Qatar App Store shopping app 'MANGO - Online fashion' by MANGO MNG, S.A., updated 2026-10-14",
+    "url": "https://apps.apple.com/qa/app/mango-online-fashion/id372216941",
+    "date": "20261014"
+   }
+  ]
  }
 ]

@@ -67,3 +67,14 @@ No AI subagents were used; parallelism comes from asyncio workers in separate tm
   online store JS.QA; Lulu, Home Centre, Zara, Sephora, Carrefour, Bath & Body Works secondary; Apple, Baladna, Al Fardan excluded with reasons).
 - **~17:10-17:50** `scripts/batch_probe.py` over the medium/no-storefront brand refs: +2 live-verified (ACE Hardware Qatar, Huda Beauty),
   +8 secondary (Ourshopee, Pull&Bear, Bershka, Oysho, Massimo Dutti, Stradivarius, VogaCloset, Junaid Perfumes); 5 single-proof brands left unresolved with reasons.
+
+## 2026-10-17 session 4 (big-brand re-check + Tranco top-200k completion)
+
+- **18:30** Fresh VM again; restored from snapshot. Added `scripts/multi_probe.py` (hreflang alternates, selector links, robots.txt sitemaps with qa/qatar locale entries,
+  Shopify /meta.json markets, host variants, Qatar App Store) and `scripts/batch_probe2.py` (Wayback product-path probes with extended Qatar patterns and GCC-operator host variants)
+  over all brands marked "no Qatar storefront found" plus Monoprix, Max Fashion, Shein, Malabar. Results: Mango verified (secondary, shop.mango.com/qa), Al Majed Oud (qa.almajed4oud.com, hreflang) verified live;
+  Samsung (qa path 404), Uniqlo (404), LG/Sony/H&M (403) show no Qatar store; Puma redirects to the US site. Exclusion reasons now list the methods used.
+- Monoprix Qatar: `monoprix-qatar.com` found by host variant but the page is JS/captcha-gated; no second proof. Max Fashion: no current product captures or sitemap (403); app only. Shein: no Qatar-path storefront. Malabar: no Qatar product captures.
+- **19:40-00:00** Tranco top-200k probe completed (ranks 1-200,000) in three CPU-bound shards (DNS-limited at ~11 domains/s); ~14.7k DNS/timeout failures from overloaded windows were requeued and re-probed (16 extra hits).
+  Tranco hits verified under strict rules; 8 verified rows demoted by manual review (foreign-only locale/currency-selector-only, classifieds, resale marketplace, missing QAR pricing); one store name fixed.
+- Browser pass on 261 Tranco Qatar-path candidates: 2 verified. Secondary (Wayback) pass on the same set was stopped after 16 targets (about 1.6 min each); remaining Tranco unverified Qatar-path candidates are listed in Unverified Candidates.
