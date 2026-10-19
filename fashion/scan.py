@@ -11,7 +11,7 @@ def init():
 class Host:
     def __init__(s): s.sem={}; s.last={}
     async def wait(s,h):
-        sem=s.sem.setdefault(h,asyncio.Semaphore(6 if h=='salla.sa' else 3))
+        sem=s.sem.setdefault(h,asyncio.Semaphore((2 if __import__('os').environ.get('LOW') else 6) if h=='salla.sa' else (1 if __import__('os').environ.get('LOW') else 3)))
         return sem
 HS=Host()
 async def get(cl,url,host,maxb=1500000):
