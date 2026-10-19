@@ -6,12 +6,12 @@ Store Name,Root Domain / Storefront URL,Website Pages Count,Count Method,Count D
 Abati Boutique,https://abatiboutique.online/,167,sitemap,2026-10-19,Verified
 Abreez,https://abreezabaya.com/,293,sitemap,2026-10-19,Verified
 Abyar Agricultural - أبيار الزراعية,https://xn----qmcmbac8dci6e1fsb3aj.com/,80,sitemap,2026-10-19,Verified
-Abyat,https://www.abyat.com/kw/,18164,sitemap (KW pages only),2026-10-19,Verified
+Abyat,https://www.abyat.com/kw/,20810,sitemap (KW pages only),2026-10-19,Verified
 account,https://athleta.com.kw/,1561,sitemap,2026-10-19,Verified (secondary evidence)
 adawliahstore,https://www.adawliah.com.kw/,3085,sitemap,2026-10-19,Verified
 Aesop Kuwait,https://www.aesop.com.kw/,541,sitemap,2026-10-19,Verified
 Ahlan Tools,https://ahlantools.com/,155,sitemap,2026-10-19,Verified
-Ahmad Kakouli,https://ahmadkakouli.com/,0,sitemap (KW pages only),2026-10-19,Verified
+Ahmad Kakouli,https://ahmadkakouli.com/,,Not available (no KW pages in sitemap),2026-10-19,Verified
 aivi,https://en-kw.aivi.com/,16312869,sitemap,2026-10-19,Verified
 Ajmal Perfumes,https://en-kwt.ajmal.com/,1879,sitemap,2026-10-19,Verified
 Al Homaizi Food Industries Co,https://alrifaiarabia.com/,731,sitemap,2026-10-19,Verified
@@ -34,11 +34,11 @@ Alqamarshop,https://alqamarshop.com/,15105,sitemap,2026-10-19,Verified
 Alshaya Perfumes,https://alshayaperfumes.com/,3389,sitemap,2026-10-19,Verified
 althenayanhoney,https://www.althenayanhoney.com.kw/,189,sitemap,2026-10-19,Verified
 AMAKIN® Kuwait,https://www.amakin.com.kw/,67,sitemap,2026-10-19,Verified
-Amal Al Kuwait,https://amalalkuwait.com/,0,sitemap (KW pages only),2026-10-19,Verified
+Amal Al Kuwait,https://amalalkuwait.com/,,Not available (no KW pages in sitemap),2026-10-19,Verified
 Amber Oud,https://amberoud.com/,281,sitemap,2026-10-19,Verified
 American Eagle,https://www.americaneagle.com.kw/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Amtronics,https://amtronics.co/,926,sitemap,2026-10-19,Verified
-Anytime & Anywhere,https://anytimekwt.com/,0,sitemap (KW pages only),2026-10-19,Verified
+Anytime & Anywhere,https://anytimekwt.com/,2287,"sitemap (whole site, no market segment)",2026-10-19,Verified
 Aqua Cool Water,https://aquacool.com.kw/,18,sitemap,2026-10-19,Verified
 Aquasan,https://aquasan.com.kw/,16,sitemap,2026-10-19,Verified
 ASWAQKW,https://aswaqkw.com/,1993,sitemap,2026-10-19,Verified
@@ -80,7 +80,7 @@ Buy Gifts Kuwait,https://www.rullart.com/,1126,sitemap,2026-10-19,Verified (seco
 BY THE BUNCH,https://bythebunch.shop/,201,sitemap,2026-10-19,Verified
 Cakeshop,https://thecakeshop.com.kw/,2728,archive,2026-10-19,Verified
 Campo Marzio GCC,https://www.campomarziogcc.com/,408,sitemap,2026-10-19,Verified
-CASCADES,https://cascades.com.kw/,0,sitemap (KW pages only),2026-10-19,Verified
+CASCADES,https://cascades.com.kw/,,Not available (no KW pages in sitemap),2026-10-19,Verified
 Centrepoint Kuwait (Landmark),https://www.centrepointstores.com/,65605,archive,2026-10-19,Verified (secondary evidence)
 Centrepoint Kuwait (Landmark),https://www.centrepointstores.com/kw/,65605,archive,2026-10-19,Verified (secondary evidence)
 Chanel,https://www.chanel.com/kw-ar/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
@@ -89,7 +89,7 @@ CHIC Kuwait Luxury Outlet,https://chickuwait.com/,377,sitemap,2026-10-19,Verifie
 Chilli Beans,https://chillibeans.com.kw/,129,sitemap,2026-10-19,Verified (secondary evidence)
 Chips,https://chipsorders.com/kw-ar/,17868,sitemap,2026-10-19,Verified
 ChocoBee,https://chocobee.com/,206,sitemap,2026-10-19,Verified
-Chopard®,https://www.chopard.com/en-kw/,4099,sitemap (KW pages only),2026-10-19,Verified
+Chopard®,https://www.chopard.com/en-kw/,7647,sitemap (KW pages only),2026-10-19,Verified
 Claire's Kuwait (Alshaya),https://www.claires.com.kw/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Clarks Kuwait,https://www.clarksstores.com.kw/,1603,sitemap,2026-10-19,Verified
 Coach,https://www.coach.com.kw/,5763,sitemap,2026-10-19,Verified
@@ -116,14 +116,14 @@ Drops,https://drops.me/en-kw/,257060,sitemap,2026-10-19,Verified
 Dyson Kuwait,https://www.dyson.com.kw/,1272,archive,2026-10-19,Verified (secondary evidence)
 EAGER PILOTS,https://eagerpilots.com.kw/,49,sitemap,2026-10-19,Verified
 ElDora,https://eldora-kw.com/,1647,sitemap,2026-10-19,Verified
-Electronics in Touch Co,https://www.eitkw.com/,2699,sitemap,2026-10-19,Verified
+Electronics in Touch Co,https://www.eitkw.com/,2699,sitemap (partial: 6 of 7 sitemap files read),2026-10-19,Verified
 Elite House,https://elitewholesalekuwait.com/,181,sitemap,2026-10-19,Verified
 eMarket Kuwait: Discover Kuwait's Best Electronics,https://www.emarketkw.com/,2713,sitemap,2026-10-19,Verified
 EMVANO,https://ar-kw.emvano.com/,76156,sitemap,2026-10-19,Verified
 Engage,https://www.engage.com.kw/,713,sitemap,2026-10-19,Verified
 Eureka Electronics,https://www.eureka.com.kw/,8214,sitemap,2026-10-19,Verified
 Eva Electronics Co.| Arduino Kuwait | Raspberry Kuwait,https://evakw.com/,1867,sitemap,2026-10-19,Verified
-EVON Group Company Kuwait,https://www.evon.com.kw/,18810,sitemap,2026-10-19,Verified
+EVON Group Company Kuwait,https://www.evon.com.kw/,18810,sitemap (partial: 1 of 2 sitemap files read),2026-10-19,Verified
 Eyewa,https://eyewa.com/kw-en/,5856,sitemap (KW pages only),2026-10-19,Verified (secondary evidence)
 Faces,https://www.faces.com/,62082,archive,2026-10-19,Known major retailer – manually accepted
 Falcon Store,https://falcon.com.kw/,4400,sitemap,2026-10-19,Verified
@@ -146,9 +146,9 @@ Giordano Online Shopping | Kuwait,https://www.giordano.com.kw/,413,sitemap,2026-
 Go Fresh,https://gofresh.com.kw/,208,sitemap,2026-10-19,Verified
 Golden Sword Hardware,https://goldenswordhardware.com/,288,sitemap,2026-10-19,Verified
 GulfStore.com,https://gulfstore.com/,14335,sitemap,2026-10-19,Verified
-Gym Store,https://gymstorekw.com/,0,sitemap (KW pages only),2026-10-19,Verified
+Gym Store,https://gymstorekw.com/,,Not available (no KW pages in sitemap),2026-10-19,Verified
 H&M Kuwait,https://kw.hm.com/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
-Hakimi Auto Parts,https://hakimiautoparts.com/,243,sitemap,2026-10-19,Verified
+Hakimi Auto Parts,https://hakimiautoparts.com/,243,sitemap (partial: 5 of 6 sitemap files read),2026-10-19,Verified
 Hardware Corner,https://www.hardwarecornerkw.com/,2226,sitemap,2026-10-19,Verified
 Harvey Nichols Kuwait,https://www.harveynichols.com.kw/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified
 Health House,https://www.healthhousekw.com/,323,sitemap,2026-10-19,Verified
@@ -162,7 +162,7 @@ huft Kuwait,https://huftkuwait.com/,279,sitemap,2026-10-19,Verified
 HUGO BOSS,https://www.hugoboss.com/kw/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 hypermax,https://www.hypermax.com.jo/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.hypermax.com.jo', port=80): Read timed out. (read t))",2026-10-19,Verified (secondary evidence)
 IKEA Kuwait,https://www.ikea.com/kw/,55709,sitemap (KW pages only),2026-10-19,Verified (secondary evidence)
-INTERSPORT,https://www.intersport.com.kw/,20223,sitemap,2026-10-19,Verified (secondary evidence)
+INTERSPORT,https://www.intersport.com.kw/,20223,sitemap (partial: 5 of 9 sitemap files read),2026-10-19,Verified (secondary evidence)
 itlkuwait.com,https://itlkuwait.com/,493,sitemap,2026-10-19,Verified
 Jamali Hardware,https://jamalihardware.com/,2595,sitemap,2026-10-19,Verified
 Jamalik,https://jamalik-kw.com/,974,sitemap,2026-10-19,Verified
@@ -209,7 +209,7 @@ Maje KW,https://www.maje.com.kw/,1757,sitemap,2026-10-19,Verified
 Maktabakw,https://maktabakw.com/,12893,sitemap,2026-10-19,Verified
 Malabar Gold & Diamonds,https://www.malabargoldanddiamonds.com/,237059,archive,2026-10-19,Verified (secondary evidence)
 mango.com|kw,https://shop.mango.com/kw/,,Not available (blocked by site: HTTP 429 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
-MapsofWorld.com,https://mapsofworld.com/kuwait/,361764,sitemap,2026-10-19,Verified
+MapsofWorld.com,https://mapsofworld.com/kuwait/,361764,sitemap (partial: 105 of 111 sitemap files read),2026-10-19,Verified
 Marks & Spencer Kuwait,https://www.marksandspencer.com.kw/,8019,sitemap,2026-10-19,Verified
 Mashatel,https://mashatel.me/,6308,sitemap,2026-10-19,Verified
 massimodutti.com|kw,https://www.massimodutti.com/kw/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
@@ -231,8 +231,8 @@ mrmr Fashion,https://mrmr.com.kw/,42,sitemap,2026-10-19,Verified
 Mubkhar Kuwait,https://kw.mubkhar.com/,709,sitemap,2026-10-19,Verified
 Muji Kuwait,https://www.muji.com.kw/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Mumzworld,https://www.mumzworld.com/kw-en/,709088,sitemap (KW pages only),2026-10-19,Verified
-MY COLORS,https://mycolors.com/,1230,sitemap,2026-10-19,Verified
-MY COLORS,https://www.mycolors.com/en/kw/,1230,sitemap,2026-10-19,Verified
+MY COLORS,https://mycolors.com/,12601,sitemap,2026-10-19,Verified
+MY COLORS,https://www.mycolors.com/en/kw/,12601,sitemap,2026-10-19,Verified
 My Eureka,https://www.eurekasnack.com.kw/,18,sitemap,2026-10-19,Verified
 Namshi Kuwait,https://www.namshi.com/kuwait-ar/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.namshi.com', port=80): Read timed out. (read timeou))",2026-10-19,Verified (secondary evidence)
 Naos Care Kuwait,https://naos.com.kw/,625,sitemap,2026-10-19,Verified
@@ -265,7 +265,7 @@ Pecannbee,https://pecannbee.com.kw/,172,sitemap,2026-10-19,Verified
 PerfumesKuwait.com,https://www.perfumeskuwait.com/,618,sitemap,2026-10-19,Verified
 petsmarket.com,https://www.petsmarket.com/,2393,sitemap,2026-10-19,Verified
 Pharmalife-KW,https://pharmalife-kw.com/,2041,sitemap,2026-10-19,Verified
-Pilot,https://www.pilot.com.kw/,210,sitemap,2026-10-19,Verified
+Pilot,https://www.pilot.com.kw/,210,sitemap (partial: 10 of 12 sitemap files read),2026-10-19,Verified
 Pinoy Hyper Kuwait,https://pinoyhyper.com/,23743,sitemap,2026-10-19,Verified
 Poo~Pourri,https://poopourri.com.kw/,22,sitemap,2026-10-19,Verified
 Pottery Barn Kuwait,https://www.potterybarn.com.kw/,,Not available (blocked by site: HTTP 503 on robots.txt; not bypassed),2026-10-19,Known major retailer – manually accepted
@@ -374,7 +374,7 @@ Zaha Beauty KW,https://zahabeautykw.com/,,Not available (sitemap present but yie
 Zain Kuwait eShop,https://www.kw.zain.com/,311,sitemap,2026-10-19,Known major retailer – manually accepted
 Zara Kuwait,https://www.zara.com/kw/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 zarahome.com|kw,https://www.zarahome.com/kw/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
-Zayoom,https://zayoom.com/,0,sitemap (KW pages only),2026-10-19,Verified
+Zayoom,https://zayoom.com/,20549,"sitemap (whole site, no market segment)",2026-10-19,Verified
 ZGames Kuwait Online Store,https://zgames.com.kw/,1,archive,2026-10-19,Verified
 zoomzoon,https://zoomzoon.store/,181,sitemap,2026-10-19,Verified
 Zosouq,https://www.zosouq.com/,12338,sitemap,2026-10-19,Verified
@@ -395,7 +395,7 @@ Zue For Pet Supplies Co,https://www.zue.com.kw/,2657,sitemap,2026-10-19,Verified
 بي تو بي,https://b2b.com.kw/,74,sitemap,2026-10-19,Verified
 تسوقوا أحذية فاخرة وحقائب وإكسسوارات من متجر ليفيل شوز الكويت,https://www.levelshoes.com/ar-kw/,390185,sitemap,2026-10-19,Verified
 تسوقوا أحذية فاخرة وحقائب وإكسسوارات من متجر ليفيل شوز الكويت,https://ar-kuwait.levelshoes.com/,390185,sitemap,2026-10-19,Verified (secondary evidence)
-توي ستور - toy store,https://toystorekw.com/,160,sitemap,2026-10-19,Verified
+توي ستور - toy store,https://toystorekw.com/,160,sitemap (partial: 1 of 2 sitemap files read),2026-10-19,Verified
 تويز فور هوم - الكويت,https://www.toys4home.com/,2251,archive,2026-10-19,Verified
 تينا- للخضروات و الفاكهه,https://www.tiinaa.com/,192,archive,2026-10-19,Verified
 جوفي شيك الكويت متجر عطور للتسوق اون لاين,https://joveychic.net/,1,sitemap,2026-10-19,Verified
@@ -415,7 +415,7 @@ Zue For Pet Supplies Co,https://www.zue.com.kw/,2657,sitemap,2026-10-19,Verified
 عباية لاب | Abaya lab,https://abayalabkw.com/,155,sitemap,2026-10-19,Verified
 عذاري,https://www.adhari.com.kw/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
 عروض الكويت,https://www.ooroodkw.com/,386,sitemap,2026-10-19,Verified
-عطار الكويت,https://attarkuwait.com/,4709,sitemap,2026-10-19,Verified
+عطار الكويت,https://attarkuwait.com/,4969,sitemap,2026-10-19,Verified
 علي ديل,https://www.alidealkw.com/,489,sitemap,2026-10-19,Verified
 فاليدو للعطور,https://valido-kw.com/,18,sitemap,2026-10-19,Verified
 فلاور آرت الكويت,https://flowerartkw.com/,238,sitemap,2026-10-19,Verified
@@ -425,7 +425,7 @@ Zue For Pet Supplies Co,https://www.zue.com.kw/,2657,sitemap,2026-10-19,Verified
 لولو مودا,https://lulwamoda.com/,484,sitemap,2026-10-19,Verified
 متجر الكادي الإلكتروني,https://www.alkadikw8.com/,654,archive,2026-10-19,Verified
 متجر بلومينغديلز اونلاين | أشهر والمزيد,https://mamasandpapas.com.kw/,8326,sitemap,2026-10-19,Verified
-مجوهرات داماس,https://www.damasjewellery.com/kw-ar/,2487,sitemap (KW pages only),2026-10-19,Verified
+مجوهرات داماس,https://www.damasjewellery.com/kw-ar/,2487,sitemap (partial: 10 of 12 sitemap files read),2026-10-19,Verified
 محلكم MAHHALCOM,https://mahhalcom.com/,5424,sitemap,2026-10-19,Verified
 محمصة برق,https://barqroastery.com/,82,sitemap,2026-10-19,Verified
 محمصة روتس | Roots Roastery,https://rootsroastery.net/,734,sitemap,2026-10-19,Verified
