@@ -1,28 +1,29 @@
 {
- "total_added": 115,
+ "total_added": 114,
  "by_type": {
-  "Fashion-only": 113,
-  "Has clothing section": 2
+  "Fashion-only": 111,
+  "Has clothing section": 3
  },
  "by_gender": {
-  "Unisex": 65,
-  "Women": 37,
-  "Men": 13
+  "Unisex": 55,
+  "Women": 44,
+  "Men": 15
  },
  "by_size_tier": {
   "Brand-Major": 1,
   "Medium": 15,
-  "Small": 97,
+  "Small": 96,
   "Large": 2
  },
  "by_source": {
   "Brand portfolios / curated apparel brands": 13,
-  "Tranco fashion-keyword domains": 77,
-  "Wikidata clothing brands/retailers": 8,
-  "Unverified-candidate re-verification": 17
+  "Tranco fashion-keyword domains": 71,
+  "Wikidata clothing brands/retailers": 7,
+  "Unverified-candidate rescue (platform probes)": 13,
+  "Unverified-candidate re-verification": 10
  },
  "by_verification": {
-  "Verified": 109,
+  "Verified": 108,
   "Verified (secondary evidence)": 4,
   "Known major retailer \u2013 manually accepted": 2
  },
@@ -46,5 +47,30 @@
   "sample": 80,
   "error_rate_first_pass": "~15-17% (B2B/wholesale/custom print, kids, gender)",
   "error_rate_after_rule_fixes": "~9-11% on re-sample (mostly gender heuristics)"
+ },
+ "pass2": {
+  "rescue": {
+   "excluded_text_disagrees_weak_apparel": 91,
+   "excluded_text_disagrees_no_apparel_signal": 18,
+   "excluded_nonstore_domain": 12,
+   "added": 14,
+   "excluded_foreign_or_custom_or_nonfashion_name": 7,
+   "excluded_none": 4,
+   "b2b_custom_or_nonstore": 7,
+   "excluded_text_disagrees_non_apparel_focus": 1
+  },
+  "gender_basis": {
+   "probe_gender": 39,
+   "head_text_gender": 76
+  },
+  "candidates_probed": 2139,
+  "probe_verdicts": "accepted 146+ (purchase path + USD + US signal), most not apparel stores after classification",
+  "gender_method": "collection handles + product_type + tags first; fallback to storefront title/description head text only when no handle/tag signal (76 of 115 original rows had no signal)",
+  "common_crawl_channel": "skipped: CDX API down and path-wildcard host search not possible via cluster index",
+  "qa": {
+   "sample": 80,
+   "errors_before_fixes": "11/80 = ~14% (non-fashion/custom/kids stores + gender)",
+   "after_fixes": "sample errors corrected via exclusion/override lists; estimated residual ~5-8% (not independently re-sampled)"
+  }
  }
 }
