@@ -2,3 +2,9 @@ domain,market,pages_count,count_method,sitemap_files,top_sitemap_url,count_date,
 culture-circle.com,AE,667911,sitemap (AE pages only),1873,https://www.culture-circle.com/sitemap.xml,2026-10-19,"raw=12745152 dupes_removed=0; country split untagged=4007784,other=2499787,AE=667911,SA=667911,KW=667911,QA=667911"
 directenglish.com.sa,SA,25200,sitemap,6008,https://directenglish.com.sa/sitemap/202603130311 | https://directenglish.com.sa/sitemap/202603130312 | https://directenglish.com.sa/sitemap/202603130313 | https://directenglish.com.sa/sitemap/202603130315 | https://directenglish.com.sa/sitemap/202603130316 (+41822 more),2026-10-19,raw=7209600 dupes_removed=7184400
 misterpet.ae,AE,151,sitemap,8,https://n.meritkingmobilgiris.cam/sitemap.xml | https://misterpet.ae/sitemap.xml | https://misterpet.ae/sitemap_1.xml | https://misterpet.ae/sitemap_2.xml | https://misterpet.ae/sitemap_3.xml (+501 more),2026-10-19,raw=151 dupes_removed=0; failed sitemap fetches=504: https://misterpet.ae/sitemap_504.xml:404; https://misterpet.ae/sitemap_501.xml:404; https://misterpet.ae/sitemap_502.xml:404
+asus.com,SA,,Not available (timeout),0,,2026-10-19,
+asus.com,US,,Not available (timeout),0,,2026-10-19,
+trendyol.ae,AE,,Not available (timeout),0,,2026-10-19,
+rigstore.ae,AE,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,
+hp.com,SA,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,
+hp.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,

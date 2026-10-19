@@ -95,3 +95,4 @@ showdowndisplays.com,US,9829,archive,0,,2026-10-19,"no sitemap found; wayback CD
 ringsidecollectibles.com,US,37438,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('http://www.ringsidecollectibles.com/wicked-cool-toys-wwe-superstar-banks.html', 404), ('http://www.ringsidecollectibles.com/wicked-cool-toys-wwe-unchained-key-chains.html', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 collectorsfirearms.com,US,211558,sitemap,232,https://collectorsfirearms.com/sitemap_index.xml,2026-10-19,raw=211969 dupes_removed=411
 qvc.com,US,,Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (ChunkedEncodingError)),0,,2026-10-19,no sitemap found
+autozone.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
