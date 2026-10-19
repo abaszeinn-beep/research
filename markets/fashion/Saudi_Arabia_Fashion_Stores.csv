@@ -14,6 +14,7 @@ DeFacto,https://www.defacto.com/en-sa/,Fashion-only,"Women, Men",custom/unknown,
 Fashion: Brands For Less,https://www.brandsforless.com/en-sa/,Has clothing section,"Women, Men",,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260218061032/https://www.brandsforless.com/en-sa/women-zipplex-lace-up-training-shoes-black/1256145/p/
 Fred Perry,https://www.fredperry.com/sa-en/,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.fredperry.com/sa-en/
 GAP,https://www.gap.sa/,Fashion-only,"Women, Men",salesforce-commerce,Brand-Major,Verified,https://www.gap.sa/en/women-dresses
+GAP,https://www.gap.ae/,Fashion-only,"Women, Men",salesforce-commerce,Brand-Major,Verified,https://www.gap.ae/en/women-dresses
 Giordano Online,https://giordano.com.sa/ar,Has clothing section,"Women, Men",shopify,Brand-Major,Verified,https://giordano.com.sa/ar/collections/men-tees
 Guess KSA,https://www.guess.sa/,Has clothing section,"Women, Men",salesforce-commerce,Brand-Major,Verified,https://www.guess.sa/en/guess-jeans
 H&M,https://sa.hm.com/,Has clothing section,"Women, Men",,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20251017021920/https://sa.hm.com/ar/buy-3-piece-print-motif-fancy-dress-set-black-harry-potter-0
@@ -43,11 +44,15 @@ Splash,https://www.splashfashions.com/sa/,Fashion-only,Unisex,,Brand-Major,Verif
 Stradivarius,https://www.stradivarius.com/sa/,Fashion-only,Women,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260927203027/https://www.stradivarius.com/sa/en/women/shoes/all/new-n2377
 Styli,https://stylishop.com/sa/en/,Has clothing section,Women,,Brand-Major,Verified (secondary evidence),https://images.stylishop.com/mulin_sitemaps/sitemap-listing-sa-en-0.xml
 Sun & Sand Sports,https://en-sa.sssports.com/,Has clothing section,"Women, Men",salesforce-commerce,Brand-Major,Verified,https://en-sa.sssports.com/mens/clothing
+Sun & Sand Sports,https://en-ae.sssports.com/,Has clothing section,"Women, Men",salesforce-commerce,Brand-Major,Verified,https://en-ae.sssports.com/mens/clothing
 Victoria’s Secret KSA,https://www.victoriassecret.com.sa/en/,Fashion-only,"Women, Men",magento,Brand-Major,Verified,https://www.victoriassecret.com.sa/
 Zara,https://www.zara.com/sa/,Fashion-only,Unisex,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260712130054/https://www.zara.com/sa/ar/%D8%A8%D9%88%D9%84%D9%88-%D9%85%D8%AD%D8%A8%D9%88%D9%83-%D9%85%D8%B7%D8%B1%D8%B2-%D8%A8%D8%A7%D9%84%D8%B2%D9%87%D9%88%D8%B1-sissel-edelbo-x-zara-kids-p02756458.html
 أندر آرمر السعودية,https://www.underarmour.sa/ar/home,Has clothing section,"Women, Men, Unisex",salesforce-commerce,Brand-Major,Verified,https://www.underarmour.sa/ar/collections/ua-baselayer-collection/ua-baselayer-mens
 أُناس,https://saudi.ounass.com/women,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Verified,https://saudi.ounass.com/women/clothing
 ديكاتلون السعودية,https://decathlon.com.sa/,Has clothing section,"Women, Men",shopify,Brand-Major,Verified,https://decathlon.com.sa/
+Atelier Medad,https://ateliermedad.com/en-sa/,Has clothing section,"Women, Men",zid,Large,Verified,https://ateliermedad.com/categories/1510722/
+Cole Haan Saudi Arabia,https://colehaan.sa/,Has clothing section,Women,shopify,Large,Verified,https://colehaan.sa/
+Columbia Saudi Arabia,https://columbia.sa/,Has clothing section,"Women, Men",shopify,Large,Verified,https://columbia.sa/
 "Dolce&Gabbana® Clothing, Beauty, Casa and Food & Beverage",https://www.dolcegabbana.com/en-sa/,Has clothing section,"Women, Men",salesforce-commerce,Large,Verified (secondary evidence),https://www.dolcegabbana.com/en-sa/fashion/women/highlights/most-loved/
 "ETRO Official Website: Men's, Women's & Home collections",https://www.etro.com/sa-en/,Has clothing section,"Women, Men",salesforce-commerce,Large,Verified,https://www.etro.com/sa-en/women/clothing/
 Fashion.sa,https://fashion.sa/,Fashion-only,"Women, Men",salla,Large,Verified,https://fashion.sa/collections/women-dresses
@@ -55,16 +60,22 @@ Fashion: Selfridges / Harrods (intl),https://www.harrods.com/en-sa/,Has clothing
 ghareeb.abaya,https://ghareeb.com.sa/,Fashion-only,Women,salla,Large,Verified,https://ghareeb.com.sa
 harveynichols,https://www.harveynichols.sa/,Has clothing section,"Women, Men, Unisex",magento,Large,Verified,https://www.harveynichols.sa/en/women/clothing.html
 HUGO BOSS,https://www.hugoboss.com/sa/,Has clothing section,"Women, Men",salesforce-commerce,Large,Verified (secondary evidence),https://www.hugoboss.com/sa/en/mens-clothing-new-arrivals/
+Ipekyol KSA,https://sa.ipekyol.com/,Fashion-only,Women,shopify,Large,Verified,https://sa.ipekyol.com/collections/dress-2
 JACK & JONES,https://www.jackjones.com/ar-sa,Fashion-only,"Women, Men",custom/unknown,Large,Verified,https://www.jackjones.com/ar-sa/jeans
+Kate Spade Saudi Arabia,https://www.katespade.sa/,Has clothing section,Unisex,shopify,Large,Verified,https://www.katespade.sa/
 LIU.JO,https://liujo.sa/,Has clothing section,Women,shopify,Large,Verified (secondary evidence),https://liujo.sa/collections/women-fp-new-arrivals-clothing
 Lomar,https://lomar.sa/,Fashion-only,Men,salla,Large,Verified,https://lomar.sa/categories/1555557/thobe-sadiry
 Luxury: Balenciaga,https://www.balenciaga.com/en-sa/,Fashion-only,Unisex,,Large,Verified (secondary evidence),https://web.archive.org/web/20260712203233/https://www.balenciaga.com/en-sa/denim-stay-press-shorts-black-A001RBTUW541000.html
 Luxury: Gucci,https://www.gucci.com/sa/,Fashion-only,Unisex,,Large,Verified (secondary evidence),https://web.archive.org/web/20260712182819/https://www.gucci.com/sa/ar/pr/children/girl/girl-clothing-4-12-years/dresses-for-girl/childrens-denim-dress-with-horsebit-p-827449XDDCP4100
 Luxury: Saint Laurent,https://www.ysl.com/en-sa/,Fashion-only,Unisex,,Large,Verified (secondary evidence),https://web.archive.org/web/20260614100501/https://www.ysl.com/en-sa/pr/gaby-micro-vanity-bag-in-lambskin-8192851EL071000.html
+Max Mara KSA,https://www.maxmara.sa/,Has clothing section,Women,shopify,Large,Verified,https://www.maxmara.sa/
 Prada,https://www.prada.com/sa/ar.html,Has clothing section,"Women, Men",custom/unknown,Large,Verified,https://www.prada.com/sa/ar/womens/ready-to-wear/c/10048SA
 Rifa Clothing Unique Womens Fashion and Elegant Abayas,https://rifaclothing.com/en,Fashion-only,Women,salla,Large,Verified,https://rifaclothing.com/en/-/c765994853
+SEMIR,https://semir.com.sa/,Fashion-only,"Women, Men, Unisex",shopify,Large,Verified,https://semir.com.sa/
 SHADER,https://shader.sa/,Fashion-only,"Women, Men",salla,Large,Verified,https://shader.sa/عبايات-نسائية/c1464207045
 Shop Kaafmeem Women Saudi Abayas and Modest Fashion Online,https://kaafmeem.com/en,Fashion-only,"Women, Men",salla,Large,Verified,https://kaafmeem.com/en/abaya/c910954009
+Springfield KSA,https://www.springfield.sa/,Fashion-only,"Women, Men",shopify,Large,Verified,https://www.springfield.sa/collections/dresses
+Steve Madden Saudi Arabia,https://www.stevemadden.sa/ar,Fashion-only,"Women, Men",shopify,Large,Verified,https://www.stevemadden.sa/ar
 Tory Burch,https://www.toryburch.sa/,Has clothing section,Women,salesforce-commerce,Large,Verified,https://www.toryburch.sa/ar/ready-to-wear/categories/new-arrivals-1
 Valentino Online Boutique: The Maison Valentino Official Site,https://www.valentino.com/en-sa/,Has clothing section,"Women, Men",sap-hybris,Large,Verified,https://www.valentino.com/en-sa/women/private-sales-ready-to-wear-woman
 Vogacloset,https://vogacloset.com/saudi/,Fashion-only,Women,,Large,Verified (secondary evidence),https://web.archive.org/web/20260710113627/https://vogacloset.com/saudi/ar/beauty/haircare/styling-products/shu-uemura-shu-uemura-art-of-hair-nendo-definer-matte-clay-pomade-75ml-gsh-mp-shu1106029.html
@@ -86,30 +97,50 @@ Alula Sports Club,https://alulaclub.sa/,Has clothing section,Men,woocommerce,Med
 Anno,https://anno.sa/en,Fashion-only,Women,salla,Medium,Verified,https://anno.sa/
 Anti Gravity,https://antigravity.sa/en,Fashion-only,"Women, Men",salla,Medium,Verified,https://antigravity.sa/
 Athleta,https://www.athleta.sa/,Fashion-only,Women,salesforce-commerce,Medium,Verified,https://www.athleta.sa/en/leggings
+Athleta,https://www.athleta.ae/,Fashion-only,Women,salesforce-commerce,Medium,Verified,https://www.athleta.ae/en/leggings
+B FOR BABY,https://bforbaby.sa/,Has clothing section,Unisex,shopify,Medium,Verified,https://bforbaby.sa/
+Balabala,https://balabala.com.sa/,Fashion-only,"Women, Unisex",shopify,Medium,Verified,https://balabala.com.sa/
+Bedoon Essm,https://bedoonessm.com/en,Fashion-only,Women,salla,Medium,Verified,https://bedoonessm.com/en/العبايات/c1819282256
 Befashion Store,https://befashion.com.sa/,Has clothing section,Women,opencart,Medium,Verified,https://befashion.com.sa/index.php?route=product/category&path=62_108_111
+berllin,https://berllin.com/en,Fashion-only,Women,salla,Medium,Verified,https://berllin.com/en/dresses-offers-discounts/c1260795271
 Beyoncé,https://beyonce.com/sa-ar,Has clothing section,Women,shopify,Medium,Unverified – weak Saudi signals only,https://beyonce.com/shop/products/bday-pullover-hoodie
 Billionaire EU,https://www.billionaire.com/sa/home,Fashion-only,Men,salesforce-commerce,Medium,Unverified – weak Saudi signals only,https://www.billionaire.com/sa/clothing/
 boutiqaat,https://www.boutiqaat.com/ar-sa/,Has clothing section,"Women, Men",custom/unknown,Medium,Verified (secondary evidence),https://www.boutiqaat.com/ar-om/women/arabic-fragrances/all-over-spray-1209517592/l/
 BREAK THE CYCLE,https://breakthecycle.sa/,Fashion-only,Unisex,zid,Medium,Verified,https://breakthecycle.sa/categories/572091/
 Buyme,https://buyme.sa/,Fashion-only,"Women, Men",salla,Medium,Verified,https://buyme.sa/ملابس/c870394190
+CarCare,http://carcare.com.sa/,Has clothing section,Unisex,woocommerce,Medium,Verified,http://carcare.com.sa/
 Chantelle,https://chantelle.com/shop/en-sa/,Fashion-only,Women,custom/unknown,Medium,Unverified – weak Saudi signals only,https://chantelle.com/shop/en-sa/category/lingerie
 Check Point,https://www.checkpoint.com.sa/ar,Fashion-only,"Women, Men",shopify,Medium,Verified,https://www.checkpoint.com.sa/ar/collections/clothing
+Closet SA,https://closet.sa/,Fashion-only,"Women, Unisex",zid,Medium,Verified,https://closet.sa/categories/1295787/abayas
 CloudCorner - زاوية السحابة,https://cloudcorner.com.sa/,Fashion-only,"Women, Men",woocommerce,Medium,Verified,https://cloudcorner.com.sa/product-category/dresses/
 Crowdless,https://crowdless.sa/,Has clothing section,Women,shopify,Medium,Verified,https://crowdless.sa/collections/clothing
 Customon,https://www.customon.com/,Fashion-only,"Women, Men",custom/unknown,Medium,Unverified – weak Saudi signals only,https://www.customon.com/custom/t-shirts
 DABB,https://dabb.sa/,Fashion-only,Women,zid,Medium,Verified,https://dabb.sa/products/green-hoodie
 DALEEN,https://daleen.com.sa/,Fashion-only,Women,zid,Medium,Verified,https://daleen.com.sa/categories/1065758/نواعم
+Dar nijood,https://darnijood.com/,Has clothing section,Women,salla,Medium,Verified,https://darnijood.com/
 darayman,https://darayman.sa/ar/,Fashion-only,"Women, Men",custom/unknown,Medium,Verified,https://darayman.sa/ar/products/showitems/15
+DKNY | Saudi Arabia Official Store,https://dkny.sa/,Has clothing section,Women,shopify,Medium,Verified,https://dkny.sa/
+E-SEVEN STORE,https://eseven-store.com/en,Has clothing section,"Women, Men, Unisex",salla,Medium,Verified,https://eseven-store.com/en/category/KPxvgK
+entermarket,https://entermarket.sa/,Has clothing section,Unisex,woocommerce,Medium,Verified,https://entermarket.sa/
+Etam - KSA,https://www.etam.sa/,Fashion-only,Women,shopify,Medium,Verified,https://www.etam.sa/
 Fabric Concept,https://fabric.sa/,Fashion-only,"Women, Men",zid,Medium,Verified,https://fabric.sa/categories/984961/abayas
 FARM Rio KSA,https://www.farmrio.sa/ar,Fashion-only,"Women, Unisex",shopify,Medium,Verified,https://sa.farmrio.com/collections/dresses
+femi9 online shopping,https://www.femi9.com/,Fashion-only,Women,magento,Medium,Verified,javascript:void(0);
 Foot Locker,https://www.footlocker.com/sa/,Has clothing section,"Women, Men",custom/unknown,Medium,Unverified – weak Saudi signals only,https://www.footlocker.com/category/apparel-accessories.html?query=%3Arelevance%3Acollection_id%3Aapparel-accessories%3Agender%3AMen%27s%3Agender%3AAdult
+GAZZAZ,https://www.gazzaz.com.sa/,Has clothing section,"Women, Men, Unisex",shopify,Medium,Verified,https://www.gazzaz.com.sa/
+Greatness,https://greatnessksa.com/en,Has clothing section,Unisex,salla,Medium,Verified,https://greatnessksa.com/en
 Helium | هيليوم,https://helium.sa/,Fashion-only,Unisex,zid,Medium,Verified,https://helium.sa/categories/968827/هوديات
 io,https://io.com.sa/,Fashion-only,Women,salla,Medium,Verified,https://io.com.sa/
 Jasmine Store Luxury Women Pajamas and Lingerie,https://jasmine.com.sa/en,Fashion-only,Women,salla,Medium,Verified,https://jasmine.com.sa/en/-/c1724891023
+josor.sa,https://josor.sa/,Has clothing section,Unisex,woocommerce,Medium,Verified,https://josor.sa/
 JustFab,https://www.justfab.com/en-sa/,Has clothing section,"Women, Men",shopify,Medium,Unverified – weak Saudi signals only,https://www.justfab.com/shop/womens/clothing
 Kai Outfits,https://kai.sa/,Fashion-only,Unisex,shopify,Medium,Verified,https://kai.sa/
 Kiwi Sizing,https://kiwisizing.com/,Fashion-only,"Women, Men",custom/unknown,Medium,Unverified – weak Saudi signals only,https://kiwisizing.com/features/apparel-size-recommender/
 Kml,https://kml.com.sa/,Fashion-only,Women,salla,Medium,Verified,https://kml.com.sa/
+knoadress,https://knoadress.com/en,Fashion-only,Women,salla,Medium,Verified,https://knoadress.com/en
+La Vie En Rose,https://www.lavieenrose.com.sa/,Has clothing section,Women,shopify,Medium,Verified,https://www.lavieenrose.com.sa/
+LAVALLEE,https://lavalleeshop.com/,Fashion-only,Women,salla,Medium,Verified,https://lavalleeshop.com/
+Lemoni,https://lemonikids.com/en,Fashion-only,Women,salla,Medium,Verified,https://lemonikids.com/en/-/c1123397565
 lolacasademunt,https://lolacasademunt.sa/,Fashion-only,Women,shopify,Medium,Verified,https://lolacasademunt.sa/collections/clothes
 Luisa Spagnoli Online Shop,https://www.luisaspagnoli.com/en/sa/,Fashion-only,Women,salesforce-commerce,Medium,Unverified – weak Saudi signals only,https://www.luisaspagnoli.com/en/sa/search?cgid=category_000_023_000
 Mac Duggal,https://macduggal.com/,Fashion-only,Women,shopify,Medium,Unverified – weak Saudi signals only,https://macduggal.com/collections/black-dresses
@@ -118,22 +149,37 @@ Maje KSA,https://maje.sa/,Fashion-only,Women,shopify,Medium,Verified,https://maj
 Manar Store,https://manar.sa/,Fashion-only,"Women, Men, Unisex",salla,Medium,Verified,https://manar.sa/categories/1562587/
 Mansoj Dal,https://mansojdal.sa/en,Fashion-only,"Women, Men",salla,Medium,Verified,https://mansojdal.sa/en/Blackabayas/c1610899702
 Maxpoint Store,https://maxpoint.sa/en,Fashion-only,Women,salla,Medium,Verified,https://maxpoint.sa/en/-/c1057817580
+Mayoh,https://mayoh.com.sa/,Fashion-only,Women,woocommerce,Medium,Verified,https://mayoh.com.sa/product-category/swimwear/
+mcmworldwide.ksa,https://mcmworldwide.sa/,Has clothing section,"Women, Men",shopify,Medium,Verified,https://mcmworldwide.sa/
 Mimo & Co,https://www.mimo.com.ar/en-sa/,Has clothing section,Unisex,vtex,Medium,Unverified – weak Saudi signals only,"https://www.mimo.com.ar/217-minimimo-minimima?initialMap=productclusternames&initialQuery=217-minimimo-minimima&map=productclusternames,tipo-producto,tipo-producto,tipo-producto&query=/217-minimimo-minimima/abrigos-camperas-y-chalecos/buzos-y-cardigans/tejidos&searchState"
+Mnsaj - منسج,https://mnsaj.com/,Fashion-only,Women,custom/unknown,Medium,Verified,https://mnsaj.com/
+mrmr Fashion,https://mrmr.com.kw/,Fashion-only,Women,magento,Medium,Verified,https://mrmr.com.kw/catalogsearch/result/?q=فستان
+Myille Womens Clothing,https://myille.com/en,Fashion-only,Women,salla,Medium,Verified,https://myille.com/en/dresses/c1389278007
+ND Fashion فساتين سهرة وزفاف فاخرة في الخبر,https://ndfashions.com/,Fashion-only,Women,salla,Medium,Verified,https://ndfashions.com/
 NewStep,https://newstep.sa/,Fashion-only,Women,salla,Medium,Verified,https://www.youtube.com/@newstep-2/shorts
 Noētic,https://noetic.sa/,Fashion-only,Women,shopify,Medium,Verified,https://noetic.sa/collections/occasions
 NUDA,https://nuda.sa/,Fashion-only,Women,salla,Medium,Verified,https://nuda.sa/-/c343198260
+Overall-Boutique11,https://overall-boutique11.com/en,Has clothing section,"Women, Men",salla,Medium,Verified,https://overall-boutique11.com/en
 Personage,https://personage.sa/,Has clothing section,"Women, Men",woocommerce,Medium,Verified,https://personage.sa/product/straight-leg-jeans/
 Petit Bateau KSA,https://www.petit-bateau.sa/en/,Fashion-only,"Women, Men",magento,Medium,Verified,https://www.petit-bateau.sa/en/new-collection/collection/collection-dresses.html
 PetSmart,https://www.petsmart.com/,Has clothing section,Women,custom/unknown,Medium,Unverified – weak Saudi signals only,https://www.petsmart.com/featured-shops/halloween/f/category/accessories+bandanas%2c%20bows%20%26%20hats+clothing%20%26%20accessories+costumes+dresses+hoodies+shoes%20%26%20socks+sweaters%20%26%20coats+sweatshirts+t-shirts%20%26%20tank%20tops#tabs-1
 Pilai,https://pilai.sa/ar,Fashion-only,Unisex,shopify,Medium,Verified,https://pilai.sa/ar/collections/sweater-hoodies
+Podium,https://podium-new.mailoio.com/ar,Has clothing section,"Women, Men, Unisex",custom/unknown,Medium,Verified,https://podium-new.mailoio.com/ar/shop/category/clothing-2-1
 PrettyLittleThing,https://www.prettylittlething.eu/,Fashion-only,Women,custom/unknown,Medium,Unverified – weak Saudi signals only,https://www.prettylittlething.eu/categories/womens-clothing
 Printful,https://www.printful.com/,Has clothing section,Unisex,prestashop,Medium,Unverified – weak Saudi signals only,https://www.printful.com/blog/best-quality-tshirts-for-printing
 Punt Roma KSA,https://www.puntroma.sa/en/,Fashion-only,Women,salesforce-commerce,Medium,Verified,https://www.puntroma.sa/en/new-arrivals/dresses
+RAV ABAYA,https://rav.sa/en,Fashion-only,Women,salla,Medium,Verified,https://rav.sa/en
+Rinital,https://rinital-sa.com/,Fashion-only,Women,salla,Medium,Verified,https://rinital-sa.com/
 Rosa Clara Saudi Arabia,https://rosaclara.sa/,Fashion-only,Women,shopify,Medium,Verified,https://rosaclara.sa/collections/cocktail-dresses-collection-marfil-barcelona
 Rosemet Premium Evening and Occasion Dresses,https://rosemet.sa/en,Fashion-only,Women,salla,Medium,Verified,https://rosemet.sa/ar/%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-96/c2131149855
 S U L É,https://sule.sa/,Fashion-only,"Women, Men",shopify,Medium,Verified,https://sule.sa/collections/e-clothes
+Samena,https://samena-stores.com/,Fashion-only,"Women, Men",shopify,Medium,Verified,https://samena-stores.com/
+Saudi Olympic & Paralympic Committee,https://olympic.sa/,Fashion-only,Women,woocommerce,Medium,Verified,https://olympic.sa/
+SELENE Saudi Arabia Everyday Wear for Women Men and Kids,https://selene-official.com/en,Fashion-only,"Women, Men, Unisex",salla,Medium,Verified,https://selene-official.com/en/-/c1682506315
 SELSAL,https://selsal.sa/,Fashion-only,Women,zid,Medium,Verified,https://selsal.sa/categories/1724344/فساتين-السهرة
+Sharqiaa,https://store.sharqiaa.com/en,Fashion-only,Women,salla,Medium,Verified,https://store.sharqiaa.com/en/Plain-abayas/c553922058
 Shop all beauty and personal care products online from Teshtesh,https://teshtesh.com.sa/en,Fashion-only,"Women, Men, Unisex",salla,Medium,Verified,https://teshtesh.com.sa/
+SIDEWALK,https://sidewalk.sa/,Has clothing section,"Women, Men",zid,Medium,Verified,https://sidewalk.sa/categories/1495721/men-dress-shoes
 Silverback | سيلفرباك,https://silverback.sa/,Has clothing section,Unisex,zid,Medium,Verified,https://silverback.sa/categories/1410714/
 Spirit,https://spirit.sa/,Fashion-only,Unisex,zid,Medium,Verified,https://spirit.sa/categories/1440499/hoodie-man
 Stylish,https://stylish.com.sa/,Fashion-only,"Women, Men",zid,Medium,Verified,https://stylish.com.sa/categories/1022413/
@@ -145,49 +191,90 @@ The Quran Store,https://www.quranstore.com/,Has clothing section,"Women, Men",cu
 "Travel abayas, bisht abayas, crepe abayas, abaya shop, scarves",https://myscarf.com.sa/en,Fashion-only,"Women, Men",salla,Medium,Verified,https://myscarf.com.sa/en
 Trespetit,https://trespetit.sa/ar,Fashion-only,Women,shopify,Medium,Verified,https://trespetit.sa/ar/collections/baby-bottoms
 TROPHY تروفى,https://trophy.sa/ar/,Has clothing section,Unisex,custom/unknown,Medium,Verified,https://trophy.sa/ar/category/t-shirt-clothes/
+VOOVM,https://vooovm.com/ar-us/,Fashion-only,Women,zid,Medium,Verified,https://vooovm.com/categories/622573/فساتين-طويله-راقيه
 WRL Brand Premium Casual Wear for Men,https://wrl.sa/en,Fashion-only,"Women, Men, Unisex",salla,Medium,Verified,https://wrl.sa/en/Men-T-Shirts-Oversized-Premium-Cotton-WRL/c1966518296
 WWW.HARMONTBLAINE.COM,https://www.harmontblaine.com/,Has clothing section,Women,salesforce-commerce,Medium,Unverified – weak Saudi signals only,https://www.harmontblaine.com/hbj/vedi-tutto/
 ZUM,https://zum.sa/,Fashion-only,Unisex,zid,Medium,Verified,https://zum.sa/products/LAUNDRY-SAV
+أبهه ملابس وأكسسوارات للفتيات 4-18سنة,https://obaha.com.sa/,Has clothing section,Women,salla,Medium,Verified,https://obaha.com.sa/category/zaElqq
+أزياء ليسيورا LESIEURA متجر فساتين سهرة وعبايات وجلابيات,https://lesieura.com/,Fashion-only,Women,salla,Medium,Verified,https://apps.apple.com/us/app/%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D9%84%D9%8A%D8%B3%D9%8A%D9%88%D8%B1%D8%A7/id6738089635
+أشبيل للمستلزمات الرجالية,https://ashpel.com/,Fashion-only,Men,salla,Medium,Verified,https://ashpel.com/الثياب/c626900615
+أفكار مودرن,https://afkar-modern.com/,Has clothing section,Women,salla,Medium,Verified,https://afkar-modern.com/دولاب-تعليق-عبايات/c2146526991
 أَرِبْ | Arib Concept Store,https://aribstore.com.sa/,Has clothing section,Women,zid,Medium,Verified,https://aribstore.com.sa/categories/149022/ملابس
 اتارا بوتيك شراشف وسجاجيد صلاة وطرح جلابيات نسائية فاخرة,https://atara.sa/,Fashion-only,"Women, Men",salla,Medium,Verified,https://atara.sa/prayer-dresses/c1949976444
 اروشي,https://arushi.sa/,Fashion-only,Women,salla,Medium,Verified,https://arushi.sa/-/c1624734849
+التمكين,https://altamkin.sa/,Has clothing section,Unisex,woocommerce,Medium,Verified,https://altamkin.sa/
 الطفل الذهبي,https://goldenbaby.sa/,Fashion-only,Women,salla,Medium,Verified,https://goldenbaby.sa/category/GjvGrl
+العماري للأقمشة,https://alammari.sa/,Has clothing section,"Women, Men",salla,Medium,Verified,https://alammari.sa/
+العنود للأزياء فستان سهرة,https://alanoodfashion.com/en,Fashion-only,Women,salla,Medium,Verified,https://alanoodfashion.com/en
+الغزلان,https://algzlan.com/,Fashion-only,"Women, Men",zid,Medium,Verified,https://algzlan.com/categories/633868/عبايات-مناسبات
+اوبرا فاشن السعودية,https://opera-fashion.com/,Fashion-only,Women,salla,Medium,Verified,https://opera-fashion.com/new-arrivals-evening-dresses/c1187280436
 بارلينا,https://barllina.com/ar-us/,Fashion-only,Women,zid,Medium,Verified,https://barllina.com/ar-us/categories/1754984/womens-dresses-sale
+باليت,https://palette.sa/,Has clothing section,Unisex,zid,Medium,Verified,https://palette.sa/
+بلاك وينج,https://black-wing-sa.com/en,Fashion-only,Women,salla,Medium,Verified,https://black-wing-sa.com/en/long-t-shirts/c9984797
+بوتيك لال أرقى فساتين السهرة والأطقم النسائية الفاخرة,https://lalfashiion.com/,Fashion-only,Women,salla,Medium,Verified,https://lalfashiion.com/فساتين-سهرة/c1183372968
 تريجر ايلاند,https://treasureisland.sa/,Fashion-only,Women,salla,Medium,Verified,https://treasureisland.sa/
 تصاميم أنيقة وعصرية,https://nadish.sa/,Fashion-only,Women,salla,Medium,Verified,https://nadish.sa/-/c133049003
 توترندي 2TRENDY,https://2trendy.sa/,Fashion-only,Women,salla,Medium,Verified,https://2trendy.sa/فساتين/c1116512274
 توتي كيدز Totikids,https://toti.sa/,Fashion-only,Women,opencart,Medium,Verified,https://toti.sa/
 جنيف,https://geneva.sa/en,Fashion-only,Women,salla,Medium,Verified,https://geneva.sa/en
+جولينا براند سعودي متخصص بتوفير آحدث صيحات الموضه من الملابس والفساتين,https://jolinafashion.com/,Fashion-only,Women,salla,Medium,Verified,https://jolinafashion.com/-/c776806210
+حديقة القطن -جلابيات و بيجاما قطنية بجوة عالية- تصاميم فاخرة,https://cotton-park.net/en,Fashion-only,"Women, Men",salla,Medium,Verified,https://cotton-park.net/en/Men-sleepwear/c1928171573
+حيا Amazing IDEA,https://haya.store/,Fashion-only,"Women, Men, Unisex",magento,Medium,Verified,https://haya.store/women/arab-clothes.html
 دافا | Dafa - صديق العائلة,https://dafa.com.sa/,Fashion-only,Women,zid,Medium,Verified,https://dafa.com.sa/categories/253382/العناية-بالملابس
 روز فاشن,https://rose.sa/,Fashion-only,Women,zid,Medium,Verified,https://rose.sa/categories/904703/فساتين-وصلت-حديثا-في-السعودية
+سبورتيلو,https://sporteloo.com/,Fashion-only,Unisex,salla,Medium,Verified,https://sporteloo.com/تيشيرتات-فئة-الاعبين/c1796600162
+سرايا عبايات,https://saraya-abaya.com/,Fashion-only,"Women, Men",salla,Medium,Verified,https://saraya-abaya.com
 سواج Swag ملابس للجنسين هودي تيشرت قميص بنطلون شورت طقم,https://swag.sa/en,Fashion-only,Unisex,salla,Medium,Verified,https://swag.sa/en/Hoodie/c595384521
 شاب بوتيك,https://shab.sa/ar-us/,Fashion-only,"Women, Men",zid,Medium,Verified,https://shab.sa/ar-us/categories/921910/ثياب-رجالية
 شركة امالا للمشالح والبشوت الرئيسية,https://bsht.sa/,Fashion-only,"Women, Men",salla,Medium,Verified,https://bsht.sa/
+شماغ دسار,https://desarksa.com/en,Fashion-only,Men,salla,Medium,Verified,https://desarksa.com/en/-/c278687580
 شماغ شوب أفضل متجر شماغ في السعودية,https://shemaghshop.sa/,Fashion-only,Men,salla,Medium,Verified,https://shemaghshop.sa/bisht/c1644465205
 عالم برايفت,https://privateworld.com.sa/,Fashion-only,Women,zid,Medium,Verified,https://privateworld.com.sa/categories/1260111/عبايات-مميزة
+عبايات الماسة السوداء بتصاميم عصرية للهوية السعودية,https://almasaalswda.com/,Fashion-only,"Women, Men",salla,Medium,Verified,https://almasaalswda.com/-/c302620477
 عبايات بلاك فيل,https://blackveil.sa/,Fashion-only,Women,salla,Medium,Verified,https://blackveil.sa/
 عبايات بوكنان,https://bukanan.sa/,Fashion-only,"Women, Men",zid,Medium,Verified,https://bukanan.sa/categories/422272/جديد-عبايات-بوكنان
+عبايات حوراء,https://hawraaabaya.com/,Fashion-only,"Women, Men, Unisex",zid,Medium,Verified,https://hawraaabaya.com/categories/1692665/عبايات-96
 عبايات سوروزيه,https://sorose.sa/,Fashion-only,Women,salla,Medium,Verified,https://sorose.sa/products/تنورة-شارميوز-بطول-للربلة-وطبعة-شقائق-النعمان
+عبايات فزة,https://fzahabaya.com/,Fashion-only,"Women, Men",salla,Medium,Verified,https://fzahabaya.com
+عبايات لوزان,https://louzanabaya.com/en,Fashion-only,"Women, Men",salla,Medium,Verified,https://louzanabaya.com/en
 عجلات منطلقة freewheels,https://freewheels.sa/,Has clothing section,Unisex,zid,Medium,Verified,https://freewheels.sa/categories/319799/هودي
+عميد للوازم الرحلات,https://amidth.com/,Has clothing section,Men,salla,Medium,Verified,https://amidth.com/
+عيقان - AEQAN,https://aeqan.com/,Has clothing section,"Women, Men, Unisex",salla,Medium,Verified,https://aeqan.com/category/عبايات
 فساتين برادو | PRADO,https://prado.com.sa/ar-us/,Fashion-only,Women,zid,Medium,Verified,https://prado.com.sa/products/لورينا-ون
 فساتين نسائية فخمة لكل المناسبات تسوقي الآن,https://revan.com.sa/en,Fashion-only,Women,salla,Medium,Verified,https://revan.com.sa/en/-/c1323881300
 قصر الأنيق Elegant Palace,https://elegantpalace.sa/en,Fashion-only,"Women, Men",salla,Medium,Verified,https://elegantpalace.sa/
+كسوة الخيالة أفضل متجر مستلزمات رجالية فى السعودية,https://alkhialh.com.sa/,Fashion-only,"Women, Men, Unisex",salla,Medium,Verified,https://alkhialh.com.sa/-/c2009584721
 كيابي السعودية,https://kiabi.sa/ar,Fashion-only,"Women, Men",shopify,Medium,Verified,https://kiabi.sa/ar/collections/fam4000328-t-shirts-tops-and-tank-tops
 لارا LARA,https://lara.com.sa/,Fashion-only,Women,salla,Medium,Verified,https://lara.com.sa
+ليال عباية,https://aya-ksa-sa.com/,Fashion-only,Women,salla,Medium,Verified,https://aya-ksa-sa.com
 ماركس آند سبنسر السعودية,https://www.marksandspencer.sa/ar/fashion,Fashion-only,"Women, Men",custom/unknown,Medium,Verified,https://www.marksandspencer.sa/fashion/category/women/clothing/skirts
+متجر اكتان للأزياء,https://actan.com/en,Fashion-only,Women,salla,Medium,Verified,https://actan.com/en/-/c666109309
 متجر الصقر,https://store.alsaqerfc.sa/,Fashion-only,Unisex,custom/unknown,Medium,Verified,https://store.alsaqerfc.sa/sub-category/4
 متجر العريس,https://rdai.sa/,Fashion-only,Men,salla,Medium,Verified,https://rdai.sa/
+متجر الفوزان,https://alfowzan.com/,Fashion-only,"Women, Men",zid,Medium,Verified,https://alfowzan.com/categories/447706/ملابس-داخلية-صيفية
 متجر الهرم الالكتروني,https://alharamstores.com/,Has clothing section,"Women, Men",magento,Medium,Verified,https://alharamstores.com/ملابس-نسائية/أزياء-النساء.html
+متجر اناقتي فـساتين الــسهرة والـزفـآف فـي الـسعودية,https://sa3at51.com/en,Fashion-only,Women,salla,Medium,Verified,https://sa3at51.com/en/فساتين-سهرة-سيدات/c1227501897
+متجر بايك هب للدراجات النارية,https://bikehub.sa/,Has clothing section,Unisex,salla,Medium,Verified,https://bikehub.sa/-/c289997569
 متجر بينوش افضل موقع فساتين سهرة فساتين العيد في السعودية,https://binoche.sa/en,Fashion-only,Women,salla,Medium,Verified,https://binoche.sa/en/-/c1773026022
+متجر توزيعات وهدايا أفكار هدايا مميزة وتوزيعات لجميع المناسبات,https://tlbate.com/,Has clothing section,Women,salla,Medium,Verified,https://tlbate.com/-/c731142979
+متجر جلابية ستور للجلابيات المصرية,https://jalabyastore.com/,Fashion-only,Women,salla,Medium,Verified,https://jalabyastore.com
 متجر دفنيشن Definition,https://definition.sa/en,Fashion-only,Men,salla,Medium,Verified,https://definition.sa/
+متجر سرداب للعبايات,https://serdababaya.com/,Fashion-only,"Women, Men",salla,Medium,Verified,https://serdababaya.com
 متجر عامرية Ameriah,https://ameriah.sa/,Fashion-only,"Women, Men",salla,Medium,Verified,https://ameriah.sa/-/c1596867709
+متجر عبايات حرائر,https://haraer.com/en,Fashion-only,Women,salla,Medium,Verified,https://haraer.com/en/All-Abaya/c1098624904
+متجر مارسيل,https://marsilstores.com/en,Fashion-only,Women,salla,Medium,Verified,https://marsilstores.com/en/marsil-girl-dresses/c220410532
 مجمع العائلة,https://family.sa/,Fashion-only,"Women, Men",salla,Medium,Verified,https://family.sa/الفساتين/c1712741468
+منصة نزيل,https://nazeeel.com/en,Fashion-only,"Women, Men, Unisex",salla,Medium,Verified,https://nazeeel.com/en/prisoner-clothing-blue-uniform-underwear-pajamas-nazeel/c658502904
+موضة وأكثر,https://moda.sa/,Has clothing section,"Women, Men, Unisex",salla,Medium,Verified,https://moda.sa/
 ميدي Midi,https://midi.sa/,Fashion-only,"Women, Men",opencart,Medium,Verified,"https://midi.sa/الشحن و التوصيل  , متجر ميدي Midi, ميدي, ميدي Midi, midi, ميدي كيدز, مارسيل,بسكوتي, ليموني, ممنون, فاشن, نايس ون,متجر نسائي, متجر ملابس , اطفال,فساتين,موديلات,فساتين,فساتين,اطفال,,فساتين,ناعمه,ملابس,اطفال,نمشي,فساتين,موديلات,فساتين,سهرة,فساتين,بنات,فساتين"
+ميرا للعبايات,https://miraabaya.com/,Fashion-only,"Women, Men",salla,Medium,Verified,https://miraabaya.com
 ميزار MIZAR UNIFORMS ملابس طبية للمستشفيات والأطباء والممرضين,https://mizar.sa/en,Fashion-only,Women,salla,Medium,Verified,https://mizar.sa/
+نزيل السجن متجر متخصص في مستلزمات السجناء وبطاقات الشحن المعتمدة يوفر,https://nazeel-ksa.com/,Fashion-only,"Women, Men",salla,Medium,Verified,https://nazeel-ksa.com/official-unifrm/c86831310
 ورزان - WARAZAN,https://warazan.sa/,Fashion-only,Women,zid,Medium,Verified,https://warazan.sa/categories/920800/احدث-فساتين-2026
 1NW-SHOP,https://salla.sa/aloshdigital,Fashion-only,Men,salla,Small,Verified,https://salla.sa/aloshdigital
 2SEVEN,https://salla.sa/2sevensa,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/2sevensa
 41’s,https://0scqsq.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://0scqsq.zid.store/categories/1285668/hoodies
+7THZONE,https://salla.sa/7thzone,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/7thzone/-/c1985143530
 83store,https://83store.zid.store/,Fashion-only,Women,zid,Small,Verified,https://83store.zid.store/categories/1037086/abayas
 @sara_boutique9,https://saraboutique9.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/sara_boutique9-2021
 A K Y O,https://akyo-co.com/en,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/akyo-co
@@ -197,15 +284,18 @@ Abaya,https://abayaest.com/,Fashion-only,Women,salla,Small,Verified,https://abay
 ABAYA QUEEN,https://salla.sa/abaya-queen-designer,Fashion-only,Women,salla,Small,Verified,https://salla.sa/Abaya-Queen-designer 
 ABAYA1997,https://abaya-1997.com/,Fashion-only,Women,salla,Small,Verified,https://abaya-1997.com
 Abayas.By.Non,https://abayasbynon.com/,Fashion-only,Women,salla,Small,Verified,https://abayasbynon.com
+Ace of spades,https://salla.sa/ace_storee,Fashion-only,Women,salla,Small,Verified,https://salla.sa/ace_storee/ready-to-wear/c1880555397
 ADELA,https://salla.sa/adela5555,Fashion-only,Women,salla,Small,Verified,https://salla.sa/adela5555
 ADORABLE,https://salla.sa/adorable-,Fashion-only,Women,salla,Small,Verified,https://salla.sa/adorable-
 AEEN,https://salla.sa/aeenabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/aeenabaya
 Af Saudi,https://salla.sa/af-saudi,Fashion-only,Women,salla,Small,Verified,https://salla.sa/af-saudi
 "Aila Store The best travel clothes, hijab and abayas Quality, variety",https://ailaksa.com/en,Fashion-only,Women,salla,Small,Verified,https://ailaksa.com/en/Abayas/c360554335
 Akira store,https://salla.sa/akira-store,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/akira-store
+ALBANDRI boutique,https://salla.sa/albandri2018,Has clothing section,Women,salla,Small,Verified,https://salla.sa/albandri2018
 ALBDUOR,https://salla.sa/albadawr-878,Fashion-only,Women,salla,Small,Verified,https://salla.sa/albadawr-878
 Alia Mehdar,https://aliamehdar.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/aliamehdar
 aljouri_fashion96,https://gory.zid.store/,Fashion-only,Women,zid,Small,Verified,https://gory.zid.store/categories/200712/فساتين
+ALKAMAL,https://salla.sa/al_kamal,Has clothing section,Women,salla,Small,Verified,https://salla.sa/al_kamal/الـمـلابـس-الـداخـلـيـة-underwear/c1194280019
 Alkhalaf.market,https://salla.sa/alkhalafmarket-,Fashion-only,Men,salla,Small,Verified,https://salla.sa/alkhalafmarket-
 Alkhaznah.abaya,https://salla.sa/alkhaznah,Fashion-only,Women,salla,Small,Verified,https://salla.sa/alkhaznah
 alkhialashop,https://salla.sa/alkhialashop,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/alkhialashop
@@ -217,6 +307,7 @@ Aloura,https://salla.sa/aloura-170,Fashion-only,Women,salla,Small,Verified,https
 ALOYA,https://aloya.zid.store/,Fashion-only,Women,zid,Small,Verified,https://aloya.zid.store/categories/1475724/فساتين-الربيع-من-٣-إلى-٨-سنوات
 Alsahd,https://alsaahd.com/,Fashion-only,Women,salla,Small,Verified,https://alsaahd.com/-/c460400585
 Alsuha.abaya,https://alsuhaabaya.zid.store/,Fashion-only,Women,zid,Small,Verified,https://www.instagram.com/alsuaha.abaya
+AM Line,https://amline4.com/,Fashion-only,Unisex,salla,Small,Verified,https://amline4.com/
 Amaalrose store,https://salla.sa/alamal_shop,Fashion-only,"Women, Men, Unisex",salla,Small,Verified,https://salla.sa/alamal_shop/ملابس-نسائيه/c290971326
 Amani’s Design,https://salla.sa/amanis-design-,Fashion-only,Women,salla,Small,Verified,https://salla.sa/amanis-design-/عبايات-صيفية-ملونة/c606532803
 AmberParis,https://salla.sa/amberparis,Fashion-only,Women,salla,Small,Verified,https://salla.sa/amberparis
@@ -225,7 +316,9 @@ ARb Line,https://arb-line.com/,Fashion-only,Women,salla,Small,Verified,https://a
 ARCHYOU,https://archyou.zid.store/,Fashion-only,Women,zid,Small,Verified,https://archyou.zid.store/categories/1688852/دريس-قطني
 Arlaa Abaya,https://salla.sa/arlaa,Fashion-only,Women,salla,Small,Verified,https://salla.sa/arlaa
 Around,https://salla.sa/aroundx,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/aroundx
+ARTSHDN,https://artshdn.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://artshdn.zid.store/categories/1129511/hoodie
 Ash line,https://salla.sa/ash-line,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/ash-line
+ASHWAA | عَشّواء,https://gtvzlq.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://gtvzlq.zid.store/categories/1426755/black-double-cap-hoodie
 ASHWAR Abaya,https://salla.sa/ashwar-abaya,Fashion-only,"Women, Unisex",salla,Small,Verified,https://salla.sa/ashwar-abaya
 ASMARA,https://asmaraksa.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://asmaraksa.com/en/فساتين/c398004430
 ASSIST,https://salla.sa/noorassist,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/noorassist
@@ -234,25 +327,35 @@ athyّh,https://athyhksa.com/,Fashion-only,Women,salla,Small,Verified,https://sa
 attireallurecom,https://attire-allure.com/en,Fashion-only,Women,salla,Small,Verified,https://attire-allure.com/ar/%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D8%B7%D9%88%D9%8A%D9%84%D8%A9/c1359162056
 Avaya aura,https://avayaaura.zid.store/,Fashion-only,Women,zid,Small,Verified,https://avayaaura.zid.store/categories/1274151/العبايات-الشتوية
 AYA ABAYA,https://ayaabaya1.zid.store/,Fashion-only,Women,zid,Small,Verified,https://ayaabaya1.zid.store/categories/1152551/عبايات-شتوية
+Azura,https://azura0.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://azura0.com/
 B9,https://salla.sa/bnine,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/bnine/ملابس/c485211087
+BALMA,https://salla.sa/balma2023,Has clothing section,Men,salla,Small,Verified,https://salla.sa/balma2023/ملابس-رجالية/c1128721843
+Batool online shopping,https://albatoolboutique.com/,Has clothing section,"Women, Unisex",salla,Small,Verified,https://albatoolboutique.com/
 Batrinastyle Womens Dresses Online Saudi Store,https://batrinastyle.com/en,Fashion-only,Women,salla,Small,Verified,https://batrinastyle.com/en/فساتين-السهرة/c1872767710
 Be shopper,https://beshopper.zid.store/,Fashion-only,Women,zid,Small,Verified,https://beshopper.zid.store/categories/1355425/فساتين-ناعمة
 Bee desigh,https://facxif.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://facxif.zid.store/categories/1111333/summer-24
+Believe,https://salla.sa/believe-24,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/believe-24
 BELLA,https://salla.sa/bellla_,Fashion-only,Women,salla,Small,Verified,https://salla.sa/bellla_/فساتين/c769189576
 Bella Boutique,https://salla.sa/bellaboutique-2022,Fashion-only,Women,salla,Small,Verified,https://salla.sa/bellaboutique-2022/عبايات/c30725994
 bellavita,https://salla.sa/bellavita,Fashion-only,Women,salla,Small,Verified,https://salla.sa/bellavita/عبايات-سعودية-فخمة/c961613083
 Bestyli,https://salla.sa/bestyli,Has clothing section,Women,salla,Small,Verified,https://salla.sa/bestyli
+BLYNN,https://blynnksa.com/en,Has clothing section,Women,salla,Small,Verified,https://blynnksa.com/en/leggings/c1241998153
 bounce,https://wthbstore.com/en,Fashion-only,"Women, Unisex",salla,Small,Verified,https://wthbstore.com/en/t-shirts-for-the-20262027-season/c360001085
 Boutique_AfrahAlsltany,https://boutique-afrahalsltany.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/boutique_afrahalsltany
+BRIDESS,https://brides-sa.com/,Has clothing section,Unisex,salla,Small,Verified,https://brides-sa.com/
+BROWNZ STORE,https://salla.sa/brownz-store,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/brownz-store
+By Ghadi,https://byghadi.com/en,Has clothing section,Women,salla,Small,Verified,https://byghadi.com/en/abayas/c1183190799
 By_Maithaa,https://salla.sa/6baf16d8-eec7-4315-b80c-46235b816a03,Fashion-only,Women,salla,Small,Verified,https://salla.sa/6baf16d8-eec7-4315-b80c-46235b816a03
 bygone,https://bygone.in/,Fashion-only,Unisex,salla,Small,Verified,https://bygone.in/-/c210460796
 BYS,https://abayas-base.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/bys_store
 cavalla,https://cavallaksa.com/,Fashion-only,Women,salla,Small,Verified,https://cavallaksa.com/-/c469505706
 Chic dresses,https://chicdressess.com/en,Fashion-only,Women,salla,Small,Verified,https://chicdressess.com/en/فساتين-سهرة-تفصيل/c120190012
 Children World,https://salla.sa/children-world-,Fashion-only,Women,salla,Small,Verified,https://salla.sa/children-world-/فساتين-الصيف-و-الربيع/c941218051
+Cinnamon gurl store,https://cinnamongurl.com/en,Has clothing section,Women,salla,Small,Verified,https://cinnamongurl.com/en
 CLOVIA LINE,https://salla.sa/clovialine,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/clovialine
 CM,https://salla.sa/cactusmachine,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/cactusmachine/-/c1468907724
 codkady,https://salla.sa/wrd188,Fashion-only,Women,salla,Small,Verified,https://salla.sa/wrd188/-/c1393183390
+CORAL REEF DIVERS CENTER,https://salla.sa/coeal-reef-divers,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/coeal-reef-divers
 CORE,https://salla.sa/byeral-2024,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/byeral-2024
 Curio,https://curio2.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://curio2.zid.store/categories/1440651/hoodies
 D.monica,https://salla.sa/monica106,Fashion-only,Women,salla,Small,Verified,https://salla.sa/monica106/جلابيات/c1353474334
@@ -267,12 +370,14 @@ Deem abayas,https://deem-abaya.com/en,Fashion-only,Women,salla,Small,Verified,ht
 Deer line,https://salla.sa/deerline4,Fashion-only,Women,salla,Small,Verified,https://salla.sa/deerline4/عبايه/c2071021832
 DOUBLE R ABAYAS,https://doublerabayas.com/,Fashion-only,Women,salla,Small,Verified,https://doublerabayas.com
 Dressesr_,https://salla.sa/dresses_r,Fashion-only,Women,salla,Small,Verified,https://salla.sa/dresses_r
+e.bstore,https://ebstoree.com/en,Has clothing section,"Women, Men",salla,Small,Verified,https://ebstoree.com/en/-/c112834707
 echarpe_s,https://echarpestore.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/echarpe_s
 ECOR,https://ecor-sa.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/heart-ecg
 Elegance Line,https://eleganceline.online/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/http-166-bmdh
 Elegant High Quality Dresses at Priscillas Wardrobe,https://priscillas-wardrobe.com/en,Fashion-only,Women,salla,Small,Verified,https://priscillas-wardrobe.com/en/-/p6877305
 Eleven abaya,https://salla.sa/eleven_e11,Fashion-only,Women,salla,Small,Verified,https://salla.sa/eleven_e11
 eleven one,https://salla.sa/eleven-one,Has clothing section,Men,salla,Small,Verified,https://salla.sa/eleven-one
+Enn Abayas,https://salla.sa/ennabayas,Has clothing section,Women,salla,Small,Verified,https://salla.sa/ennabayas
 ES,https://salla.sa/esabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/esabaya
 Everyone,https://salla.sa/frohike,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/frohike
 FaaDesigns,https://salla.sa/faadesigns,Fashion-only,Women,salla,Small,Verified,https://salla.sa/faadesigns
@@ -306,25 +411,32 @@ Hayat The Designer,https://hayatthedesigner.zid.store/,Fashion-only,Women,zid,Sm
 HENDA8880,https://salla.sa/hinda8880,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/hinda8880
 HENUA,https://henuaabaya.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/henua
 Hiba Farrash مصممة أزياء سعودية,https://hiba-farrash.com/en,Fashion-only,Women,salla,Small,Verified,https://hiba-farrash.com/en/-/c1103013362
+HINDAMME,https://hindamme.com/en,Fashion-only,Women,salla,Small,Verified,https://hindamme.com/en
 HindamWorld هندام,https://salla.sa/hindamworld,Fashion-only,Men,salla,Small,Verified,https://salla.sa/hindamworld
 HM9 تشكيلة فساتين مستوردة حصرية وجودة لا مثيل لها,https://hm9store.com/,Fashion-only,Women,salla,Small,Verified,https://hm9store.com/category/GYrlaz
 Home stayle,https://homestayle.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://homestayle.zid.store/products/نسخة-من-نسخة-من-لا-ثقب-خالية-انكماش-الغسيل-غير-مرئية-الحمام-فندق-الملابس-الرف-سلك-حبل-غرفة-المعيشة-شرفة-المحمولة-تجفيف-الملابس
 Hoor’s Pouch,https://salla.sa/hp_pouch,Has clothing section,Men,salla,Small,Verified,https://salla.sa/hp_pouch
 Hope store,https://salla.sa/hopestore,Fashion-only,Women,salla,Small,Verified,https://salla.sa/hopestore
 Houseofsouvenirs,https://salla.sa/houseofsouvenirs,Has clothing section,Women,salla,Small,Verified,https://salla.sa/houseofsouvenirs
+Hyar,https://hyar.sa/en,Has clothing section,Women,salla,Small,Verified,https://hyar.sa/en
 Hzraf,https://salla.sa/hzraf-2026,Fashion-only,Women,salla,Small,Verified,https://salla.sa/hzraf-2026
 IBA SPRTS,https://ibasprts.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://ibasprts.zid.store/categories/1350462/ملابس-نادي-الأهلي
 Iileantiq,https://besh5001.zid.store/,Fashion-only,Women,zid,Small,Verified,https://besh5001.zid.store/products/عبايه-دبل-كلوش
 inkly,https://salla.sa/inkiy,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/inkiy
 Its Mine,https://itsminesa.com/en,Fashion-only,Women,salla,Small,Verified,https://itsminesa.com/en/dresses/c599440153
+IVOREÉ,https://salla.sa/ivoree,Fashion-only,Women,salla,Small,Verified,https://salla.sa/ivoree
 JaoadShop,https://w6ys9f.zid.store/,Fashion-only,Women,zid,Small,Verified,https://w6ys9f.zid.store/
 JEA ABAYA .,https://salla.sa/jea-abaya-,Fashion-only,Women,salla,Small,Verified,https://salla.sa/jea-abaya-
+jewel boutiq,https://jewelboutiqes.com/,Fashion-only,Women,salla,Small,Verified,https://jewelboutiqes.com/
 Jewelarar,https://qwekdt.zid.store/,Fashion-only,Women,zid,Small,Verified,https://qwekdt.zid.store/categories/1023327/فساتين
 JIHAN ABAYAS,https://salla.sa/jihana,Fashion-only,Women,salla,Small,Verified,https://salla.sa/jihana
 Jilbab1,https://salla.sa/jilbab1,Fashion-only,Women,salla,Small,Verified,https://salla.sa/jilbab1
+JM,https://salla.sa/byjm,Has clothing section,Women,salla,Small,Verified,https://salla.sa/byjm
 Joyfulangel,https://salla.sa/huda_,Fashion-only,Women,salla,Small,Verified,https://salla.sa/huda_
 K A M,https://salla.sa/k-a-m,Fashion-only,Women,salla,Small,Verified,https://salla.sa/k-a-m
+K1,https://salla.sa/k1sa,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/k1sa/-/c14591205
 Kayan boutique,https://salla.sa/kayan-boutique4,Fashion-only,Women,salla,Small,Verified,https://salla.sa/kayan-boutique4/فساتين-0-3-الى-24-شهر/c382332891
+KEY,https://salla.sa/k-store0,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/k-store0
 Khawlah's World,https://uxghcw.zid.store/,Fashion-only,Women,zid,Small,Verified,https://uxghcw.zid.store/categories/402633/عبايات-صيفية
 Kholoud Kids Children's Clothing Store,https://kholudkids.com/en,Fashion-only,Women,salla,Small,Verified,https://kholudkids.com/ar/%D9%81%D8%B3%D8%AA%D8%A7%D9%86-%D8%B3%D9%87%D8%B1%D8%A9-%D8%A8%D9%86%D8%A7%D8%AA%D9%8A/c309100742?filters[category_id]=309100742
 KIDS SALONS,https://kidssalons.com/,Fashion-only,Women,salla,Small,Verified,https://kidssalons.com/تيشيرتات/c431151412
@@ -332,23 +444,31 @@ la chic design,https://lachicabaya.com/en,Fashion-only,Women,salla,Small,Verifie
 LA Vintage,https://salla.sa/la-design2024,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/la-design2024
 Lady,https://lady3.zid.store/,Fashion-only,Women,zid,Small,Verified,https://lady3.zid.store/categories/1501661/جميع-العبايات
 Lamabayas,https://lamabayas.com/,Fashion-only,Women,salla,Small,Verified,https://lamabayas.com/إرشادات-الغسيل/page-1017823462
+Larinashoping,https://salla.sa/larinashoping,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/larinashoping
 Larn Dress,https://larndress.com/en,Fashion-only,Women,salla,Small,Verified,https://larndress.com/en
 LAS,https://lasksa.com/en,Fashion-only,Women,salla,Small,Verified,https://lasksa.com/en/ملابس-للعيد/c1961769423
 Lavan.s.a,https://laana.zid.store/,Fashion-only,Women,zid,Small,Verified,https://laana.zid.store/categories/1071365/httpslaanazidstore1categories
 Le.moment.sa,https://lemomentsa1.zid.store/,Fashion-only,Women,zid,Small,Verified,https://lemomentsa1.zid.store/products/stars-dress
 Leap Story,https://leapstory.zid.store/,Fashion-only,Women,zid,Small,Verified,https://leapstory.zid.store/
 Lee boutique,https://lee4abaya.com/,Fashion-only,Women,salla,Small,Verified,https://lee4abaya.com/عبايات-شتوية/c1709921252
+LEENLE,https://leenle.com/,Fashion-only,Women,salla,Small,Verified,https://leenle.com/
 LERA ABAYA,https://leraabaya.zid.store/,Fashion-only,Women,zid,Small,Verified,https://leraabaya.zid.store/categories/614611/black-abayas
 lia,https://lia-silk.com/en,Fashion-only,Women,salla,Small,Verified,https://lia-silk.com/en/-/c475988342
 LightUp,https://salla.sa/lightupbrand,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/lightupbrand
 Line 1377,https://salla.sa/the377,Fashion-only,Women,salla,Small,Verified,https://salla.sa/the377
+Linen threads,https://linen-threads.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://linen-threads.com/en
 Lion Sport,https://lionsport.store/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/lionsport
+LONA.STORE,https://lonastoresa.com/en,Has clothing section,Unisex,salla,Small,Verified,https://lonastoresa.com/en
 Lrin,https://lrin-sa.com/,Fashion-only,Women,salla,Small,Verified,https://lrin-sa.com/عبايات-سادة/c406099230
 LUAN LINE,https://salla.sa/luanline,Fashion-only,Women,salla,Small,Verified,https://salla.sa/luanline
 Luccello fashion,https://luccello-fashion.com/,Fashion-only,Women,salla,Small,Verified,https://luccello-fashion.com/-/c70940333
+Luci,https://salla.sa/luci,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/luci
 Lumbar,https://salla.sa/lumbar1,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/lumbar1
 Luna Abaya,https://salla.sa/luna-abaya2,Fashion-only,Women,salla,Small,Verified,https://salla.sa/luna-abaya2
 Luwa Breez,https://salla.sa/luwabreez,Fashion-only,Women,salla,Small,Verified,https://salla.sa/LuwaBreez/كل-العبايات/c278965358
+M A Y . MooN,https://salla.sa/aprili,Has clothing section,Men,salla,Small,Verified,https://salla.sa/aprili
+M-A-S,https://v50vx0.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://v50vx0.zid.store/categories/1267459/تيشيرتات
+M55 Store,https://salla.sa/m55-store,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/M55-store/hoodie/c2113410743
 MA110-01,https://salla.sa/ma11001,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/ma11001
 Madinawear,https://salla.sa/madinawear,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/madinawear
 MAG LINE,https://magline-sa.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/mag-line
@@ -366,10 +486,14 @@ MILAN,https://salla.sa/milandresses,Fashion-only,Women,salla,Small,Verified,http
 Misk boutique,https://salla.sa/misk_booutique,Fashion-only,Women,salla,Small,Verified,https://salla.sa/misk_booutique
 MISS MIMI,https://salla.sa/miss-mimi,Fashion-only,Women,salla,Small,Verified,https://salla.sa/miss-mimi
 MK Wear تسوقي العبايات الأنيقة,https://mkweaar.com/,Fashion-only,Women,salla,Small,Verified,https://mkweaar.com/category/agyEoW
+mmashops,https://mmashops.com/en,Fashion-only,Unisex,salla,Small,Verified,https://mmashops.com/en/تيشيرتات-ufc/c215626709
+Mona The Stylist,https://monathestylist1.zid.store/,Fashion-only,Women,zid,Small,Verified,https://monathestylist1.zid.store/products/كيمون-مع-بنطلون-قطن
 MS concept,https://salla.sa/the_world,Fashion-only,Women,salla,Small,Verified,https://salla.sa/the_world
 MS COUTURE,https://salla.sa/ms-couture-,Fashion-only,Women,salla,Small,Verified,https://salla.sa/ms-couture-/-/c1397165289
+Muhra متجر منتجات عناية يلبي احتياجاتك,https://salla.sa/muhra-like-it-,Has clothing section,Women,salla,Small,Verified,https://salla.sa/muhra-like-it-/عبايات-نسائية/c1735879953
 Muzn Fashion Boutique,https://muznfashionboutique.zid.store/,Fashion-only,Women,zid,Small,Verified,https://muznfashionboutique.zid.store/
 MW-ABAYA,https://salla.sa/mw__abaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/mw__abaya
+my shop,https://salla.sa/myshop4sa,Has clothing section,Women,salla,Small,Verified,https://salla.sa/myshop4sa
 Mybag71,https://mybag71.com/en,Has clothing section,"Women, Men, Unisex",salla,Small,Verified,https://mybag71.com/en/ملابس/c1555873235
 MZINA AL ALI collection,https://salla.sa/mzinacollection,Has clothing section,"Women, Men, Unisex",salla,Small,Verified,https://salla.sa/mzinacollection/فساتين-البنات/c913340827
 N Line,https://salla.sa/n-line,Fashion-only,Women,salla,Small,Verified,https://salla.sa/n-line
@@ -385,6 +509,8 @@ NineAbaya,https://salla.sa/nineabaya,Fashion-only,Women,salla,Small,Verified,htt
 NINETY,https://salla.sa/ninety-sa,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/ninety-sa
 Nk_abayaline,https://nk-abayaline.com/en,Fashion-only,Women,salla,Small,Verified,https://nk-abayaline.com/en/العبايات-الشتوية/c1311976520
 nkabayas,https://salla.sa/nkabayas,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/nkabayas
+noorphir,https://noorphir.com/,Has clothing section,Women,salla,Small,Verified,https://noorphir.com/-/c1651692307
+NOTAH,https://notahnwth.zid.store/,Has clothing section,Unisex,zid,Small,Verified,https://notahnwth.zid.store/categories/1141855/t-shirts
 Nova abaya,https://novadetails.com/en,Fashion-only,Women,salla,Small,Verified,https://novadetails.com/en/عطر-العبايات/c1972623661
 NOÉMI,https://salla.sa/noemi,Fashion-only,Women,salla,Small,Verified,https://salla.sa/noemi/abaya/c295752808
 NQ,https://salla.sa/nq_weariing,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/nq_weariing
@@ -394,15 +520,23 @@ NZ line,https://t2ysav.zid.store/,Fashion-only,Women,zid,Small,Verified,https://
 o2sport,https://salla.sa/o2sport,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/o2sport
 OBRIT,https://salla.sa/obrit,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/obrit
 Oceans Anime Store,https://oceansanimestore.com/,Fashion-only,Women,salla,Small,Verified,https://oceansanimestore.com/مارين-كيتاغاوا-my-dress-up-darling/c284433914
+OENTIRA,https://oentira.com/,Fashion-only,Women,salla,Small,Verified,https://oentira.com/
+OFFSIDE SPORT,https://salla.sa/offside-3400,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/offside-3400
+ola,https://mlyogv.zid.store/,Fashion-only,Women,zid,Small,Verified,https://mlyogv.zid.store/categories/1267904/بيجاما-قطنية
 OLES,https://salla.sa/alyeas-202,Fashion-only,Women,salla,Small,Verified,https://salla.sa/alyeas-202
 ONLYME LINE,https://salla.sa/nm-boutique,Fashion-only,Women,salla,Small,Verified,https://salla.sa/nm-boutique
 Orai,https://oraiclothing.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://oraiclothing.com/en/-/c815364175
 Ore Abaya,https://salla.sa/oreabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/oreabaya
 organza_liine,https://salla.sa/organza_liine,Fashion-only,Women,salla,Small,Verified,https://salla.sa/organza_liine
+ouibed,https://ouibed.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://ouibed.zid.store/
+Own Goal,https://salla.sa/own_goal,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/own_goal
 Ozone,https://jeunesse-global.zid.store/ar-us/,Fashion-only,"Women, Men",zid,Small,Verified,https://jeunesse-global.zid.store/ar-us/categories/438297/ولادي
+O’rig,https://origstore.com/,Fashion-only,Women,salla,Small,Verified,https://origstore.com/-/c492166708
 Pearl line,https://salla.sa/ae3b1616-6458-4ac8-b5e9-b82e92f37dea,Fashion-only,Women,salla,Small,Verified,https://salla.sa/ae3b1616-6458-4ac8-b5e9-b82e92f37dea/عباية/c822068423
 peculiar,https://peculiar1.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://peculiar1.zid.store/categories/1082777/t-shirts
 peek.line.abaya,https://salla.sa/peeklineabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/peeklineabaya
+Personalized Gifts and Printing Jeddah Reeman Design,https://reemandesign.com/en,Has clothing section,Unisex,salla,Small,Verified,https://reemandesign.com/en/saudi-national-day-tshirt/c677010507
+Picks by r,https://picksbyr.com/,Fashion-only,Women,salla,Small,Verified,https://picksbyr.com/
 Pink box,https://clwurl.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://clwurl.zid.store/categories/974567/clothing-recommendation
 PrimeGoal متجر تيشيرتات رياضية أصلية بجودة عالية,https://prime-goal.com/,Fashion-only,Men,salla,Small,Verified,https://salla.sa/primegoal
 pro needle,https://pro-needle22.com/en,Fashion-only,Unisex,salla,Small,Verified,https://pro-needle22.com/en/hoodies/c1455237202
@@ -410,6 +544,7 @@ PROICON,https://proiconsa.com/,Has clothing section,Unisex,salla,Small,Verified,
 Pullovers,https://ilt3cp.zid.store/ar-us/,Fashion-only,Men,zid,Small,Verified,https://ilt3cp.zid.store/ar-us/categories/592995/بناطيل-للرجال
 Pura Blancus,https://salla.sa/purablancus,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/purablancus
 Qamra abayas,https://qamraabayas.com/,Fashion-only,Women,salla,Small,Verified,https://qamraabayas.com
+QD,https://salla.sa/accessories_qd64,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/accessories_qd64
 Qoot.Abaya,https://5d7jzo.zid.store/,Fashion-only,Women,zid,Small,Verified,https://www.instagram.com/qoot.abaya.sa
 R.N,https://51mkgj.zid.store/,Fashion-only,Women,zid,Small,Verified,https://51mkgj.zid.store/categories/932223/عباية-سوداء
 R8 Store,https://salla.sa/r8xstore,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/r8xstore
@@ -417,6 +552,8 @@ Raad ALtwalh.,https://raadaltwalh.com/,Fashion-only,Women,salla,Small,Verified,h
 Race Arabia,https://store-racearabia-com.zid.store/,Has clothing section,Unisex,zid,Small,Verified,https://store-racearabia-com.zid.store/categories/360592/ملابس
 RADIANT GLAM,https://salla.sa/r_g,Fashion-only,Women,salla,Small,Verified,https://salla.sa/r_g
 Rd,https://my-rd1.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/wd-2030
+REART,https://uhwehw.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://uhwehw.zid.store/categories/1406273/بجايم
+Red Rabbit,https://salla.sa/redrabbit,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/redrabbit
 REE ONE,https://ree-one.zid.store/ar-us/,Fashion-only,"Women, Men",zid,Small,Verified,https://ree-one.zid.store/ar-us/categories/133551/ملابس
 renabaya,https://salla.sa/renabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/renabaya
 Retab,https://salla.sa/retababaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/retababaya/عبايات/c832529550
@@ -425,6 +562,7 @@ RhimGazelle,https://rhimgazelle.zid.store/,Fashion-only,Women,zid,Small,Verified
 Ribbon dress,https://salla.sa/ribbon-dress,Fashion-only,Women,salla,Small,Verified,https://salla.sa/ribbon-dress
 Rich Abaya,https://richabaya.com/en,Fashion-only,Women,salla,Small,Verified,https://richabaya.com/en
 Rivan boutique,https://rivan-boutique.com/en,Fashion-only,Women,salla,Small,Verified,https://rivan-boutique.com/en/عبايات-بـ195-ريال/c1362690768
+River,https://salla.sa/river-s,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/river-s
 Rizq boutique2020,https://rizq-boutique.com/en,Fashion-only,Women,salla,Small,Verified,https://rizq-boutique.com/en/evening-dress-tarikediz/c2081611057
 RJ abayas,https://salla.sa/rawanjasim,Fashion-only,Women,salla,Small,Verified,https://www.instagram.com/Abayas_rj
 RN ABAYA LINE,https://abayarn.com/,Fashion-only,Women,salla,Small,Verified,https://abayarn.com
@@ -438,6 +576,8 @@ RZN_ABAYA,https://salla.sa/rzn_abaya,Fashion-only,Women,salla,Small,Verified,htt
 SADEEL,https://sadeelabaya.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/sadeel-abaya
 Sahab abaya,https://salla.sa/sahababaya2,Fashion-only,Women,salla,Small,Verified,https://salla.sa/sahababaya2
 Sahab.line.sa,https://sahablinesa.com/en,Fashion-only,Women,salla,Small,Verified,https://sahablinesa.com/en/عبايات-صيفية/c694945325
+SAIJ,https://salla.sa/saijabaya,Has clothing section,Women,salla,Small,Verified,https://salla.sa/saijabaya
+salla,https://salla.sa/jaz20,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/jaz20
 Salma line,https://salla.sa/salmaline,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/salmaline
 sara abayah,https://salla.sa/sara-abayah,Fashion-only,Women,salla,Small,Verified,https://saraabaya.com/عبايات-سوداء/c920488572
 Scrub.Beat,https://salla.sa/scrubbeat,Fashion-only,Men,salla,Small,Verified,https://salla.sa/scrubbeat
@@ -453,13 +593,18 @@ Show Muscles,https://showmuscles.com/en,Fashion-only,Unisex,salla,Small,Verified
 Silver Ashes,https://salla.sa/silverashes,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/Silverashes/clothes-ملابس/c1222795516
 Skra,https://salla.sa/skra-2030,Fashion-only,Women,salla,Small,Verified,https://salla.sa/skra-2030
 smarAbaya,https://salla.sa/smarabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/smarabaya
+SMASH,https://salla.sa/smash1,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/smash1
+Smow,https://salla.sa/smow2018,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/smow2018
 Soeurs,https://soeurssss.com/,Fashion-only,Women,salla,Small,Verified,https://soeurssss.com/العبايات/c1218212468
+Sohadline,https://sohadline.com/,Fashion-only,Women,salla,Small,Verified,https://sohadline.com/
 Soul l,https://salla.sa/ssoul,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/ssoul
 Souls,https://soulsabbayas.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/souls_abbayas
 SP STORE,https://spstoreweb.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/sp-store
 Spoorte,https://rwahkyanllabayat.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://rwahkyanllabayat.zid.store/products/تيشيرت-ريال-مدريد-الاساسي-2025-2026
+sportfit,https://sportfit-store.com/en,Fashion-only,Women,salla,Small,Verified,https://sportfit-store.com/en
 SSA,https://salla.sa/ssa-134-hsjv,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/ssa-134-hsjv
 ssasolopouy,https://qzxano.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://qzxano.zid.store/products/غسالة-ملابس-صغيرة-قابلة-للطي
+stepback.sa,https://sbackstore.com/en,Fashion-only,Unisex,salla,Small,Verified,https://sbackstore.com/en/عروض-تيشرتات-موسم-2025-2026/c1500840649
 SU line,https://suline.zid.store/,Fashion-only,"Women, Men",zid,Small,Verified,https://suline.zid.store/products/عبايه-ترتر
 Su line?,https://salla.sa/su3bayh,Fashion-only,Women,salla,Small,Verified,https://salla.sa/su3bayh
 sumrah.collections,https://sumrahcollections.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/sumrahcollections-
@@ -471,15 +616,20 @@ Sweet Baby,https://salla.sa/masood-almasood-94,Has clothing section,Women,salla,
 Swiftie store,https://salla.sa/swiftiestore,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/swiftiestore
 Tara Abaya,https://taraabaya.com/en,Fashion-only,Women,salla,Small,Verified,https://taraabaya.com/en
 THE ANA STOR,https://theana.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://theana.zid.store/categories/1263311/pajama
+The Empty Quarter,https://the-empty-quarter.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://the-empty-quarter.zid.store/categories/16431/تيشيرت
+The Signed Shirt,https://salla.sa/the-signed-shirt,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/the-signed-shirt/تيشيرتات-موسم-2726-وصلت-الان/c1717960115
+THEVOLDADVENTURE,https://lc1fjt.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://lc1fjt.zid.store/categories/613583/تيشيرت
 TOKE FASHION,https://tokefashion.zid.store/,Fashion-only,Women,zid,Small,Verified,https://tokefashion.zid.store/categories/426353/فساتين-صيفية
 TOMA,https://toma2030.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/toma2030
 TOPNINE Football Jerseys Soccer Cleats Sportswear,https://topnine611.com/en,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/top-nine-2023
 Trench Coat Abaya,https://salla.sa/trenchcoatabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/trenchcoatabaya
 Trendyxfashion,https://streethouse.online/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/trendyxfashion
+TSHIRTK STORE,https://tshirtkstore1.com/,Fashion-only,Men,salla,Small,Verified,https://tshirtkstore1.com/التصاميم-الخاصة-تيشيرتك-ستور/c695489165
 Tulip,https://salla.sa/tulip-78,Fashion-only,Women,salla,Small,Verified,https://salla.sa/tulip-78
 TUQA تُقى,https://salla.sa/thetuqa-sa,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/thetuqa-sa
 TW,https://salla.sa/twabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/TWabaya/جميع-العبايات/c1167082822
 tweed,https://tweed-store.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/tweed_store
+Twelve,https://twelvegift.com/en,Has clothing section,Women,salla,Small,Verified,https://twelvegift.com/en
 unique abaya,https://salla.sa/uniqueabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/uniqueabaya
 Unknown Design,https://unknowndesignsa.com/en,Fashion-only,Women,salla,Small,Verified,https://unknowndesignsa.com/en/abaya/c1183903274
 V Boutique,https://vilod-boutique.com/en,Fashion-only,Women,salla,Small,Verified,https://vilod-boutique.com/en/فساتين-سهرة/c1731685886
@@ -495,20 +645,28 @@ WHITE KSA متجر جلابيات وفساتين أنيقة في السعودي�
 WOLF,https://thewolf-sa-com.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://thewolf-sa-com.zid.store/
 wowxdress,https://salla.sa/wowxdress,Fashion-only,Women,salla,Small,Verified,https://salla.sa/WOWXDRESS/فساتين-مختارة/c622444909
 WQAR,https://wqar2.zid.store/,Fashion-only,Men,zid,Small,Verified,https://wqar2.zid.store/
+XOXO STORE,https://salla.sa/xoxos,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/xoxos
 YAVA,https://yava-brand.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/elite_store1
 YMW,https://salla.sa/ymw,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/ymw/-/c2137343304
 You,https://sbqeqe.zid.store/ar-us/,Has clothing section,"Women, Men, Unisex",zid,Small,Verified,https://sbqeqe.zid.store/ar-us/categories/1170964/شنط-كثيرة
 yourstore,https://salla.sa/ruddatallahacomrr,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/ruddatallahacomrr
+ZAiKR,https://salla.sa/zaikr,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/zaikr/-/c43509083
 Zain Abaya🤍,https://zain-abaya.com/,Fashion-only,Women,salla,Small,Verified,https://zain-abaya.com/عبايات-يومية/c678778567
 zeina,https://2uvmlr.zid.store/,Fashion-only,"Women, Men",zid,Small,Verified,https://2uvmlr.zid.store/categories/1069004/ملابس-نسائية
 zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https://zrar-store.com/فساتين-توصيل-فوري/c1538285642
+آتيا فاشن,https://salla.sa/atiya-abaya,Has clothing section,Women,salla,Small,Verified,https://salla.sa/atiya-abaya
 آسمــار,https://salla.sa/asmar388,Fashion-only,Women,salla,Small,Verified,https://salla.sa/asmar388/-/c1091402424
 أثر للطباعة على الملابس تصميم وطباعة تيشيرتات بجودة ممتازة,https://atharst0re.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/trace_store
+أزهار الجوري,https://salla.sa/azhar_aljory,Fashion-only,Women,salla,Small,Verified,https://salla.sa/azhar_aljory
 أزهى-Azha,https://salla.sa/azha_boutique,Fashion-only,Women,salla,Small,Verified,https://salla.sa/azha_boutique
 أزياء شروق,https://salla.sa/shrwq-layn,Fashion-only,Women,salla,Small,Verified,https://salla.sa/shrwq-layn/-/c391561275
+أسماك الجهني,https://aljehani-fish.com/en,Has clothing section,Unisex,salla,Small,Verified,https://aljehani-fish.com/en
+أسوَد,https://salla.sa/asswad,Has clothing section,Women,salla,Small,Verified,https://salla.sa/asswad
+أناقتيVIP,https://anaqtivip.com/,Has clothing section,Women,salla,Small,Verified,https://anaqtivip.com/-/c1981145346
 أنوار عباية أحدث تشكيلات العبايات والطرح مع توصيل سريع في السعودية,https://abaya-anwar.com/en,Fashion-only,Women,salla,Small,Verified,https://abaya-anwar.com/en
 أولفة عباية,https://salla.sa/olfh-abayet,Fashion-only,Women,salla,Small,Verified,https://salla.sa/olfh-abayet
 أيسثتك,https://aesthetics9.com/en,Fashion-only,Women,salla,Small,Verified,https://aesthetics9.com/en/الملابس/c600915499
+إطلالة ذوق,https://salla.sa/togltfli,Fashion-only,Women,salla,Small,Verified,https://salla.sa/togltfli
 اخلاص للتطريز,https://ikhlas-sa.com/,Fashion-only,Men,salla,Small,Verified,https://salla.sa/ikhlas
 ازياء الوشاح الاسود,https://salla.sa/alwshah-alaswd,Fashion-only,Women,salla,Small,Verified,https://salla.sa/alwshah-alaswd
 "استمتعي بأناقة لا مثيل لها مع جلابيات ليلكي, و تألقي بأطلاله فريدة",https://salla.sa/serie-a,Fashion-only,Women,salla,Small,Verified,https://salla.sa/serie-a
@@ -527,6 +685,7 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 الما فاشن,https://sx6zvf.zid.store/,Fashion-only,Women,zid,Small,Verified,https://sx6zvf.zid.store/categories/1032368/فساتين
 المشالح العربية الخاصة,https://mshalh.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://mshalh.com/ar/تفصيل-بشت-حسب-الطلب/c1366872824
 المصممة هامة طويق,https://salla.sa/tuwaiq_boutique_,Fashion-only,Women,salla,Small,Verified,https://salla.sa/tuwaiq_boutique_/-/c66594737
+المطرفي للعود,https://almatrafoud.com/,Has clothing section,Men,salla,Small,Verified,https://almatrafoud.com/
 المهرة بوتيك,https://salla.sa/almhrt-bwtyek,Fashion-only,Women,salla,Small,Verified,https://salla.sa/almhrt-bwtyek
 النجمة الذهبية,https://goldenstarksa.com/,Has clothing section,Women,salla,Small,Verified,https://salla.sa/souq_golden_star
 الوعد لاين,https://alwaadline.com/,Fashion-only,Women,salla,Small,Verified,https://alwaadline.com/العبايات/c1376578578
@@ -536,18 +695,24 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 اورا للعبايات والشنط,https://salla.sa/https-855-kr0c,Fashion-only,Women,salla,Small,Verified,https://salla.sa/https-855-kR0c
 اونيكا unica,https://unica-sa.com/en,Fashion-only,Women,salla,Small,Verified,https://unica-sa.com/en/فساتين-وقطع-بالطلب/c1214179576
 بايَا BAYA l,https://salla.sa/bayabaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/bayabaya
+بجامة,https://bejamastore.com/en,Fashion-only,"Women, Unisex",salla,Small,Verified,https://bejamastore.com/en
 بجايم قطنية,https://salla.sa/bloomprive,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/bloomprive
 بدلات رقص شرقي في الرياض,https://bellydancksa.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://bellydancksa.com/en/all-egyptian-dance-clothes/c1493679305
 بشت,https://bishtksa.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://bishtksa.com/عبايات-بشت/c1001034885
 بصمة كيو,https://basmahq25.com/,Fashion-only,Men,salla,Small,Verified,https://salla.sa/basmahq
+بلاد العجائب,https://salla.sa/wonderlandstore,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/wonderlandstore
+بلاي سبورت,https://salla.sa/arkhss-arwd-,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/arkhss-arwd-
 بلو وايت blue white,https://blue-white-sa.com/,Fashion-only,Men,salla,Small,Verified,https://blue-white-sa.com/-/c1442722665
 بهاء,https://salla.sa/by_bahaa_,Fashion-only,Women,salla,Small,Verified,https://salla.sa/by_bahaa_
 بوتيك NY,https://salla.sa/bwtyek-nwrh-alyewsf-ny,Fashion-only,Women,salla,Small,Verified,https://salla.sa/bwtyek-nwrh-alyewsf-ny/العبايات/c363480692
 بوتيك أزياء باهي لفساتين السهرة والمناسبات,https://bahyfashion.com/en,Fashion-only,Women,salla,Small,Verified,https://bahyfashion.com/en/-/c767135650
+بوتيك ألف عين,https://salla.sa/alf3in,Has clothing section,Women,salla,Small,Verified,https://salla.sa/alf3in
 بوتيك أيسِل,https://salla.sa/aseel_b,Fashion-only,Women,salla,Small,Verified,https://salla.sa/aseel_b
 بوتيك المصممة السعودية عزيزة فاشن,https://salla.sa/azizah-fashion,Fashion-only,Women,salla,Small,Verified,https://salla.sa/azizah-fashion
 بوتيك دوشاز,https://doshazz.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://doshazz.com/الزي-العسيري/c1329889803
 بوتيك روز,https://salla.sa/roseboutique,Fashion-only,Women,salla,Small,Verified,https://salla.sa/roseboutique
+بوتيك سيلين,https://salla.sa/seboutuque,Has clothing section,Women,salla,Small,Verified,https://salla.sa/seboutuque
+بوتيك فاتن,https://salla.sa/fatenabaya,Has clothing section,Women,salla,Small,Verified,https://salla.sa/fatenabaya/عبايات/c490779413
 بوتيك كشخة,https://kshakha.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://kshakha.com/en/category/oRVBqG
 بوتيك كينزى,https://salla.sa/kenzaboutique,Fashion-only,Women,salla,Small,Verified,https://salla.sa/kenzaboutique/-/c1265679635
 بوتيك لوڤيرا,https://salla.sa/fsatyen-bwtyek-lwyera,Fashion-only,Women,salla,Small,Verified,https://salla.sa/fsatyen-bwtyek-lwyera
@@ -558,6 +723,7 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 بيكابو,https://peekaboo-butik.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/peekaboo
 بيكز,https://salla.sa/bicz,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/bicz
 بينا,https://bena3.com/en,Fashion-only,Women,salla,Small,Verified,https://bena3.com/en/category/zoEyEb
+بَاهِرَة,https://bahira.shopping/en,Has clothing section,Unisex,salla,Small,Verified,https://bahira.shopping/en
 بُرجُد,https://barjad.com/en,Fashion-only,Women,salla,Small,Verified,https://barjad.com/en/-/c416753502
 تاء عباية,https://taa-designer.com/,Fashion-only,Women,salla,Small,Verified,https://taa-designer.com
 تراحيب,https://salla.sa/traheeb2025,Has clothing section,Women,salla,Small,Verified,https://salla.sa/traheeb2025
@@ -568,13 +734,18 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 تيفو,https://salla.sa/tifo_store,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/tifo_store
 ثلثك عنبر للعبايات,https://th-amber.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/t-amber
 ثمر للأقمشة والفساتين الجاهزه,https://thamer834.com/en,Fashion-only,Women,salla,Small,Verified,https://thamer834.com/en
+ثمينة,https://thaminhlines.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://thaminhlines.com/
 جرين سبورت,https://green-gn.com/,Has clothing section,"Women, Men",salla,Small,Verified,https://green-gn.com/رجال-ملابس-رياضية-رجالية/c551061647
 جلباب للخياطة النسائية,https://jelbabboutique.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/jelbab
+جمعية مغازل السدو,https://salla.sa/alsadw_maga,Has clothing section,Women,salla,Small,Verified,https://salla.sa/alsadw_maga/ملابس/c1518741810
 جوخ عبايه,https://salla.sa/gwkh-abayeh,Fashion-only,Women,salla,Small,Verified,https://salla.sa/gwkh-abayeh 
+جولنار بوتيك,https://salla.sa/julnar_boutiqe,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/julnar_boutiqe
 جولو للعبايات,https://salla.sa/gwlw-llabayeat,Fashion-only,Women,salla,Small,Verified,https://salla.sa/gwlw-llabayeat
+جيرسي بلس متجر ملابس رياضية واكثررر شعارنا الجودة الجودة الجودة اولا,https://jerseyplusa.com/,Has clothing section,Women,salla,Small,Verified,https://jerseyplusa.com/
 جَبلَة,https://salla.sa/jabla,Fashion-only,Women,salla,Small,Verified,https://salla.sa/jabla
 حلوة الخليج,https://salla.sa/hlwt-alkhlyeg,Fashion-only,Women,salla,Small,Verified,https://salla.sa/hlwt-alkhlyeg
 خطوات السحاب,https://cloudstepss.com/,Fashion-only,Unisex,salla,Small,Verified,https://cloudstepss.com/اطقم-وتيشرتات-رياضية/c923415329
+خولة لفن الحياكة,https://yarn-art-khawla.com/,Has clothing section,Unisex,salla,Small,Verified,https://yarn-art-khawla.com/
 خيط الحرير عنوان الاناقة والجودة في المملكة العربية السعودية,https://salla.sa/mdadstore,Has clothing section,Women,salla,Small,Verified,https://salla.sa/mdadstore/جلابيات/c1026027659
 خُزامى,https://salla.sa/abaya_kh1,Fashion-only,Women,salla,Small,Verified,https://salla.sa/abaya_kh1
 خُطى,https://khitaa.com/,Fashion-only,Women,salla,Small,Verified,https://khitaa.com/-/c1566449110
@@ -582,8 +753,11 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 دار ايلاف للعبايات,https://elafabayah.com/,Fashion-only,Women,salla,Small,Verified,https://elafabayah.com 
 دار بهي,https://salla.sa/bahi-,Fashion-only,Women,salla,Small,Verified,https://salla.sa/bahi-/-/c1114730104
 دار سيلارا,https://salla.sa/sila-2023,Fashion-only,Women,salla,Small,Verified,https://salla.sa/sila-2023
+دار صفاء,https://salla.sa/darsafaa,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/darsafaa
 دانة فاشن,https://salla.sa/boofhigh,Fashion-only,Women,salla,Small,Verified,https://salla.sa/boofhigh
+داڤا كوتور DAVA COUTURE,https://davacouture.com/,Has clothing section,Women,salla,Small,Verified,https://davacouture.com/
 درة جنوبيه,https://drhjnubia.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/gyemt-gnwbyeh-
+درر,https://salla.sa/drr3012,Fashion-only,Women,salla,Small,Verified,https://salla.sa/drr3012
 دقيقة نشوف C41min,https://salla.sa/c41min,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/c41min
 دونا لاين,https://salla.sa/dona-1ine,Fashion-only,Women,salla,Small,Verified,https://salla.sa/Dona-1ine/عبايات-شتوية/c1719976918
 ديجّـور,https://salla.sa/dejor_abaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/dejor_abaya
@@ -602,23 +776,31 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 رونق,https://rawnqy.zid.store/,Fashion-only,Women,zid,Small,Verified,https://rawnqy.zid.store/categories/264838/جلابيات-قطن-صيفية
 رويال,https://rwyal5.zid.store/,Fashion-only,Women,zid,Small,Verified,https://rwyal5.zid.store/categories/1707439/فساتين-وأفرولات
 رياش,https://salla.sa/ryeash,Fashion-only,Women,salla,Small,Verified,https://salla.sa/ryeash
+رَبيـع,https://rabeeabaya.com/,Has clothing section,Women,salla,Small,Verified,https://rabeeabaya.com/
 زاهي,https://zahi-ksa.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://zahi-ksa.zid.store/categories/189233/كي-الملابس-فقط
 زاهية,https://salla.sa/zahiahh,Fashion-only,Women,salla,Small,Verified,https://salla.sa/zahiahh/جلابيات/c837089437
 زيرو ناينتي,https://l5fqva.zid.store/,Fashion-only,"Women, Men",zid,Small,Verified,https://l5fqva.zid.store/categories/428524/ملابس-رجالي
 سبعطعش,https://salla.sa/sab3t3sh,Fashion-only,Men,salla,Small,Verified,https://salla.sa/sab3t3sh
 ستايل هافن ستور,https://stylehaven-sa.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/stayl-haven-
+سكاي ستور Sky Store متجر العاب بلايستيشن 5 و PS4 و PC وبكجات ستيم,https://skytv-store.com/,Fashion-only,Unisex,salla,Small,Verified,https://skytv-store.com/ارشادات-الغسيل-تيشيرتات-سكاي/page-672216451
 سندس لتصميم الازياء,https://salla.sa/snds-ltssmyem-alazyea,Fashion-only,Women,salla,Small,Verified,https://salla.sa/snds-ltssmyem-alazyea/العبايات/c1518707348
 سوفت داليا,https://salla.sa/soft_dalia,Fashion-only,Women,salla,Small,Verified,https://salla.sa/soft_dalia
 سَــدّل عبـايـة,https://sadalabaya.com/,Fashion-only,Women,salla,Small,Verified,https://sadalabaya.com/عبايات/c1009125322
+شحن س,https://salla.sa/s4wye9g9,Has clothing section,Women,salla,Small,Verified,https://salla.sa/S4WYE9G9/فساتين/c380426116
 شركة الفالح لجميع مستلزمات الرياضة,https://elfaleh.sa/,Has clothing section,"Women, Men",salla,Small,Verified,https://elfaleh.sa/ملابس-علوية/c687884360
+شركة المسارات الدولية للتجارة و المقاولات,https://almasaratstore.com/,Fashion-only,Men,salla,Small,Verified,https://almasaratstore.com/
 شركه اسرار النجمة الفضيه,https://salla.sa/asrar-alngmh-alfdyet-,Fashion-only,Women,salla,Small,Verified,https://salla.sa/asrar-alngmh-alfdyet-
 شموخ الأناقة,https://majesticelia.com/,Fashion-only,Women,salla,Small,Verified,https://majesticelia.com/فساتين-طويلة/c398726652
 شوبنتا,https://salla.sa/shoppinta,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/shoppinta
 شيري,https://cherry111.com/en,Fashion-only,Women,salla,Small,Verified,https://cherry111.com/en/عبايات/c392397974
 شيهانة أفضل تصاميم العبايات والطرح الأنيقة للسيدات,https://salla.sa/shehana-design,Fashion-only,Women,salla,Small,Verified,https://salla.sa/shehana-design
+صناعات يدوية Hand Made,https://handmade00.com/en,Has clothing section,Unisex,salla,Small,Verified,https://handmade00.com/en/الجاكيتات-والمعاطف/c1353721820
 صندحة,https://sundh.online/en,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/sundh
+صُناع الفخامة,https://salla.sa/lukurymakres,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/lukurymakres
 طابع بلد-tabablad,https://tabablad.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/tabablad
+طبزّة,https://salla.sa/sskt-wfrnkh-,Has clothing section,Men,salla,Small,Verified,https://salla.sa/sskt-wfrnkh-
 طرحه و شال,https://salla.sa/tarhah-shal,Fashion-only,Women,salla,Small,Verified,https://salla.sa/tarhah-shal
+عالم التوزيعات,https://salla.sa/mlekh2010,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/mlekh2010
 عالم الجمال,https://rwbmgb.zid.store/,Fashion-only,"Women, Men",zid,Small,Verified,https://rwbmgb.zid.store/categories/419520/فساتين
 عالم رحال متجر المستلزمات الرجالية الفاخرة للأناقة والتميز,https://alamrahal.com/,Fashion-only,Men,salla,Small,Verified,https://alamrahal.com/الأثواب/c1225501168
 عبايات,https://rysha-abaya.com/,Fashion-only,Women,salla,Small,Verified,https://rysha-abaya.com
@@ -670,9 +852,11 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 عُقدة,https://salla.sa/knot_sa,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/knot_sa
 عِذار للعبايات,https://etharabaya.com/en,Fashion-only,Women,salla,Small,Verified,https://etharabaya.com/en
 غاليه,https://salla.sa/galyeh--2024,Fashion-only,Women,salla,Small,Verified,https://salla.sa/galyeh--2024/عبايات-سوداء/c560072296
+غـرام🌷,https://salla.sa/bags2,Has clothing section,Women,salla,Small,Verified,https://salla.sa/bags2/عبايات/c1263583148
 غيهب,https://ghaihababaya.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/ghaihababaya
 فاندرا عبايه,https://salla.sa/fandra-78,Fashion-only,Women,salla,Small,Verified,https://salla.sa/fandra-78
 فانسي كلوزيت ملابس بنات فاخرة من سنة الى ١٤ سنة,https://fancycloset.net/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/fancy1
+فراتوز ستور افضل متجر متكامل لبيع جميع المنتجات المتكاملة,https://fratozstore.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://fratozstore.com/en
 فساتين أسلين متجر فساتين سهرة وفساتين مناسبات,https://aslen1.com/en,Fashion-only,Women,salla,Small,Verified,https://aslen1.com/en
 فساتين أطفال أنيقة ومريحة للمناسبات والأعياد Misosk,https://salla.sa/misk-dress,Fashion-only,Women,salla,Small,Verified,https://salla.sa/misk-dress
 فساتين الدا,https://salla.sa/aldastore,Fashion-only,Women,salla,Small,Verified,https://salla.sa/aldastore/-/c863229413
@@ -682,6 +866,7 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 فساتين سهرة وفساتين وأطقم كوكتيل فاخرة,https://perla.fashion/,Fashion-only,Women,salla,Small,Verified,https://perla.fashion/dress-alteration-policy/page-1502445990
 فساتين مودل لينا للأزياء,https://lyena1.com/,Fashion-only,Women,salla,Small,Verified,https://lyena1.com/-/c883729792
 فساتين ميلا بوتيك,https://milabuotique.com/,Fashion-only,Women,salla,Small,Verified,https://milabuotique.com/category/RyQypO
+فـّــاء بوتيك 🦌,https://salla.sa/mtgr-fyewnkt,Has clothing section,Women,salla,Small,Verified,https://salla.sa/mtgr-fyewnkt
 فناتك مخملية,https://mo5malyah.com/,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/us_cute
 قطونيل,https://cottonil-online.com/,Fashion-only,Men,salla,Small,Verified,https://salla.sa/cottonil
 كرم 🤍للقطع الجديده والمستخدمه بِحُب🤍,https://krm4.zid.store/,Fashion-only,Women,zid,Small,Verified,https://krm4.zid.store/categories/1094284/
@@ -692,6 +877,7 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 لافت,https://salla.sa/laftlaft,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/laftlaft
 لافـــت,https://lafit-abaya.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/lafit-
 لتين,https://egce.zid.store/,Fashion-only,Women,zid,Small,Verified,https://egce.zid.store/categories/1152554/عبايات
+لمحة,https://lamha-ksa.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://lamha-ksa.zid.store/categories/139954/تيشيرتات
 لمسة فخامة,https://salla.sa/ouuud,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/ouuud/ملابس-رجالية/c507186802
 لمسة نعومه,https://jmsxln.zid.store/,Fashion-only,"Women, Men, Unisex",zid,Small,Verified,https://jmsxln.zid.store/products/المرأة-الحرير-الحرير-robes-حجم-كبير-رداء-الزفاف-العروس-وصيفه-الشرف-الأم-خادمة-الشرف-ثوب-خليط-الحمام-المرأة
 لنا ازيم فساتين و جلابيات وقفطان بتصاميم فاخرة,https://lnaazeem.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://lnaazeem.com/فساتين-شك/c2078626964
@@ -703,19 +889,24 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 لين لاين,https://salla.sa/lean_line5,Fashion-only,Women,salla,Small,Verified,https://salla.sa/lean_line5
 ليونا,https://salla.sa/lioness_abaya,Fashion-only,Women,salla,Small,Verified,https://salla.sa/lioness_abaya
 مM,https://salla.sa/mem-line,Fashion-only,Women,salla,Small,Verified,https://salla.sa/mem-line
+مؤسسة خيوط المدينة التجارية,https://salla.sa/khuyut-almadina,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/khuyut-almadina
 مارا MARA فاشن فساتين سهرة وفساتين يومية أنيقة,https://mara-fashions.com/,Fashion-only,Women,salla,Small,Verified,https://mara-fashions.com/category/ZedBeP
+مايفريز,https://salla.sa/maevrystore,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/maevrystore/تيشيرتات/c1279602793
 متجر HNO,https://salla.sa/hno123,Fashion-only,Women,salla,Small,Verified,https://salla.sa/hno123
 متجر organzasa لمسة أنوثة بتصاميم تخطف الأنظار,https://salla.sa/organzasa,Fashion-only,Women,salla,Small,Verified,https://salla.sa/organzasa/فساتين-ناعمه-Evening-dresses/c859007622
 متجر R7 SPORT ملابس رياضية رجالية احذية كرة قدم اطقم كورة اصلية,https://r7-sport.com/,Has clothing section,"Women, Men",salla,Small,Verified,https://r7-sport.com/تيشيرتات-لاعبين/c1971348267
 متجر Unica Design أحدث موديلات العبايات والجلابيات الفاخرة 2025,https://unicades.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/unica_design
 متجر أريــنـا,https://arena-ksa.com/,Fashion-only,Unisex,salla,Small,Verified,https://arena-ksa.com/ملابس-نادي-الهلال-السعودي/c562745650
 متجر ألبا ملابس داخلية رجالية قطن مصري فاخر,https://albaksa.com/,Fashion-only,Men,salla,Small,Verified,https://salla.sa/albastore
+متجر الأميرة,https://alamiruh-sa.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://alamiruh-sa.com/
 متجر الانيق للمستلزمات الرجالية,https://salla.sa/elegant789,Fashion-only,Men,salla,Small,Verified,https://salla.sa/elegant789
 متجر الجمعة,https://qalansoh.com/,Fashion-only,Men,salla,Small,Verified,https://qalansoh.com/ثياب/c1180699893
 متجر الجوهرة,https://abayattkhrj1.zid.store/,Fashion-only,"Women, Men",zid,Small,Verified,https://abayattkhrj1.zid.store/
 متجر الحي الصيني chinatown,https://salla.sa/chinatown,Has clothing section,Women,salla,Small,Verified,https://salla.sa/chinatown
 متجر الرداء الأسود للعبايات,https://eibayat100.com/,Fashion-only,Women,salla,Small,Verified,https://eibayat100.com/عبايات-رأس/c1879709790
+متجر السلطان بالطائف,https://salla.sa/sultan_story,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/sultan_story
 متجر الصافي,https://alsafyjewelry.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://alsafyjewelry.com/en/category/VabqjQ
+متجر الفهد الرياضي,https://salla.sa/alfhdsup,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/alfhdsup
 متجر الكون ALKUN,https://alkun1.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/alk-2026
 متجر المشجع,https://matjaralmushaj3.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/5b6b39ff-e399-48ea-a295-28101150d6ce
 متجر المصممة سالمة آل ظاهر,https://salla.sa/salmaaldhaher,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/salmaaldhaher/فساتين/c1367951314
@@ -723,22 +914,30 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 متجر ايس كيوب للأزياء النسائية,https://icecubestore.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://icecubestore.com/فساتين/c107019085
 متجر بانا عبايات نسائية صيفية وشتوية,https://banaabaya.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/bana1999
 متجر بداية حلوة ملابس أطفال قطن مريحة وناعمة,https://salla.sa/ba-314-sa,Fashion-only,Women,salla,Small,Verified,https://salla.sa/ba-314-sa/-/c1398839225
+متجر براحة هدايا و تذكارات وملابس عن تاريخ المملكة السعودية,https://barahco.com/,Has clothing section,"Women, Men",salla,Small,Verified,https://barahco.com/t-shirt/c1806637097
 متجر برق الساحل,https://barq-alsahil.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/barq_alsahil
+متجر تفاصيلك للملابس,https://details-shops.com/,Fashion-only,Women,salla,Small,Verified,https://details-shops.com/
 متجر جول للملابس الرياضية و كرة القدم,https://goalstore1.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/mtgr-gwl
 متجر حساوية,https://yous-club.com/en,Fashion-only,"Women, Men, Unisex",salla,Small,Verified,https://yous-club.com/en/-/c1137329853
 متجر درة مسك,https://miskk-sa.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://miskk-sa.com/-/c1442843854
 متجر درّة البهجة,https://doratalbahja.com/en,Has clothing section,"Women, Men",salla,Small,Verified,https://doratalbahja.com/en/تيشيرت/c1630036302
 متجر ديما الفاخر للاكسسوارات والهدايا المخصصة بالاسم,https://demashein.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/mtgryeara
 متجر راف | RAF,https://getrafsa.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://getrafsa.zid.store/products/غسالة-ملابس-محمولة-قابلة-للطي-8-لتر-نظافة-ذكية-بدون-تعب-أو-مساحة
+متجر روز,https://rozshop0.com/,Fashion-only,Unisex,salla,Small,Verified,https://rozshop0.com/تيشيرت/c409702238
+متجر روزي ستايل Rosee style ملابس بأعلى جودة وأناقة,https://roseestyle.com/,Fashion-only,Women,salla,Small,Verified,https://roseestyle.com/
 متجر ريفال,https://ryefal.com/,Fashion-only,Women,salla,Small,Verified,https://ryefal.com/-/c1423438161
+متجر ساريتا لخيوط الكروشيه في السعودية,https://saritacrochet.com/,Has clothing section,Unisex,salla,Small,Verified,https://saritacrochet.com/
 متجر ساندي,https://sandynht.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://sandynht.com/بلوفرات-وهودي-حسب-الطلب/c1457603916
 متجر سبورت جوكر,https://jokerr1.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/sport-joker/%D8%A7%D9%84%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AA%D9%8A%D8%B4%D9%8A%D8%B1%D8%AA/p1700233189
 متجر ستايل لوكيشن,https://salla.sa/style-location,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/style-location/-/c1878212301
 متجر سحر الأنوثة الألكتروني,https://matjersahar.com/,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/matjersahar
 متجر سكاي كورة الرياضي,https://skykooora.com/,Fashion-only,Men,salla,Small,Verified,https://skykooora.com/category/dZNbww
+متجر سكرة,https://sanrio-sa.com/,Fashion-only,Women,salla,Small,Verified,https://sanrio-sa.com/
 متجر سلطانة,https://sultanaah.com/en,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/sultanaah
 متجر سله,https://salla.sa/na-127-llmi,Fashion-only,Women,salla,Small,Verified,https://salla.sa/na-127-llmi
+متجر سوفنير هدايا Souvenir Store و بوكسات رجالية مميزة,https://souvenirstore2.com/,Has clothing section,Men,salla,Small,Verified,https://souvenirstore2.com/-/c713000405
 متجر سيدرا للملابس الرياضية,https://sedrashop.com/,Has clothing section,Unisex,salla,Small,Verified,https://sedrashop.com/%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9/c1598015014
+متجر عالم التيشيرت,https://salla.sa/aalm_tshirt,Fashion-only,Women,salla,Small,Verified,https://salla.sa/aalm_tshirt
 متجر عبايات,https://salla.sa/haifa-abayaa,Fashion-only,Women,salla,Small,Verified,https://salla.sa/haifa-abayaa
 متجر عبايات الهاء,https://alhaa-abaya.com/,Fashion-only,Women,salla,Small,Verified,https://alhaa-abaya.com
 متجر عبايات ستار,https://star330.com/,Fashion-only,Women,salla,Small,Verified,https://star330.com
@@ -747,28 +946,39 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 متجر عبايات نسايم,https://nassaym.com/en,Fashion-only,Women,salla,Small,Verified,https://nassaym.com/en
 متجر عبيه,https://a-baya.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/al-kayan
 متجر عين عباية,https://ainabaya24.com/en,Fashion-only,Women,salla,Small,Verified,https://ainabaya24.com/en/abayas-suitable-for-your-workday/c1547140559
+متجر فانتوم,https://phantom99.com/en,Has clothing section,"Women, Men, Unisex",salla,Small,Verified,https://phantom99.com/en
 متجر فخامة دشداشتي,https://fdeshdashti.com/,Fashion-only,Men,salla,Small,Verified,https://fdeshdashti.com/-/c1600815103
 متجر فرح,https://salla.sa/frh-167-gpuf,Has clothing section,Women,salla,Small,Verified,https://salla.sa/frh-167-gpuf/%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%86%D8%B3%D8%A7%D8%A6%D9%8A%D8%A9-%D9%85%D9%85%D9%8A%D8%B2%D8%A9-%D9%88%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA/c689441450
 متجر فساتين ألما,https://salla.sa/alma8,Fashion-only,Women,salla,Small,Verified,https://salla.sa/alma8
 متجر فوز,https://fouz.zid.store/,Fashion-only,Women,zid,Small,Verified,https://fouz.zid.store/
+متجر قراشيع,https://8arashe3.zid.store/,Fashion-only,Unisex,zid,Small,Verified,https://8arashe3.zid.store/categories/235280/تيشيرتات
+متجر قول,https://goalshoop.com/,Fashion-only,Unisex,salla,Small,Verified,https://goalshoop.com/category/BAnnPr
 متجر كالفن,https://calvin0-sa.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/nhtraf
 متجر كماليات كل ما تحتاج اليه باقل الأسعار,https://kmaleeat.com/en,Fashion-only,"Women, Men, Unisex",salla,Small,Verified,https://kmaleeat.com/en/satweeabaya/c1110037825
 متجر كوكسات,https://cocsat.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://cocsat.com/قسم-الأطفال-للملابس/c1577971484
+متجر لافندر,https://salla.sa/lavender2131,Has clothing section,Women,salla,Small,Verified,https://salla.sa/lavender2131
 متجر لباس الخير أشمغة وثياب رجالية فاخرة بأفضل الأسعار,https://lebasal5air.com/,Fashion-only,Men,salla,Small,Verified,https://salla.sa/lbas-alkhyer
 متجر لزاز للمستلزمات الرجالية,https://lzazshop.com/en,Fashion-only,"Women, Men",salla,Small,Verified,https://lzazshop.com/en/ملابس-داخلية/c378983489
 متجر لوس,https://los-ms.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://los-ms.com/اطقم-وتيشرتات-الانديه/c430529100
 متجر لوف وجهتك المثالية للهدايا والإكسسوارات والفضيات الفاخرة,https://lov-sa.com/,Fashion-only,"Women, Men",salla,Small,Verified,https://lov-sa.com/category/rqZKpl
 متجر ماسي,https://salla.sa/masyshop,Fashion-only,Women,salla,Small,Verified,https://salla.sa/masyshop/-/c1728513654
 متجر مايرس للعبايات,https://myrs4u.com/,Fashion-only,Women,salla,Small,Verified,https://myrs4u.com/-/c1857442513
+متجر مبدعة طباعة وتصميم هاند ميد للعاملين بالمجال الصحي والعسكري,https://salla.sa/mobdeahksa,Has clothing section,Unisex,salla,Small,Verified,https://salla.sa/mobdeahksa
 متجر مزينة,https://mozayynah.com/,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/shaima_stationery
 متجر مشهد للطباعة على الملابس,https://salla.sa/sccene,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/sccene
 متجر ملابس رجالية عصرية جاكيتات وتيشيرتات فخمة باسعار مميزة,https://remontadas.com/,Fashion-only,Men,salla,Small,Verified,https://remontadas.com/جاكيتات-فورملا/c42740079
 متجر ملمس للعبايات البليزر تصاميم رسمية وأنيقة للدوام والمن,https://mlms-sa.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/mlms
 متجر مون للهدايا الفاخرة والساعات والإكسسوارات,https://moon-nht.com/,Has clothing section,"Women, Men",salla,Small,Verified,https://moon-nht.com/ملابس-شتوية-متجر-مون/c1150073324
+متجر ميلا,https://salla.sa/mtgr-myelaa,Has clothing section,Women,salla,Small,Verified,https://salla.sa/mtgr-myelaa
+متجر نادي الزلفي,https://store-alzulficlub.com/,Fashion-only,Unisex,salla,Small,Verified,https://store-alzulficlub.com/
+متجر ناديك,https://nadikshop.sa/en,Fashion-only,Unisex,salla,Small,Verified,https://nadikshop.sa/en/category/yNPRWq
 متجر نايس,https://nicestore-sa.com/en,Fashion-only,Women,salla,Small,Verified,https://nicestore-sa.com/en/عـلاقات-العبايات-والملابس/c450676558
 متجر نقطة ملونة,https://salla.sa/color-point1,Has clothing section,"Women, Men",salla,Small,Verified,https://salla.sa/color-point1
+متجر هَب,https://hubstore3.com/,Fashion-only,Unisex,salla,Small,Verified,https://hubstore3.com/
 متجر وان ايتم,https://turkione.com/en,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/onepiece1-
 متجر ود للازياء,https://wad-fashin.com/,Fashion-only,Women,salla,Small,Verified,https://wad-fashin.com/category/mgOjWa
+متجر وريف,https://war97eefstore.com/,Has clothing section,Women,salla,Small,Verified,https://war97eefstore.com/
+متجر يلا للتصاميم المميزة,https://yalaksa.com/,Fashion-only,Unisex,salla,Small,Verified,https://yalaksa.com/-/c80268258
 مجَــد لاين,https://dressesmjd.com/,Fashion-only,Women,salla,Small,Verified,https://salla.sa/dresses_mjd
 مخاوير غزال الظبي,https://salla.sa/gzal-aldbye,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/gzal-aldbye/-/c656218298
 مسخ,https://muskkh.com/en,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/muskkh
@@ -780,6 +990,7 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 معرض cmt,https://cmthorse.com/en,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/etminan
 مقاس وسط للملابس والمستلزمات الرجالية,https://rpnkrc.zid.store/,Fashion-only,Men,zid,Small,Verified,https://rpnkrc.zid.store/categories/923234/ثوب-سعودي-من-شركة-الأصيل
 مقتنياتي,https://muqtanyati.com/,Fashion-only,Men,salla,Small,Unverified – weak Saudi signals only,https://muqtanyati.com/ملابس-داخلية/c69290694
+مكانك الوحيد لدراجات هوائية عالية الجودة إكسسوارات متميزة,https://stepdragon.com.sa/en,Has clothing section,Women,salla,Small,Verified,https://stepdragon.com.sa/en
 ملابس اون لاين للرجال والنساء والاطفال في السعودية LUCES,https://luces.sa/,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/a9335a45-364c-464e-8aeb-97928c263ad8
 ملتاع,https://salla.sa/mltaa,Fashion-only,Women,salla,Small,Verified,https://salla.sa/mltaa
 منصة بشتك متخصصه في بيع المشالح الفاخرة ليصلك بشت يليق بك,https://salla.sa/bish_tk1,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/bish_tk1/بكجات-السبعة-بشوت/c1495973482
@@ -806,6 +1017,7 @@ zrar store,https://zrar-store.com/,Fashion-only,Women,salla,Small,Verified,https
 نيـلا عبـايـة,https://salla.sa/nil-2026,Fashion-only,Women,salla,Small,Verified,https://salla.sa/nil-2026
 هاسلاين,https://salla.sa/hassline,Fashion-only,Women,salla,Small,Verified,https://salla.sa/hassline/-/c1762862392
 هافن HAVEN,https://sunwardah.com/,Has clothing section,"Women, Men",salla,Small,Verified,https://sunwardah.com/category/nxnVGN
+هام,https://salla.sa/haam-ama,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/haam-ama
 هانم تشكيلة من العبايات الانيقة والمتنوعة ذات الذوق الرفيع,https://salla.sa/hanem,Fashion-only,Women,salla,Small,Verified,https://salla.sa/hanem
 هند,https://hand7-77.com/en,Fashion-only,Women,salla,Small,Verified,https://salla.sa/hnd-2023
 هيبتا,https://hebta.sa/,Fashion-only,"Women, Men",salla,Small,Verified,https://salla.sa/hyebta

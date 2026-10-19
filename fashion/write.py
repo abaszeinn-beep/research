@@ -1,8 +1,8 @@
 import pickle,collections,csv,sqlite3,re,openpyxl,urllib.parse as up
 from openpyxl.styles import Font,PatternFill
-out,excl=pickle.load(open('result.pkl','rb'))
+out,excl=pickle.load(open('result2.pkl','rb'))
 S=pickle.load(open('qa_sample.pkl','rb'))
-QA_ERR=[24,67,78]; QA_N=80
+QA_ERR=[55,26,6,35,0]; QA_N=80
 tier_ord={'Brand-Major':0,'Large':1,'Medium':2,'Small':3}
 out.sort(key=lambda f:(tier_ord[f['tier']],f['name'].lower()))
 m=sqlite3.connect('/tmp/sa/data/saudi_ecom.sqlite')
@@ -26,6 +26,7 @@ def sec(title,items):
     for k,v in items: cm.append([k,v])
     cm.append([])
 n=len(out)
+sec('Recall pass (before -> after)',[('Before recall pass',821),('After recall pass',n),('Added by recall pass',n-821)]+sorted(collections.Counter(f['src'] for f in out if 'Recall' in f['src'] or 'New discovery: Saudi' in f['src'] or 'Common Crawl' in f['src'] or 'transient' in f['src'] or 'seed' in f['src']).items()))
 sec('Totals',[('Fashion stores in final list',n),('Excluded rows listed',len(excl)+len(rex))])
 sec('By source',sorted(collections.Counter(f['src'] for f in out).items()))
 sec('By type',sorted(collections.Counter(f['type'] for f in out).items()))
@@ -39,7 +40,7 @@ sec('By size tier',sorted(collections.Counter(f['tier'] for f in out).items(),ke
 sec('By verification status',collections.Counter(f['status'] for f in out).items())
 sec('By clothing signal origin',collections.Counter(f['how'] for f in out).items())
 sec('Excluded by reason',collections.Counter(re.sub(r'\(.*','',e[2])[:60] for e in excl).most_common(12))
-sec('QA',[('Random sample size',QA_N),('Errors found in final audit sample (seed 5)',len(QA_ERR)),('Error rate',f'{len(QA_ERR)/QA_N:.1%}'),('Earlier sample iterations','seed 7: ~10/80 (12.5%) -> rules fixed; seed 99: ~5/80; seed 2026: 6/80 (7.5%) -> kids/equestrian/uniform/embroidery rules fixed; final seed 5: 3/80'),('QA judged by','manual review of store name, category, matched signal (no live re-fetch)')])
+sec('QA',[('Random sample size',QA_N),('Recall-pass audit: 70 additions + 10 manual-major rows; errors incl. doubtful',len(QA_ERR)),('Recall-pass error rate (upper bound, 2 certain + 3 doubtful)',f'{len(QA_ERR)/QA_N:.1%}'),('Original list audit (seed 5)','3/80 = 3.75%'),('Earlier sample iterations','seed 7: ~10/80 (12.5%) -> rules fixed; seed 99: ~5/80; seed 2026: 6/80 (7.5%) -> kids/equestrian/uniform/embroidery rules fixed; final seed 5: 3/80'),('QA judged by','manual review of store name, category, matched signal (no live re-fetch)')])
 sec('Method',[
 ('1. Pre-classification','All 6,876 verified master-directory rows (incl. secondary-evidence and manual majors) plus ~4.1k unverified candidates (weak Saudi/weak ecommerce/JS/thin) were live-scanned; stored category used only as prior.'),
 ('2. Live signals','Homepage anchors/links/title/meta (Arabic+English keywords); Shopify /collections.json + /products.json; WooCommerce Store API categories; sitemap.xml category/collection sub-sitemaps; Salla public storefront API (/store/v1/products/categories and /products) used by the storefront JS. Per-host throttled, no CAPTCHA/login bypass, no orders.'),
@@ -48,7 +49,7 @@ sec('Method',[
 ('5. Type','Fashion-only = stored fashion category (clothing-led store); Has clothing section = store whose primary category is something else (sports, general, bags, gifts...). Best-effort.'),
 ('6. Size tier','Brand-Major = reference-universe major or manually accepted brand; Large = reference-universe medium store; Medium = independent custom domain; Small = Salla/Zid/myshopify merchant subdomain. Best-effort.'),
 ('7. New discovery','(a) 205-URL fashion seed list of GCC/global fashion brands & retailers verified with the existing verifier (119 new candidates, 4 verified, none classified as fashion; ~86 already known); (b) 13 known major fashion brands whose Saudi storefronts are bot-walled/JS-rendered accepted as Known major retailer – manually accepted (reference audit status unresolved); (c) 19 existing unverified candidates with weak Saudi signals only that scanned as fashion (Unverified – weak Saudi signals only). Common Crawl domain-wide keyword filters time out (504); Wayback/CC keyword discovery therefore reused the existing full salla.sa/zid/myshopify/.sa harvest. Salla/Zid showcase and Saudi App Store sellerUrl discovery were already exhausted by the base pipeline.'),
-('Limitations','Stores whose storefront could not be fetched (bot walls, timeouts, JS-only Zid pages with no static nav) and no name hint are listed in Excluded as unclassifiable, so recall for small Zid stores is understated. Fetching was from a US VM.')])
+('8. Recall pass','Category-level rescan of all 6,882 directory stores (Salla API categories, Zid/Shopify/Woo category links and collections, category sitemaps, nav menus); Playwright on 815 JS-only/thin/throttled stores; Common Crawl cluster.idx read directly for sa,/zid/myshopify across 6 crawls (2026-17..39, 282 new hosts); Saudi App Store fashion-term search (1,275 new sellerUrl domains verified); transient-failure unverified candidates re-scanned and re-verified.'),('Limitations','Stores whose storefront could not be fetched (bot walls, timeouts, JS-only Zid pages with no static nav) and no name hint are listed in Excluded as unclassifiable, so recall for small Zid stores is understated. Fetching was from a US VM.')])
 cm.column_dimensions['A'].width=48; cm.column_dimensions['B'].width=120
 wb.save('/tmp/sa/markets/fashion/Saudi_Arabia_Fashion_Stores.xlsx')
 with open('/tmp/sa/markets/fashion/Saudi_Arabia_Fashion_Stores.csv','w',newline='',encoding='utf-8-sig') as fh:
