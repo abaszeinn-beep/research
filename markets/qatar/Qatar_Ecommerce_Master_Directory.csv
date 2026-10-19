@@ -12,7 +12,7 @@ Adidas Qatar,https://www.adidas.qa/,2496,sitemap,2026-10-19,Verified
 Adrenaline Gym,https://adrenalinegym.qa/,643,sitemap,2026-10-19,Verified
 Afraa Boutique,https://afraaboutique.com/,178,sitemap,2026-10-19,Verified
 Agricompost,https://agricompost.qa/,72,sitemap,2026-10-19,Verified
-Ahmed Al Maghribi Perfumes,https://ahmedalmaghribi.qa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+Ahmed Al Maghribi Perfumes,https://ahmedalmaghribi.qa/,2,archive,2026-10-19,Verified
 Airwheel Qatar,https://airwheel.qa/,15,sitemap,2026-10-19,Verified
 Aiwa Home,https://aiwahome.qa/,2671,sitemap,2026-10-19,Verified
 Ajmal Perfumes,https://ar-qa.ajmal.com/,1838,sitemap,2026-10-19,Verified
@@ -94,7 +94,7 @@ Blue Salon,https://www.bluesalon.com/,86759,sitemap,2026-10-19,Verified (seconda
 boutiqaat,https://www.boutiqaat.com/en-qa/,180918,sitemap (QA pages only),2026-10-19,Verified (secondary evidence)
 brandsqatar,https://brandsco.qa/,386,sitemap,2026-10-19,Verified
 Build Station Qatar,https://www.buildstation.qa/,230,sitemap,2026-10-19,Verified
-Business Cloud,https://bc.qa/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.bc.qa', port=80): Read timed out. (read timeout=15)))",2026-10-19,Verified
+Business Cloud,https://bc.qa/,66,sitemap,2026-10-19,Verified
 Buy Best Perfumes Online,https://qa.ahmedalmaghribi.com/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
 Buy Toners and Ink Cartridges Online in Qatar COD,https://www.ink.qa/,260,archive,2026-10-19,Verified
 Buy/Send Gifts Online,https://marhabaflorist.qa/,1152,sitemap,2026-10-19,Verified
@@ -106,7 +106,7 @@ Care n Cure Online Pharmacy Qatar,https://www.carencurepharmacy.com/,26389,sitem
 Caretti,https://thamco.com.qa/,78,archive,2026-10-19,Verified
 Carrefour Qatar,https://www.carrefourqatar.com/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.carrefourqatar.com', port=80): Read timed out. (rea))",2026-10-19,Verified (secondary evidence)
 Carty,https://carty.qa/,71,sitemap,2026-10-19,Verified
-Carvers of Peninsula,https://carvers.com.qa/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.carvers.com.qa', port=80): Read timed out. (read ti))",2026-10-19,Verified
+Carvers of Peninsula,https://carvers.com.qa/,216,sitemap,2026-10-19,Verified
 Castamo Qatar,https://castamo.qa/,2432,sitemap,2026-10-19,Verified
 CatSouq,https://catsouq.qa/,135,sitemap,2026-10-19,Verified
 Celebrations Palace,https://cpalace.qa/,2899,sitemap,2026-10-19,Verified
@@ -139,7 +139,7 @@ DARY,https://dary.com.qa/,135,sitemap,2026-10-19,Verified
 Decathlon Qatar,https://decathlon.qa/,4035,sitemap,2026-10-19,Verified (secondary evidence)
 delalune.qa,https://delalune.qa/,24,sitemap,2026-10-19,Verified
 Delta Security Systems,https://dss.com.qa/,51,sitemap,2026-10-19,Verified
-Delune,https://delune.qa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+Delune,https://delune.qa/,297,platform product count,2026-10-19,Verified
 Desert Garden for Plants and Flowers,https://desertgarden.qa/,1457,sitemap,2026-10-19,Verified
 DESIGN HOUSE INTERIORS,https://dhi.qa/,217,sitemap,2026-10-19,Verified
 Desigual Qatar,https://www.desigual.com/en_QA/,6220,sitemap,2026-10-19,Verified
@@ -265,7 +265,7 @@ Homes r Us Qatar,https://www.homesrus.qa/,17034,sitemap,2026-10-19,Verified
 Honoroast Qatar,https://www.honoroast.qa/,151,sitemap,2026-10-19,Verified
 hotpack.qa,https://hotpack.qa/,1565,sitemap,2026-10-19,Verified
 HoueseMaid,https://housemaid.qa/,17,archive,2026-10-19,Verified
-House Beauty,https://housebeauty.qa/,7,platform product count,2026-10-19,Verified
+House Beauty,https://housebeauty.qa/,290,sitemap,2026-10-19,Verified
 Huda Beauty,https://hudabeauty.com/en-qa/,294795,sitemap,2026-10-19,Verified
 i2i Technologies,https://i2i.qa/,18,sitemap,2026-10-19,Verified
 Ibn Al Haytham Pharmacy,https://ihp.qa/,8219,shop-page total,2026-10-19,Verified
@@ -324,7 +324,7 @@ La Pelota - Padel & Fitness Club,https://lapelota.qa/,22,sitemap,2026-10-19,Veri
 Le Pro Cosmetics Qatar,https://leprocosmetics.qa/,51,sitemap,2026-10-19,Verified
 "Leading sports Equipment Dealers in Doha,Qatar",https://www.sportshub.qa/,2542,sitemap,2026-10-19,Verified
 Lenore Jewellery,https://lenore.qa/,237,archive,2026-10-19,Verified
-Letoile,https://letoile.qa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.letoile.qa', port=80): Max retries exceeded with ur))",2026-10-19,Verified
+Letoile,https://letoile.qa/,36059,sitemap,2026-10-19,Verified
 Liberty Packing Manufacturies,https://libertypack.qa/,519,sitemap,2026-10-19,Verified
 Lichi,https://lichi.com/qa/,2408,sitemap (QA pages only),2026-10-19,Verified
 Lifetime Nursery,https://www.lifetimenursery.qa/,1,archive,2026-10-19,Verified
@@ -333,8 +333,8 @@ Little Goodies - Souvenirs & Gifts,https://littlegoodies.qa/,151,sitemap (partia
 Logicon Ecom,https://logicon.qa/,722,sitemap,2026-10-19,Verified
 Looks Salon and spa - Best Luxury Men's Grooming in Qatar,https://www.looks.qa/,426,sitemap,2026-10-19,Verified
 Luca Perfumes Qatar,https://luca.qa/,2097,sitemap,2026-10-19,Verified
-Lulu Hypermarket,https://gcc.luluhypermarket.com/en-qa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gcc.luluhypermarket.com', port=80): Max retries exc))",2026-10-19,Verified (secondary evidence)
-Luna,https://lunacouture.qa/,379,platform product count,2026-10-19,Verified
+Lulu Hypermarket,https://gcc.luluhypermarket.com/en-qa/,6839,archive,2026-10-19,Verified (secondary evidence)
+Luna,https://lunacouture.qa/,1902,sitemap,2026-10-19,Verified
 Lush Qatar,https://lush.qa/,903,sitemap,2026-10-19,Verified
 Mac Duggal,https://qa.macduggal.com/,3725,sitemap,2026-10-19,Verified
 Madhu Manuka Honey,https://madhuhoney.qa/,42,sitemap,2026-10-19,Verified
@@ -377,7 +377,7 @@ Muji Qatar,https://www.muji.qa/,,Not available (blocked by site: HTTP 403 on rob
 Mumzworld,https://www.mumzworld.com/qa-en/,709088,sitemap (QA pages only),2026-10-19,Verified
 MusclePump,https://musclepumpqa.com/,980,sitemap,2026-10-19,Verified
 My Game Station | ماي قيم ستيشن,https://mygamestation.qa/,2477,sitemap,2026-10-19,Verified
-My Perfume Shop,https://www.myperfumeshop.qa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+My Perfume Shop,https://www.myperfumeshop.qa/,10831,shop-page total,2026-10-19,Verified
 My Vibe,https://myvibe.qa/,3407,sitemap,2026-10-19,Verified
 My Website,https://www.halaldar.qa/,14,sitemap,2026-10-19,Verified
 MyChoice,https://www.mychoice.qa/,5245,sitemap,2026-10-19,Verified
@@ -447,7 +447,7 @@ Pets Qatar,https://petsqtr.com/,17955,sitemap,2026-10-19,Verified
 Petshub.qa,https://www.petshub.qa/,2319,sitemap,2026-10-19,Verified
 PharmaCare Online,https://pharmacareonline.qa/,15902,sitemap,2026-10-19,Verified
 Philips,https://www.philips.com.qa/,6407,sitemap,2026-10-19,Verified (secondary evidence)
-Photobrick Qatar,https://photobrick.com.qa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.photobrick.com.qa', port=80): Max retries exceeded ))",2026-10-19,Verified
+Photobrick Qatar,https://photobrick.com.qa/,115,sitemap,2026-10-19,Verified
 Pick and ride trading,https://pickandride.qa/,38,sitemap,2026-10-19,Verified
 Pillow Derma Beauty,https://pillowderma.qa/,29,sitemap,2026-10-19,Verified
 Pixels • بيكسلز,https://pixels.qa/,416,sitemap,2026-10-19,Verified
@@ -525,7 +525,7 @@ SHEIN,https://ar.shein.com/,,"Not available (unreachable (ConnectionError: HTTPC
 Shine Gold & Diamonds,https://shinegd.com/,639,sitemap,2026-10-19,Verified
 Shine Qatar,https://shine-qatar.com/,2470,sitemap (partial: 12 of 13 sitemap files read),2026-10-19,Verified
 shinenoor.qa,https://shinenoor.qa/,28,sitemap,2026-10-19,Verified
-Shop Five,https://www.shop5.qa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop5.qa', port=80): Max retries exceeded with url:))",2026-10-19,Verified
+Shop Five,https://www.shop5.qa/,3903,sitemap,2026-10-19,Verified
 "Shop Online @ AIVI.com for Men, Women & Kids across GCC",https://ar-qa.aivi.com/,16312869,sitemap,2026-10-19,Verified (secondary evidence)
 Shop Triumph,https://www.shoptriumph.qa/,1306,sitemap,2026-10-19,Verified
 Shopndrop,https://shopndrop.qa/,500,sitemap,2026-10-19,Verified
@@ -534,7 +534,7 @@ Sibon Chocolate - Qatar,https://sibon.qa/,64,sitemap,2026-10-19,Verified
 Sidra Water,https://sidrawater.qa/,165,sitemap,2026-10-19,Verified
 Signature Jewelry Gifts,https://www.signaturejewelryqa.com/,1263,sitemap,2026-10-19,Verified
 Silacart,https://www.silacart.qa/,2034,sitemap,2026-10-19,Verified
-Skylink,https://skylink.qa/,156,archive,2026-10-19,Verified
+Skylink,https://skylink.qa/,116,sitemap,2026-10-19,Verified
 Slovakia Laundry,https://www.slovakialaundry.qa/,158,sitemap,2026-10-19,Verified
 smart eco,https://smarteco.qa/,495,sitemap,2026-10-19,Verified
 SNAPDEALS,https://www.snapdeals.qa/,2417,sitemap,2026-10-19,Verified
