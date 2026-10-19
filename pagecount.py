@@ -39,6 +39,32 @@ OTHER_TOK = {"bh", "bahrain", "om", "oman", "eg", "egypt", "jo", "jordan", "lb",
              "cl", "co", "fr", "de", "it", "es", "nl", "be", "ch", "at", "se", "dk", "no", "fi", "pl",
              "pt", "gr", "ru", "ua", "za", "ng", "ke", "global", "int", "intl", "row", "mena", "gcc"}
 
+RETRY_DELAYS = (5, 15, 45, 120)
+MIN_ALT = 20  # fewer alternate-pattern URLs than this is a stray link, not a market storefront
+CCTLD = {"SA": (".com.sa", ".sa"), "AE": (".co.ae", ".com.ae", ".ae"), "QA": (".com.qa", ".qa"),
+         "KW": (".com.kw", ".kw"), "US": (".us",)}
+ALT_Q = {"country", "region", "market", "locale", "shipto", "ship_to", "cc", "store", "country_code", "countrycode", "lang", "language", "currency"}
+CUR = {"sar": "SA", "aed": "AE", "qar": "QA", "kwd": "KW"}
+
+
+def alt_market(url):
+    """Market signalled by a non-first-segment path locale or a country/currency query parameter."""
+    try: u = up.urlsplit(url)
+    except ValueError: return None
+    if u.query:
+        for k, v in up.parse_qsl(u.query):
+            if k.lower() in ALT_Q:
+                v = v.lower()
+                if v in CUR: return CUR[v]
+                for t in re.split(r"[-_]", v):
+                    if t in MARKET_TOK: return MARKET_TOK[t]
+    segs = [x for x in u.path.split("/") if x][:3]
+    for sg in segs[1:]:
+        ok, mk, _ = locale_market(sg)
+        if ok and mk: return mk
+    return None
+
+
 NOW = lambda: datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
 
 
@@ -126,7 +152,8 @@ class Fetcher:
             if w > 0: time.sleep(w)
             self.last_t = time.time()
 
-    def get(self, url, retries=2, stream=False, timeout=(CONNECT_T, READ_T), **kw):
+    def get(self, url, retries=2, stream=False, timeout=None, **kw):
+        timeout = timeout or (CONNECT_T, READ_T)
         for i in range(retries + 1):
             if time.time() > self.deadline: raise Unavailable("timeout: domain time budget exceeded")
             self._pace()
@@ -254,8 +281,10 @@ def norm_key(url, rds):
 
 
 class SitemapCrawl:
-    def __init__(self, fetcher, rds, robots):
+    def __init__(self, fetcher, rds, robots, recount=False, watch=(), own=""):
         self.f, self.rds, self.robots = fetcher, rds, robots
+        self.recount, self.watch, self.own = recount, set(watch), own
+        self.alt = {}; self.foreign = {}; self.aborted = False
         self.seen_sm = set(); self.files = 0; self.skipped = []; self.failed = []
         self.hashes = array.array('Q'); self.tagarr = array.array('B'); self.tagids = {}
         self.tags = {}; self.raw = 0; self.dups = 0
@@ -266,10 +295,26 @@ class SitemapCrawl:
             for l in locs:
                 self.raw += 1
                 k, t = norm_key(l, self.rds)
-                if k is None: continue
+                if k is None:
+                    if self.watch: self._foreign(l)
+                    continue
+                if self.watch and not t: self._alt(l, k)
                 ti = self.tagids.setdefault(t, len(self.tagids))
                 self.hashes.append(hash(k) & 0xFFFFFFFFFFFFFFFF)
                 self.tagarr.append(ti)
+
+    def _foreign(self, l):
+        try: u = up.urlsplit(l)
+        except ValueError: return
+        h = (u.hostname or "").lower()
+        for m in self.watch:
+            for suf in CCTLD[m]:
+                if h.endswith(suf) and h[:-len(suf)].split(".")[-1] == self.own:
+                    self.foreign.setdefault(m, set()).add(h + u.path.rstrip("/")); break
+
+    def _alt(self, l, k):
+        m = alt_market(l)
+        if m and m in self.watch: self.alt.setdefault(m, set()).add(k)
 
     def finalize(self):
         """Exact dedupe over 64-bit hashes (compact arrays, bounded memory); fills self.tags / self.dups."""
@@ -287,6 +332,7 @@ class SitemapCrawl:
         self.hashes = array.array("Q"); self.tagarr = array.array("B")
 
     def run(self, tops):
+        if self.recount: return self.run_recount(tops)
         stack = list(tops)
         pool = None
         for rnd in range(3):
@@ -315,9 +361,39 @@ class SitemapCrawl:
             stack = retry
         if pool: pool.shutdown()
 
-    def one(self, s):
+    def _crawl_serial(self, stack):
+        stack = list(stack)
+        while stack:
+            s = stack.pop()
+            if s in self.seen_sm: continue
+            self.seen_sm.add(s)
+            if MEDIA_SM.search(up.urlsplit(s).path.rsplit("/", 1)[-1]):
+                self.skipped.append(s); continue
+            try:
+                stack.extend(self.one(s, retries=self._retries))
+            except Unavailable:
+                self.aborted = True
+                self.failed.append((s, "deadline")); self.failed.extend((x, "deadline") for x in stack if x not in self.seen_sm)
+                return
+            if self.files > 6000: return
+
+    def run_recount(self, tops):
+        # serial per host; failed sitemaps are retried after 5s/15s/45s/120s; 404/410 are retried once only
+        self._retries = 1
+        self._crawl_serial(tops)
+        self._retries = 0
+        for i, delay in enumerate(RETRY_DELAYS):
+            if self.aborted: break
+            pend = [u for u, e in self.failed if i == 0 or e not in (404, 410)]
+            if not pend: break
+            time.sleep(delay)
+            self.failed = [x for x in self.failed if x[0] not in pend]
+            for u in pend: self.seen_sm.discard(u)
+            self._crawl_serial(pend)
+
+    def one(self, s, retries=2):
         kids = []
-        r = self.f.get(s, stream=True)
+        r = self.f.get(s, stream=True, retries=retries)
         if r is None:
             self.failed.append((s, self.f.last_err)); return kids
         if r.status_code != 200:
@@ -526,13 +602,164 @@ def fallback(f, base, domain, rds, robots):
 FIELDS = ["domain", "market", "pages_count", "count_method", "sitemap_files", "top_sitemap_url", "count_date", "notes"]
 
 
+RC_FIELDS = FIELDS + ["old_count", "files_read", "files_total", "resolution"]
+
+
+def probe_market_absent(f, base, m):
+    """True only with explicit evidence: homepage declares >=2 hreflang storefronts, none for m, and m locale prefixes 404."""
+    r = f.get(base + "/", retries=1)
+    if r is None or r.status_code != 200 or "html" not in r.headers.get("content-type", "html"): return False, ""
+    tags = re.findall(r"<link\b[^>]*>", r.text[:400000], re.I)
+    hl = []
+    for t in tags:
+        a = re.search(r'hreflang=["\']([^"\']+)', t, re.I); h = re.search(r'href=["\']([^"\']+)', t, re.I)
+        if a and h and "alternate" in t.lower(): hl.append((a.group(1).lower(), h.group(1)))
+    codes = {c for c, _ in hl if c != "x-default"}
+    if len(codes) < 2: return False, ""
+    if any(c == "x-default" for c, _ in hl) or any(c in LANGS for c in codes): return False, ""
+    for c, h in hl:
+        ok, mk, _ = locale_market(c)
+        if mk == m or tag_url(host_of(up.urljoin(base + "/", h)), up.urlsplit(h).path) == m: return False, ""
+    lo = m.lower()
+    for p in (lo, "en-" + lo, "ar-" + lo, lo + "-en", lo + "-ar", lo + "_en", "en_" + lo):
+        rr = f.get(f"{base}/{p}/", retries=0, timeout=(CONNECT_T, 20))
+        if rr is not None and rr.status_code == 200 and f"/{p}" in up.urlsplit(rr.url).path.lower(): return False, ""
+    return True, f"homepage hreflang lists {len(codes)} storefronts ({','.join(sorted(codes)[:6])}) none for {m}; /{lo}/ and locale variants return no page"
+
+
+def recount_domain(domain, markets, zero_mk, old, deadline_s=3000):
+    """Recount with per-host serial crawling, 60s reads and retried child sitemaps. Returns rows or None if the site could not be crawled."""
+    deadline = time.time() + deadline_s
+    f = Fetcher(deadline)
+    rds = {split_dom(domain)}
+    today = NOW()
+    base = None; robots_txt = None; robots = None; notes = []
+    for scheme in ("https", "http"):
+        for h in (domain, "www." + domain):
+            r = f.get(f"{scheme}://{h}/robots.txt", retries=1, timeout=(15, 30))
+            if r is None: continue
+            final = host_of(r.url)
+            if split_dom(final) not in rds:
+                rds.add(split_dom(final)); notes.append(f"redirects to {final}")
+            if r.status_code == 200 and ("html" not in r.headers.get("content-type", "") or "user-agent" in r.text[:5000].lower()):
+                robots_txt = r.text; base = f"{scheme}://{host_of(r.url)}"; break
+            if r.status_code < 500 and base is None: base = f"{scheme}://{host_of(r.url)}"
+        if robots_txt is not None or base: break
+    if base is None: return None
+    if robots_txt:
+        robots = rp.RobotFileParser(); robots.parse(robots_txt.splitlines())
+        if not robots.can_fetch(UA, base + "/") and not robots.can_fetch("*", base + "/"): return None
+    tops = [up.urljoin(base + "/", m.strip()) for m in re.findall(r"(?im)^\s*sitemap:\s*(\S+)", robots_txt or "")]
+    how = "robots.txt"
+    if not tops:
+        how = "guess"
+        for c in SM_CANDIDATES:
+            r = f.get(base + c, retries=1, stream=True, timeout=(15, 60))
+            ok = False
+            if r is not None and r.status_code == 200:
+                try:
+                    for kind, locs in iter_locs(r, deadline): ok = True; break
+                except Exception: pass
+            if r is not None: r.close()
+            if ok: tops = [base + c]; break
+    own = split_dom(domain).split(".")[0]
+
+    def row(m, c, method, files=0, top="", note="", read=0, total=0, resolution=""):
+        return dict(domain=domain, market=m, pages_count="" if c is None else c, count_method=method, sitemap_files=files,
+                    top_sitemap_url=top, count_date=today, notes=note, old_count=old.get(m, ""),
+                    files_read=read, files_total=total, resolution=resolution)
+
+    if tops:
+        cr = SitemapCrawl(f, rds, robots, recount=True, watch=set(zero_mk), own=own)
+        cr.run(tops); cr.finalize()
+        tags = cr.tags; total = sum(tags.values())
+        if cr.files > 0 and total > 0:
+            read = cr.files; failed = len(cr.failed); tot_files = read + failed
+            tagged = {k: v for k, v in tags.items() if k}
+            segmented = len(tagged) >= 2 and sum(tagged.values()) / total >= 0.3 and len(set(tagged) - {"other"} | ({"other"} & set(tagged))) >= 1
+            n = list(notes) + [f"raw={cr.raw} dupes_removed={cr.dups}", f"recount via {how}"]
+            if cr.skipped: n.append(f"media sitemaps skipped={len(cr.skipped)}")
+            if segmented: n.append("country split " + ",".join(f"{k or 'untagged'}={v}" for k, v in sorted(tags.items(), key=lambda x: -x[1])[:8]))
+            if failed: n.append(f"failed sitemap fetches after retries={failed}: " + "; ".join(f"{u}:{e}" for u, e in cr.failed[:3]))
+            top = " | ".join(tops[:5]) + (f" (+{len(tops)-5} more)" if len(tops) > 5 else "")
+            out = []
+            for m in markets:
+                nn = list(n); resolution = "complete" if not failed else "partial"
+                if segmented:
+                    c = tags.get(m, 0); method = f"sitemap ({m} pages only)"
+                    if c == 0:
+                        alt = cr.alt.get(m, set()); fo = cr.foreign.get(m, set())
+                        if len(alt) >= MIN_ALT:
+                            c = len(alt); resolution = "counted: alternate pattern"; nn.append(f"{m} found via non-prefix pattern (path/query)")
+                        elif len(fo) >= MIN_ALT:
+                            c = len(fo); resolution = "counted: ccTLD sitemap"; nn.append(f"{m} found on separate ccTLD host")
+                        elif tags.get("", 0) / total >= 0.25:
+                            c = total; method = "sitemap (whole site, no market segment)"; resolution = "whole site"
+                            oth = sum(v for k, v in tags.items() if k)
+                            nn.append(f"no {m} segment; default storefront is {tags.get('',0)} of {total} URLs; whole-site total includes {oth} URLs under other-country segments")
+                        elif failed:
+                            c = None; method = f"Not available (no {m} pages in sitemap)"; resolution = "Not available"; nn.append("sitemap incomplete after retries")
+                        else:
+                            absent, ev = probe_market_absent(f, base, m)
+                            if absent: c = 0; resolution = "true zero"; nn.append("evidence: " + ev)
+                            else: c = None; method = f"Not available (no {m} pages in sitemap)"; resolution = "Not available"
+                else:
+                    c = total; method = "sitemap"
+                if failed and c is not None:
+                    oc = old.get(m, "")
+                    if oc not in ("", None) and str(oc).isdigit(): c = max(c, int(oc))
+                    method = f"sitemap (partial: {read} of {tot_files} sitemap files read)"
+                    if segmented and "whole site" not in resolution: nn.append(f"{m} pages only")
+                out.append(row(m, c, method, read, top, "; ".join(nn), read, tot_files, resolution))
+            return out
+        notes.append("sitemap present but yielded no countable URLs" + (f" ({cr.failed[:2]})" if cr.failed else ""))
+    n, method, note = fallback(f, base, domain, rds, robots)
+    if n is None: return None
+    if n == 0:
+        return [row(m, None, f"Not available (no sitemap; {method} reported 0)", 0, "", "; ".join(notes + [note, "recount: no sitemap"]), 0, 0, "Not available") for m in markets]
+    return [row(m, n, method, 0, "", "; ".join(notes + [note, "recount: no sitemap"]), 0, 0, "fallback") for m in markets]
+
+
+def main_recount(a):
+    global CONNECT_T, READ_T
+    CONNECT_T, READ_T = 15, 60
+    Host.gap = 0.3
+    items = []
+    for r in csv.DictReader(open(a.input, encoding="utf-8")):
+        old = dict(x.split("=", 1) for x in r["old"].split(";") if "=" in x)
+        items.append((r["domain"], [m for m in r["markets"].split(";") if m], [m for m in r["zero_markets"].split(";") if m], old))
+    exists = os.path.exists(a.output)
+    done = {r["domain"] for r in csv.DictReader(open(a.output, encoding="utf-8"))} if exists else set()
+    out = open(a.output, "a", newline="", encoding="utf-8")
+    w = csv.DictWriter(out, RC_FIELDS)
+    if not exists: w.writeheader()
+    items = [i for i in items if i[0] not in done]
+    lock = threading.Lock(); n = 0; t0 = time.time()
+    with ThreadPoolExecutor(a.workers) as ex:
+        futs = {ex.submit(recount_domain, d, m, z, o, a.deadline): d for d, m, z, o in items}
+        for fu in as_completed(futs):
+            try: rs = fu.result()
+            except Exception as e:
+                rs = None
+            if rs is None:
+                d = futs[fu]; it = next(i for i in items if i[0] == d)
+                rs = [dict(domain=d, market=m, pages_count="", count_method="RECOUNT_FAILED", sitemap_files=0, top_sitemap_url="",
+                           count_date=NOW(), notes="", old_count=it[3].get(m, ""), files_read=0, files_total=0, resolution="recount_failed") for m in it[1]]
+            with lock:
+                for r in rs: w.writerow(r)
+                out.flush(); n += 1
+                if n % 25 == 0: print(f"{n}/{len(items)} done, {time.time()-t0:.0f}s", file=sys.stderr, flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input"); ap.add_argument("--output")
     ap.add_argument("--workers", type=int, default=100)
     ap.add_argument("--deadline", type=int, default=3600)
+    ap.add_argument("--recount", action="store_true", help="recount mode: --input needs domain,markets,zero_markets,old")
     ap.add_argument("args", nargs="*")
     a = ap.parse_args()
+    if a.recount: return main_recount(a)
     items = []
     if a.input:
         for r in csv.DictReader(open(a.input, encoding="utf-8")):

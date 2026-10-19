@@ -183,7 +183,7 @@ eshop.hercules.com,US,59,sitemap (US pages only),3,https://eshop.hercules.com/pu
 kettleandfire.com,US,145,sitemap,6,https://www.kettleandfire.com/sitemap.xml,2026-10-19,raw=145 dupes_removed=0
 store.twloha.com,US,475,sitemap,7,https://store.twloha.com/sitemap.xml,2026-10-19,raw=475 dupes_removed=0
 panelpak.com,US,72,sitemap,1,https://www.panelpak.com/sitemap.xml,2026-10-19,raw=73 dupes_removed=1
-mlouye.com,US,0,sitemap (US pages only),67,https://www.mlouye.com/sitemap.xml,2026-10-19,"raw=12663 dupes_removed=0; country split untagged=4871,AE=1948,QA=1948,SA=1948,KW=1948"
+mlouye.com,US,12663,"sitemap (whole site, no market segment)",67,https://www.mlouye.com/sitemap.xml,2026-10-19,"raw=12663 dupes_removed=0; recount via robots.txt; country split untagged=4871,AE=1948,QA=1948,SA=1948,KW=1948; no US segment; default storefront is 4871 of 12663 URLs; whole-site total includes 7792 URLs under other-country segments"
 struggle5ive.com,US,11,sitemap,6,https://struggle5ive.com/sitemap.xml,2026-10-19,raw=11 dupes_removed=0
 hawaiislocalbuzz.com,US,67,sitemap,1,https://www.hawaiislocalbuzz.com/sitemap.asp,2026-10-19,raw=67 dupes_removed=0
 nightstick.com,US,1071,sitemap,7,https://www.nightstick.com/sitemap.xml,2026-10-19,raw=1071 dupes_removed=0
@@ -443,7 +443,7 @@ birdieboxbirdtoys.com,US,354,sitemap,1,https://birdieboxbirdtoys.com/sitemap.xml
 elizabethjacksonconsignit.com,US,271,sitemap,7,https://elizabethjacksonconsignit.com/sitemap.xml,2026-10-19,raw=271 dupes_removed=0
 lectronz.com,US,4055,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 ghostlifestyle.com,US,1167,sitemap,7,https://www.ghostlifestyle.com/sitemap.xml,2026-10-19,raw=1167 dupes_removed=0
-durysguns.com,US,1053,sitemap,11,https://durysguns.com/sitemap_index.xml,2026-10-19,raw=1092 dupes_removed=39; failed sitemap fetches=1: https://durysguns.com/category-sitemap.xml:unparseable
+durysguns.com,US,1053,sitemap (partial: 11 of 12 sitemap files read),11,https://durysguns.com/sitemap_index.xml,2026-10-19,raw=1092 dupes_removed=39; recount via robots.txt; failed sitemap fetches after retries=1: https://durysguns.com/category-sitemap.xml:unparseable
 shopfromparadise.com,US,1414,sitemap,17,https://shopfromparadise.com/sitemap.xml,2026-10-19,raw=1414 dupes_removed=0
 masecraftsupply.com,US,687,sitemap,1,https://www.masecraftsupply.com/sitemap.xml,2026-10-19,raw=687 dupes_removed=0
 purekana.com,US,269,sitemap,7,https://purekana.com/sitemap.xml,2026-10-19,raw=269 dupes_removed=0
@@ -513,7 +513,7 @@ alpacathreadz.com,US,51,sitemap,7,https://alpacathreadz.com/sitemap.xml,2026-10-
 buydecorativefilm.com,US,210,sitemap,8,https://buydecorativefilm.com/sitemap.xml,2026-10-19,raw=210 dupes_removed=0
 dbot5store-com.3dcartstores.com,US,18,sitemap,1,https://dbot5store-com.3dcartstores.com/sitemap.xml,2026-10-19,raw=18 dupes_removed=0
 clayimco.com,US,2681,sitemap,1,https://www.clayimco.com/sitemap.xml,2026-10-19,raw=2681 dupes_removed=0
-mitsuwa.com,US,1779,sitemap,16,https://mitsuwa.com/sitemap-index.xml | https://mitsuwa.com/sitemap-index-1.xml | https://mitsuwa.com/sitemap.xml,2026-10-19,raw=5051 dupes_removed=3272; failed sitemap fetches=5: https://mitsuwa.com/sitemap-index-1.xml:404; https://mitsuwa.com/sitemap-index.xml:404; https://mitsuwa.com/wp-sitemap-posts-product-2.xml:404
+mitsuwa.com,US,1779,sitemap (partial: 16 of 21 sitemap files read),16,https://mitsuwa.com/sitemap-index.xml | https://mitsuwa.com/sitemap-index-1.xml | https://mitsuwa.com/sitemap.xml,2026-10-19,raw=5051 dupes_removed=3272; recount via robots.txt; failed sitemap fetches after retries=5: https://mitsuwa.com/sitemap-index.xml:404; https://mitsuwa.com/sitemap-index-1.xml:404; https://mitsuwa.com/wp-sitemap-posts-mitsuwa_event-2.xml:404
 majestycoffee.com,US,1750,sitemap,7,https://majestycoffee.com/sitemap.xml,2026-10-19,raw=1750 dupes_removed=0
 orientalaromas.com,US,4105,sitemap,12,https://orientalaromas.com/sitemap.xml,2026-10-19,raw=4105 dupes_removed=0
 pearlriver.com,US,3765,sitemap,10,https://pearlriver.com/sitemap.xml,2026-10-19,raw=3765 dupes_removed=0
@@ -572,7 +572,7 @@ sprayground.com,US,7078,sitemap,12,https://www.sprayground.com/sitemap.xml,2026-
 kauai.com,US,345,sitemap,4,https://www.kauai.com/sitemap.xml,2026-10-19,raw=346 dupes_removed=1
 locomodiv.com,US,41,sitemap,7,https://locomodiv.com/sitemap.xml,2026-10-19,raw=41 dupes_removed=0
 jezsport.com,US,13471,sitemap,14,https://jezsport.com/sitemap_index.xml,2026-10-19,raw=13528 dupes_removed=57
-suvudu.com,US,0,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
+suvudu.com,US,,Not available (no sitemap; platform product count reported 0),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://w341th.com/sitemap_index.xml', 403)]); woocommerce X-WP-Total (products only); recount: no sitemap"
 shopwildchicory.com,US,2358,sitemap,1,https://www.shopwildchicory.com/sitemap.xml,2026-10-19,raw=2358 dupes_removed=0
 lakepajamas.com,US,855,sitemap,7,https://lakepajamas.com/sitemap.xml | https://lakepajamas.com/sitemap.xml | https://lakepajamas.com/sitemap.xml,2026-10-19,raw=855 dupes_removed=0
 retrosoccerkit.com,US,5416,sitemap,22,https://retrosoccerkit.com/sitemap.xml,2026-10-19,raw=5416 dupes_removed=0
@@ -586,7 +586,7 @@ dallasnovelty.com,US,73047,archive,0,,2026-10-19,"no sitemap found; wayback CDX 
 thenaughtycookie.com,US,33,sitemap,7,https://www.thenaughtycookie.com/sitemap.xml,2026-10-19,raw=33 dupes_removed=0
 vqvgroup.com,US,37296,sitemap,1,https://vqvgroup.com/sitemap.xml,2026-10-19,raw=37296 dupes_removed=0
 adorablebabychicago.com,US,918,sitemap,1,https://adorablebabychicago.com/sitemap.xml | https://adorablebabychicago.com/sitemap.xml | https://adorablebabychicago.com/sitemap.xml | https://adorablebabychicago.com/sitemap.xml,2026-10-19,raw=918 dupes_removed=0
-mechanix.com,US,500,sitemap (US pages only),21,https://www.mechanix.com/us-en/sitemap_index.xml | https://www.mechanix.com/ca-en/sitemap_index.xml | https://www.mechanix.com/ca-fr/sitemap_index.xml | https://www.mechanix.com/fr-fr/sitemap_index.xml | https://www.mechanix.com/de-de/sitemap_index.xml (+6 more),2026-10-19,"raw=2135 dupes_removed=373; failed sitemap fetches=4: https://www.mechanix.com/jp-jp/sitemap_index.xml:unparseable; https://www.mechanix.com/au-en/sitemap_index.xml:404; https://www.mechanix.com/gb-en/sitemap_index.xml:404; country split other=694,untagged=568,US=500"
+mechanix.com,US,500,sitemap (partial: 21 of 25 sitemap files read),21,https://www.mechanix.com/us-en/sitemap_index.xml | https://www.mechanix.com/ca-en/sitemap_index.xml | https://www.mechanix.com/ca-fr/sitemap_index.xml | https://www.mechanix.com/fr-fr/sitemap_index.xml | https://www.mechanix.com/de-de/sitemap_index.xml (+6 more),2026-10-19,"raw=2131 dupes_removed=373; recount via robots.txt; country split other=694,untagged=564,US=500; failed sitemap fetches after retries=4: https://www.mechanix.com/gb-en/sitemap_index.xml:404; https://www.mechanix.com/au-en/sitemap_index.xml:404; https://www.mechanix.com/sitemap_2.xml:404; US pages only"
 fantasticfungi.com,US,219,sitemap,7,https://fantasticfungi.com/sitemap.xml | https://fantasticfungi.com/sitemap.xml | https://fantasticfungi.com/sitemap.xml,2026-10-19,raw=219 dupes_removed=0
 northstarbison.com,US,1165,sitemap,7,https://northstarbison.com/sitemap.xml,2026-10-19,raw=1165 dupes_removed=0
 manentail.com,US,153,sitemap,7,https://manentail.com/sitemap.xml,2026-10-19,raw=153 dupes_removed=0
@@ -806,7 +806,7 @@ shop-usd.cropster.com,US,26,sitemap,6,https://shop-usd.cropster.com/sitemap.xml,
 audioadvice.com,US,5143,sitemap,11,https://www.audioadvice.com/sitemap.xml,2026-10-19,raw=5143 dupes_removed=0
 luggageonline.com,US,28505,sitemap,42,https://www.luggageonline.com/sitemap.xml,2026-10-19,raw=28505 dupes_removed=0
 toolplanet.com,US,2436,sitemap,9,https://toolplanet.com/sitemap.xml,2026-10-19,raw=2436 dupes_removed=0
-kelbournewoolens.com,US,0,sitemap (US pages only),62,https://kelbournewoolens.com/sitemap.xml,2026-10-19,"raw=8484 dupes_removed=0; country split other=6995,untagged=790,AE=699"
+kelbournewoolens.com,US,,Not available (no US pages in sitemap),62,https://kelbournewoolens.com/sitemap.xml,2026-10-19,"raw=8484 dupes_removed=0; recount via robots.txt; country split other=6995,untagged=790,AE=699"
 spirit.parts,US,20975,sitemap,1,https://www.spirit.parts/sitemap.xml,2026-10-19,raw=20977 dupes_removed=2
 olliesmile.com,US,204,sitemap,7,https://olliesmile.com/sitemap.xml,2026-10-19,raw=204 dupes_removed=0
 siig.com,US,527,sitemap,7,https://siig.com/sitemap.xml,2026-10-19,raw=527 dupes_removed=0
@@ -823,7 +823,7 @@ elysandco.com,US,2381,sitemap,9,https://elysandco.com/sitemap.xml,2026-10-19,raw
 zipperstop.com,US,1215,sitemap,7,https://www.zipperstop.com/sitemap.xml,2026-10-19,raw=1215 dupes_removed=0
 privateparadiseco.com,US,391,sitemap,5,https://privateparadiseco.com/sitemap.xml,2026-10-19,raw=391 dupes_removed=0
 karenpearsehome.com,US,534,sitemap,7,https://karenpearsehome.com/sitemap.xml,2026-10-19,raw=534 dupes_removed=0
-21stcc.com,US,4440,sitemap,6,https://www.21stcc.com/sitemap.xml | https://www.21stcc.com/sitemap.rss,2026-10-19,raw=4440 dupes_removed=0; failed sitemap fetches=1: https://www.21stcc.com/sitemap.rss:unparseable
+21stcc.com,US,4440,sitemap (partial: 6 of 7 sitemap files read),6,https://www.21stcc.com/sitemap.xml | https://www.21stcc.com/sitemap.rss,2026-10-19,raw=4440 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.21stcc.com/sitemap.rss:unparseable
 bigagnes.com,US,740,sitemap,7,https://www.bigagnes.com/sitemap.xml,2026-10-19,raw=740 dupes_removed=0
 azlonshop.com,US,59,sitemap,5,https://azlonshop.com/sitemap.xml,2026-10-19,raw=59 dupes_removed=0
 hurley.com,US,2681,sitemap,8,https://www.hurley.com/sitemap.xml,2026-10-19,raw=2681 dupes_removed=0
@@ -862,7 +862,7 @@ oldspice.com,US,261,sitemap,6,https://oldspice.com/xmlsitemap.php,2026-10-19,raw
 ourvisus.com,US,56,sitemap,6,https://ourvisus.com/sitemap.xml,2026-10-19,raw=56 dupes_removed=0
 store.car.org,US,266,sitemap,7,https://store.car.org/sitemap.xml,2026-10-19,raw=266 dupes_removed=0
 lensbaby.com,US,1282,sitemap,8,https://lensbaby.com/sitemap.xml,2026-10-19,raw=1282 dupes_removed=0
-autoscr3.com,US,2709,sitemap,6,https://www.autoscr3.com/sitemap.xml | https://www.autoscr3.com/sitemap_1.xml,2026-10-19,raw=2709 dupes_removed=0; media sitemaps skipped=1; failed sitemap fetches=1: https://www.autoscr3.com/sitemap_1.xml:404
+autoscr3.com,US,2709,sitemap (partial: 5 of 7 sitemap files read),5,https://www.autoscr3.com/sitemap.xml | https://www.autoscr3.com/sitemap_1.xml,2026-10-19,"raw=787 dupes_removed=0; recount via robots.txt; media sitemaps skipped=1; failed sitemap fetches after retries=2: https://www.autoscr3.com/sitemap_1.xml:ReadTimeout: HTTPSConnectionPool(host='www.autoscr3.com', port=443): Read timed out. (read ti; https://autoscr3.com/product_attributes-sitemap.xml:ReadTimeout: HTTPSConnectionPool(host='autoscr3.com', port=443): Read timed out. (read timeou"
 thierrylasry.com,US,1568,sitemap,17,https://www.thierrylasry.com/sitemap.xml,2026-10-19,raw=1568 dupes_removed=0
 straightarrowtherapeutic.com,US,15,sitemap,6,https://straightarrowtherapeutic.com/sitemap.xml,2026-10-19,raw=15 dupes_removed=0
 us.carpetdocia.com,US,472,sitemap,5,https://carpetdocia.com/sitemap.xml,2026-10-19,raw=472 dupes_removed=0
@@ -933,13 +933,13 @@ milkmakeup.com,US,510,sitemap,7,https://milkmakeup.com/sitemap.xml,2026-10-19,ra
 shopsatchel.com,US,633,sitemap,7,https://shopsatchel.com/sitemap.xml,2026-10-19,raw=633 dupes_removed=0
 recapmasonjars.com,US,196,sitemap,7,https://recapmasonjars.com/sitemap.xml | https://recapmasonjars.com/sitemap.xml | https://recapmasonjars.com/sitemap.xml,2026-10-19,raw=196 dupes_removed=0
 armenliving.com,US,938,sitemap,6,https://armenliving.com/sitemap.xml,2026-10-19,raw=938 dupes_removed=0
-511tactical.com,US,10718,sitemap,3,https://www.511tactical.com/sitemap.xml | https://www.511tactical.com/eu-en/sitemap.xml | https://www.511tactical.com/de-de/sitemap.xml | https://www.511tactical.com/es-en/sitemap.xml | https://www.511tactical.com/eu-en/sitemap.xml (+1 more),2026-10-19,raw=10718 dupes_removed=0; failed sitemap fetches=2: https://www.511tactical.com/se-en/sitemap.xml:404; https://www.511tactical.com/sitemap.xml:404
+511tactical.com,US,19553,sitemap,5,https://www.511tactical.com/sitemap.xml | https://www.511tactical.com/eu-en/sitemap.xml | https://www.511tactical.com/de-de/sitemap.xml | https://www.511tactical.com/es-en/sitemap.xml | https://www.511tactical.com/eu-en/sitemap.xml (+1 more),2026-10-19,raw=19554 dupes_removed=1; recount via robots.txt
 threadlogic.com,US,6021,sitemap,12,https://threadlogic.com/sitemap.xml,2026-10-19,raw=6021 dupes_removed=0
 inmotionparts.com,US,6524,sitemap,12,https://www.inmotionparts.com/sitemap.xml,2026-10-19,raw=6524 dupes_removed=0
 legacyamericana.com,US,654,sitemap,1,https://www.legacyamericana.com/sitemap.xml,2026-10-19,raw=654 dupes_removed=0
 denhamsnatural.com,US,373,sitemap,1,https://www.denhamsnatural.com/sitemap.xml,2026-10-19,raw=373 dupes_removed=0
 artfulhome.com,US,48221,sitemap,54,https://www.artfulhome.com/sitemap.xml,2026-10-19,raw=48221 dupes_removed=0
-nanajacqueline.com,US,0,sitemap (US pages only),32,https://nanajacqueline.com/sitemap.xml | https://nanajacqueline.com/sitemap.xml | https://nanajacqueline.com/sitemap.xml,2026-10-19,"raw=10809 dupes_removed=0; country split untagged=4358,other=4300,AE=2151"
+nanajacqueline.com,US,10809,"sitemap (whole site, no market segment)",32,https://nanajacqueline.com/sitemap.xml | https://nanajacqueline.com/sitemap.xml | https://nanajacqueline.com/sitemap.xml,2026-10-19,"raw=10809 dupes_removed=0; recount via robots.txt; country split untagged=4358,other=4300,AE=2151; no US segment; default storefront is 4358 of 10809 URLs; whole-site total includes 6451 URLs under other-country segments"
 americantall.com,US,3076,sitemap,11,https://americantall.com/sitemap.xml,2026-10-19,raw=3076 dupes_removed=0
 flairfutbol.com,US,637,sitemap,32,https://www.flairfutbol.com/sitemap.xml,2026-10-19,raw=637 dupes_removed=0
 whitehouseblackmarket.com,US,3460,sitemap,6,https://www.whitehouseblackmarket.com/sitemap.xml,2026-10-19,raw=3460 dupes_removed=0
@@ -1172,7 +1172,7 @@ mass-hydro.com,US,2430,sitemap,10,https://mass-hydro.com/sitemap.xml,2026-10-19,
 corbon.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 eighty7blvd.com,US,80,sitemap,7,https://eighty7blvd.com/sitemap.xml,2026-10-19,raw=80 dupes_removed=0
 jacemaps.com,US,68571,sitemap,74,https://jacemaps.com/sitemap.xml,2026-10-19,raw=68571 dupes_removed=0
-trueformwear.com,US,0,sitemap (US pages only),32,https://trueformwear.com/sitemap.xml,2026-10-19,"raw=499 dupes_removed=0; country split other=332,untagged=84,AE=83"
+trueformwear.com,US,,Not available (no US pages in sitemap),32,https://trueformwear.com/sitemap.xml,2026-10-19,"raw=499 dupes_removed=0; recount via robots.txt; country split other=332,untagged=84,AE=83"
 flowermoxie.com,US,2740,sitemap,9,https://flowermoxie.com/sitemap.xml | https://flowermoxie.com/sitemap.xml | https://flowermoxie.com/sitemap.xml | https://flowermoxie.com/sitemap.xml,2026-10-19,raw=2740 dupes_removed=0
 uqora.com,US,544,sitemap,14,https://uqora.com/sitemap.xml,2026-10-19,raw=544 dupes_removed=0
 modeltrainmarket.com,US,14324,sitemap,21,https://modeltrainmarket.com/sitemap.xml,2026-10-19,raw=14324 dupes_removed=0
@@ -1229,7 +1229,7 @@ thebrightcookie.com,US,1711,sitemap,12,https://thebrightcookie.com/sitemap_index
 philsmusicexchange.com,US,3165,sitemap,1,https://www.philsmusicexchange.com/sitemap.xml,2026-10-19,raw=3165 dupes_removed=0
 kladechildren.com,US,3367,sitemap,9,https://kladechildren.com/sitemap.xml,2026-10-19,raw=3367 dupes_removed=0
 theflyingneedles.com,US,9182,sitemap,15,https://www.theflyingneedles.com/sitemap.xml,2026-10-19,raw=9182 dupes_removed=0
-citizenwatch.com,US,0,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '0 items'
+citizenwatch.com,US,,Not available (no sitemap; shop-page total reported 0),0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '0 items'; recount: no sitemap
 thelittlelaneshop.com,US,2400,sitemap,8,https://thelittlelaneshop.com/sitemap.xml,2026-10-19,raw=2400 dupes_removed=0
 stickfiguremailorder.com,US,2844,sitemap,8,https://www.stickfiguremailorder.com/sitemap.xml,2026-10-19,raw=2844 dupes_removed=0
 boardgamegeekstore.com,US,1412,sitemap,8,https://boardgamegeekstore.com/sitemap.xml,2026-10-19,raw=1412 dupes_removed=0
@@ -1296,7 +1296,7 @@ myspicesage.com,US,915,sitemap,7,https://www.myspicesage.com/sitemap.xml,2026-10
 remedieswine.com,US,630,sitemap,1,https://remedieswine.com/sitemap.xml | https://remedieswine.com/sitemap.xml | https://remedieswine.com/sitemap.xml | https://remedieswine.com/sitemap.xml,2026-10-19,raw=630 dupes_removed=0
 us.fissler.com,US,344,sitemap,7,https://us.fissler.com/sitemap.xml | https://us.fissler.com/sitemap.xml | https://us.fissler.com/sitemap.xml,2026-10-19,raw=344 dupes_removed=0
 magpiesnashville.com,US,4332,sitemap,11,https://magpiesnashville.com/sitemap.xml,2026-10-19,raw=4332 dupes_removed=0
-maksactivewear.com,US,124,sitemap,6,https://www.maksactivewear.com/sitemap.xml | https://www.maksactivewear.com/sitemap.xml | https://www.maksactivewear.com/sitemap.xml | https://www.maksactivewear.com/maksactivewear.com/sitemap.xml,2026-10-19,raw=124 dupes_removed=0; failed sitemap fetches=1: https://www.maksactivewear.com/maksactivewear.com/sitemap.xml:404
+maksactivewear.com,US,124,sitemap (partial: 6 of 7 sitemap files read),6,https://www.maksactivewear.com/sitemap.xml | https://www.maksactivewear.com/sitemap.xml | https://www.maksactivewear.com/sitemap.xml | https://www.maksactivewear.com/maksactivewear.com/sitemap.xml,2026-10-19,raw=124 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.maksactivewear.com/maksactivewear.com/sitemap.xml:404
 gracedsoftluxuries.com,US,79,sitemap,6,https://www.gracedsoftluxuries.com/sitemap.xml,2026-10-19,raw=79 dupes_removed=0
 chosenfoods.com,US,455,sitemap,7,https://chosenfoods.com/sitemap.xml,2026-10-19,raw=455 dupes_removed=0
 store.bitcoinmagazine.com,US,122,sitemap,7,https://store.bitcoinmagazine.com/sitemap.xml,2026-10-19,raw=122 dupes_removed=0
@@ -1395,7 +1395,7 @@ theglitterguy.com,US,3321,sitemap,10,https://theglitterguy.com/sitemap.xml,2026-
 nameahawaii.com,US,4935,sitemap,11,https://nameahawaii.com/sitemap.xml,2026-10-19,raw=4935 dupes_removed=0
 promo.skinit.com,US,285,sitemap,6,https://promo.skinit.com/sitemap.xml,2026-10-19,raw=285 dupes_removed=0
 argecy.com,US,170429,sitemap,8,https://www.argecy.com/_sitemap-google/sitemap.xml,2026-10-19,raw=170429 dupes_removed=0
-wholesalehunter.com,US,579758,sitemap,16,https://wholesalehunter.com/sitemap.xml | https://wholesalehunter.com/sitemapindex.xml | https://wholesalehunter.com/guncaliberandmanufacturesitemap.txt | https://wholesalehunter.com/sitmapgunmankm.txt | https://wholesalehunter.com/sitemapammomankm.txt (+1 more),2026-10-19,raw=579758 dupes_removed=0; failed sitemap fetches=5: https://wholesalehunter.com/sitemap_old_index.xml:404; https://wholesalehunter.com/sitmapgunmankm.txt:404; https://wholesalehunter.com/sitemapammomankm.txt:404
+wholesalehunter.com,US,579758,sitemap (partial: 16 of 21 sitemap files read),16,https://wholesalehunter.com/sitemap.xml | https://wholesalehunter.com/sitemapindex.xml | https://wholesalehunter.com/guncaliberandmanufacturesitemap.txt | https://wholesalehunter.com/sitmapgunmankm.txt | https://wholesalehunter.com/sitemapammomankm.txt (+1 more),2026-10-19,raw=579758 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=5: https://wholesalehunter.com/sitemapindex.xml:404; https://wholesalehunter.com/guncaliberandmanufacturesitemap.txt:404; https://wholesalehunter.com/sitmapgunmankm.txt:404
 evenrealities.com,US,145,sitemap,5,https://www.evenrealities.com/sitemap.xml | https://www.evenrealities.com/sitemap.xml | https://www.evenrealities.com/sitemap.xml,2026-10-19,raw=145 dupes_removed=0
 jousfit.com,US,637,sitemap,18,https://jousfit.com/sitemap.xml,2026-10-19,raw=637 dupes_removed=0
 lapelpins.com,US,88,sitemap,7,https://lapelpins.com/sitemap.xml,2026-10-19,raw=88 dupes_removed=0
@@ -1487,7 +1487,7 @@ shop.vote.org,US,51,sitemap,7,https://shop.vote.org/sitemap.xml,2026-10-19,raw=5
 woodleco.com,US,35,sitemap,7,https://woodleco.com/sitemap.xml,2026-10-19,raw=35 dupes_removed=0
 lamsonflyfishing.com,US,299,sitemap,7,https://www.lamsonflyfishing.com/sitemap.xml,2026-10-19,raw=299 dupes_removed=0
 nicolabathie.com,US,297,sitemap,7,https://nicolabathie.com/sitemap.xml,2026-10-19,raw=297 dupes_removed=0
-brighterblooms.com,US,1452,sitemap,6,https://www.brighterblooms.com/sitemap.xml | https://www.brighterblooms.com/sitemap.xml | https://www.brighterblooms.com/sitemap.xml,2026-10-19,raw=1452 dupes_removed=0; failed sitemap fetches=1: https://www.brighterblooms.com/sitemap_explore_1.xml:404
+brighterblooms.com,US,1452,sitemap (partial: 6 of 7 sitemap files read),6,https://www.brighterblooms.com/sitemap.xml | https://www.brighterblooms.com/sitemap.xml | https://www.brighterblooms.com/sitemap.xml,2026-10-19,raw=1452 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.brighterblooms.com/sitemap_explore_1.xml:404
 cigarterminal.com,US,6294,sitemap,3,https://www.cigarterminal.com/media/sitemap/sitemap.xml | https://www.cigarterminal.com/media/sitemap/sitemap_fr.xml | https://www.cigarterminal.com/media/sitemap/sitemap_es.xml,2026-10-19,raw=6294 dupes_removed=0
 efsterling.com,US,20108,sitemap,26,https://efsterling.com/sitemap.xml,2026-10-19,raw=20108 dupes_removed=0
 comptechdirect.com,US,17572,sitemap,23,https://comptechdirect.com/sitemap.xml,2026-10-19,raw=17572 dupes_removed=0
@@ -1675,7 +1675,7 @@ sarahchloe.com,US,579,sitemap,20,https://sarahchloe.com/sitemap.xml,2026-10-19,r
 tomfordfashion.com,US,2481,sitemap (US pages only),5,https://www.tomfordfashion.com/sitemap_index.xml,2026-10-19,"raw=7446 dupes_removed=0; media sitemaps skipped=1; country split other=4964,US=2481,untagged=1"
 misshaus.com,US,509,sitemap,7,https://misshaus.com/sitemap.xml,2026-10-19,raw=509 dupes_removed=0
 shop.littlewinsstudio.com,US,17,sitemap,6,https://shop.littlewinsstudio.com/sitemap.xml,2026-10-19,raw=17 dupes_removed=0
-remote-control-world.eu,US,267344,sitemap,12,https://www.remote-control-world.eu/sitemap.xml,2026-10-19,raw=267344 dupes_removed=0; failed sitemap fetches=1: https://www.remote-control-world.eu/sitemap/sitemapproducts005.xml:unparseable
+remote-control-world.eu,US,267344,sitemap (partial: 12 of 13 sitemap files read),12,https://www.remote-control-world.eu/sitemap.xml,2026-10-19,raw=267344 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.remote-control-world.eu/sitemap/sitemapproducts005.xml:unparseable
 silksilky.com,US,2600,sitemap,10,https://silksilky.com/sitemap.xml | https://silksilky.com/sitemap.xml | https://silksilky.com/sitemap.xml,2026-10-19,raw=2600 dupes_removed=0
 ghostek.com,US,54746,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 bagrbuck.com,US,1789,sitemap,3,https://www.bagrbuck.com/sitemap.xml,2026-10-19,raw=1789 dupes_removed=0
@@ -1862,7 +1862,7 @@ slideon.com,US,917,sitemap,10,https://www.slideon.com/sitemap_index.xml,2026-10-
 worldpilotsupplies.com,US,643,sitemap,7,https://worldpilotsupplies.com/sitemap.xml,2026-10-19,raw=643 dupes_removed=0
 lauramercier.com,US,18278,sitemap,157,https://www.lauramercier.com/sitemap.xml | https://www.lauramercier.com/sitemap.xml | https://www.lauramercier.com/sitemap.xml,2026-10-19,raw=18278 dupes_removed=0
 blanchardgold.com,US,2627,sitemap,14,https://www.blanchardgold.com/sitemap.xml,2026-10-19,raw=2631 dupes_removed=4
-dulcestoreparis.com,US,0,sitemap (US pages only),254,https://dulcestoreparis.com/sitemap.xml,2026-10-19,"raw=85464 dupes_removed=0; country split untagged=50873,other=28486,QA=2035,SA=2035,KW=2035"
+dulcestoreparis.com,US,85464,"sitemap (whole site, no market segment)",254,https://dulcestoreparis.com/sitemap.xml,2026-10-19,"raw=85464 dupes_removed=0; recount via robots.txt; country split untagged=50873,other=28486,QA=2035,SA=2035,KW=2035; no US segment; default storefront is 50873 of 85464 URLs; whole-site total includes 34591 URLs under other-country segments"
 maisondebouchard.com,US,1537,sitemap,7,https://www.maisondebouchard.com/sitemap.xml,2026-10-19,raw=1537 dupes_removed=0
 micountrymama.com,US,123,sitemap,1,https://www.micountrymama.com/sitemap.xml | https://www.micountrymama.com/sitemap.xml | https://www.micountrymama.com/sitemap.xml | https://www.micountrymama.com/sitemap.xml,2026-10-19,raw=123 dupes_removed=0
 vondutch.com,US,1609,sitemap,7,https://vondutch.com/sitemap.xml,2026-10-19,raw=1609 dupes_removed=0
@@ -1887,7 +1887,7 @@ agrizon.com,US,51643,sitemap,135,https://agrizon.com/sitemap.xml,2026-10-19,raw=
 shop.mackinacparks.com,US,85,sitemap,6,https://shop.mackinacparks.com/sitemap.xml,2026-10-19,raw=85 dupes_removed=0
 merlettenyc.com,US,749,sitemap,7,https://merlettenyc.com/sitemap.xml,2026-10-19,raw=749 dupes_removed=0
 shop.nmwa.org,US,1826,sitemap,8,https://shop.nmwa.org/sitemap.xml,2026-10-19,raw=1826 dupes_removed=0
-industrialsafetystore.com,US,6091,sitemap,12,https://industrialsafetystore.com/sitemap.xml | https://industrialsafetystore.com/sitemap.rss,2026-10-19,raw=6091 dupes_removed=0; failed sitemap fetches=1: https://industrialsafetystore.com/sitemap.rss:unparseable
+industrialsafetystore.com,US,6091,sitemap (partial: 12 of 13 sitemap files read),12,https://industrialsafetystore.com/sitemap.xml | https://industrialsafetystore.com/sitemap.rss,2026-10-19,raw=6091 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://industrialsafetystore.com/sitemap.rss:unparseable
 ugsounds.com,US,11697,sitemap,3,https://ugsounds.com/sitemap.xml | https://ugsounds.com/sitemap.xml | https://ugsounds.com/sitemap.xml | https://ugsounds.com/sitemap.xml,2026-10-19,raw=11697 dupes_removed=0
 dupe.com,US,391020,sitemap,45,https://dupe.com/sitemap.xml,2026-10-19,raw=391040 dupes_removed=20
 eastnwestlabel.com,US,2177,sitemap,22,https://eastnwestlabel.com/sitemap.xml,2026-10-19,raw=2177 dupes_removed=0
@@ -2064,7 +2064,7 @@ lazysusansusa.com,US,68,sitemap,6,https://lazysusansusa.com/sitemap.xml,2026-10-
 xbloom.com,US,394,sitemap,8,https://xbloom.com/sitemap.xml | https://xbloom.com/sitemap.xml | https://xbloom.com/sitemap.xml,2026-10-19,raw=394 dupes_removed=0
 savageracestore.com,US,36,sitemap,6,https://savageracestore.com/sitemap.xml,2026-10-19,raw=36 dupes_removed=0
 mimisprints.com,US,85,sitemap,6,https://www.mimisprints.com/sitemap.xml,2026-10-19,raw=85 dupes_removed=0
-nexoes.com,US,540,sitemap,9,https://nexoes.com/sitemap.xml | https://nexoes.com/sitemap.xml | https://nexoes.com/sitemap.xml | https://nexoes.com/a/shop/sitemap.xml | https://nexoes.com/a/shop/llms.txt,2026-10-19,raw=540 dupes_removed=0; failed sitemap fetches=1: https://nexoes.com/a/shop/llms.txt:unparseable
+nexoes.com,US,540,sitemap (partial: 9 of 10 sitemap files read),9,https://nexoes.com/sitemap.xml | https://nexoes.com/sitemap.xml | https://nexoes.com/sitemap.xml | https://nexoes.com/a/shop/sitemap.xml | https://nexoes.com/a/shop/llms.txt,2026-10-19,raw=540 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://nexoes.com/a/shop/llms.txt:unparseable
 twamev.com,US,1665,sitemap (US pages only),6,https://twamev.com/en-in/sitemap_index.xml,2026-10-19,"raw=11670 dupes_removed=0; country split other=6675,untagged=1666,US=1665,AE=1664"
 thestingertools.com,US,238,sitemap,7,https://thestingertools.com/sitemap.xml,2026-10-19,raw=238 dupes_removed=0
 petitestudionyc.com,US,673,sitemap,7,https://www.petitestudionyc.com/sitemap.xml,2026-10-19,raw=673 dupes_removed=0
@@ -2141,7 +2141,7 @@ arccosgolf.com,US,685,sitemap,7,https://www.arccosgolf.com/sitemap.xml,2026-10-1
 manzofood.com,US,611,sitemap,7,https://manzofood.com/sitemap.xml,2026-10-19,raw=611 dupes_removed=0
 tnuck.com,US,17875,sitemap,24,https://tnuck.com/sitemap.xml | https://tnuck.com/sitemap.xml | https://tnuck.com/sitemap.xml,2026-10-19,raw=17875 dupes_removed=0
 dollskill.com,US,96677,sitemap,102,https://www.dollskill.com/sitemap.xml,2026-10-19,raw=96677 dupes_removed=0
-danddclothing.com,US,0,sitemap (US pages only),155,https://danddclothing.com/sitemap.xml,2026-10-19,"raw=96085 dupes_removed=51; country split other=56490,untagged=33895,AE=5649"
+danddclothing.com,US,96034,"sitemap (whole site, no market segment)",155,https://danddclothing.com/sitemap.xml,2026-10-19,"raw=96085 dupes_removed=51; recount via robots.txt; country split other=56490,untagged=33895,AE=5649; no US segment; default storefront is 33895 of 96034 URLs; whole-site total includes 62139 URLs under other-country segments"
 murderapparel.com,US,3278,sitemap,10,https://murderapparel.com/sitemap.xml,2026-10-19,raw=3278 dupes_removed=0
 renerofe.com,US,548,sitemap,7,https://www.renerofe.com/sitemap.xml,2026-10-19,raw=548 dupes_removed=0
 shopmisspriss.com,US,270,sitemap,7,https://shopmisspriss.com/sitemap.xml,2026-10-19,raw=270 dupes_removed=0
@@ -2179,7 +2179,7 @@ humbyorganics.com,US,149,sitemap,6,https://humbyorganics.com/sitemap.xml,2026-10
 erikalaureanodesign.com,US,712,sitemap,1,https://www.erikalaureanodesign.com/sitemap.xml,2026-10-19,raw=712 dupes_removed=0
 statue.com,US,6653,sitemap,13,https://statue.com/sitemap.xml,2026-10-19,raw=6653 dupes_removed=0
 shopmashburn.com,US,8279,sitemap,14,https://shopmashburn.com/sitemap.xml,2026-10-19,raw=8279 dupes_removed=0
-chipdatas.com,US,0,shop-page total,0,,2026-10-19,no sitemap found; /shop: '0 Items'
+chipdatas.com,US,,Not available (no sitemap; shop-page total reported 0),0,,2026-10-19,/shop: '0 Items'; recount: no sitemap
 workroommarketplace.com,US,317,sitemap,7,https://workroommarketplace.com/sitemap.xml,2026-10-19,raw=317 dupes_removed=0
 thelovelyboxes.com,US,195,sitemap,6,https://thelovelyboxes.com/sitemap.xml,2026-10-19,raw=195 dupes_removed=0
 leadingmenfiberarts.com,US,5597,sitemap,1,https://www.leadingmenfiberarts.com/sitemap.xml,2026-10-19,raw=5597 dupes_removed=0
@@ -2200,7 +2200,7 @@ melproductsusa.com,US,3624,sitemap,24,https://www.melproductsusa.com/de_de-sitem
 montgomerys.com,US,4889,sitemap,10,https://www.montgomerys.com/sitemap_index.xml,2026-10-19,raw=4926 dupes_removed=37
 adaptclothing.com,US,1204,sitemap,8,https://adaptclothing.com/sitemap.xml,2026-10-19,raw=1204 dupes_removed=0
 summit-hydraulics.com,US,4168,sitemap,20,https://summit-hydraulics.com/sitemap_index.xml,2026-10-19,raw=4170 dupes_removed=2
-goldsilver.com,US,9550,sitemap,19,https://goldsilver.com/sitemap_index.xml | https://goldsilver.com/llms.txt | https://goldsilver.com/llms-full.txt,2026-10-19,raw=9551 dupes_removed=1; failed sitemap fetches=2: https://goldsilver.com/llms-full.txt:unparseable; https://goldsilver.com/llms.txt:unparseable
+goldsilver.com,US,9551,sitemap (partial: 19 of 21 sitemap files read),19,https://goldsilver.com/sitemap_index.xml | https://goldsilver.com/llms.txt | https://goldsilver.com/llms-full.txt,2026-10-19,raw=9552 dupes_removed=1; recount via robots.txt; failed sitemap fetches after retries=2: https://goldsilver.com/llms-full.txt:unparseable; https://goldsilver.com/llms.txt:unparseable
 littlelantern.com,US,23,sitemap,6,https://www.littlelantern.com/sitemap.xml,2026-10-19,raw=23 dupes_removed=0
 scientificinstruments.com,US,51,sitemap,5,https://www.scientificinstruments.com/wp-sitemap.xml,2026-10-19,raw=51 dupes_removed=0
 apsfirearms.com,US,96,sitemap,1,https://www.apsfirearms.com/sitemap.xml,2026-10-19,raw=96 dupes_removed=0
@@ -2248,7 +2248,7 @@ laneandkate.com,US,475,sitemap,7,https://laneandkate.com/sitemap.xml,2026-10-19,
 dalbar.com,US,5537,sitemap,21,https://www.dalbar.com/sitemap_index.xml,2026-10-19,raw=5541 dupes_removed=4
 violetsnowcustomfabric.com,US,8969,sitemap,1,https://301Q10265853066.s4shops.com/sitemap.xml#Disallowallcrawlersaccesstocertainpages.SSLUser-agent:*Disallow:/Disallow:/admin/Disallow:/apple-app-site-association,2026-10-19,raw=8969 dupes_removed=0
 landgrovecoffee.com,US,78,sitemap,7,https://landgrovecoffee.com/sitemap.xml,2026-10-19,raw=78 dupes_removed=0
-cashmereboutique.com,US,227,sitemap,8,https://cashmereboutique.com/sitemap.xml | https://cashmereboutique.com/sitemap.xml | https://cashmereboutique.com/sitemap.xml | https://www.cashmereboutique.com/sitemap.xml | https://www.cashmereboutique.com/sitemap.rss,2026-10-19,raw=227 dupes_removed=0; failed sitemap fetches=1: https://www.cashmereboutique.com/sitemap.rss:404
+cashmereboutique.com,US,227,sitemap (partial: 8 of 9 sitemap files read),8,https://cashmereboutique.com/sitemap.xml | https://cashmereboutique.com/sitemap.xml | https://cashmereboutique.com/sitemap.xml | https://www.cashmereboutique.com/sitemap.xml | https://www.cashmereboutique.com/sitemap.rss,2026-10-19,raw=227 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.cashmereboutique.com/sitemap.rss:404
 shopteamfishers.com,US,123,sitemap,1,https://www.shopteamfishers.com/sitemap.xml,2026-10-19,raw=123 dupes_removed=0
 shop-aro.com,US,866,sitemap,7,https://shop-aro.com/sitemap.xml,2026-10-19,raw=866 dupes_removed=0
 safajewelers.com,US,4561,sitemap,11,https://www.safajewelers.com/sitemap.xml,2026-10-19,raw=4561 dupes_removed=0
@@ -2347,14 +2347,14 @@ gnswireless.com,US,6875,sitemap,16,https://www.gnswireless.com/sitemap_index.xml
 shop.peaksports.com,US,121,sitemap,6,https://shop.peaksports.com/sitemap.xml,2026-10-19,raw=121 dupes_removed=0
 stitchedbyanna.com,US,120,sitemap,6,https://stitchedbyanna.com/sitemap.xml,2026-10-19,raw=120 dupes_removed=0
 discountmugs.com,US,11316,sitemap,5,https://www.discountmugs.com/xmlsitemap.php,2026-10-19,raw=11321 dupes_removed=5
-atthehive.com,US,1195,sitemap,7,https://atthehive.com/sitemap.xml | https://atthehive.com/sitemap.rss,2026-10-19,raw=1195 dupes_removed=0; failed sitemap fetches=1: https://atthehive.com/sitemap.rss:unparseable
+atthehive.com,US,1195,sitemap (partial: 7 of 8 sitemap files read),7,https://atthehive.com/sitemap.xml | https://atthehive.com/sitemap.rss,2026-10-19,raw=1195 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://atthehive.com/sitemap.rss:unparseable
 shop.jazwares.com,US,18910,sitemap,26,https://shop.jazwares.com/sitemap.xml | https://shop.jazwares.com/sitemap.xml | https://shop.jazwares.com/sitemap.xml,2026-10-19,raw=18911 dupes_removed=1
 patchbandages.com,US,120,sitemap,7,https://patchbandages.com/sitemap.xml,2026-10-19,raw=120 dupes_removed=0
 theteahouseonlosrios.com,US,238,sitemap,7,https://theteahouseonlosrios.com/sitemap.xml,2026-10-19,raw=238 dupes_removed=0
 pestlab.co,US,1453,sitemap,10,https://pestlab.co/sitemap.xml,2026-10-19,raw=1453 dupes_removed=0
 muzemerch.com,US,6840,sitemap,13,https://muzemerch.com/sitemap.xml,2026-10-19,raw=6840 dupes_removed=0
 flaskfinewines.com,US,12808,sitemap,21,https://flaskfinewines.com/sitemap.xml | https://flaskfinewines.com/sitemap.xml | https://flaskfinewines.com/sitemap.xml,2026-10-19,raw=12808 dupes_removed=0
-trackensure.com,US,89,sitemap,6,https://www.trackensure.com/sitemap_index.xml,2026-10-19,raw=89 dupes_removed=0; failed sitemap fetches=1: https://trackensure.com/services_cats-sitemap.xml:unparseable
+trackensure.com,US,89,sitemap (partial: 6 of 7 sitemap files read),6,https://www.trackensure.com/sitemap_index.xml,2026-10-19,raw=89 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://trackensure.com/services_cats-sitemap.xml:unparseable
 brinoa.com,US,3718,sitemap,86,https://brinoa.com/sitemap.xml | https://brinoa.com/sitemap.xml | https://brinoa.com/sitemap.xml,2026-10-19,raw=3718 dupes_removed=0
 shop.bwca.com,US,83,sitemap,5,https://shop.bwca.com/sitemap.xml,2026-10-19,raw=83 dupes_removed=0
 healsupplement.com,US,1159,sitemap,7,https://healsupplement.com/sitemap.xml,2026-10-19,raw=1159 dupes_removed=0
@@ -2420,7 +2420,7 @@ shopyolk.com,US,2971,sitemap,9,https://shopyolk.com/sitemap.xml,2026-10-19,raw=2
 thestilwellhouse.com,US,1510,sitemap,9,https://www.thestilwellhouse.com/sitemap.xml,2026-10-19,raw=1510 dupes_removed=0
 taperothomevideo.com,US,157,sitemap,6,https://taperothomevideo.com/sitemap.xml,2026-10-19,raw=157 dupes_removed=0
 theabcmarket.com,US,53,sitemap,7,https://theabcmarket.com/sitemap.xml,2026-10-19,raw=53 dupes_removed=0
-cadenlane.com,US,0,sitemap (US pages only),56,https://cadenlane.com/sitemap.xml | https://cadenlane.com/sitemap.xml | https://cadenlane.com/sitemap.xml,2026-10-19,"raw=25995 dupes_removed=0; country split other=17284,untagged=4384,KW=4327"
+cadenlane.com,US,,Not available (no US pages in sitemap),56,https://cadenlane.com/sitemap.xml | https://cadenlane.com/sitemap.xml | https://cadenlane.com/sitemap.xml,2026-10-19,"raw=25964 dupes_removed=0; recount via robots.txt; country split other=17266,untagged=4378,KW=4320"
 microbiologics.com,US,4196,sitemap,2,https://www.microbiologics.com/sitemap_www.microbiologics.com_Index.xml,2026-10-19,raw=4200 dupes_removed=0
 trutechtools.com,US,6799,sitemap,6,https://trutechtools.com/xmlsitemap.php,2026-10-19,raw=6800 dupes_removed=1
 elevatedfaith.com,US,3244,sitemap,17,https://elevatedfaith.com/sitemap.xml,2026-10-19,raw=3244 dupes_removed=0
@@ -2529,7 +2529,7 @@ ninelivesbrand.com,US,94,sitemap,7,https://ninelivesbrand.com/sitemap.xml,2026-1
 nomarsupply.com,US,10259,sitemap,2,https://nomarsupply.com/1_index_sitemap.xml,2026-10-19,raw=10259 dupes_removed=0
 rockvilleaudio.com,US,10140,sitemap,16,https://rockvilleaudio.com/sitemap.xml | https://rockvilleaudio.com/sitemap.xml | https://rockvilleaudio.com/sitemap.xml,2026-10-19,raw=10140 dupes_removed=0
 aihr.com,US,3052,sitemap,35,https://www.aihr.com/sitemap_index.xml,2026-10-19,raw=3052 dupes_removed=0
-temppro.com,US,4624,sitemap,22,https://temppro.com/sitemap.xml | https://temppro.com/sitemap.xml | https://temppro.com/sitemap.xml | https://temppro.com/a/shop/sitemap.xml | https://temppro.com/a/shop/llms.txt,2026-10-19,raw=4624 dupes_removed=0; failed sitemap fetches=1: https://temppro.com/a/shop/llms.txt:unparseable
+temppro.com,US,4624,sitemap (partial: 22 of 23 sitemap files read),22,https://temppro.com/sitemap.xml | https://temppro.com/sitemap.xml | https://temppro.com/sitemap.xml | https://temppro.com/a/shop/sitemap.xml | https://temppro.com/a/shop/llms.txt,2026-10-19,raw=4624 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://temppro.com/a/shop/llms.txt:unparseable
 wacoal-america.com,US,2058,sitemap,8,https://wacoal-america.com/sitemap.xml,2026-10-19,raw=2058 dupes_removed=0
 urotuning.com,US,60287,sitemap,9,https://www.urotuning.com/categories-sitemap.xml | https://www.urotuning.com/toyota-sitemap.xml | https://www.urotuning.com/alfa-romeo-sitemap.xml | https://www.urotuning.com/audi-sitemap.xml | https://www.urotuning.com/porsche-sitemap.xml (+4 more),2026-10-19,raw=60287 dupes_removed=0
 elioswinewarehouse.com,US,1291,sitemap,7,https://elioswinewarehouse.com/sitemap.xml,2026-10-19,raw=1291 dupes_removed=0
@@ -2600,7 +2600,7 @@ cabincrossstitch.com,US,7557,sitemap,4,https://www.cabincrossstitch.com/sitemap.
 representclo.com,US,7441,sitemap,16,https://representclo.com/sitemap.xml | https://representclo.com/sitemap.xml | https://representclo.com/sitemap.xml,2026-10-19,raw=7441 dupes_removed=0
 shop.themediterraneandish.com,US,324,sitemap,7,https://shop.themediterraneandish.com/sitemap.xml | https://shop.themediterraneandish.com/sitemap.xml | https://shop.themediterraneandish.com/sitemap.xml,2026-10-19,raw=324 dupes_removed=0
 getmoneyincorporated.net,US,51949,sitemap,546,https://www.getmoneyincorporated.net/aa_aa-sitemap.xml | https://www.getmoneyincorporated.net/ab_ab-sitemap.xml | https://www.getmoneyincorporated.net/ae_ae-sitemap.xml | https://www.getmoneyincorporated.net/af_af-sitemap.xml | https://www.getmoneyincorporated.net/ak_ak-sitemap.xml (+176 more),2026-10-19,raw=51950 dupes_removed=1
-radilum.com,US,0,sitemap (US pages only),275,https://radilum.com/sitemap.xml,2026-10-19,"raw=120316 dupes_removed=0; country split untagged=58616,other=49360,AE=6170,SA=6170"
+radilum.com,US,120316,"sitemap (whole site, no market segment)",275,https://radilum.com/sitemap.xml,2026-10-19,"raw=120316 dupes_removed=0; recount via robots.txt; country split untagged=58616,other=49360,AE=6170,SA=6170; no US segment; default storefront is 58616 of 120316 URLs; whole-site total includes 61700 URLs under other-country segments"
 lorenzoimport.com,US,805,sitemap,1,https://www.lorenzoimport.com/sitemap.xml,2026-10-19,raw=805 dupes_removed=0
 shopangelina.com,US,1894,sitemap,7,https://shopangelina.com/sitemap.xml,2026-10-19,raw=1894 dupes_removed=0
 senitaathletics.com,US,2306,sitemap,12,https://www.senitaathletics.com/sitemap.xml,2026-10-19,raw=2306 dupes_removed=0
@@ -2683,7 +2683,7 @@ leggingoutfitter.com,US,701,sitemap,6,https://leggingoutfitter.com/sitemap.xml,2
 blusharkstraps.com,US,2193,sitemap,8,https://www.blusharkstraps.com/sitemap.xml,2026-10-19,raw=2193 dupes_removed=0
 wozzkitchencreations.com,US,704,sitemap,7,https://www.wozzkitchencreations.com/sitemap.xml,2026-10-19,raw=704 dupes_removed=0
 shopahri.com,US,433,sitemap,7,https://shopahri.com/sitemap.xml,2026-10-19,raw=433 dupes_removed=0
-elijahsxtreme.com,US,0,sitemap (US pages only),248,https://elijahsxtreme.com/sitemap.xml,2026-10-19,"raw=6577 dupes_removed=0; country split other=3368,untagged=2729,QA=160,AE=160,SA=160"
+elijahsxtreme.com,US,6577,"sitemap (whole site, no market segment)",248,https://elijahsxtreme.com/sitemap.xml,2026-10-19,"raw=6577 dupes_removed=0; recount via robots.txt; country split other=3368,untagged=2729,QA=160,AE=160,SA=160; no US segment; default storefront is 2729 of 6577 URLs; whole-site total includes 3848 URLs under other-country segments"
 atxbooks.com,US,558173,sitemap,565,https://atxbooks.com/sitemap.xml,2026-10-19,raw=558173 dupes_removed=0
 bluehillmarket.com,US,148,sitemap,6,https://bluehillmarket.com/sitemap.xml,2026-10-19,raw=148 dupes_removed=0
 blueurbane.com,US,686,sitemap,7,https://www.blueurbane.com/sitemap.xml,2026-10-19,raw=686 dupes_removed=0
@@ -2725,7 +2725,7 @@ hudsonvalleyseed.com,US,2348,sitemap,8,https://hudsonvalleyseed.com/sitemap.xml 
 wellnutrition.us,US,216,sitemap,6,https://www.wellnutrition.us/sitemap.xml,2026-10-19,raw=217 dupes_removed=1
 renpho.com,US,2265,sitemap,12,https://renpho.com/sitemap.xml,2026-10-19,raw=2265 dupes_removed=0
 afterpay.com,US,1919,sitemap (US pages only),26,https://www.afterpay.com/sitemap.xml,2026-10-19,"raw=13150 dupes_removed=826; country split other=9119,US=1919"
-chordbuddy.com,US,113,sitemap,1,https://www.chordbuddy.com/sitemap.rss | https://www.chordbuddy.com/sitemap.xml,2026-10-19,raw=113 dupes_removed=0; failed sitemap fetches=1: https://www.chordbuddy.com/sitemap.rss:unparseable
+chordbuddy.com,US,113,sitemap (partial: 1 of 2 sitemap files read),1,https://www.chordbuddy.com/sitemap.rss | https://www.chordbuddy.com/sitemap.xml,2026-10-19,raw=113 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.chordbuddy.com/sitemap.rss:unparseable
 shop.redandhowling.com,US,331,sitemap,7,https://shop.redandhowling.com/sitemap.xml,2026-10-19,raw=331 dupes_removed=0
 refcountry.com,US,4205,sitemap,10,https://refcountry.com/sitemap.xml,2026-10-19,raw=4205 dupes_removed=0
 naturesway.com,US,1130,sitemap,8,https://naturesway.com/sitemap.xml,2026-10-19,raw=1130 dupes_removed=0
@@ -2736,7 +2736,7 @@ microcenter.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not 
 skincraftct.us,US,65,sitemap,1,https://www.skincraftct.us/sitemap.xml,2026-10-19,raw=65 dupes_removed=0
 shop.darcsport.com,US,391,sitemap,6,https://shop.darcsport.com/sitemap.xml,2026-10-19,raw=391 dupes_removed=0
 alegriashoeshop.com,US,592,sitemap,7,https://www.alegriashoeshop.com/sitemap.xml,2026-10-19,raw=592 dupes_removed=0
-raastheglobaldesi.com,US,0,sitemap (US pages only),47,https://raastheglobaldesi.com/sitemap.xml | https://raastheglobaldesi.com/sitemap.xml | https://raastheglobaldesi.com/sitemap.xml | https://raastheglobaldesi.com/llms.txt | https://raastheglobaldesi.com/llms-full.txt (+2 more),2026-10-19,"raw=12503 dupes_removed=0; failed sitemap fetches=3: https://raastheglobaldesi.com/agents.md:unparseable; https://raastheglobaldesi.com/llms.txt:unparseable; https://raastheglobaldesi.com/llms-full.txt:unparseable; country split other=8373,untagged=2797,AE=1333"
+raastheglobaldesi.com,US,,Not available (no US pages in sitemap),47,https://raastheglobaldesi.com/sitemap.xml | https://raastheglobaldesi.com/sitemap.xml | https://raastheglobaldesi.com/sitemap.xml | https://raastheglobaldesi.com/llms.txt | https://raastheglobaldesi.com/llms-full.txt (+2 more),2026-10-19,"raw=12512 dupes_removed=0; recount via robots.txt; country split other=8379,untagged=2799,AE=1334; failed sitemap fetches after retries=3: https://raastheglobaldesi.com/agents.md:unparseable; https://raastheglobaldesi.com/llms-full.txt:unparseable; https://raastheglobaldesi.com/llms.txt:unparseable; sitemap incomplete after retries"
 ihome.com,US,164,sitemap,7,https://ihome.com/sitemap.xml,2026-10-19,raw=164 dupes_removed=0
 annestandesigns.us,US,316,sitemap,1,https://www.annestandesigns.us/sitemap.xml,2026-10-19,raw=316 dupes_removed=0
 brentwoodhome.com,US,352,sitemap,7,https://www.brentwoodhome.com/sitemap.xml,2026-10-19,raw=352 dupes_removed=0
@@ -2750,7 +2750,7 @@ lamnia.com,US,1107645,sitemap,596,https://www.lamnia.com/sitemap.xml.gz,2026-10-
 antelopecreekleather.com,US,2489,sitemap,9,https://antelopecreekleather.com/sitemap.xml,2026-10-19,raw=2489 dupes_removed=0
 trgranite.com,US,2253,sitemap,16,https://trgranite.com/sitemap_index.xml,2026-10-19,raw=2254 dupes_removed=1
 wavian.com,US,43,sitemap,7,https://wavian.com/sitemap.xml,2026-10-19,raw=43 dupes_removed=0
-valleyrosestudio.com,US,0,sitemap (US pages only),422,https://valleyrosestudio.com/sitemap.xml,2026-10-19,"raw=143892 dupes_removed=0; country split untagged=77085,other=65094,AE=1713"
+valleyrosestudio.com,US,143977,"sitemap (whole site, no market segment)",422,https://valleyrosestudio.com/sitemap.xml,2026-10-19,"raw=143977 dupes_removed=0; recount via robots.txt; country split untagged=77131,other=65132,AE=1714; no US segment; default storefront is 77131 of 143977 URLs; whole-site total includes 66846 URLs under other-country segments"
 talongolfco.com,US,277,sitemap,10,https://talongolfco.com/sitemap.xml,2026-10-19,raw=277 dupes_removed=0
 possumsolutions.us,US,74,sitemap,1,https://possumsolutions.us/sitemap.xml | https://possumsolutions.us/sitemap.xml | https://possumsolutions.us/sitemap.xml | https://possumsolutions.us/sitemap.xml,2026-10-19,raw=74 dupes_removed=0
 tintseyewear.com,US,142,sitemap,7,https://tintseyewear.com/sitemap.xml,2026-10-19,raw=142 dupes_removed=0
@@ -2803,7 +2803,7 @@ shopbrushstrokes.com,US,1250,sitemap,1,https://www.shopbrushstrokes.com/sitemap.
 shoptourbus.com,US,158,sitemap,7,https://shoptourbus.com/sitemap.xml,2026-10-19,raw=158 dupes_removed=0
 perfecttradingco.com,US,2784,sitemap,9,https://perfecttradingco.com/sitemap.xml,2026-10-19,raw=2784 dupes_removed=0
 protinkertoys.com,US,16393,sitemap,26,https://protinkertoys.com/sitemap.xml,2026-10-19,raw=16393 dupes_removed=0
-cplabsafety.com,US,280480,sitemap,34,https://www.cplabsafety.com/xmlsitemap.php | https://www.cplabsafety.com/sitemap.xml | https://www.cplabsafety.com/sitemap/categories/ | https://www.cplabsafety.com/sitemap/pages/,2026-10-19,raw=280480 dupes_removed=0; failed sitemap fetches=3: https://www.cplabsafety.com/sitemap/pages/:unparseable; https://www.cplabsafety.com/sitemap/categories/:unparseable; https://www.cplabsafety.com/sitemap.xml:unparseable
+cplabsafety.com,US,280480,sitemap (partial: 34 of 37 sitemap files read),34,https://www.cplabsafety.com/xmlsitemap.php | https://www.cplabsafety.com/sitemap.xml | https://www.cplabsafety.com/sitemap/categories/ | https://www.cplabsafety.com/sitemap/pages/,2026-10-19,raw=280466 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=3: https://www.cplabsafety.com/sitemap/pages/:unparseable; https://www.cplabsafety.com/sitemap/categories/:unparseable; https://www.cplabsafety.com/sitemap.xml:unparseable
 nickichicki.com,US,434,sitemap,7,https://nickichicki.com/sitemap.xml,2026-10-19,raw=434 dupes_removed=0
 store.meetboston.com,US,46,sitemap,5,https://store.meetboston.com/sitemap.xml,2026-10-19,raw=46 dupes_removed=0
 extremesupply.com,US,9924,sitemap,16,https://www.extremesupply.com/sitemap.xml,2026-10-19,raw=9924 dupes_removed=0
@@ -2812,7 +2812,7 @@ pusheen.com,US,412,sitemap,7,https://pusheen.com/sitemap.xml,2026-10-19,raw=412 
 totlgames.com,US,9860,sitemap,1,https://totlgames.com/sitemap.xml | https://totlgames.com/sitemap.xml | https://totlgames.com/sitemap.xml | https://totlgames.com/sitemap.xml,2026-10-19,raw=9860 dupes_removed=0
 drscholls.com,US,361,sitemap,7,https://www.drscholls.com/sitemap.xml,2026-10-19,raw=361 dupes_removed=0
 vivzone.com,US,319,sitemap,7,https://vivzone.com/sitemap.xml,2026-10-19,raw=319 dupes_removed=0
-wefoundadventure.com,US,2584,sitemap,14,https://wefoundadventure.com/wp-sitemap.xml | https://wefoundadventure.com/sitemapindex.xml,2026-10-19,raw=5167 dupes_removed=2583; failed sitemap fetches=1: https://wefoundadventure.com/taxonomy_product_brand.xml:404
+wefoundadventure.com,US,2584,sitemap (partial: 14 of 15 sitemap files read),14,https://wefoundadventure.com/wp-sitemap.xml | https://wefoundadventure.com/sitemapindex.xml,2026-10-19,raw=5167 dupes_removed=2583; recount via robots.txt; failed sitemap fetches after retries=1: https://wefoundadventure.com/taxonomy_product_brand.xml:404
 anubisgamehobby.com,US,1022390,sitemap,1028,https://anubisgamehobby.com/sitemap.xml,2026-10-19,raw=1022390 dupes_removed=0
 nbtclothing.com,US,358,sitemap,7,https://www.nbtclothing.com/sitemap.xml,2026-10-19,raw=358 dupes_removed=0
 mielemoda.com,US,1213,sitemap,17,https://mielemoda.com/sitemap.xml,2026-10-19,raw=1213 dupes_removed=0
@@ -2844,12 +2844,12 @@ ergodebooks.com,US,1044788,sitemap,1051,https://ergodebooks.com/sitemap.xml | ht
 shop.wihumane.org,US,3446,sitemap,10,https://shop.wihumane.org/sitemap.xml,2026-10-19,raw=3446 dupes_removed=0
 saffordequipment.com,US,15213,sitemap,20,https://saffordequipment.com/sitemap.xml,2026-10-19,raw=15214 dupes_removed=1
 galacticgamez.com,US,222289,sitemap,228,https://galacticgamez.com/sitemap.xml,2026-10-19,raw=222289 dupes_removed=0
-rentforevent.com,US,6562,sitemap,92,https://rentforevent.com/sitemap_index.xml | https://rentforevent.com/houston/sitemap_index.xml | https://rentforevent.com/pho/sitemap_index.xml | https://rentforevent.com/ny/sitemap_index.xml | https://rentforevent.com/atl/sitemap_index.xml (+10 more),2026-10-19,raw=6581 dupes_removed=19; media sitemaps skipped=8; failed sitemap fetches=2: https://rentforevent.com/sf/sitemap_index.xml:404; https://rentforevent.com/ny/sitemap_index.xml:404
+rentforevent.com,US,6562,sitemap (partial: 92 of 94 sitemap files read),92,https://rentforevent.com/sitemap_index.xml | https://rentforevent.com/houston/sitemap_index.xml | https://rentforevent.com/pho/sitemap_index.xml | https://rentforevent.com/ny/sitemap_index.xml | https://rentforevent.com/atl/sitemap_index.xml (+10 more),2026-10-19,raw=6581 dupes_removed=19; recount via robots.txt; media sitemaps skipped=8; failed sitemap fetches after retries=2: https://rentforevent.com/ny/sitemap_index.xml:404; https://rentforevent.com/sf/sitemap_index.xml:404
 z-feed.com,US,487853,sitemap,499,https://www.z-feed.com/sitemap.xml | https://www.z-feed.com/_functions/dynamic_p_sitemap,2026-10-19,raw=487854 dupes_removed=1
 nerdkungfu.com,US,78857,sitemap,84,https://www.nerdkungfu.com/sitemap.xml,2026-10-19,raw=78857 dupes_removed=0
 paramountshop.com,US,742871,sitemap,1262,https://www.paramountshop.com/sitemap.xml | https://www.paramountshop.com/sitemap.xml | https://www.paramountshop.com/sitemap.xml,2026-10-19,raw=743030 dupes_removed=159
 tomsforeign.com,US,449473,sitemap,455,https://www.tomsforeign.com/sitemap.xml,2026-10-19,raw=449473 dupes_removed=0
-shoestation.com,US,18622,sitemap,443,https://www.shoestation.com/sitemap_index.xml | https://www.shoestation.com/sitemap-blog.xml,2026-10-19,raw=18629 dupes_removed=7; media sitemaps skipped=1; failed sitemap fetches=1: https://www.shoestation.com/sitemap-search?cgid=workwear_sitemap.xml:404
+shoestation.com,US,18622,sitemap (partial: 443 of 444 sitemap files read),443,https://www.shoestation.com/sitemap_index.xml | https://www.shoestation.com/sitemap-blog.xml,2026-10-19,raw=18629 dupes_removed=7; recount via robots.txt; media sitemaps skipped=1; failed sitemap fetches after retries=1: https://www.shoestation.com/sitemap-search?cgid=workwear_sitemap.xml:404
 libroworld.com,US,8030724,sitemap,807,https://www.libroworld.com/content/sitemap/sitemap.xml,2026-10-19,raw=8042229 dupes_removed=11505
 blackhawksupply.com,US,1454512,sitemap,1462,https://blackhawksupply.com/sitemap.xml | https://blackhawksupply.com/sitemap.xml | https://blackhawksupply.com/sitemap.xml,2026-10-19,raw=1454512 dupes_removed=0
 aweinspired.com,US,225960,sitemap,987,https://aweinspired.com/sitemap.xml | https://aweinspired.com/sitemap.xml | https://aweinspired.com/sitemap.xml,2026-10-19,raw=225960 dupes_removed=0
@@ -2857,7 +2857,7 @@ trueclassictees.com,US,593326,sitemap,1739,https://www.trueclassictees.com/sitem
 shopabunda.com,US,1898729,sitemap,39,https://www.shopabunda.com/sitemap,2026-10-19,raw=1899821 dupes_removed=1092
 t1racedevelopment.com,US,1460,sitemap,12,https://www.t1racedevelopment.com/sitemap_index.xml,2026-10-19,raw=1461 dupes_removed=1
 printyourwear.com,US,1500791,sitemap,1518,https://printyourwear.com/sitemap.xml,2026-10-19,raw=1500791 dupes_removed=0
-ifdress.com,US,0,sitemap (US pages only),1042,https://ifdress.com/sitemap.xml,2026-10-19,"raw=736801 dupes_removed=0; country split other=322350,untagged=285511,AE=64470,SA=64470"
+ifdress.com,US,736801,"sitemap (whole site, no market segment)",1042,https://ifdress.com/sitemap.xml,2026-10-19,"raw=736801 dupes_removed=0; recount via robots.txt; country split other=322350,untagged=285511,AE=64470,SA=64470; no US segment; default storefront is 285511 of 736801 URLs; whole-site total includes 451290 URLs under other-country segments"
 fiperformance.com,US,1566030,sitemap,1576,https://fiperformance.com/sitemap.xml | https://fiperformance.com/sitemap.xml | https://fiperformance.com/sitemap.xml,2026-10-19,raw=1566032 dupes_removed=2
 everfulwholesale.com,US,14294847,sitemap,903,https://www.everfulwholesale.com/sitemaps/sitemap-index.xml | https://www.everfulwholesale.com/sitemaps/sitemap-index-de.xml | https://www.everfulwholesale.com/sitemaps/sitemap-index-el.xml | https://www.everfulwholesale.com/sitemaps/sitemap-index-es.xml | https://www.everfulwholesale.com/sitemaps/sitemap-index-fr.xml (+2 more),2026-10-19,raw=14294847 dupes_removed=0
 poshpeanut.com,US,671181,sitemap,1667,https://poshpeanut.com/sitemap.xml | https://poshpeanut.com/sitemap.xml | https://poshpeanut.com/sitemap.xml,2026-10-19,raw=671181 dupes_removed=0
@@ -2865,18 +2865,18 @@ voomisupply.com,US,2133311,sitemap,2139,https://voomisupply.com/sitemap.xml,2026
 shopgap.com,US,2332316,sitemap,2900,https://www.shopgap.com/sitemap.xml,2026-10-19,raw=2333726 dupes_removed=1410
 mottandbow.com,US,776156,sitemap,3530,https://www.mottandbow.com/sitemap.xml | https://www.mottandbow.com/sitemap.xml | https://www.mottandbow.com/sitemap.xml,2026-10-19,raw=776156 dupes_removed=0
 recomparo.com,US,2883983,sitemap,2894,https://www.recomparo.com/sitemap.xml,2026-10-19,raw=2883983 dupes_removed=0
-armiea.com,US,0,sitemap (US pages only),3908,https://armiea.com/sitemap.xml,2026-10-19,"raw=1971229 dupes_removed=0; country split other=1292956,untagged=617713,AE=60560"
+armiea.com,US,1971229,"sitemap (whole site, no market segment)",3908,https://armiea.com/sitemap.xml,2026-10-19,"raw=1971229 dupes_removed=0; recount via robots.txt; country split other=1292956,untagged=617713,AE=60560; no US segment; default storefront is 617713 of 1971229 URLs; whole-site total includes 1353516 URLs under other-country segments"
 shop.simon.com,US,2724990,sitemap,2731,https://shop.simon.com/sitemap.xml | https://shop.simon.com/sitemap.xml | https://shop.simon.com/sitemap.xml,2026-10-19,raw=2725028 dupes_removed=38
 360oder.com,US,3607582,sitemap,3614,https://360oder.com/sitemap.xml,2026-10-19,raw=3607582 dupes_removed=0
 swarovski.com,US,1933181,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
-pipingrock.com,US,0,sitemap (US pages only),6009,https://www.pipingrock.com/sitemap.xml | https://www.pipingrock.com/sitemap.xml | https://www.pipingrock.com/sitemap.xml,2026-10-19,"raw=2234561 dupes_removed=0; country split untagged=1381861,other=807664,SA=45036"
+pipingrock.com,US,2231720,"sitemap (whole site, no market segment)",6001,https://www.pipingrock.com/sitemap.xml | https://www.pipingrock.com/sitemap.xml | https://www.pipingrock.com/sitemap.xml,2026-10-19,"raw=2231720 dupes_removed=0; recount via robots.txt; country split untagged=1379074,other=807613,SA=45033; no US segment; default storefront is 1379074 of 2231720 URLs; whole-site total includes 852646 URLs under other-country segments"
 pepboys.com,US,302450,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 s4shops.com,US,20,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
-italist.com,US,0,sitemap (US pages only),5138,https://italist.com/sitemap.xml,2026-10-19,"raw=4278456 dupes_removed=0; country split other=2455148,untagged=411271,QA=370270,SA=370270,AE=335781,KW=335716"
-boiilife.com,US,0,sitemap (US pages only),6001,https://boiilife.com/sitemap.xml,2026-10-19,"raw=3190595 dupes_removed=0; country split untagged=1671012,other=1246667,AE=90972,SA=90972,QA=90972"
+italist.com,US,,Not available (no US pages in sitemap),5138,https://italist.com/sitemap.xml,2026-10-19,"raw=4256601 dupes_removed=0; recount via robots.txt; country split other=2443700,untagged=409201,QA=368200,SA=368200,KW=333650,AE=333650"
+boiilife.com,US,3190595,"sitemap (whole site, no market segment)",6001,https://boiilife.com/sitemap.xml,2026-10-19,"raw=3190595 dupes_removed=0; recount via robots.txt; country split untagged=1671012,other=1246667,AE=90972,SA=90972,QA=90972; no US segment; default storefront is 1671012 of 3190595 URLs; whole-site total includes 1519583 URLs under other-country segments"
 retailmarket.net,US,4063489,sitemap,4067,https://www.retailmarket.net/sitemap.xml,2026-10-19,raw=4063493 dupes_removed=4
 tartanvibesclothing.com,US,5981797,sitemap,6001,https://tartanvibesclothing.com/sitemap.xml | https://tartanvibesclothing.com/sitemap.xml | https://tartanvibesclothing.com/sitemap.xml,2026-10-19,raw=5981797 dupes_removed=0
-distacart.com,US,0,sitemap (US pages only),6001,https://www.distacart.com/sitemap.xml,2026-10-19,"raw=5794075 dupes_removed=0; country split untagged=2942895,other=2221178,SA=211960,AE=211451,QA=206591"
+distacart.com,US,5794075,"sitemap (whole site, no market segment)",6001,https://www.distacart.com/sitemap.xml,2026-10-19,"raw=5794075 dupes_removed=0; recount via robots.txt; country split untagged=2942895,other=2221178,SA=211960,AE=211451,QA=206591; no US segment; default storefront is 2942895 of 5794075 URLs; whole-site total includes 2851180 URLs under other-country segments"
 tcpi.com,US,5984,sitemap,6001,https://www.tcpi.com/sitemap_index.xml,2026-10-19,raw=5985 dupes_removed=1
 crutchfield.com,US,3088163,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 hoseandfittingsupply.com,US,1878,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
