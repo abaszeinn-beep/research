@@ -11,7 +11,7 @@ ANCH=re.compile(r'<a\b[^>]*?href=["\']([^"\']+)["\'][^>]*>(.*?)</a>',re.I|re.S)
 TAG=re.compile(r'<[^>]+>')
 async def get(s,url,mx=600000):
     try:
-        async with s.get(url,timeout=aiohttp.ClientTimeout(total=15),allow_redirects=True) as r:
+        async with s.get(url,timeout=aiohttp.ClientTimeout(total=float(__import__('os').environ.get('TMO','15'))),allow_redirects=True) as r:
             if r.status!=200: return r.status,None,str(r.url)
             b=await r.content.read(mx)
             return 200,b.decode(r.get_encoding() if r.charset else 'utf-8','ignore'),str(r.url)
@@ -28,6 +28,9 @@ async def one(s,sem,hostsem,row):
         st,h,final=await get(s,url)
         res['status']=st
         if not h: return res
+        return await analyze(s,res,h,final,plat)
+async def analyze(s,res,h,final,plat):
+    if True:
         base=final
         texts=[];links=[]
         title=H.unescape(TAG.sub(' ',(re.search(r'<title[^>]*>(.*?)</title>',h,re.I|re.S) or [0,''])[1]))
@@ -37,6 +40,7 @@ async def one(s,sem,hostsem,row):
             if 0<len(t)<60: texts.append(t)
             links.append((href,t))
         pathtexts=[urlparse(urljoin(base,hf)).path.replace('-',' ').replace('/',' ').replace('_',' ') for hf,_ in links]
+        res['nlinks']=len(links)
         res['title']=title.strip()[:120]; res['desc']=desc[:200]
         extra=[]
         isshop=plat=='shopify' or 'cdn.shopify.com' in h

@@ -24,7 +24,7 @@ def sec(t,cnt):
     for k,v in sorted(cnt.items(),key=lambda x:-x[1]): w3.append(['  '+str(k),v])
     w3.append([])
 w3.append(['UAE Fashion Stores – coverage & method']);w3.cell(1,1).font=Font(bold=True,size=14);w3.append(['Total fashion stores',len(S)]);w3.append(['Excluded rows',len(E)]);w3.append([])
-sec('By source',collections.Counter(x['source'] for x in S));sec('By type',collections.Counter(x['type'] for x in S));sec('By gender',collections.Counter(x['gender'] for x in S))
+sec('By channel (recall pass)',collections.Counter(x.get('channel','') for x in S));w3.append(['First-pass count (before recall pass)',289]);w3.append(['After recall pass',len(S)]);w3.append([]);sec('By source',collections.Counter(x['source'] for x in S));sec('By type',collections.Counter(x['type'] for x in S));sec('By gender',collections.Counter(x['gender'] for x in S))
 sec('By platform',collections.Counter(pl(x['platform']) or 'Unknown' for x in S));sec('By size tier',collections.Counter(x['tier'] for x in S));sec('By verification status',collections.Counter(x['status'] for x in S))
 sec('Exclusion reasons',collections.Counter(x['reason'] for x in E))
 w3.append(['QA']);w3.cell(w3.max_row,1).font=Font(bold=True)
@@ -36,6 +36,7 @@ for t in ['METHOD',
 '4. Unreachable (403/429/timeouts) verified rows after 2 retries: kept only if directory/reference category is fashion/department store (signal = directory category).',
 '5. Unverified candidates promoted only when live page shows clothing nav terms (>=4 incl. title) + cart evidence + .ae host or AED+971 signals; status marks them as not in the verified directory.',
 '6. New discovery: unverified-candidate promotion and a curated list of known UAE-operating fashion brands/retail groups (Inditex, Landmark, Apparel Group, Alshaya etc.) absent from the directory, accepted as Known major retailer – manually accepted (UAE storefronts bot-walled / not live-checkable here).',
+'6b. Recall pass: retry of unreachable/blocked stores (30s timeout, low concurrency); Playwright rendering for JS menus (913 thin/excluded directory rows, 329 thin unverified, 581 blocked/thin retries, 200 Common Crawl hosts); Common Crawl cluster.idx/CDX read for *.ae across 3 recent crawls (42k hosts, 270 new fashion-path/name hosts probed); ~315 global brand domains probed for UAE-locale paths (92 hits classified); UAE App Store fashion queries (56 sellerUrls with UAE signals); manual re-check of requested brands. Trendyol removed as a multi-seller marketplace.',
 '7. Size tier: Brand-Major = reference-universe major or well-known brand; Large/Medium/Small from Shopify/Woo catalogue size (best effort).',
 'Limitations: nav-based keyword signals; JS-rendered sites have thin nav; Gender/Type are heuristic; marketplaces (noon, Amazon, Farfetch, Trendyol-type aggregators) excluded.']: w3.append([t])
 w3.column_dimensions['A'].width=120

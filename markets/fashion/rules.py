@@ -35,7 +35,7 @@ def classify(r,cat,name):
     if ok and NEG.search(title+' '+name) and not re.search(r"abaya|kandura|ready.?to.?wear|menswear|womenswear|lingerie|streetwear|activewear|sportswear|clothing|apparel|dresses",title,re.I): ok=False
     if ok and NEG.search(r.get('title','')+' '+name) and ns_raw<4 and cat not in('Fashion - Abayas & Modest','Fashion - Women','Fashion - Men'): ok=False
     if ok and KIDT.search(r.get('title','')+' '+name) and not re.search(r"abaya|women|\bmen\b|\bmens\b|ladies|lingerie|modest|maternity|adult",title,re.I): ok=False
-    HARD=re.compile(r"travel|concierge|fishing|motorcycle|motorbike|\bmoto\b|rental|rent your|pacifier|teether|feeding|\bbooks?\b|كتب|مكتبة|hair (drama|extension|salon)|group\b|uniforms?\b|workwear|printing|stock photo|laptop|interlining|\bchef|custom clothing|bragard|everything|touratech|adventure gear|yoga mat|trading llc|equestrian|horse|jewelry & watches|fashion jewelry",re.I)
+    HARD=re.compile(r"travel|concierge|fishing|motorcycle|motorbike|\bmoto\b|rental|rent your|pacifier|teether|feeding|\bbooks?\b|كتب|مكتبة|hair (drama|extension|salon)|group\b|uniforms?\b|workwear|printing|stock photo|laptop|interlining|\bchef|custom clothing|bragard|everything|touratech|adventure gear|yoga mat|medical|garment industries|herbs|myprotein|nutrition|trading llc|equestrian|horse|jewelry & watches|fashion jewelry",re.I)
     if ok and HARD.search(r.get('title','')+' '+name) and ns_raw<10: ok=False
     SVC=re.compile(r"alteration|stitching|tailor shop|tailors? in|tailoring (service|&)|uniform|workwear|scrubs|school",re.I)
     if ok and SVC.search(r.get('title','')+' '+name) and ns_raw<8: ok=False
