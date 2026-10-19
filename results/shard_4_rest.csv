@@ -1,0 +1,6 @@
+domain,market,pages_count,count_method,sitemap_files,top_sitemap_url,count_date,notes
+shop-resa.com,US,1176,sitemap,8,https://shop-resa.com/sitemap.xml,2026-10-19,raw=1176 dupes_removed=0
+aeroperformance.com,US,700,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.aeroperformance.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+harkinssafety.com,US,546,sitemap,15,https://harkinssafety.com/sitemap_index.xml,2026-10-19,raw=547 dupes_removed=1
+elegantgowns.com,US,14155,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+themarketplace.doterra.com,US,1093,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://themarketplace.doterra.com/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
