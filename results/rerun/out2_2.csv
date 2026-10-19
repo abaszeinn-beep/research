@@ -1,0 +1,436 @@
+domain,market,pages_count,count_method,sitemap_files,top_sitemap_url,count_date,notes
+610greekshop.com,US,575,sitemap,1,https://www.610greekshop.com/sitemap.xml,2026-10-19,raw=588 dupes_removed=13
+ae.elemis.com,AE,8110,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://ae.elemis.com/sitemap_index.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+adorojewellery.ae,AE,126,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+almasaratstore.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://almasaratstore.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+albaydha-edu.sa,SA,32,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+alasalah.ae,AE,5,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://alasalah.ae/sitemap656.xml', 404), ('https://alasalah.ae/sitemap542.xml', 404)]); woocommerce X-WP-Total (products only)"
+aani-dani.com.sa,SA,41,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://aani-dani.com.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+acaciaplantsandtrees.ae,AE,179,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+12treasures.com,US,789,sitemap,10,https://12treasures.com/wp-sitemap.xml | https://12treasures.com/sitemap.xml | https://12treasures.com/sitemap.html,2026-10-19,raw=789 dupes_removed=0; failed sitemap fetches=1: https://12treasures.com/sitemap.html:unparseable
+almahaorchard.sa,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+acpowersadapter.com,US,45,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+2xist.com,US,18178,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+aljaberoptical.com,AE,0,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.aljaberoptical.com/sitemap.xml', 404)]); /collections/all: '0 items'"
+almondkatkpop.com,US,2108,sitemap,12,https://www.almondkatkpop.com/sitemap.xml | https://www.almondkatkpop.com/es_es-sitemap.xml,2026-10-19,raw=2108 dupes_removed=0
+alghaymhoney.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+abisco.com.sa,SA,331,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+a2iwheelandtire.com,US,7818,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+aerotechdesigns.com,US,34899,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+annaskoblikova.com,US,194,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://annaskoblikova.com/wp-sitemap.xml', 404)]); /shop: 'of 194 results'"
+albaraka.qa,QA,38,platform product count,0,,2026-10-19,no sitemap found; woocommerce X-WP-Total (products only)
+abcfws.com,US,37342,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+affordabletool.com,US,16891,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+allpredatorcalls.com,US,8344,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+abayarn.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+alkun1.com,SA,98,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://alkun1.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+3fvape.com,US,72659,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+ahoz8.com,SA,4,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+alahmadiha.com.sa,SA,17,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://alahmadiha.com.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+abohamamah.com,SA,19,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+alsahabs.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://alsahabs.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+alialbaz.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+1stsourceohc.com,US,256,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+alena.com.sa,SA,902,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+alshthe.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+altaawil.com,SA,18,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://altaawil.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+almunircomputers.ae,AE,442,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+altamayuz.sa,SA,23,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.altamayuz.sa/ar/sitemap_blogs.xml', 404), ('https://www.altamayuz.sa/en/sitemap_blogs.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+alpha313.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+alzperformanceparts.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+akoyawater.sa,SA,28,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+aefurniture.com,US,1517,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://aefurniture.com/index.php/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+alrowad4oud.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+alquistarms.com,US,4389,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+amigakit.eu,US,5894,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+azappliance.com,US,1074,sitemap,1,https://azappliance-com.3dcartstores.com/sitemap.xml,2026-10-19,raw=1074 dupes_removed=0
+andoverfabrics.com,US,10165,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+alhazeemfashion.com.kw,KW,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+apmea.bhs1global.com,US,1572,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+araabaloudsa.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://araabaloudsa.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+arktherapeutic.com,US,9,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.arktherapeutic.com/sitemap.php', 'unparseable')]); /shop: '9 items'"
+arabtech.com.sa,SA,194,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://arabtech.com.sa/wp-sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+amoktime.com,US,58262,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+airequipmentstore-com.3dcartstores.com,US,798,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+704offroad.com,US,292,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+artisan.sa,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://artisan.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+arganpackage.sa,SA,271,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://arganpackage.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+alrajhibank.com.kw,KW,1013,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+adamascaviar.ae,AE,31,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+athyhksa.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://athyhksa.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+asal-alsini.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://asal-alsini.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+alsamadisweets.ae,AE,331,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+aust11.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://aust11.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+atlasusa.net,US,3758,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.cavalierehoods.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+aquabike.ae,AE,6,platform product count,0,,2026-10-19,no sitemap found; woocommerce X-WP-Total (products only)
+asshad.com.sa,SA,4,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+atrlighting.com,US,28351,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+bandbfremontstore.com,US,3411,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+bahyfashion.com,SA,7,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+birdsafestore.com,US,1217,sitemap,1,https://www.birdsafestore.com/sitemap.xml,2026-10-19,raw=1218 dupes_removed=1
+artcorner.ae,AE,254,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+asnan.net.sa,SA,27,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+black-diamond.ae,AE,76,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: 'of 76 results'
+azzam0.com,SA,13,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+awraad2030.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+baitkum.ae,AE,265,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+autohausaz.com,US,566282,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.autohausaz.com/sitemap_index.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+azura0.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://azura0.com/sitemap.xml', 404)]); no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://azura0.com/sitemap.xml', 404)])"
+agrizone.ae,AE,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+autospot.qa,QA,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+bonvida.biz,US,0,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '0 items'
+beanbag.ae,AE,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+babylongardens.me,SA,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+auralex.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+bedbathandbeyond.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+ana-white.com,US,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+bebe-co.com,SA,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+beautydrama.com,US,6926,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+bicyclefix.ae,AE,112,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('http://bicyclefix.ae/?sitemap.xml', 'unparseable'), ('http://bicyclefix.ae/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+baytalwardaltaifi.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+befashion.com.sa,SA,365,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+bello-sweets.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+barjad.com,SA,16,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+bestbyte.net,US,14256,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+bikehub.sa,SA,895,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://bikehub.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+bemyballoon.ae,AE,5460,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://bemyballoon.ae/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+bakerlumber.net,US,2039,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.bakerlumber.net/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+amazcologne.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+arnoldjewelers.com,US,15233,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+abnateq.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+binzipad.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+bigronline.com,US,62779,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+blackeleganceks.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+bindousr.com.kw,KW,512,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+bilva-sa.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+blonde-roast.com,SA,8,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+bateel.com,AE,24390,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+bluebuzzhtx.com,US,1368,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+betsonparts.com,US,10795,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+aslline.me,SA,7,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+balticborn.com,US,61361,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+blockbustercostumes.com,US,53971,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+banwood.ae,AE,183,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+boardparadise.com,US,30098,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+cdvs.us,US,1016,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://cdvs.us/sitemap_index.xml', 404)]); /shop: 'of 1016 results'"
+alkadikw8.com,KW,654,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://alkadikw8.com/products/1/Agricultural-equipment-kuwait', 'unparseable'), ('https://alkadikw8.com/products/11/Hydroponic systems and accessories', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+bomari.sa,SA,10,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://c2y.info/index.php?sitemap-19.xml', 404), ('https://c2y.info/index.php?sitemap-20.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+carpetsindalton.com,US,6546,shop-page total,0,,2026-10-19,"no sitemap found; /shop: '6546 
+			   
+			 
+				 
+             
+       
+      
+     
+ 
+ 
+       
+
+           
+           
+            
+ 
+ 
+		   
+           
+
+           
+           
+             
+               
+  		 
+
+		    
+		  		 
+	 
+             
+           
+
+           
+           
+             
+               
+	 
+		 
+		 
+		 
+						 
+				Products'"
+citizenwatch.com,US,0,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '0 items'
+bottlebargains.com,US,9930,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+avon.com.sa,SA,7029,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+bodysolid.com,US,34288,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+breakerbroker.com,US,4477,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://breakerbroker.com/breakerbroker.com/xmlsitemap.php', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+buytronics.ae,AE,0,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '0  items'
+claraenergyresources.com,US,12442,sitemap,6,https://www.claraenergyresources.com/sitemap.xml,2026-10-19,raw=12443 dupes_removed=1
+bptstore.3dcartstores.com,US,12,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+brides-sa.com,SA,20,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+brkt-altmwr.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://brkt-altmwr.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+blushing0tone.com,SA,49,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+brooch-altaluq.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://brooch-altaluq.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+buddiesproshop.com,US,40023,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+butlerlightingusa.com,US,16160,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+byhkbook.com,SA,988,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+calcarcover.com,US,37061,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+caratlane.us,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+classicfurniturewarehouse.com,US,9766,sitemap,57,https://classicfurniturewarehouse.com/sitemap.xml,2026-10-19,raw=9766 dupes_removed=0
+bunokaif.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://bunokaif.com/sitemap.xml', 404)]); no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://bunokaif.com/sitemap.xml', 404)])"
+cardscart.net,SA,301,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://cardscart.net/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+budsgunshop.com,US,861022,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.budsgunshop.com/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+camelco.ae,AE,1,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+candal.sa,SA,141,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+carlpalmer.com,US,2300,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+casaraulww.com,US,1992,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+casyyay.com,US,139,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+boutique.rickenbacker.com,US,645,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+califabrics.com,US,36237,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+buildingproducts.ae,AE,24,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+caffeincrafter.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+charliescustomclones.com,US,6951,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+bsmart.sa,SA,331,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+chuwi.com,US,4701,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.chuwi.com/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+cabinetparts.com,US,45307,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+cheftools.com.sa,SA,15012,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://cheftools.com.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+cherry111.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://cherry111.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+childrenh.com,SA,53,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+client.dzain.ae,AE,203,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+champrosports.com,US,1645,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+classylook.sa,SA,190,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+colsongroup.com,US,1820,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+cestino.ae,AE,161,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+dieselexperts.net,US,1163,shop-page total,0,,2026-10-19,no sitemap found; /shop: 'of 1163 results'
+clothingconnectiononline.com,US,68597,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+coldsteel.com,US,101289,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.coldsteel.com/sitemap.php', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+comfortplusonline.com,US,4156,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+companyc.com,US,19850,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+cmthorse.com,SA,7,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+codebox.xyz,US,3,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+coffee-m.com,SA,32,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+condortk.com,US,2971,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+domotics.ae,AE,125,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://domotics.ae/wp-sitemap.xml', 404)]); /shop: 'of 125 results'"
+deltastore.ae,AE,187,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
+corteiz.com,US,199,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+corbetts.com,US,16614,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+consignfurnitureboise.com,US,6116,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+easygocarexport.ae,AE,10,sitemap,4,https://www.easygocarexport.ae/sitemap.xml,2026-10-19,raw=11 dupes_removed=1
+cr-store.com,SA,473,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+drivezycarrental.ae,AE,23,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://drivezycarrental.ae/sitemap.xml/', 404)]); woocommerce X-WP-Total (products only)"
+crochet.com,US,17484,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+createparis.com,SA,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+csnmint.com,US,1192,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+brandbucket.com,US,1141554,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+cuppingcup.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+dallasnovelty.com,US,73047,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+daraladab.ae,AE,2251,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+cyberlegend.ae,AE,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+cymbalfusion.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+equipmentfr.com,US,21,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /collections/all: '21  items'
+danamedical.ae,AE,296,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+ddb.qa,QA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+datarspices.ae,AE,1034,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+dartaybaa.com,SA,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+design-points.com,SA,6,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://design-points.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+daremtnan.com,SA,121,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+digital.qa,QA,6,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+evergrow.ae,AE,929,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://evergrow.ae/sitemap_index.xml', 404)]); woocommerce X-WP-Total (products only)"
+detailplus.com.sa,SA,64,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://detailplus.com.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+enetautoparts.com,US,0,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '0  items'
+deanscards.com,US,0,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /products: '0 Items'
+directron.com,US,375166,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+di.com.sa,SA,819,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+dman1.com,SA,6,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+deyparts.com,US,6246,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+dopethc.com,US,1634,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+drbstwr.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+daralsomaies.com,SA,6,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+dentalkingdom.sa,SA,213,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+dickblick.com,US,440689,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+doubleheaderusa.com,US,17161,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+flatroofsolutions.com,US,432,sitemap,1,https://www.flatroofsolutions.com/sitemap.xml,2026-10-19,raw=432 dupes_removed=0
+fixexperts.ae,AE,67,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
+easternleaf.com,US,23170,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+dutyfree.caribbean-airlines.com,US,1355,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://dutyfree.caribbean-airlines.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+fordhampress.com,US,3376,sitemap,1,https://fordhampress.com/sitemap.xml,2026-10-19,raw=3376 dupes_removed=0
+fnzwireless.ae,AE,204,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://fnzwireless.ae/sitemap_index.xml', 404)]); woocommerce X-WP-Total (products only)"
+dkfirearms.com,US,13084,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+ekleel2.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://ekleel2.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+flywithspa.com,US,126,platform product count,0,,2026-10-19,no sitemap found; woocommerce X-WP-Total (products only)
+edclifestyle.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+eboxelectric.com,US,285,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+eabco.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+dreamlandbabyco.com,US,4102,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+gardenfarm.com.sa,SA,48,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.gardenfarm.com.sa/index.php/sitemap.xml', 404)]); woocommerce X-WP-Total (products only)"
+gameszone.ae,AE,1215,platform product count,0,,2026-10-19,no sitemap found; woocommerce X-WP-Total (products only)
+edrakmu.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://edrakmu.com/sitemap.xml', 404)]); no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://edrakmu.com/sitemap.xml', 404)])"
+electro-touch.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://electro-touch.com/sitemap.xml', 404)]); no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://electro-touch.com/sitemap.xml', 404)])"
+dublino.ae,AE,255,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+dyson.com.kw,KW,1272,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+giftory.sa,SA,1000,shop-page total,0,,2026-10-19,no sitemap found; /store: '1000 منتج'
+elixirkw.com,KW,679,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+elev8glassgallery.com,US,19038,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+electronyat.qa,QA,6435,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+eliteneesh.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://eliteneesh.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+emanafeth.com,AE,3,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+erockets.biz,US,14008,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+emtechfzc.ae,AE,19,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+globalcoverage.ae,AE,12,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://globalcoverage.ae/7d5g3/sitemap.xml', 404), ('https://globalcoverage.ae/grams-zrhgdx/sitemap.xml', 404)]); woocommerce X-WP-Total (products only)"
+excel-equipment.com,US,7984,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+eztoys.com,US,51023,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+etaars.com,SA,14,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+goswitchgear.ae,AE,617,shop-page total,0,,2026-10-19,no sitemap found; /shop: '617  products'
+faces.com,KW,62082,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+etradesupply.com,US,112410,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+expert-toolstore.com,US,13703,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+falcontourism.ae,AE,290,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+faiksa.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+fawq-wasf.com.sa,SA,2741,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://fawq-wasf.com.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+greenconcrete.sa,SA,23,sitemap,6,https://www.greenconcrete.sa/sitemap_index.xml | https://www.greenconcrete.sa/sitemap_index.xml,2026-10-19,raw=24 dupes_removed=1
+festivity.com.kw,KW,2476,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+first-advanced.qa,QA,38,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+fitnessandcaresa.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://fitnessandcaresa.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+hatsprings.com,US,226,sitemap,1,https://www.hatsprings.com/sitemap.xml | https://www.hatsprings.com/sitemap.xml | https://www.hatsprings.com/sitemap.xml | https://www.hatsprings.com/sitemap.xml,2026-10-19,raw=226 dupes_removed=0
+fishfield.com,US,6755,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+esrealestate.ae,AE,112,sitemap,16,https://www.esrealestate.ae/sitemap.xml | https://www.esrealestate.ae/sitemap.rss,2026-10-19,raw=112 dupes_removed=0; failed sitemap fetches=1: https://www.esrealestate.ae/sitemap.rss:unparseable
+famous-smoke.com,US,151628,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+floristhaifa.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://floristhaifa.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+fantasycostumes.com,US,48721,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+fashionchingu.com,US,36580,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+fieldnotesbrand.com,US,2505,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+home-fixing.ae,AE,133,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
+freedomarmory.com,US,3063,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+fstorer.com,SA,13,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+fuely-sa.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://fuely-sa.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+futuregulf.sa,SA,1,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+hpgbrands.com,US,4,shop-page total,0,,2026-10-19,no sitemap found; /shop: '4 items'
+gamenerdz.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+germansteins.com,US,20953,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+gforcearms.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+giantmicrobes.com,US,21360,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+glen-l.com,US,79059,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+ghostek.com,US,54746,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+gd-hail.com,SA,2,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+ginsengtoto.com,US,1,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+crutchfield.com,US,3088163,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+gmp.ae,AE,2188,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+fossil.com,US,704976,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+ijetech.com,US,1917,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://ijetech.com/sitemap_index.xml', 404)]); /shop: 'of 1917 results'"
+goldtrade.ae,AE,375,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://goldtrade.ae/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+improvedracing.com,US,5,shop-page total,0,,2026-10-19,no sitemap found; /shop: '5  Items'
+golfworks.com,US,71287,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+graceframe.com,US,6094,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://graceframe.com/sitemap-tags', 404), ('https://graceframe.com/sitemap-articles', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+innovativehiring.ae,AE,407,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
+instocktrades.com,US,103775,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+gpmcallen.com,US,21847,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.gpmcallen.com/index.php/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+golden-leg.com,SA,7,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+gstorm.ae,AE,2831,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://gstorm.ae/en/1_index_sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+hamasat.sa,SA,474,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+ja.pjdolls.shop,US,206,sitemap,3,https://ja.pjdolls.shop/sitemap.xml,2026-10-19,raw=206 dupes_removed=0
+hammersource.com,US,17795,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+heetsiqosdubai.ae,AE,432,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+gravesrc.com,US,98492,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+inspiredtechnology.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.inspiredtechnology.ae', port=80): Max retries excee))",0,,2026-10-19,
+hessenantique.com,US,31875,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+haya.store,SA,6171,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+hempest.com,US,911,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+highfive.ae,AE,112,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+hobbywurks.com,US,6452,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+homecare.stryker.com,US,11029,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+hrsaddlesandtack.3dcartstores.com,US,646,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+joie.com,US,67,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /collections/all: '67  items'
+hotstampingspecialties-com.3dcartstores.com,US,121,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://hotstampingspecialties.3dcartstores.com/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+host.az,US,200,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+jutecarpet.ae,AE,12,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://jutecarpet.ae/sitemap_index.xml', 404)]); /shop: 'of 12 results'"
+hudsonchildrenswear.com,US,6778,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+group-game.com,SA,23,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+hasad-alez.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+horeyah.com,SA,121,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://horeyah.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+huntinfool.com,US,28496,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+hand7-77.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+guns.com,US,209196,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+hakplus.com,AE,654,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+hlth-sa.com,SA,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+icone.sa,SA,97,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+hydroviv.com,US,2211,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+gocontigo.com,US,13393,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+indigofragrance.com,US,2458,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+intercare-homedelivery.ae,AE,3278,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+idealofsweden.ae,AE,10399,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+intexcorp.com,US,119236,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+irocmotorsports.com,US,354,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+islandmusicco.com,US,9076,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+ink.qa,QA,260,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+kugoo.ae,AE,9,platform product count,0,,2026-10-19,no sitemap found; woocommerce X-WP-Total (products only)
+idswc-com.3dcartstores.com,US,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+kyra.ae,AE,9,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://kyra.ae/sitemap.xml', 404)]); /shop: '9 items'"
+jcsalesweb.com,US,73988,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+italcoshelving.ae,AE,59,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+io.com.sa,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://io.com.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+jewelry4lessatl.com,US,4850,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+itcosmetics.com,US,11244,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+jillwisemandesigns.com,US,364,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+jq.sa,SA,7,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://jq.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+jawwy.sa,SA,555,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+jmlhomefashion.com,US,188,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+justforjeeps.com,US,8901,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+jiobit.com,US,495,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+ivory.sa,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://ivory.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+katanacollectibles.com,US,4358,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+jelbabboutique.com,SA,6,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+irakkani.com,SA,188,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+jadhl-sa.com,SA,17,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+kafycoffee.com,SA,1,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+jazlaaco.com,SA,7,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://jazlaaco.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+kentfaith.ae,AE,734,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+jarida-sa.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+kencof-sa.com,SA,6,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://salla.sa/kencof', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+kababkarachi.ae,AE,12,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://kababkarachi.ae/sitemap_index.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+littledressupshop.com,US,783,sitemap,1,https://www.littledressupshop.com/sitemap.xml,2026-10-19,raw=783 dupes_removed=0
+keef-alqassim.com,SA,4,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+khokah.com,SA,9,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+lomar.sa,SA,191,sitemap,5,https://lomar.sa/sitemap.xml,2026-10-19,raw=191 dupes_removed=0
+kimbo.ae,AE,459,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+levitt.com,US,1933,sitemap,9,https://www.levitt.com/sitemap.xml,2026-10-19,raw=1934 dupes_removed=1
+keyring.com,US,6299,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+kmdainc.com,US,1112,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+kitchendeals.ae,AE,327,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+khalatat.com,SA,413,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+karm-store.com,SA,1,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+khamahome.com,SA,10,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+lusterskincare.ae,AE,0,shop-page total,0,,2026-10-19,no sitemap found; /shop: '0 منتجات'
+kobracomics.com,US,1098,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+kosherwine.com,US,135474,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+lachicabaya.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+kicksters.sa,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://kicksters.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+lamsatfan.com,SA,32,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://lamsatfanksa.com/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+magnoliapearl.com,US,848,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; shopify products=814 + collections=34; /pages not enumerable
+ladderproducts.com,US,406,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+lynx-usa.com,US,237,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
+lakelinellc.com,US,2157,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+lumican.ae,AE,319,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
+larue.com,US,6570,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+matrixscientific.com,US,9494,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.matrixscientific.com/sitemap.xml', 404)]); /products: '9494 
+                 
+             
+         
+     
+     
+         
+             
+                 
+                     
+                     
+                         
+                         
+                             
+                             
+                                 Products'"
+latea.ae,AE,95,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+laptopscreen.ae,AE,228,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+kuwaitlivestock.com,KW,68,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+leadersrpmshop.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+makezine.com,US,95680,sitemap,111,https://makezine.com/sitemap_index.xml,2026-10-19,raw=95786 dupes_removed=106
+led-global.ae,AE,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (SSLError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+lenore.qa,QA,237,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+levanabratique.com,US,8433,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+lingref.com,US,2235,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"

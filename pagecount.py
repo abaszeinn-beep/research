@@ -452,7 +452,7 @@ def _market_rows(domain, markets, cr, tops, today, how, notes):
 
 
 ARCHIVE_SEM = threading.Semaphore(3)
-SHOP_PAT = re.compile(r"(?:of|من)\s+([\d,]+)\s+(?:results|products|items|منتج)|\b([\d,]{1,9})\s+(?:products|items|results|منتج(?:ات)?)\b", re.I)
+SHOP_PAT = re.compile(r"(?:of|من)\s+(\d[\d,]*)\s+(?:results|products|items|منتج)|\b(\d[\d,]{0,8})\s+(?:products|items|results|منتج(?:ات)?)\b", re.I)
 
 
 def fallback(f, base, domain, rds, robots):
