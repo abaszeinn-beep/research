@@ -36,7 +36,7 @@ ABRAM,https://abram1.com/,42,sitemap,2026-10-19,Verified
 Abu Duhair Iron Factory,https://www.abuduhair.com.sa/,13,sitemap,2026-10-19,Verified
 Abuljadayel Beverages,https://caesar.com.sa/,59,archive,2026-10-19,Verified
 Abyati Stores,https://abyati.sa/,10158,sitemap,2026-10-19,Verified
-Acme International Trading Company,https://acme.com.sa/,2212,sitemap,2026-10-19,Verified
+Acme International Trading Company,https://acme.com.sa/,2214,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
 adbhksa,https://adbhksa.com/,5,sitemap,2026-10-19,Verified
 Adblue,https://saakblue.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://saakadblue.com/ar/sitemap-1.xml', 'unparseable'), ('https://saakadblue.com/ar/sitemap-2.xml', 'unparseable')]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Adidas,https://www.adidas.sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
@@ -54,7 +54,7 @@ aivi,https://en-sa.aivi.com/,,"Not available (unreachable (ConnectionError: HTTP
 Aiwibi Saudi,https://aiwibi.sa/,253,sitemap,2026-10-19,Verified
 Aiya Studios,https://aiyastudios.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='aiyastudios.com', port=443): Max retries exceeded with))",2026-10-19,Verified
 Ajmal KSA,https://sa.ajmal.com/,883,sitemap,2026-10-19,Verified
-Akada Trading Company - شركة اكادا للتجارة,https://akada.com.sa/,2991,sitemap,2026-10-19,Verified
+Akada Trading Company - شركة اكادا للتجارة,https://akada.com.sa/,2991,sitemap (partial: 13 of 14 sitemap files read),2026-10-19,Verified
 Al Ain Water Order online for fast delivery to homes and offices,https://alainwater.sa/,48,archive,2026-10-19,Verified
 Al Duliman Optics,https://dulimanoptics.sa/,670,sitemap,2026-10-19,Verified
 Al Fanoos Tools & Industrial Equipment,https://alfanoos.com.sa/,1095,sitemap,2026-10-19,Verified
@@ -66,26 +66,26 @@ Al Mumayaz Co,https://almumayaz.sa/,43,sitemap,2026-10-19,Verified
 Al Omari Motorcycles,https://alomarimotorcycles.com/,1,archive,2026-10-19,Verified
 Al Rish Al Khaleeji,https://alrish.sa/,55,sitemap,2026-10-19,Verified
 Al Rizq Trading,https://www.alrizq.sa/,439,sitemap,2026-10-19,Verified
-Al Rugaib Furniture,https://www.alrugaibfurniture.com/,0,sitemap (SA pages only),2026-10-19,Verified
+Al Rugaib Furniture,https://www.alrugaibfurniture.com/,123829,"sitemap (whole site, no market segment)",2026-10-19,Verified
 Al Salim Certified Translation,https://alsalimtranslation.sa/,116,archive,2026-10-19,Verified
 Al Salloum Oud Store,https://alsaloom.sa/,861,sitemap,2026-10-19,Verified
-Al Shorouq Mall,https://alshuruqq.com/,5185,sitemap,2026-10-19,Verified
+Al Shorouq Mall,https://alshuruqq.com/,5195,sitemap,2026-10-19,Verified
 Al Tai,https://altaistore.sa/,5,shop-page total,2026-10-19,Verified
-Al Yusr International LLC,https://alyusroman.com/,105,sitemap,2026-10-19,Verified
+Al Yusr International LLC,https://alyusroman.com/,126,sitemap,2026-10-19,Verified
 Al-Amoudi,https://alamoudi.com.sa/,2192,sitemap,2026-10-19,Verified
 Al-Asshad,https://asshad.com.sa/,4,archive,2026-10-19,Verified
-Al-Atkaal,https://atkaal.com.sa/,24,sitemap,2026-10-19,Verified
+Al-Atkaal,https://atkaal.com.sa/,71,sitemap,2026-10-19,Verified
 al-dawaa.com,https://www.al-dawaa.com/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Al-Ertikaz Al-Masi,https://www.ertikaz.com.sa/,6,sitemap,2026-10-19,Verified
 Al-Sinan for Perfumes and Natural Honey,https://alsinan.com.sa/,1533,sitemap,2026-10-19,Verified
 Al-Suman Tea Company Co,https://alsumantea.com/,75,archive,2026-10-19,Verified
-Alamoudi Center,https://alamoudicenter.com/,57007,sitemap,2026-10-19,Verified
+Alamoudi Center,https://alamoudicenter.com/,72007,sitemap,2026-10-19,Verified
 Alanoud Perfumes,https://alanoudperfumes.com/,109,sitemap,2026-10-19,Verified
 alaqeeq valley,https://medley.sa/,4,sitemap,2026-10-19,Verified
 Alatayaoil,https://alatayaoil.com/,13,sitemap,2026-10-19,Verified
 Albourigarden,https://shop.albouriest.com/,10,archive,2026-10-19,Verified
 Aldahmani Telecom,https://aldahmani.sa/,3191,sitemap,2026-10-19,Verified
-Aldo Saudi Arabia,https://aldo.com.sa/,8089,sitemap,2026-10-19,Verified
+Aldo Saudi Arabia,https://aldo.com.sa/,10087,sitemap,2026-10-19,Verified
 AlDogel forToys,https://aldogeltoys.com/,1248,sitemap,2026-10-19,Verified
 Aldwlfyen متجر إلكتروني للإمكانيات والميزات الفريدة,https://aldwlfyen.net/,,"Not available (sitemap present but yielded no countable URLs ([('https://aldwlfyen.com/blog-1.xml', ""ConnectionError: HTTPSConnectionPool(host='aldwlfyen.com', port=443): Max retries exceeded with u""), ('https://aldwlfyen.com/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='aldwlfyen.com', port=443): Max retries exceeded with u"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Aleithar Market Online Shopping in Saudi Arabia Variety Store,https://aleithar.sa/,8001,sitemap,2026-10-19,Verified
@@ -114,7 +114,7 @@ Allbirds SA,https://allbirds.sa/,605,sitemap,2026-10-19,Verified
 Alloo,https://alloo-sa.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 Alma flowers الما فلاورز,https://almaflowersonline.com/,259,sitemap,2026-10-19,Verified
 "Almadina Optical, Sunglasses, Prescription Glasses and Contacts lenses",https://almadinaopt.com/,4031,sitemap,2026-10-19,Verified
-Almanara,https://www.almanara.com.sa/,1070,sitemap,2026-10-19,Verified
+Almanara,https://www.almanara.com.sa/,1476,sitemap,2026-10-19,Verified
 Almathur Bookstore,https://almathur.com/,10279,sitemap,2026-10-19,Verified
 almehwaralazb,https://almehwar-alazb.sa/,812,sitemap,2026-10-19,Verified
 "Almnnar Store Smartphones, Tablets Genuine Tech Accessories",https://almnnar.com/,871,sitemap,2026-10-19,Verified
@@ -125,7 +125,7 @@ Aloyayri Bedding,https://aloyayri.sa/,2835,sitemap,2026-10-19,Verified
 Alpha,https://alpha-estate.sa/,383,sitemap,2026-10-19,Verified
 AlQantara,https://qantara.com.sa/,1047,sitemap,2026-10-19,Verified
 AlQudra Sports Equipment,https://www.alqudra.sa/,1431,sitemap,2026-10-19,Verified
-alqusear.sa,https://alqusear.sa/,232,sitemap,2026-10-19,Verified
+alqusear.sa,https://alqusear.sa/,236,sitemap (partial: 5 of 6 sitemap files read),2026-10-19,Verified
 alraayin,https://alraayin.com.sa/,39,sitemap,2026-10-19,Verified
 alrajhi shop,https://rajhisteel.com.sa/,761,sitemap,2026-10-19,Verified
 alsaeed,https://alsaeed.com.sa/,138,sitemap,2026-10-19,Verified
@@ -150,7 +150,7 @@ Amaz Cologne,https://amazcologne.com/,1,archive,2026-10-19,Verified
 Ameenah Middle East,https://ameenah.sa/,129,sitemap,2026-10-19,Verified
 Amelia,https://ameila-boutique.com/,158,sitemap,2026-10-19,Verified
 American Eagle,https://www.americaneagle.com.sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
-americantourister,https://americantourister.com.sa/,734,sitemap,2026-10-19,Verified
+americantourister,https://americantourister.com.sa/,735,sitemap,2026-10-19,Verified
 Amor perfume,https://amorperfume.store/,1,archive,2026-10-19,Verified
 AMS Systems,https://ams-shop.online/,609,sitemap,2026-10-19,Verified
 Amwaj E-store,https://estore.amwaj-trd.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://estore.amwaj-trd.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
@@ -158,7 +158,7 @@ AMللعنايه والجمال,https://skincare-am.com/,451,archive,2026-10-19,
 ANALOGSTORES,https://analogstores.com/,197,sitemap,2026-10-19,Verified
 AND THINGZ,https://coffeesetup1.com/,3,archive,2026-10-19,Verified
 ANDES Coffee Roasters Saudi Specialty Coffee,https://andesroasters.com/,244,sitemap,2026-10-19,Verified
-Andrews Sykes Hire Saudi,https://www.andrewssykes.sa/,382,sitemap,2026-10-19,Verified
+Andrews Sykes Hire Saudi,https://www.andrewssykes.sa/,397,sitemap,2026-10-19,Verified
 Angel_baby_gift,https://angel-baby-gift.com/,1,archive,2026-10-19,Verified
 AngelA - Angel,https://angel.sa/,65,archive,2026-10-19,Verified
 ANIMAL HOMELAND STORE,https://animalhomeland.com/,821,sitemap,2026-10-19,Verified
@@ -169,9 +169,9 @@ Anoosh أنوش,https://anoosh.sa/,15,sitemap,2026-10-19,Verified
 Anti Gravity,https://antigravity.sa/,125,sitemap,2026-10-19,Verified
 antique house,https://oldhouse-store.com/,1885,sitemap,2026-10-19,Verified
 APICO,https://apico.com.sa/,194,sitemap,2026-10-19,Verified
-Apple (المملكة العربية السعودية),https://www.apple.com/sa-ar/,16276,sitemap (SA pages only),2026-10-19,Verified
+Apple (المملكة العربية السعودية),https://www.apple.com/sa-ar/,16276,sitemap (partial: 715 of 716 sitemap files read),2026-10-19,Verified
 APTools,https://aptools.sa/,21400,sitemap,2026-10-19,Verified
-Aquarium,https://aquarium.sa/,1669,sitemap,2026-10-19,Verified
+Aquarium,https://aquarium.sa/,2845,sitemap,2026-10-19,Verified
 ARAAJ,https://araaj.com/,25,sitemap,2026-10-19,Verified
 Arab Glass,https://arabglass.com.sa/,52,sitemap,2026-10-19,Verified
 Arabian Cement,https://arabiancement.sa/,3,platform product count,2026-10-19,Verified
@@ -205,7 +205,7 @@ Ash Stationery | قرطاسية آش,https://ash.sa/,38,sitemap,2026-10-19,Verif
 Asharqiyah Cables,https://ashcables.com/,33,sitemap,2026-10-19,Verified
 ashia,https://store.ashia.sa/,4,archive,2026-10-19,Verified
 ASHL,https://ashl.sa/,2010,sitemap,2026-10-19,Verified
-Ashley HomeStore,https://store.ashley.sa/,9906,sitemap,2026-10-19,Verified (secondary evidence)
+Ashley HomeStore,https://store.ashley.sa/,14269,sitemap,2026-10-19,Verified (secondary evidence)
 Asma Turki Home,https://asmaturkihome.com/,361,sitemap,2026-10-19,Verified
 ASMARA,https://asmaraksa.com/,9,archive,2026-10-19,Verified
 Asnan_Company,https://asnan.net.sa/,27,archive,2026-10-19,Verified
@@ -229,7 +229,7 @@ AuraLiving.com,https://www.auraliving.com/sa/,1231,archive,2026-10-19,Verified
 Aust,https://aust11.com/,2,archive,2026-10-19,Verified
 AUTCO,https://autco.sa/,91,sitemap,2026-10-19,Verified
 auton,https://auton.sa/,32,sitemap,2026-10-19,Verified
-AVA,https://ava.com.sa/,253,sitemap,2026-10-19,Verified
+AVA,https://ava.com.sa/,253,sitemap (partial: 5 of 6 sitemap files read),2026-10-19,Verified
 AVENA,https://avenaperfume.com/,12,sitemap,2026-10-19,Verified
 Avera Bloom,https://avera.sa/,209,sitemap,2026-10-19,Verified
 Avon Saudi Arabia,https://avon.com.sa/,7029,archive,2026-10-19,Verified
@@ -242,13 +242,13 @@ Baby Brezza Saudi Arabia,https://babybrezza.sa/,221,sitemap,2026-10-19,Verified
 Babyshop,https://www.babyshopstores.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Bagit10,https://bagit10.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 BAGS,https://bags.com.sa/,23,sitemap,2026-10-19,Verified
-Baker\'s choice,https://bakerschoice.com.sa/,195,sitemap,2026-10-19,Verified
+Baker\'s choice,https://bakerschoice.com.sa/,663,sitemap,2026-10-19,Verified
 Balabala,https://balabala.com.sa/,5303,sitemap,2026-10-19,Verified
 Ball Trips,https://ball-trips.com/,4557,sitemap,2026-10-19,Verified
 Balloonee - KSA,https://balloonee.sa/,30,sitemap,2026-10-19,Verified
 baloot,https://baloot2030.com/,186,sitemap,2026-10-19,Verified
 Bamboo,https://bamboo.sa/,88,sitemap,2026-10-19,Verified
-BAMI | بامي,https://bami.com.sa/,0,sitemap (SA pages only),2026-10-19,Verified
+BAMI | بامي,https://bami.com.sa/,8503,"sitemap (whole site, no market segment)",2026-10-19,Verified
 BAN LAND,https://ban-land.com/,278,archive,2026-10-19,Verified
 Banana Store,https://banana.sa/,2341,sitemap,2026-10-19,Verified
 Barakat Optical,https://barakatoptical.com.sa/,4143,sitemap,2026-10-19,Verified
@@ -266,7 +266,7 @@ Bauthrat Agricultural Store,https://bathurat.com/,1529,sitemap,2026-10-19,Verifi
 Bayarek Al-Noman Trading Co,https://bn.sa/,137,sitemap,2026-10-19,Verified
 baylasan,https://baylasan.com.sa/,209,sitemap,2026-10-19,Verified
 Bayt Alaqiq,https://baytalaqiq.com/,177,sitemap,2026-10-19,Verified
-BCDR Company,https://bcdr.sa/,67,sitemap,2026-10-19,Verified
+BCDR Company,https://bcdr.sa/,9388,sitemap,2026-10-19,Verified
 bctc,https://bctc.sa/,221,sitemap,2026-10-19,Verified
 BEANBERRY,https://bean-berry.com/,2,archive,2026-10-19,Verified
 beans united,https://piccolo.sa/,25,sitemap,2026-10-19,Verified
@@ -289,12 +289,12 @@ Bershka,https://www.bershka.com/sa/,,Not available (blocked by site: HTTP 403 on
 Best Games أجهزة سوني 4 و3 ألعاب وخدمات تعديل احترافية,https://best-games7.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://best-games7.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Best Perfume Store In Dammam Saudi Arabia,https://nowaeem.com/,10098,sitemap,2026-10-19,Verified
 best perfumes in Saudi Sharqiya Oud,https://alsharqiyah.com/,279,sitemap,2026-10-19,Verified
-Best Practice,https://www.bestpractice.sa/,521,sitemap,2026-10-19,Verified
+Best Practice,https://www.bestpractice.sa/,855,sitemap,2026-10-19,Verified
 "Best prices, quality, and warranty for gas supplies",https://rawafd-commercial.com/,121,sitemap,2026-10-19,Verified
 Best Value,https://bestvalue.sa/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 BETAK - بيتك,https://betak-sa.com/,1681,sitemap,2026-10-19,Verified
 bettafish_sa,https://bettafish-sa.com/,12,sitemap,2026-10-19,Verified
-Bex Entertainment Center Fun Games and Equipment for Projects,https://bex.sa/,50,sitemap,2026-10-19,Verified
+Bex Entertainment Center Fun Games and Equipment for Projects,https://bex.sa/,154,sitemap,2026-10-19,Verified
 Bexer,https://bexerksa.com/,2,archive,2026-10-19,Verified
 Bilva,https://bilva-sa.com/,2,archive,2026-10-19,Verified
 Bindawood,https://www.bindawood.sa/,256,archive,2026-10-19,Verified
@@ -308,51 +308,51 @@ BLACK GIFT,https://black59.com/,,Not available (sitemap present but yielded no c
 BlackOutPro,https://blackoutpro.com.sa/,55,sitemap,2026-10-19,Verified
 Blombary _Design,https://blombary-design.com/,2,archive,2026-10-19,Verified
 BLONDE STORE,https://blonde-roast.com/,8,archive,2026-10-19,Verified
-Bloomingdale's,https://bloomingdales.sa/,90598,sitemap,2026-10-19,Verified
-Blue Mountain-Buy Best Specialty Coffee In KSA,https://shop.bluemountain.sa/,552,sitemap,2026-10-19,Verified
+Bloomingdale's,https://bloomingdales.sa/,124626,sitemap,2026-10-19,Verified
+Blue Mountain-Buy Best Specialty Coffee In KSA,https://shop.bluemountain.sa/,688,sitemap,2026-10-19,Verified
 BLYNN,https://blynnksa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://blynnksa.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 BMS Factories,https://www.bm.com.sa/,613,sitemap,2026-10-19,Verified
-boayz,https://boayz.sa/,557,sitemap,2026-10-19,Verified
+boayz,https://boayz.sa/,593,sitemap,2026-10-19,Verified
 BON CAFÉ,https://bon.sa/,10,sitemap,2026-10-19,Verified
 Bond Touch,https://loverstoreksa.com/,28,sitemap,2026-10-19,Verified
 Boox,https://shop.smart.sa/,337,sitemap,2026-10-19,Verified
 Botique Lolwh Alenzi,https://boutiqelolwah.com/,94,sitemap,2026-10-19,Verified
 bounce,https://wthbstore.com/,152,archive,2026-10-19,Verified
-boutiqaat,https://www.boutiqaat.com/ar-sa/,179349,sitemap (SA pages only),2026-10-19,Verified (secondary evidence)
+boutiqaat,https://www.boutiqaat.com/ar-sa/,181020,sitemap (SA pages only),2026-10-19,Verified (secondary evidence)
 Boutique_AfrahAlsltany,https://boutique-afrahalsltany.com/,2,archive,2026-10-19,Verified
 brand.1965,https://brand1965.com/,1,archive,2026-10-19,Verified
 brave,https://brave-shop.com/,39,sitemap,2026-10-19,Verified
 BREAK THE CYCLE,https://breakthecycle.sa/,93,sitemap,2026-10-19,Verified
 BRIDESS,https://brides-sa.com/,20,archive,2026-10-19,Verified
 Brillantco,https://brillantco.net/,402,sitemap,2026-10-19,Verified
-Brilliant Skies Est,https://bskies.com.sa/,175,sitemap,2026-10-19,Verified
+Brilliant Skies Est,https://bskies.com.sa/,188,sitemap,2026-10-19,Verified
 BSN TRADING,https://bsn-trade.com/,2,archive,2026-10-19,Verified
 BTH Telecom,https://bth.sa/,67,sitemap,2026-10-19,Verified
 Building flowers,https://building-flowers.com/,3,archive,2026-10-19,Verified
 Buyme,https://buyme.sa/,2,archive,2026-10-19,Verified
-Buzzly Roaster,https://buzzly.sa/,51,sitemap,2026-10-19,Verified
+Buzzly Roaster,https://buzzly.sa/,58,sitemap,2026-10-19,Verified
 By Ghadi,https://byghadi.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://byghadi.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 bygone,https://bygone.in/,1,archive,2026-10-19,Verified
 BYS,https://abayas-base.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
-cadyclean,https://cadyclean.com/,43,sitemap,2026-10-19,Verified
+cadyclean,https://cadyclean.com/,86,sitemap,2026-10-19,Verified
 CAFFEIN CRAFTER,https://caffeincrafter.com/,1,archive,2026-10-19,Verified
 Candere,https://candereksa.com/,50,sitemap,2026-10-19,Verified
-Car Safety,https://carsafety2024.com/,627,sitemap,2026-10-19,Verified
+Car Safety,https://carsafety2024.com/,640,sitemap,2026-10-19,Verified
 Caramel Bath and Body,https://caramelbb.com/,1585,sitemap,2026-10-19,Verified
-CarCare,https://carcare.com.sa/,82,sitemap,2026-10-19,Verified
+CarCare,https://carcare.com.sa/,114,sitemap,2026-10-19,Verified
 carmey,https://carmey.com.sa/,727,sitemap,2026-10-19,Verified
-Carpet & flooring shop,https://acf.sa/,182,sitemap,2026-10-19,Verified
+Carpet & flooring shop,https://acf.sa/,183,sitemap,2026-10-19,Verified
 Carrefour KSA,https://www.carrefourksa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.carrefourksa.com', port=80): Max retries exceeded w))",2026-10-19,Verified (secondary evidence)
 Carton Wholesale,https://www.carton.sa/,3367,archive,2026-10-19,Verified
-CARWISHHA,https://carwishha.sa/,11,sitemap,2026-10-19,Verified
+CARWISHHA,https://carwishha.sa/,35,sitemap,2026-10-19,Verified
 CARX,https://qcarx.com/,1417,sitemap,2026-10-19,Verified
-CAT PARK,https://catpark.sa/,809,sitemap,2026-10-19,Verified
+CAT PARK,https://catpark.sa/,810,sitemap,2026-10-19,Verified
 cavalla,https://cavallaksa.com/,3,archive,2026-10-19,Verified
 CCTV Cameras Al Aman Security,https://alamansecurity.com.sa/,1005,sitemap,2026-10-19,Verified
 centerpiece,https://center-piece-store.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://salla.sa/centerpicec/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='salla.sa', port=443): Max retries exceeded with url: /"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Centrepoint,https://www.centrepointstores.com/sa/,65605,archive,2026-10-19,Verified (secondary evidence)
-CFMOTO KSA دراجات نارية دبابات بقيات مغامرات,https://cfmoto.sa/,63,sitemap,2026-10-19,Verified
-Ch & Be KSA,https://chandbe.sa/,77,sitemap,2026-10-19,Verified
+CFMOTO KSA دراجات نارية دبابات بقيات مغامرات,https://cfmoto.sa/,159,sitemap,2026-10-19,Verified
+Ch & Be KSA,https://chandbe.sa/,121,sitemap,2026-10-19,Verified
 Chanel,https://www.chanel.com/sa-ar/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Chapter4,https://chapter4.sa/,473,sitemap,2026-10-19,Verified
 CHARM,https://charm.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.charm.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
@@ -361,24 +361,24 @@ cheeky,https://cheeky.sa/,,"Not available (sitemap present but yielded no counta
 CHEVEU SOLUTIONS Multi-Peptide Hair Density Serum,https://cheveusolutions.co/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cheveusolutions.co', port=80): Max retries exceeded))",2026-10-19,Verified
 Chic dresses,https://chicdressess.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.chicdressess.com', port=80): Max retries exceeded w))",2026-10-19,Verified
 Chief Tools,https://cheftools.com.sa/,15012,archive,2026-10-19,Verified
-Chopard®,https://www.chopard.com/en-sa/,4099,sitemap (SA pages only),2026-10-19,Verified
+Chopard®,https://www.chopard.com/en-sa/,7647,sitemap (SA pages only),2026-10-19,Verified
 Chăm Sóc,https://cham-soc.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cham-soc.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
 Cilek KSA,https://cilek.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cilek.sa', port=80): Max retries exceeded with url:))",2026-10-19,Verified
 Cinderella Official Store for Skin and Body Care,https://cinderellasa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cinderellasa.com', port=80): Max retries exceeded w))",2026-10-19,Verified
 Cinnamon gurl store,https://cinnamongurl.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.cinnamongurl.com', port=443): Max retries exceeded))",2026-10-19,Verified
-Citron Saudi Arabia,https://citron.sa/,1640,sitemap,2026-10-19,Verified
+Citron Saudi Arabia,https://citron.sa/,1801,sitemap,2026-10-19,Verified
 CityW,https://cityw.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cityw.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
 ClearHub,https://store.clear-hub.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.clear-hub.com', port=80): Max retries exceede))",2026-10-19,Verified
-Cloud Automation,https://cloudautomation.sa/,248,sitemap,2026-10-19,Verified
+Cloud Automation,https://cloudautomation.sa/,266,sitemap,2026-10-19,Verified
 cloud9xstore,https://cloud9xstore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cloud9xstore.com', port=80): Max retries exceeded w))",2026-10-19,Verified
 CloudCorner - زاوية السحابة,https://cloudcorner.com.sa/,10,platform product count,2026-10-19,Verified
 COACH Saudi Arabia Official Site,https://coach.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coach.sa', port=80): Max retries exceeded with url:))",2026-10-19,Verified
-Cocoa Island,https://cocoaisland.sa/,12,sitemap,2026-10-19,Verified
+Cocoa Island,https://cocoaisland.sa/,86,sitemap,2026-10-19,Verified
 CODA,https://coda.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coda.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
 Coffee Gourmet,https://coffeegourmetsa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coffeegourmetsa.com', port=80): Max retries exceede))",2026-10-19,Verified
 Coffee Supplies All Specialty Coffee Tools Accessories in One Place,https://coffeesupplies.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coffeesupplies.com.sa', port=80): Max retries excee))",2026-10-19,Verified
 Cole Haan Saudi Arabia,https://colehaan.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.colehaan.sa', port=80): Max retries exceeded with u))",2026-10-19,Verified
-Columbia Saudi Arabia,https://columbia.sa/,2601,sitemap,2026-10-19,Verified
+Columbia Saudi Arabia,https://columbia.sa/,3087,sitemap,2026-10-19,Verified
 comfy للأثاث في السعودية,https://comfysa4.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.comfysa4.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
 Construction Company,https://www.greenconcrete.sa/,1,platform product count,2026-10-19,Verified
 Consul Bags,https://consul.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.consul.sa', port=80): Max retries exceeded with url))",2026-10-19,Verified
@@ -388,7 +388,7 @@ Cool.sa,https://cool.sa/,,"Not available (unreachable (ConnectionError: HTTPConn
 Corner 22,https://corner-22.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.corner-22.com', port=80): Max retries exceeded with))",2026-10-19,Verified
 CORNER STORE,https://prostoore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.prostoore.com', port=80): Max retries exceeded with))",2026-10-19,Verified
 Cosmed,https://cosmed.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cosmed.sa', port=80): Max retries exceeded with url))",2026-10-19,Verified
-Cosmetics,https://cosmetics.sa/,206,sitemap,2026-10-19,Verified
+Cosmetics,https://cosmetics.sa/,10204,sitemap,2026-10-19,Verified
 Cotton skin,https://cottonskin.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cottonskin.sa', port=80): Max retries exceeded with))",2026-10-19,Verified
 Cozy pyjama,https://cozypyjamas.online/,,"Not available (sitemap present but yielded no countable URLs ([('https://cozypyjamas.online/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 CR Store,https://7cr-store.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.7cr-store.com', port=443): Max retries exceeded wi))",2026-10-19,Verified
@@ -398,14 +398,14 @@ Create,https://createparis.com/,6,archive,2026-10-19,Verified
 Creative Media,https://www.creativemedia.sa/,21,sitemap,2026-10-19,Verified
 Crew shop,https://crewshop.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.crewshop.sa', port=80): Max retries exceeded with u))",2026-10-19,Verified
 crispy&frozen,https://crispyfrozen.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.crispyfrozen.com', port=443): Max retries exceeded))",2026-10-19,Verified
-Crowdless,https://crowdless.sa/,627,sitemap,2026-10-19,Verified
+Crowdless,https://crowdless.sa/,631,sitemap,2026-10-19,Verified
 cry,https://cry.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cry.sa', port=80): Max retries exceeded with url: /))",2026-10-19,Verified
 Crystal Shades,https://crystalshade.com.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='crystalshade.com.sa', port=443): Max retries exceeded ))",2026-10-19,Verified
 Cs,https://cs-center.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cs-center.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
 CubicSky 3D Printing Materials Supplier in Saudi Arabia,https://cubicsky.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cubicsky.sa', port=80): Max retries exceeded with u))",2026-10-19,Verified
 CURLY BROWN,https://curlybrown.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://curlybrown.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='curlybrown.sa', port=443): Max retries exceeded with u"")]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",2026-10-19,Verified
 CURVA,https://curvastores.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='curvastores.com', port=443): Max retries exceeded with))",2026-10-19,Verified
-curvestore,https://curvestore-sa.com/,11,sitemap,2026-10-19,Verified
+curvestore,https://curvestore-sa.com/,18,sitemap,2026-10-19,Verified
 Cute Cat,https://cutecat.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cutecat.com.sa', port=80): Max retries exceeded wit))",2026-10-19,Verified
 CYPRESS ROASTER,https://roastercypress.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.roastercypress.com', port=80): Max retries exceeded))",2026-10-19,Verified
 Daam Store,https://daamstore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daamstore.com', port=80): Max retries exceeded with))",2026-10-19,Verified
@@ -439,14 +439,14 @@ DETAILS COLLECTION,https://detailscollection.com/,,"Not available (unreachable (
 DETAiLS_50,https://details50.com/,1003,sitemap,2026-10-19,Verified
 Dhrez,https://dhrez.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dhrez.com', port=80): Max retries exceeded with url))",2026-10-19,Verified
 Different Care,https://dc.med.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.dc.med.sa', port=443): Max retries exceeded with u))",2026-10-19,Verified
-Digital Future KSA,https://digital-future.sa/,769,sitemap,2026-10-19,Verified
+Digital Future KSA,https://digital-future.sa/,770,sitemap,2026-10-19,Verified
 DIGITAL-J,https://digital-j.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.digital-j.com', port=80): Max retries exceeded with))",2026-10-19,Verified
 Dimos Furniture,https://dimos.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dimos.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
 dipin,https://dipin.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dipin.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
 Direct English,https://directenglish.com.sa/,25200,sitemap,2026-10-19,Verified
 DIRECT MESSAGE,https://direct-message.sa/,158,sitemap,2026-10-19,Verified
 Divan Flowers,https://divanflowers.com/,469,sitemap,2026-10-19,Verified
-Dive Point,https://divepoint.com.sa/,16,sitemap,2026-10-19,Verified
+Dive Point,https://divepoint.com.sa/,56,sitemap,2026-10-19,Verified
 DKNY | Saudi Arabia Official Store,https://dkny.sa/,1951,sitemap,2026-10-19,Verified
 Dlvrd,https://dlvrd.sa/,9,archive,2026-10-19,Verified
 "Dolce&Gabbana® Clothing, Beauty, Casa and Food & Beverage",https://www.dolcegabbana.com/en-sa/,12897,sitemap (SA pages only),2026-10-19,Verified (secondary evidence)
@@ -475,7 +475,7 @@ E-Store,https://www.khaleejdubai.com.sa/,299,archive,2026-10-19,Verified
 e.bstore,https://ebstoree.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://salla.sa/ebstore/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='salla.sa', port=443): Max retries exceeded with url: /"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Eagle Express KSA,https://sa.eagleexpress.co/,64,platform product count,2026-10-19,Verified
 Eagle Safety,https://eaglesafety.com.sa/,70,sitemap,2026-10-19,Verified
-ebriza jewelry,https://www.ebriza.sa/,118,sitemap,2026-10-19,Verified
+ebriza jewelry,https://www.ebriza.sa/,135,sitemap,2026-10-19,Verified
 Ebtikar,https://ebtikar4teachers.com/,456,sitemap,2026-10-19,Verified
 EBUILDING,https://ebuilding.sa/,2633,archive,2026-10-19,Verified
 echarpe_s,https://echarpestore.com/,785,sitemap,2026-10-19,Verified
@@ -516,7 +516,7 @@ Evewell صحة الأم والطفل استشارات رضاعة طبيعية ت
 evita,https://evita.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://evita.sa/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 EXBNA اكسبنا,https://exbna.com/,3864,sitemap,2026-10-19,Verified
 "Exceer Pharmacies Shop Medicines, Vitamins Online with Great Offers",https://exceeronline.com/,10109,sitemap,2026-10-19,Verified
-Experts HR - Business Services & Automation For Companies,https://www.ehr.sa/,699,sitemap,2026-10-19,Verified
+Experts HR - Business Services & Automation For Companies,https://www.ehr.sa/,699,sitemap (partial: 15 of 16 sitemap files read),2026-10-19,Verified
 Express Transport,https://expresstransport.com.sa/,33,sitemap,2026-10-19,Verified
 eXtra Saudi Arabia | Buy Electronics with Confidence,https://www.extra.com/en-sa/,114432,sitemap (SA pages only),2026-10-19,Verified
 Eyewa,https://eyewa.com/sa-en/,10635,sitemap (SA pages only),2026-10-19,Verified (secondary evidence)
@@ -537,7 +537,7 @@ Fanos Lighting,https://fanos.com.sa/,4759,sitemap,2026-10-19,Verified
 Fares. special,https://faresspecial.com/,293,sitemap,2026-10-19,Verified
 FARM Rio KSA,https://www.farmrio.sa/,1357,sitemap,2026-10-19,Verified
 Farsh,https://farsh.com.sa/,2227,sitemap,2026-10-19,Verified
-Fashion.sa,https://fashion.sa/,29677,sitemap,2026-10-19,Verified
+Fashion.sa,https://fashion.sa/,33681,sitemap,2026-10-19,Verified
 Fashion: Brands For Less,https://www.brandsforless.com/en-sa/,39815,archive,2026-10-19,Verified (secondary evidence)
 Fashion: Net-a-Porter,https://www.net-a-porter.com/en-sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Fashion: Selfridges / Harrods (intl),https://www.harrods.com/en-sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
@@ -592,14 +592,14 @@ gamestop قيم ستوب,https://gamestop.com.sa/,676,sitemap,2026-10-19,Verifie
 GANA_STORE,https://gana-store.com/,117,sitemap,2026-10-19,Verified
 GAP,https://www.gap.sa/,2406,sitemap,2026-10-19,Verified
 Garden and Farm Est,https://www.gardenfarm.com.sa/,48,platform product count,2026-10-19,Verified
-Garmin KSA,https://www.garmin.sa/,3709,sitemap,2026-10-19,Verified
+Garmin KSA,https://www.garmin.sa/,3894,sitemap,2026-10-19,Verified
 GAZZAZ,https://www.gazzaz.com.sa/,6693,sitemap,2026-10-19,Verified
 GCC LAB,https://gcclab.com.sa/,516,archive,2026-10-19,Verified
 Geepas KSA,https://ksa.geepas.com/,4473,sitemap,2026-10-19,Verified
 Gemstones,https://stone-souq.com/,5,archive,2026-10-19,Verified
 General Tech Services LLC,https://www.generaltechshop.sa/,34104,sitemap,2026-10-19,Verified
 German Shoes,https://riekershoes.com.sa/,243,sitemap,2026-10-19,Verified
-Gernas Mall,https://www.gernasmall.com/,1263,sitemap,2026-10-19,Verified
+Gernas Mall,https://www.gernasmall.com/,1267,sitemap,2026-10-19,Verified
 gfuel_art,https://gfuelart.com/,1,archive,2026-10-19,Verified
 ghareeb.abaya,https://ghareeb.com.sa/,1,archive,2026-10-19,Verified
 Ghawali KSA,https://sa.ghawali.com/,263,sitemap,2026-10-19,Verified
@@ -608,10 +608,10 @@ Ghosn Al-Ban,https://ghosan-alban.com/,75,sitemap,2026-10-19,Verified
 GHURAH LINE,https://ghurahline.com/,1,archive,2026-10-19,Verified
 Gift shop 🎁 توزيعات هدايا وأكثر,https://gift-shop-online.com/,1141,archive,2026-10-19,Verified
 GIFTORY,https://giftory.sa/,1000,shop-page total,2026-10-19,Verified
-Giordano Online,https://giordano.com.sa/,7371,sitemap,2026-10-19,Verified
-Glow and Give,https://gag.sa/,29,sitemap,2026-10-19,Verified
+Giordano Online,https://giordano.com.sa/,8371,sitemap,2026-10-19,Verified
+Glow and Give,https://gag.sa/,62,sitemap,2026-10-19,Verified
 Glow.sa,https://glow1sa.com/,3,archive,2026-10-19,Verified
-Glowr,https://glowrr.com/,25,sitemap,2026-10-19,Verified
+Glowr,https://glowrr.com/,34,sitemap,2026-10-19,Verified
 GN4 Store,https://gn4.online/,1,archive,2026-10-19,Verified
 Gold Apple,https://goldapple.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldapple.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified (secondary evidence)
 GOLD ROZE,https://goldroze2.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldroze2.com', port=80): Max retries exceeded with))",2026-10-19,Verified
@@ -631,15 +631,15 @@ Green Dome,https://dp.sa/,53,sitemap,2026-10-19,Verified
 Guess KSA,https://www.guess.sa/,1886,sitemap,2026-10-19,Verified
 Guidance,https://guidance.sa/,681,sitemap,2026-10-19,Verified
 Gulf Computer Mall,https://www.gcmall.com.sa/,243,archive,2026-10-19,Verified
-Gumazing Vitamins,https://gumazing.sa/,918,sitemap,2026-10-19,Verified
-Gusto,https://gusto.sa/,12,sitemap,2026-10-19,Verified
+Gumazing Vitamins,https://gumazing.sa/,955,sitemap,2026-10-19,Verified
+Gusto,https://gusto.sa/,25,sitemap,2026-10-19,Verified
 Gym attack,https://gymattack20.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gymattack20.com', port=80): Max retries exceeded wi))",2026-10-19,Verified
-Gym Store,https://www.gymstore.sa/,330,sitemap,2026-10-19,Verified
+Gym Store,https://www.gymstore.sa/,330,sitemap (partial: 6 of 8 sitemap files read),2026-10-19,Verified
 H&M,https://sa.hm.com/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 H7 Master اكتشف أحدث الأزياء الرجالية والنسائية بأفضل الأسعار,https://h7master.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.h7master.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
-HAB ملحقات سيارات شاشات داش كام وحساسات,https://hab.com.sa/,110,sitemap,2026-10-19,Verified
+HAB ملحقات سيارات شاشات داش كام وحساسات,https://hab.com.sa/,138,sitemap,2026-10-19,Verified
 Habitat Furniture Co. Ltd,https://www.habitat.com.sa/,394,sitemap,2026-10-19,Verified
-hailhills-العسل الفاخر والأعشاب الطبيعية في السعودية,https://hailhills.com/,23,sitemap,2026-10-19,Verified
+hailhills-العسل الفاخر والأعشاب الطبيعية في السعودية,https://hailhills.com/,59,sitemap,2026-10-19,Verified
 Hair box ksa,https://hairboxksa.com/,8,archive,2026-10-19,Verified
 "Hajar Delights, Premium Chocolate and Mini Truffles",https://hajardelights.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hajardelights.com', port=80): Max retries exceeded ))",2026-10-19,Verified
 HAKAZ,https://hakazsa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://hakazsa.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
@@ -659,11 +659,11 @@ Hattrick store,https://hattrick-store.com/,,"Not available (unreachable (Connect
 Haven,https://havenst00re.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 Haypp Saudi,https://haypp.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haypp.sa', port=80): Max retries exceeded with url:))",2026-10-19,Verified
 Hazel Control وحدات تحكم PS4 و PS5 مطورة للألعاب التنافسية,https://hazelcontrol.com/,90,sitemap,2026-10-19,Verified
-Healtec,https://healtec.com.sa/,130,sitemap,2026-10-19,Verified
+Healtec,https://healtec.com.sa/,135,sitemap,2026-10-19,Verified
 Health Edu,https://healthedu.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.healthedu.com.sa', port=80): Max retries exceeded w))",2026-10-19,Verified
 Health Steps,https://healthsteps.store/,59,sitemap,2026-10-19,Verified
 Healthy And Tasty,https://healthyandtasty.sa/,3,archive,2026-10-19,Verified
-Heavy Tools,https://heavytools.sa/,231,sitemap,2026-10-19,Verified
+Heavy Tools,https://heavytools.sa/,349,sitemap,2026-10-19,Verified
 Helium | هيليوم,https://helium.sa/,1,archive,2026-10-19,Verified
 hellensbeautybar,https://hellensbeautybar.com/,3,archive,2026-10-19,Verified
 HENUA,https://henuaabaya.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.henuaabaya.com', port=80): Max retries exceeded wit))",2026-10-19,Verified
@@ -677,21 +677,21 @@ HINDAMME,https://hindamme.com/,,"Not available (unreachable (ConnectionError: HT
 hint,https://hint.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hint.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
 HM9 تشكيلة فساتين مستوردة حصرية وجودة لا مثيل لها,https://hm9store.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hm9store.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
 HmeedTV,https://hmeedtv.com/,61,sitemap,2026-10-19,Verified
-ho2sneakers,https://ho2sneakers.com/,204,sitemap,2026-10-19,Verified
-Holo KSA,https://www.holo.sa/,29,sitemap,2026-10-19,Verified
+ho2sneakers,https://ho2sneakers.com/,220,sitemap,2026-10-19,Verified
+Holo KSA,https://www.holo.sa/,36,sitemap,2026-10-19,Verified
 Home Box,https://www.homeboxstores.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Home Centre,https://www.homecentre.com/sa/,111056,archive,2026-10-19,Verified (secondary evidence)
 Home Sweet Home,https://homesweethome.com.sa/,1329,sitemap,2026-10-19,Verified
-Homiture,https://homiture.sa/,218,sitemap,2026-10-19,Verified
+Homiture,https://homiture.sa/,251,sitemap,2026-10-19,Verified
 Honey Dose | عسل هني دوز,https://honeydose.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
 Hookahlicious,https://hookahlicious.com.sa/,223,sitemap,2026-10-19,Verified
 HooverSA,https://hoover.sa/,171,sitemap,2026-10-19,Verified
 Hope trade Store,https://hope.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hope.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
 horse99_11,https://iwwsm.com/,1,archive,2026-10-19,Verified
-Hosinox Company,https://hosinox.com.sa/,381,sitemap,2026-10-19,Verified
+Hosinox Company,https://hosinox.com.sa/,439,sitemap,2026-10-19,Verified
 hotpack.com.sa,https://hotpack.com.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
 House of Beauty,https://house-beauty.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.house-beauty.com', port=80): Max retries exceeded w))",2026-10-19,Verified
-Housemart,https://housemart.sa/,10097,sitemap,2026-10-19,Verified
+Housemart,https://housemart.sa/,10129,sitemap,2026-10-19,Verified
 HP® Saudi Arabia,https://www.hp.com/sa-en/,,Not available (timeout: domain time budget exceeded),2026-10-19,Verified (secondary evidence)
 Huawei,https://consumer.huawei.com/sa-en/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.consumer.huawei.com', port=80): Max retries exceede))",2026-10-19,Verified (secondary evidence)
 HUGO BOSS,https://www.hugoboss.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
@@ -734,7 +734,7 @@ Itchend,https://itchend-sa.com/,2,archive,2026-10-19,Verified
 ITools,https://itools.com.sa/,1879,sitemap,2026-10-19,Verified
 Its Mine,https://itsminesa.com/,3367,sitemap,2026-10-19,Verified
 Jabal Almadaen medical EST,https://jam.com.sa/,119,sitemap,2026-10-19,Verified
-JACK & JONES,https://www.jackjones.com/ar-sa/,13367,sitemap (SA pages only),2026-10-19,Verified
+JACK & JONES,https://www.jackjones.com/ar-sa/,12799,sitemap (SA pages only),2026-10-19,Verified
 Jalsah,https://jalsah1.com/,68,sitemap,2026-10-19,Verified
 jana,https://jana.sa/,7,sitemap,2026-10-19,Verified
 "Jarir Bookstore, Not just a bookstore",https://www.jarir.com/sa-en/,715610,sitemap (SA pages only),2026-10-19,Verified
@@ -836,7 +836,7 @@ Lenovo Official Site,https://www.lenovo.com/sa/,,Not available (blocked by site:
 Let us Matcha,https://letusmatcha.com/,1,archive,2026-10-19,Verified
 lets speak,https://letspeak.sa/,1,archive,2026-10-19,Verified
 Levirgo beauty,https://levirgobeauty.com/,1783,sitemap,2026-10-19,Verified
-LG SA,https://www.lg.com/sa/,20563,sitemap (SA pages only),2026-10-19,Verified
+LG SA,https://www.lg.com/sa/,20565,sitemap (partial: 401 of 408 sitemap files read),2026-10-19,Verified
 lia,https://lia-silk.com/,25,sitemap,2026-10-19,Verified
 Life Care,https://www.lifecare.com.sa/,63,sitemap,2026-10-19,Verified
 Life Lover,https://lifelover.co/,285,sitemap,2026-10-19,Verified
@@ -848,13 +848,13 @@ Lion Technology Establishment for Wholesale and Retail Trade,https://liontech-sh
 LionX,https://lionx.com.sa/,85,sitemap,2026-10-19,Verified
 lipault.com.sa,https://lipault.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lipault.com.sa', port=80): Max retries exceeded wit))",2026-10-19,Verified
 Lirio Store,https://lirio-store.com/,173,sitemap,2026-10-19,Verified
-lisa,https://lisa.sa/,24,sitemap,2026-10-19,Verified
+lisa,https://lisa.sa/,29,sitemap,2026-10-19,Verified
 LIU.JO,https://liujo.sa/,7149,sitemap,2026-10-19,Verified (secondary evidence)
 Live Gold,https://livegold.sa/,508,sitemap,2026-10-19,Verified
 Lobab,https://lobab.sa/,1,archive,2026-10-19,Verified
-LOCCA,https://locca1.com/,617,sitemap,2026-10-19,Verified
+LOCCA,https://locca1.com/,631,sitemap,2026-10-19,Verified
 Lockout LOTO supplier Saudi Arabia,https://industrialtool.shop/,17953,archive,2026-10-19,Verified
-Logitech,https://www.logitech.com/ar-sa/,256,sitemap (SA pages only),2026-10-19,Verified
+Logitech,https://www.logitech.com/ar-sa/,256,sitemap (partial: 97 of 103 sitemap files read),2026-10-19,Verified
 Lola | لولا,https://lola.com.sa/,26,sitemap,2026-10-19,Verified
 lolacasademunt,https://lolacasademunt.sa/,6557,sitemap,2026-10-19,Verified
 Lolita kpop store,https://lolitakpop.com/,4,archive,2026-10-19,Verified
@@ -864,7 +864,7 @@ Loofah Selections,https://loofah.sa/,685,sitemap,2026-10-19,Verified
 LOULOU Jewelry,https://loulou-jewelry-store.com/,8,archive,2026-10-19,Verified
 Love moments,https://lovemoments.net/,13,archive,2026-10-19,Verified
 Love time,https://lovetimesa.com/,12,archive,2026-10-19,Verified
-Lovely Memories,https://lovelymemories.sa/,84,sitemap,2026-10-19,Verified
+Lovely Memories,https://lovelymemories.sa/,448,sitemap,2026-10-19,Verified
 Lover Store,https://loverstoresa.com/,3,archive,2026-10-19,Verified
 Lrin,https://lrin-sa.com/,3,archive,2026-10-19,Verified
 Lucas Oil,https://lucasoil.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='lucasoil.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
@@ -874,31 +874,31 @@ lujain pencil,https://lujainpencil.com/,37,sitemap,2026-10-19,Verified
 LuLu Hypermarket,https://gcc.luluhypermarket.com/en-sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gcc.luluhypermarket.com', port=80): Max retries exc))",2026-10-19,Verified (secondary evidence)
 Luluah Gold Alternative Plated Accessories,https://lo1mm.com/,2539,sitemap,2026-10-19,Verified
 luna jewelry,https://lunajewelry89.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://lunajewelry89.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-Luxury Beauty & Perfume Online,https://beauty.givenchy.sa/,419,sitemap,2026-10-19,Verified
+Luxury Beauty & Perfume Online,https://beauty.givenchy.sa/,835,sitemap,2026-10-19,Verified
 Luxury Perfumes Authentic Care Products Shop Now at Asrarco,https://asrar-co.com/,10338,sitemap,2026-10-19,Verified
-Luxury: Balenciaga,https://www.balenciaga.com/en-sa/,0,sitemap (SA pages only),2026-10-19,Verified (secondary evidence)
+Luxury: Balenciaga,https://www.balenciaga.com/en-sa/,22704,sitemap (partial: 27 of 28 sitemap files read),2026-10-19,Verified (secondary evidence)
 Luxury: Bvlgari,https://www.bulgari.com/en-sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.bulgari.com', port=80): Max retries exceeded with u))",2026-10-19,Verified (secondary evidence)
 Luxury: Gucci,https://www.gucci.com/sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gucci.com', port=80): Max retries exceeded with url))",2026-10-19,Verified (secondary evidence)
 Luxury: Saint Laurent,https://www.ysl.com/en-sa/,1209,sitemap (SA pages only),2026-10-19,Verified (secondary evidence)
 M-F STORE,https://mfstores.com/,1,archive,2026-10-19,Verified
 Madar Hardware,https://madarhw.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.madarhw.com.sa', port=80): Max retries exceeded wit))",2026-10-19,Verified
 Madeleine,https://madeleine-sa.com/,1,archive,2026-10-19,Verified
-Madeleine,https://madeleine.sa/,628,sitemap,2026-10-19,Verified
+Madeleine,https://madeleine.sa/,628,sitemap (partial: 10 of 13 sitemap files read),2026-10-19,Verified
 Mademoisellesa,https://mademoisellesa.com/,97,sitemap,2026-10-19,Verified
 Mafak Equipment Company,https://mfk.sa/,3,archive,2026-10-19,Verified
 MAG LINE,https://magline-sa.com/,2,archive,2026-10-19,Verified
-MAGRABi KSA,https://www.magrabi.com/sa-en/,19487,sitemap (SA pages only),2026-10-19,Verified
+MAGRABi KSA,https://www.magrabi.com/sa-en/,38974,sitemap (SA pages only),2026-10-19,Verified
 Maher Store Smart Traking Devices Home Laser And Oxgen,https://maherstore.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='maherstore.com', port=443): Max retries exceeded with ))",2026-10-19,Verified
 Maico-llc Supply of Sandwich Panels in Jeddah and Saudi Arabia,https://maico-llc.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.maico-llc.com', port=80): Max retries exceeded with))",2026-10-19,Verified
 Main Website,https://richy.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.richy.sa', port=443): Max retries exceeded with ur))",2026-10-19,Verified
 Main Website,https://www.officeco.sa/,5553,sitemap,2026-10-19,Verified
-Maje KSA,https://maje.sa/,1462,sitemap,2026-10-19,Verified
-Malsa,https://malsa.sa/,20326,sitemap,2026-10-19,Verified
+Maje KSA,https://maje.sa/,1507,sitemap,2026-10-19,Verified
+Malsa,https://malsa.sa/,20457,sitemap,2026-10-19,Verified
 MANA,https://mana.sa/,40,sitemap,2026-10-19,Verified
 Manal.sub.line,https://manalsubline.com/,38,sitemap,2026-10-19,Verified
 Manar Store,https://manar.sa/,574,sitemap,2026-10-19,Verified
 manaralrawi,https://manaralrawi.com/,293,sitemap,2026-10-19,Verified
-manazilcom.com,https://manazilcom.com/,509,sitemap,2026-10-19,Verified
+manazilcom.com,https://manazilcom.com/,509,sitemap (partial: 7 of 9 sitemap files read),2026-10-19,Verified
 mandrian perfume,https://mandrianperfume.com/,48,sitemap,2026-10-19,Verified
 Mandy Care,https://mandy.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.mandy.sa', port=443): Max retries exceeded with ur))",2026-10-19,Verified
 Mango,https://shop.mango.com/sa/,,Not available (blocked by site: HTTP 429 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
@@ -908,7 +908,7 @@ Mansour Gold | منصور للذهب,https://mansour.com.sa/,3571,sitemap,2026-1
 MAQSAD ALNEJOUM,https://store.alnejoum.com.sa/,3737,sitemap,2026-10-19,Verified
 marble slab,https://www.marbleslab.sa/,379,sitemap,2026-10-19,Verified
 marimba,https://marimbaksa.com/,117,sitemap,2026-10-19,Verified
-Marks & Spencer Saudi Arabia,https://www.marksandspencer.sa/,8844,sitemap,2026-10-19,Verified
+Marks & Spencer Saudi Arabia,https://www.marksandspencer.sa/,9121,sitemap,2026-10-19,Verified
 MARLI New York,https://marlinewyork.com/,2589,sitemap (SA pages only),2026-10-19,Verified
 Marshan Store,https://marshanstore.com/,1330,sitemap,2026-10-19,Verified
 MARVELLE KIDS,https://marvelle-kids.com/,1,archive,2026-10-19,Verified
@@ -931,7 +931,7 @@ Maxpoint Store,https://maxpoint.sa/,2895,sitemap,2026-10-19,Verified
 Mayasim Store,https://mayasimstore1.com/,2,archive,2026-10-19,Verified
 Mayoh,https://mayoh.com.sa/,217,sitemap,2026-10-19,Verified
 Mazalla Company,https://mazallah.com/,118,archive,2026-10-19,Verified
-Mazare Company Agricultural Products Ltd. Co,https://www.mazare.sa/,310,sitemap,2026-10-19,Verified
+Mazare Company Agricultural Products Ltd. Co,https://www.mazare.sa/,310,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
 mazeed.sa,https://mazeed.sa/,3778,archive,2026-10-19,Verified
 mcmworldwide.ksa,https://mcmworldwide.sa/,1247,sitemap,2026-10-19,Verified
 MCS,https://mycherryskin.com/,2,archive,2026-10-19,Verified
@@ -977,7 +977,7 @@ Moonish party,https://moonishparty.com/,534,sitemap,2026-10-19,Verified
 Morgan Arabia Trading Company,https://morganit.sa/,73565,sitemap,2026-10-19,Verified
 Mothercare KSA,https://www.mothercare.com.sa/,6352,sitemap,2026-10-19,Verified
 Motorix اكسسوارات سيارات وقطع غيار,https://motorixsa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://motorixsa.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-motorola KSA,https://www.motorola.com/sa/,74,sitemap (SA pages only),2026-10-19,Verified
+motorola KSA,https://www.motorola.com/sa/,74,sitemap (partial: 48 of 51 sitemap files read),2026-10-19,Verified
 Motors LED,https://motors-led.com/,90,sitemap,2026-10-19,Verified
 Moussallati Gourmet,https://makool.sa/,53,sitemap,2026-10-19,Verified
 Mr. Oud Store,https://mroudstore.com/,13,sitemap,2026-10-19,Verified
@@ -997,7 +997,7 @@ myAster,https://www.myaster.sa/,,Not available (error: ValueError: invalid liter
 Mybag71,https://mybag71.com/,593,sitemap,2026-10-19,Verified
 mycorner369,https://mycorner369.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 MyInvite,https://myinvite.sa/,12,archive,2026-10-19,Verified
-mymenusa,https://mymenu.sa/,143,sitemap,2026-10-19,Verified
+mymenusa,https://mymenu.sa/,240,sitemap,2026-10-19,Verified
 MZN BODYCARE,https://mznbodycare.com/,120,sitemap,2026-10-19,Verified
 N O V E M B E R,https://novemberline.com/,1,archive,2026-10-19,Verified
 N4LED,https://n4led.com/,1,archive,2026-10-19,Verified
@@ -1010,27 +1010,27 @@ Nahdi Pharmacy,https://www.nahdionline.com/en-sa/,117029,sitemap (SA pages only)
 NAJDI,https://najdi.sa/,83,sitemap,2026-10-19,Verified
 Namat,https://namat.sa/,77,sitemap,2026-10-19,Verified
 Namshi,https://www.namshi.com/saudi-en/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.namshi.com', port=80): Read timed out. (read timeou))",2026-10-19,Verified (secondary evidence)
-Nano Circuit Store,https://nanocircuit.sa/,0,shop-page total,2026-10-19,Verified
+Nano Circuit Store,https://nanocircuit.sa/,,Not available (no sitemap; shop-page total reported 0),2026-10-19,Verified
 Naqaa Al Ain,https://nqa.com.sa/,332,sitemap,2026-10-19,Verified
 Naqsk.Shi Online Store,https://agfonlinestore.com/,28,sitemap,2026-10-19,Verified
-Natural Beauty متجر منتجات طبيعية للشعر والجمال في السعودية,https://natural-beauty-glow.com/,18,sitemap,2026-10-19,Verified
+Natural Beauty متجر منتجات طبيعية للشعر والجمال في السعودية,https://natural-beauty-glow.com/,29,sitemap,2026-10-19,Verified
 "Nay_smay, Beauty",https://nay-smay.com/,3,archive,2026-10-19,Verified
 NAYA STUDIO,https://naya-studio1.com/,3,archive,2026-10-19,Verified
-Nayomi-KSA,https://sa.nayomi.com/,2993,sitemap,2026-10-19,Verified
-NCC,https://nationalcare.com.sa/,129,sitemap,2026-10-19,Verified
-ne.abaya,https://neabaya.com/,102,sitemap,2026-10-19,Verified
+Nayomi-KSA,https://sa.nayomi.com/,3551,sitemap,2026-10-19,Verified
+NCC,https://nationalcare.com.sa/,173,sitemap,2026-10-19,Verified
+ne.abaya,https://neabaya.com/,110,sitemap,2026-10-19,Verified
 Nerdz Corner,https://nerdzcornerme.com/,9,archive,2026-10-19,Verified
-Nespresso KSA,https://www.nespresso.com/sa/,549,sitemap (SA pages only),2026-10-19,Verified
+Nespresso KSA,https://www.nespresso.com/sa/,549,sitemap (partial: 103 of 105 sitemap files read),2026-10-19,Verified
 Netronics,https://netronics.sa/,1,archive,2026-10-19,Verified
 NeuroLab RX منتجات طبيعية للعناية بالشعر وفروة الرأس,https://neurolabrx.com/,2,archive,2026-10-19,Verified
 New Balance Saudi Arabia,https://www.newbalance.com.sa/,2727,sitemap,2026-10-19,Verified
-NEWPOWER SA,https://newpower.sa/,1222,sitemap,2026-10-19,Verified
-NewStep,https://newstep.sa/,5016,sitemap,2026-10-19,Verified
+NEWPOWER SA,https://newpower.sa/,1334,sitemap,2026-10-19,Verified
+NewStep,https://newstep.sa/,5035,sitemap,2026-10-19,Verified
 Next,https://www.next.sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified
-next-gen,https://nextgensol.com.sa/,51,sitemap,2026-10-19,Verified
+next-gen,https://nextgensol.com.sa/,60,sitemap,2026-10-19,Verified
 Nice,https://www.nice.com.sa/,2368,sitemap,2026-10-19,Verified
 Nice store,https://nicestore20.com/,551,sitemap,2026-10-19,Verified
-NICHE PERFUMS,https://niche.sa/,4624,sitemap,2026-10-19,Verified
+NICHE PERFUMS,https://niche.sa/,4985,sitemap,2026-10-19,Verified
 Nike,https://www.nike.sa/,33388,sitemap,2026-10-19,Verified
 Nine Card,https://nine9card.com/,147,sitemap,2026-10-19,Verified
 Nintendo,https://www.nintendo.sa/,105,sitemap,2026-10-19,Verified
@@ -1038,7 +1038,7 @@ Nippon Matcha,https://nippon-matcha.com/,,"Not available (sitemap present but yi
 Nk_abayaline,https://nk-abayaline.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 NMA,https://nmastores.com/,15232,sitemap,2026-10-19,Verified
 No sound,https://nosound-coffee.com/,3,archive,2026-10-19,Verified
-Noha Nabil KSA,https://nohanabil.sa/,53,sitemap,2026-10-19,Verified
+Noha Nabil KSA,https://nohanabil.sa/,145,sitemap,2026-10-19,Verified
 NONHOMES,https://nonhomes.com/,307,sitemap,2026-10-19,Verified
 Noor store,https://noorstore8.com/,1,archive,2026-10-19,Verified
 noorphir,https://noorphir.com/,1,archive,2026-10-19,Verified
@@ -1047,32 +1047,32 @@ nouraonline8,https://nouraonline8.com/,,"Not available (sitemap present but yiel
 Nova abaya,https://novadetails.com/,427,sitemap,2026-10-19,Verified
 Novell,https://novell.sa/,21,sitemap,2026-10-19,Verified
 Now Showings منتجات عناية أنثوية خاصة وحصرية لعنايتك الفائقة,https://now-showings.com/,17,sitemap,2026-10-19,Verified
-Noētic,https://noetic.sa/,505,sitemap,2026-10-19,Verified
+Noētic,https://noetic.sa/,799,sitemap,2026-10-19,Verified
 NUDA,https://nuda.sa/,253,sitemap,2026-10-19,Verified
 NURSELY STORE,https://inursely.com/,1,archive,2026-10-19,Verified
-Nusuki Saudi Arabia,https://www.nusuki.com.sa/,1100,sitemap,2026-10-19,Verified
-NUTRBOX متجر المكملات الرياضية والبروتين والفيتامينات الاصلية,https://nutrbox.com/,29,sitemap,2026-10-19,Verified
-Nutters.sa,https://nutters.sa/,36,sitemap,2026-10-19,Verified
+Nusuki Saudi Arabia,https://www.nusuki.com.sa/,1157,sitemap,2026-10-19,Verified
+NUTRBOX متجر المكملات الرياضية والبروتين والفيتامينات الاصلية,https://nutrbox.com/,40,sitemap,2026-10-19,Verified
+Nutters.sa,https://nutters.sa/,46,sitemap,2026-10-19,Verified
 Ny fashion designing centre,https://nyfashiontrainingcenter.com/,20,sitemap,2026-10-19,Verified
-nāp,https://nap.sa/,6,sitemap,2026-10-19,Verified
+nāp,https://nap.sa/,7,sitemap,2026-10-19,Verified
 Oam Water,https://oamwatersa.com/,1,archive,2026-10-19,Verified
 Ocean Spray®,https://www.oceanspray.sa/,145,sitemap,2026-10-19,Verified
-oceandeal,https://oceandeal.com.sa/,20,sitemap,2026-10-19,Verified
+oceandeal,https://oceandeal.com.sa/,22,sitemap,2026-10-19,Verified
 Oceans Anime Store,https://oceansanimestore.com/,13,archive,2026-10-19,Verified
-Odred Premium Inspired Perfumes and Fragrances,https://odred.sa/,52,sitemap,2026-10-19,Verified
+Odred Premium Inspired Perfumes and Fragrances,https://odred.sa/,167,sitemap,2026-10-19,Verified
 OENTIRA,https://oentira.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://oentira.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-Office Hub,https://officehub.sa/,427,sitemap,2026-10-19,Verified
+Office Hub,https://officehub.sa/,717,sitemap,2026-10-19,Verified
 Official Crocs KSA,https://en-sa.crocsgulf.com/,7195,sitemap,2026-10-19,Verified
 Official Messika Website,https://www.messika.com/sa_en/,4502,sitemap (SA pages only),2026-10-19,Verified (secondary evidence)
 OffiSpace,https://offispace.sa/,122,sitemap,2026-10-19,Verified
-Ohod Electric,https://ohod.com.sa/,7854,sitemap,2026-10-19,Verified
+Ohod Electric,https://ohod.com.sa/,7929,sitemap,2026-10-19,Verified
 Ola! Granola,https://ola-granola.com/,9,archive,2026-10-19,Verified
 ola-محمصة اولا,https://ola.sa/,25,shop-page total,2026-10-19,Verified
 ola0fficial,https://ola0fficial.com/,1,archive,2026-10-19,Verified
 ondasdeouro,https://altmezzplss.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://ondasdeouro.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='ondasdeouro.com', port=443): Max retries exceeded with"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 ONTIME | Saudi Arabia Official Store,https://sa.ontime.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.sa.ontime.com', port=80): Max retries exceeded with))",2026-10-19,Verified
 oopsie,https://oopsie.sa/,11,sitemap,2026-10-19,Verified
-OPPO,https://www.oppo.com/sa/,426,sitemap (SA pages only),2026-10-19,Verified
+OPPO,https://www.oppo.com/sa/,426,sitemap (partial: 118 of 119 sitemap files read),2026-10-19,Verified
 Orai,https://oraiclothing.com/,4,archive,2026-10-19,Verified
 Orange Bed and Bath اورنج بيد اند باث,https://www.orangebedbath.com/,593,sitemap,2026-10-19,Verified
 Order Your Parts - اطلب قطعك,https://orderurparts.com.sa/,95632,sitemap,2026-10-19,Verified
@@ -1081,7 +1081,7 @@ Oriflame Saudi Arabia | أوريفليم,https://www.oriflamesa.com/,133,shop-pa
 oright-ksa,https://oright-sa.com/,134,archive,2026-10-19,Verified
 Ormella,https://ormella-dal.com/,73,sitemap,2026-10-19,Verified
 OSIF PERFUMES,https://osifp.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://osifpe.com/ar/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='osifpe.com', port=443): Max retries exceeded with url:""), ('https://osifpe.com/ar/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='osifpe.com', port=443): Max retries exceeded with url:"")]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",2026-10-19,Verified
-Otherways,https://otherways.com.sa/,15,sitemap,2026-10-19,Verified
+Otherways,https://otherways.com.sa/,35,sitemap,2026-10-19,Verified
 Oud and Bakhor,https://zayanoud.com/,52,sitemap,2026-10-19,Verified
 Oud Elite,https://sa.oudelite.com/,80,archive,2026-10-19,Verified
 oudtan,https://oudtan.com/,8,sitemap,2026-10-19,Verified
@@ -1094,22 +1094,22 @@ Oysho,https://www.oysho.com/sa/,,Not available (blocked by site: HTTP 403 on rob
 O’rig,https://origstore.com/,283,sitemap,2026-10-19,Verified
 Panda KSA,https://panda.sa/,24614,sitemap,2026-10-19,Verified
 PaperWood,https://paperwoodstore.com/,433,sitemap,2026-10-19,Verified
-Papillon,https://papillon.com.sa/,3594,sitemap,2026-10-19,Verified
+Papillon,https://papillon.com.sa/,4579,sitemap,2026-10-19,Verified
 PARAJOHN SAUDI ARABIA,https://parajohn.sa/,233,sitemap,2026-10-19,Verified
 paralleluniverse,https://parallel--universe.com/,4,archive,2026-10-19,Verified
 Paredo,https://paredosa.com/,,Not available (no sitemap found; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 Parfum samples,https://amalashope.com/,1815,sitemap,2026-10-19,Verified
 Parfume Saudi Arabia,https://parfum.sa/,13029,sitemap,2026-10-19,Verified
 Party Centre Saudi Arabia,https://partycentre.sa/,17919,sitemap,2026-10-19,Verified
-PARTY STATION,https://partystation.sa/,614,sitemap,2026-10-19,Verified
+PARTY STATION,https://partystation.sa/,623,sitemap,2026-10-19,Verified
 Passion & Perfection,https://pass10n.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.pass10n.com', port=80): Max retries exceeded with u))",2026-10-19,Verified
 PASSIONE,https://passione17.com/,10,sitemap,2026-10-19,Verified
 Passionscrab,https://passionscrub.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://salla.sa/passionscrab/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='salla.sa', port=443): Max retries exceeded with url: /""), ('https://salla.sa/passionscrab/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='salla.sa', port=443): Max retries exceeded with url: /"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Patch Perfume,https://patchperfume.com/,127,sitemap,2026-10-19,Verified
 PATT STORE,https://pattstore.com/,151,archive,2026-10-19,Verified
-"PAYA, specialists in the innovative food industry",https://paya-ksa.com/,3703,sitemap,2026-10-19,Verified
-pbct,https://pbct.com.sa/,260,sitemap,2026-10-19,Verified
-PCARE - PCARE - Car Care Center,https://pcare.sa/,151,sitemap,2026-10-19,Verified
+"PAYA, specialists in the innovative food industry",https://paya-ksa.com/,8703,sitemap,2026-10-19,Verified
+pbct,https://pbct.com.sa/,287,sitemap,2026-10-19,Verified
+PCARE - PCARE - Car Care Center,https://pcare.sa/,151,sitemap (partial: 16 of 17 sitemap files read),2026-10-19,Verified
 pclandstore.sa,https://pclandstore.sa/,3317,sitemap,2026-10-19,Verified
 Peninsula Sports,https://peninsulasports.sa/,112,sitemap,2026-10-19,Verified
 Perfume Box,https://perfumeboxsa.com/,168,sitemap,2026-10-19,Verified
@@ -1123,7 +1123,7 @@ Pet Shop,https://petshop.sa/,505,sitemap,2026-10-19,Verified
 Petaholic,https://petaholic.sa/,1691,sitemap,2026-10-19,Verified
 Petit Bateau KSA,https://www.petit-bateau.sa/,2616,sitemap,2026-10-19,Verified
 Phizz,https://phizz.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://phizz.sa/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-Physionatal,https://physionatal.com.sa/,828,sitemap,2026-10-19,Verified
+Physionatal,https://physionatal.com.sa/,890,sitemap,2026-10-19,Verified
 Picks by r,https://picksbyr.com/,1,archive,2026-10-19,Verified
 PIGMENT,https://pigment.sa/,92,sitemap,2026-10-19,Verified
 PIK,https://pik.sa/,3525,archive,2026-10-19,Verified
@@ -1139,7 +1139,7 @@ Pop Magic Store,https://popmagicstore.com/,1243,sitemap,2026-10-19,Verified
 Portwest Saudi Arabia | Dammam | Saudi Rekaz,https://rekazsa.com.sa/,32,sitemap,2026-10-19,Verified
 Power Saving Systems Co,https://www.pss-trading.com.sa/,680,sitemap,2026-10-19,Verified
 Prada,https://www.prada.com/sa/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.prada.com', port=80): Read timed out. (read timeout))",2026-10-19,Verified
-Premium,https://premium.com.sa/,68,sitemap,2026-10-19,Verified
+Premium,https://premium.com.sa/,68,sitemap (partial: 7 of 8 sitemap files read),2026-10-19,Verified
 Prettyva,https://oneboop.com/,3,archive,2026-10-19,Verified
 PrimeGoal متجر تيشيرتات رياضية أصلية بجودة عالية,https://prime-goal.com/,2,archive,2026-10-19,Verified
 pro needle,https://pro-needle22.com/,3,archive,2026-10-19,Verified
@@ -1147,7 +1147,7 @@ Pro-Trips,https://ptrips.sa/,41,sitemap,2026-10-19,Verified
 PROICON,https://proiconsa.com/,2,archive,2026-10-19,Verified
 Project ZERO Next,https://www.clarks.sa/,72,archive,2026-10-19,Verified (secondary evidence)
 Prolife برولايف,https://prolife.sa/,467,sitemap,2026-10-19,Verified
-Promic,https://promic.sa/,512,sitemap,2026-10-19,Verified
+Promic,https://promic.sa/,512,sitemap (partial: 7 of 8 sitemap files read),2026-10-19,Verified
 Promise,https://promise.com.sa/,10323,sitemap,2026-10-19,Verified
 Promo House,https://promohousegifts.com/,376,sitemap,2026-10-19,Verified
 Prophy,https://prophy.sa/,37,sitemap,2026-10-19,Verified
@@ -1257,13 +1257,13 @@ Sakura Cat,https://sakuracats.com/,150,sitemap,2026-10-19,Verified
 Salamatic,https://salamatic.com.sa/,128,sitemap,2026-10-19,Verified
 Salamtk Store,https://salamtk-store.com/,1568,sitemap,2026-10-19,Verified
 Salil,https://salil-sa.com/,2,archive,2026-10-19,Verified
-Sam Edelman Saudi,https://samedelman.sa/,228,sitemap,2026-10-19,Verified
+Sam Edelman Saudi,https://samedelman.sa/,439,sitemap,2026-10-19,Verified
 sam shop store,https://samashoop.com/,2,archive,2026-10-19,Verified
 SAMA CARE,https://samacare-sa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://smcare.beauty/ar/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='smcare.beauty', port=443): Max retries exceeded with u""), ('https://smcare.beauty/ar/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='smcare.beauty', port=443): Max retries exceeded with u"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Sama Roastery,https://samaroastery.com/,1,archive,2026-10-19,Verified
 SamaCafe,https://samacafe.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://samacafe.sa/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-Samena,https://samena-stores.com/,10944,sitemap,2026-10-19,Verified
-samsonite,https://samsonite.com.sa/,402,sitemap,2026-10-19,Verified
+Samena,https://samena-stores.com/,11629,sitemap,2026-10-19,Verified
+samsonite,https://samsonite.com.sa/,541,sitemap,2026-10-19,Verified
 Samsung sa,https://www.samsung.com/sa/,93983,sitemap (SA pages only),2026-10-19,Verified
 Sanad,https://sanadway.online/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='sanadway.online', port=443): Max retries exceeded with))",2026-10-19,Verified
 Sandro KSA,https://sandro.sa/,1937,sitemap,2026-10-19,Verified
@@ -1272,7 +1272,7 @@ Sapo Home,https://sapohome.com/,53,sitemap,2026-10-19,Verified
 sara abayah,https://saraabaya.com/,1,archive,2026-10-19,Verified
 Sarwna,https://sarwnasa.com/,754,sitemap,2026-10-19,Verified
 Satellite world,https://satellite-ksa.com/,285,sitemap,2026-10-19,Verified
-Sattec,https://sattec.com.sa/,63,sitemap,2026-10-19,Verified
+Sattec,https://sattec.com.sa/,2450,sitemap,2026-10-19,Verified
 Saudi 3D Printed Furniture Lighting and Home Decor,https://fused.sa/,65,sitemap,2026-10-19,Verified
 Saudi batteries,https://store.khadamat.com.sa/,2221,sitemap,2026-10-19,Verified
 SAUDI CLUB,https://saudiclubsa.com/,1,archive,2026-10-19,Verified
@@ -1299,7 +1299,7 @@ sent solutions حلول عطرية عطور فاخرة وتركيبات حصري
 Sephora,https://www.sephora.me/sa-ar/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Sephra,https://sephrasa.com/,2,archive,2026-10-19,Verified
 Seto,https://seto-c2.com/,636,sitemap,2026-10-19,Verified
-sfi.sa,https://sfi.sa/,73,sitemap,2026-10-19,Verified
+sfi.sa,https://sfi.sa/,92,sitemap,2026-10-19,Verified
 SH | نوم هانئ,https://sh.sa/,3,archive,2026-10-19,Verified
 SHADER,https://shader.sa/,392,sitemap,2026-10-19,Verified
 shaheenslj,https://shaheenslj.com/,1030,sitemap,2026-10-19,Verified
@@ -1309,7 +1309,7 @@ She bloom احصلى الان على منتجاتك المتنوعه من مكا
 SHEIN (Saudi Arabia),https://ar.shein.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ar.shein.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
 Shelf,https://shelf.sa/,358,sitemap,2026-10-19,Verified
 shera,https://shera.sa/,67,archive,2026-10-19,Verified
-SheSafe,https://shesafe.sa/,58,sitemap,2026-10-19,Verified
+SheSafe,https://shesafe.sa/,61,sitemap,2026-10-19,Verified
 Shey,https://shey3.com/,20,archive,2026-10-19,Verified
 Shield Shop,https://shieldshopsa.com/,3,archive,2026-10-19,Verified
 Shisha,https://shisha.com.sa/,1727,sitemap,2026-10-19,Verified
@@ -1318,16 +1318,16 @@ Shop Kaafmeem Women Saudi Abayas and Modest Fashion Online,https://kaafmeem.com/
 ShopCasa لاختياراتك اليومية,https://shop-casa.com/,4671,sitemap,2026-10-19,Verified
 SHOPPING SHU,https://shoppingshu.com/,695,sitemap,2026-10-19,Verified
 shovel شفل,https://al-shovel.com/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
-Show Muscles,https://showmuscles.com/,136,sitemap,2026-10-19,Verified
+Show Muscles,https://showmuscles.com/,169,sitemap,2026-10-19,Verified
 SIDEWALK,https://sidewalk.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
-SideWalks,https://sidewalksa.com/,42,sitemap,2026-10-19,Verified
+SideWalks,https://sidewalksa.com/,73,sitemap,2026-10-19,Verified
 SIDQ,https://sidq.com.sa/,82,sitemap,2026-10-19,Verified
 siesta mattresses,https://siesta.sa/,45,sitemap,2026-10-19,Verified
-silkskin,https://bitola4care.com/,12,sitemap,2026-10-19,Verified
+silkskin,https://bitola4care.com/,20,sitemap,2026-10-19,Verified
 Silverback | سيلفرباك,https://silverback.sa/,399,sitemap,2026-10-19,Verified
 SIMAT Be Healthy Organic Foods,https://simat.sa/,15,archive,2026-10-19,Verified
 SIMCO,https://simco.com.sa/,121,sitemap,2026-10-19,Verified
-simplecityksa,https://simplecity.sa/,1413,sitemap,2026-10-19,Verified
+simplecityksa,https://simplecity.sa/,1421,sitemap,2026-10-19,Verified
 Sir Alanakah عطور مكياج وأدوات تجميل بجودة عالية,https://sir-alanakah.com/,209,sitemap,2026-10-19,Verified
 Sirbcare,https://sirbcare.com.sa/,170,sitemap,2026-10-19,Verified
 SIRIUS,https://sirius.com.sa/,318,sitemap,2026-10-19,Verified
@@ -1347,7 +1347,7 @@ Smart Way,https://smart-way.com.sa/,120,sitemap,2026-10-19,Verified
 Smile shop,https://simpershop.com/,19,archive,2026-10-19,Verified
 Snacko,https://snacko.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://snack.sa/ar/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Snafya store,https://snafya-store.com/,205,sitemap,2026-10-19,Verified
-SNH,https://networkhub.sa/,75,sitemap,2026-10-19,Verified
+SNH,https://networkhub.sa/,75,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
 SNS Roasteryy,https://snsroasteryy.com/,20,sitemap,2026-10-19,Verified
 So Natural Soap,https://so-natural-soap.com/,123,sitemap,2026-10-19,Verified
 Soberness20,https://soberness20.com/,85,sitemap,2026-10-19,Verified
@@ -1359,20 +1359,20 @@ Solitair,https://solitaire-perfume.com/,30,sitemap,2026-10-19,Verified
 Sony World - KSA,https://sonyworld.sa/,801,sitemap,2026-10-19,Verified
 SoqBox,https://soqbox.com/,185,sitemap,2026-10-19,Verified
 SORA,https://sora-designs.com/,2,archive,2026-10-19,Verified
-Sorrah for Spices and Seasonings,https://sorrah.sa/,382,sitemap,2026-10-19,Verified
+Sorrah for Spices and Seasonings,https://sorrah.sa/,423,sitemap,2026-10-19,Verified
 Souls,https://soulsabbayas.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
-Sour_9sweets,https://sour9sweets.com/,100,sitemap,2026-10-19,Verified
+Sour_9sweets,https://sour9sweets.com/,106,sitemap,2026-10-19,Verified
 SOX,https://sox.sa/,7,sitemap,2026-10-19,Verified
 SP STORE,https://spstoreweb.com/,515,sitemap,2026-10-19,Verified
 SPACETR,https://spacetrr.com/,36,sitemap,2026-10-19,Verified
-SparkTech - برنامج متكامل لتنمية أعمالك,https://sparktech.sa/,72,sitemap,2026-10-19,Verified
-Special Matcha,https://specialmatcha.com/,1,sitemap,2026-10-19,Verified
+SparkTech - برنامج متكامل لتنمية أعمالك,https://sparktech.sa/,72,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
+Special Matcha,https://specialmatcha.com/,2,sitemap,2026-10-19,Verified
 SPECTER,https://specter0.com/,2,archive,2026-10-19,Verified
 Speero,https://speero.net/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.speero.net', port=80): Max retries exceeded with ur))",2026-10-19,Verified
 SpiriHub Roastery,https://spirithub.sa/,3,archive,2026-10-19,Verified
 Spirit,https://spirit.sa/,23,sitemap,2026-10-19,Verified
 Splash,https://www.splashfashions.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
-Splus اس بلس,https://splus.sa/,0,sitemap (SA pages only),2026-10-19,Verified
+Splus اس بلس,https://splus.sa/,1807,"sitemap (whole site, no market segment)",2026-10-19,Verified
 sportfit,https://sportfit-store.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://sportfit-store.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Sports & Hobbies رياضات و هوايات,https://hobbies.sa/,1747,sitemap,2026-10-19,Verified
 sportslifeksa,https://sports-life-ksa.com/,4,archive,2026-10-19,Verified
@@ -1408,14 +1408,14 @@ Swiss Arabian KSA,https://ksa.swissarabian.com/,627,sitemap,2026-10-19,Verified
 Sync Store,https://sync.sa/,1602,sitemap,2026-10-19,Verified
 Syphiros Anime Store,https://syphirostore.com/,459,sitemap,2026-10-19,Verified
 TableArts,https://tablearts.com.sa/,174,archive,2026-10-19,Verified
-TaibahCare,https://tcare.com.sa/,1696,sitemap,2026-10-19,Verified
+TaibahCare,https://tcare.com.sa/,1729,sitemap (partial: 7 of 8 sitemap files read),2026-10-19,Verified
 Taj Altanmia,https://tajsolar.sa/,1,archive,2026-10-19,Verified
 Talal Store,https://talalstore.sa/,116,sitemap,2026-10-19,Verified
 Talaween Art,https://talaween-art.com/,4,archive,2026-10-19,Verified
 Tamimi Markets Online,https://shop.tamimimarkets.com/,20282,sitemap,2026-10-19,Verified
 Tamimi Store,https://tamimistore.com/,4685,sitemap,2026-10-19,Verified
 Tamkeen Stores,https://tamkeenstores.com.sa/,5518,sitemap,2026-10-19,Verified
-Tamrone Arabia تامرون العربية,https://tamrone.sa/,318,sitemap,2026-10-19,Verified
+Tamrone Arabia تامرون العربية,https://tamrone.sa/,318,sitemap (partial: 18 of 19 sitemap files read),2026-10-19,Verified
 Tara Abaya,https://taraabaya.com/,1,archive,2026-10-19,Verified
 TARAF BEAUTYCARE -أفضل متجر منتجات عناية بالجسم,https://tarafbeautycare.com/,71,sitemap,2026-10-19,Verified
 Tariff Trading Company,https://tariff.sa/,437,sitemap,2026-10-19,Verified
@@ -1432,7 +1432,7 @@ Tennis Land | تنس لاند,https://tennis.com.sa/,132,sitemap,2026-10-19,Veri
 Tern,https://ternstore.com/,235,sitemap,2026-10-19,Verified
 test new ojoj,https://fatma-crn.com/,1638,sitemap,2026-10-19,Verified
 TEXT Store,https://text.sa/,10,sitemap,2026-10-19,Verified
-The Body Shop,https://www.thebodyshop.com.sa/,957,sitemap,2026-10-19,Verified (secondary evidence)
+The Body Shop,https://www.thebodyshop.com.sa/,957,sitemap (partial: 10 of 12 sitemap files read),2026-10-19,Verified (secondary evidence)
 THE FACE SHOP - KSA,https://thefaceshop.com.sa/,1263,sitemap,2026-10-19,Verified
 The First Makeup منتجات التان الأصلية للحصول على برونزاج مثالي,https://thefirstmakeup.com/,65,sitemap,2026-10-19,Verified
 The Geeky Store,https://thegeekystoresa.com/,50,sitemap,2026-10-19,Verified
@@ -1491,7 +1491,7 @@ United Medical Supp,https://www.ums.sa/,65,sitemap,2026-10-19,Verified
 Unix,https://unix.sa/,229,sitemap,2026-10-19,Verified
 Unknown Design,https://unknowndesignsa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://unknown-design-sa.com/ar/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='unknown-design-sa.com', port=443): Max retries exceede""), ('https://unknown-design-sa.com/ar/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='unknown-design-sa.com', port=443): Max retries exceede"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 uptown,https://uptown-sa.com/,358,sitemap,2026-10-19,Verified
-USTC - Compair KSA - Utilities Solutions Trading Company,https://www.ustc.com.sa/,110,sitemap,2026-10-19,Verified
+USTC - Compair KSA - Utilities Solutions Trading Company,https://www.ustc.com.sa/,110,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
 V Boutique,https://vilod-boutique.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 V'LOST,https://vlostperfumes.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 VA,https://varesine.com/,1,archive,2026-10-19,Verified
@@ -1581,12 +1581,12 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 آفاق المستقبل للتسويق,https://afaqalmustaqbal.sa/,15,sitemap,2026-10-19,Verified
 آل الطالب متجر مستلزمات الزراعة في السعودية بذور وأسمدة وأدوات ري,https://altalebagri.com/,1396,sitemap,2026-10-19,Verified
 آنية المنزل الراقي,https://homeutensils.com.sa/,47067,sitemap,2026-10-19,Verified
-آي بلاست ( iplast ),https://iplast.com.sa/,94,sitemap,2026-10-19,Verified
+آي بلاست ( iplast ),https://iplast.com.sa/,127,sitemap,2026-10-19,Verified
 آيلاش للبصريات,https://ilash.com.sa/,4580,archive,2026-10-19,Verified
 أبها قيمز ABHA GAMES,https://abhagames.sa/,111,sitemap,2026-10-19,Verified
 أبهه ملابس وأكسسوارات للفتيات 4-18سنة,https://obaha.com.sa/,491,sitemap,2026-10-19,Verified
 أبو صافي للأقمشة,https://abousafi.com/,234,sitemap,2026-10-19,Verified
-أبيات,https://www.abyat.com/sa/,18484,sitemap (SA pages only),2026-10-19,Verified
+أبيات,https://www.abyat.com/sa/,21948,sitemap (SA pages only),2026-10-19,Verified
 أثاث نور كنب فاخر غرف نوم طاولات أسرة تصميم عصري,https://furniture-nor.com/,1705,sitemap,2026-10-19,Verified
 أثر,https://ksa-athar.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://ksa-athar.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 أثر للطباعة على الملابس تصميم وطباعة تيشيرتات بجودة ممتازة,https://atharst0re.com/,525,sitemap,2026-10-19,Verified
@@ -1634,7 +1634,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 أمول Amol,https://amol-sa.com/,26,sitemap,2026-10-19,Verified
 أمير الطيب,https://ameeraltib.com/,311,sitemap,2026-10-19,Verified
 أنارة . سباكة . أدوات صحية وأكثر . حلول مميزة,https://baitetqan.com/,4,archive,2026-10-19,Verified
-أناقة سيدات,https://anakatsayidat.sa/,2257,sitemap,2026-10-19,Verified
+أناقة سيدات,https://anakatsayidat.sa/,2257,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
 أناقتيVIP,https://anaqtivip.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://anaqtivip.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 أندر آرمر السعودية,https://www.underarmour.sa/,9010,sitemap,2026-10-19,Verified
 أنفاسك بخور,https://hey-a.com/,3,archive,2026-10-19,Verified
@@ -1658,7 +1658,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 أُناس,https://saudi.ounass.com/,394162,sitemap,2026-10-19,Verified
 إبداعات الصفوة Feeah,https://feeah1.com/,5215,sitemap,2026-10-19,Verified
 إبراق بالطيب سباق,https://saudi.ibraqperfumes.com/,349,sitemap,2026-10-19,Verified
-إراث,https://erath.sa/,356,sitemap,2026-10-19,Verified
+إراث,https://erath.sa/,356,sitemap (partial: 7 of 8 sitemap files read),2026-10-19,Verified
 إربا ستور,https://erba-store.com/,546,sitemap,2026-10-19,Verified
 إرث,https://erthsouvenirs.com/,2,archive,2026-10-19,Verified
 إرث محمد,https://store.ch.org.sa/,45,sitemap,2026-10-19,Verified
@@ -1761,7 +1761,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 الحقيبة الماسية,https://alhaqibaalmasia.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://thediamondbag.com/sitemap-1.xml', ""SSLError: HTTPSConnectionPool(host='thediamondbag.com', port=443): Max retries exceeded wi""), ('https://thediamondbag.com/sitemap-2.xml', ""SSLError: HTTPSConnectionPool(host='thediamondbag.com', port=443): Max retries exceeded wi"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 الحلول الذكية للطاقة | SSP,https://ssp.com.sa/,1,archive,2026-10-19,Verified
 الحميضي للعطور,https://alhomaidhi.com.sa/,1351,sitemap,2026-10-19,Verified
-الخزائن الأنيقة,https://uniqueclosets.sa/,0,shop-page total,2026-10-19,Verified
+الخزائن الأنيقة,https://uniqueclosets.sa/,,Not available (no sitemap; shop-page total reported 0),2026-10-19,Verified
 الخزامى للطيب,https://teeb-alkhozama.com/,77,sitemap,2026-10-19,Verified
 الخلية,https://firsthive.sa/,6,sitemap,2026-10-19,Verified
 الخليفة للعسل البري,https://honey-khalifah.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
@@ -1870,7 +1870,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 المتجر الذكي,https://smart.com.sa/,685,sitemap,2026-10-19,Verified
 المتجر الرسمي لمنتجات نوره بوعوض,https://norabuawadh.com/,109,sitemap,2026-10-19,Verified
 المتجر السعودي لقطع غيار السيارات,https://saudipartsstore.com/,63,archive,2026-10-19,Verified
-المتجر الطبي السعودي,https://saudimedicalstore.com/,9473,sitemap,2026-10-19,Verified
+المتجر الطبي السعودي,https://saudimedicalstore.com/,9474,sitemap (partial: 23 of 34 sitemap files read),2026-10-19,Verified
 المتجر العملاق ذكاء لجوالك و أمان لمنزلك,https://meggastore.net/,170,sitemap,2026-10-19,Verified
 المحيط الأطلسي للاستقدام,https://almuhitalatlasi.sa/,9,archive,2026-10-19,Verified
 المذاق الحديث Modern Taste,https://moderntaste.online/,399,sitemap,2026-10-19,Verified
@@ -1904,7 +1904,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 النحل الجوال وجهتكم الأولى لأجود عسل طبيعي ومنتجات مضمونة,https://alnahalaljwal.com.sa/,580,sitemap,2026-10-19,Verified
 النسر للاحذية افضل متجر احذية سعوديه اون لاين,https://eagle-shoes.com/,333,sitemap,2026-10-19,Verified
 النظارة الطبية,https://medicalglasses.sa/,50,sitemap,2026-10-19,Verified
-النظرة الاحترافية للدعاية والإعلان,https://pvit.sa/,108,sitemap,2026-10-19,Verified
+النظرة الاحترافية للدعاية والإعلان,https://pvit.sa/,108,sitemap (partial: 12 of 13 sitemap files read),2026-10-19,Verified
 النعيم للعود alneaim for oud,https://alneaim-for-oud.com/,59,sitemap,2026-10-19,Verified
 النورس لحلول المياه,https://alnawras.com.sa/,136,sitemap,2026-10-19,Verified
 النوور لقطع غيار السيارات الجديدة,https://alnoor-online.com/,13286,sitemap,2026-10-19,Verified
@@ -1990,7 +1990,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 بستاشيو للقهوة,https://pistachioandcoffee.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://pistachioandcoffee.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 بستان,https://bostan.com.sa/,823,sitemap,2026-10-19,Verified
 بشت,https://bishtksa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://bishtksa.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-بصمة التقني للخدمات العقارية,https://basmaeltaqni.com.sa/,22,sitemap,2026-10-19,Verified
+بصمة التقني للخدمات العقارية,https://basmaeltaqni.com.sa/,32,sitemap,2026-10-19,Verified
 بصمة كيو,https://basmahq25.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://basmahq25.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 بقلاوة نيتشر,https://nature.sa/,18,sitemap,2026-10-19,Verified
 بكائر للعناية بالسيارات,https://bakaercarcare.com/,1,archive,2026-10-19,Verified
@@ -2023,13 +2023,13 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 بولاند لورا,https://bolandlaura.sa/,2224,archive,2026-10-19,Verified
 بولد براند | Bold Brand,https://boldbrand.sa/,276,sitemap,2026-10-19,Verified
 بوينت ون,https://pointoneonline.com/,844,sitemap,2026-10-19,Verified
-بي واي دي السعودية,https://www.byd.sa/,103,sitemap,2026-10-19,Verified
-بياع,https://bya3.cloud/,144747,sitemap,2026-10-19,Verified
+بي واي دي السعودية,https://www.byd.sa/,226,sitemap,2026-10-19,Verified
+بياع,https://bya3.cloud/,154747,sitemap,2026-10-19,Verified
 بيبرا هوم ستور أثاث تركي وغرف نوم وكنب فاخر,https://bebra.com.sa/,503,archive,2026-10-19,Verified
-بيبي نقوه,https://babynqwh.com/,64,sitemap,2026-10-19,Verified
-بيت الأحبار لتقنية المعلومات,https://inkhouse.com.sa/,121,sitemap,2026-10-19,Verified
+بيبي نقوه,https://babynqwh.com/,71,sitemap,2026-10-19,Verified
+بيت الأحبار لتقنية المعلومات,https://inkhouse.com.sa/,125,sitemap,2026-10-19,Verified
 بيت الأمراء,https://princeshouse.co/,2926,archive,2026-10-19,Verified
-بيت الأواني,https://baitalawani.sa/,567,sitemap,2026-10-19,Verified
+بيت الأواني,https://baitalawani.sa/,617,sitemap,2026-10-19,Verified
 بيت السمك توصيل سمك ومأكولات بحرية مبردة بالمنطقة الشرقية,https://baitalsamak.sa/,155,sitemap,2026-10-19,Verified
 بيت عزوز,https://azzouzhouse.com.sa/,26,archive,2026-10-19,Verified
 بيتزا يزيد,https://yazeedpizza.com/,66,sitemap,2026-10-19,Verified
@@ -2229,7 +2229,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 دار البوصلة,https://compasshouse.sa/,278,sitemap,2026-10-19,Verified
 دار الثلوثية للنشر والتوزيع,https://tholothia.com/,596,sitemap,2026-10-19,Verified
 دار الجداول,https://www.aljadawel.sa/,439,sitemap,2026-10-19,Verified
-دار الزبرج,https://daralzbrj.com.sa/,40,sitemap,2026-10-19,Verified
+دار الزبرج,https://daralzbrj.com.sa/,40,sitemap (partial: 4 of 5 sitemap files read),2026-10-19,Verified
 دار الصميعي للنشر,https://daralsomaies.com/,6,archive,2026-10-19,Verified
 دار العمرية للنشر والتوزيع,https://dar-alomariah.com/,20,sitemap,2026-10-19,Verified
 دار الفارس للزي السعودي,https://daralfares.com/,338,sitemap,2026-10-19,Verified
@@ -2248,7 +2248,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 دافان للأثاث,https://dafanfurniture.com/,408,sitemap,2026-10-19,Verified
 دانية ستور,https://dania.co/,2974,sitemap,2026-10-19,Verified
 داڤا كوتور DAVA COUTURE,https://davacouture.com/,378,sitemap,2026-10-19,Verified
-دبليو dablio Company Cars Rental | لتاجير السيارات,https://wcr.sa/,31,sitemap,2026-10-19,Verified
+دبليو dablio Company Cars Rental | لتاجير السيارات,https://wcr.sa/,31,sitemap (partial: 6 of 7 sitemap files read),2026-10-19,Verified
 درايف واي,https://driveway.sa/,5231,sitemap,2026-10-19,Verified
 درب العود,https://drbaloud.com/,141,sitemap,2026-10-19,Verified
 درب ستور,https://drbstwr.com/,5,archive,2026-10-19,Verified
@@ -2267,7 +2267,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 دهانات تايم,https://www.timepaints.com/,11138,sitemap,2026-10-19,Verified
 دهانات جوتن جدة و مكة تسوق الآن أون لاين دهانات داخلية وخارجية,https://jotundealers.com/,94,sitemap,2026-10-19,Verified
 دهن عود طبيعي مسك أبيض وبخور فاخر مذهل للعود,https://imuzhl.com/,103,sitemap,2026-10-19,Verified
-دواجن الوطنية,https://alwatania.sa/,181,sitemap,2026-10-19,Verified
+دواجن الوطنية,https://alwatania.sa/,181,sitemap (partial: 10 of 11 sitemap files read),2026-10-19,Verified
 دوان,https://dawan.sa/,1161,sitemap,2026-10-19,Verified
 دوم,https://dom.sa/,27,sitemap,2026-10-19,Verified
 ديزاج عباية,https://dezagg.com/,92,sitemap,2026-10-19,Verified
@@ -2297,7 +2297,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 رزق وعطاء,https://rizkataa-sa.com/,75,sitemap,2026-10-19,Verified
 رسج,https://rasjabaya.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://rasjabaya.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 رسيل,https://raseel.gift/ar-sa/,788,sitemap,2026-10-19,Verified
-رشود للحاسب | Rshod PC - Rshod PC,https://rpc.sa/,206,sitemap,2026-10-19,Verified
+رشود للحاسب | Rshod PC - Rshod PC,https://rpc.sa/,206,sitemap (partial: 6 of 7 sitemap files read),2026-10-19,Verified
 رضية القرشي,https://ralqurashi.com/,27,sitemap,2026-10-19,Verified
 رغوة,https://raghwa.store/,3919,sitemap,2026-10-19,Verified
 رفول,https://raffol.sa/,65,sitemap,2026-10-19,Verified
@@ -2357,7 +2357,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 زهر,https://zahr.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.zahr.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
 زهرة الربيع للمفارش,https://zahretalrabie.com/,856,sitemap,2026-10-19,Verified
 زهرة الربيع متجر العطارة ومستحضرات التجميل السعودية الفاخرة,https://zahratalrabi.com/,6159,sitemap,2026-10-19,Verified
-زهرة اللوتس - التجارية,https://lotus.sa/,95,sitemap,2026-10-19,Verified
+زهرة اللوتس - التجارية,https://lotus.sa/,95,sitemap (partial: 7 of 8 sitemap files read),2026-10-19,Verified
 زهرة مزايا العطور,https://mazayaalotor.com/,5917,sitemap,2026-10-19,Verified
 زوايا,https://zawaya-1.com/,1,archive,2026-10-19,Verified
 زوايا لصيانة الجوالات المتنقلة,https://zawayaa.sa/,77,sitemap,2026-10-19,Verified
@@ -2444,16 +2444,16 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 شركاء النحل للعسل البلدي,https://beepartner.net/,11,sitemap,2026-10-19,Verified
 شركة أبناء إبراهيم محمد العُمري المحدودة,https://alomary.sa/,27,sitemap,2026-10-19,Verified
 شركة أحمد الفدّا للمحاماة,https://alfaddalawyer.sa/,167,sitemap,2026-10-19,Verified
-شركة أعمال جافا التجارية | Java Business,https://jbco.com.sa/,7,sitemap,2026-10-19,Verified
+شركة أعمال جافا التجارية | Java Business,https://jbco.com.sa/,7,sitemap (partial: 4 of 5 sitemap files read),2026-10-19,Verified
 شركة أكسبت التجارية,https://store.acceptksa.com/,681,sitemap,2026-10-19,Verified
 شركة إعمار الوطن التجارية,https://emac.sa/,684,sitemap,2026-10-19,Verified
 شركة إمداد البيت للأدوات الصحية,https://emdadhome.com/,1414,sitemap,2026-10-19,Verified
-شركة ادراس القابضة,https://agg.sa/,236,sitemap,2026-10-19,Verified
+شركة ادراس القابضة,https://agg.sa/,236,sitemap (partial: 1 of 17 sitemap files read),2026-10-19,Verified
 شركة اراب دياج,https://arabdiag.sa/,910,sitemap,2026-10-19,Verified
 شركة اطعمة الشرق,https://eastfoods.store/,45,sitemap,2026-10-19,Verified
 شركة اطلس للكهرباء,https://atlas.sa/,3,archive,2026-10-19,Verified
 شركة افانين عالم الطباعة والتغليف,https://avanin.sa/,20,sitemap,2026-10-19,Verified
-شركة الأمل العقارية - شركة الأمل العقارية,https://alaml.sa/,82,sitemap,2026-10-19,Verified
+شركة الأمل العقارية - شركة الأمل العقارية,https://alaml.sa/,82,sitemap (partial: 9 of 10 sitemap files read),2026-10-19,Verified
 شركة الأيام السبعة,https://7days.sa/,512,sitemap,2026-10-19,Verified
 شركة الاثاث المتفدم للصناعة,https://aff.sa/,1,archive,2026-10-19,Verified
 شركة الاثاث المتفدم للصناعة,https://place.sa/,115,archive,2026-10-19,Verified
@@ -2469,7 +2469,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 شركة الفالح لجميع مستلزمات الرياضة,https://elfaleh.sa/,5227,sitemap,2026-10-19,Verified
 شركة القهوة المختصة المبتكرة,https://cap.sa/,1,archive,2026-10-19,Verified
 شركة المسارات الدولية للتجارة و المقاولات,https://almasaratstore.com/,3,archive,2026-10-19,Verified
-شركة المنار الثنائية | زيوت أوتو ميركا,https://almnar.com.sa/,0,shop-page total,2026-10-19,Verified
+شركة المنار الثنائية | زيوت أوتو ميركا,https://almnar.com.sa/,,Not available (no sitemap; shop-page total reported 0),2026-10-19,Verified
 شركة الهرم المثالي للالات والمعدات,https://www.alharamtools.com.sa/,2927,sitemap,2026-10-19,Verified
 شركة امالا للمشالح والبشوت الرئيسية,https://bsht.sa/,164,sitemap,2026-10-19,Verified
 شركة امان بلس التجارية منظفات كماليات تجميل بلاستيك اواني منزلية,https://aldahmsh.com/,1756,sitemap,2026-10-19,Verified
@@ -2479,14 +2479,14 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 شركة تمور الاحمدية للصناعة,https://alahmadiha.com.sa/,17,archive,2026-10-19,Verified
 شركة تنسيق حدائق,https://tansikhadaek.org/,186,sitemap,2026-10-19,Verified
 شركة جاسكو للمنتجات البلاستيكية,https://jasco.sa/,197,sitemap,2026-10-19,Verified
-شركة جولدن جول,https://goldengoal.sa/,56,sitemap,2026-10-19,Verified
+شركة جولدن جول,https://goldengoal.sa/,56,sitemap (partial: 10 of 11 sitemap files read),2026-10-19,Verified
 شركة حلول المطابخ والخزائن,https://www.holoul.com.sa/,54,sitemap,2026-10-19,Verified
 شركة دامه للدعاية والإعلان,https://dama-adv.com/,1,archive,2026-10-19,Verified
 شركة دروب شيب لتقنية المعلومات,https://www.dropship.com.sa/,62,archive,2026-10-19,Verified
 شركة ديوان الذهب المتجر الالكتروني,https://dewanaldahab.com.sa/,240,sitemap,2026-10-19,Verified
 شركة راوند للتجارة,https://rawand.com.sa/,578,sitemap,2026-10-19,Verified
 شركة رواد الحياة الطبية,https://pml.sa/,65,sitemap,2026-10-19,Verified
-شركة ريشي التجارية,https://rishi.sa/,1225,sitemap,2026-10-19,Verified
+شركة ريشي التجارية,https://rishi.sa/,1225,sitemap (partial: 35 of 38 sitemap files read),2026-10-19,Verified
 شركة ريم سعود المطيري التجارية | ريمكو,https://reemco.com.sa/,2654592,sitemap,2026-10-19,Verified
 شركة سفا السعودية للتجارة,https://sfa.com.sa/,325,sitemap,2026-10-19,Verified
 شركة سماء الكيف للتجارة,https://samaalkaif.com.sa/,1476,sitemap,2026-10-19,Verified
@@ -2530,7 +2530,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 صدى الأوائل مستلزمات وأجهزة طبية وأطراف صناعية بالسعودية,https://sada-alawael.sa/,510,sitemap,2026-10-19,Verified
 صفوة الثمار,https://km.sa/,34,sitemap,2026-10-19,Verified
 صقر الصحراء الطبيه,https://saqerelsahraamedical.com/,250,sitemap,2026-10-19,Verified
-صلاتنا حياة,https://salaatona.com.sa/,1243,sitemap,2026-10-19,Verified
+صلاتنا حياة,https://salaatona.com.sa/,1243,sitemap (partial: 42 of 44 sitemap files read),2026-10-19,Verified
 صلصال إن دو,https://in-dough.com/,67,sitemap,2026-10-19,Verified
 صمام SAMAM,https://samam.sa/,105,sitemap,2026-10-19,Verified
 صناعات يدوية Hand Made,https://handmade00.com/,407,sitemap,2026-10-19,Verified
@@ -2678,7 +2678,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 عود سما للبخور الكمبودي الفيتنامي,https://oudsma.com/,2,archive,2026-10-19,Verified
 عود طبيعي و عود محسن و دهن عود,https://oudliah.com/,62,sitemap,2026-10-19,Verified
 عودفيين,https://oudaffein.com/,70,sitemap,2026-10-19,Verified
-عيان العقارية - شركة عيان العقارية,https://ayan.sa/,103,sitemap,2026-10-19,Verified
+عيان العقارية - شركة عيان العقارية,https://ayan.sa/,103,sitemap (partial: 17 of 18 sitemap files read),2026-10-19,Verified
 عينات عطور نيش أصلية نادرة في السعودية Perfumey,https://perfumeyshop.com/,674,sitemap,2026-10-19,Verified
 عِذار للعبايات,https://etharabaya.com/,74,sitemap,2026-10-19,Verified
 غالية مشاط Ghalia Mashat,https://ghalia-mashat.com/,109,sitemap,2026-10-19,Verified
@@ -2832,7 +2832,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 كيان الجنوب,https://kayanaljanoub.sa/,130,sitemap,2026-10-19,Verified
 كيتشن بازار,https://kitchenbazaar.sa/,3514,sitemap,2026-10-19,Verified
 كيتو كير,https://keto-cares.com/,51,sitemap,2026-10-19,Verified
-كيسوم للعناية بالسيارات,https://keesoom.sa/,63,sitemap,2026-10-19,Verified
+كيسوم للعناية بالسيارات,https://keesoom.sa/,63,sitemap (partial: 6 of 7 sitemap files read),2026-10-19,Verified
 كيف القصيم,https://keef-alqassim.com/,4,archive,2026-10-19,Verified
 كيكو ميلانو السعودية,https://www.kikomilano.com.sa/,4156,sitemap,2026-10-19,Verified
 كيمي لاب,https://chemiilab.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://chemiilab.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
@@ -2853,7 +2853,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 لانج السعوديه,https://lang.sa/,21,sitemap,2026-10-19,Verified
 لانسا,https://lansastor.com/,28,sitemap,2026-10-19,Verified
 لجين بوتيك,https://lojainboutiq.com/,1,sitemap,2026-10-19,Verified
-للأواني المنزلية,https://alabdulatif.com.sa/,2153,sitemap,2026-10-19,Verified
+للأواني المنزلية,https://alabdulatif.com.sa/,2153,sitemap (partial: 12 of 13 sitemap files read),2026-10-19,Verified
 للبخور,https://ebaqe.com/,47,archive,2026-10-19,Verified
 للخدمات الطبية,https://tajmeel.com.sa/,111,sitemap,2026-10-19,Verified
 للعدسات درة,https://durrah-ksa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://durrah-ksa.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
@@ -2889,7 +2889,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 ليلة وردية,https://laylawardyah.com/,1,archive,2026-10-19,Verified
 ليمرا ترولي LIMRA TROLY,https://limratroly.com/,3,archive,2026-10-19,Verified
 لينو كير,https://lino-care.sa/,443,sitemap,2026-10-19,Verified
-مؤسسة أطياف العصر,https://atyafalasr.sa/,74,sitemap,2026-10-19,Verified
+مؤسسة أطياف العصر,https://atyafalasr.sa/,74,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
 مؤسسة أهل الشيم,https://ahl-alshyam.com/,130,sitemap,2026-10-19,Verified
 مؤسسة اجواء اليمامة,https://www.yma.com.sa/,553,sitemap,2026-10-19,Verified
 مؤسسة اساسيات الوادي الزراعية,https://asasiaat-alwadi-agricultural.com/,129,sitemap,2026-10-19,Verified
@@ -2987,7 +2987,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 متجر اسان للمسابيح مسابيح فاخرة وعصرية,https://storeasan.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 متجر افنيوم للعطور,https://avneum.com/,2436,sitemap,2026-10-19,Verified
 متجر افوكادو Avokado للخضروات والفواكه,https://avokado.sa/,279,sitemap,2026-10-19,Verified
-متجر ال بي | LP Store,https://lp.com.sa/,0,shop-page total,2026-10-19,Verified
+متجر ال بي | LP Store,https://lp.com.sa/,,Not available (no sitemap; shop-page total reported 0),2026-10-19,Verified
 متجر الأسطورة,https://legend-10.com/,3,archive,2026-10-19,Verified
 متجر الأصيل الإلكتروني,https://alaseel.com/,169,sitemap,2026-10-19,Verified
 متجر الأماني,https://amanialtobaishi.com/,92,sitemap,2026-10-19,Verified
@@ -3274,7 +3274,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 متجر عطور أودوريم,https://odorem.sa/,144,sitemap,2026-10-19,Verified
 متجر عين عباية,https://ainabaya24.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 متجر غرز,https://ghurazz.com/,122,sitemap,2026-10-19,Verified
-متجر غزاوي اوتوا,https://gazawyauto.com/,3351,sitemap,2026-10-19,Verified
+متجر غزاوي اوتوا,https://gazawyauto.com/,3351,sitemap (partial: 14 of 15 sitemap files read),2026-10-19,Verified
 متجر فاخر,https://fakher1.com/,884,sitemap,2026-10-19,Verified
 متجر فاست شارج,https://fastcharge.com.sa/,437,sitemap,2026-10-19,Verified
 متجر فاشن بوينت,https://fashi0npoint.com/,1080,sitemap,2026-10-19,Verified
@@ -3428,7 +3428,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 مجاز,https://majazgifts.com/,3,archive,2026-10-19,Verified
 مجالس خارجية نفار خيارات للحديقة والمنزل,https://nefar.sa/,424,sitemap,2026-10-19,Verified
 مجتمع الأخت الكبيرة,https://lujainbatoot.online/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
-مجلة الاقتصاد • مجلة اقتصادية متخصصة,https://aliktisad.com.sa/,9141,sitemap,2026-10-19,Verified
+مجلة الاقتصاد • مجلة اقتصادية متخصصة,https://aliktisad.com.sa/,9141,sitemap (partial: 20 of 21 sitemap files read),2026-10-19,Verified
 مجلس الاطياب عود فاخر وبخور وعطورات في الدمام,https://majlisalatiyab.com/,56,sitemap,2026-10-19,Verified
 مجمع العائلة,https://family.sa/,2461,sitemap,2026-10-19,Verified
 مجمع القصيم التخصصي الطبي,https://store.qsmc.sa/,49,sitemap,2026-10-19,Verified
@@ -3494,14 +3494,14 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 مدونة فارس,https://fares8.sa/,2202,sitemap,2026-10-19,Verified
 مدى التقنية,https://mada-altaqnia.com/,22,sitemap,2026-10-19,Verified
 مديم للسبح,https://madeemsa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://beautiful3tr.com/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='beautiful3tr.com', port=443): Max retries exceeded wit""), ('https://beautiful3tr.com/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='beautiful3tr.com', port=443): Max retries exceeded wit"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-مدينة الحاسب الآلي PC CITY,https://pccity.com.sa/,767,sitemap,2026-10-19,Verified
+مدينة الحاسب الآلي PC CITY,https://pccity.com.sa/,767,sitemap (partial: 29 of 32 sitemap files read),2026-10-19,Verified
 مدينة الحلويات والمكسرات,https://sweetscity1.com/,14,archive,2026-10-19,Verified
 "مراكز برافو الدولية-أثاث, مفروشات, ضيافة, أدوات مطبخ, أجهزة منزلية",https://bravocenters.com/,5237,sitemap,2026-10-19,Verified
 مرايا بيوتي,https://twooow.com/,7953,sitemap,2026-10-19,Verified
 مرجريت,https://mrgritt.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 مرحبا بك في Aljamil Optical,https://aljamiloptical.com.sa/,83912,sitemap,2026-10-19,Verified
 مرسم ميلي,https://marsammeli.com/,2,archive,2026-10-19,Verified
-مركبات إكس لقطع الغيار,https://advmotors.sa/,7196,sitemap,2026-10-19,Verified
+مركبات إكس لقطع الغيار,https://advmotors.sa/,7196,sitemap (partial: 24 of 25 sitemap files read),2026-10-19,Verified
 مركز إتزان للإستشارات و الأبحاث النفسية,https://etizanksa.com/,52,sitemap,2026-10-19,Verified
 مركز الدروع التذكارية,https://shields.com.sa/,1844,archive,2026-10-19,Verified
 مركز الشاشة الاول للاتصالات,https://alshasham.com/,363,sitemap,2026-10-19,Verified
@@ -3520,7 +3520,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 مسخ,https://muskkh.com/,4,archive,2026-10-19,Verified
 مسدل,https://mussdl.com/,9,sitemap,2026-10-19,Verified
 مسك الغزال العربي,https://gaze-l.com/,20,sitemap,2026-10-19,Verified
-مشتري موثق,https://www.theqah.com.sa/,58,sitemap,2026-10-19,Verified
+مشتري موثق,https://www.theqah.com.sa/,58,sitemap (partial: 1 of 2 sitemap files read),2026-10-19,Verified
 مشتل السلطانة,https://sultanahplants-sa.com/,209,sitemap,2026-10-19,Verified
 مشتل كاندال الزراعي,https://kendall.sa/,120,archive,2026-10-19,Verified
 مشد نحت الخصر والبطن والظهر,https://she-mine.com/,7,sitemap,2026-10-19,Verified
@@ -3536,9 +3536,9 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 مصنع تمور قطاف النخيل,https://dantgulf.com/,71,sitemap,2026-10-19,Verified
 مصنع حائل,https://almoajel.sa/,54,sitemap,2026-10-19,Verified
 مصنع شهية لمنتجات اللحوم والخضروات المجمده,https://shahia.com.sa/,330,archive,2026-10-19,Verified
-مصنع لمسة إبداع,https://lmstabda.sa/,276,sitemap,2026-10-19,Verified
+مصنع لمسة إبداع,https://lmstabda.sa/,276,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
 مضخات مياه و فلاتر مياه,https://alsamhanpump.com.sa/,13,sitemap,2026-10-19,Verified
-مطابع ايزي برنت,https://easyprint.com.sa/,426,sitemap,2026-10-19,Verified
+مطابع ايزي برنت,https://easyprint.com.sa/,426,sitemap (partial: 8 of 10 sitemap files read),2026-10-19,Verified
 مطرزات,https://mtrazat20.com/,1,archive,2026-10-19,Verified
 مع اقرألي سيتعلم طفلك القراءة بجهد أقل ونتائج سريعة وسيحب طفلك القراءة,https://read-2me.com/,22,sitemap,2026-10-19,Verified
 معالي العود عود طبيعي بخور مبثوث مسك ومخمريات فاخر,https://maalyaloud.com/,58,sitemap,2026-10-19,Verified
@@ -3673,9 +3673,9 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 نارس لمستحضرات التجميل,https://www.narscosmetics.sa/,350,sitemap,2026-10-19,Verified
 نارفين السعودية للعطور والعود,https://narven.sa/,198,sitemap,2026-10-19,Verified
 نارنج متجر عطور,https://naranj.sa/,21,archive,2026-10-19,Verified
-نافارو للاكسسوارات الطبية,https://navarro.sa/,571,sitemap,2026-10-19,Verified
+نافارو للاكسسوارات الطبية,https://navarro.sa/,571,sitemap (partial: 3 of 8 sitemap files read),2026-10-19,Verified
 نامسان ماركت Namsan Markt افضل متجر منتجات واكلات كورية في السعودية,https://namsanmarkt.com/,1899,sitemap,2026-10-19,Verified
-نايس ون,https://niceonesa.com/,1157,sitemap,2026-10-19,Verified (secondary evidence)
+نايس ون,https://niceonesa.com/,14144,sitemap,2026-10-19,Verified (secondary evidence)
 نبتة ليليم,https://liliumplant.com/,2,archive,2026-10-19,Verified
 نبراس العود,https://nebrasaloud.com/,1,archive,2026-10-19,Verified
 نبض الثقة,https://nabdalthiqa.com/,1,archive,2026-10-19,Verified
@@ -3705,7 +3705,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 نها,https://nha.sa/,316,sitemap,2026-10-19,Verified
 نوادر بستان المها,https://almahaorchard.sa/,1,archive,2026-10-19,Verified
 نوار الحلول,https://nawar.sa/,80,archive,2026-10-19,Verified
-نوب,https://noob.sa/,173,sitemap,2026-10-19,Verified
+نوب,https://noob.sa/,173,sitemap (partial: 9 of 11 sitemap files read),2026-10-19,Verified
 نود,https://noudstore.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://savanastor.com/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='savanastor.com', port=443): Max retries exceeded with ""), ('https://savanastor.com/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='savanastor.com', port=443): Max retries exceeded with "")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 نور بيوتي متجر منتجات العناية بالبشرة والجسم الطبيعية Noor Beauty,https://noor-beautysa.com/,25,sitemap,2026-10-19,Verified
 نورا كيك ادوات كيك,https://noracake.com/,212,sitemap,2026-10-19,Verified
