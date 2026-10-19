@@ -4,3 +4,7 @@ aeroperformance.com,US,700,archive,0,,2026-10-19,"sitemap present but yielded no
 harkinssafety.com,US,546,sitemap,15,https://harkinssafety.com/sitemap_index.xml,2026-10-19,raw=547 dupes_removed=1
 elegantgowns.com,US,14155,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 themarketplace.doterra.com,US,1093,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://themarketplace.doterra.com/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+onitsukatiger.com,US,56441,sitemap,57,https://www.onitsukatiger.com/sitemaps/sitemap-index.xml,2026-10-19,raw=56460 dupes_removed=19
+ibspot.com,US,7021772,sitemap,142,https://ibspot.com/sitemap.xml,2026-10-19,raw=7021780 dupes_removed=8
+strawberrynet.com,US,11400,sitemap,105,https://www.strawberrynet.com/sitemap.xml,2026-10-19,raw=31200 dupes_removed=19800
+tjmaxx.tjx.com,US,2093455,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
