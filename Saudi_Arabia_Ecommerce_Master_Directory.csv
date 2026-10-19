@@ -50,7 +50,7 @@ AH concept store,https://ahconcept.com/,49,sitemap,2026-10-19,Verified
 ahlam_beauty99,https://ahlam1beauty.com/,2,archive,2026-10-19,Verified
 AIDAN,https://aidanshop.com/,2,archive,2026-10-19,Verified
 "Aila Store The best travel clothes, hijab and abayas Quality, variety",https://ailaksa.com/,6,archive,2026-10-19,Verified
-aivi,https://en-sa.aivi.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.en-sa.aivi.com', port=80): Max retries exceeded wit))",2026-10-19,Verified
+aivi,https://en-sa.aivi.com/,16312869,sitemap (partial: 218 of 231 sitemap files read),2026-10-19,Verified
 Aiwibi Saudi,https://aiwibi.sa/,253,sitemap,2026-10-19,Verified
 Aiya Studios,https://aiyastudios.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='aiyastudios.com', port=443): Max retries exceeded with))",2026-10-19,Verified
 Ajmal KSA,https://sa.ajmal.com/,883,sitemap,2026-10-19,Verified
@@ -191,7 +191,7 @@ ARROSHAN UNIFORM CO,https://arroshan.com/,10,sitemap,2026-10-19,Verified
 ARROWSOUQ,https://arrowsouq.com/,29,sitemap,2026-10-19,Verified
 Art Auction,https://artauction.sa/,305,platform product count,2026-10-19,Verified
 ARTANOUD ⭑,https://artanoud.com/,5,archive,2026-10-19,Verified
-Artic,https://store.artic.com.sa/,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",2026-10-19,Verified
+Artic,https://store.artic.com.sa/,161,archive,2026-10-19,Verified
 Artisan,https://artisan.sa/,1,archive,2026-10-19,Verified
 Artisan Mastery,https://artisan-mastery.com/,2,archive,2026-10-19,Verified
 Artisana Store,https://store.artisana.com.sa/,54,archive,2026-10-19,Verified
@@ -355,94 +355,94 @@ CFMOTO KSA دراجات نارية دبابات بقيات مغامرات,https:
 Ch & Be KSA,https://chandbe.sa/,121,sitemap,2026-10-19,Verified
 Chanel,https://www.chanel.com/sa-ar/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Chapter4,https://chapter4.sa/,473,sitemap,2026-10-19,Verified
-CHARM,https://charm.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.charm.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
-Check Point,https://www.checkpoint.com.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.checkpoint.com.sa', port=443): Max retries exceede))",2026-10-19,Verified
+CHARM,https://charm.com.sa/,149,sitemap,2026-10-19,Verified
+Check Point,https://www.checkpoint.com.sa/,227,sitemap,2026-10-19,Verified
 cheeky,https://cheeky.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://cheeky.sa/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-CHEVEU SOLUTIONS Multi-Peptide Hair Density Serum,https://cheveusolutions.co/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cheveusolutions.co', port=80): Max retries exceeded))",2026-10-19,Verified
-Chic dresses,https://chicdressess.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.chicdressess.com', port=80): Max retries exceeded w))",2026-10-19,Verified
+CHEVEU SOLUTIONS Multi-Peptide Hair Density Serum,https://cheveusolutions.co/,135,sitemap,2026-10-19,Verified
+Chic dresses,https://chicdressess.com/,119,sitemap,2026-10-19,Verified
 Chief Tools,https://cheftools.com.sa/,15012,archive,2026-10-19,Verified
 Chopard®,https://www.chopard.com/en-sa/,7647,sitemap (SA pages only),2026-10-19,Verified
-Chăm Sóc,https://cham-soc.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cham-soc.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
-Cilek KSA,https://cilek.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cilek.sa', port=80): Max retries exceeded with url:))",2026-10-19,Verified
-Cinderella Official Store for Skin and Body Care,https://cinderellasa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cinderellasa.com', port=80): Max retries exceeded w))",2026-10-19,Verified
-Cinnamon gurl store,https://cinnamongurl.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.cinnamongurl.com', port=443): Max retries exceeded))",2026-10-19,Verified
+Chăm Sóc,https://cham-soc.com/,11,sitemap,2026-10-19,Verified
+Cilek KSA,https://cilek.sa/,641,sitemap,2026-10-19,Verified
+Cinderella Official Store for Skin and Body Care,https://cinderellasa.com/,49,sitemap,2026-10-19,Verified
+Cinnamon gurl store,https://cinnamongurl.com/,737,sitemap,2026-10-19,Verified
 Citron Saudi Arabia,https://citron.sa/,1801,sitemap,2026-10-19,Verified
-CityW,https://cityw.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cityw.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
-ClearHub,https://store.clear-hub.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.clear-hub.com', port=80): Max retries exceede))",2026-10-19,Verified
+CityW,https://cityw.com.sa/,3527,sitemap,2026-10-19,Verified
+ClearHub,https://store.clear-hub.com/,4,archive,2026-10-19,Verified
 Cloud Automation,https://cloudautomation.sa/,266,sitemap,2026-10-19,Verified
-cloud9xstore,https://cloud9xstore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cloud9xstore.com', port=80): Max retries exceeded w))",2026-10-19,Verified
-CloudCorner - زاوية السحابة,https://cloudcorner.com.sa/,10,platform product count,2026-10-19,Verified
-COACH Saudi Arabia Official Site,https://coach.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coach.sa', port=80): Max retries exceeded with url:))",2026-10-19,Verified
+cloud9xstore,https://cloud9xstore.com/,461,sitemap,2026-10-19,Verified
+CloudCorner - زاوية السحابة,https://cloudcorner.com.sa/,120,sitemap,2026-10-19,Verified
+COACH Saudi Arabia Official Site,https://coach.sa/,2881,sitemap,2026-10-19,Verified
 Cocoa Island,https://cocoaisland.sa/,86,sitemap,2026-10-19,Verified
-CODA,https://coda.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coda.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
-Coffee Gourmet,https://coffeegourmetsa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coffeegourmetsa.com', port=80): Max retries exceede))",2026-10-19,Verified
-Coffee Supplies All Specialty Coffee Tools Accessories in One Place,https://coffeesupplies.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coffeesupplies.com.sa', port=80): Max retries excee))",2026-10-19,Verified
-Cole Haan Saudi Arabia,https://colehaan.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.colehaan.sa', port=80): Max retries exceeded with u))",2026-10-19,Verified
+CODA,https://coda.sa/,166,sitemap,2026-10-19,Verified
+Coffee Gourmet,https://coffeegourmetsa.com/,212,sitemap,2026-10-19,Verified
+Coffee Supplies All Specialty Coffee Tools Accessories in One Place,https://coffeesupplies.com.sa/,2453,sitemap,2026-10-19,Verified
+Cole Haan Saudi Arabia,https://colehaan.sa/,7641,sitemap,2026-10-19,Verified
 Columbia Saudi Arabia,https://columbia.sa/,3087,sitemap,2026-10-19,Verified
-comfy للأثاث في السعودية,https://comfysa4.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.comfysa4.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
-Construction Company,https://www.greenconcrete.sa/,1,platform product count,2026-10-19,Verified
-Consul Bags,https://consul.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.consul.sa', port=80): Max retries exceeded with url))",2026-10-19,Verified
+comfy للأثاث في السعودية,https://comfysa4.com/,1,archive,2026-10-19,Verified
+Construction Company,https://www.greenconcrete.sa/,23,sitemap,2026-10-19,Verified
+Consul Bags,https://consul.sa/,657,sitemap (partial: 3 of 4 sitemap files read),2026-10-19,Verified
 Continental performance,https://continentalperformance.online/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.continentalperformance.online', port=80): Max retri))",2026-10-19,Verified
-Cool Shower Store,https://coolshower.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coolshower.com.sa', port=80): Max retries exceeded ))",2026-10-19,Verified
-Cool.sa,https://cool.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cool.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
+Cool Shower Store,https://coolshower.com.sa/,33,sitemap,2026-10-19,Verified
+Cool.sa,https://cool.sa/,2009,sitemap,2026-10-19,Verified
 Corner 22,https://corner-22.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.corner-22.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-CORNER STORE,https://prostoore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.prostoore.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-Cosmed,https://cosmed.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cosmed.sa', port=80): Max retries exceeded with url))",2026-10-19,Verified
+CORNER STORE,https://prostoore.com/,2,archive,2026-10-19,Verified
+Cosmed,https://cosmed.sa/,60,sitemap,2026-10-19,Verified
 Cosmetics,https://cosmetics.sa/,10204,sitemap,2026-10-19,Verified
-Cotton skin,https://cottonskin.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cottonskin.sa', port=80): Max retries exceeded with))",2026-10-19,Verified
+Cotton skin,https://cottonskin.sa/,49,sitemap,2026-10-19,Verified
 Cozy pyjama,https://cozypyjamas.online/,,"Not available (sitemap present but yielded no countable URLs ([('https://cozypyjamas.online/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-CR Store,https://7cr-store.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.7cr-store.com', port=443): Max retries exceeded wi))",2026-10-19,Verified
+CR Store,https://7cr-store.com/,6,archive,2026-10-19,Verified
 craft_worko,https://craftwinc.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.craftwinc.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-CREAROMA,https://crearoma.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.crearoma.sa', port=80): Max retries exceeded with u))",2026-10-19,Verified
+CREAROMA,https://crearoma.sa/,127,sitemap,2026-10-19,Verified
 Create,https://createparis.com/,6,archive,2026-10-19,Verified
 Creative Media,https://www.creativemedia.sa/,21,sitemap,2026-10-19,Verified
-Crew shop,https://crewshop.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.crewshop.sa', port=80): Max retries exceeded with u))",2026-10-19,Verified
-crispy&frozen,https://crispyfrozen.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.crispyfrozen.com', port=443): Max retries exceeded))",2026-10-19,Verified
+Crew shop,https://crewshop.sa/,151,sitemap,2026-10-19,Verified
+crispy&frozen,https://crispyfrozen.com/,1,archive,2026-10-19,Verified
 Crowdless,https://crowdless.sa/,631,sitemap,2026-10-19,Verified
-cry,https://cry.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cry.sa', port=80): Max retries exceeded with url: /))",2026-10-19,Verified
-Crystal Shades,https://crystalshade.com.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='crystalshade.com.sa', port=443): Max retries exceeded ))",2026-10-19,Verified
-Cs,https://cs-center.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cs-center.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
-CubicSky 3D Printing Materials Supplier in Saudi Arabia,https://cubicsky.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cubicsky.sa', port=80): Max retries exceeded with u))",2026-10-19,Verified
-CURLY BROWN,https://curlybrown.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://curlybrown.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='curlybrown.sa', port=443): Max retries exceeded with u"")]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",2026-10-19,Verified
-CURVA,https://curvastores.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='curvastores.com', port=443): Max retries exceeded with))",2026-10-19,Verified
+cry,https://cry.sa/,48,sitemap,2026-10-19,Verified
+Crystal Shades,https://crystalshade.com.sa/,103,sitemap,2026-10-19,Verified
+Cs,https://cs-center.sa/,158,sitemap,2026-10-19,Verified
+CubicSky 3D Printing Materials Supplier in Saudi Arabia,https://cubicsky.sa/,1569,sitemap,2026-10-19,Verified
+CURLY BROWN,https://curlybrown.sa/,61,sitemap,2026-10-19,Verified
+CURVA,https://curvastores.com/,1,archive,2026-10-19,Verified
 curvestore,https://curvestore-sa.com/,18,sitemap,2026-10-19,Verified
-Cute Cat,https://cutecat.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cutecat.com.sa', port=80): Max retries exceeded wit))",2026-10-19,Verified
-CYPRESS ROASTER,https://roastercypress.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.roastercypress.com', port=80): Max retries exceeded))",2026-10-19,Verified
-Daam Store,https://daamstore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daamstore.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-DABB,https://dabb.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+Cute Cat,https://cutecat.com.sa/,2238,archive,2026-10-19,Verified
+CYPRESS ROASTER,https://roastercypress.com/,5,archive,2026-10-19,Verified
+Daam Store,https://daamstore.com/,345,sitemap,2026-10-19,Verified
+DABB,https://dabb.sa/,26,sitemap,2026-10-19,Verified
 DAILY PERFUME,https://dailyperfue.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dailyperfue.com', port=80): Max retries exceeded wi))",2026-10-19,Verified
-DALEEN,https://daleen.com.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='daleen.com.sa', port=443): Max retries exceeded with u))",2026-10-19,Verified
-Dallat Albon Trading Co,https://dallatalbon.store/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dallatalbon.store', port=80): Max retries exceeded ))",2026-10-19,Verified
-Dan For Gift,https://danforgift.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.danforgift.com', port=80): Max retries exceeded wit))",2026-10-19,Verified
-Daniel Ost KSA,https://www.danielost.sa/,69,archive,2026-10-19,Verified
-Danube,https://www.danube.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.danube.sa', port=80): Max retries exceeded with url))",2026-10-19,Verified
-Dar Alnijara for trading DYI,https://daralnijara.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daralnijara.com', port=80): Max retries exceeded wi))",2026-10-19,Verified
-Dar Rina Official Fashion Store,https://dar-rina.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dar-rina.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
-Dar Waraqa,https://dar-waraqa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dar-waraqa.com', port=80): Max retries exceeded wit))",2026-10-19,Verified
+DALEEN,https://daleen.com.sa/,166,sitemap,2026-10-19,Verified
+Dallat Albon Trading Co,https://dallatalbon.store/,501,sitemap,2026-10-19,Verified
+Dan For Gift,https://danforgift.com/,1811,sitemap,2026-10-19,Verified
+Daniel Ost KSA,https://www.danielost.sa/,42,sitemap,2026-10-19,Verified
+Danube,https://www.danube.sa/,3251,archive,2026-10-19,Verified
+Dar Alnijara for trading DYI,https://daralnijara.com/,4473,sitemap,2026-10-19,Verified
+Dar Rina Official Fashion Store,https://dar-rina.com/,164,sitemap,2026-10-19,Verified
+Dar Waraqa,https://dar-waraqa.com/,485,sitemap,2026-10-19,Verified
 darayman,https://darayman.sa/,279,archive,2026-10-19,Verified
-DarGhaith,https://darghaith.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.darghaith.com', port=443): Max retries exceeded wi))",2026-10-19,Verified
-Darussalam Store,https://darussalamstore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.darussalamstore.com', port=80): Max retries exceede))",2026-10-19,Verified
-Darzan Store,https://darzan.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.darzan.sa', port=80): Max retries exceeded with url))",2026-10-19,Verified
-DASCO,https://dasco.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dasco.sa', port=80): Max retries exceeded with url:))",2026-10-19,Verified
-dashcam-ksa,https://dashcam-ksa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dashcam-ksa.com', port=80): Max retries exceeded wi))",2026-10-19,Verified
-Dayman Fe,https://daymanfe.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daymanfe.com.sa', port=80): Max retries exceeded wi))",2026-10-19,Verified
-DAZ,https://daz.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daz.sa', port=80): Max retries exceeded with url: /))",2026-10-19,Verified
+DarGhaith,https://darghaith.com/,1215,sitemap,2026-10-19,Verified
+Darussalam Store,https://darussalamstore.com/,936,sitemap,2026-10-19,Verified
+Darzan Store,https://darzan.sa/,662,sitemap,2026-10-19,Verified
+DASCO,https://dasco.sa/,544,archive,2026-10-19,Verified
+dashcam-ksa,https://dashcam-ksa.com/,176,sitemap,2026-10-19,Verified
+Dayman Fe,https://daymanfe.com.sa/,273,sitemap,2026-10-19,Verified
+DAZ,https://daz.sa/,4,platform product count,2026-10-19,Verified
 Deem abayas,https://deem-abaya.com/,5,archive,2026-10-19,Verified
 DEFENTEK,https://defentek.sa/,17,sitemap,2026-10-19,Verified
-DELSEY® Paris | The Confident Move in Luggage,https://delsey.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.delsey.com.sa', port=80): Max retries exceeded with))",2026-10-19,Verified
-Demova med,https://demovamed.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.demovamed.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-Deraah Online Store,https://www.deraahstore.com/ar_sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.deraahstore.com', port=80): Max retries exceeded wi))",2026-10-19,Verified
-Dermadivine,https://dermadivineshop.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dermadivineshop.com', port=80): Max retries exceede))",2026-10-19,Verified
-Desert Publisher,https://desertpublisher.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.desertpublisher.com', port=80): Max retries exceede))",2026-10-19,Verified
-Details,https://mydetaiils-sa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.mydetaiils-sa.com', port=80): Max retries exceeded ))",2026-10-19,Verified
+DELSEY® Paris | The Confident Move in Luggage,https://delsey.com.sa/,1471,sitemap,2026-10-19,Verified
+Demova med,https://demovamed.com/,804,sitemap,2026-10-19,Verified
+Deraah Online Store,https://www.deraahstore.com/ar_sa/,12793,archive,2026-10-19,Verified
+Dermadivine,https://dermadivineshop.com/,4,archive,2026-10-19,Verified
+Desert Publisher,https://desertpublisher.com/,1099,sitemap,2026-10-19,Verified
+Details,https://mydetaiils-sa.com/,557,sitemap,2026-10-19,Verified
 DETAILS COLLECTION,https://detailscollection.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.detailscollection.com', port=80): Max retries excee))",2026-10-19,Verified
 DETAiLS_50,https://details50.com/,1003,sitemap,2026-10-19,Verified
-Dhrez,https://dhrez.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dhrez.com', port=80): Max retries exceeded with url))",2026-10-19,Verified
-Different Care,https://dc.med.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.dc.med.sa', port=443): Max retries exceeded with u))",2026-10-19,Verified
+Dhrez,https://dhrez.com/,10228,sitemap,2026-10-19,Verified
+Different Care,https://dc.med.sa/,691,sitemap (partial: 5 of 6 sitemap files read),2026-10-19,Verified
 Digital Future KSA,https://digital-future.sa/,770,sitemap,2026-10-19,Verified
-DIGITAL-J,https://digital-j.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.digital-j.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-Dimos Furniture,https://dimos.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dimos.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
-dipin,https://dipin.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dipin.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
+DIGITAL-J,https://digital-j.com/,643,archive,2026-10-19,Verified
+Dimos Furniture,https://dimos.com.sa/,784,sitemap,2026-10-19,Verified
+dipin,https://dipin.com.sa/,178,sitemap,2026-10-19,Verified
 Direct English,https://directenglish.com.sa/,25200,sitemap,2026-10-19,Verified
 DIRECT MESSAGE,https://direct-message.sa/,158,sitemap,2026-10-19,Verified
 Divan Flowers,https://divanflowers.com/,469,sitemap,2026-10-19,Verified
@@ -459,7 +459,7 @@ DOUBLE R ABAYAS,https://doublerabayas.com/,36,sitemap,2026-10-19,Verified
 Dour.Alriyadah,https://dour-alriyadaha.com/,,Not available (no sitemap found; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 Dr's Box,https://drsboxsa.com/,487,sitemap,2026-10-19,Verified
 Dr.Biah,https://mybiah.com/,5,archive,2026-10-19,Verified
-Dr.Layla Al-Onaizi PolyClinic Store in Al-Khobar Cosmetic & laser,https://store.drlayla.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.drlayla.com', port=80): Max retries exceeded ))",2026-10-19,Verified
+Dr.Layla Al-Onaizi PolyClinic Store in Al-Khobar Cosmetic & laser,https://store.drlayla.com/,261,sitemap,2026-10-19,Verified
 Dream Station,https://dreamstation.com.sa/,56,archive,2026-10-19,Verified
 Dream | دريم,https://dream.com.sa/,30,archive,2026-10-19,Verified
 DREAM'S SHOP,https://drmsshop.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://drm-shop.com/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='drm-shop.com', port=443): Max retries exceeded with ur""), ('https://drm-shop.com/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='drm-shop.com', port=443): Max retries exceeded with ur"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
@@ -613,12 +613,12 @@ Glow and Give,https://gag.sa/,62,sitemap,2026-10-19,Verified
 Glow.sa,https://glow1sa.com/,3,archive,2026-10-19,Verified
 Glowr,https://glowrr.com/,34,sitemap,2026-10-19,Verified
 GN4 Store,https://gn4.online/,1,archive,2026-10-19,Verified
-Gold Apple,https://goldapple.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldapple.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified (secondary evidence)
-GOLD ROZE,https://goldroze2.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldroze2.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-Gold_store,https://goldstore10.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldstore10.com', port=80): Max retries exceeded wi))",2026-10-19,Verified
+Gold Apple,https://goldapple.sa/,93034,sitemap,2026-10-19,Verified (secondary evidence)
+GOLD ROZE,https://goldroze2.com/,597,sitemap,2026-10-19,Verified
+Gold_store,https://goldstore10.com/,27,sitemap,2026-10-19,Verified
 Golden Frame,https://tgfgallery.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.tgfgallery.com', port=443): Max retries exceeded w))",2026-10-19,Verified
 Golden kit,https://goldenkitstore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldenkitstore.com', port=80): Max retries exceeded))",2026-10-19,Verified
-GOLDEN POT,https://rkwah.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.rkwah.com.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
+GOLDEN POT,https://rkwah.com.sa/,18,sitemap,2026-10-19,Verified
 Golden Scent,https://www.goldenscent.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldenscent.com', port=80): Max retries exceeded wi))",2026-10-19,Verified (secondary evidence)
 GoldenTune,https://goldentune-sa.com/,245,sitemap,2026-10-19,Verified
 Gorgeous Boutuiqe,https://gorgeousbq.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gorgeousbq.com', port=80): Max retries exceeded wit))",2026-10-19,Verified
@@ -634,48 +634,48 @@ Gulf Computer Mall,https://www.gcmall.com.sa/,243,archive,2026-10-19,Verified
 Gumazing Vitamins,https://gumazing.sa/,955,sitemap,2026-10-19,Verified
 Gusto,https://gusto.sa/,25,sitemap,2026-10-19,Verified
 Gym attack,https://gymattack20.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gymattack20.com', port=80): Max retries exceeded wi))",2026-10-19,Verified
-Gym Store,https://www.gymstore.sa/,330,sitemap (partial: 6 of 8 sitemap files read),2026-10-19,Verified
+Gym Store,https://www.gymstore.sa/,333,sitemap,2026-10-19,Verified
 H&M,https://sa.hm.com/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
-H7 Master اكتشف أحدث الأزياء الرجالية والنسائية بأفضل الأسعار,https://h7master.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.h7master.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
+H7 Master اكتشف أحدث الأزياء الرجالية والنسائية بأفضل الأسعار,https://h7master.com/,3883,sitemap,2026-10-19,Verified
 HAB ملحقات سيارات شاشات داش كام وحساسات,https://hab.com.sa/,138,sitemap,2026-10-19,Verified
 Habitat Furniture Co. Ltd,https://www.habitat.com.sa/,394,sitemap,2026-10-19,Verified
 hailhills-العسل الفاخر والأعشاب الطبيعية في السعودية,https://hailhills.com/,59,sitemap,2026-10-19,Verified
 Hair box ksa,https://hairboxksa.com/,8,archive,2026-10-19,Verified
-"Hajar Delights, Premium Chocolate and Mini Truffles",https://hajardelights.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hajardelights.com', port=80): Max retries exceeded ))",2026-10-19,Verified
+"Hajar Delights, Premium Chocolate and Mini Truffles",https://hajardelights.com/,133,sitemap,2026-10-19,Verified
 HAKAZ,https://hakazsa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://hakazsa.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-Hala line,https://halaline.store/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.halaline.store', port=80): Max retries exceeded wit))",2026-10-19,Verified
-Halflash,https://halflash.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://halflash.com/sitemap.xml', 404)]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",2026-10-19,Verified
+Hala line,https://halaline.store/,2,archive,2026-10-19,Verified
+Halflash,https://halflash.com/,1,archive,2026-10-19,Verified
 HAN by Alhanouf AlNamlah,https://hanbyhanouf.com/,67,sitemap,2026-10-19,Verified
-hanaa.com.sa,https://hana.com.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
-hanye-shwbyenq.com,https://hanye-shwbyenq.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hanye-shwbyenq.com', port=80): Max retries exceeded))",2026-10-19,Verified
-HapPINess Hormone Store,https://happinesshormonestore.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.happinesshormonestore.com', port=80): Max retries e))",2026-10-19,Verified
-Happy Tails,https://happytails.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.happytails.sa', port=80): Max retries exceeded with))",2026-10-19,Verified
-happy_travel,https://rehlat-abeer1.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.rehlat-abeer1.com', port=80): Max retries exceeded ))",2026-10-19,Verified
-HAQ,https://haq.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haq.com.sa', port=80): Max retries exceeded with ur))",2026-10-19,Verified
-Harmco Store for Car Decorations and Accessories,https://haramco-sa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haramco-sa.com', port=80): Max retries exceeded wit))",2026-10-19,Verified
+hanaa.com.sa,https://hana.com.sa/,47,sitemap,2026-10-19,Verified
+hanye-shwbyenq.com,https://hanye-shwbyenq.com/,6965,sitemap,2026-10-19,Verified
+HapPINess Hormone Store,https://happinesshormonestore.com/,5,archive,2026-10-19,Verified
+Happy Tails,https://happytails.sa/,2611,sitemap,2026-10-19,Verified
+happy_travel,https://rehlat-abeer1.com/,2,archive,2026-10-19,Verified
+HAQ,https://haq.com.sa/,144,sitemap,2026-10-19,Verified
+Harmco Store for Car Decorations and Accessories,https://haramco-sa.com/,4352,sitemap,2026-10-19,Verified
 Haru Archery store,https://haruarchery.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haruarchery.com', port=80): Max retries exceeded wi))",2026-10-19,Verified
-harveynichols,https://www.harveynichols.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.harveynichols.sa', port=80): Max retries exceeded w))",2026-10-19,Verified
-Hattrick store,https://hattrick-store.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hattrick-store.com', port=80): Max retries exceeded))",2026-10-19,Verified
+harveynichols,https://www.harveynichols.sa/,31,archive,2026-10-19,Verified
+Hattrick store,https://hattrick-store.com/,437,sitemap,2026-10-19,Verified
 Haven,https://havenst00re.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
-Haypp Saudi,https://haypp.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haypp.sa', port=80): Max retries exceeded with url:))",2026-10-19,Verified
+Haypp Saudi,https://haypp.sa/,195,sitemap,2026-10-19,Verified
 Hazel Control وحدات تحكم PS4 و PS5 مطورة للألعاب التنافسية,https://hazelcontrol.com/,90,sitemap,2026-10-19,Verified
 Healtec,https://healtec.com.sa/,135,sitemap,2026-10-19,Verified
-Health Edu,https://healthedu.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.healthedu.com.sa', port=80): Max retries exceeded w))",2026-10-19,Verified
+Health Edu,https://healthedu.com.sa/,170,sitemap,2026-10-19,Verified
 Health Steps,https://healthsteps.store/,59,sitemap,2026-10-19,Verified
 Healthy And Tasty,https://healthyandtasty.sa/,3,archive,2026-10-19,Verified
 Heavy Tools,https://heavytools.sa/,349,sitemap,2026-10-19,Verified
-Helium | هيليوم,https://helium.sa/,1,archive,2026-10-19,Verified
+Helium | هيليوم,https://helium.sa/,28,sitemap,2026-10-19,Verified
 hellensbeautybar,https://hellensbeautybar.com/,3,archive,2026-10-19,Verified
-HENUA,https://henuaabaya.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.henuaabaya.com', port=80): Max retries exceeded wit))",2026-10-19,Verified
-Heritage Village,https://heritage-village.com.sa/,4,platform product count,2026-10-19,Verified
-HFI - HAKA For Industry,https://hfi.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hfi.com.sa', port=80): Max retries exceeded with ur))",2026-10-19,Verified
-Hiba Farrash مصممة أزياء سعودية,https://hiba-farrash.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hiba-farrash.com', port=80): Max retries exceeded w))",2026-10-19,Verified
-HIBREW,https://hibrewksa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hibrewksa.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-High Point,https://highpoint.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.highpoint.sa', port=80): Max retries exceeded with ))",2026-10-19,Verified
+HENUA,https://henuaabaya.com/,140,sitemap,2026-10-19,Verified
+Heritage Village,https://heritage-village.com.sa/,2011,sitemap,2026-10-19,Verified
+HFI - HAKA For Industry,https://hfi.com.sa/,4095,sitemap,2026-10-19,Verified
+Hiba Farrash مصممة أزياء سعودية,https://hiba-farrash.com/,53,sitemap,2026-10-19,Verified
+HIBREW,https://hibrewksa.com/,20,sitemap,2026-10-19,Verified
+High Point,https://highpoint.sa/,1413,sitemap,2026-10-19,Verified
 Himalaya Wellness (Saudi Arabia),https://himalayawellness.sa/,371,sitemap,2026-10-19,Verified
-HINDAMME,https://hindamme.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hindamme.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
-hint,https://hint.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hint.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
-HM9 تشكيلة فساتين مستوردة حصرية وجودة لا مثيل لها,https://hm9store.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hm9store.com', port=80): Max retries exceeded with ))",2026-10-19,Verified
+HINDAMME,https://hindamme.com/,133,archive,2026-10-19,Verified
+hint,https://hint.sa/,119,sitemap,2026-10-19,Verified
+HM9 تشكيلة فساتين مستوردة حصرية وجودة لا مثيل لها,https://hm9store.com/,239,sitemap,2026-10-19,Verified
 HmeedTV,https://hmeedtv.com/,61,sitemap,2026-10-19,Verified
 ho2sneakers,https://ho2sneakers.com/,220,sitemap,2026-10-19,Verified
 Holo KSA,https://www.holo.sa/,36,sitemap,2026-10-19,Verified
@@ -683,17 +683,17 @@ Home Box,https://www.homeboxstores.com/sa/,,Not available (blocked by site: HTTP
 Home Centre,https://www.homecentre.com/sa/,111056,archive,2026-10-19,Verified (secondary evidence)
 Home Sweet Home,https://homesweethome.com.sa/,1329,sitemap,2026-10-19,Verified
 Homiture,https://homiture.sa/,251,sitemap,2026-10-19,Verified
-Honey Dose | عسل هني دوز,https://honeydose.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+Honey Dose | عسل هني دوز,https://honeydose.sa/,128,sitemap,2026-10-19,Verified
 Hookahlicious,https://hookahlicious.com.sa/,223,sitemap,2026-10-19,Verified
 HooverSA,https://hoover.sa/,171,sitemap,2026-10-19,Verified
-Hope trade Store,https://hope.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hope.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
+Hope trade Store,https://hope.sa/,292,sitemap,2026-10-19,Verified
 horse99_11,https://iwwsm.com/,1,archive,2026-10-19,Verified
 Hosinox Company,https://hosinox.com.sa/,439,sitemap,2026-10-19,Verified
 hotpack.com.sa,https://hotpack.com.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
 House of Beauty,https://house-beauty.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.house-beauty.com', port=80): Max retries exceeded w))",2026-10-19,Verified
 Housemart,https://housemart.sa/,10129,sitemap,2026-10-19,Verified
 HP® Saudi Arabia,https://www.hp.com/sa-en/,,Not available (timeout: domain time budget exceeded),2026-10-19,Verified (secondary evidence)
-Huawei,https://consumer.huawei.com/sa-en/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.consumer.huawei.com', port=80): Max retries exceede))",2026-10-19,Verified (secondary evidence)
+Huawei,https://consumer.huawei.com/sa-en/,394671,archive,2026-10-19,Verified (secondary evidence)
 HUGO BOSS,https://www.hugoboss.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Hundred Bag - مئة حقيبة,https://hundredbag.com/,69,sitemap,2026-10-19,Verified
 Hyar,https://hyar.sa/,125,sitemap,2026-10-19,Verified
@@ -702,7 +702,7 @@ IAcare,https://iacare.sa/,13,sitemap,2026-10-19,Verified
 IAI Store,https://iai.sa/,547,sitemap,2026-10-19,Verified
 Ibdaa,https://ibdaa.com.sa/,99,sitemap,2026-10-19,Verified
 iBrand,https://ibrand.com.sa/,17881,sitemap,2026-10-19,Verified
-ICON,https://iconeng.sa/,279,archive,2026-10-19,Verified
+ICON,https://iconeng.sa/,4,sitemap,2026-10-19,Verified
 Icon Ecommerce,https://icone.sa/,97,archive,2026-10-19,Verified
 ICTC,https://ictc.com.sa/,88,sitemap,2026-10-19,Verified
 IDEAL OF SWEDEN,https://idealofsweden.sa/,9171,archive,2026-10-19,Verified
@@ -808,7 +808,7 @@ La Vie En Rose,https://www.lavieenrose.com.sa/,2019,sitemap,2026-10-19,Verified
 LaBelle KSA,https://labelle.sa/,181,sitemap,2026-10-19,Verified
 Ladeena,https://ladeena.com/,415,sitemap,2026-10-19,Verified
 Laguna Boutique,https://lagunaboutique.co/,445,sitemap,2026-10-19,Verified
-Laila pottery,https://laila-pottery.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://laila-pottery.com/sitemap.xml', 404)]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",2026-10-19,Verified
+Laila pottery,https://laila-pottery.com/,1,archive,2026-10-19,Verified
 lalune,https://lalunestore.online/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 Lamabayas,https://lamabayas.com/,233,sitemap,2026-10-19,Verified
 Lamasat,https://www.lamasat.com.sa/,887,sitemap,2026-10-19,Verified
@@ -846,7 +846,7 @@ Linen threads,https://linen-threads.com/,,"Not available (sitemap present but yi
 Lion Sport,https://lionsport.store/,68,sitemap,2026-10-19,Verified
 Lion Technology Establishment for Wholesale and Retail Trade,https://liontech-shopping.com/,181,sitemap,2026-10-19,Verified
 LionX,https://lionx.com.sa/,85,sitemap,2026-10-19,Verified
-lipault.com.sa,https://lipault.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lipault.com.sa', port=80): Max retries exceeded wit))",2026-10-19,Verified
+lipault.com.sa,https://lipault.com.sa/,52,sitemap,2026-10-19,Verified
 Lirio Store,https://lirio-store.com/,173,sitemap,2026-10-19,Verified
 lisa,https://lisa.sa/,29,sitemap,2026-10-19,Verified
 LIU.JO,https://liujo.sa/,7149,sitemap,2026-10-19,Verified (secondary evidence)
@@ -858,7 +858,7 @@ Logitech,https://www.logitech.com/ar-sa/,256,sitemap (partial: 97 of 103 sitemap
 Lola | لولا,https://lola.com.sa/,26,sitemap,2026-10-19,Verified
 lolacasademunt,https://lolacasademunt.sa/,6557,sitemap,2026-10-19,Verified
 Lolita kpop store,https://lolitakpop.com/,4,archive,2026-10-19,Verified
-Lomar,https://lomar.sa/,153,shop-page total,2026-10-19,Verified
+Lomar,https://lomar.sa/,191,sitemap,2026-10-19,Verified
 LONA.STORE,https://lonastoresa.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://lonastoresa.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Loofah Selections,https://loofah.sa/,685,sitemap,2026-10-19,Verified
 LOULOU Jewelry,https://loulou-jewelry-store.com/,8,archive,2026-10-19,Verified
@@ -867,11 +867,11 @@ Love time,https://lovetimesa.com/,12,archive,2026-10-19,Verified
 Lovely Memories,https://lovelymemories.sa/,448,sitemap,2026-10-19,Verified
 Lover Store,https://loverstoresa.com/,3,archive,2026-10-19,Verified
 Lrin,https://lrin-sa.com/,3,archive,2026-10-19,Verified
-Lucas Oil,https://lucasoil.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='lucasoil.sa', port=80): Max retries exceeded with url: ))",2026-10-19,Verified
+Lucas Oil,https://lucasoil.sa/,270,sitemap,2026-10-19,Verified
 Luccello fashion,https://luccello-fashion.com/,6,sitemap,2026-10-19,Verified
 Lueurcandel,https://lueurcandel.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://lueurcandel.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 lujain pencil,https://lujainpencil.com/,37,sitemap,2026-10-19,Verified
-LuLu Hypermarket,https://gcc.luluhypermarket.com/en-sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gcc.luluhypermarket.com', port=80): Max retries exc))",2026-10-19,Verified (secondary evidence)
+LuLu Hypermarket,https://gcc.luluhypermarket.com/en-sa/,6839,archive,2026-10-19,Verified (secondary evidence)
 Luluah Gold Alternative Plated Accessories,https://lo1mm.com/,2539,sitemap,2026-10-19,Verified
 luna jewelry,https://lunajewelry89.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://lunajewelry89.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Luxury Beauty & Perfume Online,https://beauty.givenchy.sa/,835,sitemap,2026-10-19,Verified
@@ -881,16 +881,16 @@ Luxury: Bvlgari,https://www.bulgari.com/en-sa/,,"Not available (unreachable (Con
 Luxury: Gucci,https://www.gucci.com/sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gucci.com', port=80): Max retries exceeded with url))",2026-10-19,Verified (secondary evidence)
 Luxury: Saint Laurent,https://www.ysl.com/en-sa/,1209,sitemap (SA pages only),2026-10-19,Verified (secondary evidence)
 M-F STORE,https://mfstores.com/,1,archive,2026-10-19,Verified
-Madar Hardware,https://madarhw.com.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.madarhw.com.sa', port=80): Max retries exceeded wit))",2026-10-19,Verified
+Madar Hardware,https://madarhw.com.sa/,348,platform product count,2026-10-19,Verified
 Madeleine,https://madeleine-sa.com/,1,archive,2026-10-19,Verified
-Madeleine,https://madeleine.sa/,628,sitemap (partial: 10 of 13 sitemap files read),2026-10-19,Verified
+Madeleine,https://madeleine.sa/,688,sitemap,2026-10-19,Verified
 Mademoisellesa,https://mademoisellesa.com/,97,sitemap,2026-10-19,Verified
 Mafak Equipment Company,https://mfk.sa/,3,archive,2026-10-19,Verified
 MAG LINE,https://magline-sa.com/,2,archive,2026-10-19,Verified
 MAGRABi KSA,https://www.magrabi.com/sa-en/,38974,sitemap (SA pages only),2026-10-19,Verified
-Maher Store Smart Traking Devices Home Laser And Oxgen,https://maherstore.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='maherstore.com', port=443): Max retries exceeded with ))",2026-10-19,Verified
-Maico-llc Supply of Sandwich Panels in Jeddah and Saudi Arabia,https://maico-llc.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.maico-llc.com', port=80): Max retries exceeded with))",2026-10-19,Verified
-Main Website,https://richy.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.richy.sa', port=443): Max retries exceeded with ur))",2026-10-19,Verified
+Maher Store Smart Traking Devices Home Laser And Oxgen,https://maherstore.com/,134,sitemap,2026-10-19,Verified
+Maico-llc Supply of Sandwich Panels in Jeddah and Saudi Arabia,https://maico-llc.com/,71,sitemap,2026-10-19,Verified
+Main Website,https://richy.sa/,521,sitemap,2026-10-19,Verified
 Main Website,https://www.officeco.sa/,5553,sitemap,2026-10-19,Verified
 Maje KSA,https://maje.sa/,1507,sitemap,2026-10-19,Verified
 Malsa,https://malsa.sa/,20457,sitemap,2026-10-19,Verified
@@ -900,7 +900,7 @@ Manar Store,https://manar.sa/,574,sitemap,2026-10-19,Verified
 manaralrawi,https://manaralrawi.com/,293,sitemap,2026-10-19,Verified
 manazilcom.com,https://manazilcom.com/,509,sitemap (partial: 7 of 9 sitemap files read),2026-10-19,Verified
 mandrian perfume,https://mandrianperfume.com/,48,sitemap,2026-10-19,Verified
-Mandy Care,https://mandy.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.mandy.sa', port=443): Max retries exceeded with ur))",2026-10-19,Verified
+Mandy Care,https://mandy.sa/,1,archive,2026-10-19,Verified
 Mango,https://shop.mango.com/sa/,,Not available (blocked by site: HTTP 429 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Manna Glass,https://www.mannaglass.sa/,1937,sitemap,2026-10-19,Verified
 Mansoj Dal,https://mansojdal.sa/,133,sitemap,2026-10-19,Verified
@@ -918,7 +918,7 @@ Masdar,https://www.masdaronline.com/,13488,sitemap,2026-10-19,Verified
 Massimo Dutti,https://www.massimodutti.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
 Matajer Online,https://matajeronline.com/,1329,sitemap,2026-10-19,Verified
 Match Perfumes SA,https://matchperfumes.com/,353,sitemap,2026-10-19,Verified
-Mathal Selections,https://selections.mathalstudio.co/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.selections.mathalstudio.co', port=80): Max retries ))",2026-10-19,Verified
+Mathal Selections,https://selections.mathalstudio.co/,18,archive,2026-10-19,Verified
 mathaqi,https://mathaqi.sa/,728,sitemap,2026-10-19,Verified
 Matjar Fofa,https://matjarfofa.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 Matjerblueberry,https://blueberrystore.online/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
@@ -950,7 +950,7 @@ Medura,https://medura.sa/,11,sitemap,2026-10-19,Verified
 MEERA SHOP,https://themeerashop.com/,56,sitemap,2026-10-19,Verified
 Melora,https://www.melora.sa/,6619,sitemap,2026-10-19,Verified
 Meltem,https://meltem.sa/,125,sitemap,2026-10-19,Verified
-Meman,https://memanshop.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='memanshop.com', port=443): Max retries exceeded with u))",2026-10-19,Verified
+Meman,https://memanshop.com/,192,sitemap,2026-10-19,Verified
 Menbur Saudi Arabia,https://www.menbur.sa/,1625,sitemap,2026-10-19,Verified
 Merwas,https://merwas.sa/,88,sitemap,2026-10-19,Verified
 Mesbah,https://mesbah.co/,3,archive,2026-10-19,Verified
@@ -993,10 +993,10 @@ MVC Fresh لحوم بلدي طازجة وخضار طازج توصيل المنط
 My Booking,https://mybooking.sa/,184,sitemap,2026-10-19,Verified
 My Kids Kids Products and Accessories,https://mykids-shop.com/,141,sitemap,2026-10-19,Verified
 My Website,https://www.dgallerie.sa/,639,sitemap,2026-10-19,Verified
-myAster,https://www.myaster.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+myAster,https://www.myaster.sa/,732,archive,2026-10-19,Verified
 Mybag71,https://mybag71.com/,593,sitemap,2026-10-19,Verified
 mycorner369,https://mycorner369.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
-MyInvite,https://myinvite.sa/,12,archive,2026-10-19,Verified
+MyInvite,https://myinvite.sa/,256,sitemap,2026-10-19,Verified
 mymenusa,https://mymenu.sa/,240,sitemap,2026-10-19,Verified
 MZN BODYCARE,https://mznbodycare.com/,120,sitemap,2026-10-19,Verified
 N O V E M B E R,https://novemberline.com/,1,archive,2026-10-19,Verified
@@ -1021,7 +1021,7 @@ NCC,https://nationalcare.com.sa/,173,sitemap,2026-10-19,Verified
 ne.abaya,https://neabaya.com/,110,sitemap,2026-10-19,Verified
 Nerdz Corner,https://nerdzcornerme.com/,9,archive,2026-10-19,Verified
 Nespresso KSA,https://www.nespresso.com/sa/,549,sitemap (partial: 103 of 105 sitemap files read),2026-10-19,Verified
-Netronics,https://netronics.sa/,1,archive,2026-10-19,Verified
+Netronics,https://netronics.sa/,775,sitemap,2026-10-19,Verified
 NeuroLab RX منتجات طبيعية للعناية بالشعر وفروة الرأس,https://neurolabrx.com/,2,archive,2026-10-19,Verified
 New Balance Saudi Arabia,https://www.newbalance.com.sa/,2727,sitemap,2026-10-19,Verified
 NEWPOWER SA,https://newpower.sa/,1334,sitemap,2026-10-19,Verified
@@ -1055,7 +1055,7 @@ NUTRBOX متجر المكملات الرياضية والبروتين والفي
 Nutters.sa,https://nutters.sa/,46,sitemap,2026-10-19,Verified
 Ny fashion designing centre,https://nyfashiontrainingcenter.com/,20,sitemap,2026-10-19,Verified
 nāp,https://nap.sa/,7,sitemap,2026-10-19,Verified
-Oam Water,https://oamwatersa.com/,1,archive,2026-10-19,Verified
+Oam Water,https://oamwatersa.com/,31,sitemap,2026-10-19,Verified
 Ocean Spray®,https://www.oceanspray.sa/,145,sitemap,2026-10-19,Verified
 oceandeal,https://oceandeal.com.sa/,22,sitemap,2026-10-19,Verified
 Oceans Anime Store,https://oceansanimestore.com/,13,archive,2026-10-19,Verified
@@ -1067,10 +1067,10 @@ Official Messika Website,https://www.messika.com/sa_en/,4502,sitemap (SA pages o
 OffiSpace,https://offispace.sa/,122,sitemap,2026-10-19,Verified
 Ohod Electric,https://ohod.com.sa/,7929,sitemap,2026-10-19,Verified
 Ola! Granola,https://ola-granola.com/,9,archive,2026-10-19,Verified
-ola-محمصة اولا,https://ola.sa/,25,shop-page total,2026-10-19,Verified
+ola-محمصة اولا,https://ola.sa/,89,sitemap,2026-10-19,Verified
 ola0fficial,https://ola0fficial.com/,1,archive,2026-10-19,Verified
 ondasdeouro,https://altmezzplss.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://ondasdeouro.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='ondasdeouro.com', port=443): Max retries exceeded with"")]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
-ONTIME | Saudi Arabia Official Store,https://sa.ontime.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.sa.ontime.com', port=80): Max retries exceeded with))",2026-10-19,Verified
+ONTIME | Saudi Arabia Official Store,https://sa.ontime.com/,7553,sitemap,2026-10-19,Verified
 oopsie,https://oopsie.sa/,11,sitemap,2026-10-19,Verified
 OPPO,https://www.oppo.com/sa/,426,sitemap (partial: 118 of 119 sitemap files read),2026-10-19,Verified
 Orai,https://oraiclothing.com/,4,archive,2026-10-19,Verified
@@ -1080,7 +1080,7 @@ orgo,https://orgoroastery.com/,25,archive,2026-10-19,Verified
 Oriflame Saudi Arabia | أوريفليم,https://www.oriflamesa.com/,133,shop-page total,2026-10-19,Verified
 oright-ksa,https://oright-sa.com/,134,archive,2026-10-19,Verified
 Ormella,https://ormella-dal.com/,73,sitemap,2026-10-19,Verified
-OSIF PERFUMES,https://osifp.com/,,"Not available (sitemap present but yielded no countable URLs ([('https://osifpe.com/ar/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='osifpe.com', port=443): Max retries exceeded with url:""), ('https://osifpe.com/ar/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='osifpe.com', port=443): Max retries exceeded with url:"")]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",2026-10-19,Verified
+OSIF PERFUMES,https://osifp.com/,1,archive,2026-10-19,Verified
 Otherways,https://otherways.com.sa/,35,sitemap,2026-10-19,Verified
 Oud and Bakhor,https://zayanoud.com/,52,sitemap,2026-10-19,Verified
 Oud Elite,https://sa.oudelite.com/,80,archive,2026-10-19,Verified
@@ -1126,10 +1126,10 @@ Phizz,https://phizz.sa/,,"Not available (sitemap present but yielded no countabl
 Physionatal,https://physionatal.com.sa/,890,sitemap,2026-10-19,Verified
 Picks by r,https://picksbyr.com/,1,archive,2026-10-19,Verified
 PIGMENT,https://pigment.sa/,92,sitemap,2026-10-19,Verified
-PIK,https://pik.sa/,3525,archive,2026-10-19,Verified
+PIK,https://pik.sa/,18,sitemap,2026-10-19,Verified
 Pilai,https://pilai.sa/,151,sitemap,2026-10-19,Verified
 pillows ETC,https://comfort-expertsa.com/,1425,sitemap,2026-10-19,Verified
-Pink Moon,https://jdelsara.com/,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",2026-10-19,Verified
+Pink Moon,https://jdelsara.com/,1,archive,2026-10-19,Verified
 pins makers,https://pinsmakers.store/,269,sitemap,2026-10-19,Verified
 pizzaexpress,https://pizzaexpress.order.sa/,756,sitemap,2026-10-19,Verified
 Platinum,https://www.platinum.sa/,471,sitemap,2026-10-19,Verified
@@ -1195,7 +1195,7 @@ Reeza Store,https://reezstore.com/,4,archive,2026-10-19,Verified
 Renown,https://renown.sa/,283,sitemap,2026-10-19,Verified
 Repose Cafe,https://reposecafe.sa/,42,sitemap,2026-10-19,Verified
 RESON8,https://reson8sa.com/,4834,sitemap,2026-10-19,Verified
-Retro Gaming,https://rg.sa/,,Not available (unreachable (HTTP 500)),2026-10-19,Verified
+Retro Gaming,https://rg.sa/,47250,sitemap,2026-10-19,Verified
 RevitaLash Saudi Arabia,https://revitalash.sa/,299,sitemap,2026-10-19,Verified
 REY قهوة مختصة وشوكولاتة سعودية فاخرة توصيل سريع داخل السعودية,https://rey.com.sa/,16,archive,2026-10-19,Verified
 REZA,https://byrezasa.com/,3,archive,2026-10-19,Verified
@@ -1285,7 +1285,7 @@ Saudi Society for Clinical Chemistry,https://sscc.med.sa/,1208,sitemap,2026-10-1
 Saudi World Furniture- مفروشات عالم السعودية,https://saudiworld.sa/,99,sitemap,2026-10-19,Verified
 Saul,https://saul-store.com/,2,archive,2026-10-19,Verified
 Scientific Supplies Est,https://s-s.sa/,762,sitemap,2026-10-19,Verified
-Scotch & Soda KSA,https://sa.scotch-soda.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.sa.scotch-soda.com', port=80): Max retries exceeded))",2026-10-19,Verified
+Scotch & Soda KSA,https://sa.scotch-soda.com/,2995,sitemap,2026-10-19,Verified
 Seen Q,https://seenqstore.com/,351,sitemap,2026-10-19,Verified
 Selaty,https://selaty.com/,363,sitemap,2026-10-19,Verified
 Select Pharmacy,https://select.sa/,,"Not available (sitemap present but yielded no countable URLs ([('https://select.sa/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
@@ -1317,9 +1317,9 @@ Shop all beauty and personal care products online from Teshtesh,https://teshtesh
 Shop Kaafmeem Women Saudi Abayas and Modest Fashion Online,https://kaafmeem.com/,9036,archive,2026-10-19,Verified
 ShopCasa لاختياراتك اليومية,https://shop-casa.com/,4671,sitemap,2026-10-19,Verified
 SHOPPING SHU,https://shoppingshu.com/,695,sitemap,2026-10-19,Verified
-shovel شفل,https://al-shovel.com/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+shovel شفل,https://al-shovel.com/,65,sitemap,2026-10-19,Verified
 Show Muscles,https://showmuscles.com/,169,sitemap,2026-10-19,Verified
-SIDEWALK,https://sidewalk.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+SIDEWALK,https://sidewalk.sa/,812,sitemap,2026-10-19,Verified
 SideWalks,https://sidewalksa.com/,73,sitemap,2026-10-19,Verified
 SIDQ,https://sidq.com.sa/,82,sitemap,2026-10-19,Verified
 siesta mattresses,https://siesta.sa/,45,sitemap,2026-10-19,Verified
@@ -1368,7 +1368,7 @@ SPACETR,https://spacetrr.com/,36,sitemap,2026-10-19,Verified
 SparkTech - برنامج متكامل لتنمية أعمالك,https://sparktech.sa/,72,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Verified
 Special Matcha,https://specialmatcha.com/,2,sitemap,2026-10-19,Verified
 SPECTER,https://specter0.com/,2,archive,2026-10-19,Verified
-Speero,https://speero.net/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.speero.net', port=80): Max retries exceeded with ur))",2026-10-19,Verified
+Speero,https://speero.net/,628,sitemap,2026-10-19,Verified
 SpiriHub Roastery,https://spirithub.sa/,3,archive,2026-10-19,Verified
 Spirit,https://spirit.sa/,23,sitemap,2026-10-19,Verified
 Splash,https://www.splashfashions.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
@@ -1432,7 +1432,7 @@ Tennis Land | تنس لاند,https://tennis.com.sa/,132,sitemap,2026-10-19,Veri
 Tern,https://ternstore.com/,235,sitemap,2026-10-19,Verified
 test new ojoj,https://fatma-crn.com/,1638,sitemap,2026-10-19,Verified
 TEXT Store,https://text.sa/,10,sitemap,2026-10-19,Verified
-The Body Shop,https://www.thebodyshop.com.sa/,957,sitemap (partial: 10 of 12 sitemap files read),2026-10-19,Verified (secondary evidence)
+The Body Shop,https://www.thebodyshop.com.sa/,957,sitemap,2026-10-19,Verified (secondary evidence)
 THE FACE SHOP - KSA,https://thefaceshop.com.sa/,1263,sitemap,2026-10-19,Verified
 The First Makeup منتجات التان الأصلية للحصول على برونزاج مثالي,https://thefirstmakeup.com/,65,sitemap,2026-10-19,Verified
 The Geeky Store,https://thegeekystoresa.com/,50,sitemap,2026-10-19,Verified
@@ -1582,7 +1582,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 آل الطالب متجر مستلزمات الزراعة في السعودية بذور وأسمدة وأدوات ري,https://altalebagri.com/,1396,sitemap,2026-10-19,Verified
 آنية المنزل الراقي,https://homeutensils.com.sa/,47067,sitemap,2026-10-19,Verified
 آي بلاست ( iplast ),https://iplast.com.sa/,127,sitemap,2026-10-19,Verified
-آيلاش للبصريات,https://ilash.com.sa/,4580,archive,2026-10-19,Verified
+آيلاش للبصريات,https://ilash.com.sa/,1662,sitemap,2026-10-19,Verified
 أبها قيمز ABHA GAMES,https://abhagames.sa/,111,sitemap,2026-10-19,Verified
 أبهه ملابس وأكسسوارات للفتيات 4-18سنة,https://obaha.com.sa/,491,sitemap,2026-10-19,Verified
 أبو صافي للأقمشة,https://abousafi.com/,234,sitemap,2026-10-19,Verified
@@ -2479,7 +2479,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 شركة تمور الاحمدية للصناعة,https://alahmadiha.com.sa/,17,archive,2026-10-19,Verified
 شركة تنسيق حدائق,https://tansikhadaek.org/,186,sitemap,2026-10-19,Verified
 شركة جاسكو للمنتجات البلاستيكية,https://jasco.sa/,197,sitemap,2026-10-19,Verified
-شركة جولدن جول,https://goldengoal.sa/,56,sitemap (partial: 10 of 11 sitemap files read),2026-10-19,Verified
+شركة جولدن جول,https://goldengoal.sa/,58,sitemap,2026-10-19,Verified
 شركة حلول المطابخ والخزائن,https://www.holoul.com.sa/,54,sitemap,2026-10-19,Verified
 شركة دامه للدعاية والإعلان,https://dama-adv.com/,1,archive,2026-10-19,Verified
 شركة دروب شيب لتقنية المعلومات,https://www.dropship.com.sa/,62,archive,2026-10-19,Verified
@@ -2525,7 +2525,7 @@ Zurex - زيوركس,https://zurex.sa/,16,sitemap,2026-10-19,Verified
 شير Chere عسل طبيعي وخلطات طاقة وحيوية أصلية في السعودية,https://chere.sa/,55,sitemap,2026-10-19,Verified
 شيري,https://cherry111.com/,5,archive,2026-10-19,Verified
 شيلتر,https://shelter.com.sa/,73,archive,2026-10-19,Verified
-صاد,https://sadoud.com/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='sadoud.com', port=443): Max retries exceeded with url:))",2026-10-19,Verified
+صاد,https://sadoud.com/,2,archive,2026-10-19,Verified
 صالون جور سست,https://ghrsalon.com/,85,sitemap,2026-10-19,Verified
 صدى الأوائل مستلزمات وأجهزة طبية وأطراف صناعية بالسعودية,https://sada-alawael.sa/,510,sitemap,2026-10-19,Verified
 صفوة الثمار,https://km.sa/,34,sitemap,2026-10-19,Verified
