@@ -303,117 +303,117 @@ acf.sa,SA,183,sitemap,11,https://acf.sa/wp-sitemap.xml,2026-10-19,raw=183 dupes_
 citron.sa,SA,1801,sitemap,14,https://citron.sa/sitemap.xml,2026-10-19,raw=1801 dupes_removed=0; recount via robots.txt
 aldo.com.sa,SA,10087,sitemap,22,https://aldo.com.sa/sitemap.xml,2026-10-19,raw=10087 dupes_removed=0; recount via robots.txt
 cloudautomation.sa,SA,266,sitemap,8,https://cloudautomation.sa/sitemap_index.xml,2026-10-19,raw=268 dupes_removed=2; recount via robots.txt
-charm.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.charm.com.sa', port=80): Max retries exceeded with ))",0,,2026-10-19,
-checkpoint.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.checkpoint.com.sa', port=443): Max retries exceede))",0,,2026-10-19,
-cheveusolutions.co,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cheveusolutions.co', port=80): Max retries exceeded))",0,,2026-10-19,
-chicdressess.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.chicdressess.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-cham-soc.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cham-soc.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-cilek.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cilek.sa', port=80): Max retries exceeded with url:))",0,,2026-10-19,
+charm.com.sa,SA,149,sitemap,3,https://charm.com.sa/sitemap.xml,2026-10-19,raw=149 dupes_removed=0; adopted from rerun (NA->value)
+checkpoint.com.sa,SA,227,sitemap,10,https://www.checkpoint.com.sa/sitemap.xml,2026-10-19,raw=227 dupes_removed=0; adopted from rerun (NA->value)
+cheveusolutions.co,SA,135,sitemap,3,https://cheveusolutions.co/sitemap.xml,2026-10-19,raw=135 dupes_removed=0; adopted from rerun (NA->value)
+chicdressess.com,SA,119,sitemap,3,https://chicdressess.com/sitemap.xml,2026-10-19,raw=119 dupes_removed=0; adopted from rerun (NA->value)
+cham-soc.com,SA,11,sitemap,3,https://cham-soc.com/sitemap.xml,2026-10-19,raw=11 dupes_removed=0; adopted from rerun (NA->value)
+cilek.sa,SA,641,sitemap,10,https://cilek.sa/sitemap.xml,2026-10-19,raw=641 dupes_removed=0; adopted from rerun (NA->value)
 bean-berry.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
-cinderellasa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cinderellasa.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-cinnamongurl.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.cinnamongurl.com', port=443): Max retries exceeded))",0,,2026-10-19,
+cinderellasa.com,SA,49,sitemap,3,https://cinderellasa.com/sitemap.xml,2026-10-19,raw=49 dupes_removed=0; adopted from rerun (NA->value)
+cinnamongurl.com,SA,737,sitemap,3,https://cinnamongurl.com/sitemap.xml,2026-10-19,raw=737 dupes_removed=0; adopted from rerun (NA->value)
 beauty-dot.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://beautydott.com/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='beautydott.com', port=443): Max retries exceeded with ""), ('https://beautydott.com/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='beautydott.com', port=443): Max retries exceeded with "")]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://beautydott.com/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='beautydott.com', port=443): Max retries exceeded with ""), ('https://beautydott.com/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='beautydott.com', port=443): Max retries exceeded with "")])"
 boayz.sa,SA,593,sitemap,12,https://boayz.sa/wp-sitemap.xml,2026-10-19,raw=593 dupes_removed=0; recount via robots.txt
 carrefourksa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.carrefourksa.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-cityw.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cityw.com.sa', port=80): Max retries exceeded with ))",0,,2026-10-19,
-store.clear-hub.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.clear-hub.com', port=80): Max retries exceede))",0,,2026-10-19,
+cityw.com.sa,SA,3527,sitemap,8,https://cityw.com.sa/wp-sitemap.xml,2026-10-19,raw=3528 dupes_removed=1; adopted from rerun (NA->value)
+store.clear-hub.com,SA,4,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 americantourister.com.sa,SA,735,sitemap,10,https://americantourister.com.sa/sitemap.xml,2026-10-19,raw=735 dupes_removed=0; recount via robots.txt
-cloud9xstore.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cloud9xstore.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-coach.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coach.sa', port=80): Max retries exceeded with url:))",0,,2026-10-19,
-coda.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coda.sa', port=80): Max retries exceeded with url: ))",0,,2026-10-19,
+cloud9xstore.com,SA,461,sitemap,3,https://cloud9xstore.com/sitemap.xml,2026-10-19,raw=461 dupes_removed=0; adopted from rerun (NA->value)
+coach.sa,SA,2881,sitemap,10,https://coach.sa/sitemap.xml,2026-10-19,raw=2881 dupes_removed=0; adopted from rerun (NA->value)
+coda.sa,SA,166,sitemap,4,https://coda.sa/sitemap.xml,2026-10-19,raw=166 dupes_removed=0; adopted from rerun (NA->value)
 cocoaisland.sa,SA,86,sitemap,4,https://cocoaisland.sa/sitemap.xml,2026-10-19,raw=86 dupes_removed=0; recount via robots.txt
 creativemedia.sa,SA,21,sitemap,4,https://www.creativemedia.sa/sitemap.xml,2026-10-19,raw=21 dupes_removed=0
-coffeegourmetsa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coffeegourmetsa.com', port=80): Max retries exceede))",0,,2026-10-19,
-coffeesupplies.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coffeesupplies.com.sa', port=80): Max retries excee))",0,,2026-10-19,
-colehaan.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.colehaan.sa', port=80): Max retries exceeded with u))",0,,2026-10-19,
+coffeegourmetsa.com,SA,212,sitemap,4,https://coffeegourmetsa.com/ar/sitemap.xml,2026-10-19,raw=212 dupes_removed=0; adopted from rerun (NA->value)
+coffeesupplies.com.sa,SA,2453,sitemap,3,https://coffeesupplies.com.sa/sitemap.xml,2026-10-19,raw=2453 dupes_removed=0; adopted from rerun (NA->value)
+colehaan.sa,SA,7641,sitemap,16,https://colehaan.sa/sitemap.xml,2026-10-19,raw=7641 dupes_removed=0; adopted from rerun (NA->value)
 bestpractice.sa,SA,855,sitemap,12,https://www.bestpractice.sa/sitemap_index.xml,2026-10-19,raw=858 dupes_removed=3; recount via robots.txt
 cosmetics.sa,SA,10204,sitemap,5,https://cosmetics.sa/sitemap.xml,2026-10-19,raw=10204 dupes_removed=0; recount via robots.txt
-comfysa4.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.comfysa4.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
+comfysa4.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 shop.bluemountain.sa,SA,688,sitemap,5,https://shop.bluemountain.sa/ar/sitemap.xml | https://shop.bluemountain.sa/en/sitemap.xml,2026-10-19,raw=688 dupes_removed=0; recount via robots.txt
-consul.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.consul.sa', port=80): Max retries exceeded with url))",0,,2026-10-19,
+consul.sa,SA,657,sitemap (partial: 3 of 4 sitemap files read),3,https://www.consul.sa/sitemap.xml | https://www.consul.sa/sitemap_index.xml,2026-10-19,raw=657 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.consul.sa/sitemap_index.xml:410; adopted from rerun (NA->value)
 andrewssykes.sa,SA,397,sitemap,10,https://www.andrewssykes.sa/sitemap_index.xml,2026-10-19,raw=399 dupes_removed=2; recount via robots.txt
 continentalperformance.online,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.continentalperformance.online', port=80): Max retri))",0,,2026-10-19,
-coolshower.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.coolshower.com.sa', port=80): Max retries exceeded ))",0,,2026-10-19,
-cool.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cool.sa', port=80): Max retries exceeded with url: ))",0,,2026-10-19,
+coolshower.com.sa,SA,33,sitemap,4,https://coolshower.com.sa/sitemap.xml,2026-10-19,raw=33 dupes_removed=0; adopted from rerun (NA->value)
+cool.sa,SA,2009,sitemap,11,https://cool.sa/sitemap_index.xml,2026-10-19,raw=2088 dupes_removed=79; adopted from rerun (NA->value)
 defentek.sa,SA,17,sitemap,1,https://defentek.sa/sitemap.xml,2026-10-19,raw=17 dupes_removed=0
 corner-22.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.corner-22.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-prostoore.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.prostoore.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-cosmed.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cosmed.sa', port=80): Max retries exceeded with url))",0,,2026-10-19,
-cottonskin.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cottonskin.sa', port=80): Max retries exceeded with))",0,,2026-10-19,
-7cr-store.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.7cr-store.com', port=443): Max retries exceeded wi))",0,,2026-10-19,
+prostoore.com,SA,2,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+cosmed.sa,SA,60,sitemap,8,https://cosmed.sa/sitemap_index.xml,2026-10-19,raw=62 dupes_removed=2; adopted from rerun (NA->value)
+cottonskin.sa,SA,49,sitemap,5,https://cottonskin.sa/sitemap.xml,2026-10-19,raw=49 dupes_removed=0; adopted from rerun (NA->value)
+7cr-store.com,SA,6,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 craftwinc.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.craftwinc.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-crearoma.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.crearoma.sa', port=80): Max retries exceeded with u))",0,,2026-10-19,
+crearoma.sa,SA,127,sitemap,6,https://crearoma.sa/sitemap.xml,2026-10-19,raw=127 dupes_removed=0; adopted from rerun (NA->value)
 alyusroman.com,SA,126,sitemap,14,https://alyusroman.com/sitemap_index.xml,2026-10-19,raw=127 dupes_removed=1; recount via robots.txt
 carcare.com.sa,SA,114,sitemap,11,http://carcare.com.sa/sitemap_index.xml,2026-10-19,raw=117 dupes_removed=3; recount via robots.txt
-crewshop.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.crewshop.sa', port=80): Max retries exceeded with u))",0,,2026-10-19,
-dabb.sa,SA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://dabb.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='dabb.sa', port=443): Max retries exceeded with url: /s"")])"
+crewshop.sa,SA,151,sitemap,5,https://crewshop.sa/sitemap_index.xml,2026-10-19,raw=152 dupes_removed=1; adopted from rerun (NA->value)
+dabb.sa,SA,26,sitemap,5,https://dabb.sa/sitemap.xml,2026-10-19,raw=26 dupes_removed=0; adopted from rerun (NA->value)
 almanara.com.sa,SA,1476,sitemap,16,https://www.almanara.com.sa/sitemap_index.xml | https://www.almanara.com.sa/sitemap_index.xml,2026-10-19,raw=1477 dupes_removed=1; recount via robots.txt
-crispyfrozen.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.crispyfrozen.com', port=443): Max retries exceeded))",0,,2026-10-19,
-cry.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cry.sa', port=80): Max retries exceeded with url: /))",0,,2026-10-19,
-cs-center.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cs-center.sa', port=80): Max retries exceeded with ))",0,,2026-10-19,
-cubicsky.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cubicsky.sa', port=80): Max retries exceeded with u))",0,,2026-10-19,
-curvastores.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='curvastores.com', port=443): Max retries exceeded with))",0,,2026-10-19,
-crystalshade.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='crystalshade.com.sa', port=443): Max retries exceeded ))",0,,2026-10-19,
-cutecat.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cutecat.com.sa', port=80): Max retries exceeded wit))",0,,2026-10-19,
-roastercypress.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.roastercypress.com', port=80): Max retries exceeded))",0,,2026-10-19,
+crispyfrozen.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://crispyfrozen.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+cry.sa,SA,48,sitemap,1,https://cry.sa/sitemap.xml,2026-10-19,raw=48 dupes_removed=0; adopted from rerun (NA->value)
+cs-center.sa,SA,158,sitemap,11,https://cs-center.sa/wp-sitemap.xml,2026-10-19,raw=158 dupes_removed=0; adopted from rerun (NA->value)
+cubicsky.sa,SA,1569,sitemap,4,https://cubicsky.sa/sitemap.xml,2026-10-19,raw=1569 dupes_removed=0; adopted from rerun (NA->value)
+curvastores.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://curvastores.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+crystalshade.com.sa,SA,103,sitemap,12,https://crystalshade.com.sa/wp-sitemap.xml,2026-10-19,raw=103 dupes_removed=0; adopted from rerun (NA->value)
+cutecat.com.sa,SA,2238,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://cutecat.com.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+roastercypress.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 crowdless.sa,SA,631,sitemap,7,https://crowdless.sa/sitemap.xml,2026-10-19,raw=631 dupes_removed=0; recount via robots.txt
-daamstore.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daamstore.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+daamstore.com,SA,345,sitemap,4,https://daamstore.com/sitemap.xml,2026-10-19,raw=345 dupes_removed=0; adopted from rerun (NA->value)
 dailyperfue.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dailyperfue.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-daleen.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='daleen.com.sa', port=443): Max retries exceeded with u))",0,,2026-10-19,
+daleen.com.sa,SA,166,sitemap,6,https://daleen.com.sa/sitemap.xml,2026-10-19,raw=166 dupes_removed=0; adopted from rerun (NA->value)
 curvestore-sa.com,SA,18,sitemap,3,https://curvestore-sa.com/sitemap.xml,2026-10-19,raw=18 dupes_removed=0; recount via robots.txt
-dallatalbon.store,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dallatalbon.store', port=80): Max retries exceeded ))",0,,2026-10-19,
+dallatalbon.store,SA,501,sitemap,4,https://dallatalbon.store/ar/sitemap.xml,2026-10-19,raw=501 dupes_removed=0; adopted from rerun (NA->value)
 details50.com,SA,1003,sitemap,3,https://details50.com/sitemap.xml,2026-10-19,raw=1003 dupes_removed=0
 aquarium.sa,SA,2845,sitemap,14,https://aquarium.sa/sitemap.xml,2026-10-19,raw=2845 dupes_removed=0; recount via robots.txt
 bcdr.sa,SA,9388,sitemap,15,https://bcdr.sa/sitemap.xml,2026-10-19,raw=9422 dupes_removed=34; recount via robots.txt
 columbia.sa,SA,3087,sitemap,14,https://columbia.sa/sitemap.xml,2026-10-19,raw=3087 dupes_removed=0; recount via robots.txt
-danforgift.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.danforgift.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-danube.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.danube.sa', port=80): Max retries exceeded with url))",0,,2026-10-19,
-daralnijara.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daralnijara.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-dar-rina.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dar-rina.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
+danforgift.com,SA,1811,sitemap,3,https://danforgift.com/sitemap.xml,2026-10-19,raw=1811 dupes_removed=0; adopted from rerun (NA->value)
+danube.sa,SA,3251,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+daralnijara.com,SA,4473,sitemap,3,https://daralnijara.com/sitemap.xml,2026-10-19,raw=4473 dupes_removed=0; adopted from rerun (NA->value)
+dar-rina.com,SA,164,sitemap,4,https://dar-rina.com/sitemap.xml,2026-10-19,raw=164 dupes_removed=0; adopted from rerun (NA->value)
 bloomingdales.sa,SA,124626,sitemap,23,https://bloomingdales.sa/sitemap_index.xml | https://en.bloomingdales.sa/sitemap_index.xml,2026-10-19,raw=127134 dupes_removed=2507; recount via robots.txt; media sitemaps skipped=28
 byghadi.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://byghadi.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://byghadi.com/sitemap.xml', 404)])"
-dar-waraqa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dar-waraqa.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-darghaith.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.darghaith.com', port=443): Max retries exceeded wi))",0,,2026-10-19,
+dar-waraqa.com,SA,485,sitemap,4,https://dar-waraqa.com/sitemap.xml,2026-10-19,raw=485 dupes_removed=0; adopted from rerun (NA->value)
+darghaith.com,SA,1215,sitemap,3,https://darghaith.com/sitemap.xml,2026-10-19,raw=1215 dupes_removed=0; adopted from rerun (NA->value)
 chanel.com,AE,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 chanel.com,KW,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 chanel.com,SA,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 chanel.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
-darussalamstore.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.darussalamstore.com', port=80): Max retries exceede))",0,,2026-10-19,
-darzan.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.darzan.sa', port=80): Max retries exceeded with url))",0,,2026-10-19,
+darussalamstore.com,SA,936,sitemap,6,https://darussalamstore.com/sitemap.xml | https://darussalamstore.com/sitemap.xml | https://darussalamstore.com/sitemap.xml,2026-10-19,raw=936 dupes_removed=0; adopted from rerun (NA->value)
+darzan.sa,SA,662,sitemap,1,https://darzan.sa/sitemap.xml,2026-10-19,raw=662 dupes_removed=0; adopted from rerun (NA->value)
 digital-future.sa,SA,770,sitemap,7,https://digital-future.sa/sitemap.xml,2026-10-19,raw=770 dupes_removed=0; recount via robots.txt
-dasco.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dasco.sa', port=80): Max retries exceeded with url:))",0,,2026-10-19,
-dashcam-ksa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dashcam-ksa.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
+dasco.sa,SA,544,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+dashcam-ksa.com,SA,176,sitemap,4,https://dashcam-ksa.com/ar/sitemap.xml,2026-10-19,raw=176 dupes_removed=0; adopted from rerun (NA->value)
 store.ashley.sa,SA,14269,sitemap,22,https://store.ashley.sa/sitemap.xml,2026-10-19,raw=14269 dupes_removed=0; recount via robots.txt
-daymanfe.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daymanfe.com.sa', port=80): Max retries exceeded wi))",0,,2026-10-19,
-daz.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.daz.sa', port=80): Max retries exceeded with url: /))",0,,2026-10-19,
-delsey.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.delsey.com.sa', port=80): Max retries exceeded with))",0,,2026-10-19,
-demovamed.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.demovamed.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-dermadivineshop.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dermadivineshop.com', port=80): Max retries exceede))",0,,2026-10-19,
-desertpublisher.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.desertpublisher.com', port=80): Max retries exceede))",0,,2026-10-19,
-deraahstore.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.deraahstore.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-mydetaiils-sa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.mydetaiils-sa.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+daymanfe.com.sa,SA,273,sitemap,4,https://daymanfe.com.sa/sitemap.xml,2026-10-19,raw=273 dupes_removed=0; adopted from rerun (NA->value)
+daz.sa,SA,4,platform product count,0,,2026-10-19,no sitemap found; woocommerce X-WP-Total (products only); adopted from rerun (NA->value)
+delsey.com.sa,SA,1471,sitemap,14,https://delsey.com.sa/sitemap.xml,2026-10-19,raw=1479 dupes_removed=8; adopted from rerun (NA->value)
+demovamed.com,SA,804,sitemap,4,https://demovamed.com/sitemap.xml,2026-10-19,raw=804 dupes_removed=0; adopted from rerun (NA->value)
+dermadivineshop.com,SA,4,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://dermadivineshop.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+desertpublisher.com,SA,1099,sitemap,3,https://desertpublisher.com/sitemap.xml,2026-10-19,raw=1099 dupes_removed=0; adopted from rerun (NA->value)
+deraahstore.com,SA,12793,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+mydetaiils-sa.com,SA,557,sitemap,3,https://mydetaiils-sa.com/sitemap.xml,2026-10-19,raw=557 dupes_removed=0; adopted from rerun (NA->value)
 detailscollection.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.detailscollection.com', port=80): Max retries excee))",0,,2026-10-19,
-dhrez.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dhrez.com', port=80): Max retries exceeded with url))",0,,2026-10-19,
+dhrez.com,SA,10228,sitemap,5,https://dhrez.com/sitemap.xml,2026-10-19,raw=10228 dupes_removed=0; adopted from rerun (NA->value)
 bio-fertilisers.com.sa,SA,59,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-dc.med.sa,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.dc.med.sa', port=443): Max retries exceeded with u))",0,,2026-10-19,
+dc.med.sa,SA,691,sitemap (partial: 5 of 6 sitemap files read),5,https://dc.med.sa/sitemap.xml | https://dc.med.sa/ticket.php?sitemap.xml,2026-10-19,raw=691 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://dc.med.sa/ticket.php?sitemap.xml:404; adopted from rerun (NA->value)
 divepoint.com.sa,SA,56,sitemap,5,https://divepoint.com.sa/wp-sitemap.xml,2026-10-19,raw=56 dupes_removed=0; recount via robots.txt
 binzipad.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 doublerabayas.com,SA,36,sitemap,3,https://doublerabayas.com/sitemap.xml,2026-10-19,raw=36 dupes_removed=0
-digital-j.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.digital-j.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+digital-j.com,SA,643,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://digital-j.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 dxracer.sa,SA,155,sitemap,4,https://www.dxracer.sa/sitemap/all.xml | https://www.dxracer.sa/sitemap/blogs-1.xml | https://www.dxracer.sa/sitemap/details.xml | https://www.dxracer.sa/sitemap/products.xml,2026-10-19,raw=155 dupes_removed=0
 bestvalue.sa,SA,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),0,,2026-10-19,sitemap present but yielded no countable URLs
 buyme.sa,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://buyme.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 dstride.sa,SA,67,sitemap,7,https://dstride.sa/wp-sitemap.xml,2026-10-19,raw=67 dupes_removed=0
 ebtikar4teachers.com,SA,456,sitemap,3,https://ebtikar4teachers.com/sitemap.xml,2026-10-19,raw=456 dupes_removed=0
-greenconcrete.sa,SA,1,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.greenconcrete.sa/sitemap_index.xml', ""ConnectionError: HTTPSConnectionPool(host='www.greenconcrete.sa', port=443): Max retries exceeded"")]); woocommerce X-WP-Total (products only)"
+greenconcrete.sa,SA,23,sitemap,6,https://www.greenconcrete.sa/sitemap_index.xml | https://www.greenconcrete.sa/sitemap_index.xml,2026-10-19,raw=24 dupes_removed=1; adopted from rerun (fallback->complete sitemap)
 abayas-base.com,SA,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),0,,2026-10-19,sitemap present but yielded no countable URLs
 eleganthome.com.sa,SA,3309,sitemap,14,https://eleganthome.com.sa/sitemap.xml,2026-10-19,raw=3309 dupes_removed=0
 direct-message.sa,SA,158,sitemap,5,http://direct-message.sa/sitemap.xml,2026-10-19,raw=158 dupes_removed=0
-dimos.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dimos.com.sa', port=80): Max retries exceeded with ))",0,,2026-10-19,
-dipin.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dipin.com.sa', port=80): Max retries exceeded with ))",0,,2026-10-19,
+dimos.com.sa,SA,784,sitemap,14,https://dimos.com.sa/sitemap.xml,2026-10-19,raw=784 dupes_removed=0; adopted from rerun (NA->value)
+dipin.com.sa,SA,178,sitemap,5,https://dipin.com.sa/sitemap_index.xml,2026-10-19,raw=179 dupes_removed=1; adopted from rerun (NA->value)
 elba.com.sa,SA,743,sitemap,9,https://elba.com.sa/sitemap_index.xml,2026-10-19,raw=744 dupes_removed=1
-store.drlayla.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.drlayla.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-cloudcorner.com.sa,SA,10,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://cloudcorner.com.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='cloudcorner.com.sa', port=443): Max retries exceeded w"")]); woocommerce X-WP-Total (products only)"
+store.drlayla.com,SA,261,sitemap,3,https://store.drlayla.com/sitemap.xml,2026-10-19,raw=261 dupes_removed=0; adopted from rerun (NA->value)
+cloudcorner.com.sa,SA,120,sitemap,10,https://cloudcorner.com.sa/sitemap.xml,2026-10-19,raw=121 dupes_removed=1; adopted from rerun (fallback->complete sitemap)
 drsboxsa.com,SA,487,sitemap,3,https://drsboxsa.com/sitemap.xml,2026-10-19,raw=487 dupes_removed=0
 elegantonline2.com,SA,176,sitemap,4,https://elegantonline2.com/sitemap.xml,2026-10-19,raw=176 dupes_removed=0
 bindawood.sa,SA,256,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -438,7 +438,7 @@ elixirbunn.com,SA,83,sitemap,4,https://elixirbunn.com/sitemap.xml,2026-10-19,raw
 bexerksa.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 eta.sa,SA,289,sitemap,4,https://eta.sa/sitemap.xml,2026-10-19,raw=289 dupes_removed=0
 wthbstore.com,SA,152,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://wthbstore.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
-store.artic.com.sa,SA,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+store.artic.com.sa,SA,161,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 elite1life.com,SA,2077,sitemap,3,https://elite1life.com/sitemap.xml,2026-10-19,raw=2077 dupes_removed=0
 netetesalat.com,SA,40,sitemap,3,https://netetesalat.com/sitemap.xml,2026-10-19,raw=40 dupes_removed=0
 beautypatra.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -568,13 +568,13 @@ glowrr.com,SA,34,sitemap,3,https://glowrr.com/sitemap.xml,2026-10-19,raw=34 dupe
 gernasmall.com,SA,1267,sitemap,12,https://www.gernasmall.com/sitemap.xml,2026-10-19,raw=1267 dupes_removed=0; recount via robots.txt
 giordano.com.sa,SA,8371,sitemap,20,https://giordano.com.sa/sitemap.xml,2026-10-19,raw=8371 dupes_removed=0; recount via robots.txt
 tgfgallery.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.tgfgallery.com', port=443): Max retries exceeded w))",0,,2026-10-19,
-goldstore10.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldstore10.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
+goldstore10.com,SA,27,sitemap,3,https://goldstore10.com/sitemap.xml,2026-10-19,raw=27 dupes_removed=0; adopted from rerun (NA->value)
 goldenkitstore.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldenkitstore.com', port=80): Max retries exceeded))",0,,2026-10-19,
-rkwah.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.rkwah.com.sa', port=80): Max retries exceeded with ))",0,,2026-10-19,
-goldroze2.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldroze2.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+rkwah.com.sa,SA,18,sitemap,4,https://rkwah.com.sa/sitemap.xml,2026-10-19,raw=18 dupes_removed=0; adopted from rerun (NA->value)
+goldroze2.com,SA,597,sitemap,3,https://goldroze2.com/sitemap.xml,2026-10-19,raw=597 dupes_removed=0; adopted from rerun (NA->value)
 goldenscent.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldenscent.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
 gorgeousbq.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gorgeousbq.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-goldapple.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goldapple.sa', port=80): Max retries exceeded with ))",0,,2026-10-19,
+goldapple.sa,SA,93034,sitemap,3,https://goldapple.sa/sitemap.xml,2026-10-19,raw=93034 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
 hazelcontrol.com,SA,90,sitemap,3,https://hazelcontrol.com/sitemap.xml,2026-10-19,raw=90 dupes_removed=0
 gusto.sa,SA,25,sitemap,4,https://gusto.sa/sitemap.xml,2026-10-19,raw=25 dupes_removed=0; recount via guess
 hab.com.sa,SA,138,sitemap,3,https://hab.com.sa/ar/sitemap.xml,2026-10-19,raw=138 dupes_removed=0; recount via robots.txt
@@ -583,58 +583,58 @@ sa.hm.com,SA,,Not available (blocked by site: HTTP 403 on robots.txt; not bypass
 gravity-sa1.com,SA,10,sitemap,3,https://gravity-sa1.com/sitemap.xml,2026-10-19,raw=10 dupes_removed=0
 gardenfarm.com.sa,SA,48,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.gardenfarm.com.sa/index.php/sitemap.xml', 404)]); woocommerce X-WP-Total (products only)"
 carton.sa,SA,3367,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-h7master.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.h7master.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-hajardelights.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hajardelights.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+h7master.com,SA,3883,sitemap,4,https://h7master.com/sitemap.xml,2026-10-19,raw=3883 dupes_removed=0; adopted from rerun (NA->value)
+hajardelights.com,SA,133,sitemap,3,https://hajardelights.com/sitemap.xml,2026-10-19,raw=133 dupes_removed=0; adopted from rerun (NA->value)
 gumazing.sa,SA,955,sitemap,17,https://gumazing.sa/sitemap.xml,2026-10-19,raw=955 dupes_removed=0; recount via robots.txt
-halaline.store,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.halaline.store', port=80): Max retries exceeded wit))",0,,2026-10-19,
+halaline.store,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 abaya-1997.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 hanbyhanouf.com,SA,67,sitemap,3,https://hanbyhanouf.com/sitemap.xml,2026-10-19,raw=67 dupes_removed=0
-hanye-shwbyenq.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hanye-shwbyenq.com', port=80): Max retries exceeded))",0,,2026-10-19,
-happinesshormonestore.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.happinesshormonestore.com', port=80): Max retries e))",0,,2026-10-19,
-happytails.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.happytails.sa', port=80): Max retries exceeded with))",0,,2026-10-19,
-rehlat-abeer1.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.rehlat-abeer1.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+hanye-shwbyenq.com,SA,6965,sitemap,4,https://hanye-shwbyenq.com/sitemap.xml,2026-10-19,raw=6965 dupes_removed=0; adopted from rerun (NA->value)
+happinesshormonestore.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+happytails.sa,SA,2611,sitemap,3,https://happytails.sa/sitemap.xml,2026-10-19,raw=2611 dupes_removed=0; adopted from rerun (NA->value)
+rehlat-abeer1.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 hailhills.com,SA,59,sitemap,4,https://hailhills.com/sitemap.xml,2026-10-19,raw=59 dupes_removed=0; recount via robots.txt
-haramco-sa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haramco-sa.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
+haramco-sa.com,SA,4352,sitemap,4,https://haramco-sa.com/sitemap.xml,2026-10-19,raw=4352 dupes_removed=0; adopted from rerun (NA->value)
 haruarchery.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haruarchery.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-gymstore.sa,SA,330,sitemap (partial: 6 of 8 sitemap files read),6,https://www.gymstore.sa/sitemap_index.xml,2026-10-19,"raw=331 dupes_removed=1; failed sitemap fetches=2: https://www.gymstore.sa/category-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='www.gymstore.sa', port=443): Max retries exceeded with; https://www.gymstore.sa/web-story-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='www.gymstore.sa', port=443): Max retries exceeded with; recount could not re-crawl the site, earlier count kept"
-hattrick-store.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hattrick-store.com', port=80): Max retries exceeded))",0,,2026-10-19,
-harveynichols.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.harveynichols.sa', port=80): Max retries exceeded w))",0,,2026-10-19,
-haq.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haq.com.sa', port=80): Max retries exceeded with ur))",0,,2026-10-19,
-haypp.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.haypp.sa', port=80): Max retries exceeded with url:))",0,,2026-10-19,
+gymstore.sa,SA,333,sitemap,8,https://www.gymstore.sa/sitemap_index.xml,2026-10-19,raw=334 dupes_removed=1; adopted from rerun (partial->complete sitemap)
+hattrick-store.com,SA,437,sitemap,3,https://hattrick-store.com/sitemap.xml,2026-10-19,raw=437 dupes_removed=0; adopted from rerun (NA->value)
+harveynichols.sa,SA,31,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+haq.com.sa,SA,144,sitemap,13,https://haq.com.sa/wp-sitemap.xml,2026-10-19,raw=144 dupes_removed=0; adopted from rerun (NA->value)
+haypp.sa,SA,195,sitemap,12,https://haypp.sa/sitemap.xml,2026-10-19,raw=195 dupes_removed=0; adopted from rerun (NA->value)
 heavytools.sa,SA,349,sitemap,9,https://heavytools.sa/sitemap_index.xml,2026-10-19,raw=350 dupes_removed=1; recount via robots.txt
-hana.com.sa,SA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://hana.com.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='hana.com.sa', port=443): Max retries exceeded with url"")])"
-healthedu.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.healthedu.com.sa', port=80): Max retries exceeded w))",0,,2026-10-19,
+hana.com.sa,SA,47,sitemap,5,https://hana.com.sa/sitemap.xml,2026-10-19,raw=47 dupes_removed=0; adopted from rerun (NA->value)
+healthedu.com.sa,SA,170,sitemap,3,https://healthedu.com.sa/sitemap.xml,2026-10-19,raw=170 dupes_removed=0; adopted from rerun (NA->value)
 himalayawellness.sa,SA,371,sitemap,10,https://himalayawellness.sa/sitemap.xml,2026-10-19,raw=371 dupes_removed=0
 dream.com.sa,SA,30,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://salla.sa/meak_up_for_you12/sitemap-2.xml', 410), ('https://salla.sa/meak_up_for_you12/sitemap-1.xml', 410)]); wayback CDX unique urlkeys (html,200; own host + www only)"
-danielost.sa,SA,69,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+danielost.sa,SA,42,sitemap,1,https://www.danielost.sa/sitemap.xml,2026-10-19,raw=42 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 hmeedtv.com,SA,61,sitemap,3,https://hmeedtv.com/sitemap.xml,2026-10-19,raw=61 dupes_removed=0
 healthsteps.store,SA,59,sitemap,3,https://healthsteps.store/sitemap.xml,2026-10-19,raw=59 dupes_removed=0
 elitemobile-sa.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://elitemobile-sa.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://elitemobile-sa.com/sitemap.xml', 404)])"
 hotpack.com.sa,SA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://hotpack.com.sa/sitemap.xmlUser-agent:', 404)])"
-henuaabaya.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.henuaabaya.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
+henuaabaya.com,SA,140,sitemap,3,https://henuaabaya.com/sitemap.xml,2026-10-19,raw=140 dupes_removed=0; adopted from rerun (NA->value)
 hoover.sa,SA,171,sitemap,10,https://hoover.sa/sitemap.xml,2026-10-19,raw=171 dupes_removed=0
-hfi.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hfi.com.sa', port=80): Max retries exceeded with ur))",0,,2026-10-19,
-hiba-farrash.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hiba-farrash.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-hibrewksa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hibrewksa.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-highpoint.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.highpoint.sa', port=80): Max retries exceeded with ))",0,,2026-10-19,
+hfi.com.sa,SA,4095,sitemap,14,https://hfi.com.sa/sitemap.xml,2026-10-19,raw=4095 dupes_removed=0; adopted from rerun (NA->value)
+hiba-farrash.com,SA,53,sitemap,3,https://hiba-farrash.com/sitemap.xml,2026-10-19,raw=53 dupes_removed=0; adopted from rerun (NA->value)
+hibrewksa.com,SA,20,sitemap,3,https://hibrewksa.com/sitemap.xml,2026-10-19,raw=20 dupes_removed=0; adopted from rerun (NA->value)
+highpoint.sa,SA,1413,sitemap,8,https://highpoint.sa/sitemap.xml,2026-10-19,raw=1413 dupes_removed=0; adopted from rerun (NA->value)
 fashion.sa,SA,33681,sitemap,42,https://fashion.sa/sitemap.xml,2026-10-19,raw=33681 dupes_removed=0; recount via robots.txt
-hindamme.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hindamme.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-hint.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hint.sa', port=80): Max retries exceeded with url: ))",0,,2026-10-19,
-hm9store.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hm9store.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
+hindamme.com,SA,133,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+hint.sa,SA,119,sitemap,1,https://hint.sa/sitemap.xml,2026-10-19,raw=119 dupes_removed=0; adopted from rerun (NA->value)
+hm9store.com,SA,239,sitemap,4,https://hm9store.com/ar/sitemap.xml,2026-10-19,raw=239 dupes_removed=0; adopted from rerun (NA->value)
 ictc.com.sa,SA,88,sitemap,1,https://ictc.com.sa/pub/sitemap.xml,2026-10-19,raw=88 dupes_removed=0
 house-beauty.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.house-beauty.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-consumer.huawei.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.consumer.huawei.com', port=80): Max retries exceede))",0,,2026-10-19,
+consumer.huawei.com,SA,394671,archive,0,,2026-10-19,"wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 ho2sneakers.com,SA,220,sitemap,3,https://ho2sneakers.com/sitemap.xml,2026-10-19,raw=220 dupes_removed=0; recount via guess
 holo.sa,SA,36,sitemap,6,https://www.holo.sa/sitemap.xml,2026-10-19,raw=36 dupes_removed=0; recount via robots.txt
 homiture.sa,SA,251,sitemap,4,https://homiture.sa/sitemap.xml,2026-10-19,raw=251 dupes_removed=0; recount via robots.txt
-hope.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hope.sa', port=80): Max retries exceeded with url: ))",0,,2026-10-19,
+hope.sa,SA,292,sitemap,3,https://hope.sa/sitemap.xml,2026-10-19,raw=292 dupes_removed=0; adopted from rerun (NA->value)
 priscillas-wardrobe.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://priscillas-wardrobe.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://priscillas-wardrobe.com/sitemap.xml', 404)])"
 hugoboss.com,KW,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 hugoboss.com,SA,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 hugoboss.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 in2fitness.sa,SA,28,sitemap,5,https://in2fitness.sa/sitemap_index.xml,2026-10-19,raw=28 dupes_removed=0
 hookahlicious.com.sa,SA,223,sitemap,12,https://hookahlicious.com.sa/sitemap.xml | https://hookahlicious.com.sa/sitemap.xml | https://hookahlicious.com.sa/sitemap.xml,2026-10-19,raw=223 dupes_removed=0
-honeydose.sa,SA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://honeydose.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='honeydose.sa', port=443): Max retries exceeded with ur"")])"
+honeydose.sa,SA,128,sitemap,4,https://honeydose.sa/sitemap.xml,2026-10-19,raw=128 dupes_removed=0; adopted from rerun (NA->value)
 indeco.sa,SA,847,sitemap,6,https://indeco.sa/sitemap.xml,2026-10-19,raw=847 dupes_removed=0
 ibdaa.com.sa,SA,99,sitemap,6,https://ibdaa.com.sa/sitemap.xml,2026-10-19,raw=99 dupes_removed=0
 hyar.sa,SA,125,sitemap,3,https://hyar.sa/sitemap.xml,2026-10-19,raw=125 dupes_removed=0
@@ -653,7 +653,7 @@ hosinox.com.sa,SA,439,sitemap,13,https://hosinox.com.sa/wp-sitemap.xml,2026-10-1
 impasto.sa,SA,24,sitemap,4,https://impasto.sa/sitemap.xml,2026-10-19,raw=24 dupes_removed=0
 in-house.com.sa,SA,995,sitemap,3,https://in-house.com.sa/ar/sitemap.xml,2026-10-19,raw=995 dupes_removed=0
 indese.sa,SA,,Not available (unreachable (HTTP 500)),0,,2026-10-19,
-heritage-village.com.sa,SA,4,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://heritage-village.com.sa/wp-sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='heritage-village.com.sa', port=443): Max retries excee"")]); woocommerce X-WP-Total (products only)"
+heritage-village.com.sa,SA,2011,sitemap,13,https://heritage-village.com.sa/wp-sitemap.xml,2026-10-19,raw=2011 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 homesweethome.com.sa,SA,1329,sitemap,14,https://homesweethome.com.sa/sitemap.xml,2026-10-19,raw=1333 dupes_removed=4
 hyper.sa,SA,120,sitemap,5,http://hyper.sa/sitemap.xml,2026-10-19,raw=120 dupes_removed=0
 insel.sa,SA,2144,sitemap,4,https://insel.sa/sitemap.xml,2026-10-19,raw=2144 dupes_removed=0
@@ -674,7 +674,7 @@ itexperts.com.sa,SA,86,sitemap,3,https://itexperts.com.sa/sitemap_index.xml,2026
 itsminesa.com,SA,3367,sitemap,3,https://itsminesa.com/sitemap.xml,2026-10-19,raw=3367 dupes_removed=0
 sa.ipekyol.com,SA,3635,sitemap,12,https://sa.ipekyol.com/sitemap.xml,2026-10-19,raw=3635 dupes_removed=0
 jeebel.sa,SA,60,sitemap,3,https://jeebel.sa/sitemap.xml,2026-10-19,raw=60 dupes_removed=0
-curlybrown.sa,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://curlybrown.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='curlybrown.sa', port=443): Max retries exceeded with u"")]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://curlybrown.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='curlybrown.sa', port=443): Max retries exceeded with u"")])"
+curlybrown.sa,SA,61,sitemap,4,https://curlybrown.sa/sitemap.xml,2026-10-19,raw=61 dupes_removed=0; adopted from rerun (NA->value)
 ist-bk.com,SA,287,sitemap,4,https://ist-bk.com/ar/sitemap.xml,2026-10-19,raw=287 dupes_removed=0
 jalsah1.com,SA,68,sitemap,3,https://jalsah1.com/sitemap.xml,2026-10-19,raw=68 dupes_removed=0
 jb74gcc.com,SA,104,sitemap,3,https://jb74gcc.com/sitemap.xml,2026-10-19,raw=104 dupes_removed=0
@@ -818,16 +818,15 @@ dolcegabbana.com,SA,12897,sitemap (SA pages only),160,https://www.dolcegabbana.c
 lirio-store.com,SA,173,sitemap,3,https://lirio-store.com/sitemap.xml,2026-10-19,raw=173 dupes_removed=0
 loofah.sa,SA,685,sitemap,5,https://loofah.sa/sitemap.xml,2026-10-19,raw=685 dupes_removed=0
 asrar-co.com,SA,10338,sitemap,5,https://asrar-co.com/ar/sitemap.xml,2026-10-19,raw=10338 dupes_removed=0
-lipault.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lipault.com.sa', port=80): Max retries exceeded wit))",0,,2026-10-19,
+lipault.com.sa,SA,52,sitemap,6,https://lipault.com.sa/sitemap.xml,2026-10-19,raw=52 dupes_removed=0; adopted from rerun (NA->value)
 lisa.sa,SA,29,sitemap,5,https://lisa.sa/sitemap.xml,2026-10-19,raw=29 dupes_removed=0; recount via guess
-lomar.sa,SA,153,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://lomar.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='lomar.sa', port=443): Max retries exceeded with url: /"")]); /products: '153
-				منتج'"
+lomar.sa,SA,191,sitemap,5,https://lomar.sa/sitemap.xml,2026-10-19,raw=191 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 locca1.com,SA,631,sitemap,3,https://salla.sa/locca/sitemap.xml,2026-10-19,raw=631 dupes_removed=0; recount via robots.txt
 lovelymemories.sa,SA,448,sitemap,4,https://lovelymemories.sa/ar/sitemap.xml,2026-10-19,raw=448 dupes_removed=0; recount via robots.txt
 mademoisellesa.com,SA,97,sitemap,3,https://mademoisellesa.com/sitemap.xml,2026-10-19,raw=97 dupes_removed=0
-gcc.luluhypermarket.com,KW,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gcc.luluhypermarket.com', port=80): Max retries exc))",0,,2026-10-19,
-gcc.luluhypermarket.com,QA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gcc.luluhypermarket.com', port=80): Max retries exc))",0,,2026-10-19,
-gcc.luluhypermarket.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gcc.luluhypermarket.com', port=80): Max retries exc))",0,,2026-10-19,
+gcc.luluhypermarket.com,KW,6839,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+gcc.luluhypermarket.com,QA,6839,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+gcc.luluhypermarket.com,SA,6839,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 glow1sa.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://salla.sa/glow1sa/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='salla.sa', port=443): Max retries exceeded with url: /"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
 officeco.sa,SA,5553,sitemap,1,https://www.officeco.sa/sitemap.xml,2026-10-19,raw=5553 dupes_removed=0
 luccello-fashion.com,SA,6,sitemap,2,https://luccello-fashion.com/sitemap.xml,2026-10-19,raw=6 dupes_removed=0
@@ -837,21 +836,21 @@ bulgari.com,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool
 bulgari.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.bulgari.com', port=80): Max retries exceeded with u))",0,,2026-10-19,
 gucci.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gucci.com', port=80): Max retries exceeded with url))",0,,2026-10-19,
 gucci.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gucci.com', port=80): Max retries exceeded with url))",0,,2026-10-19,
-madarhw.com.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.madarhw.com.sa', port=80): Max retries exceeded wit))",0,,2026-10-19,
-lucasoil.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='lucasoil.sa', port=80): Max retries exceeded with url: ))",0,,2026-10-19,
+madarhw.com.sa,SA,348,platform product count,0,,2026-10-19,no sitemap found; woocommerce X-WP-Total (products only); adopted from rerun (NA->value)
+lucasoil.sa,SA,270,sitemap,7,https://lucasoil.sa/sitemap_index.xml,2026-10-19,raw=271 dupes_removed=1; adopted from rerun (NA->value)
 lo1mm.com,SA,2539,sitemap,3,https://lo1mm.com/sitemap.xml,2026-10-19,raw=2539 dupes_removed=0
 havenst00re.com,SA,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),0,,2026-10-19,sitemap present but yielded no countable URLs
 gift-shop-online.com,SA,1141,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://gift-shop-online.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 beauty.givenchy.sa,SA,835,sitemap,10,https://beauty.givenchy.sa/sitemap.xml,2026-10-19,raw=835 dupes_removed=0; recount via robots.txt
 mansojdal.sa,SA,133,sitemap,3,https://mansojdal.sa/sitemap.xml,2026-10-19,raw=133 dupes_removed=0
-maherstore.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='maherstore.com', port=443): Max retries exceeded with ))",0,,2026-10-19,
-maico-llc.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.maico-llc.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-richy.sa,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.richy.sa', port=443): Max retries exceeded with ur))",0,,2026-10-19,
-balenciaga.com,AE,22704,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; no AE segment; default storefront is 9804 of 22704 URLs; whole-site total includes 12900 URLs under other-country segments"
-balenciaga.com,KW,22704,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; no KW segment; default storefront is 9804 of 22704 URLs; whole-site total includes 12900 URLs under other-country segments"
-balenciaga.com,QA,22704,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; no QA segment; default storefront is 9804 of 22704 URLs; whole-site total includes 12900 URLs under other-country segments"
-balenciaga.com,SA,22704,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; no SA segment; default storefront is 9804 of 22704 URLs; whole-site total includes 12900 URLs under other-country segments"
-balenciaga.com,US,1032,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; US pages only"
+maherstore.com,SA,134,sitemap,4,https://maherstore.com/sitemap.xml,2026-10-19,raw=134 dupes_removed=0; adopted from rerun (NA->value)
+maico-llc.com,SA,71,sitemap,4,https://maico-llc.com/sitemap.xml,2026-10-19,raw=71 dupes_removed=0; adopted from rerun (NA->value)
+richy.sa,SA,521,sitemap,4,https://richy.sa/sitemap.xml | https://richy.sa//products-sitemap.xml | https://richy.sa//en/products-sitemap.xml,2026-10-19,raw=837 dupes_removed=316; adopted from rerun (NA->value)
+balenciaga.com,AE,22704,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; no AE segment; default storefront is 9804 of 22704 URLs; whole-site total includes 12900 URLs under other-country segments; adopted from rerun (partial->complete sitemap)"
+balenciaga.com,KW,22704,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; no KW segment; default storefront is 9804 of 22704 URLs; whole-site total includes 12900 URLs under other-country segments; adopted from rerun (partial->complete sitemap)"
+balenciaga.com,QA,22704,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; no QA segment; default storefront is 9804 of 22704 URLs; whole-site total includes 12900 URLs under other-country segments; adopted from rerun (partial->complete sitemap)"
+balenciaga.com,SA,22704,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; no SA segment; default storefront is 9804 of 22704 URLs; whole-site total includes 12900 URLs under other-country segments; adopted from rerun (partial->complete sitemap)"
+balenciaga.com,US,1032,sitemap (partial: 27 of 28 sitemap files read),27,https://www.balenciaga.com/de-de/sitemap_index.xml | https://www.balenciaga.com/en-us/sitemap_index.xml | https://www.balenciaga.com/en-au/sitemap_index.xml | https://www.balenciaga.com/en-ca/sitemap_index.xml | https://www.balenciaga.com/en-gb/sitemap_index.xml (+8 more),2026-10-19,"raw=22704 dupes_removed=0; recount via robots.txt; country split other=11868,untagged=9804,US=1032; failed sitemap fetches after retries=1: https://www.balenciaga.com/en-mx/sitemap_index.xml:503; US pages only; adopted from rerun (partial->complete sitemap)"
 marimbaksa.com,SA,117,sitemap,3,https://marimbaksa.com/sitemap.xml,2026-10-19,raw=117 dupes_removed=0
 maje.sa,SA,1507,sitemap,10,https://maje.sa/sitemap.xml,2026-10-19,raw=1507 dupes_removed=0; recount via robots.txt
 garmin.sa,SA,3894,sitemap,51,https://www.garmin.sa/sitemap_index.xml,2026-10-19,raw=5884 dupes_removed=1990; recount via robots.txt
@@ -859,7 +858,7 @@ marshanstore.com,SA,1330,sitemap,1,https://marshanstore.com/sitemap.xml,2026-10-
 firstcry.sa,SA,8605,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.firstcry.ae/sitemap-products-18.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
 manalsubline.com,SA,38,sitemap,3,https://manalsubline.com/sitemap.xml,2026-10-19,raw=38 dupes_removed=0
 hellensbeautybar.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://salla.sa/hellensbeautybar/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='salla.sa', port=443): Max retries exceeded with url: /"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
-madeleine.sa,SA,628,sitemap (partial: 10 of 13 sitemap files read),10,https://madeleine.sa/sitemap_index.xml,2026-10-19,"raw=1111 dupes_removed=483; failed sitemap fetches=3: https://madeleine.sa/product-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='madeleine.sa', port=443): Max retries exceeded with ur; https://madeleine.sa/page-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='madeleine.sa', port=443): Max retries exceeded with ur; https://madeleine.sa/post-sitemap9.xml:ConnectionError: HTTPSConnectionPool(host='madeleine.sa', port=443): Max retries exceeded with ur; recount could not re-crawl the site, earlier count kept"
+madeleine.sa,SA,688,sitemap,13,https://madeleine.sa/sitemap_index.xml,2026-10-19,raw=1357 dupes_removed=669; adopted from rerun (partial->complete sitemap)
 mansour.com.sa,SA,3571,sitemap,14,https://mansour.com.sa/sitemap.xml,2026-10-19,raw=3571 dupes_removed=0
 mandrianperfume.com,SA,48,sitemap,4,https://mandrianperfume.com/sitemap.xml,2026-10-19,raw=48 dupes_removed=0
 manar.sa,SA,574,sitemap,6,http://manar.sa/sitemap.xml,2026-10-19,raw=574 dupes_removed=0
@@ -867,13 +866,13 @@ mana.sa,SA,40,sitemap,4,http://mana.sa/sitemap.xml,2026-10-19,raw=40 dupes_remov
 manaralrawi.com,SA,293,sitemap,3,https://manaralrawi.com/sitemap.xml,2026-10-19,raw=293 dupes_removed=0
 manazilcom.com,SA,509,sitemap (partial: 7 of 9 sitemap files read),7,https://manazilcom.com/sitemap.xml | https://manazilcom.com/?feed=xmlsitemap77,2026-10-19,raw=509 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=2: https://manazilcom.com/?feed=xmlsitemap77:404; https://manazilcom.com/wp-sitemap-posts-post-1.xml:500
 store.alnejoum.com.sa,SA,3737,sitemap,3,https://store.alnejoum.com.sa/sitemap.xml,2026-10-19,raw=3737 dupes_removed=0
-helium.sa,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://helium.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='helium.sa', port=443): Max retries exceeded with url: "")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+helium.sa,SA,28,sitemap,4,https://helium.sa/sitemap.xml,2026-10-19,raw=28 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 malsa.sa,SA,20457,sitemap,32,https://malsa.sa/sitemap.xml,2026-10-19,raw=20457 dupes_removed=0; recount via robots.txt
 mannaglass.sa,SA,1937,sitemap,10,https://www.mannaglass.sa/sitemap_index.xml,2026-10-19,raw=1939 dupes_removed=2
-mandy.sa,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.mandy.sa', port=443): Max retries exceeded with ur))",0,,2026-10-19,
+mandy.sa,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 matchperfumes.com,SA,353,sitemap,3,https://matchperfumes.com/sitemap.xml,2026-10-19,raw=353 dupes_removed=0
 marksandspencer.sa,SA,9121,sitemap,5,https://www.marksandspencer.sa/sitemap/sitemap-sa.xml,2026-10-19,raw=9121 dupes_removed=0; recount via robots.txt; media sitemaps skipped=2
-selections.mathalstudio.co,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.selections.mathalstudio.co', port=80): Max retries ))",0,,2026-10-19,
+selections.mathalstudio.co,SA,18,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://salla.sa/mathalcreativity/sitemap-2.xml', 410), ('https://salla.sa/mathalcreativity/sitemap-1.xml', 410)]); wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 sleepbox.com.sa,SA,537,sitemap,4,https://sleepbox.com.sa/ar/sitemap.xml,2026-10-19,raw=537 dupes_removed=0
 maxfashion.com,AE,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 maxfashion.com,KW,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
@@ -910,14 +909,14 @@ medicube.sa,SA,351,sitemap,4,https://medicube.sa/sitemap.xml,2026-10-19,raw=351 
 themeerashop.com,SA,56,sitemap,3,https://themeerashop.com/sitemap.xml,2026-10-19,raw=56 dupes_removed=0
 medura.sa,SA,11,sitemap,2,https://medura.sa/sitemap_index.xml,2026-10-19,raw=11 dupes_removed=0
 marbleslab.sa,SA,379,sitemap,12,https://marbleslab.sa/wp-sitemap.xml,2026-10-19,raw=381 dupes_removed=2
-memanshop.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='memanshop.com', port=443): Max retries exceeded with u))",0,,2026-10-19,
+memanshop.com,SA,192,sitemap,3,https://memanshop.com/sitemap.xml,2026-10-19,raw=192 dupes_removed=0; adopted from rerun (NA->value)
 driclor-ksa.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://wepazar.com/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='wepazar.com', port=443): Max retries exceeded with url""), ('https://wepazar.com/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='wepazar.com', port=443): Max retries exceeded with url"")]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://wepazar.com/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='wepazar.com', port=443): Max retries exceeded with url""), ('https://wepazar.com/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='wepazar.com', port=443): Max retries exceeded with url"")])"
 medlab.sa,SA,556,sitemap,8,https://medlab.sa/sitemap_index.xml,2026-10-19,raw=561 dupes_removed=5
-halflash.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://halflash.com/sitemap.xml', 404)]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://halflash.com/sitemap.xml', 404)])"
+halflash.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://halflash.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 itchend-sa.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://itchend-sa.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 meltem.sa,SA,125,sitemap,4,https://meltem.sa/sitemap.xml,2026-10-19,raw=125 dupes_removed=0
 menbur.sa,SA,1625,sitemap,7,https://www.menbur.sa/sitemap.xml,2026-10-19,raw=1625 dupes_removed=0
-iconeng.sa,SA,279,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+iconeng.sa,SA,4,sitemap,3,https://iconeng.sa/wp-sitemap.xml,2026-10-19,raw=4 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 io.com.sa,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://io.com.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 medicalsupplies.sa,SA,422,sitemap,11,https://medicalsupplies.sa/sitemap_index.xml,2026-10-19,raw=423 dupes_removed=1
 millystationery.com,SA,189,sitemap,3,https://millystationery.com/sitemap.xml,2026-10-19,raw=189 dupes_removed=0
@@ -994,8 +993,8 @@ nqa.com.sa,SA,332,sitemap,16,https://nqa.com.sa/wp-sitemap.xml,2026-10-19,raw=33
 fnatq.com,SA,23,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 kneestore1.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://kneestore1.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 nabilanazer.com.sa,SA,555,sitemap,3,https://nabilanazer.com.sa/sitemap.xml,2026-10-19,raw=555 dupes_removed=0
-motorola.com,SA,74,sitemap (partial: 48 of 51 sitemap files read),48,https://www.motorola.com/at/de/sitemap.xml | https://www.motorola.com/be/fr/sitemap.xml | https://www.motorola.com/be/nl/sitemap.xml | https://www.motorola.com/bg/bg/sitemap.xml | https://www.motorola.com/ca/en/sitemap.xml (+46 more),2026-10-19,"raw=4727 dupes_removed=314; recount via robots.txt; country split untagged=2184,other=1794,US=285,AE=75,SA=74; failed sitemap fetches after retries=3: https://www.motorola.com/vs/bo/sitemap.xml:500; https://www.motorola.com/vs/es/sitemap.xml:500; https://www.motorola.com/ru/sitemap.xml:500; SA pages only"
-motorola.com,US,285,sitemap (partial: 48 of 51 sitemap files read),48,https://www.motorola.com/at/de/sitemap.xml | https://www.motorola.com/be/fr/sitemap.xml | https://www.motorola.com/be/nl/sitemap.xml | https://www.motorola.com/bg/bg/sitemap.xml | https://www.motorola.com/ca/en/sitemap.xml (+46 more),2026-10-19,"raw=4727 dupes_removed=314; recount via robots.txt; country split untagged=2184,other=1794,US=285,AE=75,SA=74; failed sitemap fetches after retries=3: https://www.motorola.com/vs/bo/sitemap.xml:500; https://www.motorola.com/vs/es/sitemap.xml:500; https://www.motorola.com/ru/sitemap.xml:500; US pages only"
+motorola.com,SA,74,sitemap (partial: 48 of 51 sitemap files read),48,https://www.motorola.com/at/de/sitemap.xml | https://www.motorola.com/be/fr/sitemap.xml | https://www.motorola.com/be/nl/sitemap.xml | https://www.motorola.com/bg/bg/sitemap.xml | https://www.motorola.com/ca/en/sitemap.xml (+46 more),2026-10-19,"raw=4727 dupes_removed=314; recount via robots.txt; country split untagged=2184,other=1794,US=285,AE=75,SA=74; failed sitemap fetches after retries=3: https://www.motorola.com/vs/bo/sitemap.xml:500; https://www.motorola.com/vs/es/sitemap.xml:500; https://www.motorola.com/ru/sitemap.xml:500; SA pages only; adopted from rerun (partial->complete sitemap)"
+motorola.com,US,285,sitemap (partial: 48 of 51 sitemap files read),48,https://www.motorola.com/at/de/sitemap.xml | https://www.motorola.com/be/fr/sitemap.xml | https://www.motorola.com/be/nl/sitemap.xml | https://www.motorola.com/bg/bg/sitemap.xml | https://www.motorola.com/ca/en/sitemap.xml (+46 more),2026-10-19,"raw=4727 dupes_removed=314; recount via robots.txt; country split untagged=2184,other=1794,US=285,AE=75,SA=74; failed sitemap fetches after retries=3: https://www.motorola.com/vs/bo/sitemap.xml:500; https://www.motorola.com/vs/es/sitemap.xml:500; https://www.motorola.com/ru/sitemap.xml:500; US pages only; adopted from rerun (partial->complete sitemap)"
 lancet.shopping,SA,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),0,,2026-10-19,sitemap present but yielded no countable URLs
 leenle.com,SA,1206,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://leenle.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 lachicabaya.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -1043,7 +1042,7 @@ lilynat.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable
 lrin-sa.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 nyfashiontrainingcenter.com,SA,20,sitemap,3,https://nyfashiontrainingcenter.com/sitemap.xml,2026-10-19,raw=20 dupes_removed=0
 lee4abaya.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
-sa.ontime.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.sa.ontime.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+sa.ontime.com,SA,7553,sitemap,18,https://sa.ontime.com/sitemap.xml,2026-10-19,raw=7553 dupes_removed=0; adopted from rerun (NA->value)
 nahdionline.com,AE,94473,sitemap (AE pages only),26,https://www.nahdionline.com/sitemap_index_en.xml | https://www.nahdionline.com/sitemap_index_ar.xml | https://www.nahdionline.com/sitemap_index_uae_en.xml | https://www.nahdionline.com/sitemap_index_uae_ar.xml,2026-10-19,"raw=212501 dupes_removed=999; country split SA=117029,AE=94473"
 nahdionline.com,SA,117029,sitemap (SA pages only),26,https://www.nahdionline.com/sitemap_index_en.xml | https://www.nahdionline.com/sitemap_index_ar.xml | https://www.nahdionline.com/sitemap_index_uae_en.xml | https://www.nahdionline.com/sitemap_index_uae_ar.xml,2026-10-19,"raw=212501 dupes_removed=999; country split SA=117029,AE=94473"
 sa.nayomi.com,SA,3551,sitemap,14,https://sa.nayomi.com/sitemap.xml,2026-10-19,raw=3551 dupes_removed=0; recount via robots.txt
@@ -1061,7 +1060,7 @@ jarir.com,QA,109254,sitemap (QA pages only),74,https://www.jarir.com/sitemap_sa_
 jarir.com,SA,715610,sitemap (SA pages only),74,https://www.jarir.com/sitemap_sa_ar.xml | https://www.jarir.com/sa-en/sitemap_sa_en.xml | https://www.jarir.com/qa-ar/sitemap_qa_ar.xml | https://www.jarir.com/qa-en/sitemap_qa_en.xml | https://www.jarir.com/kw-ar/sitemap_kw_ar.xml (+5 more),2026-10-19,"raw=1855522 dupes_removed=255; recount via robots.txt; country split SA=715610,untagged=715429,AE=112029,KW=111582,QA=109254,other=91363"
 letusmatcha.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 offispace.sa,SA,122,sitemap,8,https://offispace.sa/sitemap_index.xml,2026-10-19,raw=123 dupes_removed=1
-myaster.sa,SA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+myaster.sa,SA,732,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 zayanoud.com,SA,52,sitemap,4,https://zayanoud.com/ar/sitemap.xml,2026-10-19,raw=52 dupes_removed=0
 oudtan.com,SA,8,sitemap,3,https://oudtan.com/sitemap.xml,2026-10-19,raw=8 dupes_removed=0
 lobab.sa,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -1084,8 +1083,7 @@ origstore.com,SA,283,sitemap,3,https://origstore.com/sitemap.xml,2026-10-19,raw=
 mfk.sa,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://mfk.sa/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 outletpharmacyonline.sa,SA,10419,sitemap,4,https://outletpharmacyonline.sa/ar/sitemap.xml,2026-10-19,raw=10419 dupes_removed=0
 industrialtool.shop,SA,17953,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-ola.sa,SA,25,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://ola.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='ola.sa', port=443): Max retries exceeded with url: /si"")]); /products: '25
-				منتج'"
+ola.sa,SA,89,sitemap,5,https://ola.sa/sitemap.xml,2026-10-19,raw=89 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 ormella-dal.com,SA,73,sitemap,3,https://ormella-dal.com/sitemap.xml,2026-10-19,raw=73 dupes_removed=0
 lunajewelry89.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://lunajewelry89.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://lunajewelry89.com/sitemap.xml', 404)])"
 amalashope.com,SA,1815,sitemap,3,https://amalashope.com/sitemap.xml,2026-10-19,raw=1815 dupes_removed=0
@@ -1162,7 +1160,7 @@ matjarfofa.com,SA,,Not available (sitemap present but yielded no countable URLs;
 promise.com.sa,SA,10323,sitemap,5,https://promise.com.sa/sitemap.xml,2026-10-19,raw=10323 dupes_removed=0
 queenbsa.com,SA,79,sitemap,4,https://queenbsa.com/sitemap.xml,2026-10-19,raw=79 dupes_removed=0
 raja.sa,SA,19,sitemap,1,http://raja.sa/sitemap.xml,2026-10-19,raw=19 dupes_removed=0
-laila-pottery.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://laila-pottery.com/sitemap.xml', 404)]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://laila-pottery.com/sitemap.xml', 404)])"
+laila-pottery.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://laila-pottery.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 raadaltwalh.com,SA,36,sitemap,3,https://raadaltwalh.com/sitemap.xml,2026-10-19,raw=36 dupes_removed=0
 sa.puma.com,SA,3944,sitemap,8,https://sa.puma.com/sitemap_index.xml,2026-10-19,raw=3944 dupes_removed=0
 rawabt.sa,SA,926,sitemap,1,https://rawabt.sa/sitemap.xml,2026-10-19,raw=926 dupes_removed=0
@@ -1192,7 +1190,7 @@ muscle-mass.com,SA,88,archive,0,,2026-10-19,"sitemap present but yielded no coun
 n4led.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 radioactive.sa,SA,1520,sitemap,16,https://radioactive.sa/sitemap_index.xml,2026-10-19,raw=1521 dupes_removed=1
 redsea.com,SA,2200,sitemap,9,https://redsea.com/sitemap.xml,2026-10-19,raw=2202 dupes_removed=2
-rg.sa,SA,,Not available (unreachable (HTTP 500)),0,,2026-10-19,
+rg.sa,SA,47250,sitemap,32,https://rg.sa/wp-sitemap.xml,2026-10-19,raw=47282 dupes_removed=32; recount via robots.txt; adopted from rerun (NA->value)
 mycorner369.com,SA,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),0,,2026-10-19,sitemap present but yielded no countable URLs
 renown.sa,SA,283,sitemap,4,https://renown.sa/sitemap.xml,2026-10-19,raw=283 dupes_removed=0
 reemhamad.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='reemhamad.com', port=443): Max retries exceeded with u))",0,,2026-10-19,
@@ -1209,13 +1207,13 @@ richexperience.sa,SA,219,sitemap,3,https://richexperience.sa/sitemap.xml,2026-10
 reebok.sa,SA,6055,sitemap,20,https://www.reebok.sa/sitemap.xml,2026-10-19,raw=6055 dupes_removed=0
 shop-riva.com,SA,1909,sitemap,3,https://shop-riva.com/sitemap.xml,2026-10-19,raw=1909 dupes_removed=0
 neurolabrx.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://neurolabrx.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
-oppo.com,SA,426,sitemap (partial: 118 of 119 sitemap files read),118,https://www.oppo.com/sitemap.xml,2026-10-19,"raw=19299 dupes_removed=0; recount via robots.txt; country split untagged=10230,other=8230,SA=426,AE=413; failed sitemap fetches after retries=1: https://www.oppo.com/uae/sitemap.xml:403; SA pages only"
+oppo.com,SA,426,sitemap (partial: 118 of 119 sitemap files read),118,https://www.oppo.com/sitemap.xml,2026-10-19,"raw=19299 dupes_removed=0; recount via robots.txt; country split untagged=10230,other=8230,SA=426,AE=413; failed sitemap fetches after retries=1: https://www.oppo.com/uae/sitemap.xml:403; SA pages only; adopted from rerun (partial->complete sitemap)"
 reemed.sa,SA,19,sitemap,4,https://www.reemed.sa/sitemap.xml,2026-10-19,raw=19 dupes_removed=0
-myinvite.sa,SA,12,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+myinvite.sa,SA,256,sitemap,4,https://myinvite.store/sitemap.xml,2026-10-19,redirects to myinvite.store; raw=256 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 noorphir.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://noorphir.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 risala1.com,SA,90,sitemap,3,https://risala1.com/sitemap.xml,2026-10-19,raw=90 dupes_removed=0
 rodnreel.sa,SA,241,sitemap,3,https://rodnreel.sa/sitemap.xml,2026-10-19,raw=241 dupes_removed=0
-netronics.sa,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://netronics.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='netronics.sa', port=443): Max retries exceeded with ur"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+netronics.sa,SA,775,sitemap,4,https://netronics.sa/sitemap.xml,2026-10-19,raw=775 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 rivan-boutique.com,SA,317,sitemap,3,https://rivan-boutique.com/sitemap.xml,2026-10-19,raw=317 dupes_removed=0
 noorstore8.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 nerdzcornerme.com,SA,9,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://salla.sa/gekko/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='salla.sa', port=443): Max retries exceeded with url: /"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -1240,7 +1238,7 @@ rootsfurniture.sa,SA,8307,sitemap,18,https://rootsfurniture.sa/sitemap.xml,2026-
 rose.com.sa,SA,75,sitemap,4,https://rose.com.sa/sitemap.xml,2026-10-19,raw=75 dupes_removed=0
 ola-granola.com,SA,9,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://ola-granola.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 rovere.sa,SA,500,sitemap,12,https://rovere.sa/wp-sitemap.xml,2026-10-19,raw=500 dupes_removed=0
-oamwatersa.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://oamwatersa.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='oamwatersa.com', port=443): Max retries exceeded with "")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+oamwatersa.com,SA,31,sitemap,3,https://oamwatersa.com/sitemap.xml,2026-10-19,raw=31 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 oentira.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://oentira.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://oentira.com/sitemap.xml', 404)])"
 safetytriangle.com.sa,SA,200,sitemap,1,https://www.safetytriangle.com.sa/sitemap.xml,2026-10-19,raw=200 dupes_removed=0
 sadeelabaya.com,SA,31,sitemap,3,https://sadeelabaya.com/sitemap.xml,2026-10-19,raw=31 dupes_removed=0
@@ -1293,7 +1291,7 @@ maisirrig.com.sa,SA,356,sitemap,6,https://maisirrig.com.sa/sitemap_index.xml,202
 store.khadamat.com.sa,SA,2221,sitemap,3,https://store.khadamat.com.sa/ar/sitemap.xml,2026-10-19,raw=2221 dupes_removed=0
 selsal.sa,SA,401,sitemap,5,http://selsal.sa/sitemap.xml,2026-10-19,raw=401 dupes_removed=0
 fused.sa,SA,65,sitemap,4,https://fused.sa/sitemap.xml,2026-10-19,raw=65 dupes_removed=0
-sa.scotch-soda.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.sa.scotch-soda.com', port=80): Max retries exceeded))",0,,2026-10-19,
+sa.scotch-soda.com,SA,2995,sitemap,12,https://sa.scotch-soda.com/sitemap.xml,2026-10-19,raw=2995 dupes_removed=0; adopted from rerun (NA->value)
 shaheenslj.com,SA,1030,sitemap,3,https://shaheenslj.com/sitemap.xml,2026-10-19,raw=1030 dupes_removed=0
 spsc.com.sa,SA,134,sitemap,13,https://spsc.com.sa/sitemap_index.xml,2026-10-19,raw=134 dupes_removed=0
 scent-solutions.sa,SA,64,sitemap,3,https://scent-solutions.sa/sitemap.xml,2026-10-19,raw=64 dupes_removed=0
@@ -1322,17 +1320,17 @@ sirs.org.sa,SA,10,platform product count,0,,2026-10-19,"sitemap present but yiel
 shop-casa.com,SA,4671,sitemap,3,https://shop-casa.com/ar/sitemap.xml,2026-10-19,raw=4671 dupes_removed=0
 samena-stores.com,SA,11629,sitemap,24,https://samena-stores.com/sitemap.xml | https://samena-stores.com/sitemap.xml | https://samena-stores.com/sitemap.xml,2026-10-19,raw=11629 dupes_removed=0; recount via robots.txt
 sidq.com.sa,SA,82,sitemap,11,https://sidq.com.sa/wp-sitemap.xml,2026-10-19,raw=82 dupes_removed=0
-pik.sa,SA,3525,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+pik.sa,SA,18,sitemap,1,https://pik.sa/sitemap.xml,2026-10-19,raw=18 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 shesafe.sa,SA,61,sitemap,5,https://shesafe.sa/sitemap.xml,2026-10-19,raw=61 dupes_removed=0; recount via guess
 showmuscles.com,SA,169,sitemap,3,https://showmuscles.com/sitemap.xml,2026-10-19,raw=169 dupes_removed=0; recount via robots.txt
 sidewalksa.com,SA,73,sitemap,3,https://sidewalksa.com/sitemap.xml,2026-10-19,raw=73 dupes_removed=0; recount via robots.txt
 sirius.com.sa,SA,318,sitemap,6,https://sirius.com.sa/sitemap.xml,2026-10-19,raw=318 dupes_removed=0
 bitola4care.com,SA,20,sitemap,3,https://bitola4care.com/sitemap.xml,2026-10-19,raw=20 dupes_removed=0; recount via robots.txt
-al-shovel.com,SA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://al-shovel.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='al-shovel.com', port=443): Max retries exceeded with u"")])"
+al-shovel.com,SA,65,sitemap,5,https://al-shovel.com/sitemap.xml,2026-10-19,raw=65 dupes_removed=0; adopted from rerun (NA->value)
 sfi.sa,SA,92,sitemap,9,https://sfi.sa/wp-sitemap.xml,2026-10-19,raw=92 dupes_removed=0; recount via robots.txt
 sirbcare.com.sa,SA,170,sitemap,1,https://sirbcare.com.sa/sitemap.xml,2026-10-19,raw=170 dupes_removed=0
 simplecity.sa,SA,1421,sitemap,10,https://simplecity.sa/sitemap.xml,2026-10-19,raw=1421 dupes_removed=0; recount via robots.txt
-sidewalk.sa,SA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://sidewalk.sa/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='sidewalk.sa', port=443): Max retries exceeded with url"")])"
+sidewalk.sa,SA,812,sitemap,6,https://sidewalk.sa/sitemap.xml,2026-10-19,raw=812 dupes_removed=0; adopted from rerun (NA->value)
 sleephigh.com,SA,756,sitemap,4,https://sleephigh.com/sitemap.xml,2026-10-19,raw=756 dupes_removed=0
 ssp-1.com,SA,1683,sitemap,4,https://ssp-1.com/ar/sitemap.xml,2026-10-19,raw=1683 dupes_removed=0
 sir-alanakah.com,SA,209,sitemap,3,https://sir-alanakah.com/sitemap.xml,2026-10-19,raw=209 dupes_removed=0
@@ -1364,7 +1362,7 @@ nespresso.com,SA,549,sitemap (partial: 103 of 105 sitemap files read),103,https:
 nespresso.com,US,421,sitemap (partial: 103 of 105 sitemap files read),103,https://www.nespresso.com/shared_res/sitemap-index.xml,2026-10-19,"raw=42471 dupes_removed=22; recount via robots.txt; country split untagged=21642,other=17706,KW=873,AE=671,QA=587,SA=549,US=421; failed sitemap fetches after retries=2: https://www.nespresso.com/il/sitemap.xml:404; https://www.nespresso.com/cn/sitemap.xml:unparseable; US pages only"
 sorrah.sa,SA,423,sitemap,4,https://sorrah.sa/sitemap.xml,2026-10-19,raw=423 dupes_removed=0; recount via robots.txt
 sour9sweets.com,SA,106,sitemap,3,https://sour9sweets.com/sitemap.xml,2026-10-19,raw=106 dupes_removed=0; recount via robots.txt
-speero.net,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.speero.net', port=80): Max retries exceeded with ur))",0,,2026-10-19,
+speero.net,SA,628,sitemap,1,https://speero.net/sitemap.xml,2026-10-19,raw=637 dupes_removed=9; adopted from rerun (NA->value)
 specialmatcha.com,SA,2,sitemap,3,https://specialmatcha.com/sitemap.xml,2026-10-19,raw=2 dupes_removed=0; recount via robots.txt
 splus.sa,SA,1807,"sitemap (whole site, no market segment)",37,https://splus.sa/sitemap.xml,2026-10-19,"raw=1807 dupes_removed=0; recount via robots.txt; country split untagged=517,other=516,QA=258,KW=258,AE=258; no SA segment; default storefront is 517 of 1807 URLs; whole-site total includes 1290 URLs under other-country segments"
 hobbies.sa,SA,1747,sitemap,7,https://hobbies.sa/sitemap.xml,2026-10-19,raw=1747 dupes_removed=0
@@ -1399,9 +1397,9 @@ stylish.com.sa,SA,1770,sitemap,5,https://stylish.com.sa/sitemap.xml,2026-10-19,r
 sa.sunglasshut.com,SA,2433,sitemap,12,https://sa.sunglasshut.com/sitemap.xml,2026-10-19,raw=2433 dupes_removed=0
 surratifragrance.com,SA,545,sitemap,3,https://surratifragrance.com/sitemap.xml,2026-10-19,raw=545 dupes_removed=0
 en-sa.sssports.com,SA,20314,sitemap,9,https://en-sa.sssports.com/sitemap_index.xml,2026-10-19,raw=20314 dupes_removed=0
-osifp.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://osifpe.com/ar/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='osifpe.com', port=443): Max retries exceeded with url:""), ('https://osifpe.com/ar/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='osifpe.com', port=443): Max retries exceeded with url:"")]); no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://osifpe.com/ar/sitemap-2.xml', ""ConnectionError: HTTPSConnectionPool(host='osifpe.com', port=443): Max retries exceeded with url:""), ('https://osifpe.com/ar/sitemap-1.xml', ""ConnectionError: HTTPSConnectionPool(host='osifpe.com', port=443): Max retries exceeded with url:"")])"
+osifp.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 sweettoys1.com,SA,1448,sitemap,4,https://sweettoys1.com/sitemap.xml,2026-10-19,raw=1448 dupes_removed=0
-jdelsara.com,SA,,"Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,sitemap present but yielded no countable URLs
+jdelsara.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 swarovski.sa,SA,494,sitemap,5,https://www.swarovski.sa/sitemap_index.xml,2026-10-19,raw=494 dupes_removed=0; media sitemaps skipped=1
 qamraabayas.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 clarks.sa,SA,72,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -1472,7 +1470,7 @@ maker.sa,SA,676,sitemap,4,https://maker.sa/ar/sitemap.xml,2026-10-19,raw=676 dup
 theocean.com.sa,SA,40,sitemap,8,https://theocean.com.sa/ar_ar-sitemap.xml | https://theocean.com.sa/sitemap.xml,2026-10-19,raw=40 dupes_removed=0
 rsmbyreem.com,SA,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 techs.com.sa,SA,84,sitemap,6,https://techs.com.sa/wp-sitemap.xml,2026-10-19,raw=84 dupes_removed=0
-thebodyshop.com.sa,SA,957,sitemap (partial: 10 of 12 sitemap files read),10,https://west.thebodyshop.com.sa/sitemap.xml | https://www.thebodyshop.com.sa/east/sitemap.xml | https://www.thebodyshop.com.sa/east/sitemap_ar.xml,2026-10-19,raw=955 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=2: https://www.thebodyshop.com.sa/east/sitemap_ar.xml:403; https://www.thebodyshop.com.sa/east/sitemap.xml:403
+thebodyshop.com.sa,SA,957,sitemap,10,https://west.thebodyshop.com.sa/sitemap.xml | https://www.thebodyshop.com.sa/east/sitemap.xml | https://www.thebodyshop.com.sa/east/sitemap_ar.xml,2026-10-19,raw=957 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 sahablinesa.com,SA,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),0,,2026-10-19,sitemap present but yielded no countable URLs
 rtbookstore.net,SA,12,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 stylishop.com,AE,247204,sitemap,10,https://images.stylishop.com/mulin_sitemaps/sitemap-listing-sa-en-0.xml | https://images.stylishop.com/mulin_sitemaps/sitemap-listing-sa-en-1.xml | https://images.stylishop.com/mulin_sitemaps/sitemap-listing-sa-en-2.xml | https://images.stylishop.com/mulin_sitemaps/sitemap-listing-sa-en-3.xml | https://images.stylishop.com/mulin_sitemaps/sitemap-listing-sa-ar-0.xml (+5 more),2026-10-19,raw=247204 dupes_removed=0
@@ -1934,11 +1932,11 @@ eagle-shoes.com,SA,333,sitemap,3,https://eagle-shoes.com/sitemap.xml,2026-10-19,
 yellowbee-sa.com,SA,37,sitemap,3,https://yellowbee-sa.com/sitemap.xml,2026-10-19,raw=37 dupes_removed=0
 alnahalaljwal.com.sa,SA,580,sitemap,4,https://alnahalaljwal.com.sa/sitemap.xml,2026-10-19,raw=580 dupes_removed=0
 alneaim-for-oud.com,SA,59,sitemap,3,https://alneaim-for-oud.com/sitemap.xml,2026-10-19,raw=59 dupes_removed=0
-ilash.com.sa,SA,4580,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+ilash.com.sa,SA,1662,sitemap,4,https://ilash.com.sa/sitemap.xml,2026-10-19,raw=1662 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 alhuwaymil4oud.com,SA,137,sitemap,4,https://alhuwaymil4oud.com/sitemap.xml,2026-10-19,raw=137 dupes_removed=0
 awraq-alghusn.com,SA,10,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 anaqtivip.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://anaqtivip.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://anaqtivip.com/sitemap.xml', 404)])"
-en-sa.aivi.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.en-sa.aivi.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
+en-sa.aivi.com,SA,16312869,sitemap (partial: 218 of 231 sitemap files read),218,https://ar-ae.aivi.com/sitemap.xml | https://ar-bh.aivi.com/sitemap.xml | https://ar-kw.aivi.com/sitemap.xml | https://ar-om.aivi.com/sitemap.xml | https://ar-qa.aivi.com/sitemap.xml (+7 more),2026-10-19,raw=10359812 dupes_removed=12; recount via robots.txt; failed sitemap fetches after retries=13: https://ar-qa.aivi.com/media/sitemap/qa_ar_sitemap-16-9.xml:deadline; https://ar-ae.aivi.com/sitemap.xml:deadline; https://ar-bh.aivi.com/sitemap.xml:deadline; adopted from rerun (NA->value)
 ar.shein.com,KW,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ar.shein.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
 ar.shein.com,QA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ar.shein.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
 ar.shein.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ar.shein.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
@@ -2554,9 +2552,9 @@ luxuryhome11.com,SA,44,sitemap,4,https://luxuryhome11.com/sitemap.xml,2026-10-19
 pml.sa,SA,65,sitemap,5,https://pml.sa/sitemap_index.xml,2026-10-19,raw=65 dupes_removed=0
 bin-ibrahim.com.sa,SA,102,sitemap,8,https://bin-ibrahim.com.sa/sitemap_index.xml,2026-10-19,raw=102 dupes_removed=0
 cleverevent.sa,SA,45,sitemap,9,https://cleverevent.sa/sitemap_index.xml,2026-10-19,raw=45 dupes_removed=0
-apple.com,AE,7803,sitemap (partial: 715 of 716 sitemap files read),715,https://www.apple.com/shop/sitemap.xml | https://www.apple.com/autopush/sitemap/sitemap-index.xml | https://www.apple.com/newsroom/sitemap.xml | https://www.apple.com/retail/sitemap/sitemap.xml | https://www.apple.com/today/sitemap-index.xml,2026-10-19,"raw=453234 dupes_removed=910; recount via robots.txt; media sitemaps skipped=188; country split other=233357,untagged=184300,SA=16276,AE=7803,QA=250,KW=248,US=127; failed sitemap fetches after retries=1: https://www.apple.com/ru/shop/sitemap-index.xml:503; AE pages only"
-apple.com,SA,16276,sitemap (partial: 715 of 716 sitemap files read),715,https://www.apple.com/shop/sitemap.xml | https://www.apple.com/autopush/sitemap/sitemap-index.xml | https://www.apple.com/newsroom/sitemap.xml | https://www.apple.com/retail/sitemap/sitemap.xml | https://www.apple.com/today/sitemap-index.xml,2026-10-19,"raw=453234 dupes_removed=910; recount via robots.txt; media sitemaps skipped=188; country split other=233357,untagged=184300,SA=16276,AE=7803,QA=250,KW=248,US=127; failed sitemap fetches after retries=1: https://www.apple.com/ru/shop/sitemap-index.xml:503; SA pages only"
-apple.com,US,127,sitemap (partial: 715 of 716 sitemap files read),715,https://www.apple.com/shop/sitemap.xml | https://www.apple.com/autopush/sitemap/sitemap-index.xml | https://www.apple.com/newsroom/sitemap.xml | https://www.apple.com/retail/sitemap/sitemap.xml | https://www.apple.com/today/sitemap-index.xml,2026-10-19,"raw=453234 dupes_removed=910; recount via robots.txt; media sitemaps skipped=188; country split other=233357,untagged=184300,SA=16276,AE=7803,QA=250,KW=248,US=127; failed sitemap fetches after retries=1: https://www.apple.com/ru/shop/sitemap-index.xml:503; US pages only"
+apple.com,AE,7803,sitemap (partial: 715 of 716 sitemap files read),715,https://www.apple.com/shop/sitemap.xml | https://www.apple.com/autopush/sitemap/sitemap-index.xml | https://www.apple.com/newsroom/sitemap.xml | https://www.apple.com/retail/sitemap/sitemap.xml | https://www.apple.com/today/sitemap-index.xml,2026-10-19,"raw=453230 dupes_removed=904; recount via robots.txt; media sitemaps skipped=188; country split other=233352,untagged=184299,SA=16276,AE=7803,QA=250,KW=248,US=127; failed sitemap fetches after retries=1: https://www.apple.com/ru/shop/sitemap-index.xml:deadline; AE pages only; adopted from rerun (partial->complete sitemap)"
+apple.com,SA,16276,sitemap (partial: 715 of 716 sitemap files read),715,https://www.apple.com/shop/sitemap.xml | https://www.apple.com/autopush/sitemap/sitemap-index.xml | https://www.apple.com/newsroom/sitemap.xml | https://www.apple.com/retail/sitemap/sitemap.xml | https://www.apple.com/today/sitemap-index.xml,2026-10-19,"raw=453230 dupes_removed=904; recount via robots.txt; media sitemaps skipped=188; country split other=233352,untagged=184299,SA=16276,AE=7803,QA=250,KW=248,US=127; failed sitemap fetches after retries=1: https://www.apple.com/ru/shop/sitemap-index.xml:deadline; SA pages only; adopted from rerun (partial->complete sitemap)"
+apple.com,US,127,sitemap (partial: 715 of 716 sitemap files read),715,https://www.apple.com/shop/sitemap.xml | https://www.apple.com/autopush/sitemap/sitemap-index.xml | https://www.apple.com/newsroom/sitemap.xml | https://www.apple.com/retail/sitemap/sitemap.xml | https://www.apple.com/today/sitemap-index.xml,2026-10-19,"raw=453230 dupes_removed=904; recount via robots.txt; media sitemaps skipped=188; country split other=233352,untagged=184299,SA=16276,AE=7803,QA=250,KW=248,US=127; failed sitemap fetches after retries=1: https://www.apple.com/ru/shop/sitemap-index.xml:deadline; US pages only; adopted from rerun (partial->complete sitemap)"
 jasco.sa,SA,197,sitemap,1,https://jasco.sa/sitemap.xml,2026-10-19,raw=198 dupes_removed=1
 dlight.sa,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 rubaaljmalstore.com,SA,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),0,,2026-10-19,sitemap present but yielded no countable URLs
@@ -2583,7 +2581,7 @@ shomatcha.com.sa,SA,45,sitemap,4,https://shomatcha.com.sa/sitemap.xml,2026-10-19
 shay.sa,SA,48,sitemap,4,https://shay.sa/sitemap.xml,2026-10-19,raw=48 dupes_removed=0
 toota-boutique.com,SA,3241,sitemap,3,https://toota-boutique.com/sitemap.xml,2026-10-19,raw=3241 dupes_removed=0
 raqmiyat4pc.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
-sadoud.com,SA,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='sadoud.com', port=443): Max retries exceeded with url:))",0,,2026-10-19,
+sadoud.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 pcf.sa,SA,59,sitemap,5,https://pcf.sa/sitemap.xml,2026-10-19,raw=59 dupes_removed=0
 saqerelsahraamedical.com,SA,250,sitemap,3,https://saqerelsahraamedical.com/sitemap.xml,2026-10-19,raw=250 dupes_removed=0
 ghrsalon.com,SA,85,sitemap,3,https://ghrsalon.com/sitemap.xml,2026-10-19,raw=85 dupes_removed=0
@@ -2654,7 +2652,7 @@ mama-ryehanh.com,SA,,"Not available (sitemap present but yielded no countable UR
 aliyahadam.com,SA,163,sitemap,3,https://aliyahadam.com/sitemap.xml,2026-10-19,raw=163 dupes_removed=0
 zawaya-1.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://zawaya-1.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 o-vila-shop.com,SA,545,sitemap,3,https://o-vila-shop.com/sitemap.xml,2026-10-19,raw=545 dupes_removed=0
-goldengoal.sa,SA,56,sitemap (partial: 10 of 11 sitemap files read),10,https://goldengoal.sa/wp-sitemap.xml,2026-10-19,raw=52 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://goldengoal.sa/wp-sitemap-taxonomies-product_cat-1.xml:429
+goldengoal.sa,SA,58,sitemap,11,https://goldengoal.sa/wp-sitemap.xml,2026-10-19,raw=58 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 hpdr3.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://hpdr3.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://hpdr3.com/sitemap.xml', 404)])"
 abrar-abayas.com,SA,113,sitemap,3,https://abrar-abayas.com/sitemap.xml,2026-10-19,raw=113 dupes_removed=0
 rowanid.com,SA,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -3892,7 +3890,7 @@ lavalleeshop.com,SA,745,sitemap,4,https://lavalleeshop.com/sitemap.xml,2026-10-1
 ndfashions.com,SA,800,sitemap,3,https://ndfashions.com/sitemap.xml,2026-10-19,raw=800 dupes_removed=0
 jolinafashion.com,SA,599,sitemap,3,https://jolinafashion.com/sitemap.xml,2026-10-19,raw=599 dupes_removed=0
 kingdomoudoil.com,SA,5,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://kingdomoudoil.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
-store.sharqiaa.com,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.sharqiaa.com', port=80): Max retries exceeded))",0,,2026-10-19,
+store.sharqiaa.com,SA,1108,sitemap,4,https://store.sharqiaa.com/sitemap.xml,2026-10-19,raw=1108 dupes_removed=0; adopted from rerun (NA->value)
 black-wing-sa.com,SA,2957,sitemap,3,https://black-wing-sa.com/sitemap.xml,2026-10-19,raw=2957 dupes_removed=0
 podium-new.mailoio.com,SA,10799,sitemap,1,https://podium-new.mailoio.com/sitemap.xml,2026-10-19,raw=10799 dupes_removed=0
 altahbir.com,SA,1064,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -4022,8 +4020,8 @@ acaciadesign.ae,AE,56,sitemap,10,https://acaciadesign.ae/wp-sitemap.xml,2026-10-
 playersden.ae,AE,1,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
 abercrombie.sa,SA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.abercrombie.sa', port=80): Max retries exceeded wit))",0,,2026-10-19,
 hollisterco.sa,SA,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.hollisterco.sa', port=80): Read timed out. (read ti))",0,,2026-10-19,
-chantelle.com,QA,99798,sitemap (partial: 83 of 84 sitemap files read),83,https://chantelle.com/sitemap_index.xml,2026-10-19,raw=99786 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://us.chantelle.com/sitemap.xml:429
-chantelle.com,SA,99798,sitemap (partial: 83 of 84 sitemap files read),83,https://chantelle.com/sitemap_index.xml,2026-10-19,raw=99786 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://us.chantelle.com/sitemap.xml:429
+chantelle.com,QA,99774,sitemap (partial: 83 of 84 sitemap files read),83,https://chantelle.com/sitemap_index.xml,2026-10-19,raw=99786 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://us.chantelle.com/sitemap.xml:429; adopted from rerun (partial->complete sitemap)
+chantelle.com,SA,99774,sitemap (partial: 83 of 84 sitemap files read),83,https://chantelle.com/sitemap_index.xml,2026-10-19,raw=99786 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://us.chantelle.com/sitemap.xml:429; adopted from rerun (partial->complete sitemap)
 ae.gissah.com,AE,126,sitemap,1,http://ae.gissah.com/sitemap.xml,2026-10-19,raw=126 dupes_removed=0
 acccomp.ae,AE,133,sitemap,7,https://acccomp.ae/sitemap_index.xml,2026-10-19,raw=134 dupes_removed=1
 adfemaledivers.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='adfemaledivers.ae', port=80): Max retries exceeded with))",0,,2026-10-19,
@@ -4126,7 +4124,7 @@ rahaintl.ae,AE,4628,sitemap,1,https://www.rahaintl.ae/sitemap.xml,2026-10-19,raw
 m-wsm.com,SA,,"Not available (sitemap present but yielded no countable URLs ([('https://m-wsm.com/sitemap.xml', 404)]); no sitemap/shop total/platform count and no archive captures)",0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://m-wsm.com/sitemap.xml', 404)])"
 aljasmi.ae,AE,34,sitemap,7,https://aljasmi.ae/wp-sitemap.xml,2026-10-19,raw=34 dupes_removed=0
 waleds.com,SA,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
-alchemydesign.ae,AE,51,sitemap (partial: 1 of 2 sitemap files read),1,https://alchemydesign.ae/sitemap.xml | https://alchemydesign.ae/sitemap.php,2026-10-19,raw=51 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://alchemydesign.ae/sitemap.php:500
+alchemydesign.ae,AE,51,sitemap,1,https://alchemydesign.ae/sitemap.xml | https://alchemydesign.ae/sitemap.php,2026-10-19,raw=51 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 altawash.ae,AE,647,sitemap,10,https://altawash.ae/sitemap.xml,2026-10-19,raw=647 dupes_removed=0
 shawafstore.com,SA,1536,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://shawafstore.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 alwaslsc.ae,AE,13,sitemap,1,https://www.alwaslsc.ae/sitemap.xml,2026-10-19,raw=13 dupes_removed=0
@@ -4275,7 +4273,7 @@ allstars.ae,AE,8176,sitemap,46,https://allstars.ae/sitemap_index.xml,2026-10-19,
 arkasoftwares.ae,AE,184,sitemap,1,https://www.arkasoftwares.ae/sitemap.xml,2026-10-19,raw=184 dupes_removed=0
 billionaire.com,SA,2439,sitemap (SA pages only),542,https://www.billionaire.com/eu/sitemap_index.xml,2026-10-19,"raw=181299 dupes_removed=0; country split untagged=125202,other=46341,KW=2439,QA=2439,SA=2439,AE=2439"
 billionaire.com,US,181299,"sitemap (whole site, no market segment)",542,https://www.billionaire.com/eu/sitemap_index.xml,2026-10-19,"raw=181299 dupes_removed=0; recount via robots.txt; country split untagged=125202,other=46341,KW=2439,QA=2439,SA=2439,AE=2439; no US segment; default storefront is 125202 of 181299 URLs; whole-site total includes 56097 URLs under other-country segments"
-ajmanbank.ae,AE,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.ajmanbank.ae', port=80): Read timed out. (read time))",0,,2026-10-19,
+ajmanbank.ae,AE,1630,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 amanoon.ae,AE,4283,sitemap,12,https://amanoon.ae/sitemap.xml,2026-10-19,raw=4283 dupes_removed=0
 antiochdubai.ae,AE,44,sitemap,8,https://antiochdubai.ae/wp-sitemap.xml,2026-10-19,raw=44 dupes_removed=0
 store.anker.com,AE,341,sitemap (AE pages only),6,https://www.store.anker.com/sitemap.xml | https://www.store.anker.com/server-sitemap-index-pages.xml | https://www.store.anker.com/server-sitemap-index-products.xml | https://www.store.anker.com/server-sitemap-index-collections.xml | https://www.store.anker.com/server-sitemap-index-blog.xml,2026-10-19,"raw=2611 dupes_removed=266; country split other=1279,untagged=384,AE=341,SA=341"
@@ -4370,7 +4368,7 @@ axonbusinesssystems.ae,AE,347,sitemap,7,https://axonbusinesssystems.ae/sitemap.x
 atoztrade.ae,AE,271,sitemap,11,https://atoztrade.ae/sitemap_index.xml,2026-10-19,raw=272 dupes_removed=1
 avpros.ae,AE,1929,sitemap,10,https://www.avpros.ae/sitemap.xml,2026-10-19,raw=1929 dupes_removed=0
 azra.ae,AE,82,sitemap,6,https://azra.ae/sitemap.xml,2026-10-19,raw=82 dupes_removed=0
-autowin.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+autowin.ae,AE,6195,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; shopify products=1250 + collections=4945; /pages not enumerable; adopted from rerun (NA->value)
 avera.ae,AE,1549,sitemap,9,https://avera.ae/sitemap.xml,2026-10-19,raw=1549 dupes_removed=0
 audiohub.ae,AE,193,sitemap,7,https://audiohub.ae/sitemap.xml,2026-10-19,raw=193 dupes_removed=0
 asanapilates.ae,AE,57,sitemap,4,https://asanapilates.ae/wp-sitemap.xml,2026-10-19,raw=57 dupes_removed=0
@@ -4434,7 +4432,7 @@ bagsy.ae,AE,769,sitemap,12,https://bagsy.ae/sitemap.xml,2026-10-19,raw=769 dupes
 babees.ae,AE,767,sitemap,10,https://babees.ae/sitemap.xml,2026-10-19,raw=767 dupes_removed=0
 smartfurniture.ae,AE,614,sitemap,5,https://www.smartfurniture.ae/sitemap.xml,2026-10-19,raw=614 dupes_removed=0
 bannabrothers.ae,AE,54,sitemap,8,https://bannabrothers.ae/sitemap.xml,2026-10-19,raw=54 dupes_removed=0
-attackshark.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+attackshark.ae,AE,296,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; shopify products=186 + collections=110; /pages not enumerable; adopted from rerun (NA->value)
 autoverse.ae,AE,5267,sitemap,30,https://autoverse.ae/sitemap_index.xml,2026-10-19,raw=5281 dupes_removed=14
 bakedbya.ae,AE,148,sitemap,6,https://bakedbya.ae/sitemap.xml,2026-10-19,raw=148 dupes_removed=0
 bambasfootwear.ae,AE,104,sitemap,7,https://bambasfootwear.ae/sitemap.xml,2026-10-19,raw=104 dupes_removed=0
@@ -4448,7 +4446,7 @@ ayatperfumes.ae,AE,340,archive,0,,2026-10-19,"redirects to freemed.com.ua; sitem
 beekeepersfoundation.ae,AE,69,sitemap,8,https://www.beekeepersfoundation.ae/wp-sitemap.xml,2026-10-19,raw=70 dupes_removed=1
 ayurlive.ae,AE,52,sitemap,6,https://ayurlive.ae/sitemap_index.xml,2026-10-19,raw=53 dupes_removed=1
 bally.ae,AE,4849,sitemap,14,https://www.bally.ae/sitemap.xml | https://www.bally.ae/sitemap.xml | https://www.bally.ae/sitemap.xml,2026-10-19,raw=4849 dupes_removed=0
-almanakhparts.ae,AE,31,sitemap (partial: 3 of 10 sitemap files read),3,https://almanakhparts.ae/sitemap.xml,2026-10-19,raw=9 dupes_removed=0; recount via guess; failed sitemap fetches after retries=7: https://almanakhparts.ae/wp-sitemap-posts-post-1.xml:429; https://almanakhparts.ae/wp-sitemap-posts-page-1.xml:429; https://almanakhparts.ae/wp-sitemap-posts-product-1.xml:429
+almanakhparts.ae,AE,97,sitemap,10,https://almanakhparts.ae/sitemap.xml,2026-10-19,raw=97 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 badiee.ae,AE,207,sitemap,9,https://badiee.ae/wp-sitemap.xml,2026-10-19,raw=207 dupes_removed=0
 balancedbites.ae,AE,75,sitemap,8,https://balancedbites.ae/sitemap_index.xml,2026-10-19,raw=76 dupes_removed=1
 bakerscorner.ae,AE,1091,sitemap,10,https://www.bakerscorner.ae/sitemap.xml,2026-10-19,raw=1091 dupes_removed=0
@@ -4466,7 +4464,7 @@ bauerfeind.ae,AE,340,sitemap,7,https://www.bauerfeind.ae/sitemap.xml,2026-10-19,
 bellavitaluxury.ae,AE,115,sitemap,10,https://www.bellavitaluxury.ae/sitemap.xml,2026-10-19,raw=115 dupes_removed=0
 bams.ae,AE,79,sitemap (partial: 7 of 8 sitemap files read),7,https://bams.ae/sitemap.xml | https://bams.ae/sitemap.rss,2026-10-19,raw=79 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://bams.ae/sitemap.rss:unparseable
 balea.ae,AE,785,sitemap (partial: 7 of 8 sitemap files read),7,https://balea.ae/sitemap.xml | https://balea.ae/sitemap.rss,2026-10-19,raw=785 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://balea.ae/sitemap.rss:unparseable
-bkmaison.com,AE,,Not available (no sitemap found; no sitemap/shop total/platform count and no archive captures),0,,2026-10-19,no sitemap found
+bkmaison.com,AE,,Not available (no AE pages in sitemap),62,https://www.bazarkom.ae/sitemap.xml | https://www.bazarkom.ae/sitemap.xml | https://www.bazarkom.ae/sitemap.xml,2026-10-19,"raw=1705 dupes_removed=0; recount via robots.txt; country split other=568,untagged=285,SA=284,QA=284,KW=284; adopted from rerun (NA->value)"
 bedgear.ae,AE,78,sitemap,7,https://www.bedgear.ae/sitemap.xml,2026-10-19,raw=78 dupes_removed=0
 ayaboutique.ae,AE,206,sitemap,13,https://ayaboutique.ae/sitemap_index.xml | https://ayaboutique.ae/sitemap.xml,2026-10-19,raw=210 dupes_removed=4
 bestcake.ae,AE,9,sitemap,1,https://www.bestcake.ae/sitemap.xml,2026-10-19,raw=9 dupes_removed=0
@@ -4588,7 +4586,7 @@ blossomboxflowers.ae,AE,276,sitemap,6,https://blossomboxflowers.ae/sitemap.xml,2
 blue-flowers.ae,AE,500,sitemap,7,https://www.blue-flowers.ae/sitemap.xml,2026-10-19,raw=500 dupes_removed=0
 blinkonline.ae,AE,1221,sitemap,10,https://blinkonline.ae/sitemap.xml,2026-10-19,raw=1221 dupes_removed=0
 botana.ae,AE,87,sitemap,7,https://botana.ae/sitemap.xml,2026-10-19,raw=87 dupes_removed=0
-electrabike.ae,AE,1560,sitemap (partial: 5 of 6 sitemap files read),5,https://electabike.ae/sitemap.xml | https://electrabike.ae/sitemap.xml,2026-10-19,"raw=1562 dupes_removed=2; recount via robots.txt; failed sitemap fetches after retries=1: https://electabike.ae/sitemap.xml:ConnectionError: HTTPSConnectionPool(host='electabike.ae', port=443): Max retries exceeded with u"
+electrabike.ae,AE,1560,sitemap,5,https://electabike.ae/sitemap.xml | https://electrabike.ae/sitemap.xml,2026-10-19,raw=1562 dupes_removed=2; adopted from rerun (partial->complete sitemap)
 bodytime.ae,AE,575,sitemap,6,https://bodytime.ae/sitemap_index.xml,2026-10-19,raw=576 dupes_removed=1
 office-desk.ae,AE,1597,sitemap,11,https://office-desk.ae/sitemap.xml,2026-10-19,raw=1597 dupes_removed=0
 bonita.ae,AE,827,sitemap,6,https://bonita.ae/sitemap.xml,2026-10-19,raw=827 dupes_removed=0
@@ -4596,7 +4594,7 @@ bohosalon.ae,AE,422,sitemap,9,https://bohosalon.ae/sitemap_index.xml,2026-10-19,
 brixstar.ae,AE,19,sitemap,5,https://brixstar.ae/wp-sitemap.xml,2026-10-19,raw=19 dupes_removed=0
 bntglobalme.com,AE,2079,sitemap,9,https://bntglobalme.com/sitemap_index.xml,2026-10-19,raw=2080 dupes_removed=1
 bauaet.ae,AE,4161,sitemap,14,https://bauaet.ae/sitemap.xml,2026-10-19,raw=4161 dupes_removed=0; recount via robots.txt
-sysllc.ae,AE,11002,sitemap (partial: 1 of 2 sitemap files read),1,https://www.sysllc.ae/media/wysiwyg/sitemapnew.xml | https://www.sysllc.aepub/media/wysiwyg/sitemapnew.xml,2026-10-19,"raw=11002 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.sysllc.aepub/media/wysiwyg/sitemapnew.xml:ConnectionError: HTTPSConnectionPool(host='www.sysllc.aepub', port=443): Max retries exceeded wit"
+sysllc.ae,AE,11002,sitemap,1,https://www.sysllc.ae/media/wysiwyg/sitemapnew.xml | https://www.sysllc.aepub/media/wysiwyg/sitemapnew.xml,2026-10-19,raw=11002 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 broadlink.ae,AE,50,sitemap,5,https://www.broadlink.ae/sitemap.xml,2026-10-19,raw=51 dupes_removed=1
 bochu.ae,AE,198,sitemap (partial: 1 of 2 sitemap files read),1,https://bochu.ae/sitemap.xml | https://bochu.ae/sitemap.rss,2026-10-19,raw=198 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://bochu.ae/sitemap.rss:unparseable
 broadwaybakery.com,AE,3516,sitemap,1,http://www.broadwaybakery.com/sitemap.xml,2026-10-19,raw=3516 dupes_removed=0
@@ -4648,7 +4646,7 @@ bizmate.ae,AE,101,sitemap,11,https://bizmate.ae/sitemap_index.xml,2026-10-19,raw
 vaporking.ae,AE,,Not available (no sitemap; shop-page total reported 0),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://vaporking.ae/sitemap', 'TooManyRedirects: Exceeded 30 redirects.')]); /shop: '0  items'; recount: no sitemap"
 byduae.ae,AE,219,sitemap,2,https://www.byduae.ae/sitemap-en.xml | https://www.byduae.ae/sitemap-ar.xml,2026-10-19,raw=231 dupes_removed=12
 toyota.ae,AE,714,sitemap,2,https://www.toyota.ae/sitemap-en.xml | https://www.toyota.ae/sitemap-ar.xml,2026-10-19,raw=718 dupes_removed=4
-brandart.ae,AE,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='brandart.ae', port=443): Max retries exceeded with url))",0,,2026-10-19,
+brandart.ae,AE,11,sitemap,3,https://brandart.ae/sitemap_index.xml,2026-10-19,raw=11 dupes_removed=0; adopted from rerun (NA->value)
 boujie.ae,AE,23,sitemap,3,https://boujie.ae/sitemap_index.xml,2026-10-19,raw=23 dupes_removed=0
 boombloom.ae,AE,104,sitemap,7,https://boombloom.ae/sitemap.xml | https://boombloom.ae/sitemap.xml | https://boombloom.ae/sitemap.xml,2026-10-19,raw=104 dupes_removed=0
 byflair.ae,AE,8,sitemap,6,https://byflair.ae/sitemap.xml,2026-10-19,raw=8 dupes_removed=0
@@ -4671,7 +4669,7 @@ buildabear.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPo
 cakepalace.ae,AE,910,sitemap,10,https://cakepalace.ae/wp-sitemap.xml,2026-10-19,raw=910 dupes_removed=0
 cameltech.ae,AE,113,sitemap,12,https://cameltech.ae/sitemap.xml,2026-10-19,raw=113 dupes_removed=0
 buybrands.ae,AE,1448,sitemap,10,https://www.buybrands.ae/sitemap.xml,2026-10-19,raw=1448 dupes_removed=0
-bossini.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+bossini.ae,AE,166,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 camcity.ae,AE,594,sitemap,8,https://camcity.ae/sitemap_index.xml,2026-10-19,raw=634 dupes_removed=40
 byamanina.ae,AE,30,sitemap,7,https://byamanina.ae/sitemap.xml,2026-10-19,raw=30 dupes_removed=0
 bumpandbaby.ae,AE,550,sitemap,7,https://www.bumpandbaby.ae/sitemap.xml,2026-10-19,raw=550 dupes_removed=0; recount via robots.txt
@@ -4856,7 +4854,7 @@ carszone.ae,AE,100,sitemap (partial: 9 of 40 sitemap files read),9,https://carsz
 concept09.ae,AE,62,sitemap,6,https://concept09.ae/sitemap.xml,2026-10-19,raw=62 dupes_removed=0
 cheapdeals.ae,AE,175,sitemap,5,https://www.cheapdeals.ae/sitemaps.xml,2026-10-19,raw=176 dupes_removed=1
 cnc-machine.ae,AE,642,sitemap,5,https://cnc-machine.ae/sitemap_index.xml,2026-10-19,raw=643 dupes_removed=1
-gegroup.ae,AE,1705,sitemap (partial: 24 of 25 sitemap files read),24,https://gegroup.ae/sitemap_index.xml,2026-10-19,raw=2006 dupes_removed=301; recount via robots.txt; failed sitemap fetches after retries=1: https://gegroup.ae/product_tag-sitemap5.xml:307
+gegroup.ae,AE,1705,sitemap,24,https://gegroup.ae/sitemap_index.xml,2026-10-19,raw=2006 dupes_removed=301; adopted from rerun (partial->complete sitemap)
 courage-voyage.ae,AE,66,sitemap,1,https://courage-voyage.ae/sitemap.xml,2026-10-19,raw=66 dupes_removed=0
 classicderma.ae,AE,161798,sitemap,168,https://classicderma.ae/sitemap.xml,2026-10-19,raw=161798 dupes_removed=0
 colmi.ae,AE,39,sitemap,6,https://colmi.ae/sitemap.xml,2026-10-19,raw=39 dupes_removed=0
@@ -4882,7 +4880,7 @@ chocolatefactory.ae,AE,1703,archive,0,,2026-10-19,"sitemap present but yielded n
 comnet.ae,AE,623,sitemap,5,https://comnet.ae/sitemap.xml,2026-10-19,raw=623 dupes_removed=0
 contemporaryspaces.ae,AE,66,sitemap,6,https://www.contemporaryspaces.ae/sitemap.xml,2026-10-19,raw=66 dupes_removed=0
 clickandsave.ae,AE,223,sitemap,6,https://www.clickandsave.ae/sitemap.xml,2026-10-19,raw=223 dupes_removed=0
-bookbeauty.ae,AE,383,sitemap (partial: 11 of 12 sitemap files read),11,https://bookbeauty.ae/sitemap_index.xml,2026-10-19,raw=384 dupes_removed=1; recount via robots.txt; failed sitemap fetches after retries=1: https://bookbeauty.ae/listing-sitemap.xml:500
+bookbeauty.ae,AE,383,sitemap,11,https://bookbeauty.ae/sitemap_index.xml,2026-10-19,raw=384 dupes_removed=1; adopted from rerun (partial->complete sitemap)
 colonwell.ae,AE,19,sitemap,10,https://www.colonwell.ae/sitemap.xml,2026-10-19,raw=19 dupes_removed=0
 cloaks.ae,AE,45,sitemap,7,https://cloaks.ae/sitemap.xml,2026-10-19,raw=45 dupes_removed=0
 costless.ae,AE,501,sitemap,1,https://costless.ae/pub/sitemap.xml,2026-10-19,raw=501 dupes_removed=0
@@ -5111,7 +5109,7 @@ coolersonline.ae,AE,966,sitemap (partial: 80 of 81 sitemap files read),80,https:
 dinossi.ae,AE,34844,sitemap,44,https://www.dinossi.ae/sitemap.xml,2026-10-19,raw=34844 dupes_removed=0
 dubai-desert-safari.ae,AE,39,sitemap,8,https://dubai-desert-safari.ae/sitemap_index.xml,2026-10-19,raw=40 dupes_removed=1
 doggyvillage.ae,AE,274,sitemap,14,https://doggyvillage.ae/sitemap.xml,2026-10-19,raw=274 dupes_removed=0
-dcgpac.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dcgpac.ae', port=80): Max retries exceeded with url))",0,,2026-10-19,
+dcgpac.ae,AE,1504,sitemap,1,https://dcgpac.ae/sitemap.xml,2026-10-19,raw=1504 dupes_removed=0; adopted from rerun (NA->value)
 dibbaclub.ae,AE,2905,sitemap,27,https://dibbaclub.ae/sitemap_index.xml,2026-10-19,raw=2905 dupes_removed=0; media sitemaps skipped=2
 dubaiblooms.ae,AE,71,sitemap,1,https://dubaiblooms.ae/sitemap.xml,2026-10-19,raw=71 dupes_removed=0
 divaatelier.ae,AE,233,sitemap,6,https://www.divaatelier.ae/sitemap.xml,2026-10-19,raw=233 dupes_removed=0
@@ -5195,8 +5193,8 @@ drizzle.ae,AE,102,sitemap,7,https://drizzle.ae/wp-sitemap.xml,2026-10-19,raw=102
 drivercarrental.ae,AE,177,sitemap,10,https://drivercarrental.ae/sitemap_index.xml,2026-10-19,raw=178 dupes_removed=1
 ecco.ae,AE,220,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /all-products: '220 products'
 eatyourwhey.ae,AE,12,sitemap,6,https://eatyourwhey.ae/sitemap.xml,2026-10-19,raw=12 dupes_removed=0
-dreamhealth.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dreamhealth.ae', port=80): Max retries exceeded wit))",0,,2026-10-19,
-ddcuae.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ddcuae.ae', port=80): Max retries exceeded with url))",0,,2026-10-19,
+dreamhealth.ae,AE,68,sitemap,11,https://dreamhealth.ae/sitemap.xml,2026-10-19,raw=68 dupes_removed=0; adopted from rerun (NA->value)
+ddcuae.ae,AE,101,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 ecof.ae,AE,13,sitemap,2,https://www.ecof.ae/sitemap.xml,2026-10-19,raw=13 dupes_removed=0
 ecofloorcarpet.ae,AE,48,sitemap,1,http://www.ecofloorcarpet.ae/sitemap.xml,2026-10-19,raw=51 dupes_removed=0
 eatclean.ae,AE,119,sitemap,10,https://eatclean.ae/sitemap.xml,2026-10-19,raw=119 dupes_removed=0
@@ -5210,7 +5208,7 @@ businesssetupdxb.ae,AE,41,sitemap,3,https://businesssetupdxb.ae/sitemap_index.xm
 dxracer.ae,AE,366,sitemap,5,https://www.dxracer.ae/sitemap/all.xml | https://www.dxracer.ae/sitemap/reviews-1.xml | https://www.dxracer.ae/sitemap/blogs-1.xml | https://www.dxracer.ae/sitemap/details.xml | https://www.dxracer.ae/sitemap/products.xml,2026-10-19,raw=369 dupes_removed=3
 ecigdubai.ae,AE,803,sitemap,8,https://ecigdubai.ae/sitemap_index.xml,2026-10-19,raw=804 dupes_removed=1
 eaglescales.ae,AE,74,sitemap,8,https://eaglescales.ae/wp-sitemap.xml,2026-10-19,raw=74 dupes_removed=0
-e-stylish.ae,AE,81,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+e-stylish.ae,AE,70,sitemap,7,https://e-stylish.ae/sitemap.xml | https://e-stylish.ae/sitemap.xml | https://e-stylish.ae/sitemap.xml | https://e-stylish.ae/sitemap.xml,2026-10-19,raw=70 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 easygardens.ae,AE,46,sitemap,4,https://www.easygardens.ae/sitemap_index.xml,2026-10-19,raw=47 dupes_removed=1
 duud.ae,AE,722,sitemap,8,https://duud.ae/sitemap_index.xml,2026-10-19,raw=723 dupes_removed=1
 dubaimag.ae,AE,1038,sitemap,9,https://dubaimag.ae/sitemap_index.xml,2026-10-19,raw=1038 dupes_removed=0
@@ -5227,7 +5225,7 @@ elanofficial.ae,AE,794,sitemap,2,https://elanofficial.ae/sitemap.xml | https://e
 dubaipro.ae,AE,37,sitemap,7,https://dubaipro.ae/sitemap_index.xml,2026-10-19,raw=38 dupes_removed=1
 easywill.ae,AE,378,sitemap,4,https://easywill.ae/sitemap_index.xml,2026-10-19,raw=379 dupes_removed=1
 dxbmart.ae,AE,971,sitemap,7,https://dxbmart.ae/wp-sitemap.xml,2026-10-19,raw=971 dupes_removed=0
-easygocarexport.ae,AE,27,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.easygocarexport.ae/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.easygocarexport.ae', port=443): Max retries exceed"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+easygocarexport.ae,AE,10,sitemap,4,https://www.easygocarexport.ae/sitemap.xml,2026-10-19,raw=11 dupes_removed=1; adopted from rerun (fallback->complete sitemap)
 elegancestyle.ae,AE,5863,sitemap,1,https://elegancestyle.ae/sitemap.xml,2026-10-19,raw=5863 dupes_removed=0
 ejaries.ae,AE,60,sitemap,2,https://ejaries.ae/sitemap_index.xml,2026-10-19,raw=60 dupes_removed=0
 edgecycling.ae,AE,860,sitemap,6,https://edgecycling.ae/sitemap.xml,2026-10-19,raw=860 dupes_removed=0
@@ -5448,7 +5446,7 @@ fdesign.ae,AE,136,sitemap,3,https://www.fdesign.ae/sitemap_index.xml,2026-10-19,
 fiberboard.ae,AE,23,sitemap,1,https://fiberboard.ae/sitemap.xml,2026-10-19,raw=23 dupes_removed=0
 fcghome.ae,AE,54,sitemap,6,https://fcghome.ae/sitemap.xml,2026-10-19,raw=54 dupes_removed=0
 fit4it.ae,AE,162,sitemap,5,https://fit4it.ae/sitemap_index.xml,2026-10-19,raw=162 dupes_removed=0
-faqihient.ae,AE,125,sitemap (partial: 4 of 6 sitemap files read),4,https://faqihient.ae/sitemap_index.xml,2026-10-19,raw=125 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=2: https://faqihient.ae/product-sitemap2.xml:500; https://faqihient.ae/product-sitemap.xml:500
+faqihient.ae,AE,125,sitemap,4,https://faqihient.ae/sitemap_index.xml,2026-10-19,raw=125 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 feathers.ae,AE,661,sitemap,7,https://feathers.ae/sitemap.xml,2026-10-19,raw=661 dupes_removed=0
 feelunique.ae,AE,388,sitemap,5,https://feelunique.ae/wp-sitemap.xml,2026-10-19,raw=389 dupes_removed=1
 expressdrycleanlaundry.ae,AE,187,sitemap,6,https://expressdrycleanlaundry.ae/sitemap_index.xml,2026-10-19,raw=188 dupes_removed=1
@@ -5831,7 +5829,7 @@ holidaymarket.ae,AE,156,sitemap,1,https://www.holidaymarket.ae/sitemap.xml,2026-
 hitecperformance.ae,AE,38,sitemap,4,https://www.hitecperformance.ae/sitemap.xml,2026-10-19,raw=38 dupes_removed=0
 hffoods.ae,AE,1596,sitemap,7,https://hffoods.ae/sitemap.xml,2026-10-19,raw=1596 dupes_removed=0
 hapi.ae,AE,40,sitemap,6,https://hapi.ae/sitemap.xml,2026-10-19,raw=40 dupes_removed=0
-hattahoney.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+hattahoney.ae,AE,2132,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 heetstereaabudhabi.ae,AE,181,sitemap,5,https://heetstereaabudhabi.ae/sitemap_index.xml,2026-10-19,raw=182 dupes_removed=1
 healthygift.ae,AE,164,sitemap,7,https://healthygift.ae/sitemap_index.xml,2026-10-19,raw=164 dupes_removed=0
 highfive.ae,AE,112,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -5871,7 +5869,7 @@ hadishop.ae,AE,469,sitemap,12,https://hadishop.ae/sitemap.xml,2026-10-19,raw=469
 houzify.ae,AE,,Not available (blocked by robots.txt (Disallow: /)),0,,2026-10-19,
 hellohairmensalonalain.ae,AE,126,sitemap,13,https://www.hellohairmensalonalain.ae/ar_ar-sitemap.xml | https://www.hellohairmensalonalain.ae/sitemap.xml,2026-10-19,raw=128 dupes_removed=2
 glamsecret.ae,AE,15849,"sitemap (whole site, no market segment)",58,https://glamsecret.ae/sitemap.xml,2026-10-19,"raw=15849 dupes_removed=0; recount via robots.txt; country split untagged=3963,QA=3962,KW=3962,SA=3962; no AE segment; default storefront is 3963 of 15849 URLs; whole-site total includes 11886 URLs under other-country segments"
-grenewed.ae,AE,,"Not available (unreachable (ReadTimeout: HTTPSConnectionPool(host='www.grenewed.ae', port=443): Read timed out. (read tim))",0,,2026-10-19,
+grenewed.ae,AE,420,sitemap,6,https://grenewed.ae/sitemap_index.xml,2026-10-19,raw=421 dupes_removed=1; adopted from rerun (NA->value)
 head2toes.ae,AE,7202,sitemap,13,https://head2toes.ae/sitemap.xml,2026-10-19,raw=7204 dupes_removed=2
 greenhillsports.com,AE,6062,"sitemap (whole site, no market segment)",57,https://www.greenhillsports.com/sitemap.xml,2026-10-19,"raw=6062 dupes_removed=0; recount via robots.txt; country split other=3857,untagged=1654,SA=551; no AE segment; default storefront is 1654 of 6062 URLs; whole-site total includes 4408 URLs under other-country segments"
 hof.ae,AE,251,sitemap,6,https://hof.ae/sitemap.xml,2026-10-19,raw=251 dupes_removed=0
@@ -6083,7 +6081,7 @@ jasmineart.ae,AE,2946,sitemap,9,https://jasmineart.ae/sitemap.xml,2026-10-19,raw
 horecastore.ae,AE,8951,sitemap,18,https://www.horecastore.ae/sitemap-index.xml,2026-10-19,raw=8953 dupes_removed=2
 iqos-abudhabi.ae,AE,177,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://iqos-abudhabi.ae/sitemap_index.xml', 404)]); woocommerce X-WP-Total (products only)"
 jashanmal.com,AE,25247,sitemap,32,https://www.jashanmal.com/sitemap.xml,2026-10-19,raw=25247 dupes_removed=0
-italianluxurygroup.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://italianluxurygroup.com.au/llms.txt', 'unparseable'), ('https://italianluxurygroup.com.au/llms-full.txt', 'unparseable')])"
+italianluxurygroup.ae,AE,2573,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://italianluxurygroup.com.au/llms-full.txt', 'unparseable'), ('https://italianluxurygroup.com.au/llms.txt', 'unparseable')]); shopify products=1993 + collections=580; /pages not enumerable; adopted from rerun (NA->value)"
 ipoint.ae,AE,521,sitemap,12,https://ipoint.ae/sitemap.xml | https://ipoint.ae/sitemap.xml | https://ipoint.ae/sitemap.xml,2026-10-19,raw=521 dupes_removed=0
 jetskisdubai.ae,AE,29,sitemap,3,https://jetskisdubai.ae/sitemap_index.xml,2026-10-19,raw=29 dupes_removed=0
 jackartgallery.ae,AE,262,sitemap,7,https://jackartgallery.ae/sitemap.xml,2026-10-19,raw=262 dupes_removed=0
@@ -6108,7 +6106,7 @@ karamcoffee.ae,AE,81,sitemap,10,https://karamcoffee.ae/sitemap.xml,2026-10-19,ra
 heetsajman.ae,AE,188,sitemap,4,https://heetsajman.ae/sitemap_index.xml,2026-10-19,raw=189 dupes_removed=1
 jr3dprinter.ae,AE,75,sitemap,7,https://jr3dprinter.ae/sitemap.xml,2026-10-19,raw=75 dupes_removed=0
 javerijewelleryco.ae,AE,190,sitemap,4,https://javerijewelleryco.ae/sitemap_index.xml,2026-10-19,raw=190 dupes_removed=0
-kayali.com,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.example.com/sitemap.xml', 404)])"
+kayali.com,AE,131,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.example.com/sitemap.xml', 404)]); shopify products=73 + collections=58; /pages not enumerable; adopted from rerun (NA->value)"
 jetgeneral.ae,AE,30,sitemap,7,https://jetgeneral.ae/sitemap_index.xml,2026-10-19,raw=30 dupes_removed=0
 jeroma.ae,AE,112,sitemap,7,https://jeroma.ae/sitemap_index.xml,2026-10-19,raw=113 dupes_removed=1
 ius.ae,AE,51,sitemap,5,https://ius.ae/sitemap_index.xml,2026-10-19,raw=52 dupes_removed=1; recount via robots.txt
@@ -6150,13 +6148,13 @@ itkori.com,AE,733,sitemap,26,https://itkori.com/sitemap.xml,2026-10-19,raw=733 d
 jurastore.ae,AE,317,sitemap,12,https://jurastore.ae/sitemap.xml,2026-10-19,raw=317 dupes_removed=0
 kargalcars.ae,AE,188,sitemap,16,https://kargalcars.ae/sitemap_index.xml,2026-10-19,raw=188 dupes_removed=0
 kels.ae,AE,7899,sitemap,16,https://kels.ae/wp-sitemap.xml,2026-10-19,raw=7955 dupes_removed=56
-junaidjamshed.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.junaidjamshed.ae', port=80): Max retries exceeded w))",0,,2026-10-19,
+junaidjamshed.ae,AE,174,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 jotun.com,AE,4628,sitemap (AE pages only),38,https://www.jotun.com/sitemap.xml | https://www.jotun.com/deco-sitemapindex.xml,2026-10-19,"raw=81673 dupes_removed=0; country split untagged=40373,other=32113,AE=4628,SA=4559"
 kidd.ae,AE,46,sitemap,6,https://kidd.ae/sitemap.xml,2026-10-19,raw=46 dupes_removed=0
 kibs.ae,AE,730,sitemap (AE pages only),67,https://kibs.ae/sitemap.xml,2026-10-19,"raw=4480 dupes_removed=0; country split other=1360,AE=730,QA=700,SA=662,KW=662,untagged=366"
 itstore.ae,AE,291,sitemap (partial: 36 of 37 sitemap files read),36,https://www.itstore.ae/wp-sitemap.xml | https://www.itstore.ae/sitemap.xml,2026-10-19,raw=291 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.itstore.ae/wp-sitemap.xml:404
 kanafani.ae,AE,23,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-kamagradubai.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.kamagradubai.ae', port=80): Max retries exceeded wi))",0,,2026-10-19,
+kamagradubai.ae,AE,1948,sitemap,7,https://kamagradubai.ae/sitemap_index.xml,2026-10-19,raw=1949 dupes_removed=1; adopted from rerun (NA->value)
 kickdrink.ae,AE,44,sitemap,7,https://www.kickdrink.ae/sitemap.xml,2026-10-19,raw=44 dupes_removed=0
 kababkarachi.ae,AE,12,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://kababkarachi.ae/sitemap_index.xml', ""SSLError: HTTPSConnectionPool(host='kababkarachi.ae', port=443): Max retries exceeded with"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
 khind.ae,AE,305,sitemap,7,https://www.khind.ae/sitemap.xml,2026-10-19,raw=305 dupes_removed=0
@@ -6662,7 +6660,7 @@ mkprofessional.ae,AE,113,sitemap,7,https://mkprofessional.ae/sitemap.xml,2026-10
 mjcreations.ae,AE,189,sitemap,6,https://mjcreations.ae/sitemap.xml,2026-10-19,raw=189 dupes_removed=0
 mospace.ae,AE,40,sitemap,5,https://mospace.ae/sitemap_index.xml,2026-10-19,raw=41 dupes_removed=1
 modestdxb.ae,AE,246,sitemap,8,https://modestdxb.ae/sitemap.xml,2026-10-19,raw=246 dupes_removed=0
-majan.com,AE,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.majan.com', port=80): Read timed out. (read timeout))",0,,2026-10-19,
+majan.com,AE,54,sitemap,8,https://majan.com/sitemap_index.xml,2026-10-19,raw=95 dupes_removed=41; adopted from rerun (NA->value)
 mosque-carpet.ae,AE,119,sitemap,4,https://mosque-carpet.ae/sitemap_index.xml,2026-10-19,raw=120 dupes_removed=1
 motorkart.ae,AE,99,sitemap,4,https://motorkart.ae/sitemap_index.xml,2026-10-19,raw=99 dupes_removed=0
 muji.ae,AE,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
@@ -6734,7 +6732,7 @@ mymedia.ae,AE,14,sitemap,3,https://www.mymedia.ae/sitemap.xml,2026-10-19,raw=14 
 mute.ae,AE,901,sitemap,22,https://mute.ae/sitemap.xml,2026-10-19,raw=901 dupes_removed=0
 motiv8.ae,AE,1529,sitemap,22,https://motiv8.ae/sitemap.xml,2026-10-19,raw=1529 dupes_removed=0
 iiac.ae,AE,440,sitemap,11,https://iiac.ae/sitemap_index.xml,2026-10-19,raw=440 dupes_removed=0
-myperfumeshop.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+myperfumeshop.ae,AE,10826,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /collections/all: '10826 products'; adopted from rerun (NA->value)
 miltonandking.ae,AE,1457,sitemap,14,https://www.miltonandking.ae/sitemap_index.xml,2026-10-19,raw=1458 dupes_removed=1
 moglix.ae,AE,80731,sitemap,7,https://www.moglix.ae/sitemap_index.xml,2026-10-19,raw=80731 dupes_removed=0
 minimalist.ae,AE,,Not available (no AE pages in sitemap),62,https://www.minimalist.ae/sitemap.xml,2026-10-19,"raw=13681 dupes_removed=0; recount via guess; country split other=4560,untagged=2281,QA=2280,SA=2280,KW=2280"
@@ -6828,7 +6826,7 @@ nacre.ae,AE,422,sitemap,6,https://nacre.ae/sitemap.xml,2026-10-19,raw=422 dupes_
 nofilter.ae,AE,10,sitemap,1,https://nofilter.sg/sitemap.xml,2026-10-19,raw=30 dupes_removed=0
 ninefit.ae,AE,573,sitemap,1,https://ninefit.ae/sitemap.xml,2026-10-19,raw=573 dupes_removed=0
 nineventures.ae,AE,571,sitemap,8,https://nineventures.ae/sitemap.xml,2026-10-19,raw=571 dupes_removed=0
-mikas.ae,AE,,"Not available (unreachable (ReadTimeout: HTTPSConnectionPool(host='www.mikas.ae', port=443): Read timed out. (read timeou))",0,,2026-10-19,
+mikas.ae,AE,75,sitemap,5,https://mikas.ae/sitemap_index.xml,2026-10-19,raw=75 dupes_removed=0; adopted from rerun (NA->value)
 neuness.ae,AE,124,sitemap,3,https://neuness.ae/sitemap_index.xml,2026-10-19,raw=125 dupes_removed=1
 ae.nayomi.com,AE,3401,sitemap,14,https://ae.nayomi.com/sitemap.xml,2026-10-19,raw=3401 dupes_removed=0
 neonsigns.ae,AE,61,sitemap,6,https://www.neonsigns.ae/sitemap_index.xml,2026-10-19,raw=61 dupes_removed=0
@@ -7052,7 +7050,7 @@ opticone.ae,AE,4695,sitemap,35,https://opticone.ae/sitemap_index.xml,2026-10-19,
 paragliding.ae,AE,3,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 macrovision.ae,AE,18,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://macrovision.ae/?sitemap536.xml', 'unparseable'), ('https://macrovision.ae/?sitemap448.xml', 'unparseable')]); woocommerce X-WP-Total (products only)"
 parts7.ae,AE,519,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-nicotinepouche.ae,AE,,"Not available (unreachable (ReadTimeout: HTTPSConnectionPool(host='www.nicotinepouche.ae', port=443): Read timed out. (re))",0,,2026-10-19,
+nicotinepouche.ae,AE,119,sitemap,7,https://nicotinepouche.ae/sitemap_index.xml,2026-10-19,raw=121 dupes_removed=2; adopted from rerun (NA->value)
 officeshark.ae,AE,34728,sitemap,42,https://officeshark.ae/sitemap_index.xml,2026-10-19,raw=35091 dupes_removed=363
 outdoorcarpetdubai.ae,AE,58,sitemap,4,https://outdoorcarpetdubai.ae/sitemap_index.xml,2026-10-19,raw=58 dupes_removed=0
 pelotonevents.ae,AE,54,sitemap,6,https://pelotonevents.ae/sitemap.xml,2026-10-19,raw=55 dupes_removed=1
@@ -7181,7 +7179,7 @@ pranaspring.ae,AE,23,sitemap,8,https://pranaspring.ae/sitemap.xml,2026-10-19,raw
 pressreleasedistribution.ae,AE,218,sitemap,5,https://pressreleasedistribution.ae/sitemap_index.xml,2026-10-19,raw=229 dupes_removed=11
 posmu-it.ae,AE,13,sitemap,3,https://posmu-it.ae/sitemap_index.xml,2026-10-19,raw=13 dupes_removed=0
 primessl.ae,AE,1,sitemap,6,https://primessl.com/sitemap.xml | https://primessl.com/ca/sitemap.xml | https://primessl.com/br/sitemap.xml | https://primessl.ae/sitemap.xml | https://primessl.net/sitemap.xml (+1 more),2026-10-19,raw=6 dupes_removed=0
-pokearbab.ae,AE,91,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '91   products'
+pokearbab.ae,AE,111,sitemap,1,https://pokearbab.ae/sitemap.xml,2026-10-19,raw=111 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 oroalandalus.ae,AE,8,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; woocommerce X-WP-Total (products only)
 priveatelier.ae,AE,32,sitemap,7,https://www.priveatelier.ae/sitemap.xml,2026-10-19,raw=32 dupes_removed=0
 primenut.ae,AE,296,sitemap,5,https://primenut.ae/sitemap_index.xml | https://primenut.ae/page-sitemap.xml | https://primenut.ae/product-sitemap.xml,2026-10-19,raw=296 dupes_removed=0
@@ -7251,7 +7249,8 @@ propustrading.ae,AE,165,sitemap (partial: 11 of 12 sitemap files read),11,https:
 stationerystore.ae,AE,768,sitemap,7,https://stationerystore.ae/sitemap.xml,2026-10-19,raw=768 dupes_removed=0
 puppieshub.ae,AE,340,sitemap,7,https://puppieshub.ae/sitemap_index.xml,2026-10-19,raw=341 dupes_removed=1
 qutoof.ae,AE,38,sitemap,6,https://www.qutoof.ae/ar_ar-sitemap.xml | https://www.qutoof.ae/sitemap.xml,2026-10-19,raw=38 dupes_removed=0
-qet.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+qet.ae,AE,20,shop-page total,0,,2026-10-19,"no sitemap found; /shop: '20,
+                    items'; adopted from rerun (NA->value)"
 proteinmarket.ae,AE,641,sitemap,10,https://proteinmarket.ae/sitemap.xml,2026-10-19,raw=641 dupes_removed=0
 quickshop.ae,AE,30,sitemap,6,https://quickshop.ae/sitemap.xml,2026-10-19,raw=30 dupes_removed=0
 quicklab.ae,AE,343,sitemap,10,https://quicklab.ae/wp-sitemap.xml,2026-10-19,raw=343 dupes_removed=0
@@ -7337,7 +7336,7 @@ qisatsharq.ae,AE,11980,sitemap,13,https://www.qisatsharq.ae/sitemap.xml,2026-10-
 refuel.ae,AE,499,sitemap,6,https://refuel.ae/sitemap.xml,2026-10-19,raw=499 dupes_removed=0
 rebune.ae,AE,157,sitemap,12,https://rebune.ae/sitemap.xml,2026-10-19,raw=157 dupes_removed=0
 redelmondo.ae,AE,1,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
-rashidexpress.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+rashidexpress.ae,AE,4176,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 redrosesflower.ae,AE,,Not available (no sitemap; shop-page total reported 0),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://redrosesflower.ae/sitemap_index.xml', 404)]); /shop: '000000,
 			items'; recount: no sitemap"
 reverse.ae,AE,87,sitemap,6,https://reverse.ae/sitemap.xml,2026-10-19,raw=87 dupes_removed=0
@@ -7511,7 +7510,7 @@ sbshop.ae,AE,381,sitemap,8,https://sbshop.ae/sitemap.xml,2026-10-19,raw=381 dupe
 sashahealthcare.ae,AE,110,sitemap,8,https://sashahealthcare.ae/sitemap_index.xml,2026-10-19,raw=110 dupes_removed=0
 rrf-csf.ae,AE,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 curtaininstallationdubai.ae,AE,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.curtaininstallationdubai.ae', port=80): Max retries))",0,,2026-10-19,
-rrcellars.ae,AE,758,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+rrcellars.ae,AE,2484,sitemap,13,https://rrcellars.ae/wp-sitemap.xml,2026-10-19,raw=2484 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 sanco.ae,AE,122,sitemap,7,https://sanco.ae/sitemap_index.xml,2026-10-19,raw=123 dupes_removed=1
 scootup.ae,AE,835,sitemap,7,https://scootup.ae/sitemap.xml,2026-10-19,raw=835 dupes_removed=0
 strauss.ae,AE,89,sitemap,10,https://strauss.ae/sitemap_index.xml,2026-10-19,raw=89 dupes_removed=0
@@ -7684,7 +7683,7 @@ silkyoud.ae,AE,1107,sitemap,11,https://silkyoud.ae/sitemap.xml,2026-10-19,raw=11
 sleepthru.ae,AE,23,sitemap,7,https://www.sleepthru.ae/sitemap.xml,2026-10-19,raw=23 dupes_removed=0
 shamsabudhabi.ae,AE,101,sitemap (partial: 11 of 12 sitemap files read),11,https://shamsabudhabi.ae/sitemap.xml | https://shamsabudhabi.ae/sitemap.rss,2026-10-19,raw=101 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://shamsabudhabi.ae/sitemap.rss:unparseable
 snapperrock.ae,AE,189,sitemap,6,https://snapperrock.ae/sitemap.xml,2026-10-19,raw=189 dupes_removed=0
-parteatime.ae,AE,1568,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://parteatime.ae/wp-sitemap-users-1.xml', ""ReadTimeout: HTTPSConnectionPool(host='parteatime.ae', port=443): Read timed out. (read timeo""), ('https://parteatime.ae/wp-sitemap-taxonomies-product_cat-1.xml', ""ReadTimeout: HTTPSConnectionPool(host='parteatime.ae', port=443): Read timed out. (read timeo"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+parteatime.ae,AE,789,sitemap,8,https://parteatime.ae/wp-sitemap.xml,2026-10-19,raw=789 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 smartluck.ae,AE,85,sitemap,7,https://smartluck.ae/sitemap.xml,2026-10-19,raw=85 dupes_removed=0
 sipnpaintdxb.ae,AE,23,sitemap,6,https://sipnpaintdxb.ae/sitemap.xml,2026-10-19,raw=23 dupes_removed=0
 smarteducation.ae,AE,115,sitemap,8,https://smarteducation.ae/sitemap.xml,2026-10-19,raw=115 dupes_removed=0
@@ -7699,7 +7698,7 @@ smartchoiceuniforms.ae,AE,58,sitemap,3,https://www.smartchoiceuniforms.ae/sitema
 smartersurfaces.ae,AE,140,sitemap,5,https://smartersurfaces.ae/sitemap_index.xml | https://smartersurfaces.ae/post-sitemap.xml | https://smartersurfaces.ae/page-sitemap.xml | https://smartersurfaces.ae/product-sitemap.xml | https://smartersurfaces.ae/category-sitemap.xml (+1 more),2026-10-19,raw=141 dupes_removed=1; media sitemaps skipped=1
 slipstop.ae,AE,1103,sitemap,10,https://www.slipstop.ae/sitemap.xml,2026-10-19,raw=1103 dupes_removed=0
 shishanow.ae,AE,88,sitemap,7,https://shishanow.ae/sitemap_index.xml,2026-10-19,raw=89 dupes_removed=1
-shamanic.ae,AE,372,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+shamanic.ae,AE,482,sitemap,3,https://shamanic.ae/sitemap.xml,2026-10-19,raw=482 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 smartfy.ae,AE,177,sitemap,6,https://smartfy.ae/sitemap_index.xml,2026-10-19,raw=178 dupes_removed=1
 smartlife.ae,AE,79,sitemap,10,https://www.smartlife.ae/sitemap.xml,2026-10-19,raw=79 dupes_removed=0
 smsouq.ae,AE,68,sitemap,5,https://smsouq.ae/sitemap_index.xml,2026-10-19,raw=69 dupes_removed=1
@@ -8024,7 +8023,7 @@ thebakeryexpress.ae,AE,897,sitemap,8,https://thebakeryexpress.ae/sitemap.xml | h
 caravanstore.ae,AE,224,sitemap,7,https://caravanstore.ae/sitemap_index.xml,2026-10-19,raw=225 dupes_removed=1
 therollingcart.ae,AE,203,sitemap,7,https://therollingcart.ae/sitemap.xml,2026-10-19,raw=203 dupes_removed=0
 theredcarpets.com,AE,474,sitemap,6,https://www.theredcarpets.com/sitemap.xml,2026-10-19,raw=475 dupes_removed=1
-mykitsch.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+mykitsch.ae,AE,1332,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; shopify products=798 + collections=534; /pages not enumerable; adopted from rerun (NA->value)
 shoedoctordxb.ae,AE,66,sitemap,7,https://shoedoctordxb.ae/sitemap.xml,2026-10-19,raw=66 dupes_removed=0
 thepopshop.ae,AE,80,sitemap,6,https://thepopshop.ae/sitemap.xml,2026-10-19,raw=80 dupes_removed=0
 pianogallery.ae,AE,1179,sitemap,12,https://pianogallery.ae/sitemap.xml,2026-10-19,raw=1179 dupes_removed=0
@@ -8545,7 +8544,7 @@ zsjewelry.ae,AE,1693,sitemap,12,https://zsjewelry.ae/sitemap.xml,2026-10-19,raw=
 zenz.ae,AE,128,sitemap,7,https://zenz.ae/sitemap.xml,2026-10-19,raw=128 dupes_removed=0
 decoration-services.ae,AE,1466,sitemap,8,https://decoration-services.ae/sitemap_index.xml | https://decoration-services.ae/sas-sitemap-priority.xml | https://decoration-services.ae/?lwe-city-sitemap=1 | https://decoration-services.ae/sitemap_index.xml,2026-10-19,raw=1467 dupes_removed=1
 yallamarket.ae,AE,36,sitemap,6,https://yallamarket.ae/sitemap.xml,2026-10-19,raw=36 dupes_removed=0
-ubbspouches.ae,AE,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('Sitemap:', ""InvalidSchema: No connection adapters were found for 'Sitemap:'"")])"
+ubbspouches.ae,AE,11,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /collections/all: '11 products'; adopted from rerun (NA->value)
 dkhoonemirates.com,AE,163,sitemap,5,https://dkhoonemirates.com/sitemap.xml,2026-10-19,raw=163 dupes_removed=0
 dkhoonemirates.com,QA,163,sitemap,5,https://dkhoonemirates.com/sitemap.xml,2026-10-19,raw=163 dupes_removed=0
 khairat.ae,AE,122,sitemap,1,https://khairat.ae/sitemap.xml,2026-10-19,raw=122 dupes_removed=0
@@ -8561,7 +8560,7 @@ zoozoo.ae,AE,6879,sitemap,18,https://zoozoo.ae/sitemap.xml,2026-10-19,raw=6879 d
 thinkingart.ae,AE,18,sitemap,1,https://www.thinkingart.ae/sitemap.xml,2026-10-19,raw=18 dupes_removed=0
 celiac1uae.ae,AE,32,sitemap,6,https://www.celiac1uae.ae/sitemap.xml,2026-10-19,raw=33 dupes_removed=1
 comedia.ae,AE,152,sitemap,1,https://comedia.ae/sitemap.xml,2026-10-19,raw=152 dupes_removed=0
-washnfold.ae,AE,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.washnfold.ae', port=80): Read timed out. (read time))",0,,2026-10-19,
+washnfold.ae,AE,13,sitemap,1,https://washnfold.ae/sitemap.xml,2026-10-19,raw=13 dupes_removed=0; adopted from rerun (NA->value)
 daraharabpoetry.ae,AE,118,sitemap,7,https://daraharabpoetry.ae/wp-sitemap.xml,2026-10-19,raw=118 dupes_removed=0
 zoja.ae,AE,825,sitemap,12,https://zoja.ae/sitemap_index.xml,2026-10-19,raw=832 dupes_removed=7
 yasnour.ae,AE,1581,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.yasnour.ae/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -8580,7 +8579,7 @@ home-fixing.ae,AE,133,platform product count,0,,2026-10-19,sitemap present but y
 yoppy.ae,AE,37,sitemap (partial: 3 of 4 sitemap files read),3,https://yoppy.ae/sitemap.xml | https://yoppy.ae/sitemap.rss,2026-10-19,raw=37 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://yoppy.ae/sitemap.rss:unparseable
 woodsupply.ae,AE,2,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '2 products'
 zooma.ae,AE,69,sitemap,11,http://zooma.ae/sitemap_index.xml,2026-10-19,raw=69 dupes_removed=0
-shoplongino.ae,AE,659,sitemap (partial: 3 of 4 sitemap files read),3,https://www.shoplongino.it/media/it_sitemap.xml | https://www.shoplongino.com/media/ny_sitemap.xml | https://www.shoplongino.ae/media/eau_sitemap.xml | https://www.shoplongino.hk/media/hk_sitemap.xml,2026-10-19,"raw=3347 dupes_removed=1; recount via robots.txt; failed sitemap fetches after retries=1: https://www.shoplongino.com/media/ny_sitemap.xml:ReadTimeout: HTTPSConnectionPool(host='www.shoplongino.com', port=443): Read timed out. (read"
+shoplongino.ae,AE,659,sitemap,3,https://www.shoplongino.it/media/it_sitemap.xml | https://www.shoplongino.com/media/ny_sitemap.xml | https://www.shoplongino.ae/media/eau_sitemap.xml | https://www.shoplongino.hk/media/hk_sitemap.xml,2026-10-19,raw=3347 dupes_removed=1; adopted from rerun (partial->complete sitemap)
 alqassemoasis.com,AE,83,sitemap,4,https://alqassemoasis.com/sitemap.xml,2026-10-19,raw=83 dupes_removed=0
 decorat.ae,AE,415,sitemap,7,https://decorat.ae/sitemap_index.xml | https://decorat.ae/sas-sitemap-priority.xml | https://decorat.ae/?lwe-city-sitemap=1 | https://decorat.ae/sitemap_index.xml,2026-10-19,raw=416 dupes_removed=1
 alfransya.ae,AE,263,sitemap,8,https://alfransya.ae/sitemap_index.xml,2026-10-19,raw=264 dupes_removed=1
@@ -8629,7 +8628,7 @@ autoparts.igreen.ae,AE,1472,sitemap,13,https://autoparts.igreen.ae/sitemaps.xml,
 washtogo.ae,AE,256,sitemap,11,https://washtogo.ae/wp-sitemap.xml,2026-10-19,raw=256 dupes_removed=0
 dubaifarda.ae,AE,1,sitemap,12,https://dubaifarda.com/sitemap_index.xml,2026-10-19,raw=284 dupes_removed=0
 nagham.ae,AE,851,sitemap,10,https://nagham.ae/sitemap.xml,2026-10-19,raw=851 dupes_removed=0
-floorsdesign.ae,AE,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.floorsdesign.ae', port=80): Read timed out. (read t))",0,,2026-10-19,
+floorsdesign.ae,AE,20,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://floorsdesign.ae/sitemap.rss', 'unparseable')]); /shop: 'of 20 results'; adopted from rerun (NA->value)"
 discountlane.ae,AE,913,sitemap,22,https://discountlane.ae/sitemap.xml,2026-10-19,raw=913 dupes_removed=0
 jdsports.ae,AE,5693,sitemap,16,https://www.jdsports.ae/sitemap.xml,2026-10-19,raw=5693 dupes_removed=0
 arvaworld.ae,AE,1412,sitemap (partial: 15 of 16 sitemap files read),15,https://arvaworld.ae/news-sitemap.xml | https://arvaworld.ae/video-sitemap.xml | https://arvaworld.ae/sitemap.xml,2026-10-19,raw=1413 dupes_removed=0; recount via robots.txt; media sitemaps skipped=1; failed sitemap fetches after retries=1: https://arvaworld.ae/news-sitemap.xml:404
@@ -8683,7 +8682,7 @@ smamz.ae,AE,205,sitemap,12,https://smamz.ae/sitemap.xml,2026-10-19,raw=205 dupes
 rzist.ae,AE,219,sitemap,6,https://rzist.ae/sitemap.xml,2026-10-19,raw=219 dupes_removed=0
 adrenalinegym.qa,QA,643,sitemap,11,https://adrenalinegym.qa/wp-sitemap.xml,2026-10-19,raw=643 dupes_removed=0
 americaneagle.com.qa,QA,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
-ahmedalmaghribi.qa,QA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+ahmedalmaghribi.qa,QA,2,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 adidas.qa,QA,2496,sitemap,5,https://www.adidas.qa/en/sitemap_index.xml,2026-10-19,raw=2496 dupes_removed=0
 ajt.qa,QA,74,sitemap,8,https://ajt.qa/sitemap_index.xml | https://ajt.qa/sitemap_index.xml,2026-10-19,raw=75 dupes_removed=1
 aceqatar.com,QA,41754,sitemap,5,https://www.aceqatar.com/sitemap/sitemap-qa.xml,2026-10-19,raw=41754 dupes_removed=0; media sitemaps skipped=2
@@ -8828,7 +8827,7 @@ darac.qa,QA,104,sitemap,15,https://darac.qa/wp-sitemap.xml,2026-10-19,raw=104 du
 theclosetonlineshop.com,AE,274924,"sitemap (whole site, no market segment)",306,https://theclosetonlineshop.com/sitemap.xml,2026-10-19,"raw=274924 dupes_removed=0; recount via robots.txt; country split other=103128,untagged=68753,SA=68752,US=34291; no AE segment; default storefront is 68753 of 274924 URLs; whole-site total includes 206171 URLs under other-country segments"
 en-qa.dunelondon.com,QA,11350,sitemap,4,https://en-qa.dunelondon.com/sitemap.xml,2026-10-19,raw=11350 dupes_removed=0
 dss.com.qa,QA,51,sitemap,10,https://dss.com.qa/sitemap_index.xml,2026-10-19,raw=52 dupes_removed=1
-delune.qa,QA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+delune.qa,QA,297,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; shopify products=249 + collections=48; /pages not enumerable; adopted from rerun (NA->value)
 dohamedical.com,QA,2198,sitemap (partial: 8 of 9 sitemap files read),8,https://www.dohamedical.com/wp-sitemap.xml,2026-10-19,raw=2198 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://www.dohamedical.com/wp-sitemap-posts-product-2.xml:404
 chocolatebash.qa,QA,264,sitemap,11,https://chocolatebash.qa/wp-sitemap.xml,2026-10-19,raw=264 dupes_removed=0
 evergreenorganics.qa,QA,83,sitemap,6,https://www.evergreenorganics.qa/sitemap.xml,2026-10-19,raw=83 dupes_removed=0
@@ -8925,12 +8924,12 @@ jollibee.qa,QA,8,sitemap,1,https://jollibee.qa/sitemap.xml,2026-10-19,raw=8 dupe
 hbkupress.com,QA,1643,sitemap,12,https://hbkupress.com/sitemap.xml,2026-10-19,raw=1643 dupes_removed=0
 jaya-qa.com,QA,16,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /shop: '16 results'
 hexa.qa,QA,2,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-bc.qa,QA,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.bc.qa', port=80): Read timed out. (read timeout=15)))",0,,2026-10-19,
+bc.qa,QA,66,sitemap,8,https://bc.qa/wp-sitemap.xml,2026-10-19,raw=66 dupes_removed=0; adopted from rerun (NA->value)
 ifi.qa,QA,581,sitemap,12,https://ifi.qa/sitemap_index.xml,2026-10-19,raw=583 dupes_removed=2
 duhailsc.qa,QA,2636,sitemap,28,https://www.duhailsc.qa/wp-sitemap.xml,2026-10-19,raw=2636 dupes_removed=0; media sitemaps skipped=1
 tansy.qa,QA,131,sitemap,12,http://tansy.qa/sitemap_index.xml,2026-10-19,raw=132 dupes_removed=1
 carrefourqatar.com,QA,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.carrefourqatar.com', port=80): Read timed out. (rea))",0,,2026-10-19,
-carvers.com.qa,QA,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.carvers.com.qa', port=80): Read timed out. (read ti))",0,,2026-10-19,
+carvers.com.qa,QA,216,sitemap,6,https://carvers.com.qa/wp-sitemap.xml,2026-10-19,raw=216 dupes_removed=0; adopted from rerun (NA->value)
 off---white.com,AE,4290,sitemap (AE pages only),72,https://www.off---white.com/en-ae/sitemap-category_0.xml | https://www.off---white.com/en-ar/sitemap-category_0.xml | https://www.off---white.com/de-at/sitemap-category_0.xml | https://www.off---white.com/en-au/sitemap-category_0.xml | https://www.off---white.com/en-be/sitemap-category_0.xml (+67 more),2026-10-19,"raw=153331 dupes_removed=0; country split other=80401,untagged=64350,US=4290,AE=4290"
 off---white.com,US,4290,sitemap (US pages only),72,https://www.off---white.com/en-ae/sitemap-category_0.xml | https://www.off---white.com/en-ar/sitemap-category_0.xml | https://www.off---white.com/de-at/sitemap-category_0.xml | https://www.off---white.com/en-au/sitemap-category_0.xml | https://www.off---white.com/en-be/sitemap-category_0.xml (+67 more),2026-10-19,"raw=153331 dupes_removed=0; country split other=80401,untagged=64350,US=4290,AE=4290"
 ispace.qa,QA,3760,sitemap,2,https://ispace.qa/media/sitemap/ispace_sitemap.xml | https://ispace.qa/media/sitemap/ispace_sitemap_arabic.xml,2026-10-19,raw=3760 dupes_removed=0
@@ -9069,7 +9068,7 @@ halamama.com,QA,57787,sitemap,68,https://halamama.com/sitemap.xml,2026-10-19,raw
 naaz.qa,QA,828,sitemap,8,https://naaz.qa/sitemap_index.xml,2026-10-19,raw=829 dupes_removed=1
 healthyhome.qa,QA,129,sitemap,1,http://www.healthyhome.qa/sitemap.xml,2026-10-19,raw=129 dupes_removed=0
 nutricoach.qa,QA,866,sitemap,11,https://nutricoach.qa/sitemap_index.xml,2026-10-19,raw=1109 dupes_removed=243
-myperfumeshop.qa,QA,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+myperfumeshop.qa,QA,10831,shop-page total,0,,2026-10-19,sitemap present but yielded no countable URLs; /collections/all: '10831 products'; adopted from rerun (NA->value)
 jagirdar.qa,QA,80,sitemap,14,https://jagirdar.qa/wp-sitemap.xml,2026-10-19,raw=80 dupes_removed=0
 ng-qatar.com,QA,182,sitemap (partial: 8 of 9 sitemap files read),8,https://ng-qatar.com/sitemap.xml | https://ng-qatar.com/sitemap.rss,2026-10-19,raw=182 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://ng-qatar.com/sitemap.rss:unparseable
 perfumesouq.qa,QA,1319,sitemap,12,https://perfumesouq.qa/sitemap.xml,2026-10-19,raw=1319 dupes_removed=0
@@ -9115,7 +9114,7 @@ alraf.qa,QA,26,sitemap,9,https://alraf.qa/wp-sitemap.xml,2026-10-19,raw=26 dupes
 nutribox.qa,QA,842,sitemap,20,https://nutribox.qa/sitemap.xml,2026-10-19,raw=842 dupes_removed=0
 menahub.com,QA,60961,sitemap,74,https://menahub.com/sitemap.xml,2026-10-19,raw=61082 dupes_removed=121
 pillowderma.qa,QA,29,sitemap,11,https://pillowderma.qa/sitemap.xml,2026-10-19,raw=29 dupes_removed=0
-letoile.qa,QA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.letoile.qa', port=80): Max retries exceeded with ur))",0,,2026-10-19,
+letoile.qa,QA,36059,sitemap,46,https://letoile.qa/sitemap.xml,2026-10-19,raw=36059 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
 oppolia.qa,QA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.oppolia.qa', port=80): Max retries exceeded with ur))",0,,2026-10-19,
 qcart.qa,QA,1902,sitemap,6,https://qcart.qa/sitemap_index.xml,2026-10-19,raw=1904 dupes_removed=2; recount via robots.txt
 qtawseel.qa,QA,405,sitemap,9,https://qtawseel.qa/wp-sitemap.xml,2026-10-19,raw=405 dupes_removed=0; recount via robots.txt
@@ -9127,7 +9126,7 @@ ridaya.qa,QA,500,sitemap,1,https://ridaya.qa/sitemap.xml,2026-10-19,raw=500 dupe
 saiffurniture.qa,QA,346,sitemap,1,https://saiffurniture.qa/sitemap.xml,2026-10-19,raw=346 dupes_removed=0
 florabella.qa,QA,648,sitemap,6,https://florabella.qa/wp-sitemap.xml,2026-10-19,raw=648 dupes_removed=0; recount via robots.txt
 informaconnect.com,AE,83346,sitemap (partial: 1603 of 1735 sitemap files read),1603,https://informaconnect.com/sitemap.xml,2026-10-19,raw=95112 dupes_removed=11760; recount via robots.txt; failed sitemap fetches after retries=132: https://informaconnect.com/certified-brand-manager/ar/sitemap.xml:404; https://informaconnect.com/aipmm-certified-product-manager-cpm/ar/sitemap.xml:404; https://informaconnect.com/aphri-exam-preparation-course/ar/sitemap.xml:404
-photobrick.com.qa,QA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.photobrick.com.qa', port=80): Max retries exceeded ))",0,,2026-10-19,
+photobrick.com.qa,QA,115,sitemap,13,https://photobrick.com.qa/wp-sitemap.xml,2026-10-19,raw=115 dupes_removed=0; adopted from rerun (NA->value)
 sadil.qa,QA,87,sitemap,6,https://sadil.qa/sitemap.xml,2026-10-19,raw=87 dupes_removed=0
 alasala.com.qa,QA,641,sitemap,8,https://www.alasala.com.qa/sitemap_index.xml,2026-10-19,raw=643 dupes_removed=2; recount via robots.txt
 nliving.qa,QA,456,sitemap,8,https://nliving.qa/sitemap_index.xml,2026-10-19,raw=456 dupes_removed=0; recount via robots.txt
@@ -9161,10 +9160,10 @@ ritqatar.com,QA,2279,sitemap,13,https://www.ritqatar.com/sitemap_index.xml,2026-
 roya.com.qa,QA,151,sitemap,3,http://roya.com.qa/sitemap.xml | http://roya.com.qa/news-sitemap.xml,2026-10-19,raw=151 dupes_removed=0; media sitemaps skipped=1
 suno.qa,QA,585,sitemap,31,https://suno.qa/sitemap_index.xml,2026-10-19,raw=585 dupes_removed=0; recount via robots.txt; media sitemaps skipped=3
 shamiyastore.qa,QA,4,sitemap,5,https://shamiyastore.qa/sitemap.xml,2026-10-19,raw=4 dupes_removed=0
-mosafer.com,QA,,Not available (no QA pages in sitemap),58,https://www.mosafer.com/sitemap.xml,2026-10-19,"raw=7547 dupes_removed=0; recount via robots.txt; country split other=2156,untagged=1079,US=1078,AE=1078,KW=1078,SA=1078"
+mosafer.com,QA,,Not available (no QA pages in sitemap),58,https://www.mosafer.com/sitemap.xml,2026-10-19,"raw=7547 dupes_removed=0; recount via robots.txt; country split other=2156,untagged=1079,US=1078,AE=1078,KW=1078,SA=1078; adopted from rerun (NA->value)"
 sibon.qa,QA,64,sitemap,7,https://sibon.qa/sitemap.xml,2026-10-19,raw=64 dupes_removed=0
 scrollcart.qa,QA,4640,sitemap,16,https://scrollcart.qa/sitemap.xml,2026-10-19,raw=4640 dupes_removed=0
-shop5.qa,QA,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop5.qa', port=80): Max retries exceeded with url:))",0,,2026-10-19,
+shop5.qa,QA,3903,sitemap,12,https://www.shop5.qa/sitemap.xml,2026-10-19,raw=3903 dupes_removed=0; adopted from rerun (NA->value)
 rimrubber.qa,QA,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 scarletkids.qa,QA,109,sitemap,6,https://scarletkids.qa/sitemap.xml,2026-10-19,raw=109 dupes_removed=0
 vibram.com,AE,238,sitemap (AE pages only),207,https://www.vibram.com/us/sitemap_index.xml,2026-10-19,"raw=25780 dupes_removed=9176; recount via robots.txt; country split untagged=9812,other=5585,US=255,SA=238,QA=238,KW=238,AE=238"
@@ -9199,7 +9198,7 @@ next.qa,QA,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed
 silacart.qa,QA,2034,sitemap,1,https://www.silacart.qa/sitemap.xml,2026-10-19,raw=2034 dupes_removed=0
 shinenoor.qa,QA,28,sitemap,4,https://shinenoor.qa/sitemap.xml,2026-10-19,raw=28 dupes_removed=0
 tableartsqatar.com,QA,2617,sitemap,1,https://tableartsqatar.com/sitemap.xml,2026-10-19,raw=2617 dupes_removed=0
-skylink.qa,QA,156,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+skylink.qa,QA,116,sitemap,19,https://skylink.qa/wp-sitemap.xml,2026-10-19,raw=116 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 shotokansportcenter.qa,QA,510,sitemap,10,https://shotokansportcenter.qa/sitemap.xml,2026-10-19,raw=510 dupes_removed=0; recount via robots.txt
 srab.qa,QA,20,sitemap,7,https://srab.qa/wp-sitemap.xml,2026-10-19,raw=20 dupes_removed=0
 serum.qa,QA,1887,sitemap,12,https://serum.qa/sitemap.xml,2026-10-19,raw=1887 dupes_removed=0; recount via robots.txt
@@ -9233,7 +9232,7 @@ thara.com.qa,QA,37,sitemap,10,https://thara.com.qa/sitemap.xml,2026-10-19,raw=37
 beautysouq.com.qa,QA,402,sitemap,5,https://beautysouq.com.qa/sitemap_index.xml,2026-10-19,raw=403 dupes_removed=1
 tea-stop.qa,QA,40,sitemap (partial: 9 of 10 sitemap files read),9,https://tea-stop.qa/sitemap.xml | https://tea-stop.qa/sitemap.rss,2026-10-19,raw=40 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://tea-stop.qa/sitemap.rss:unparseable
 theartisanplace.com,QA,641,sitemap,12,https://theartisanplace.com/sitemap.xml,2026-10-19,raw=641 dupes_removed=0
-lunacouture.qa,QA,379,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://lunacouture.qa/sitemap.xml', ""ReadTimeout: HTTPSConnectionPool(host='lunacouture.qa', port=443): Read timed out. (read time"")]); woocommerce X-WP-Total (products only)"
+lunacouture.qa,QA,1902,sitemap,1,https://lunacouture.qa/sitemap.xml,2026-10-19,raw=1902 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 qatarmoms.com,QA,24777,sitemap,36,https://qatarmoms.com/sitemap.xml,2026-10-19,raw=24777 dupes_removed=0; recount via robots.txt
 tinyworld.qa,QA,163,sitemap,10,https://tinyworld.qa/sitemap.xml,2026-10-19,raw=163 dupes_removed=0
 int.undiz.com,QA,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
@@ -9366,7 +9365,7 @@ shop.alsirhanshoes.com,KW,875,sitemap,5,https://shop.alsirhanshoes.com/sitemap.x
 vitaminqatar.com,QA,6795,sitemap,18,https://vitaminqatar.com/sitemap.xml,2026-10-19,raw=6795 dupes_removed=0
 nymphaea.qa,QA,119,sitemap,8,https://www.nymphaea.qa/wp-sitemap.xml,2026-10-19,raw=119 dupes_removed=0
 bronze.qa,QA,3462,sitemap (partial: 11 of 15 sitemap files read),11,https://bronze.qa/wp-sitemap.xml,2026-10-19,raw=3462 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=4: https://bronze.qa/wp-sitemap-taxonomies-pa_الشكل-النقش-1.xml:404; https://bronze.qa/wp-sitemap-taxonomies-pa_اللون-1.xml:404; https://bronze.qa/wp-sitemap-taxonomies-pa_المقاس-1.xml:404
-housebeauty.qa,QA,7,platform product count,0,,2026-10-19,no sitemap found; woocommerce X-WP-Total (products only)
+housebeauty.qa,QA,290,sitemap,11,https://housebeauty.qa/sitemap.xml,2026-10-19,raw=290 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 sunlife.qa,QA,30649,sitemap,40,https://sunlife.qa/sitemap.xml,2026-10-19,raw=30649 dupes_removed=0
 xn----qmcmbac8dci6e1fsb3aj.com,KW,80,sitemap,5,https://xn----qmcmbac8dci6e1fsb3aj.com/sitemap_index.xml,2026-10-19,raw=81 dupes_removed=1
 amtronics.co,KW,926,sitemap,1,https://amtronics.co/sitemap.xml,2026-10-19,raw=926 dupes_removed=0
@@ -9526,7 +9525,7 @@ falke.com.kw,KW,2385,sitemap,12,https://falke.com.kw/sitemap.xml,2026-10-19,raw=
 kw.junaidperfumes.com,KW,649,sitemap,12,https://kw.junaidperfumes.com/sitemap.xml,2026-10-19,raw=649 dupes_removed=0
 kizik.com.kw,KW,1269,sitemap,10,https://kizik.com.kw/sitemap.xml,2026-10-19,raw=1269 dupes_removed=0
 ar-kw.emvano.com,KW,76156,sitemap,18,https://ar-kw.emvano.com/sitemap.xml,2026-10-19,raw=81156 dupes_removed=5000; media sitemaps skipped=9
-proswimwear.qa,QA,6143,sitemap (partial: 53 of 57 sitemap files read),53,https://www.proswimwear.qa/sitemap_index.xml | https://www.proswimwear.qa/sitemap_index.xml | https://www.proswimwear.co.uk/sitemap_index.xml | https://www.proswimwear.com/sitemap_index.xml | https://www.teddybearland.co.uk/sitemap_index.xml (+2 more),2026-10-19,raw=11131 dupes_removed=5; recount via robots.txt; failed sitemap fetches after retries=4: https://au.proswimwear.com/sitemap_index.xml:403; https://www.teddybearland.eu/sitemap_index.xml:403; https://www.proswimwear.com/sitemap_index.xml:403
+proswimwear.qa,QA,6143,sitemap,53,https://www.proswimwear.qa/sitemap_index.xml | https://www.proswimwear.qa/sitemap_index.xml | https://www.proswimwear.co.uk/sitemap_index.xml | https://www.proswimwear.com/sitemap_index.xml | https://www.teddybearland.co.uk/sitemap_index.xml (+2 more),2026-10-19,raw=11131 dupes_removed=5; adopted from rerun (partial->complete sitemap)
 kuwaitboutique.com,KW,631,sitemap,5,https://www.kuwaitboutique.com/sitemap.xml,2026-10-19,raw=633 dupes_removed=2
 evakw.com,KW,1867,sitemap,10,https://evakw.com/sitemap.xml,2026-10-19,raw=1867 dupes_removed=0
 maje.com.kw,KW,1757,sitemap,10,https://www.maje.com.kw/sitemap.xml,2026-10-19,raw=1757 dupes_removed=0
@@ -9568,7 +9567,7 @@ jarra.com.kw,KW,2088,archive,0,,2026-10-19,"sitemap present but yielded no count
 mighzalalarab.com,KW,2571,sitemap,11,https://mighzalalarab.com/sitemap_index.xml,2026-10-19,raw=2573 dupes_removed=2
 naseem.com.kw,KW,115,sitemap,10,https://naseem.com.kw/sitemap.xml,2026-10-19,raw=115 dupes_removed=0
 nextdirect.com,KW,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
-qindeel.ae,AE,1307,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://qindeel.ae/wp-sitemap.xml', ""ReadTimeout: HTTPSConnectionPool(host='qindeel.ae', port=443): Read timed out. (read timeout="")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+qindeel.ae,AE,521,sitemap,10,https://qindeel.ae/wp-sitemap.xml,2026-10-19,raw=521 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 nasa.com.kw,KW,1145,sitemap,14,https://nasa.com.kw/sitemap_index.xml,2026-10-19,raw=1405 dupes_removed=260
 kci.com.kw,KW,49,sitemap,8,https://kci.com.kw/wp-sitemap.xml,2026-10-19,raw=49 dupes_removed=0
 nike.com.kw,KW,22212,sitemap,4,https://www.nike.com.kw/sitemap_index.xml,2026-10-19,raw=22212 dupes_removed=0; media sitemaps skipped=3
@@ -9728,7 +9727,7 @@ wholesalekw.com,KW,4301,sitemap,14,https://wholesalekw.com/sitemap.xml,2026-10-1
 shotkw.com,KW,1283,sitemap,10,https://shotkw.com/sitemap.xml,2026-10-19,raw=1283 dupes_removed=0
 fannan-kw.com,KW,2,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 almajedgallery.com,KW,787,sitemap,5,https://almajedgallery.com/sitemap.xml,2026-10-19,raw=787 dupes_removed=0
-eitkw.com,KW,2699,sitemap (partial: 6 of 7 sitemap files read),6,http://54.154.253.35/sitemap.xml | http://eitkw.com/sitemap_index.xml,2026-10-19,"raw=2699 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: http://54.154.253.35/sitemap.xml:ReadTimeout: HTTPConnectionPool(host='54.154.253.35', port=80): Read timed out. (read timeout"
+eitkw.com,KW,2699,sitemap,6,http://54.154.253.35/sitemap.xml | http://eitkw.com/sitemap_index.xml,2026-10-19,raw=2699 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 souqsara.com.kw,KW,391,sitemap,5,https://souqsara.com.kw/sitemap_index.xml,2026-10-19,raw=391 dupes_removed=0
 time-keeper.com,KW,3719,sitemap,16,https://time-keeper.com/sitemap.xml,2026-10-19,raw=3719 dupes_removed=0
 alaseel.com.kw,KW,775,sitemap,10,https://alaseel.com.kw/sitemap_index.xml,2026-10-19,raw=1039 dupes_removed=264
@@ -9740,7 +9739,7 @@ mahhalcom.com,KW,5424,sitemap,1,https://mahhalcom.com/sitemap.xml,2026-10-19,raw
 dardreambookstore.com,KW,3612,sitemap,6,https://dardreambookstore.com/sitemap.xml,2026-10-19,raw=3612 dupes_removed=0
 alidealkw.com,KW,489,sitemap,6,https://www.alidealkw.com/sitemap.xml,2026-10-19,raw=489 dupes_removed=0
 aldirakw.com,KW,285,sitemap,7,https://aldirakw.com/sitemap_index.xml,2026-10-19,raw=290 dupes_removed=5
-adhari.com.kw,KW,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+adhari.com.kw,KW,126,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 kuwait.ounass.com,KW,393961,sitemap,12,https://kuwait.ounass.com/sitemap.xml,2026-10-19,raw=395711 dupes_removed=1750
 lojastoregt.com,KW,4718,sitemap,5,https://lojastoregt.com/sitemap.xml,2026-10-19,raw=4718 dupes_removed=0
 gymshark.com.kw,KW,11563,sitemap,10,https://www.gymshark.com.kw/sitemap_index.xml,2026-10-19,raw=11616 dupes_removed=3

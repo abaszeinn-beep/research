@@ -232,7 +232,7 @@ shopfaia.com,US,96,sitemap,6,https://shopfaia.com/sitemap.xml,2026-10-19,raw=96 
 shop.trains.com,US,2307,sitemap,9,https://shop.trains.com/sitemap.xml,2026-10-19,raw=2307 dupes_removed=0; recount via robots.txt
 blacklinesupply.com,US,2958,sitemap,8,https://blacklinesupply.com/sitemap.xml,2026-10-19,raw=2958 dupes_removed=0; recount via robots.txt
 ifixscreens.com,US,2877,sitemap,5,https://ifixscreens.com/sitemap_index.xml | https://ifixscreens.com/geositemap.xml,2026-10-19,raw=2877 dupes_removed=0; recount via robots.txt
-balaveda.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.balaveda.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
+balaveda.com,US,101,sitemap,7,https://www.balaveda.com/sitemap.xml,2026-10-19,raw=101 dupes_removed=0; adopted from rerun (NA->value)
 magpiemodular.com,US,285,sitemap,7,https://magpiemodular.com/sitemap.xml,2026-10-19,raw=285 dupes_removed=0; recount via robots.txt
 elegantbaby.com,US,739,sitemap,7,https://elegantbaby.com/sitemap.xml,2026-10-19,raw=739 dupes_removed=0; recount via robots.txt
 shopjulianas.com,US,1294,sitemap,8,https://shopjulianas.com/sitemap.xml | https://shopjulianas.com/sitemap.xml | https://shopjulianas.com/sitemap.xml,2026-10-19,raw=1294 dupes_removed=0; recount via robots.txt
@@ -244,182 +244,182 @@ barbarastewartinteriors.com,US,3418,sitemap,8,https://www.barbarastewartinterior
 orda66paintball.com,US,835,sitemap,7,https://orda66paintball.com/sitemap.xml,2026-10-19,raw=835 dupes_removed=0; recount via robots.txt
 vinealaska.com,US,22275,sitemap,4,https://vinealaska.com/sitemap.xml | https://vinealaska.com/sitemap.xml | https://vinealaska.com/sitemap.xml | https://vinealaska.com/sitemap.xml,2026-10-19,raw=22275 dupes_removed=0; recount via robots.txt
 michaelwrightcollection.com,US,28,sitemap,6,https://michaelwrightcollection.com/sitemap.xml,2026-10-19,raw=28 dupes_removed=0; recount via robots.txt
-us.diptyqueparis.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.us.diptyqueparis.com', port=80): Max retries exceed))",0,,2026-10-19,
-londonkidsshoes.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.londonkidsshoes.com', port=80): Max retries exceede))",0,,2026-10-19,
-usa.minelab.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.usa.minelab.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
+us.diptyqueparis.com,US,1409,sitemap,10,https://us.diptyqueparis.com/sitemap.xml,2026-10-19,raw=1409 dupes_removed=0; adopted from rerun (NA->value)
+londonkidsshoes.com,US,1793,sitemap,8,https://www.londonkidsshoes.com/sitemap.xml,2026-10-19,raw=1793 dupes_removed=0; adopted from rerun (NA->value)
+usa.minelab.com,US,335,sitemap,1,https://usa.minelab.com/media/sitemap_usa.xml,2026-10-19,raw=336 dupes_removed=1; adopted from rerun (NA->value)
 58products.us,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.58products.us', port=80): Max retries exceeded with))",0,,2026-10-19,
-one-story.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.one-story.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+one-story.com,US,1250,sitemap,13,https://one-story.com/sitemap.xml,2026-10-19,raw=1250 dupes_removed=0; adopted from rerun (NA->value)
 bountymusic.com,US,7380,sitemap,5,https://www.bountymusic.com/sitemap.xml,2026-10-19,raw=7381 dupes_removed=1; recount via robots.txt
-woodenconcepts.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.woodenconcepts.com', port=80): Max retries exceeded))",0,,2026-10-19,
-betweenthelinesaz.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.betweenthelinesaz.com', port=80): Max retries excee))",0,,2026-10-19,
-blackstoneproducts.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.blackstoneproducts.com', port=443): Max retries ex))",0,,2026-10-19,
-peacefulpawsbg.foreverpets.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.peacefulpawsbg.foreverpets.com', port=80): Max retr))",0,,2026-10-19,
-bambuwerx.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.bambuwerx.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+woodenconcepts.com,US,258,sitemap,7,https://www.woodenconcepts.com/sitemap.xml,2026-10-19,raw=258 dupes_removed=0; adopted from rerun (NA->value)
+betweenthelinesaz.com,US,4508,sitemap,11,https://www.betweenthelinesaz.com/sitemap.xml,2026-10-19,raw=4508 dupes_removed=0; adopted from rerun (NA->value)
+blackstoneproducts.com,US,2617,sitemap,9,https://blackstoneproducts.com/sitemap.xml,2026-10-19,raw=2617 dupes_removed=0; adopted from rerun (NA->value)
+peacefulpawsbg.foreverpets.com,US,2011,sitemap,8,https://peacefulpawsbg.foreverpets.com/wp-sitemap.xml,2026-10-19,raw=2011 dupes_removed=0; adopted from rerun (NA->value)
+bambuwerx.com,US,267,sitemap,7,https://bambuwerx.com/sitemap.xml,2026-10-19,raw=267 dupes_removed=0; adopted from rerun (NA->value)
 fastcap.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.fastcap.com', port=443): Max retries exceeded with))",0,,2026-10-19,
-redbirdcoffee.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.redbirdcoffee.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-topbrighttoys.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.topbrighttoys.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+redbirdcoffee.com,US,46,sitemap,7,https://redbirdcoffee.com/sitemap.xml,2026-10-19,raw=46 dupes_removed=0; adopted from rerun (NA->value)
+topbrighttoys.com,US,901,sitemap,26,https://topbrighttoys.com/sitemap.xml,2026-10-19,raw=901 dupes_removed=0; adopted from rerun (NA->value)
 phenyxpro.com,US,5011,sitemap,62,https://phenyxpro.com/sitemap.xml,2026-10-19,raw=5011 dupes_removed=0; recount via robots.txt
 shop.almacheese.com,US,88,sitemap,6,https://shop.almacheese.com/sitemap.xml,2026-10-19,raw=88 dupes_removed=0; recount via robots.txt
 taystylecollections.com,US,247,sitemap,5,https://taystylecollections.com/sitemap.xml,2026-10-19,raw=247 dupes_removed=0; recount via robots.txt
-menssuithabit.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.menssuithabit.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+menssuithabit.com,US,1124,sitemap,1,https://www.menssuithabit.com/sitemap.xml,2026-10-19,raw=1124 dupes_removed=0; adopted from rerun (NA->value)
 zackzublena.com,US,1326,sitemap (US pages only),407,https://www.zackzublena.com/sitemap.xml,2026-10-19,"raw=53704 dupes_removed=0; country split other=27846,untagged=21880,SA=1326,AE=1326,US=1326"
-usstore.gorillaz.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.usstore.gorillaz.com', port=80): Max retries exceed))",0,,2026-10-19,
+usstore.gorillaz.com,US,299,sitemap,10,https://usstore.gorillaz.com/sitemap.xml,2026-10-19,raw=299 dupes_removed=0; adopted from rerun (NA->value)
 tawapa.com,US,776,sitemap,7,https://www.tawapa.com/sitemap.xml,2026-10-19,raw=776 dupes_removed=0; recount via robots.txt
-overthemoon.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.overthemoon.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
+overthemoon.com,US,42023,sitemap,188,https://overthemoon.com/sitemap.xml,2026-10-19,raw=42023 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
 wheediez.com,US,193,sitemap,6,https://wheediez.com/sitemap.xml,2026-10-19,raw=193 dupes_removed=0
 dextro-energy.com,US,612,sitemap (US pages only),32,https://dextro-energy.com/sitemap.xml,2026-10-19,"raw=2129 dupes_removed=0; recount via robots.txt; country split untagged=759,other=758,US=612"
-hypland.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hypland.com', port=80): Max retries exceeded with u))",0,,2026-10-19,
+hypland.com,US,687,sitemap,7,https://hypland.com/sitemap.xml,2026-10-19,raw=687 dupes_removed=0; adopted from rerun (NA->value)
 tracki.com,US,1279,sitemap,17,https://tracki.com/sitemap.xml,2026-10-19,raw=1279 dupes_removed=0; recount via robots.txt
-shop.realwear.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.realwear.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+shop.realwear.com,US,37,sitemap,6,https://shop.realwear.com/sitemap.xml,2026-10-19,raw=37 dupes_removed=0; adopted from rerun (NA->value)
 thesoapladyofcocoa.com,US,43,sitemap,7,https://thesoapladyofcocoa.com/sitemap.xml,2026-10-19,raw=43 dupes_removed=0
-voormi.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.voormi.com', port=80): Max retries exceeded with ur))",0,,2026-10-19,
+voormi.com,US,682,sitemap,7,https://voormi.com/sitemap.xml,2026-10-19,raw=682 dupes_removed=0; adopted from rerun (NA->value)
 rayconglobal.com,US,38461,sitemap,53,https://rayconglobal.com/sitemap.xml | https://rayconglobal.com/sitemap.xml | https://rayconglobal.com/sitemap.xml,2026-10-19,raw=38464 dupes_removed=3; recount via robots.txt
 truereligion.com,US,,Not available (blocked by site: HTTP 406 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
-camcode.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.camcode.com', port=80): Max retries exceeded with u))",0,,2026-10-19,
+camcode.com,US,553,sitemap,9,https://camcode.com/sitemap_index.xml,2026-10-19,raw=556 dupes_removed=3; adopted from rerun (NA->value)
 tatteredcover.com,US,184730,sitemap,190,https://www.tatteredcover.com/sitemap.xml,2026-10-19,raw=184731 dupes_removed=1; recount via robots.txt
 shopatchurchill.com,US,3140,sitemap,10,https://www.shopatchurchill.com/sitemap.xml,2026-10-19,raw=3140 dupes_removed=0; recount via robots.txt
-shop.lovb.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.lovb.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+shop.lovb.com,US,516,sitemap,7,https://shop.lovb.com/sitemap.xml,2026-10-19,raw=516 dupes_removed=0; adopted from rerun (NA->value)
 excellent-supply.com,US,1767,sitemap,12,https://excellent-supply.com/sitemap.xml,2026-10-19,raw=1767 dupes_removed=0; recount via robots.txt
-locally.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.locally.com', port=80): Max retries exceeded with u))",0,,2026-10-19,
-ekster.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.ekster.com', port=443): Max retries exceeded with ))",0,,2026-10-19,
-littlelulusgifts.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.littlelulusgifts.com', port=80): Max retries exceed))",0,,2026-10-19,
+locally.com,US,305664,sitemap,17,https://sitemaps.locally.com/www.locally.com/sitemap-index.xml | https://www.locally.com/marketing-assets/sitemap-index.xml,2026-10-19,raw=305665 dupes_removed=1; recount via robots.txt; adopted from rerun (NA->value)
+ekster.com,US,4230,sitemap,32,https://www.ekster.com/sitemap.xml,2026-10-19,raw=4230 dupes_removed=0; adopted from rerun (NA->value)
+littlelulusgifts.com,US,57,sitemap,7,https://littlelulusgifts.com/sitemap.xml,2026-10-19,raw=57 dupes_removed=0; adopted from rerun (NA->value)
 madeineatalia.com,US,3658,sitemap,10,https://madeineatalia.com/sitemap.xml,2026-10-19,raw=3659 dupes_removed=1; recount via robots.txt
 midwaywool.com,US,2935,sitemap,9,https://midwaywool.com/sitemap.xml,2026-10-19,raw=2935 dupes_removed=0; recount via robots.txt
-thecollegiatelineup.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thecollegiatelineup.com', port=80): Max retries exc))",0,,2026-10-19,
+thecollegiatelineup.com,US,5515,sitemap,10,https://www.thecollegiatelineup.com/sitemap.xml,2026-10-19,raw=5515 dupes_removed=0; adopted from rerun (NA->value)
 thegeometricplanter.com,US,70,sitemap,7,https://thegeometricplanter.com/sitemap.xml,2026-10-19,raw=70 dupes_removed=0; recount via robots.txt
 mazdastuff.com,US,558071,sitemap,13,https://mazdastuff.com/sitemap.xml,2026-10-19,raw=558071 dupes_removed=0; recount via guess
 conovercompany.com,US,3684,sitemap,13,https://www.conovercompany.com/sitemap_index.xml,2026-10-19,raw=3687 dupes_removed=3; recount via robots.txt
 la-piccolina.com,US,3201,sitemap,1,https://www.la-piccolina.com/sitemap.xml,2026-10-19,raw=3201 dupes_removed=0
 shop-skirt.com,US,1670,sitemap,7,https://shop-skirt.com/sitemap.xml,2026-10-19,raw=1670 dupes_removed=0; recount via robots.txt
-zpacks.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.zpacks.com', port=80): Max retries exceeded with ur))",0,,2026-10-19,
-philsbooks.com,US,63,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://abbiebooks.com/wp-sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='abbiebooks.com', port=443): Max retries exceeded with "")]); /shop: 'of 63 results'"
+zpacks.com,US,1275,sitemap,7,https://zpacks.com/sitemap.xml,2026-10-19,raw=1275 dupes_removed=0; adopted from rerun (NA->value)
+philsbooks.com,US,1720,sitemap,8,https://philsbooks.com/wp-sitemap.xml,2026-10-19,raw=1720 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 bobsmirrors.com,US,609,sitemap,1,https://www.bobsmirrors.com/sitemap.xml,2026-10-19,raw=609 dupes_removed=0
-cleanfreak.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cleanfreak.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-huntakiller.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.huntakiller.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-penelopedesignstudio.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.penelopedesignstudio.com', port=80): Max retries ex))",0,,2026-10-19,
-pyrodrone.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.pyrodrone.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+cleanfreak.com,US,4296,sitemap,10,https://www.cleanfreak.com/sitemap.xml | https://www.cleanfreak.com/sitemap.xml | https://www.cleanfreak.com/sitemap.xml,2026-10-19,raw=4296 dupes_removed=0; adopted from rerun (NA->value)
+huntakiller.com,US,109,sitemap,7,https://www.huntakiller.com/sitemap.xml,2026-10-19,raw=109 dupes_removed=0; adopted from rerun (NA->value)
+penelopedesignstudio.com,US,180,sitemap,6,https://penelopedesignstudio.com/sitemap.xml,2026-10-19,raw=180 dupes_removed=0; adopted from rerun (NA->value)
+pyrodrone.com,US,6215,sitemap,12,https://pyrodrone.com/sitemap.xml,2026-10-19,raw=6215 dupes_removed=0; adopted from rerun (NA->value)
 skinsafeproducts.com,US,,Not available (blocked by site: HTTP 503 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
-echo-sigma.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.echo-sigma.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-groupspree.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.groupspree.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-falke.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.falke.com', port=80): Max retries exceeded with url))",0,,2026-10-19,
+echo-sigma.com,US,223,sitemap,7,https://echo-sigma.com/sitemap.xml,2026-10-19,raw=223 dupes_removed=0; adopted from rerun (NA->value)
+groupspree.com,US,1006,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+falke.com,US,158126,sitemap (partial: 121 of 124 sitemap files read),121,https://www.falke.com/at_de/sitemap.xml | https://www.falke.com/be_fr/sitemap.xml | https://www.falke.com/bg_en/sitemap.xml | https://www.falke.com/ch_de/sitemap.xml | https://www.falke.com/ch_fr/sitemap.xml (+26 more),2026-10-19,raw=158126 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=3: https://www.falke.com/gb_en/sitemap/content/?index=3:TooManyRedirects: Exceeded 30 redirects.; https://www.falke.com/gb_en/sitemap/product/?index=2:TooManyRedirects: Exceeded 30 redirects.; https://www.falke.com/gb_en/sitemap/category/?index=1:TooManyRedirects: Exceeded 30 redirects.; adopted from rerun (NA->value)
 zircarceramics.com,US,198,sitemap,9,https://zircarceramics.com/sitemap_index.xml,2026-10-19,raw=199 dupes_removed=1; recount via robots.txt
-hypedept.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hypedept.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-happybabycompany.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.happybabycompany.com', port=80): Max retries exceed))",0,,2026-10-19,
-thegamingoutpost.net,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thegamingoutpost.net', port=80): Max retries exceed))",0,,2026-10-19,
-jonathanadler.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.jonathanadler.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-olympiaprovisions.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.olympiaprovisions.com', port=80): Max retries excee))",0,,2026-10-19,
-lilyandtoddny.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lilyandtoddny.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-toptropicals.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.toptropicals.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-gracethecollection.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gracethecollection.com', port=80): Max retries exce))",0,,2026-10-19,
-primalharvest.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.primalharvest.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+hypedept.com,US,853,sitemap,14,https://hypedept.com/sitemap.xml,2026-10-19,raw=853 dupes_removed=0; adopted from rerun (NA->value)
+happybabycompany.com,US,3953,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+thegamingoutpost.net,US,10058,sitemap,1,https://www.thegamingoutpost.net/sitemap.xml,2026-10-19,raw=10058 dupes_removed=0; adopted from rerun (NA->value)
+jonathanadler.com,US,2124,sitemap,8,https://jonathanadler.com/sitemap.xml | https://jonathanadler.com/sitemap.xml | https://jonathanadler.com/sitemap.xml,2026-10-19,raw=2124 dupes_removed=0; adopted from rerun (NA->value)
+olympiaprovisions.com,US,882,sitemap,8,https://www.olympiaprovisions.com/sitemap.xml | https://olympic-provisions.myshopify.com/sitemap.xml,2026-10-19,raw=882 dupes_removed=0; adopted from rerun (NA->value)
+lilyandtoddny.com,US,9091,sitemap,15,https://lilyandtoddny.com/sitemap.xml,2026-10-19,raw=9091 dupes_removed=0; adopted from rerun (NA->value)
+toptropicals.com,US,16125,sitemap (partial: 11 of 12 sitemap files read),11,https://toptropicals.com/llms.txt | https://toptropicals.com/sitemap/sitemap_index.xml | https://toptropicals.com/gardenblog.htm?xml=1,2026-10-19,raw=64498 dupes_removed=48373; recount via robots.txt; failed sitemap fetches after retries=1: https://toptropicals.com/llms.txt:unparseable; adopted from rerun (NA->value)
+gracethecollection.com,US,42,sitemap,6,https://gracethecollection.com/sitemap.xml,2026-10-19,raw=42 dupes_removed=0; adopted from rerun (NA->value)
+primalharvest.com,US,488,sitemap,8,https://primalharvest.com/sitemap.xml,2026-10-19,raw=488 dupes_removed=0; adopted from rerun (NA->value)
 uniteddolls.com,US,13655,sitemap,23,https://uniteddolls.com/sitemap_index.xml,2026-10-19,raw=13656 dupes_removed=1; recount via robots.txt
-designshop.aia.org,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.designshop.aia.org', port=80): Max retries exceeded))",0,,2026-10-19,
-organa.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.organa.com', port=80): Max retries exceeded with ur))",0,,2026-10-19,
-mchollandservices.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.mchollandservices.com', port=80): Max retries excee))",0,,2026-10-19,
+designshop.aia.org,US,1285,sitemap,8,https://designshop.aia.org/sitemap.xml,2026-10-19,raw=1285 dupes_removed=0; adopted from rerun (NA->value)
+organa.com,US,51,sitemap,7,https://organa.com/sitemap.xml,2026-10-19,raw=51 dupes_removed=0; adopted from rerun (NA->value)
+mchollandservices.com,US,2410,sitemap,5,https://www.mchollandservices.com/sitemap.xml,2026-10-19,raw=2410 dupes_removed=0; adopted from rerun (NA->value)
 fireballtool.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.fireballtool.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-altamiraart.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.altamiraart.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-vbarbershop.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.vbarbershop.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-millionayres.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.millionayres.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-craftmade.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.craftmade.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-bassmods.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.bassmods.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-unihdd.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.unihdd.com', port=80): Max retries exceeded with ur))",0,,2026-10-19,
-laurelandgold.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.laurelandgold.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-promixnutrition.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.promixnutrition.com', port=80): Max retries exceede))",0,,2026-10-19,
-extremeoutfitters.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.extremeoutfitters.com', port=80): Max retries excee))",0,,2026-10-19,
-us.namuk.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.us.namuk.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-alexanderdaas.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.alexanderdaas.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-shop.aliciakeys.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.aliciakeys.com', port=80): Max retries exceede))",0,,2026-10-19,
+altamiraart.com,US,1989,sitemap,8,https://altamiraart.com/sitemap.xml,2026-10-19,raw=1989 dupes_removed=0; adopted from rerun (NA->value)
+vbarbershop.com,US,744,sitemap,8,https://vbarbershop.com/sitemap.xml,2026-10-19,raw=744 dupes_removed=0; adopted from rerun (NA->value)
+millionayres.com,US,46,sitemap,7,https://millionayres.com/sitemap.xml,2026-10-19,raw=46 dupes_removed=0; adopted from rerun (NA->value)
+craftmade.com,US,18502,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+bassmods.com,US,106,sitemap,1,https://www.bassmods.com/sitemap.xml,2026-10-19,raw=106 dupes_removed=0; adopted from rerun (NA->value)
+unihdd.com,US,219,sitemap,7,https://unihdd.com/sitemap.xml,2026-10-19,raw=219 dupes_removed=0; adopted from rerun (NA->value)
+laurelandgold.com,US,78,sitemap,7,https://laurelandgold.com/sitemap.xml,2026-10-19,raw=78 dupes_removed=0; adopted from rerun (NA->value)
+promixnutrition.com,US,3159,sitemap,27,https://promixnutrition.com/sitemap.xml,2026-10-19,raw=3159 dupes_removed=0; adopted from rerun (NA->value)
+extremeoutfitters.com,US,4823,sitemap,11,https://extremeoutfitters.com/sitemap.xml,2026-10-19,raw=4823 dupes_removed=0; adopted from rerun (NA->value)
+us.namuk.com,US,519,sitemap,7,https://us.namuk.com/sitemap.xml,2026-10-19,raw=519 dupes_removed=0; adopted from rerun (NA->value)
+alexanderdaas.com,US,1987,sitemap,8,https://alexanderdaas.com/sitemap.xml | https://alexanderdaas.com/sitemap.xml | https://alexanderdaas.com/sitemap.xml,2026-10-19,raw=1987 dupes_removed=0; adopted from rerun (NA->value)
+shop.aliciakeys.com,US,153,sitemap,6,https://shop.aliciakeys.com/sitemap.xml,2026-10-19,raw=153 dupes_removed=0; adopted from rerun (NA->value)
 urbanhydration.com,US,2435,sitemap,17,https://urbanhydration.com/sitemap.xml,2026-10-19,raw=2435 dupes_removed=0; recount via robots.txt
-elementalsoundworks.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.elementalsoundworks.com', port=80): Max retries exc))",0,,2026-10-19,
-eventprogear.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.eventprogear.com', port=80): Max retries exceeded w))",0,,2026-10-19,
+elementalsoundworks.com,US,371,sitemap,6,https://www.elementalsoundworks.com/sitemap.xml,2026-10-19,raw=371 dupes_removed=0; adopted from rerun (NA->value)
+eventprogear.com,US,25694,sitemap,8,https://www.eventprogear.com/sitemap.xml | https://www.eventprogear.com/es_es-sitemap.xml,2026-10-19,raw=25694 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
 sloanrepair.com,US,1642,sitemap,8,https://sloanrepair.com/sitemap.xml,2026-10-19,raw=1642 dupes_removed=0; recount via robots.txt
-flolab.io,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.flolab.io', port=80): Max retries exceeded with url))",0,,2026-10-19,
-electricbikeca.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.electricbikeca.com', port=80): Max retries exceeded))",0,,2026-10-19,
-shop.flyersultimate.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.flyersultimate.com', port=80): Max retries exc))",0,,2026-10-19,
-sierravalleytrading.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.sierravalleytrading.com', port=80): Max retries exc))",0,,2026-10-19,
-bisonfurniture.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.bisonfurniture.com', port=443): Max retries exceed))",0,,2026-10-19,
-shop.greenleafdollhouses.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.greenleafdollhouses.com', port=80): Max retrie))",0,,2026-10-19,
-roll-lux.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.roll-lux.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-tarheelparts.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.tarheelparts.com', port=80): Max retries exceeded w))",0,,2026-10-19,
+flolab.io,US,748,sitemap,7,https://flolab.io/sitemap.xml,2026-10-19,raw=748 dupes_removed=0; adopted from rerun (NA->value)
+electricbikeca.com,US,61,sitemap,7,https://electricbikeca.com/sitemap.xml,2026-10-19,raw=61 dupes_removed=0; adopted from rerun (NA->value)
+shop.flyersultimate.com,US,88,sitemap,6,https://shop.flyersultimate.com/sitemap.xml,2026-10-19,raw=88 dupes_removed=0; adopted from rerun (NA->value)
+sierravalleytrading.com,US,312,sitemap,1,https://www.sierravalleytrading.com/sitemap.xml,2026-10-19,raw=312 dupes_removed=0; adopted from rerun (NA->value)
+bisonfurniture.com,US,490604,sitemap,497,https://www.bisonfurniture.com/sitemap.xml,2026-10-19,raw=490604 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
+shop.greenleafdollhouses.com,US,1545,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+roll-lux.com,US,276,sitemap,8,https://roll-lux.com/sitemap_index.xml,2026-10-19,raw=277 dupes_removed=1; adopted from rerun (NA->value)
+tarheelparts.com,US,444,sitemap,7,https://tarheelparts.com/sitemap.xml,2026-10-19,raw=444 dupes_removed=0; adopted from rerun (NA->value)
 pacsun.com,US,28392,sitemap,18,https://www.pacsun.com/sitemap_index.xml | https://www.pacsun.com/buy/sitemap_en_us.xml,2026-10-19,raw=28392 dupes_removed=0; recount via robots.txt; media sitemaps skipped=5
-voodoocustomtackle.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.voodoocustomtackle.com', port=80): Max retries exce))",0,,2026-10-19,
+voodoocustomtackle.com,US,81,sitemap,1,https://voodoocustomtackle.com/sitemap.xml,2026-10-19,raw=81 dupes_removed=0; adopted from rerun (NA->value)
 simplygourmand.com,US,9112,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-shop.schoolofrock.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.schoolofrock.com', port=80): Max retries excee))",0,,2026-10-19,
-gadgetslaboratory.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gadgetslaboratory.com', port=80): Max retries excee))",0,,2026-10-19,
-shop.carlemuseum.org,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.carlemuseum.org', port=80): Max retries exceed))",0,,2026-10-19,
+shop.schoolofrock.com,US,2283,sitemap,11,https://shop.schoolofrock.com/sitemap.xml,2026-10-19,raw=2283 dupes_removed=0; adopted from rerun (NA->value)
+gadgetslaboratory.com,US,11694,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+shop.carlemuseum.org,US,9081,sitemap,15,https://shop.carlemuseum.org/sitemap.xml,2026-10-19,raw=9081 dupes_removed=0; adopted from rerun (NA->value)
 wallcutz.com,US,1323,sitemap,8,https://www.wallcutz.com/sitemap.xml,2026-10-19,raw=1323 dupes_removed=0; recount via robots.txt
 wizardsandplumbers.com,US,56,sitemap,6,https://wizardsandplumbers.com/sitemap.xml,2026-10-19,raw=56 dupes_removed=0; recount via robots.txt
-medicom.com,US,486,sitemap (partial: 21 of 23 sitemap files read),21,https://medicom.com/sitemap.xml,2026-10-19,raw=890 dupes_removed=404; recount via guess; media sitemaps skipped=3; failed sitemap fetches after retries=2: https://medicom.com/product_cat-sitemap.xml:403; https://medicom.com/product-sitemap.xml:403
-kionapublishinginc.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.kionapublishinginc.com', port=80): Max retries exce))",0,,2026-10-19,
+medicom.com,US,486,sitemap,21,https://medicom.com/sitemap.xml,2026-10-19,raw=890 dupes_removed=404; media sitemaps skipped=3; adopted from rerun (partial->complete sitemap)
+kionapublishinginc.com,US,258,sitemap,6,https://kionapublishinginc.com/sitemap.xml,2026-10-19,raw=258 dupes_removed=0; adopted from rerun (NA->value)
 imdola.com,US,4014,sitemap (partial: 5 of 11 sitemap files read),5,https://imdola.com/wp-sitemap.xml,2026-10-19,raw=4015 dupes_removed=1; recount via robots.txt; failed sitemap fetches after retries=6: https://imdola.com/wp-sitemap-posts-product-2.xml:404; https://imdola.com/wp-sitemap-posts-product-3.xml:404; https://imdola.com/wp-sitemap-posts-product-4.xml:404
-constantlyvariedgear.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.constantlyvariedgear.com', port=80): Max retries ex))",0,,2026-10-19,
-tradingcardcenter.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.tradingcardcenter.com', port=80): Max retries excee))",0,,2026-10-19,
+constantlyvariedgear.com,US,6412,sitemap,12,https://www.constantlyvariedgear.com/sitemap.xml,2026-10-19,raw=6412 dupes_removed=0; adopted from rerun (NA->value)
+tradingcardcenter.com,US,3437,sitemap,1,https://www.tradingcardcenter.com/sitemap.xml,2026-10-19,raw=3437 dupes_removed=0; adopted from rerun (NA->value)
 bloomwholesale.com,US,15206,sitemap,22,https://bloomwholesale.com/sitemap.xml,2026-10-19,raw=15208 dupes_removed=2; recount via robots.txt
 pcna.com,US,6107,sitemap (US pages only),31,https://www.pcna.com/sitemap_index.xml | https://www.pcna.com/sitemap.xml,2026-10-19,"raw=9029 dupes_removed=32; recount via robots.txt; country split US=6107,other=2862"
 myfahlo.com,US,1922,sitemap,32,https://myfahlo.com/sitemap.xml | https://myfahlo.com/sitemap.xml | https://myfahlo.com/sitemap.xml,2026-10-19,raw=1922 dupes_removed=0; recount via robots.txt
-egganddarttextiles.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.egganddarttextiles.com', port=80): Max retries exce))",0,,2026-10-19,
-shop.travelerscompanyusa.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.travelerscompanyusa.com', port=80): Max retrie))",0,,2026-10-19,
+egganddarttextiles.com,US,2456,sitemap,3,https://www.egganddarttextiles.com/sitemap.xml,2026-10-19,raw=2456 dupes_removed=0; adopted from rerun (NA->value)
+shop.travelerscompanyusa.com,US,342,sitemap,6,https://shop.travelerscompanyusa.com/sitemap.xml,2026-10-19,raw=342 dupes_removed=0; adopted from rerun (NA->value)
 peacocktv.com,US,68599,sitemap,75,https://www.peacocktv.com/sitemap.xml | https://www.peacocktv.com/help/sitemap | https://www.peacocktv.com/es-US/help/sitemap | https://www.peacocktv.com/blog/sitemap.xml,2026-10-19,raw=96865 dupes_removed=28266; recount via robots.txt
-flintts.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.flintts.com', port=80): Max retries exceeded with u))",0,,2026-10-19,
-stylinboxes.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.stylinboxes.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-us.anitadongre.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.us.anitadongre.com', port=80): Max retries exceeded))",0,,2026-10-19,
-jennyskincare.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.jennyskincare.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+flintts.com,US,92,sitemap,7,https://www.flintts.com/sitemap.xml,2026-10-19,raw=92 dupes_removed=0; adopted from rerun (NA->value)
+stylinboxes.com,US,390,sitemap,6,https://stylinboxes.com/sitemap.xml,2026-10-19,raw=390 dupes_removed=0; adopted from rerun (NA->value)
+us.anitadongre.com,US,1796,sitemap,1,https://us.anitadongre.com/sitemap_0.xml,2026-10-19,raw=1796 dupes_removed=0; adopted from rerun (NA->value)
+jennyskincare.com,US,4262,sitemap,1,https://www.jennyskincare.com/sitemap.xml,2026-10-19,raw=4262 dupes_removed=0; adopted from rerun (NA->value)
 carawayhome.com,US,673,sitemap,9,https://carawayhome.com/sitemap.xml,2026-10-19,raw=673 dupes_removed=0; recount via robots.txt
-sattireshop.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.sattireshop.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-trinaturk.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.trinaturk.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+sattireshop.com,US,15,sitemap,6,https://sattireshop.com/sitemap.xml,2026-10-19,raw=15 dupes_removed=0; adopted from rerun (NA->value)
+trinaturk.com,US,3141,sitemap,9,https://www.trinaturk.com/sitemap.xml,2026-10-19,raw=3141 dupes_removed=0; adopted from rerun (NA->value)
 studio-timeless.com,US,210,sitemap,7,https://studio-timeless.com/sitemap.xml,2026-10-19,raw=210 dupes_removed=0
-cutsew.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cutsew.com', port=80): Max retries exceeded with ur))",0,,2026-10-19,
+cutsew.com,US,2262,sitemap,1,https://www.cutsew.com/sitemap.xml,2026-10-19,raw=2262 dupes_removed=0; adopted from rerun (NA->value)
 thirdpiece.com,US,338,sitemap,7,https://thirdpiece.com/sitemap.xml,2026-10-19,raw=338 dupes_removed=0; recount via robots.txt
-shopblackmoth.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shopblackmoth.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-verafiedny.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.verafiedny.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-tweezerman.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='tweezerman.com', port=443): Max retries exceeded with ))",0,,2026-10-19,
-elizabethperson.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.elizabethperson.com', port=80): Max retries exceede))",0,,2026-10-19,
-dunrovenhouse.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dunrovenhouse.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-canecreek.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.canecreek.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+shopblackmoth.com,US,1069,sitemap,8,https://shopblackmoth.com/sitemap.xml,2026-10-19,raw=1069 dupes_removed=0; adopted from rerun (NA->value)
+verafiedny.com,US,344,sitemap,7,https://verafiedny.com/sitemap.xml,2026-10-19,raw=344 dupes_removed=0; adopted from rerun (NA->value)
+tweezerman.com,US,484,sitemap,7,https://tweezerman.com/sitemap.xml,2026-10-19,raw=484 dupes_removed=0; adopted from rerun (NA->value)
+elizabethperson.com,US,318,sitemap,7,https://elizabethperson.com/sitemap.xml,2026-10-19,raw=318 dupes_removed=0; adopted from rerun (NA->value)
+dunrovenhouse.com,US,199,sitemap,6,https://dunrovenhouse.com/sitemap.xml,2026-10-19,raw=199 dupes_removed=0; adopted from rerun (NA->value)
+canecreek.com,US,1840,sitemap,17,https://www.canecreek.com/sitemap.xml,2026-10-19,raw=1840 dupes_removed=0; adopted from rerun (NA->value)
 purebulk.com,US,775,sitemap,7,https://purebulk.com/sitemap.xml,2026-10-19,raw=775 dupes_removed=0; recount via robots.txt
-hallmarkchannelwines.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hallmarkchannelwines.com', port=80): Max retries ex))",0,,2026-10-19,
-ensleybeautysupply.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ensleybeautysupply.com', port=80): Max retries exce))",0,,2026-10-19,
-milaskeeper.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.milaskeeper.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
+hallmarkchannelwines.com,US,89,sitemap,7,https://hallmarkchannelwines.com/sitemap.xml,2026-10-19,raw=89 dupes_removed=0; adopted from rerun (NA->value)
+ensleybeautysupply.com,US,2023,sitemap,7,https://ensleybeautysupply.com/sitemap.xml,2026-10-19,raw=2023 dupes_removed=0; adopted from rerun (NA->value)
+milaskeeper.com,US,886,sitemap,27,https://milaskeeper.com/sitemap.xml,2026-10-19,raw=886 dupes_removed=0; adopted from rerun (NA->value)
 fytika.com,US,670,sitemap,7,https://fytika.com/sitemap.xml,2026-10-19,raw=670 dupes_removed=0; recount via robots.txt
 zackwhite.com,US,3890,sitemap,1,https://www.zackwhite.com/sitemap.xml,2026-10-19,raw=3898 dupes_removed=8
 at-height.com,US,323,sitemap,1,https://www.at-height.com/sitemap.xml,2026-10-19,raw=323 dupes_removed=0
 shopadorn.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
-shopimpressions.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shopimpressions.com', port=80): Max retries exceede))",0,,2026-10-19,
+shopimpressions.com,US,67871,sitemap,74,https://shopimpressions.com/sitemap.xml,2026-10-19,raw=67871 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
 styxworld.com,US,683,sitemap,7,https://styxworld.com/sitemap.xml,2026-10-19,raw=683 dupes_removed=0
-clarine.co,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.clarine.co', port=443): Max retries exceeded with ))",0,,2026-10-19,
+clarine.co,US,31,sitemap,6,https://clarine.co/sitemap.xml,2026-10-19,raw=31 dupes_removed=0; adopted from rerun (NA->value)
 2bglass.com,US,278,sitemap,7,https://2bglass.com/sitemap.xml,2026-10-19,raw=278 dupes_removed=0
 drcampstore.com,US,459,sitemap,1,https://www.drcampstore.com/sitemap.xml,2026-10-19,raw=459 dupes_removed=0
-monumenthobbies.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.monumenthobbies.com', port=80): Max retries exceede))",0,,2026-10-19,
+monumenthobbies.com,US,634,sitemap,8,https://monumenthobbies.com/sitemap.xml,2026-10-19,raw=634 dupes_removed=0; adopted from rerun (NA->value)
 shopellableu.com,US,594,sitemap,6,https://shopellableu.com/sitemap.xml,2026-10-19,raw=594 dupes_removed=0
 rexing.com,US,2284,sitemap,17,https://rexing.com/sitemap.xml,2026-10-19,raw=2284 dupes_removed=0
-store.oscilloscope.net,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.oscilloscope.net', port=80): Max retries exce))",0,,2026-10-19,
-blackjungleterrariumsupply.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.blackjungleterrariumsupply.com', port=80): Max retr))",0,,2026-10-19,
+store.oscilloscope.net,US,1698,sitemap,8,https://store.oscilloscope.net/sitemap.xml,2026-10-19,raw=1698 dupes_removed=0; adopted from rerun (NA->value)
+blackjungleterrariumsupply.com,US,1336,sitemap,1,https://www.blackjungleterrariumsupply.com/sitemap.xml,2026-10-19,raw=1336 dupes_removed=0; adopted from rerun (NA->value)
 laserbeastlab.com,US,59,sitemap,6,https://www.laserbeastlab.com/sitemap.xml,2026-10-19,raw=59 dupes_removed=0
-shopkahrfirearmsgroup.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shopkahrfirearmsgroup.com', port=80): Max retries e))",0,,2026-10-19,
+shopkahrfirearmsgroup.com,US,5929,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 madsasssoap.com,US,871,sitemap,6,https://madsasssoap.com/sitemap.xml,2026-10-19,raw=871 dupes_removed=0
 wristybuddy.com,US,80,sitemap,7,https://wristybuddy.com/sitemap.xml,2026-10-19,raw=80 dupes_removed=0; recount via robots.txt
-rangerover.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.rangerover.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-cooltools.us,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.cooltools.us', port=80): Max retries exceeded with ))",0,,2026-10-19,
+rangerover.com,US,823,sitemap (US pages only),31,https://www.rangerover.com/cs-cz/sitemap.xml | https://www.rangerover.com/de-at/sitemap.xml | https://www.rangerover.com/de-ch/sitemap.xml | https://www.rangerover.com/de-de/sitemap.xml | https://www.rangerover.com/en-au/sitemap.xml (+48 more),2026-10-19,"raw=20033 dupes_removed=0; recount via robots.txt; country split other=10316,untagged=8894,US=823; adopted from rerun (NA->value)"
+cooltools.us,US,8780,sitemap,15,https://cooltools.us/sitemap.xml,2026-10-19,raw=8780 dupes_removed=0; adopted from rerun (NA->value)
 hoover.com,US,537,sitemap,6,https://hoover.com/sitemap.xml,2026-10-19,raw=537 dupes_removed=0
-tackform.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.tackform.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
+tackform.com,US,3088,sitemap,10,https://www.tackform.com/sitemap.xml,2026-10-19,raw=3088 dupes_removed=0; adopted from rerun (NA->value)
 onsoshop.com,US,51,sitemap,6,https://onsoshop.com/sitemap.xml,2026-10-19,raw=51 dupes_removed=0
 checks.com,US,238,sitemap,1,https://www.checks.com/sitemap.xml,2026-10-19,raw=238 dupes_removed=0
 wrldtags.com,US,256,sitemap,7,https://wrldtags.com/sitemap.xml,2026-10-19,raw=256 dupes_removed=0
-nilerecordsaz.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.nilerecordsaz.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+nilerecordsaz.com,US,3480,sitemap,1,https://www.nilerecordsaz.com/sitemap.xml,2026-10-19,raw=3480 dupes_removed=0; adopted from rerun (NA->value)
 boot2bonnet.com,US,2870,sitemap,1,https://boot2bonnet.com/sitemap.xml,2026-10-19,raw=2870 dupes_removed=0
 outfy.com,US,1090,sitemap,10,https://www.outfy.com/sitemap.xml,2026-10-19,raw=1090 dupes_removed=0
-mjwholesale.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.mjwholesale.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-milwaukeemerch.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.milwaukeemerch.com', port=80): Max retries exceeded))",0,,2026-10-19,
+mjwholesale.com,US,2760,sitemap,9,https://mjwholesale.com/sitemap.xml,2026-10-19,raw=2760 dupes_removed=0; adopted from rerun (NA->value)
+milwaukeemerch.com,US,1088,sitemap,6,https://milwaukeemerch.com/sitemap.xml,2026-10-19,raw=1088 dupes_removed=0; adopted from rerun (NA->value)
 earthlyadornments.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.earthlyadornments.com', port=443): Max retries exc))",0,,2026-10-19,
 spadefish.net,US,6063,sitemap,1,https://www.spadefish.net/sitemap.xml,2026-10-19,raw=6063 dupes_removed=0
 earthtonesgifts.com,US,944,sitemap,7,https://earthtonesgifts.com/sitemap.xml,2026-10-19,raw=944 dupes_removed=0
 gorillastationers.com,US,25567,sitemap,32,https://gorillastationers.com/sitemap.xml,2026-10-19,raw=25567 dupes_removed=0; recount via robots.txt
 tongparts.com,US,3231,sitemap,9,https://tongparts.com/sitemap.xml,2026-10-19,raw=3231 dupes_removed=0
 us.panierdessens.com,US,622,sitemap,7,https://us.panierdessens.com/sitemap.xml,2026-10-19,raw=622 dupes_removed=0
-spiritfeather.com,US,2825,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://spiritfeather.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='spiritfeather.com', port=443): Max retries exceeded wi"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
-mccormick.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.mccormick.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-jacksonguitars.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.jacksonguitars.com', port=80): Max retries exceeded))",0,,2026-10-19,
-insteon.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.insteon.com', port=443): Max retries exceeded with))",0,,2026-10-19,
+spiritfeather.com,US,265,sitemap,1,https://spiritfeather.com/sitemap.xml,2026-10-19,raw=265 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
+mccormick.com,US,5181,sitemap,13,https://www.mccormick.com/sitemap.xml,2026-10-19,raw=5181 dupes_removed=0; adopted from rerun (NA->value)
+jacksonguitars.com,US,511,sitemap,6,https://www.jacksonguitars.com/sitemap.xml,2026-10-19,raw=511 dupes_removed=0; adopted from rerun (NA->value)
+insteon.com,US,123,sitemap,7,https://www.insteon.com/sitemap.xml,2026-10-19,raw=123 dupes_removed=0; adopted from rerun (NA->value)
 alliedmedexpress.com,US,27,sitemap,6,https://www.alliedmedexpress.com/sitemap.xml,2026-10-19,raw=27 dupes_removed=0
 littleholiday.com,US,387,sitemap,7,https://www.littleholiday.com/sitemap.xml,2026-10-19,raw=387 dupes_removed=0
 cloudchiefcompany.com,US,2962,sitemap,1,https://www.cloudchiefcompany.com/sitemap.xml,2026-10-19,raw=2963 dupes_removed=1
@@ -440,17 +440,17 @@ strongesim.com,US,256,sitemap,1,https://strongesim.com/sitemap.xml,2026-10-19,ra
 paperboundbooks.com,US,4385,sitemap,1,https://www.paperboundbooks.com/sitemap.xml,2026-10-19,raw=4386 dupes_removed=1
 aersf.com,US,175,sitemap,6,https://aersf.com/sitemap.xml,2026-10-19,raw=175 dupes_removed=0
 ymwfurniture.com,US,2950,shop-page total,0,,2026-10-19,"no sitemap found; /shop: '2,950 items'"
-littledressupshop.com,US,4750,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.littledressupshop.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.littledressupshop.com', port=443): Max retries exc"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+littledressupshop.com,US,783,sitemap,1,https://www.littledressupshop.com/sitemap.xml,2026-10-19,raw=783 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 longlosttees.com,US,390,sitemap,7,https://longlosttees.com/sitemap.xml,2026-10-19,raw=390 dupes_removed=0
 hairbrewproducts.com,US,39,sitemap,6,https://hairbrewproducts.com/sitemap.xml,2026-10-19,raw=39 dupes_removed=0
-lmnelson.com,US,1993,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('http://www.lmnelson.com/sitemap.xml', ""ConnectionError: HTTPConnectionPool(host='www.lmnelson.com', port=80): Max retries exceeded with "")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+lmnelson.com,US,490,sitemap,1,https://www.lmnelson.com/sitemap.xml,2026-10-19,raw=490 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 carolinamotioncontrols.com,US,2352,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 hi-chew.com,US,147,sitemap,7,https://www.hi-chew.com/sitemap.xml,2026-10-19,raw=147 dupes_removed=0
 propertyroom.com,US,15440,sitemap,1,https://content.propertyroom.com/listings/banners/sitemap.xml,2026-10-19,raw=15440 dupes_removed=0
 infinitegamesga.com,US,9173,sitemap,1,https://www.infinitegamesga.com/sitemap.xml,2026-10-19,raw=9173 dupes_removed=0
 threadsortailsdesigns.com,US,477,sitemap,1,https://threadsortailsdesigns.com/sitemap.xml,2026-10-19,raw=477 dupes_removed=0
 imsyswimwear.com,US,438,sitemap,6,https://imsyswimwear.com/sitemap.xml,2026-10-19,raw=438 dupes_removed=0
-mamof.com,US,244,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://mamof.com/sitemap_index.xml', ""ReadTimeout: HTTPSConnectionPool(host='mamof.com', port=443): Read timed out. (read timeout=2"")]); woocommerce X-WP-Total (products only)"
+mamof.com,US,339,sitemap,11,https://mamof.com/sitemap_index.xml,2026-10-19,raw=341 dupes_removed=2; adopted from rerun (fallback->complete sitemap)
 allthebuzzgifts.com,US,151,sitemap,5,https://allthebuzzgifts.com/sitemap.xml,2026-10-19,raw=151 dupes_removed=0
 threadedstitch.com,US,876,sitemap,7,https://threadedstitch.com/sitemap.xml,2026-10-19,raw=876 dupes_removed=0
 shopdesidesigns.com,US,153,sitemap,10,https://shopdesidesigns.com/sitemap.xml,2026-10-19,raw=153 dupes_removed=0
@@ -465,7 +465,7 @@ elegantmonogramming.com,US,114,sitemap,6,https://www.elegantmonogramming.com/sit
 facerealityskincare.com,US,221,sitemap,7,https://facerealityskincare.com/sitemap.xml | https://facerealityskincare.com/sitemap.xml,2026-10-19,raw=221 dupes_removed=0
 coin-jewelry.com,US,881,sitemap,1,https://www.coin-jewelry.com/sitemap.xml,2026-10-19,raw=883 dupes_removed=2
 shopmamasage.com,US,1343,sitemap,1,https://www.shopmamasage.com/sitemap.xml,2026-10-19,raw=1343 dupes_removed=0
-rtjtool.com,US,,"Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (ConnectionError: HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with))",0,,2026-10-19,no sitemap found
+rtjtool.com,US,1789,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 switch-bot.com,US,627,sitemap,7,https://www.switch-bot.com/sitemap.xml | https://www.switch-bot.com/sitemap.xml | https://www.switch-bot.com/sitemap.xml,2026-10-19,raw=628 dupes_removed=1
 shoponviolet.com,US,312,sitemap,7,https://shoponviolet.com/sitemap.xml,2026-10-19,raw=312 dupes_removed=0
 keeneorganics.com,US,340,sitemap,11,https://keeneorganics.com/sitemap_index.xml,2026-10-19,raw=341 dupes_removed=1
@@ -629,7 +629,7 @@ lettucegrow.com,US,2439,sitemap,26,https://www.lettucegrow.com/sitemap.xml,2026-
 spartanlover.com,US,5965,sitemap,26,https://spartanlover.com/sitemap.xml,2026-10-19,raw=5965 dupes_removed=0
 snsinsider.com,US,12160,sitemap,12,https://www.snsinsider.com/sitemap.xml | https://www.snsinsider.com/press-release.xml | https://www.snsinsider.com/blog.xml,2026-10-19,raw=12161 dupes_removed=1
 gokartsusa.biz,US,17184,sitemap,23,https://gokartsusa.biz/sitemap.xml,2026-10-19,raw=17184 dupes_removed=0
-us.rearz.com,US,317585,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+us.rearz.com,US,497,sitemap,6,https://us.rearz.com/xmlsitemap.php,2026-10-19,raw=497 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 saveritemedical.com,US,28632,sitemap,35,https://www.saveritemedical.com/sitemap.xml,2026-10-19,raw=28632 dupes_removed=0
 archwaypet.com,US,90,sitemap,7,https://archwaypet.com/sitemap.xml,2026-10-19,raw=90 dupes_removed=0
 shopsommer.com,US,597,sitemap,7,https://shopsommer.com/sitemap.xml,2026-10-19,raw=597 dupes_removed=0
@@ -675,7 +675,7 @@ giftedcuratorsdc.com,US,86,sitemap,4,https://giftedcuratorsdc.com/sitemap_index.
 thefoxdecor.com,US,16982,sitemap,23,https://thefoxdecor.com/sitemap.xml,2026-10-19,raw=16982 dupes_removed=0
 plaidroomrecords.com,US,105070,sitemap,111,https://www.plaidroomrecords.com/sitemap.xml,2026-10-19,raw=105070 dupes_removed=0
 riikyu.com,US,945,sitemap (US pages only),152,https://www.riikyu.com/sitemap.xml,2026-10-19,"raw=5671 dupes_removed=0; country split other=2835,untagged=1891,US=945"
-shop.1sale.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.1sale.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
+shop.1sale.com,US,2346,sitemap,8,https://shop.1sale.com/sitemap.xml,2026-10-19,raw=2346 dupes_removed=0; adopted from rerun (NA->value)
 daffodildays.phs.org,US,21,sitemap,4,https://daffodildays.phs.org/sitemap.xml,2026-10-19,raw=21 dupes_removed=0
 thebotanicalbarindy.com,US,524,sitemap,7,https://thebotanicalbarindy.com/sitemap.xml,2026-10-19,raw=524 dupes_removed=0; recount via robots.txt
 bidetking.com,US,972,sitemap,7,https://bidetking.com/sitemap.xml,2026-10-19,raw=972 dupes_removed=0; recount via robots.txt
@@ -689,12 +689,12 @@ mrohardware.com,US,29905,sitemap,78,https://mrohardware.com/sitemap.xml,2026-10-
 ooocplanner.com,US,292,sitemap,7,https://ooocplanner.com/sitemap.xml,2026-10-19,raw=292 dupes_removed=0; recount via robots.txt
 moodytiger.com,US,40681,sitemap,302,https://moodytiger.com/sitemap.xml,2026-10-19,raw=40681 dupes_removed=0
 hotdogcartstore.com,US,51,sitemap,6,http://hotdogcartstore.com/sitemap.xml | http://hotdogcartstore.com/sitemap_index.xml,2026-10-19,raw=51 dupes_removed=0; recount via robots.txt
-lazrusgolf.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lazrusgolf.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-persevehair.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.persevehair.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-hotshotsecret.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hotshotsecret.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-sealight-led.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='sealight-led.com', port=443): Max retries exceeded wit))",0,,2026-10-19,
-thecutepista.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thecutepista.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-simplycutetees.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.simplycutetees.com', port=80): Max retries exceeded))",0,,2026-10-19,
+lazrusgolf.com,US,153,sitemap,7,https://lazrusgolf.com/sitemap.xml,2026-10-19,raw=153 dupes_removed=0; adopted from rerun (NA->value)
+persevehair.com,US,26,sitemap,5,https://persevehair.com/sitemap.xml,2026-10-19,raw=26 dupes_removed=0; adopted from rerun (NA->value)
+hotshotsecret.com,US,948,sitemap,17,https://www.hotshotsecret.com/sitemap_index.xml | https://www.hotshotsecret.com/page-sitemap.xml | https://www.hotshotsecret.com/product-sitemap.xml | https://www.hotshotsecret.com/blog-sitemap.xml,2026-10-19,raw=950 dupes_removed=2; media sitemaps skipped=1; adopted from rerun (NA->value)
+sealight-led.com,US,2026,sitemap,7,https://sealight-led.com/sitemaps/sitemap.xml,2026-10-19,raw=2055 dupes_removed=29; adopted from rerun (NA->value)
+thecutepista.com,US,386,sitemap,7,https://thecutepista.com/sitemap.xml,2026-10-19,raw=386 dupes_removed=0; adopted from rerun (NA->value)
+simplycutetees.com,US,7084,sitemap,13,https://www.simplycutetees.com/sitemap.xml,2026-10-19,raw=7084 dupes_removed=0; adopted from rerun (NA->value)
 glutenfreepalace.com,US,882,sitemap,7,https://www.glutenfreepalace.com/sitemap.xml,2026-10-19,raw=882 dupes_removed=0; recount via robots.txt
 physicianleaders.org,US,317,sitemap,7,https://www.physicianleaders.org/sitemap.xml,2026-10-19,raw=317 dupes_removed=0; recount via robots.txt
 globalhealing.com,US,1991,sitemap,8,https://globalhealing.com/sitemap.xml | https://globalhealing.com/sitemap.xml | https://globalhealing.com/sitemap.xml,2026-10-19,raw=1991 dupes_removed=0; recount via robots.txt
@@ -702,7 +702,7 @@ melitashome.com,US,3309,sitemap,4,https://www.melitashome.com/sitemap.xml,2026-1
 us.usn.global,US,93,sitemap,7,https://us.usn.global/sitemap.xml,2026-10-19,raw=93 dupes_removed=0; recount via robots.txt
 samanthacarell.com,US,169,sitemap,7,https://samanthacarell.com/sitemap.xml,2026-10-19,raw=169 dupes_removed=0; recount via robots.txt
 truthpowerequipment.com,US,2842,sitemap,3,https://www.truthpowerequipment.com/sitemap.xml,2026-10-19,raw=2842 dupes_removed=0; recount via robots.txt
-eyemartexpress.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.eyemartexpress.com', port=80): Max retries exceeded))",0,,2026-10-19,
+eyemartexpress.com,US,2769,sitemap,14,https://eyemartexpress.com/sitemap.xml,2026-10-19,raw=2769 dupes_removed=0; adopted from rerun (NA->value)
 ecapcity.com,US,4926,sitemap,11,https://www.ecapcity.com/sitemap.xml,2026-10-19,raw=4926 dupes_removed=0
 matildajaneclothing.com,US,601,sitemap,6,https://matildajaneclothing.com/sitemap.xml,2026-10-19,raw=601 dupes_removed=0; recount via robots.txt
 chamsyslighting.com,US,381,sitemap,7,https://chamsyslighting.com/sitemap_index.xml,2026-10-19,raw=382 dupes_removed=1; media sitemaps skipped=2
@@ -710,44 +710,44 @@ shockdgolfballs.com,US,54,sitemap,7,https://shockdgolfballs.com/sitemap.xml,2026
 matethelabel.com,US,1211,sitemap,7,https://matethelabel.com/sitemap.xml,2026-10-19,raw=1211 dupes_removed=0
 hobbii.com,US,10662,sitemap,17,https://hobbii.com/sitemap.xml | https://hobbii.com/sitemap.xml | https://hobbii.com/sitemap.xml,2026-10-19,raw=10662 dupes_removed=0; recount via robots.txt
 6pm.com,US,1100,shop-page total,0,,2026-10-19,no sitemap found; /shop: '1100 items'
-sharonandrobertractorservice.com,US,1059,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.sharonandrobertractorservice.com/sitemap.xml', 500)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+sharonandrobertractorservice.com,US,1011,sitemap,5,https://www.sharonandrobertractorservice.com/sitemap.xml,2026-10-19,raw=1012 dupes_removed=1; adopted from rerun (fallback->complete sitemap)
 lcembroidery.com,US,2214,sitemap,1,https://www.lcembroidery.com/sitemap.xml,2026-10-19,raw=2214 dupes_removed=0
-beetlesgel.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.beetlesgel.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.beetlesgel.com', port=443): Max retries exceeded w"")])"
-gracefullymadejewelry.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gracefullymadejewelry.com', port=80): Max retries e))",0,,2026-10-19,
+beetlesgel.com,US,2254,sitemap,8,https://www.beetlesgel.com/sitemap.xml,2026-10-19,raw=2254 dupes_removed=0; adopted from rerun (NA->value)
+gracefullymadejewelry.com,US,327,sitemap,7,https://www.gracefullymadejewelry.com/sitemap.xml,2026-10-19,raw=327 dupes_removed=0; adopted from rerun (NA->value)
 wickedlysick.com,US,2526,sitemap,4,https://www.wickedlysick.com/sitemap.xml,2026-10-19,raw=2526 dupes_removed=0; recount via robots.txt
-elevenlakesmarket.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.elevenlakesmarket.com', port=80): Max retries excee))",0,,2026-10-19,
-wtbwoodworking.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.wtbwoodworking.com', port=80): Max retries exceeded))",0,,2026-10-19,
-littlezing.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.littlezing.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
+elevenlakesmarket.com,US,678,sitemap,5,https://elevenlakesmarket.com/sitemap.xml,2026-10-19,raw=678 dupes_removed=0; adopted from rerun (NA->value)
+wtbwoodworking.com,US,2451,sitemap,1,https://www.wtbwoodworking.com/sitemap.xml,2026-10-19,raw=2451 dupes_removed=0; adopted from rerun (NA->value)
+littlezing.com,US,26,sitemap,7,https://littlezing.com/sitemap.xml,2026-10-19,raw=26 dupes_removed=0; adopted from rerun (NA->value)
 lotusstonejewelry.com,US,337,sitemap,7,https://www.lotusstonejewelry.com/sitemap.xml,2026-10-19,raw=337 dupes_removed=0; recount via robots.txt
-rue21.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.rue21.com', port=80): Max retries exceeded with url))",0,,2026-10-19,
-drinkarizona.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.drinkarizona.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-store.thesymbolicworld.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.thesymbolicworld.com', port=80): Max retries ))",0,,2026-10-19,
-toplowrider.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.toplowrider.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
+rue21.com,US,752,sitemap,6,https://rue21.com/sitemap.xml,2026-10-19,raw=752 dupes_removed=0; adopted from rerun (NA->value)
+drinkarizona.com,US,625,sitemap,7,https://drinkarizona.com/sitemap.xml,2026-10-19,raw=625 dupes_removed=0; adopted from rerun (NA->value)
+store.thesymbolicworld.com,US,135,sitemap,6,https://store.thesymbolicworld.com/sitemap.xml,2026-10-19,raw=135 dupes_removed=0; adopted from rerun (NA->value)
+toplowrider.com,US,4661,sitemap,1,https://www.toplowrider.com/sitemap.xml,2026-10-19,raw=4662 dupes_removed=1; adopted from rerun (NA->value)
 usoleccompany.org,US,1434,sitemap,36,https://www.usoleccompany.org/ar_ar-sitemap.xml | https://www.usoleccompany.org/sitemap.xml | https://www.usoleccompany.org/es_es-sitemap.xml | https://www.usoleccompany.org/fr_fr-sitemap.xml,2026-10-19,raw=1435 dupes_removed=1; recount via robots.txt
-ruggedrosaries.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ruggedrosaries.com', port=80): Max retries exceeded))",0,,2026-10-19,
-shoptarnish.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='shoptarnish.com', port=443): Max retries exceeded with))",0,,2026-10-19,
+ruggedrosaries.com,US,429,sitemap,7,https://ruggedrosaries.com/sitemap.xml,2026-10-19,raw=429 dupes_removed=0; adopted from rerun (NA->value)
+shoptarnish.com,US,1255,sitemap,8,https://shoptarnish.com/sitemap.xml,2026-10-19,raw=1255 dupes_removed=0; adopted from rerun (NA->value)
 tabzone.com,US,553,sitemap,1,https://www.tabzone.com/sitemap.xml,2026-10-19,raw=553 dupes_removed=0
-venomscent.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.venomscent.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-lunya.co,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lunya.co', port=80): Max retries exceeded with url:))",0,,2026-10-19,
+venomscent.com,US,240,sitemap (US pages only),178,https://venomscent.com/sitemap.xml,2026-10-19,"raw=5269 dupes_removed=0; recount via robots.txt; country split untagged=2761,other=2268,US=240; adopted from rerun (NA->value)"
+lunya.co,US,495,sitemap,7,https://lunya.co/sitemap.xml,2026-10-19,raw=495 dupes_removed=0; adopted from rerun (NA->value)
 wolf1834.com,US,1173,sitemap (US pages only),9,https://www.wolf1834.com/pub/media/us_sitemap.xml | https://www.wolf1834.com/pub/media/uk_sitemap.xml | https://www.wolf1834.com/pub/media/eu_sitemap.xml | https://www.wolf1834.com/pub/media/au_sitemap.xml | https://www.wolf1834.com/pub/media/de_sitemap.xml (+4 more),2026-10-19,"raw=10778 dupes_removed=0; recount via robots.txt; country split other=7216,untagged=2389,US=1173"
 shoplikedreams.com,US,312,sitemap,7,https://www.shoplikedreams.com/sitemap.xml | https://www.shoplikedreams.com/sitemap.xml | https://www.shoplikedreams.com/sitemap.xml,2026-10-19,raw=312 dupes_removed=0; recount via robots.txt
 texasturbines.com,US,293,sitemap (partial: 11 of 13 sitemap files read),11,https://www.texasturbines.com/sitemap.xml | https://www.texasturbines.com/sitemap.rss,2026-10-19,raw=293 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=2: https://www.texasturbines.com/post-archive-sitemap.xml:404; https://www.texasturbines.com/sitemap.rss:unparseable
 morristowngreen.com,US,32978,sitemap,44,https://morristowngreen.com/sitemap.xml,2026-10-19,raw=33040 dupes_removed=62
-salualingerie.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.salualingerie.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-perfumesoils.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.perfumesoils.com', port=80): Max retries exceeded w))",0,,2026-10-19,
+salualingerie.com,US,357,sitemap,8,https://salualingerie.com/sitemap.xml,2026-10-19,raw=357 dupes_removed=0; adopted from rerun (NA->value)
+perfumesoils.com,US,269,sitemap,7,https://perfumesoils.com/sitemap.xml,2026-10-19,raw=269 dupes_removed=0; adopted from rerun (NA->value)
 shoppalomaclothing.com,US,499,sitemap,1,https://www.shoppalomaclothing.com/sitemap.xml,2026-10-19,raw=499 dupes_removed=0
 spoontheband.com,US,106,sitemap,7,https://spoontheband.com/sitemap.xml,2026-10-19,raw=106 dupes_removed=0
 edie-parker.com,US,275,sitemap,8,https://edie-parker.com/sitemap.xml,2026-10-19,raw=275 dupes_removed=0; recount via robots.txt
 petsmart.com,US,23430,sitemap,6,https://www.petsmart.com/sitemap_index.xml,2026-10-19,raw=23432 dupes_removed=2; recount via robots.txt; media sitemaps skipped=3
-minifigco.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.minifigco.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-micro-optics.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.micro-optics.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-lindamariesgifts.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lindamariesgifts.com', port=80): Max retries exceed))",0,,2026-10-19,
-thepaperstore.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thepaperstore.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+minifigco.com,US,5555,sitemap,16,https://minifigco.com/sitemap.xml,2026-10-19,raw=5555 dupes_removed=0; adopted from rerun (NA->value)
+micro-optics.com,US,253,sitemap,7,https://micro-optics.com/sitemap.xml,2026-10-19,raw=253 dupes_removed=0; adopted from rerun (NA->value)
+lindamariesgifts.com,US,283,sitemap,1,https://lindamariesgifts.com/sitemap.xml | https://lindamariesgifts.com/sitemap.xml | https://lindamariesgifts.com/sitemap.xml | https://lindamariesgifts.com/sitemap.xml,2026-10-19,raw=283 dupes_removed=0; adopted from rerun (NA->value)
+thepaperstore.com,US,2223,sitemap,43,https://www.thepaperstore.com/sitemaps/sitemap.xml,2026-10-19,raw=2299 dupes_removed=76; adopted from rerun (NA->value)
 mimiccolor.com,US,31,sitemap,7,https://mimiccolor.com/sitemap.xml,2026-10-19,raw=31 dupes_removed=0; recount via robots.txt
 wenthemes.com,US,256,sitemap,16,https://wenthemes.com/sitemap_index.xml,2026-10-19,raw=257 dupes_removed=1; recount via robots.txt
 glucomart.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.glucomart.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-buyedtabs.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.buyedtabs.com', port=80): Max retries exceeded with))",0,,2026-10-19,
-onboardwireless.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.onboardwireless.com', port=80): Max retries exceede))",0,,2026-10-19,
+buyedtabs.com,US,608,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+onboardwireless.com,US,136,sitemap,1,https://onboardwireless.com/sitemap.xml,2026-10-19,raw=136 dupes_removed=0; adopted from rerun (NA->value)
 cooksonmain.com,US,2385,sitemap,8,https://cooksonmain.com/sitemap.xml,2026-10-19,raw=2385 dupes_removed=0; recount via robots.txt
 eichholtzmiami.com,US,3759,sitemap,14,https://www.eichholtzmiami.com/sitemap.xml,2026-10-19,raw=3759 dupes_removed=0; recount via robots.txt
 tic-tock.com,US,2463,sitemap,16,https://tic-tock.com/sitemap_index.xml,2026-10-19,raw=2464 dupes_removed=1; recount via robots.txt
@@ -759,20 +759,20 @@ techwellness.com,US,707,sitemap,7,https://techwellness.com/sitemap.xml,2026-10-1
 drinkechelon.com,US,46,sitemap,6,https://drinkechelon.com/sitemap.xml,2026-10-19,raw=46 dupes_removed=0; recount via robots.txt
 inspirednewulm.com,US,1819,sitemap,8,https://inspirednewulm.com/sitemap.xml,2026-10-19,raw=1820 dupes_removed=1; recount via robots.txt
 cora.com,US,159,sitemap,7,https://cora.com/sitemap.xml | https://cora.com/sitemap.xml,2026-10-19,raw=159 dupes_removed=0; recount via robots.txt
-mayethelabel.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.mayethelabel.com', port=443): Max retries exceeded))",0,,2026-10-19,
-therapetmd.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.therapetmd.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-johnnycupcakes.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.johnnycupcakes.com', port=443): Max retries exceed))",0,,2026-10-19,
-lonestardrygoods.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lonestardrygoods.com', port=80): Max retries exceed))",0,,2026-10-19,
-barsupplies.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.barsupplies.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
+mayethelabel.com,US,618,sitemap,7,https://mayethelabel.com/sitemap.xml,2026-10-19,raw=618 dupes_removed=0; adopted from rerun (NA->value)
+therapetmd.com,US,444,sitemap (US pages only),37,https://therapetmd.com/sitemap.xml | https://therapetmd.com/sitemap.xml | https://therapetmd.com/sitemap.xml,2026-10-19,"raw=1555 dupes_removed=0; recount via robots.txt; country split other=666,untagged=445,US=444; adopted from rerun (NA->value)"
+johnnycupcakes.com,US,2210,sitemap,9,https://johnnycupcakes.com/sitemap.xml,2026-10-19,raw=2210 dupes_removed=0; adopted from rerun (NA->value)
+lonestardrygoods.com,US,3187,sitemap,10,https://lonestardrygoods.com/sitemap.xml,2026-10-19,raw=3187 dupes_removed=0; adopted from rerun (NA->value)
+barsupplies.com,US,6212,sitemap,13,https://barsupplies.com/sitemap.xml,2026-10-19,raw=6212 dupes_removed=0; adopted from rerun (NA->value)
 shoeshowmega.com,US,11309,sitemap,4,https://www.shoeshowmega.com/sitemap_index.xml,2026-10-19,raw=11309 dupes_removed=0; recount via robots.txt; media sitemaps skipped=2
 mexicada.shop,US,520591,sitemap,547,https://mexicada.shop/sitemap.xml,2026-10-19,raw=520591 dupes_removed=0
-migaloopool.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.migaloopool.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-innerartpeace.com,US,3208,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.innerartpeace.com/sitemap.xml', 500)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+migaloopool.com,US,326,sitemap,7,https://migaloopool.com/sitemap.xml,2026-10-19,raw=326 dupes_removed=0; adopted from rerun (NA->value)
+innerartpeace.com,US,1130,sitemap,3,https://www.innerartpeace.com/sitemap.xml,2026-10-19,raw=1130 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 locali-tee.com,US,70,sitemap,7,https://locali-tee.com/sitemap.xml,2026-10-19,raw=70 dupes_removed=0
 goodoldgold.com,US,3565,sitemap,10,https://www.goodoldgold.com/sitemap.xml,2026-10-19,raw=3565 dupes_removed=0; recount via robots.txt
-indigoplum.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.indigoplum.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
+indigoplum.com,US,349,sitemap,6,https://indigoplum.com/sitemap.xml,2026-10-19,raw=349 dupes_removed=0; adopted from rerun (NA->value)
 rugette.com,US,1365,sitemap,8,https://rugette.com/sitemap.xml,2026-10-19,raw=1365 dupes_removed=0
-churchsuitsfast.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.churchsuitsfast.com', port=80): Max retries exceede))",0,,2026-10-19,
+churchsuitsfast.com,US,7242,sitemap,14,https://churchsuitsfast.com/sitemap.xml,2026-10-19,raw=7249 dupes_removed=7; adopted from rerun (NA->value)
 ultimateears.com,US,38,sitemap (US pages only),29,https://www.ultimateears.com/sitemap_index.xml,2026-10-19,"raw=875 dupes_removed=0; recount via robots.txt; country split other=576,untagged=261,US=38"
 shop.surfrider.org,US,288,sitemap,5,https://shop.surfrider.org/sitemap.xml,2026-10-19,raw=288 dupes_removed=0
 breadtopia.com,US,1088,sitemap,9,https://breadtopia.com/sitemap.xml,2026-10-19,raw=1088 dupes_removed=0
@@ -782,17 +782,17 @@ blueguardian.com,US,174,sitemap,1,https://blueguardian.com/sitemap.xml,2026-10-1
 findkeep.love,US,7839,sitemap,13,https://www.findkeep.love/sitemap.xml,2026-10-19,raw=7839 dupes_removed=0
 dougcareequipment.com,US,3884,sitemap,1,https://www.dougcareequipment.com/sitemap.xml,2026-10-19,raw=3884 dupes_removed=0
 benchmarkofpalmbeach.com,US,1036,sitemap,1,http://www.benchmarkofpalmbeach.com/sitemap.xml,2026-10-19,raw=1036 dupes_removed=0
-thelifestyleclothing.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thelifestyleclothing.com', port=80): Max retries ex))",0,,2026-10-19,
-lolavioletmusic.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.lolavioletmusic.com', port=80): Max retries exceede))",0,,2026-10-19,
-shapeshifterz.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shapeshifterz.com', port=80): Max retries exceeded ))",0,,2026-10-19,
-littletoncoin.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.littletoncoin.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+thelifestyleclothing.com,US,46,sitemap,6,https://thelifestyleclothing.com/sitemap.xml,2026-10-19,raw=46 dupes_removed=0; adopted from rerun (NA->value)
+lolavioletmusic.com,US,14,sitemap,6,https://www.lolavioletmusic.com/sitemap.xml,2026-10-19,raw=14 dupes_removed=0; adopted from rerun (NA->value)
+shapeshifterz.com,US,229,sitemap,7,https://shapeshifterz.com/sitemap.xml,2026-10-19,raw=229 dupes_removed=0; adopted from rerun (NA->value)
+littletoncoin.com,US,6678,sitemap,1,https://www.littletoncoin.com/shop/api/assets/SiteMap/sitemap_10001.xml,2026-10-19,raw=9371 dupes_removed=2693; adopted from rerun (NA->value)
 teachingtextbooks.com,US,524,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-whiteind.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.whiteind.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-intentioncapsule.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.intentioncapsule.com', port=80): Max retries exceed))",0,,2026-10-19,
+whiteind.com,US,716,sitemap (partial: 81 of 82 sitemap files read),81,https://www.whiteind.com/sitemap-posts.txt | https://www.whiteind.com/sitemap.xml | https://www.whiteind.com/sitemap_index.xml | https://www.whiteind.com/wp-sitemap.xml,2026-10-19,raw=729 dupes_removed=13; recount via robots.txt; failed sitemap fetches after retries=1: https://www.whiteind.com/sitemap-posts.txt:404; adopted from rerun (NA->value)
+intentioncapsule.com,US,43,sitemap,6,https://intentioncapsule.com/sitemap.xml,2026-10-19,raw=43 dupes_removed=0; adopted from rerun (NA->value)
 ahuva.com,US,24288,sitemap,30,https://ahuva.com/sitemap.xml,2026-10-19,raw=24289 dupes_removed=1; recount via robots.txt
 shopkoochicke.com,US,213,sitemap,6,https://shopkoochicke.com/sitemap.xml,2026-10-19,raw=213 dupes_removed=0
 classicleatherdye.com,US,312,sitemap,7,https://classicleatherdye.com/sitemap.xml,2026-10-19,raw=312 dupes_removed=0
-rjroberts.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.rjroberts.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+rjroberts.com,US,9534,sitemap,1,https://www.rjroberts.com/sitemap.xml,2026-10-19,raw=9534 dupes_removed=0; adopted from rerun (NA->value)
 tesstudio.com,US,9085,sitemap,32,https://www.tesstudio.com/sitemap.xml,2026-10-19,raw=9085 dupes_removed=0; recount via robots.txt
 borderlinemusic.com,US,12989,sitemap,19,https://borderlinemusic.com/sitemap.xml,2026-10-19,raw=12989 dupes_removed=0; recount via robots.txt
 perfumebo.com,US,10213,sitemap,16,https://www.perfumebo.com/sitemap.xml,2026-10-19,raw=10213 dupes_removed=0; recount via robots.txt
@@ -800,35 +800,35 @@ nicepriceboo.com,US,11885,sitemap,18,https://nicepriceboo.com/sitemap.xml,2026-1
 shopruger.com,US,15946,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://shopruger.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='shopruger.com', port=443): Max retries exceeded with u"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
 abralighting.com,US,567,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://abralighting.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 jlab.com,US,27313,sitemap,87,https://www.jlab.com/sitemap.xml,2026-10-19,raw=27313 dupes_removed=0; recount via robots.txt
-reconarms.com,US,12706,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.reconarms.com/sitemap.xml', ""ReadTimeout: HTTPSConnectionPool(host='www.reconarms.com', port=443): Read timed out. (read t"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+reconarms.com,US,86882,sitemap,4,https://www.reconarms.com/sitemap.xml,2026-10-19,raw=86882 dupes_removed=0; recount via robots.txt; adopted from rerun (fallback->complete sitemap)
 rhythmandbeat.com,US,31482,sitemap,66,https://rhythmandbeat.com/sitemap.xml,2026-10-19,raw=31482 dupes_removed=0; recount via robots.txt
-ja.pjdolls.shop,US,202,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://ja.pjdolls.shop/sitemap.xml', 500)]); wayback CDX unique urlkeys (html,200; own host + www only)"
-cross.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.cross.com', port=443): Max retries exceeded with u))",0,,2026-10-19,
-gagliottacalzature.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gagliottacalzature.com', port=80): Max retries exce))",0,,2026-10-19,
-autodoorandhardware.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.autodoorandhardware.com', port=443): Max retries e))",0,,2026-10-19,
-oscaring.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='oscaring.com', port=443): Max retries exceeded with ur))",0,,2026-10-19,
-trashcansunlimited.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.trashcansunlimited.com', port=80): Max retries exce))",0,,2026-10-19,
+ja.pjdolls.shop,US,206,sitemap,3,https://ja.pjdolls.shop/sitemap.xml,2026-10-19,raw=206 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
+cross.com,US,37778,sitemap,282,https://cross.com/sitemap.xml | https://cross.com/sitemap.xml | https://cross.com/sitemap.xml,2026-10-19,raw=37778 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
+gagliottacalzature.com,US,2108,sitemap (US pages only),32,https://gagliottacalzature.com/sitemap.xml,2026-10-19,"raw=10541 dupes_removed=0; recount via robots.txt; country split untagged=4217,other=4216,US=2108; adopted from rerun (NA->value)"
+autodoorandhardware.com,US,11684,sitemap,1,https://www.autodoorandhardware.com/sitemap.xml,2026-10-19,raw=11684 dupes_removed=0; adopted from rerun (NA->value)
+oscaring.com,US,4802,sitemap,11,https://oscaring.com/sitemap.xml,2026-10-19,raw=4802 dupes_removed=0; adopted from rerun (NA->value)
+trashcansunlimited.com,US,9134,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 smithclarkcastiron.com,US,100,sitemap,6,https://smithclarkcastiron.com/sitemap.xml,2026-10-19,raw=100 dupes_removed=0
 luxe.com,US,290,sitemap,7,https://luxe.com/sitemap.xml,2026-10-19,raw=290 dupes_removed=0
-hownot2.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.hownot2.com', port=80): Max retries exceeded with u))",0,,2026-10-19,
+hownot2.com,US,2067,sitemap,8,https://hownot2.com/sitemap.xml,2026-10-19,raw=2067 dupes_removed=0; adopted from rerun (NA->value)
 imartdecor.com,US,1298,sitemap (US pages only),37,https://imartdecor.com/sitemap.xml,2026-10-19,"raw=9087 dupes_removed=0; recount via robots.txt; country split other=5192,untagged=2597,US=1298"
 shop.ezpawn.com,US,652029,sitemap,656,https://shop.ezpawn.com/sitemap.xml,2026-10-19,raw=652029 dupes_removed=0
 jeandousset.com,US,4514,sitemap,314,https://jeandousset.com/sitemap.xml,2026-10-19,raw=4514 dupes_removed=0; recount via robots.txt
-abbycurl.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.abbycurl.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-thesmokeshopguys.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thesmokeshopguys.com', port=80): Max retries exceed))",0,,2026-10-19,
-goodstoneinc.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.goodstoneinc.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-thefound.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thefound.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
+abbycurl.com,US,62,sitemap,7,https://www.abbycurl.com/sitemap.xml,2026-10-19,raw=62 dupes_removed=0; adopted from rerun (NA->value)
+thesmokeshopguys.com,US,1588,sitemap,7,https://www.thesmokeshopguys.com/sitemap.xml,2026-10-19,raw=1588 dupes_removed=0; adopted from rerun (NA->value)
+goodstoneinc.com,US,4945,sitemap,14,https://www.goodstoneinc.com/sitemap.xml,2026-10-19,raw=4945 dupes_removed=0; adopted from rerun (NA->value)
+thefound.com,US,1725,sitemap,7,https://thefound.com/sitemap.xml,2026-10-19,raw=1725 dupes_removed=0; adopted from rerun (NA->value)
 tokyobike.us,US,474,sitemap,7,https://tokyobike.us/sitemap.xml,2026-10-19,raw=474 dupes_removed=0
 bead3.com,US,8069,sitemap,1,https://www.bead3.com/sitemap.xml,2026-10-19,raw=8069 dupes_removed=0
-altarandoddity.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.altarandoddity.com', port=80): Max retries exceeded))",0,,2026-10-19,
-worthsynchronicity.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.worthsynchronicity.com', port=80): Max retries exce))",0,,2026-10-19,
-shop.innocenceproject.org,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.innocenceproject.org', port=80): Max retries e))",0,,2026-10-19,
-bikerjackets.us,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.bikerjackets.us', port=80): Max retries exceeded wi))",0,,2026-10-19,
-folkwear.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.folkwear.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-kidrobot.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.kidrobot.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
+altarandoddity.com,US,81,sitemap,7,https://altarandoddity.com/sitemap.xml,2026-10-19,raw=81 dupes_removed=0; adopted from rerun (NA->value)
+worthsynchronicity.com,US,1292,sitemap,1,https://www.worthsynchronicity.com/sitemap.xml,2026-10-19,raw=1292 dupes_removed=0; adopted from rerun (NA->value)
+shop.innocenceproject.org,US,54,sitemap,5,https://shop.innocenceproject.org/sitemap.xml,2026-10-19,raw=54 dupes_removed=0; adopted from rerun (NA->value)
+bikerjackets.us,US,5189,sitemap,16,https://bikerjackets.us/sitemap_index.xml,2026-10-19,raw=5365 dupes_removed=176; adopted from rerun (NA->value)
+folkwear.com,US,2520,sitemap,17,https://www.folkwear.com/sitemap.xml,2026-10-19,raw=2520 dupes_removed=0; adopted from rerun (NA->value)
+kidrobot.com,US,5047,sitemap,11,https://www.kidrobot.com/sitemap.xml,2026-10-19,raw=5047 dupes_removed=0; adopted from rerun (NA->value)
 thewheelexchange.com,US,3840,sitemap,10,https://www.thewheelexchange.com/sitemap.xml | https://www.thewheelexchange.com/sitemap.xml | https://www.thewheelexchange.com/sitemap.xml,2026-10-19,raw=3840 dupes_removed=0; recount via robots.txt
 shopwithcents.com,US,198,sitemap,6,https://shopwithcents.com/sitemap.xml,2026-10-19,raw=198 dupes_removed=0; recount via robots.txt
-formedscrubs.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.formedscrubs.com', port=80): Max retries exceeded w))",0,,2026-10-19,
+formedscrubs.com,US,16,sitemap,7,https://formedscrubs.com/sitemap.xml,2026-10-19,raw=16 dupes_removed=0; adopted from rerun (NA->value)
 zulaykitchen.com,US,1018,sitemap,7,https://www.zulaykitchen.com/sitemap.xml,2026-10-19,raw=1018 dupes_removed=0; recount via robots.txt
 shop.papernstitchblog.com,US,28,sitemap,6,https://shop.papernstitchblog.com/sitemap.xml,2026-10-19,raw=28 dupes_removed=0
 outlawhouseofjerky.com,US,69,sitemap,6,https://www.outlawhouseofjerky.com/sitemap.xml,2026-10-19,raw=69 dupes_removed=0; recount via robots.txt
@@ -842,11 +842,11 @@ architecturalminerals.com,US,285,sitemap,6,https://architecturalminerals.com/sit
 astrozon.us,US,664,sitemap,8,https://astrozon.us/sitemap.xml,2026-10-19,raw=665 dupes_removed=1; recount via robots.txt
 lairdsuperfood.com,US,648,sitemap,7,https://lairdsuperfood.com/sitemap.xml,2026-10-19,raw=648 dupes_removed=0; recount via robots.txt
 roserypoetry.com,US,46801,sitemap,242,https://roserypoetry.com/sitemap.xml,2026-10-19,raw=46801 dupes_removed=0; recount via robots.txt
-610greekshop.com,US,1031,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.610greekshop.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.610greekshop.com', port=443): Max retries exceeded"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
-dvsshoes.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dvsshoes.com', port=80): Max retries exceeded with ))",0,,2026-10-19,
-collectivegaming.net,US,2114,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.collectivegaming.net/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.collectivegaming.net', port=443): Max retries exce"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+610greekshop.com,US,575,sitemap,1,https://www.610greekshop.com/sitemap.xml,2026-10-19,raw=588 dupes_removed=13; adopted from rerun (fallback->complete sitemap)
+dvsshoes.com,US,237,sitemap,7,https://dvsshoes.com/sitemap.xml,2026-10-19,raw=237 dupes_removed=0; adopted from rerun (NA->value)
+collectivegaming.net,US,16504,sitemap,10,https://www.collectivegaming.net/sitemap.xml,2026-10-19,raw=16514 dupes_removed=10; adopted from rerun (fallback->complete sitemap)
 blattnerlivestock.com,US,168,sitemap,9,https://blattnerlivestock.com/sitemap_index.xml,2026-10-19,raw=169 dupes_removed=1; recount via robots.txt
-shop.thelifecoachschool.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.thelifecoachschool.com', port=80): Max retries))",0,,2026-10-19,
+shop.thelifecoachschool.com,US,8,sitemap,6,https://shop.thelifecoachschool.com/sitemap.xml,2026-10-19,raw=8 dupes_removed=0; adopted from rerun (NA->value)
 redshell.com,US,14,sitemap,6,https://redshell.com/sitemap.xml,2026-10-19,raw=14 dupes_removed=0
 kristaspence.com,US,87,sitemap,1,https://www.kristaspence.com/sitemap.xml,2026-10-19,raw=87 dupes_removed=0
 versedskin.com,US,430,sitemap,7,https://versedskin.com/sitemap.xml,2026-10-19,raw=430 dupes_removed=0
@@ -860,8 +860,8 @@ littlewoolshop.com,US,6630,sitemap,18,https://littlewoolshop.com/sitemap.xml,202
 enetautoparts.com,US,80250,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://unitedpartswholesale.com/product-sitemap73.xml', ""ConnectionError: HTTPSConnectionPool(host='unitedpartswholesale.com', port=443): Max retries exce""), ('https://unitedpartswholesale.com/product-sitemap71.xml', ""ConnectionError: HTTPSConnectionPool(host='unitedpartswholesale.com', port=443): Max retries exce"")]); woocommerce X-WP-Total (products only)"
 meadowaiken.com,US,3233,sitemap,4,https://www.meadowaiken.com/sitemap.xml,2026-10-19,raw=3233 dupes_removed=0
 aoocci.com,US,955,sitemap,17,https://aoocci.com/sitemap.xml,2026-10-19,raw=955 dupes_removed=0; recount via robots.txt
-buitragocigars.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.buitragocigars.com', port=80): Max retries exceeded))",0,,2026-10-19,
-novafurnituregallery.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.novafurnituregallery.com', port=80): Max retries ex))",0,,2026-10-19,
+buitragocigars.com,US,12693,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+novafurnituregallery.com,US,16473,sitemap,23,https://novafurnituregallery.com/sitemap.xml | https://novafurnituregallery.com/sitemap.xml | https://novafurnituregallery.com/sitemap.xml,2026-10-19,raw=16473 dupes_removed=0; adopted from rerun (NA->value)
 shtnonm.com,US,545,sitemap,6,https://www.shtnonm.com/sitemap.xml,2026-10-19,raw=545 dupes_removed=0
 livingtextiles.com,US,559,sitemap,8,https://www.livingtextiles.com/sitemap.xml,2026-10-19,raw=559 dupes_removed=0
 luminancemilano.com,US,104,sitemap,6,https://luminancemilano.com/sitemap.xml,2026-10-19,raw=104 dupes_removed=0
@@ -911,7 +911,7 @@ caseknives.com,US,1090,sitemap,7,https://caseknives.com/sitemap.xml,2026-10-19,r
 metalshop.us,US,39757,sitemap,4,https://www.metalshop.us/sitemap.xml,2026-10-19,raw=39797 dupes_removed=40
 moonstreefarm.com,US,645,sitemap,10,https://moonstreefarm.com/sitemap.xml,2026-10-19,raw=645 dupes_removed=0
 belray.com,US,290,sitemap,6,https://www.belray.com/sitemap_index.xml,2026-10-19,raw=291 dupes_removed=1
-autotoolworld.com,US,57566,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.autotoolworld.com/sitemap.xml', ""ReadTimeout: HTTPSConnectionPool(host='www.autotoolworld.com', port=443): Read timed out. (re"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+autotoolworld.com,US,237363,sitemap,7,https://www.autotoolworld.com/sitemap.xml,2026-10-19,raw=237363 dupes_removed=0; recount via robots.txt; adopted from rerun (fallback->complete sitemap)
 derya.us,US,311,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 wearthepeace.com,US,648,sitemap,7,https://wearthepeace.com/sitemap.xml,2026-10-19,raw=648 dupes_removed=0
 shop.redneckriviera.com,US,41,sitemap,6,https://shop.redneckriviera.com/sitemap.xml,2026-10-19,raw=41 dupes_removed=0
@@ -1001,7 +1001,7 @@ us.oneractive.com,US,1145,sitemap,8,https://us.oneractive.com/sitemap.xml,2026-1
 elsmoreswim.com,US,3503,sitemap,22,https://elsmoreswim.com/sitemap.xml,2026-10-19,raw=3503 dupes_removed=0
 zubaz.com,US,8298,sitemap,15,https://zubaz.com/sitemap.xml,2026-10-19,raw=8299 dupes_removed=1
 conversationconcepts.com,US,29937,sitemap,1,https://conversationconcepts.com/sitemap.xml,2026-10-19,raw=29938 dupes_removed=1
-casadesante.com,US,97727,sitemap (partial: 106 of 108 sitemap files read),106,https://casadesante.com/sitemap.xml | https://casadesante.com/pages-sitemap.xml | https://casadesante.com/images-sitemap.xml | https://casadesante.com/articles-sitemap.xml | https://casadesante.com/sitemap.xml (+7 more),2026-10-19,"raw=97727 dupes_removed=0; recount via robots.txt; media sitemaps skipped=1; failed sitemap fetches after retries=2: https://casadesante.com/articles-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='seoimages.sonshaw.com', port=443): Max retries exceede; https://casadesante.com/pages-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='seoimages.sonshaw.com', port=443): Max retries exceede"
+casadesante.com,US,97727,sitemap (partial: 106 of 108 sitemap files read),106,https://casadesante.com/sitemap.xml | https://casadesante.com/pages-sitemap.xml | https://casadesante.com/images-sitemap.xml | https://casadesante.com/articles-sitemap.xml | https://casadesante.com/sitemap.xml (+7 more),2026-10-19,"raw=97727 dupes_removed=0; recount via robots.txt; media sitemaps skipped=1; failed sitemap fetches after retries=2: https://casadesante.com/articles-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='seoimages.sonshaw.com', port=443): Max retries exceede; https://casadesante.com/pages-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='seoimages.sonshaw.com', port=443): Max retries exceede; adopted from rerun (partial->complete sitemap)"
 nygiftloft.com,US,4195,sitemap,20,https://nygiftloft.com/sitemap.xml,2026-10-19,raw=4195 dupes_removed=0
 inspiremepositive.com,US,1257,sitemap,18,https://inspiremepositive.com/sitemap.xml,2026-10-19,raw=1257 dupes_removed=0
 xvxchannel.com,US,2369,sitemap,42,https://www.xvxchannel.com/sitemap.xml,2026-10-19,raw=2369 dupes_removed=0
@@ -1052,7 +1052,7 @@ shopblushingbrunette.com,US,2256,sitemap,27,https://shopblushingbrunette.com/sit
 touchofsassyboutique.com,US,3591,sitemap,3,https://www.touchofsassyboutique.com/sitemap.xml,2026-10-19,raw=3591 dupes_removed=0
 timeconnectioninc.com,US,32578,sitemap,38,https://www.timeconnectioninc.com/sitemap.xml,2026-10-19,raw=32578 dupes_removed=0
 jaspertronics.com,US,47642,sitemap,54,https://www.jaspertronics.com/sitemap.xml,2026-10-19,raw=47642 dupes_removed=0
-ba-sh.com,US,1553,sitemap (partial: 46 of 48 sitemap files read),46,https://ba-sh.com/be/en/sitemap-0-category-en_BE.xml | https://ba-sh.com/be/en/sitemap-0-product-en_BE.xml | https://ba-sh.com/be/fr/sitemap-0-category-fr_BE.xml | https://ba-sh.com/be/fr/sitemap-0-product-fr_BE.xml | https://ba-sh.com/be/nl/sitemap-0-category-nl_BE.xml (+43 more),2026-10-19,"raw=69411 dupes_removed=2936; recount via robots.txt; country split other=34531,untagged=30391,US=1553; failed sitemap fetches after retries=2: https://ba-sh.com/se/sitemap-0-product-en_SE.xml:503; https://ba-sh.com/se/sitemap-0-category-en_SE.xml:503; US pages only"
+ba-sh.com,US,1553,sitemap (partial: 46 of 48 sitemap files read),46,https://ba-sh.com/be/en/sitemap-0-category-en_BE.xml | https://ba-sh.com/be/en/sitemap-0-product-en_BE.xml | https://ba-sh.com/be/fr/sitemap-0-category-fr_BE.xml | https://ba-sh.com/be/fr/sitemap-0-product-fr_BE.xml | https://ba-sh.com/be/nl/sitemap-0-category-nl_BE.xml (+43 more),2026-10-19,"raw=69411 dupes_removed=2936; recount via robots.txt; country split other=34531,untagged=30391,US=1553; failed sitemap fetches after retries=2: https://ba-sh.com/se/sitemap-0-product-en_SE.xml:503; https://ba-sh.com/se/sitemap-0-category-en_SE.xml:503; US pages only; adopted from rerun (partial->complete sitemap)"
 woodheatstoves.com,US,30183,sitemap,36,https://woodheatstoves.com/sitemap.xml,2026-10-19,raw=30183 dupes_removed=0
 studiocult.co,US,4336,sitemap,77,https://studiocult.co/sitemap.xml,2026-10-19,raw=4336 dupes_removed=0
 theblacktux.com,US,47498,sitemap,54,https://theblacktux.com/sitemap.xml | https://theblacktux.com/sitemap.xml | https://theblacktux.com/sitemap.xml,2026-10-19,raw=47498 dupes_removed=0
@@ -1064,7 +1064,7 @@ abayabuth.com,US,1439,sitemap (US pages only),80,https://abayabuth.com/sitemap.x
 grab2buy.com,US,126953,sitemap,133,https://www.grab2buy.com/sitemap.xml | https://www.grab2buy.com/sitemap.xml,2026-10-19,raw=126953 dupes_removed=0
 epicdesk.shop,US,891,sitemap,7,https://epicdesk.shop/sitemap.xml,2026-10-19,raw=891 dupes_removed=0
 bucketboss.com,US,186,sitemap,5,https://bucketboss.com/sitemap.xml,2026-10-19,raw=186 dupes_removed=0
-minimaloptimist.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.minimaloptimist.com', port=80): Max retries exceede))",0,,2026-10-19,
+minimaloptimist.com,US,2083,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 realwip.com,US,70,sitemap,6,https://realwip.com/sitemap.xml,2026-10-19,raw=70 dupes_removed=0; recount via robots.txt
 volitionamerica.com,US,246,sitemap,7,https://volitionamerica.com/sitemap.xml,2026-10-19,raw=246 dupes_removed=0
 denvermodern.com,US,874,sitemap,8,https://denvermodern.com/sitemap.xml | https://denvermodern.com/sitemap.xml | https://denvermodern.com/sitemap.xml,2026-10-19,raw=874 dupes_removed=0; recount via robots.txt
@@ -1082,13 +1082,13 @@ microperfumes.com,US,2281,sitemap,9,https://microperfumes.com/sitemap.xml | http
 thermos.com,US,556,sitemap,7,https://thermos.com/sitemap.xml,2026-10-19,raw=562 dupes_removed=6; recount via robots.txt
 pangeareptile.com,US,865,sitemap,7,https://www.pangeareptile.com/sitemap.xml,2026-10-19,raw=865 dupes_removed=0; recount via robots.txt
 thehummingarrow.com,US,1421,sitemap,8,https://thehummingarrow.com/sitemap.xml,2026-10-19,raw=1421 dupes_removed=0; recount via robots.txt
-americas.elizabethbradley.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.americas.elizabethbradley.com', port=80): Max retri))",0,,2026-10-19,
+americas.elizabethbradley.com,US,1062,sitemap,7,https://americas.elizabethbradley.com/sitemap.xml,2026-10-19,raw=1062 dupes_removed=0; adopted from rerun (NA->value)
 shop.rebelgirls.com,US,35,sitemap,6,https://shop.rebelgirls.com/sitemap.xml,2026-10-19,raw=35 dupes_removed=0; recount via robots.txt
-azappliance.com,US,7169,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://azappliance-com.3dcartstores.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='azappliance-com.3dcartstores.com', port=443): Max retr"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+azappliance.com,US,1074,sitemap,1,https://azappliance-com.3dcartstores.com/sitemap.xml,2026-10-19,raw=1074 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 pawpalorders.com,US,21,sitemap,7,https://pawpalorders.com/sitemap.xml,2026-10-19,raw=21 dupes_removed=0; recount via robots.txt
 funeral.com,US,10037,sitemap,16,https://funeral.com/sitemap.xml,2026-10-19,raw=10037 dupes_removed=0; recount via robots.txt
 my.seedbed.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
-store.countryrebel.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.countryrebel.com', port=80): Max retries exce))",0,,2026-10-19,
+store.countryrebel.com,US,104,sitemap,5,https://store.countryrebel.com/sitemap.xml,2026-10-19,raw=104 dupes_removed=0; adopted from rerun (NA->value)
 petro-armor.com,US,28,sitemap,6,https://petro-armor.com/sitemap.xml,2026-10-19,raw=28 dupes_removed=0; recount via robots.txt
 currentboutique.com,US,20746,sitemap,26,https://currentboutique.com/sitemap.xml,2026-10-19,raw=20746 dupes_removed=0; recount via robots.txt
 midwesttechnology.com,US,12013,sitemap,7,https://www.midwesttechnology.com/xmlsitemap.php,2026-10-19,raw=12013 dupes_removed=0; recount via robots.txt
@@ -1103,7 +1103,7 @@ shop.maverik.com,US,119,sitemap,6,https://shop.maverik.com/sitemap.xml,2026-10-1
 expressionmed.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
 straye.com,US,1168,sitemap,17,http://straye.com/sitemap.xml,2026-10-19,raw=1168 dupes_removed=0
 flexfilmstore.com,US,1547,sitemap,12,https://flexfilmstore.com/sitemap.xml,2026-10-19,raw=1547 dupes_removed=0
-igstore.insightglobal.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.igstore.insightglobal.com', port=80): Max retries e))",0,,2026-10-19,
+igstore.insightglobal.com,US,466,sitemap,7,https://igstore.insightglobal.com/sitemap.xml,2026-10-19,raw=466 dupes_removed=0; adopted from rerun (NA->value)
 maloogear.com,US,396,sitemap,7,https://www.maloogear.com/sitemap.xml,2026-10-19,raw=396 dupes_removed=0
 mower-atvparts.com,US,823,sitemap,1,https://www.mower-atvparts.com/sitemap.xml,2026-10-19,raw=824 dupes_removed=1
 blacleaf.com,US,836,sitemap,6,https://blacleaf.com/sitemap.xml,2026-10-19,raw=836 dupes_removed=0
@@ -1113,25 +1113,25 @@ littleartsupplystore.com,US,2605,sitemap,1,https://www.littleartsupplystore.com/
 adaptivespecialties.com,US,1635,sitemap,8,https://www.adaptivespecialties.com/sitemap.xml,2026-10-19,raw=1635 dupes_removed=0
 sistique.com,US,1099,sitemap,7,https://sistique.com/sitemap.xml,2026-10-19,raw=1099 dupes_removed=0
 marieandraeboutique.com,US,2394,sitemap,1,https://www.marieandraeboutique.com/sitemap.xml,2026-10-19,raw=2394 dupes_removed=0
-barabasmen.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://barabasmen.com/sitemap.xmlUser-agent:', 404)])"
+barabasmen.com,US,511,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://barabasmen.com/sitemap.xmlUser-agent:', 404)]); shopify products=467 + collections=44; /pages not enumerable; adopted from rerun (NA->value)"
 theruggedmill.com,US,1797,sitemap,1,https://www.theruggedmill.com/sitemap.xml,2026-10-19,raw=3876 dupes_removed=2079
 gottagogottathrow.com,US,38031,sitemap,44,https://gottagogottathrow.com/sitemap.xml,2026-10-19,raw=38031 dupes_removed=0; recount via robots.txt
-tommybreeze.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.tommybreeze.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-freshwatersystems.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.freshwatersystems.com', port=80): Max retries excee))",0,,2026-10-19,
+tommybreeze.com,US,613,sitemap,7,https://tommybreeze.com/sitemap.xml,2026-10-19,raw=613 dupes_removed=0; adopted from rerun (NA->value)
+freshwatersystems.com,US,17445,sitemap,23,https://www.freshwatersystems.com/sitemap.xml,2026-10-19,raw=17445 dupes_removed=0; adopted from rerun (NA->value)
 wallblush.com,US,18289,sitemap,65,https://wallblush.com/sitemap.xml,2026-10-19,raw=18289 dupes_removed=0; recount via robots.txt
 yunnansourcing.com,US,32121,sitemap,72,https://yunnansourcing.com/sitemap.xml,2026-10-19,raw=32121 dupes_removed=0; recount via robots.txt
-stingerwheels.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.stingerwheels.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+stingerwheels.com,US,306,sitemap,7,https://stingerwheels.com/sitemap.xml,2026-10-19,raw=306 dupes_removed=0; adopted from rerun (NA->value)
 pampadirect.com,US,17405,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 mercantileonmarket.com,US,2245,sitemap,1,https://www.mercantileonmarket.com/sitemap.xml,2026-10-19,raw=2245 dupes_removed=0
-gramercygifts.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gramercygifts.com', port=80): Max retries exceeded ))",0,,2026-10-19,
+gramercygifts.com,US,138,sitemap,6,https://gramercygifts.com/sitemap.xml,2026-10-19,raw=138 dupes_removed=0; adopted from rerun (NA->value)
 michelives.com,US,1124,sitemap,6,https://michelives.com/sitemap.xml,2026-10-19,raw=1124 dupes_removed=0
 steviesbeautyboutique.com,US,312,sitemap,6,https://steviesbeautyboutique.com/sitemap.xml,2026-10-19,raw=312 dupes_removed=0
 nyhardware.com,US,14252,sitemap,20,https://nyhardware.com/sitemap.xml,2026-10-19,raw=14252 dupes_removed=0; recount via robots.txt
 milkandbodybath.com,US,102,sitemap,6,https://milkandbodybath.com/sitemap.xml,2026-10-19,raw=102 dupes_removed=0
 lift.mvbank.com,US,141,sitemap,1,https://lift.mvbank.com/sitemap.xml,2026-10-19,raw=141 dupes_removed=0
-store.teamrubiconusa.org,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.teamrubiconusa.org', port=80): Max retries ex))",0,,2026-10-19,
+store.teamrubiconusa.org,US,168,sitemap,6,https://store.teamrubiconusa.org/sitemap.xml,2026-10-19,raw=168 dupes_removed=0; adopted from rerun (NA->value)
 peachfrog.com,US,57223,sitemap,34,https://peachfrog.com/wp-sitemap.xml,2026-10-19,raw=57224 dupes_removed=1; recount via robots.txt
-theculturedepot.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.theculturedepot.com', port=443): Max retries excee))",0,,2026-10-19,
+theculturedepot.com,US,244,sitemap,6,https://theculturedepot.com/sitemap.xml,2026-10-19,raw=244 dupes_removed=0; adopted from rerun (NA->value)
 arnoldjewelers.com,US,15233,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://arnoldjewelers.com/sitemap_index.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 foreverpureplace.com,US,25070,sitemap,8,https://www.foreverpureplace.com/xmlsitemap.php,2026-10-19,raw=25077 dupes_removed=7; recount via robots.txt
 dylanscandybar.com,US,462,sitemap,7,https://www.dylanscandybar.com/sitemap.xml | https://www.dylanscandybar.com/sitemap.xml | https://www.dylanscandybar.com/sitemap.xml,2026-10-19,raw=462 dupes_removed=0; recount via robots.txt
@@ -1162,18 +1162,18 @@ shop.petersenplastics.com,US,77,sitemap,7,https://shop.petersenplastics.com/site
 shopbigskynaturalhealthmt.com,US,64,sitemap,6,https://shopbigskynaturalhealthmt.com/sitemap.xml,2026-10-19,raw=64 dupes_removed=0; recount via robots.txt
 buypeel.com,US,677,sitemap,8,https://buypeel.com/sitemap.xml,2026-10-19,raw=677 dupes_removed=0; recount via robots.txt
 ornamentallyyou.com,US,6239,sitemap,12,https://ornamentallyyou.com/sitemap.xml,2026-10-19,raw=6239 dupes_removed=0; recount via robots.txt
-pellet-stove-parts-4less.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.pellet-stove-parts-4less.com', port=80): Max retrie))",0,,2026-10-19,
+pellet-stove-parts-4less.com,US,16484,sitemap,23,https://pellet-stove-parts-4less.com/sitemap.xml,2026-10-19,raw=16484 dupes_removed=0; adopted from rerun (NA->value)
 myfurniturehouse.com,US,16867,sitemap,23,https://myfurniturehouse.com/sitemap.xml | https://myfurniturehouse.com/sitemap.xml | https://myfurniturehouse.com/sitemap.xml,2026-10-19,raw=16867 dupes_removed=0; recount via robots.txt
 tabletoptournaments.us,US,90,sitemap,1,https://www.tabletoptournaments.us/sitemap.xml,2026-10-19,raw=90 dupes_removed=0
 glamrocksjewelry.com,US,650,sitemap,7,https://www.glamrocksjewelry.com/sitemap.xml,2026-10-19,raw=650 dupes_removed=0
 luxuryofwatches.com,US,5036,sitemap,6,https://www.luxuryofwatches.com/xmlsitemap.php,2026-10-19,raw=5036 dupes_removed=0
-thirdcrown.com,US,1396,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+thirdcrown.com,US,101,sitemap,5,https://www.thirdcrown.com/sitemap.xml,2026-10-19,raw=101 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 bearefoot.com,US,273,sitemap,7,https://bearefoot.com/sitemap.xml,2026-10-19,raw=273 dupes_removed=0
 thesweetwatercompany.com,US,1190,sitemap,7,https://www.thesweetwatercompany.com/sitemap.xml,2026-10-19,raw=1190 dupes_removed=0
 servertechsupply.com,US,56957,sitemap (partial: 43 of 45 sitemap files read),43,https://www.servertechsupply.com/sitemap_index.xml,2026-10-19,raw=78774 dupes_removed=21817; recount via robots.txt; failed sitemap fetches after retries=2: https://www.servertechsupply.com/product-sitemap36.xml:404; https://www.servertechsupply.com/product-sitemap38.xml:404
 theinsolestore.com,US,654,sitemap,7,https://theinsolestore.com/sitemap.xml,2026-10-19,raw=654 dupes_removed=0
-shop.visittampabay.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.visittampabay.com', port=80): Max retries exce))",0,,2026-10-19,
-fullthrottlecorvette.com,US,4997,archive,0,,2026-10-19,"redirects to www.3dcartstores.com; no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+shop.visittampabay.com,US,361,sitemap,7,https://shop.visittampabay.com/sitemap.xml,2026-10-19,raw=361 dupes_removed=0; adopted from rerun (NA->value)
+fullthrottlecorvette.com,US,2670,sitemap,1,https://www.fullthrottlecorvette.com/sitemap.xml,2026-10-19,redirects to www.3dcartstores.com; raw=2670 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 stormykromer.com,US,541,sitemap,5,https://www.stormykromer.com/xmlsitemap.php,2026-10-19,raw=542 dupes_removed=1
 tcfreeride.com,US,279,sitemap,7,https://tcfreeride.com/sitemap.xml,2026-10-19,raw=279 dupes_removed=0
 lanky-llama.com,US,49,sitemap,7,https://lanky-llama.com/sitemap.xml,2026-10-19,raw=49 dupes_removed=0
@@ -1182,12 +1182,12 @@ shopkinectd.com,US,109,sitemap,7,https://www.shopkinectd.com/sitemap.xml,2026-10
 afropenda.com,US,2932,sitemap,8,https://afropenda.com/sitemap.xml,2026-10-19,raw=2932 dupes_removed=0; recount via robots.txt
 ob-watches.com,US,4671,sitemap,27,https://ob-watches.com/sitemap.xml | https://ob-watches.com/sitemap.xml | https://ob-watches.com/sitemap.xml,2026-10-19,raw=4671 dupes_removed=0
 boobiesuperfoods.com,US,1054,sitemap,17,https://www.boobiesuperfoods.com/sitemap.xml,2026-10-19,raw=1054 dupes_removed=0; recount via robots.txt
-royaltigerimports.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.royaltigerimports.com', port=80): Max retries excee))",0,,2026-10-19,
+royaltigerimports.com,US,1032,sitemap,9,https://royaltigerimports.com/sitemap_index.xml,2026-10-19,raw=1034 dupes_removed=2; adopted from rerun (NA->value)
 shopellerae.com,US,439,sitemap,6,https://shopellerae.com/sitemap.xml,2026-10-19,raw=439 dupes_removed=0
-thefloralcowgirl.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thefloralcowgirl.com', port=80): Max retries exceed))",0,,2026-10-19,
-diamondsportgear.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.diamondsportgear.com', port=80): Max retries exceed))",0,,2026-10-19,
-origamiowl.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.origamiowl.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
-thegrantedsolutions.com,US,470,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+thefloralcowgirl.com,US,217,sitemap,6,https://thefloralcowgirl.com/sitemap.xml,2026-10-19,raw=217 dupes_removed=0; adopted from rerun (NA->value)
+diamondsportgear.com,US,2186,sitemap,8,https://www.diamondsportgear.com/sitemap.xml,2026-10-19,raw=2186 dupes_removed=0; adopted from rerun (NA->value)
+origamiowl.com,US,1332,sitemap,7,https://origamiowl.com/sitemap.xml,2026-10-19,raw=1332 dupes_removed=0; adopted from rerun (NA->value)
+thegrantedsolutions.com,US,312,sitemap,7,https://thegrantedsolutions.com/sitemap.xml,2026-10-19,raw=312 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 vaughnhockey.com,US,300,sitemap,14,https://vaughnhockey.com/sitemap.xml,2026-10-19,raw=300 dupes_removed=0; recount via guess
 shopknifepro.com,US,31,sitemap,6,https://shopknifepro.com/sitemap.xml,2026-10-19,raw=31 dupes_removed=0
 amazingolive.com,US,198,sitemap,6,https://amazingolive.com/sitemap.xml,2026-10-19,raw=198 dupes_removed=0
@@ -1207,12 +1207,12 @@ clubmonaco.com,US,6842,sitemap,38,https://www.clubmonaco.com/sitemap.xml | https
 dimensionaloutletfurniture.com,US,25237,sitemap,32,https://dimensionaloutletfurniture.com/sitemap.xml | https://dimensionaloutletfurniture.com/sitemap.xml | https://dimensionaloutletfurniture.com/sitemap.xml,2026-10-19,raw=25237 dupes_removed=0; recount via robots.txt
 reactiontackle.com,US,1521,sitemap,27,https://reactiontackle.com/sitemap.xml,2026-10-19,raw=1521 dupes_removed=0
 birthdate.co,US,7300,"sitemap (whole site, no market segment)",37,https://birthdate.co/sitemap.xml,2026-10-19,"raw=7300 dupes_removed=0; recount via robots.txt; country split untagged=4180,other=2080,AE=1040; no US segment; default storefront is 4180 of 7300 URLs; whole-site total includes 3120 URLs under other-country segments"
-thecomune.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.thecomune.com', port=443): Max retries exceeded wi))",0,,2026-10-19,
+thecomune.com,US,1321,sitemap,42,https://thecomune.com/sitemap.xml,2026-10-19,raw=1321 dupes_removed=0; adopted from rerun (NA->value)
 innioasis.com,US,2794,sitemap,97,https://www.innioasis.com/sitemap.xml | https://www.innioasis.com/sitemap.xml | https://www.innioasis.com/sitemap.xml,2026-10-19,raw=2794 dupes_removed=0; recount via robots.txt
 originalfilmart.com,US,377041,"sitemap (whole site, no market segment)",578,https://www.originalfilmart.com/sitemap.xml,2026-10-19,"raw=377041 dupes_removed=0; recount via robots.txt; country split untagged=188521,other=164955,QA=7855,SA=7855,AE=7855; no US segment; default storefront is 188521 of 377041 URLs; whole-site total includes 188520 URLs under other-country segments"
 hardypaw.com,US,50469,sitemap,82,https://hardypaw.com/sitemap.xml | https://hardypaw.com/sitemap.xml | https://hardypaw.com/sitemap.xml,2026-10-19,raw=50469 dupes_removed=0; recount via robots.txt
 tigersupplies.com,US,52096,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://tigersupplies.com/sitemap.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only)"
-steelfreak.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.steelfreak.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
+steelfreak.com,US,298,sitemap,7,https://www.steelfreak.com/sitemap.xml,2026-10-19,raw=298 dupes_removed=0; adopted from rerun (NA->value)
 shop.bleeckerstreetmedia.com,US,30,sitemap,6,https://shop.bleeckerstreetmedia.com/sitemap.xml,2026-10-19,raw=30 dupes_removed=0
 classylooker.com,US,108294,sitemap,114,https://classylooker.com/sitemap.xml,2026-10-19,raw=108294 dupes_removed=0
 store.woodstockinn.com,US,69,sitemap,7,https://store.woodstockinn.com/sitemap.xml,2026-10-19,raw=69 dupes_removed=0
@@ -1220,7 +1220,7 @@ crystalgen.com,US,4510,sitemap,2,https://crystalgen.com/sitemap.xml | https://cr
 home-hero.co,US,1153,sitemap,83,https://home-hero.co/sitemap.xml,2026-10-19,raw=1153 dupes_removed=0
 tailorstore.com,US,22708,sitemap,24,https://www.tailorstore.com/sitemap.xml | https://www.tailorstore.com/at/de/sitemap.xml | https://www.tailorstore.com/au/en/sitemap.xml | https://www.tailorstore.com/be/fr/sitemap.xml | https://www.tailorstore.com/ca/en/sitemap.xml (+19 more),2026-10-19,raw=22732 dupes_removed=24
 bannerbuzz.com,US,1895,sitemap,2,https://www.bannerbuzz.com/uploads/sitemap.xml | https://www.bannerbuzz.com/uploads/images_sitemap.xml | https://www.bannerbuzz.com/uploads/video_sitemap.xml | https://www.bannerbuzz.com/blog/sitemap.xml,2026-10-19,raw=1895 dupes_removed=0; media sitemaps skipped=2
-store-us.arcticmonkeys.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store-us.arcticmonkeys.com', port=80): Max retries ))",0,,2026-10-19,
+store-us.arcticmonkeys.com,US,27,sitemap,6,https://store-us.arcticmonkeys.com/sitemap.xml,2026-10-19,raw=27 dupes_removed=0; adopted from rerun (NA->value)
 happywax.com,US,779,sitemap,7,https://happywax.com/sitemap.xml,2026-10-19,raw=779 dupes_removed=0; recount via robots.txt
 knittenword.com,US,2547,sitemap,27,https://www.knittenword.com/da_da-sitemap.xml | https://www.knittenword.com/de_de-sitemap.xml | https://www.knittenword.com/sitemap.xml | https://www.knittenword.com/es_es-sitemap.xml | https://www.knittenword.com/fr_fr-sitemap.xml (+4 more),2026-10-19,raw=2547 dupes_removed=0; recount via robots.txt
 sprecherbrewery.com,US,405,sitemap,7,https://sprecherbrewery.com/sitemap.xml,2026-10-19,raw=405 dupes_removed=0; recount via robots.txt
@@ -1230,15 +1230,15 @@ republicofuncertainty.com,US,31,sitemap,6,https://www.republicofuncertainty.com/
 theglobalstitch.com,US,200,sitemap,7,https://theglobalstitch.com/sitemap.xml,2026-10-19,raw=200 dupes_removed=0; recount via robots.txt
 store.gbg.com,US,69,sitemap,7,https://store.gbg.com/sitemap.xml,2026-10-19,raw=69 dupes_removed=0; recount via robots.txt
 poshpawn.com,US,154,sitemap,7,https://poshpawn.com/sitemap.xml,2026-10-19,raw=154 dupes_removed=0; recount via robots.txt
-store.acdc.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.acdc.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
+store.acdc.com,US,907,sitemap,6,https://store.acdc.com/sitemap.xml,2026-10-19,raw=907 dupes_removed=0; adopted from rerun (NA->value)
 badboymowerparts.com,US,2227,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 emuaid.com,US,160,sitemap,7,https://www.emuaid.com/sitemap.xml | https://www.emuaid.com/sitemap.xml | https://www.emuaid.com/sitemap.xml,2026-10-19,raw=160 dupes_removed=0; recount via robots.txt
-shop.fourpeaks.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.fourpeaks.com', port=80): Max retries exceeded))",0,,2026-10-19,
+shop.fourpeaks.com,US,505,sitemap,26,https://shop.fourpeaks.com/sitemap.xml,2026-10-19,raw=505 dupes_removed=0; adopted from rerun (NA->value)
 trybello.com,US,655,sitemap,7,https://trybello.com/sitemap.xml,2026-10-19,raw=655 dupes_removed=0; recount via robots.txt
 missionmachines.com,US,316,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 strat-o-matic.com,US,3746,sitemap (partial: 18 of 19 sitemap files read),18,https://www.strat-o-matic.com/sitemap.xml,2026-10-19,raw=3755 dupes_removed=11; recount via guess; failed sitemap fetches after retries=1: https://www.strat-o-matic.com/wp-sitemap-taxonomies-Carousel-1.xml:404
 buddhatrends.com,US,1830,sitemap,9,https://buddhatrends.com/sitemap.xml,2026-10-19,raw=1830 dupes_removed=0; recount via robots.txt
-genright.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://genright.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='genright.com', port=443): Max retries exceeded with ur"")])"
+genright.com,US,1496,sitemap,6,https://genright.com/sitemap.xml,2026-10-19,raw=1496 dupes_removed=0; adopted from rerun (NA->value)
 soledesire.com,US,489,sitemap,7,https://soledesire.com/sitemap.xml,2026-10-19,raw=489 dupes_removed=0; recount via robots.txt
 catalyst-cannabis.com,US,1359,sitemap,6,https://catalyst-cannabis.com/sitemap.xml,2026-10-19,raw=1423 dupes_removed=64; recount via robots.txt
 usa.parts,US,8730,sitemap,36,https://usa.parts/sitemap_index.xml,2026-10-19,raw=8731 dupes_removed=1
@@ -1264,13 +1264,13 @@ thepajamacompany.com,US,4004,sitemap,2,https://www.thepajamacompany.com/?target=
 saddlebackleather.com,US,812,sitemap,6,https://saddlebackleather.com/xmlsitemap.php,2026-10-19,raw=814 dupes_removed=2
 lajolie-mln.com,US,2429,sitemap,1,https://www.lajolie-mln.com/sitemap.xml,2026-10-19,raw=2429 dupes_removed=0
 gap.com,US,19181,sitemap,14,https://www.gap.com/native-sitemap.xml | https://www.gap.com/shop/native-custom-sitemap.xml,2026-10-19,raw=19354 dupes_removed=173
-ericsalodesign.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://ericsalodesign.com/a/shop/llms.txt', 'unparseable'), ('https://ericsalodesign.com/a/shop/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='ericsalodesign.com', port=443): Max retries exceeded w"")])"
+ericsalodesign.com,US,885451,sitemap (partial: 1060 of 1061 sitemap files read),1060,https://ericsalodesign.com/sitemap.xml | https://ericsalodesign.com/sitemap.xml | https://ericsalodesign.com/sitemap.xml | https://ericsalodesign.com/a/shop/sitemap.xml | https://ericsalodesign.com/a/shop/llms.txt,2026-10-19,raw=885451 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://ericsalodesign.com/a/shop/llms.txt:unparseable; adopted from rerun (NA->value)
 intlpantry.com,US,8631,sitemap,15,https://intlpantry.com/sitemap.xml,2026-10-19,raw=8631 dupes_removed=0; recount via robots.txt
 organicattire.com,US,259,sitemap,1,https://organicattire.com/sitemap.xml,2026-10-19,raw=259 dupes_removed=0
 lilcandb.com,US,969,sitemap,1,https://www.lilcandb.com/sitemap.xml,2026-10-19,raw=969 dupes_removed=0
 larsonjewelers.com,US,10396,sitemap,16,https://www.larsonjewelers.com/sitemap.xml,2026-10-19,raw=10396 dupes_removed=0
 iluvmyskin.com,US,1188,sitemap,3,https://www.iluvmyskin.com/sitemap.xml,2026-10-19,raw=1188 dupes_removed=0
-flatroofsolutions.com,US,1131,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.flatroofsolutions.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.flatroofsolutions.com', port=443): Max retries exc"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+flatroofsolutions.com,US,432,sitemap,1,https://www.flatroofsolutions.com/sitemap.xml,2026-10-19,raw=432 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 michaelkors.com,US,5114,sitemap,12,https://www.michaelkors.com/sitemap_index.xml | https://www.michaelkors.com/ca/en/sitemap_index.xml | https://www.michaelkors.com/ca/fr/sitemap_index.xml | https://www.michaelkors.com/us/es/sitemap_index.xml,2026-10-19,raw=10236 dupes_removed=5122; media sitemaps skipped=2
 booksandmortar.com,US,978,sitemap,1,https://www.booksandmortar.com/sitemap.xml,2026-10-19,raw=978 dupes_removed=0
 babobotanicals.com,US,280,sitemap,7,https://www.babobotanicals.com/sitemap.xml,2026-10-19,raw=280 dupes_removed=0
@@ -1287,11 +1287,11 @@ incsmart.biz,US,954,sitemap,1,https://www.incsmart.biz/sitemap.xml,2026-10-19,ra
 xopoutdoors.com,US,206,sitemap,7,https://xopoutdoors.com/sitemap.xml,2026-10-19,raw=206 dupes_removed=0
 not2shabbyshop.com,US,2418,sitemap,1,https://www.not2shabbyshop.com/sitemap.xml,2026-10-19,raw=2451 dupes_removed=33
 imakeny.com,US,56,sitemap,5,https://imakeny.com/sitemap.xml,2026-10-19,raw=56 dupes_removed=0
-swordfish-tools.com,US,2250,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.swordfish-tools.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.swordfish-tools.com', port=443): Max retries excee"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+swordfish-tools.com,US,2245,sitemap,3,https://www.swordfish-tools.com/sitemap.xml,2026-10-19,raw=2245 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 jpstyleco.com,US,460,sitemap,1,https://www.jpstyleco.com/sitemap.xml | https://www.jpstyleco.com/sitemap.xml | https://www.jpstyleco.com/sitemap.xml | https://www.jpstyleco.com/sitemap.xml,2026-10-19,raw=460 dupes_removed=0
 davidviergutz.com,US,114,sitemap,5,https://davidviergutz.com/sitemap.xml,2026-10-19,raw=114 dupes_removed=0
 tossware.com,US,1682,sitemap,8,https://www.tossware.com/sitemap.xml,2026-10-19,raw=1682 dupes_removed=0
-claraenergyresources.com,US,4125,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.claraenergyresources.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.claraenergyresources.com', port=443): Max retries "")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+claraenergyresources.com,US,12442,sitemap,6,https://www.claraenergyresources.com/sitemap.xml,2026-10-19,raw=12443 dupes_removed=1; adopted from rerun (fallback->complete sitemap)
 qart.com,US,3742,sitemap,1,https://qart.com/sitemap.xml,2026-10-19,raw=3754 dupes_removed=12
 thefreshgrocer.com,US,26137,sitemap,1,https://www.thefreshgrocer.com/sitemap.xml,2026-10-19,raw=26137 dupes_removed=0
 timelinewood.com,US,76,sitemap,7,https://timelinewood.com/sitemap.xml,2026-10-19,raw=76 dupes_removed=0
@@ -1411,7 +1411,7 @@ pdroutlet.com,US,751,sitemap,7,https://pdroutlet.com/sitemap.xml,2026-10-19,raw=
 curethriftshop.com,US,3537,sitemap,4,https://www.curethriftshop.com/sitemap.xml,2026-10-19,raw=3537 dupes_removed=0
 thecowboytoys.com,US,45,sitemap,7,https://thecowboytoys.com/sitemap.xml,2026-10-19,raw=45 dupes_removed=0
 coterie.com,US,290,sitemap,2,https://coterie.com/sitemap.xml,2026-10-19,raw=290 dupes_removed=0
-ourearths.com,US,478,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.ourearths.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='www.ourearths.com', port=443): Max retries exceeded wi"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+ourearths.com,US,280,sitemap,1,https://www.ourearths.com/sitemap.xml,2026-10-19,raw=280 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 xmondohair.com,US,338,sitemap,7,https://xmondohair.com/sitemap.xml,2026-10-19,raw=338 dupes_removed=0
 loudmouth.com,US,1563,sitemap,8,https://www.loudmouth.com/sitemap.xml,2026-10-19,raw=1563 dupes_removed=0
 kelltrac.com,US,287,sitemap,1,https://www.kelltrac.com/sitemap.xml,2026-10-19,raw=287 dupes_removed=0
@@ -1437,7 +1437,7 @@ hudsonhenrybakingco.com,US,,Not available (blocked by robots.txt (Disallow: /)),
 mybeautyexchange.com,US,8820,sitemap,14,https://www.mybeautyexchange.com/sitemap.xml,2026-10-19,raw=8820 dupes_removed=0; recount via robots.txt
 ourheiday.com,US,518,sitemap,7,https://ourheiday.com/sitemap.xml,2026-10-19,raw=518 dupes_removed=0
 angelawilliam.com,US,447,sitemap,6,https://angelawilliam.com/sitemap.xml,2026-10-19,raw=447 dupes_removed=0
-cmrproducts.com,US,4324,sitemap (partial: 11 of 12 sitemap files read),11,https://www.cmrproducts.com/sitemap.xml,2026-10-19,raw=5502 dupes_removed=1178; recount via guess; failed sitemap fetches after retries=1: https://www.cmrproducts.com/sitemap-misc.xml:500
+cmrproducts.com,US,4324,sitemap,11,https://www.cmrproducts.com/sitemap.xml,2026-10-19,raw=5502 dupes_removed=1178; adopted from rerun (partial->complete sitemap)
 mindbodyspiriteesystem.com,US,4984,sitemap,1,https://www.mindbodyspiriteesystem.com/sitemap.xml,2026-10-19,raw=4986 dupes_removed=2
 ceramicaddicts.com,US,2842,sitemap,1,https://www.ceramicaddicts.com/sitemap.xml,2026-10-19,raw=2842 dupes_removed=0
 bestbyte.net,US,14256,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -1605,13 +1605,13 @@ woodlandmod.com,US,2654,sitemap,9,https://woodlandmod.com/sitemap.xml,2026-10-19
 xjd.com,US,3801,sitemap,5,https://www.xjd.com/sitemaps/sitemap.xml,2026-10-19,raw=3801 dupes_removed=0; recount via robots.txt
 blissdiamond.com,US,6066,sitemap,12,https://www.blissdiamond.com/sitemap.xml,2026-10-19,raw=6066 dupes_removed=0; recount via robots.txt
 levoit.com,US,464,sitemap,7,https://levoit.com/sitemap.xml,2026-10-19,raw=464 dupes_removed=0; recount via robots.txt
-winniecouture.com,US,210,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.winniecouture.com/sitemap_index.xml', ""ConnectionError: HTTPSConnectionPool(host='www.winniecouture.com', port=443): Max retries exceede"")]); /shop: 'of 210 results'"
+winniecouture.com,US,782,sitemap,9,https://www.winniecouture.com/sitemap_index.xml,2026-10-19,raw=783 dupes_removed=1; adopted from rerun (fallback->complete sitemap)
 theveganlifeshop.com,US,883,sitemap,12,https://theveganlifeshop.com/sitemap.xml,2026-10-19,raw=883 dupes_removed=0; recount via robots.txt
 foldinfeathers.com,US,50,sitemap,5,https://www.foldinfeathers.com/sitemap.xml,2026-10-19,raw=50 dupes_removed=0; recount via robots.txt
 thetealbox.com,US,3039,sitemap,9,https://thetealbox.com/sitemap.xml,2026-10-19,raw=3039 dupes_removed=0; recount via robots.txt
 swag.snagged.com,US,13,sitemap,6,https://swag.snagged.com/sitemap.xml,2026-10-19,raw=13 dupes_removed=0; recount via robots.txt
 amoveablefeast.com,US,162,sitemap,7,https://www.amoveablefeast.com/sitemap.xml,2026-10-19,raw=162 dupes_removed=0; recount via robots.txt
-mallzona.com,US,5545,sitemap (partial: 10 of 13 sitemap files read),10,https://mallzona.com/sitemap_index.xml,2026-10-19,raw=5545 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=3: https://mallzona.com/product-sitemap10.xml:500; https://mallzona.com/product-sitemap2.xml:500; https://mallzona.com/product-sitemap1.xml:500
+mallzona.com,US,5545,sitemap,10,https://mallzona.com/sitemap_index.xml,2026-10-19,raw=5545 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 strongoakswoodshop.com,US,342,sitemap,7,https://strongoakswoodshop.com/sitemap.xml,2026-10-19,raw=342 dupes_removed=0; recount via robots.txt
 hiphopbling.com,US,5433,sitemap,11,https://www.hiphopbling.com/sitemap.xml,2026-10-19,raw=5433 dupes_removed=0; recount via robots.txt
 tastytacos.com,US,42,sitemap,7,https://www.tastytacos.com/sitemap.xml,2026-10-19,raw=42 dupes_removed=0; recount via robots.txt
@@ -1651,7 +1651,7 @@ vorticwatches.com,US,1571,sitemap,8,https://vorticwatches.com/sitemap.xml,2026-1
 thesneakcity.com,US,3208,sitemap,9,https://thesneakcity.com/sitemap.xml,2026-10-19,raw=3208 dupes_removed=0
 rehomeology.com,US,6678,sitemap,1,https://www.rehomeology.com/sitemap.xml,2026-10-19,raw=6678 dupes_removed=0
 truebotanicals.com,US,170,sitemap,7,https://truebotanicals.com/sitemap.xml,2026-10-19,raw=170 dupes_removed=0
-pureflowair.com,US,31002,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+pureflowair.com,US,117469,sitemap,128,https://pureflowair.com/sitemap.xml | https://pureflowair.com/sitemap.xml | https://pureflowair.com/sitemap.xml,2026-10-19,raw=117469 dupes_removed=0; recount via robots.txt; adopted from rerun (fallback->complete sitemap)
 buymyweedusa.com,US,905,sitemap,10,https://buymyweedusa.com/sitemap_index.xml,2026-10-19,raw=906 dupes_removed=1
 expertbrand.com,US,345,sitemap,7,https://www.expertbrand.com/sitemap.xml,2026-10-19,raw=345 dupes_removed=0
 emattressoutlet.com,US,15810,sitemap,22,https://www.emattressoutlet.com/sitemap.xml,2026-10-19,raw=15810 dupes_removed=0; recount via robots.txt
@@ -1825,7 +1825,7 @@ twevans.com,US,1564,sitemap,1,https://www.twevans.com/sitemap.xml,2026-10-19,raw
 mybargainshop.com,US,10303,sitemap,25,https://mybargainshop.com/wp-sitemap.xml,2026-10-19,raw=10303 dupes_removed=0
 pelacase.com,US,93957,sitemap,106,https://pelacase.com/sitemap.xml,2026-10-19,raw=93957 dupes_removed=0
 fivebarkingdogs.com,US,167,sitemap,1,https://www.fivebarkingdogs.com/sitemap.xml,2026-10-19,raw=167 dupes_removed=0
-store.stonesthrow.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.stonesthrow.com', port=80): Max retries excee))",0,,2026-10-19,
+store.stonesthrow.com,US,4604,sitemap,9,https://store.stonesthrow.com/sitemap.xml,2026-10-19,raw=4604 dupes_removed=0; adopted from rerun (NA->value)
 allurewyoming.com,US,1784,sitemap,8,https://allurewyoming.com/sitemap.xml | https://allurewyoming.com/sitemap.xml | https://allurewyoming.com/sitemap.xml,2026-10-19,raw=1784 dupes_removed=0
 shop.altpress.com,US,21791,sitemap,63,https://shop.altpress.com/sitemap.xml | https://shop.altpress.com/sitemap.xml | https://shop.altpress.com/sitemap.xml,2026-10-19,raw=21791 dupes_removed=0; recount via robots.txt
 brunocapelo.com,US,268,sitemap,7,https://brunocapelo.com/sitemap.xml,2026-10-19,raw=268 dupes_removed=0
@@ -1856,7 +1856,7 @@ bobsbeachchictreasures.com,US,1863,sitemap,7,https://bobsbeachchictreasures.com/
 artbymaudsch.com,US,7516,sitemap,23,https://artbymaudsch.com/sitemap.xml,2026-10-19,raw=7516 dupes_removed=0; recount via robots.txt
 elitearchery.com,US,296,sitemap,7,https://elitearchery.com/sitemap.xml,2026-10-19,raw=296 dupes_removed=0
 vittoria.com,US,665,sitemap,12,https://vittoria.com/sitemap.xml,2026-10-19,raw=665 dupes_removed=0; recount via robots.txt
-preppinpeppers.com,US,704,sitemap (partial: 8 of 9 sitemap files read),8,https://www.preppinpeppers.com/sitemap.xml | https://www.preppinpeppers.com/sitemap.xml | https://www.preppinpeppers.com/sitemap.xml | https://orders.preppinpeppers.com/sitemap-extra.xml | https://www.preppinpeppers.com/facts-sitemap.xml,2026-10-19,raw=704 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=1: https://orders.preppinpeppers.com/sitemap-extra.xml:403
+preppinpeppers.com,US,702,sitemap,8,https://www.preppinpeppers.com/sitemap.xml | https://www.preppinpeppers.com/sitemap.xml | https://www.preppinpeppers.com/sitemap.xml | https://orders.preppinpeppers.com/sitemap-extra.xml | https://www.preppinpeppers.com/facts-sitemap.xml,2026-10-19,raw=702 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 ninashoes.com,US,5941,sitemap,16,https://ninashoes.com/sitemap.xml,2026-10-19,raw=5941 dupes_removed=0
 sholayide.com,US,201,sitemap,27,https://sholayide.com/sitemap.xml,2026-10-19,raw=201 dupes_removed=0; recount via robots.txt
 icorkfloor.com,US,490,sitemap,7,https://www.icorkfloor.com/sitemap_index.xml,2026-10-19,raw=493 dupes_removed=3
@@ -1912,7 +1912,7 @@ asgonlinestore.com,US,816,sitemap,6,https://asgonlinestore.com/sitemap.xml,2026-
 diarydd.com,US,2273,sitemap,3,https://www.diarydd.com/sitemap.xml,2026-10-19,raw=2273 dupes_removed=0
 coldsteel.com,US,101289,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.coldsteel.com/sitemap.php', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
 redwagontoy.com,US,228,sitemap,6,https://redwagontoy.com/sitemap.xml,2026-10-19,raw=228 dupes_removed=0
-ruralbliss.net,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ruralbliss.net', port=80): Max retries exceeded wit))",0,,2026-10-19,
+ruralbliss.net,US,142,sitemap,1,https://ruralbliss.net/sitemap.xml | https://ruralbliss.net/sitemap.xml | https://ruralbliss.net/sitemap.xml | https://ruralbliss.net/sitemap.xml,2026-10-19,raw=142 dupes_removed=0; adopted from rerun (NA->value)
 treehut.co,US,62676,sitemap,152,https://treehut.co/sitemap.xml,2026-10-19,raw=62676 dupes_removed=0
 oldeoaktree.us,US,11179,sitemap,19,https://oldeoaktree.us/sitemap_index.xml,2026-10-19,raw=11179 dupes_removed=0
 retrocycle.com,US,62557,sitemap,69,https://retrocycle.com/sitemap.xml,2026-10-19,raw=62557 dupes_removed=0
@@ -1980,7 +1980,7 @@ getsolex.com,US,72948,sitemap,80,https://getsolex.com/sitemap.xml,2026-10-19,raw
 fossil.com,US,704976,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.fossil.com/fr-be/sitemap_index.xml', 403), ('https://www.fossil.com/en-nl/sitemap_index.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 shop.kendamausa.com,US,478,sitemap,6,https://shop.kendamausa.com/sitemap.xml,2026-10-19,raw=478 dupes_removed=0
 thedesignerindex.com,US,1417,sitemap,9,https://thedesignerindex.com/sitemap.xml,2026-10-19,raw=1417 dupes_removed=0
-shop.partnerspersonnel.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop.partnerspersonnel.com', port=80): Max retries ))",0,,2026-10-19,
+shop.partnerspersonnel.com,US,66,sitemap,6,https://shop.partnerspersonnel.com/sitemap.xml,2026-10-19,raw=66 dupes_removed=0; adopted from rerun (NA->value)
 omadagolf.com,US,70,sitemap,6,https://www.omadagolf.com/sitemap.xml,2026-10-19,raw=70 dupes_removed=0
 arthurwerickson.com,US,1199,sitemap,8,https://arthurwerickson.com/sitemap.xml,2026-10-19,raw=1199 dupes_removed=0
 ssiki.com,US,925,sitemap,6,https://ssiki.com/sitemap.xml,2026-10-19,raw=925 dupes_removed=0
@@ -2166,7 +2166,7 @@ tekram.com,US,3497,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique u
 hummerpartsguy.com,US,18291,sitemap,1,http://www.hummerpartsguy.com/sitemap.xml,2026-10-19,raw=18291 dupes_removed=0
 redwoodsole.com,US,591,sitemap,7,https://redwoodsole.com/sitemap.xml,2026-10-19,raw=591 dupes_removed=0
 allfeams.com,US,23,sitemap,6,https://allfeams.com/sitemap.xml,2026-10-19,raw=23 dupes_removed=0
-earthselements.com,US,6120,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+earthselements.com,US,1856,sitemap,8,https://www.earthselements.com/sitemap.xml,2026-10-19,raw=1856 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 thedogbreederstore.com,US,260,sitemap,1,https://www.thedogbreederstore.com/sitemap.xml,2026-10-19,raw=260 dupes_removed=0
 jestpaint.com,US,13147,sitemap,22,https://jestpaint.com/sitemap.xml,2026-10-19,raw=13147 dupes_removed=0; recount via robots.txt
 fotileus.com,US,551,sitemap,7,https://fotileus.com/sitemap.xml,2026-10-19,raw=551 dupes_removed=0
@@ -2191,7 +2191,7 @@ dipndive.com,US,9237,sitemap,15,https://dipndive.com/sitemap.xml,2026-10-19,raw=
 alstedefarms.com,US,8350,sitemap,43,https://www.alstedefarms.com/sitemap_index.xml,2026-10-19,raw=28632 dupes_removed=20280; recount via robots.txt
 sheshinely.com,US,9549,sitemap,30,https://sheshinely.com/sitemap.xml,2026-10-19,raw=9549 dupes_removed=0
 babytula.com,US,1955,sitemap,77,https://babytula.com/sitemap.xml,2026-10-19,raw=1955 dupes_removed=0
-bohemianfeline.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='bohemianfeline.com', port=443): Max retries exceeded w))",0,,2026-10-19,
+bohemianfeline.com,US,33,sitemap,6,https://bohemianfeline.com/sitemap.xml,2026-10-19,raw=33 dupes_removed=0; adopted from rerun (NA->value)
 povison.com,US,3659,sitemap,15,https://www.povison.com/sitemap.xml,2026-10-19,raw=3659 dupes_removed=0
 kmina.com,US,624,sitemap (US pages only),87,https://kmina.com/sitemap.xml,2026-10-19,"raw=6274 dupes_removed=0; country split untagged=4142,other=1508,US=624"
 stylishdivaboutique.com,US,5695,sitemap,32,https://stylishdivaboutique.com/sitemap.xml,2026-10-19,raw=5701 dupes_removed=6
@@ -2262,7 +2262,7 @@ gomezsimindustries.com,US,3949,"sitemap (whole site, no market segment)",142,htt
 shop.ravinia.org,US,587,sitemap,5,https://shop.ravinia.org/sitemap.xml,2026-10-19,raw=587 dupes_removed=0
 vermontskiandsport.com,US,1377,sitemap,8,https://www.vermontskiandsport.com/sitemap.xml,2026-10-19,raw=1377 dupes_removed=0
 eandsgallery.com,US,780,sitemap,5,https://eandsgallery.com/sitemap.xml,2026-10-19,raw=781 dupes_removed=1
-store.christianitytoday.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.christianitytoday.com', port=80): Max retries))",0,,2026-10-19,
+store.christianitytoday.com,US,514,sitemap,7,https://store.christianitytoday.com/sitemap.xml,2026-10-19,raw=514 dupes_removed=0; adopted from rerun (NA->value)
 alanjohnsonperformance.com,US,4181,sitemap,10,https://www.alanjohnsonperformance.com/sitemap_index.xml,2026-10-19,raw=4182 dupes_removed=1
 magicmedical.com,US,301,sitemap,7,https://www.magicmedical.com/sitemap.xml,2026-10-19,raw=301 dupes_removed=0
 petdelux.com,US,264,sitemap,7,https://petdelux.com/sitemap.xml,2026-10-19,raw=264 dupes_removed=0
@@ -2306,14 +2306,14 @@ springrates.com,US,137144,sitemap,143,https://www.springrates.com/sitemap.xml | 
 atomic-shop.com,US,717129,sitemap,723,https://atomic-shop.com/sitemap.xml,2026-10-19,raw=717129 dupes_removed=0; recount via robots.txt
 sneakpeektest.com,US,1851,sitemap,38,https://sneakpeektest.com/sitemap_index.xml | https://sneakpeektest.com/aus/sitemap_index.xml | https://sneakpeektest.com/uk/sitemap_index.xml | https://sneakpeektest.com/canada/sitemap_index.xml,2026-10-19,raw=1852 dupes_removed=1
 astoolstore.com,US,273,sitemap,1,https://www.astoolstore.com/sitemap.xml,2026-10-19,raw=273 dupes_removed=0
-aeropostale.com,US,1613940,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('http://www.aeropostale.com/sitemap_index.xml', ""ConnectionError: HTTPConnectionPool(host='www.aeropostale.com', port=80): Max retries exceeded wi"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+aeropostale.com,US,2916,sitemap,2,http://www.aeropostale.com/sitemap_index.xml,2026-10-19,raw=2916 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 dunali.com,US,40063,sitemap,62,https://dunali.com/sitemap.xml,2026-10-19,raw=40063 dupes_removed=0
 g4gguns.com,US,33499,sitemap,237,https://g4gguns.com/sitemap_index.xml,2026-10-19,raw=46884 dupes_removed=13385
 willygoat.com,US,3434,sitemap,10,https://willygoat.com/sitemap.xml | https://willygoat.com/sitemap.xml | https://willygoat.com/sitemap.xml,2026-10-19,raw=3434 dupes_removed=0
 sarahcamilleart.com,US,193,sitemap,7,https://sarahcamilleart.com/sitemap.xml,2026-10-19,raw=193 dupes_removed=0
 sarmientocollection.com,US,51,sitemap,7,https://sarmientocollection.com/sitemap.xml,2026-10-19,raw=51 dupes_removed=0
 queensboro.com,US,1374,sitemap,6,https://www.queensboro.com/wf/sitemap/sitemap.xml,2026-10-19,raw=1374 dupes_removed=0
-lumenestlightinginc.com,US,3366,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.lumenestlightinginc.com/sitemap.xml', 429)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+lumenestlightinginc.com,US,18226,sitemap,5,https://www.lumenestlightinginc.com/sitemap.xml,2026-10-19,raw=18226 dupes_removed=0; adopted from rerun (fallback->complete sitemap)
 onlinestore.bavarianinn.com,US,257,sitemap,6,https://onlinestore.bavarianinn.com/sitemap.xml,2026-10-19,raw=257 dupes_removed=0
 samianneclothing.com,US,1704,sitemap,7,https://samianneclothing.com/sitemap.xml,2026-10-19,raw=1704 dupes_removed=0
 mainevintagetoys.com,US,1670,sitemap,1,https://www.mainevintagetoys.com/sitemap.xml,2026-10-19,raw=1670 dupes_removed=0
@@ -2548,7 +2548,7 @@ shoppoppys.com,US,1689,sitemap,1,https://www.shoppoppys.com/sitemap.xml,2026-10-
 armorydynamics.com,US,626,sitemap,1,https://www.armorydynamics.com/sitemap.xml,2026-10-19,raw=626 dupes_removed=0
 krakenkratom.com,US,217,sitemap,1,https://krakenkratom.com/sitemap.xml,2026-10-19,raw=217 dupes_removed=0
 mindtheg.com,US,3808,sitemap,1,https://mindtheg.com/media/sitemap/sitemap_us.xml,2026-10-19,raw=3808 dupes_removed=0
-thedoux.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://thedoux.com/thedoux.com/sitemap.xml', 404)])"
+thedoux.com,US,1,shop-page total,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://thedoux.com/thedoux.com/sitemap.xml', 404)]); /shop: '1, items'; adopted from rerun (NA->value)"
 houstonacrylic.com,US,1435,sitemap,8,https://houstonacrylic.com/sitemap.xml,2026-10-19,raw=1435 dupes_removed=0
 nfinity.com,US,502,sitemap,7,https://www.nfinity.com/sitemap.xml,2026-10-19,raw=502 dupes_removed=0
 shoprelux.com,US,3561,sitemap,1,https://www.shoprelux.com/sitemap.xml,2026-10-19,raw=3561 dupes_removed=0
@@ -2654,7 +2654,7 @@ artcanvas.com,US,12344,sitemap,18,https://www.artcanvas.com/sitemap.xml,2026-10-
 studiorsr.com,US,7195,sitemap,13,https://studiorsr.com/sitemap.xml,2026-10-19,raw=7195 dupes_removed=0
 teamjerseyspro.com,US,76016,sitemap,81,https://www.teamjerseyspro.com/sitemap.xml,2026-10-19,raw=76016 dupes_removed=0
 gundlachtools.com,US,4393,sitemap,16,https://gundlachtools.com/sitemap.xml,2026-10-19,raw=4393 dupes_removed=0
-omocat-shop.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.omocat-shop.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
+omocat-shop.com,US,596,sitemap,7,https://www.omocat-shop.com/sitemap.xml,2026-10-19,raw=596 dupes_removed=0; adopted from rerun (NA->value)
 kitchenaid.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.kitchenaid.com', port=80): Max retries exceeded wit))",0,,2026-10-19,
 tirtir.global,US,333,sitemap,7,https://tirtir.global/sitemap.xml,2026-10-19,raw=333 dupes_removed=0
 fortysevenandfifth.com,US,98,sitemap,6,https://fortysevenandfifth.com/sitemap.xml,2026-10-19,raw=98 dupes_removed=0
@@ -2709,7 +2709,7 @@ toro.com,US,90673,archive,0,,2026-10-19,"sitemap present but yielded no countabl
 stellarfixtures.com,US,28312,sitemap,34,https://stellarfixtures.com/sitemap.xml,2026-10-19,raw=28312 dupes_removed=0
 alternativetentacles.com,US,1745,sitemap,8,https://alternativetentacles.com/sitemap.xml,2026-10-19,raw=1745 dupes_removed=0
 racycles.com,US,17585,sitemap,28,https://racycles.com/sitemap.xml | https://racycles.com/sitemap.xml | https://racycles.com/sitemap.xml,2026-10-19,raw=17787 dupes_removed=202
-trucktotrailerparts.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://trucktotrailer.com/sitemap.xml', ""ConnectionError: HTTPSConnectionPool(host='trucktotrailer.com', port=443): Max retries exceeded w"")])"
+trucktotrailerparts.com,US,49417,sitemap,74,https://trucktotrailer.com/sitemap.xml | https://trucktotrailer.com/sitemap.xml | https://trucktotrailer.com/sitemap.xml,2026-10-19,raw=49417 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
 highprofilecannabis.com,US,27466,sitemap,36,https://highprofilecannabis.com/sitemap_index.xml | https://highprofilecannabis.com/dispensary-sitemap-index.xml,2026-10-19,raw=27482 dupes_removed=16
 zenbearhoneytea.com,US,127,sitemap,12,https://zenbearhoneytea.com/sitemap.xml,2026-10-19,raw=127 dupes_removed=0; recount via robots.txt
 teampowersusa.com,US,297,sitemap,1,https://www.teampowersusa.com/sitemap.xml,2026-10-19,raw=297 dupes_removed=0
@@ -2752,7 +2752,7 @@ alinebridal.com,US,4682,sitemap,11,https://www.alinebridal.com/sitemap.xml,2026-
 onceuponatee.net,US,124923,sitemap,131,https://www.onceuponatee.net/sitemap.xml,2026-10-19,raw=124923 dupes_removed=0
 zildjian.com,US,3962,sitemap,10,https://zildjian.com/sitemap.xml,2026-10-19,raw=3962 dupes_removed=0
 samstores.com,US,3,sitemap,1,https://www.samstores.com/sitemap.xml,2026-10-19,raw=3 dupes_removed=0
-freeformsnyc.com,US,,"Not available (unreachable (SSLError: HTTPSConnectionPool(host='www.freeformsnyc.com', port=443): Max retries exceeded))",0,,2026-10-19,
+freeformsnyc.com,US,4641,sitemap,10,https://freeformsnyc.com/sitemap.xml,2026-10-19,raw=4641 dupes_removed=0; adopted from rerun (NA->value)
 thinkpinkbows.com,US,685,sitemap,7,https://thinkpinkbows.com/sitemap.xml,2026-10-19,raw=685 dupes_removed=0
 thosewhobloom.com,US,635,sitemap,7,https://thosewhobloom.com/sitemap.xml,2026-10-19,raw=635 dupes_removed=0
 tropicalmusicpr.com,US,6594,sitemap,10,https://www.tropicalmusicpr.com/sitemap.xml | https://www.tropicalmusicpr.com/es_es-sitemap.xml,2026-10-19,raw=6594 dupes_removed=0
@@ -2964,7 +2964,7 @@ powerboatsupply.com,US,62751,sitemap,12,https://powerboatsupply.com/xmlsitemap.p
 novodiva.com,US,169681,sitemap,422,https://novodiva.com/sitemap.xml,2026-10-19,raw=169681 dupes_removed=0; recount via robots.txt
 hydrobuilder.com,US,33206,sitemap,40,https://hydrobuilder.com/sitemap.xml | https://hydrobuilder.com/sitemap.xml | https://hydrobuilder.com/sitemap.xml,2026-10-19,raw=33206 dupes_removed=0
 theoldfashionedmens.com,US,1179,sitemap,7,https://theoldfashionedmens.com/sitemap.xml,2026-10-19,raw=1179 dupes_removed=0
-sgly.3dcartstores.com,US,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.sgly.3dcartstores.com', port=443): Max retries exc))",0,,2026-10-19,
+sgly.3dcartstores.com,US,5374,sitemap,1,https://sgly.3dcartstores.com/sitemap.xml,2026-10-19,raw=12306 dupes_removed=6928; adopted from rerun (NA->value)
 spirithoods.com,US,2754,sitemap,9,https://www.spirithoods.com/sitemap.xml | https://www.spirithoods.com/sitemap.xml | https://www.spirithoods.com/sitemap.xml,2026-10-19,raw=2754 dupes_removed=0
 themooncall.com,US,99,sitemap,6,https://themooncall.com/sitemap.xml,2026-10-19,raw=99 dupes_removed=0
 themixologer.com,US,131,sitemap,7,https://themixologer.com/sitemap.xml,2026-10-19,raw=131 dupes_removed=0
@@ -3110,7 +3110,7 @@ nrxskin.com,US,61,sitemap,5,https://nrxskin.com/sitemap.xml,2026-10-19,raw=61 du
 ultimatevapedeals.com,US,2047,sitemap,15,https://ultimatevapedeals.com/sitemap_index.xml,2026-10-19,raw=2111 dupes_removed=64
 shopsweetpieces.com,US,98,sitemap,6,https://shopsweetpieces.com/sitemap.xml,2026-10-19,raw=98 dupes_removed=0
 graceloveslace.com,US,3347,sitemap,16,https://graceloveslace.com/sitemap.xml,2026-10-19,raw=3347 dupes_removed=0
-chrysalisacres.com,US,1311,sitemap (partial: 7 of 8 sitemap files read),7,https://chrysalisacres.com/wp-sitemap.xml,2026-10-19,"raw=1311 dupes_removed=0; recount via guess; failed sitemap fetches after retries=1: https://chrysalisacres.com/shop/wp-sitemap-posts-ec-product-1.xml:ReadTimeout: HTTPSConnectionPool(host='chrysalisacres.com', port=443): Read timed out. (read "
+chrysalisacres.com,US,1311,sitemap,7,https://chrysalisacres.com/wp-sitemap.xml,2026-10-19,raw=1311 dupes_removed=0; adopted from rerun (partial->complete sitemap)
 blackflyindustries.com,US,14776,sitemap,32,https://www.blackflyindustries.com/sitemap.xml,2026-10-19,raw=14776 dupes_removed=0
 toolboxsupply.com,US,112205,sitemap,118,https://www.toolboxsupply.com/sitemap.xml,2026-10-19,raw=112205 dupes_removed=0
 furnacepartsource.com,US,105458,sitemap,16,https://www.furnacepartsource.com/xmlsitemap.php,2026-10-19,raw=105458 dupes_removed=0
@@ -3206,11 +3206,11 @@ creativescents.com,US,1087,sitemap,6,https://creativescents.com/sitemap.xml,2026
 monicarichkosann.com,US,1418,sitemap,8,https://www.monicarichkosann.com/sitemap.xml | https://www.monicarichkosann.com/sitemap.xml | https://www.monicarichkosann.com/sitemap.xml,2026-10-19,raw=1418 dupes_removed=0
 loris-lots.com,US,35126,sitemap,41,https://loris-lots.com/sitemap.xml,2026-10-19,raw=35126 dupes_removed=0
 cocojewelry.com,US,424,sitemap,7,https://cocojewelry.com/sitemap.xml,2026-10-19,raw=424 dupes_removed=0
-shopbecausekids.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shopbecausekids.com', port=80): Max retries exceede))",0,,2026-10-19,
+shopbecausekids.com,US,443,sitemap,6,https://shopbecausekids.com/sitemap.xml,2026-10-19,raw=443 dupes_removed=0; adopted from rerun (NA->value)
 tanparts.com,US,944,sitemap,5,https://www.tanparts.com/sitemap.xml,2026-10-19,raw=944 dupes_removed=0
 curlsmith.com,US,381,sitemap,7,https://curlsmith.com/sitemap.xml,2026-10-19,raw=381 dupes_removed=0
 handsondeckfishing.com,US,125,sitemap,7,https://handsondeckfishing.com/sitemap.xml,2026-10-19,raw=125 dupes_removed=0
-shop-us.cityslang.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop-us.cityslang.com', port=80): Max retries excee))",0,,2026-10-19,
+shop-us.cityslang.com,US,2245,sitemap,12,https://shop-us.cityslang.com/sitemap.xml,2026-10-19,raw=2245 dupes_removed=0; adopted from rerun (NA->value)
 warburton-usa.com,US,218,sitemap,7,https://warburton-usa.com/sitemap.xml,2026-10-19,raw=218 dupes_removed=0
 bombayelectronics.com,US,1371,sitemap,8,https://www.bombayelectronics.com/sitemap.xml | https://www.bombayelectronics.com/sitemap.xml | https://www.bombayelectronics.com/sitemap.xml | https://www.bombayelectronics.com/sitemap.xml | https://www.bombayelectronics.com/sitemap.xml (+1 more),2026-10-19,raw=1371 dupes_removed=0
 pourmore.com,US,612,sitemap,8,https://pourmore.com/sitemap.xml,2026-10-19,raw=612 dupes_removed=0; recount via robots.txt
@@ -3333,7 +3333,7 @@ hamantboats.com,US,115,sitemap,1,https://www.hamantboats.com/sitemap.xml,2026-10
 store-houndsong-com.3dcartstores.com,US,19,sitemap,1,http://store-houndsong-com.3dcartstores.com/sitemap.xml,2026-10-19,raw=19 dupes_removed=0
 rocklove.com,US,572,sitemap,7,https://www.rocklove.com/sitemap.xml,2026-10-19,raw=572 dupes_removed=0
 shermusic.com,US,280,sitemap,8,https://www.shermusic.com/sitemap.xml,2026-10-19,raw=280 dupes_removed=0
-ship.giordanos.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ship.giordanos.com', port=80): Max retries exceeded))",0,,2026-10-19,
+ship.giordanos.com,US,35,sitemap,7,https://ship.giordanos.com/sitemap.xml,2026-10-19,raw=35 dupes_removed=0; adopted from rerun (NA->value)
 vanmaster.com,US,1,sitemap,1,https://vanmaster.com/sitemap.xml,2026-10-19,raw=1 dupes_removed=0
 fitnesssuperstore.com,US,4549,sitemap,10,https://www.fitnesssuperstore.com/sitemap.xml,2026-10-19,raw=4549 dupes_removed=0
 trillandlux.com,US,3041,sitemap,9,https://trillandlux.com/sitemap.xml,2026-10-19,raw=3041 dupes_removed=0
@@ -3355,7 +3355,7 @@ thepatiomistingsystem.com,US,70,sitemap,7,https://thepatiomistingsystem.com/site
 peakfamilygifts.com,US,79,sitemap,6,https://peakfamilygifts.com/sitemap.xml,2026-10-19,raw=79 dupes_removed=0
 thejewelryrepublic.com,US,262,sitemap,7,https://www.thejewelryrepublic.com/sitemap.xml,2026-10-19,raw=262 dupes_removed=0
 shop.mgae.com,US,1368,sitemap,8,https://shop.mgae.com/sitemap.xml,2026-10-19,raw=1368 dupes_removed=0
-us.alpinawatches.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.us.alpinawatches.com', port=80): Max retries exceed))",0,,2026-10-19,
+us.alpinawatches.com,US,723,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 shopelisonrd.com,US,352,sitemap,7,https://shopelisonrd.com/sitemap.xml,2026-10-19,raw=352 dupes_removed=0
 officialelectric.com,US,67,sitemap,7,https://officialelectric.com/sitemap.xml,2026-10-19,raw=67 dupes_removed=0
 themalamarket.com,US,245,sitemap,7,https://themalamarket.com/sitemap.xml,2026-10-19,raw=245 dupes_removed=0
@@ -3590,7 +3590,7 @@ intushealth.com,US,50,sitemap,7,https://www.intushealth.com/sitemap.xml,2026-10-
 thejbeautycollection.com,US,239,sitemap,7,https://thejbeautycollection.com/sitemap.xml | https://thejbeautycollection.com/sitemap.xml | https://thejbeautycollection.com/sitemap.xml,2026-10-19,raw=239 dupes_removed=0
 thenookinthewoods.com,US,343,sitemap,7,https://thenookinthewoods.com/sitemap.xml,2026-10-19,raw=343 dupes_removed=0
 lostnotfound.com,US,114,sitemap,7,https://lostnotfound.com/sitemap.xml,2026-10-19,raw=114 dupes_removed=0
-ironpalmtattoos.com,US,382,sitemap (partial: 10 of 110 sitemap files read),10,https://ironpalmtattoos.com/wp-sitemap.xml | https://af.ironpalmtattoos.com/wp-sitemap.xml | https://bg.ironpalmtattoos.com/wp-sitemap.xml | https://zh-CN.ironpalmtattoos.com/wp-sitemap.xml | https://zh-TW.ironpalmtattoos.com/wp-sitemap.xml (+97 more),2026-10-19,"raw=384 dupes_removed=2; recount via robots.txt; failed sitemap fetches after retries=100: https://xh.ironpalmtattoos.com/wp-sitemap.xml:ConnectionError: HTTPSConnectionPool(host='xh.ironpalmtattoos.com', port=443): Max retries exceed; https://fy.ironpalmtattoos.com/wp-sitemap.xml:403; https://sd.ironpalmtattoos.com/wp-sitemap.xml:403"
+ironpalmtattoos.com,US,382,sitemap,10,https://ironpalmtattoos.com/wp-sitemap.xml | https://af.ironpalmtattoos.com/wp-sitemap.xml | https://bg.ironpalmtattoos.com/wp-sitemap.xml | https://zh-CN.ironpalmtattoos.com/wp-sitemap.xml | https://zh-TW.ironpalmtattoos.com/wp-sitemap.xml (+97 more),2026-10-19,raw=384 dupes_removed=2; adopted from rerun (partial->complete sitemap)
 waltersky.com,US,74,sitemap,7,https://waltersky.com/sitemap.xml,2026-10-19,raw=74 dupes_removed=0
 illuminatedthreads.com,US,204,sitemap,6,https://illuminatedthreads.com/sitemap.xml | https://illuminatedthreads.com/sitemap.xml | https://illuminatedthreads.com/sitemap.xml,2026-10-19,raw=204 dupes_removed=0
 shop10pd.com,US,155,sitemap,6,https://shop10pd.com/sitemap.xml,2026-10-19,raw=155 dupes_removed=0
@@ -3802,7 +3802,7 @@ boncharge.com,US,886,sitemap,8,https://boncharge.com/sitemap.xml,2026-10-19,raw=
 bellabridesmaids.com,US,3861,sitemap,9,https://bellabridesmaids.com/sitemap.xml | https://bellabridesmaids.com/sitemap.xml | https://bellabridesmaids.com/sitemap.xml,2026-10-19,raw=3861 dupes_removed=0
 us.tatamifightwear.com,US,1329,sitemap,7,https://us.tatamifightwear.com/sitemap.xml,2026-10-19,raw=1329 dupes_removed=0
 balloonworldorlando.com,US,1540,sitemap,6,https://balloonworldorlando.com/sitemap.xml,2026-10-19,raw=1540 dupes_removed=0; recount via robots.txt
-peruvianconnection.com,US,,"Not available (unreachable (SSLError: HTTPSConnectionPool(host='www.peruvianconnection.com', port=443): Max retries ex))",0,,2026-10-19,
+peruvianconnection.com,US,9572,sitemap,50,https://www.peruvianconnection.com/sitemap.xml,2026-10-19,raw=9572 dupes_removed=0; adopted from rerun (NA->value)
 us.moshi.com,US,994,sitemap,17,https://us.moshi.com/sitemap.xml,2026-10-19,raw=994 dupes_removed=0
 interfusionart.com,US,730,sitemap,6,https://interfusionart.com/sitemap.xml,2026-10-19,raw=730 dupes_removed=0
 runwayroguebeauty.com,US,282,sitemap,7,https://runwayroguebeauty.com/sitemap.xml,2026-10-19,raw=282 dupes_removed=0
@@ -3914,7 +3914,7 @@ kifaru.net,US,763,sitemap,12,https://kifaru.net/sitemap.xml,2026-10-19,raw=763 d
 safeguardclothing.com,US,146,sitemap,7,https://www.safeguardclothing.com/sitemap.xml,2026-10-19,raw=146 dupes_removed=0
 opinioni.net,US,114,sitemap,15,https://opinioni.net/wp-sitemap.xml,2026-10-19,raw=114 dupes_removed=0
 cafecitobrand.com,US,273,sitemap,7,https://www.cafecitobrand.com/sitemap.xml,2026-10-19,raw=273 dupes_removed=0
-aucentic.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https:///sitemap.xml', ""InvalidURL: Invalid URL 'https:///sitemap.xml': No host supplied"")])"
+aucentic.com,US,1629,sitemap,27,https://aucentic.com/sitemap.xml,2026-10-19,raw=1629 dupes_removed=0; adopted from rerun (NA->value)
 theplasticsmart.com,US,231,sitemap,9,http://theplasticsmart.com/sitemap.xml,2026-10-19,raw=232 dupes_removed=1
 shoprococo.com,US,1343,sitemap,7,https://www.shoprococo.com/sitemap.xml,2026-10-19,raw=1343 dupes_removed=0
 thirteenthfloor.us,US,137,sitemap,1,https://www.thirteenthfloor.us/sitemap.xml,2026-10-19,raw=137 dupes_removed=0
@@ -4139,7 +4139,7 @@ savadeck-bike.com,US,5965,sitemap,67,https://savadeck-bike.com/sitemap.xml | htt
 honestlyevil.com,US,239,sitemap,1,https://honestlyevil.com/sitemap.xml,2026-10-19,raw=239 dupes_removed=0
 store.911memorial.org,US,354,sitemap,7,https://store.911memorial.org/sitemap.xml,2026-10-19,raw=354 dupes_removed=0
 aquatell.com,US,1096,sitemap,7,https://www.aquatell.com/sitemap.xml,2026-10-19,raw=1096 dupes_removed=0
-worldrugbyshop.com,US,,"Not available (unreachable (SSLError: HTTPSConnectionPool(host='www.worldrugbyshop.com', port=443): Max retries exceed))",0,,2026-10-19,
+worldrugbyshop.com,US,17573,sitemap,23,https://www.worldrugbyshop.com/sitemap.xml | https://www.worldrugbyshop.com/sitemap.xml | https://www.worldrugbyshop.com/sitemap.xml,2026-10-19,raw=17573 dupes_removed=0; adopted from rerun (NA->value)
 shopwhitepumpkin.com,US,6729,sitemap,1,https://www.shopwhitepumpkin.com/sitemap.xml,2026-10-19,raw=6729 dupes_removed=0
 amkogroup.com,US,465,sitemap,6,https://amkogroup.com/sitemap.xml | https://amkogroup.com/sitemap.xml | https://amkogroup.com/sitemap.xml,2026-10-19,raw=465 dupes_removed=0
 alligatorworld.com,US,2660,sitemap,9,https://www.alligatorworld.com/sitemap.xml,2026-10-19,raw=2660 dupes_removed=0
@@ -4169,7 +4169,7 @@ myteeproducts.com,US,19107,archive,0,,2026-10-19,"sitemap present but yielded no
 cardosystems.com,US,3361,sitemap,32,https://cardosystems.com/sitemap.xml,2026-10-19,raw=3361 dupes_removed=0
 revrobotics.com,US,4956,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 officedepot.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.officedepot.com', port=80): Max retries exceeded wi))",0,,2026-10-19,
-thepoppycloset.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.thepoppycloset.com', port=80): Max retries exceeded))",0,,2026-10-19,
+thepoppycloset.com,US,27,sitemap,7,https://thepoppycloset.com/sitemap.xml,2026-10-19,raw=27 dupes_removed=0; adopted from rerun (NA->value)
 apc-us.com,US,1132,sitemap,7,https://www.apc-us.com/sitemap.xml | https://www.apc-us.com/sitemap.xml | https://www.apc-us.com/sitemap.xml,2026-10-19,raw=1132 dupes_removed=0
 foriawellness.com,US,556,sitemap,7,https://www.foriawellness.com/sitemap.xml | https://www.foriawellness.com/sitemap.xml | https://www.foriawellness.com/sitemap.xml,2026-10-19,raw=556 dupes_removed=0
 galls.com,US,20713,sitemap,4,https://www.galls.com/sitemap.xml,2026-10-19,raw=20941 dupes_removed=228; recount via robots.txt
@@ -4309,8 +4309,8 @@ starcollectibles.net,US,2381,sitemap,1,https://www.starcollectibles.net/sitemap.
 booksandbulldogs.com,US,3275,sitemap,1,https://www.booksandbulldogs.com/sitemap.xml,2026-10-19,raw=3275 dupes_removed=0
 giftshop.womensmemorial.org,US,268,sitemap,6,https://giftshop.womensmemorial.org/sitemap.xml,2026-10-19,raw=268 dupes_removed=0
 mxlocker.com,US,46,sitemap,1,https://mxlocker.com/sitemap.xml,2026-10-19,raw=47 dupes_removed=1
-worldweidner.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.worldweidner.com', port=80): Max retries exceeded w))",0,,2026-10-19,
-tikitrail.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.tikitrail.com', port=80): Max retries exceeded with))",0,,2026-10-19,
+worldweidner.com,US,86353,sitemap,101,https://www.worldweidner.com/sitemap.xml,2026-10-19,raw=86353 dupes_removed=0; recount via robots.txt; adopted from rerun (NA->value)
+tikitrail.com,US,75,sitemap,7,https://tikitrail.com/sitemap.xml,2026-10-19,raw=75 dupes_removed=0; adopted from rerun (NA->value)
 activechildmusic.com,US,18,sitemap,6,https://activechildmusic.com/sitemap.xml,2026-10-19,raw=18 dupes_removed=0
 shopnicolepaloma.com,US,1257,sitemap,1,https://www.shopnicolepaloma.com/sitemap.xml,2026-10-19,raw=1257 dupes_removed=0
 wmnblack.com,US,3814,sitemap,9,https://wmnblack.com/sitemap.xml,2026-10-19,raw=3814 dupes_removed=0
@@ -4349,12 +4349,12 @@ alphagvrd.com,US,3050,sitemap,14,https://alphagvrd.com/sitemap.xml,2026-10-19,ra
 thecandykidsboutique.com,US,,Not available (blocked by robots.txt (Disallow: /)),0,,2026-10-19,
 h-andover.com,US,110916,sitemap,949,https://www.h-andover.com/sitemap.xml,2026-10-19,raw=110916 dupes_removed=0
 eleyhosereels.com,US,261,sitemap,7,https://www.eleyhosereels.com/sitemap.xml,2026-10-19,raw=261 dupes_removed=0
-delmesaliquor.com,US,,"Not available (unreachable (SSLError: HTTPSConnectionPool(host='www.delmesaliquor.com', port=443): Max retries exceede))",0,,2026-10-19,
+delmesaliquor.com,US,10552,sitemap,17,https://www.delmesaliquor.com/sitemap.xml,2026-10-19,raw=10552 dupes_removed=0; adopted from rerun (NA->value)
 bbcicecream.com,US,4049,sitemap,14,https://www.bbcicecream.com/sitemap.xml,2026-10-19,raw=4049 dupes_removed=0
 olfaproducts.com,US,318,sitemap,6,https://olfaproducts.com/sitemap.xml,2026-10-19,raw=318 dupes_removed=0
 shop.aasm.org,US,260,sitemap,6,https://shop.aasm.org/sitemap.xml,2026-10-19,raw=260 dupes_removed=0
 jordanfabrics.com,US,7971,sitemap,14,https://jordanfabrics.com/sitemap.xml,2026-10-19,raw=7971 dupes_removed=0
-integratedmedsys.com,US,,"Not available (unreachable (SSLError: HTTPSConnectionPool(host='www.integratedmedsys.com', port=443): Max retries exce))",0,,2026-10-19,
+integratedmedsys.com,US,2480,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 miltons.com,US,1229,sitemap,7,https://www.miltons.com/sitemap.xml,2026-10-19,raw=1229 dupes_removed=0
 shop.progradedigital.com,US,130,sitemap,5,https://shop.progradedigital.com/sitemap.xml,2026-10-19,raw=130 dupes_removed=0
 thedopeart.com,US,493,sitemap,7,https://thedopeart.com/sitemap.xml | https://thedopeart.com/sitemap.xml | https://thedopeart.com/sitemap.xml,2026-10-19,raw=493 dupes_removed=0
@@ -4488,16 +4488,16 @@ us.ugreen.com,US,1109,sitemap (partial: 9 of 10 sitemap files read),9,https://us
 flavorjungle.com,US,1095,sitemap,7,https://flavorjungle.com/sitemap.xml,2026-10-19,raw=1095 dupes_removed=0
 sheikparts.com,US,3042,sitemap,6,https://www.sheikparts.com/sitemap_index.xml,2026-10-19,raw=3043 dupes_removed=1
 area419.com,US,405,sitemap,10,https://www.area419.com/sitemap_index.xml,2026-10-19,raw=406 dupes_removed=1
-photo-shop.zeiss.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.photo-shop.zeiss.com', port=80): Max retries exceed))",0,,2026-10-19,
+photo-shop.zeiss.com,US,4796,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 cobi.com,US,1155,sitemap,12,https://cobi.com/sitemap.xml,2026-10-19,raw=1155 dupes_removed=0
 pdm-oz.com,US,83,sitemap,6,https://pdm-oz.com/sitemap.xml,2026-10-19,raw=83 dupes_removed=0; recount via robots.txt
 buschs.com,US,234,sitemap (partial: 5 of 7 sitemap files read),5,https://www.buschs.com/wp-sitemap.xml | https://www.buschs.com/wp-content/uploads/freshop_sitemap.xml.gz | https://www.buschs.com/sitemap.xml | https://www.buschs.com/sitemap.html,2026-10-19,raw=234 dupes_removed=0; recount via robots.txt; failed sitemap fetches after retries=2: https://www.buschs.com/wp-content/uploads/freshop_sitemap.xml.gz:404; https://www.buschs.com/sitemap.html:unparseable
 espinozawesternwear.com,US,2420,sitemap,1,https://www.espinozawesternwear.com/sitemap.xml,2026-10-19,raw=2420 dupes_removed=0
 play2wear.com,US,2280,sitemap,4,https://www.play2wear.com/sitemap.xml,2026-10-19,raw=2280 dupes_removed=0
 productsforautomation.com,US,19452,sitemap,1,https://www.productsforautomation.com/sitemap.xml,2026-10-19,raw=19453 dupes_removed=1
-pillpals.co,US,5012,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://pillpals.co/sitemap_index.xml<!--', 404)]); woocommerce X-WP-Total (products only)"
+pillpals.co,US,355035,sitemap (partial: 491 of 2530 sitemap files read),491,https://pillpals.co/sitemap_index.xml,2026-10-19,raw=95806 dupes_removed=15250; recount via robots.txt; media sitemaps skipped=1; failed sitemap fetches after retries=2039: https://pillpals.co/landing_page-sitemap833.xml:deadline; https://pillpals.co/post-sitemap1.xml:deadline; https://pillpals.co/post-sitemap2.xml:deadline; adopted from rerun (fallback->complete sitemap)
 hultafors.com,US,11901,sitemap,97,https://hultafors.com/sitemap.xml,2026-10-19,raw=11901 dupes_removed=0
-sinintermediarios.co,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.sinintermediarios.co', port=80): Max retries exceed))",0,,2026-10-19,
+sinintermediarios.co,US,119,sitemap,7,https://www.sinintermediarios.co/sitemap.xml,2026-10-19,raw=119 dupes_removed=0; adopted from rerun (NA->value)
 troxlerlabs.com,US,296,sitemap,10,https://troxlerlabs.com/wp-sitemap.xml,2026-10-19,raw=296 dupes_removed=0
 easyaidsupplies.com,US,26,sitemap,6,https://easyaidsupplies.com/sitemap.xml,2026-10-19,raw=26 dupes_removed=0
 raskolapparel.com,US,509,sitemap,7,https://raskolapparel.com/sitemap.xml,2026-10-19,raw=509 dupes_removed=0
@@ -4712,7 +4712,7 @@ aligolden.com,US,714,sitemap,7,https://aligolden.com/sitemap.xml,2026-10-19,raw=
 livenation.com,US,732787,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 petstorestuff.com,US,22,sitemap,6,https://petstorestuff.com/sitemap.xml,2026-10-19,raw=22 dupes_removed=0
 lanternpress.com,US,26189,sitemap,33,https://lanternpress.com/sitemap.xml | https://lanternpress.com/sitemap.xml | https://lanternpress.com/sitemap.xml,2026-10-19,raw=26189 dupes_removed=0
-shopline.com,US,399,sitemap (partial: 8 of 11 sitemap files read),8,https://www.shoplineapp.cn/sitemap.xml | https://www.shopline.com/sitemap.xml | https://www.shopline.sg/sitemap.xml | https://www.shopline.my/sitemap.xml | https://www.shopline.id/sitemap.xml (+6 more),2026-10-19,raw=1923 dupes_removed=1; recount via robots.txt; failed sitemap fetches after retries=3: https://www.shopline.com/uk/sitemap.xml:403; https://www.shopline.id/sitemap.xml:403; https://www.shopline.com/sitemap.xml:403
+shopline.com,US,399,sitemap,8,https://www.shoplineapp.cn/sitemap.xml | https://www.shopline.com/sitemap.xml | https://www.shopline.sg/sitemap.xml | https://www.shopline.my/sitemap.xml | https://www.shopline.id/sitemap.xml (+6 more),2026-10-19,raw=1923 dupes_removed=1; adopted from rerun (partial->complete sitemap)
 imaginechildhood.com,US,1324,sitemap,8,https://imaginechildhood.com/sitemap.xml,2026-10-19,raw=1324 dupes_removed=0
 store.zztop.com,US,74,sitemap,6,https://store.zztop.com/sitemap.xml,2026-10-19,raw=74 dupes_removed=0
 opalescence.com,US,48,sitemap,7,https://opalescence.com/sitemap.xml,2026-10-19,raw=48 dupes_removed=0

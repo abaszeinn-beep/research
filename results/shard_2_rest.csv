@@ -392,9 +392,9 @@ paperwrld.com,US,11953,"sitemap (whole site, no market segment)",62,https://pape
 hyperfly.com,US,11507,sitemap,87,https://hyperfly.com/sitemap.xml,2026-10-19,raw=11507 dupes_removed=0
 gainesvillediscountfurniture.com,US,17473,sitemap,24,https://gainesvillediscountfurniture.com/sitemap.xml | https://gainesvillediscountfurniture.com/sitemap.xml | https://gainesvillediscountfurniture.com/sitemap.xml,2026-10-19,raw=17473 dupes_removed=0
 tinytaiga.com,US,197,sitemap,6,https://tinytaiga.com/sitemap.xml,2026-10-19,raw=197 dupes_removed=0
-theouai.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.theouai.com', port=80): Max retries exceeded with u))",0,,2026-10-19,
-gvmled.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gvmled.com', port=80): Max retries exceeded with ur))",0,,2026-10-19,
-impuria.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.impuria.com', port=80): Max retries exceeded with u))",0,,2026-10-19,
+theouai.com,US,377,sitemap,7,https://theouai.com/sitemap.xml,2026-10-19,raw=377 dupes_removed=0; adopted from rerun (NA->value)
+gvmled.com,US,1076,sitemap,11,https://gvmled.com/sitemap_index.xml,2026-10-19,raw=1147 dupes_removed=71; adopted from rerun (NA->value)
+impuria.com,US,479,sitemap,7,https://impuria.com/sitemap.xml,2026-10-19,raw=479 dupes_removed=0; adopted from rerun (NA->value)
 trivita.com,US,363,sitemap,7,https://www.trivita.com/sitemap.xml,2026-10-19,raw=363 dupes_removed=0
 oldtownoil.com,US,165,sitemap,7,https://www.oldtownoil.com/sitemap.xml,2026-10-19,raw=165 dupes_removed=0
 shop.undp.org,US,120,sitemap,5,https://shop.undp.org/sitemap.xml | https://shop.undp.org/sitemap.xml | https://shop.undp.org/sitemap.xml,2026-10-19,raw=120 dupes_removed=0
@@ -1097,7 +1097,7 @@ unitexdirect.com,US,1,sitemap,1,https://unitexdirect.com/sitemap.xml,2026-10-19,
 barnesreports.com,US,10669,sitemap,4,https://www.barnesreports.com/sitemap.xml,2026-10-19,raw=10669 dupes_removed=0
 buddingbeautyboutique.com,US,427,sitemap,6,https://buddingbeautyboutique.com/sitemap.xml,2026-10-19,raw=427 dupes_removed=0
 taylorsongrace.com,US,2586,sitemap,1,https://www.taylorsongrace.com/sitemap.xml,2026-10-19,raw=2586 dupes_removed=0
-store.magnumphotos.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+store.magnumphotos.com,US,1384,sitemap,7,https://store.magnumphotos.com/sitemap.xml,2026-10-19,raw=1384 dupes_removed=0; adopted from rerun (NA->value)
 idcreator.com,US,378,sitemap,1,https://www.idcreator.com/video-sitemap.xml | https://www.idcreator.com/media/storage/sitemap.xml,2026-10-19,raw=378 dupes_removed=0; media sitemaps skipped=1
 yardbird.com,US,485,sitemap,7,https://yardbird.com/sitemap.xml | https://yardbird.com/sitemap.xml | https://yardbird.com/sitemap.xml,2026-10-19,raw=485 dupes_removed=0
 thegiftedboutique.com,US,2853,sitemap,1,https://www.thegiftedboutique.com/sitemap.xml,2026-10-19,raw=2853 dupes_removed=0
@@ -1190,7 +1190,7 @@ shopbellavita.com,US,4991,sitemap,10,https://shopbellavita.com/sitemap.xml,2026-
 wenproducts.com,US,4988,sitemap,11,https://wenproducts.com/sitemap.xml,2026-10-19,raw=4988 dupes_removed=0
 wizardofbarge.com,US,275,sitemap,6,https://wizardofbarge.com/sitemap.xml,2026-10-19,raw=275 dupes_removed=0
 urbannatural.com,US,7296,sitemap,23,https://www.urbannatural.com/sitemap.xml,2026-10-19,raw=7296 dupes_removed=0
-themountain.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+themountain.com,US,71112,archive,0,,2026-10-19,"wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 us.lisaeldridge.com,US,3383,sitemap,10,https://us.lisaeldridge.com/sitemap.xml,2026-10-19,raw=3383 dupes_removed=0
 shopjzd.com,US,959,sitemap,6,https://shopjzd.com/sitemap.xml,2026-10-19,raw=959 dupes_removed=0
 sheehanpmstore.com,US,106,sitemap,6,https://sheehanpmstore.com/sitemap.xml,2026-10-19,raw=106 dupes_removed=0
@@ -1596,7 +1596,7 @@ ewaystraders.com,US,162,sitemap,9,https://ewaystraders.com/sitemap_index.xml,202
 weargustin.com,US,4816,sitemap,1,https://www.weargustin.com/sitemap.xml,2026-10-19,raw=4816 dupes_removed=0
 thegiftwellness.com,US,220,sitemap,7,https://thegiftwellness.com/sitemap.xml,2026-10-19,raw=220 dupes_removed=0
 shop.planning.org,US,88,sitemap,6,https://shop.planning.org/sitemap.xml,2026-10-19,raw=88 dupes_removed=0
-birdbgone.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+birdbgone.com,US,30813,archive,0,,2026-10-19,"wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 jitsales.com,US,528,sitemap,7,https://www.jitsales.com/sitemap.xml,2026-10-19,raw=528 dupes_removed=0
 normansgreenhouse.com,US,2254,sitemap,1,https://www.normansgreenhouse.com/sitemap.xml,2026-10-19,raw=2254 dupes_removed=0
 pickleballcentral.com,US,2786,sitemap,6,https://pickleballcentral.com/xmlsitemap.php,2026-10-19,raw=2786 dupes_removed=0
@@ -1618,7 +1618,7 @@ orbitresearch.com,US,321,sitemap,9,https://www.orbitresearch.com/sitemap_index.x
 mikardi.com,US,160,sitemap,7,https://mikardi.com/sitemap.xml,2026-10-19,raw=160 dupes_removed=0
 hoopandframe.com,US,1501,sitemap,10,https://hoopandframe.com/sitemap.xml,2026-10-19,raw=1501 dupes_removed=0
 breachwaybait.com,US,366,sitemap,1,https://breachwaybait.com/sitemap.xml | https://breachwaybait.com/sitemap.xml | https://breachwaybait.com/sitemap.xml | https://breachwaybait.com/sitemap.xml,2026-10-19,raw=366 dupes_removed=0
-rods.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+rods.com,US,9109,platform product count,0,,2026-10-19,sitemap present but yielded no countable URLs; shopify products=8168 + collections=941; /pages not enumerable; adopted from rerun (NA->value)
 babakud.com,US,13693,sitemap,34,https://www.babakud.com/sitemap.xml,2026-10-19,raw=13693 dupes_removed=0
 albinoandpreto.com,US,2977,sitemap,10,https://www.albinoandpreto.com/sitemap.xml,2026-10-19,raw=2977 dupes_removed=0
 atlanticspice.com,US,2996,sitemap,1,http://www.atlanticspice.com/sitemap.xml,2026-10-19,raw=2996 dupes_removed=0
@@ -1975,7 +1975,7 @@ cctvcameraworld.com,US,1089,sitemap,7,https://www.cctvcameraworld.com/media/site
 thelunaamore.com,US,70,sitemap,6,https://www.thelunaamore.com/sitemap.xml,2026-10-19,raw=70 dupes_removed=0
 shakahobbies.com,US,4437,sitemap,3,https://www.shakahobbies.com/sitemap.xml,2026-10-19,raw=4437 dupes_removed=0
 dandyworldwide.com,US,895,sitemap,26,https://dandyworldwide.com/sitemap.xml,2026-10-19,raw=895 dupes_removed=0
-4into1.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+4into1.com,US,23613,archive,0,,2026-10-19,"wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 scottsmiraclegro.com,US,1648,sitemap (US pages only),5,https://www.scottsmiraclegro.com/sitemap_index.xml,2026-10-19,"raw=3232 dupes_removed=0; country split US=1648,other=1578,untagged=6"
 sashadolli.com,US,178,sitemap,7,https://sashadolli.com/sitemap.xml,2026-10-19,raw=178 dupes_removed=0
 pastforward.org,US,1120195,sitemap,1126,https://pastforward.org/sitemap.xml,2026-10-19,raw=1120195 dupes_removed=0
@@ -1986,7 +1986,7 @@ shoploveworn.com,US,491,sitemap,7,https://shoploveworn.com/sitemap.xml,2026-10-1
 store.billieeilish.com,US,254,sitemap,7,https://store.billieeilish.com/sitemap.xml,2026-10-19,raw=254 dupes_removed=0
 orthodoxjourneys.com,US,969,sitemap,5,https://www.orthodoxjourneys.com/sitemap.xml,2026-10-19,raw=969 dupes_removed=0
 checkout.sunflowerly.com,US,131638,sitemap,146,https://checkout.sunflowerly.com/sitemap.xml,2026-10-19,raw=131638 dupes_removed=0
-underwoodammo.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+underwoodammo.com,US,24733,archive,0,,2026-10-19,"wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 tower.com,US,509577,sitemap,515,https://tower.com/sitemap.xml,2026-10-19,raw=509577 dupes_removed=0
 barcoproducts.com,US,2025,sitemap,11,https://www.barcoproducts.com/media/sitemap_barco.xml,2026-10-19,raw=2026 dupes_removed=1
 xkdous.com,US,91,sitemap,6,https://xkdous.com/sitemap.xml,2026-10-19,raw=91 dupes_removed=0
@@ -2317,7 +2317,7 @@ thegymking.com,US,2426,sitemap (US pages only),156,https://thegymking.com/sitema
 shophaleybee.com,US,3830,sitemap,1,https://www.shophaleybee.com/sitemap.xml,2026-10-19,raw=3830 dupes_removed=0
 cherylsinvitations.com,US,1504,sitemap,3,https://www.cherylsinvitations.com/sitemap.xml,2026-10-19,raw=1504 dupes_removed=0
 wandrd.com,US,453,sitemap,7,https://www.wandrd.com/sitemap.xml,2026-10-19,raw=453 dupes_removed=0
-polaroid.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.polaroid.com/sitemap.xml', 404)])"
+polaroid.com,US,161292,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.polaroid.com/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 melsmedicalsupply.com,US,785,sitemap,1,https://www.melsmedicalsupply.com/sitemap.xml,2026-10-19,raw=785 dupes_removed=0
 jiyuskin.com,US,109,sitemap,17,https://www.jiyuskin.com/sitemap.xml,2026-10-19,raw=109 dupes_removed=0
 stressstop.com,US,813,sitemap,7,https://stressstop.com/sitemap.xml,2026-10-19,raw=813 dupes_removed=0
@@ -3617,27 +3617,27 @@ skiessentials.com,US,17638,sitemap,11,https://www.skiessentials.com/sitemap.xml 
 steel-toe-shoes.com,US,71009,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 store.motormia.co,US,3349646,sitemap,6002,https://store.motormia.co/sitemap.xml | https://store.motormia.co/sitemap.xml | https://store.motormia.co/sitemap.xml | https://www.motormia.co/sitemaps/sitemap-index.xml,2026-10-19,raw=5992546 dupes_removed=2642900
 us.rudsak.com,US,187722,sitemap,914,https://us.rudsak.com/sitemap.xml,2026-10-19,raw=187722 dupes_removed=0
-studio41.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,
+studio41.com,US,1264771,sitemap (partial: 1282 of 1534 sitemap files read),1282,https://studio41.com/wp-sitemap.xml,2026-10-19,raw=1274291 dupes_removed=9520; recount via robots.txt; failed sitemap fetches after retries=252: https://studio41.com/product_variation-sitemap298.xml:500; https://studio41.com/product_variation-sitemap297.xml:500; https://studio41.com/product_variation-sitemap296.xml:500; adopted from rerun (NA->value)
 hardnheavy.style,US,472597,sitemap,1094,https://hardnheavy.style/sitemap.xml,2026-10-19,raw=472639 dupes_removed=42
-borla.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
-lancome-usa.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
+borla.com,US,14175,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+lancome-usa.com,US,757914,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.lancome-usa.com/sitemap_index.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 kitterytradingpost.com,US,4881094,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-winning-moves.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,no sitemap found
-psycho-thrillersfilms.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,no sitemap found
-cheaperthandirt.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
+winning-moves.com,US,6063,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+psycho-thrillersfilms.com,US,4065,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+cheaperthandirt.com,US,1564608,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.cheaperthandirt.com/sitemap.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 sweetwater.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
-emcsps.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
-evolveelearning.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
-kmccontrols.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
-buyersproducts.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
+emcsps.com,US,2734,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+evolveelearning.com,US,6150,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
+kmccontrols.com,US,109614,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.kmccontrols.com/sitemap.rss', 403), ('https://www.kmccontrols.com/sitemap.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
+buyersproducts.com,US,9925,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 bhphotovideo.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
 nootropicsdepot.com,US,7712,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://nootropicsdepot.com/sitemap.php', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
-backcountry.com,US,,Not available (no sitemap found; no sitemap/shop total/platform count; wayback unavailable (ChunkedEncodingError)),0,,2026-10-19,no sitemap found
+backcountry.com,US,6199059,archive,0,,2026-10-19,"wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 pckeyboard.com,US,744,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 psionlinestore.com,US,9287,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 spapartsnet.com,US,33740,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 philzcoffee.com,US,6167,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-saratogaflag.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
+saratogaflag.com,US,3358,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only); adopted from rerun (NA->value)"
 golfworks.com,US,71287,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 oemusedautoparts1.com,US,29331,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 brothersperformance.com,US,43853,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -3655,7 +3655,7 @@ skdtac.com,US,21458,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique 
 yotashop.com,US,14365,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 walkersgameear.com,US,1637,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.walkersgameear.com/author-sitemap.xml', 'unparseable'), ('https://www.walkersgameear.com/downloads-sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
 proshop.innovadiscs.com,US,91109,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-pier1.com,US,,Not available (timeout: domain time budget exceeded),0,,2026-10-19,sitemap present but yielded no countable URLs
+pier1.com,US,1687769,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.pier1.com/sitemap.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only); recount: no sitemap; adopted from rerun (NA->value)"
 boardparadise.com,US,30098,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 teva.com,US,2894777,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 girotti.com,US,33373,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -3685,7 +3685,7 @@ vaswanis.com,US,5,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique ur
 hobbywurks.com,US,6452,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 applianceparts.com,US,3269594,sitemap,3275,https://applianceparts.com/sitemap.xml,2026-10-19,raw=3269594 dupes_removed=0
 palmbeachjewelry.com,US,244338,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
-reeds.com,US,162072,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+reeds.com,US,114529,sitemap,14,https://www.reeds.com/pub/media/sitemap/sitemap.xml,2026-10-19,raw=114529 dupes_removed=0; recount via robots.txt; adopted from rerun (fallback->complete sitemap)
 univair.com,US,19983,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 warbyparker.com,US,26622,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 waterskis.com,US,14497,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
@@ -3713,7 +3713,7 @@ greenpartstore.com,US,115490,archive,0,,2026-10-19,"sitemap present but yielded 
 charliebears.com,US,6620,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 voigtabstore.com,US,2255,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('http://example.com/sitemap_location.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
 waysidegardens.com,US,3833064,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
-thesecretstashonline.com,US,8865,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+thesecretstashonline.com,US,2139,sitemap,1,https://www.thesecretstashonline.com/sitemap.xml,2026-10-19,raw=2141 dupes_removed=2; adopted from rerun (fallback->complete sitemap)
 celebratingyou.co,US,1208,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
 shopjdo.com,US,3017,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 durawear.com,US,5175,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
