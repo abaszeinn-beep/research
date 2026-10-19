@@ -185,24 +185,72 @@ def iter_locs(r, deadline):
             pass
 
 
+_HOSTC = {}
+
+
+def _host_info(h, rds):
+    key = (h, id(rds))
+    v = _HOSTC.get(key)
+    if v is None:
+        ok = split_dom(h) in rds
+        hk = h[4:] if h.startswith("www.") else h
+        labels = hk.split(".")
+        ht = ""
+        if len(labels) > 2:
+            first = h.split(".")[0] if h.split(".")[0] != "www" else (h.split(".")[1] if len(h.split(".")) > 3 else "")
+            if first in MARKET_TOK: ht = MARKET_TOK[first]
+            elif first in OTHER_TOK and len(first) > 2: ht = "other"
+        v = (ok, hk, ht)
+        if len(_HOSTC) < 200000: _HOSTC[key] = v
+    return v
+
+
+_SEGC = {}
+
+
 def norm_key(url, rds):
-    try:
-        u = up.urlsplit(url.strip())
-    except ValueError:
-        return None, None
-    if u.scheme not in ("http", "https") or not u.hostname: return None, None
-    h = u.hostname.lower()
-    if split_dom(h) not in rds: return None, None
-    if FILE_EXT.search(u.path): return None, None
+    s = url.strip()
+    if s.startswith("https://"): rest = s[8:]
+    elif s.startswith("http://"): rest = s[7:]
+    else: return None, None
+    cut = len(rest)
+    for ch in "/?#":
+        k = rest.find(ch)
+        if 0 <= k < cut: cut = k
+    hp = rest[:cut]
+    if "@" in hp or ":" in hp:
+        try:
+            u = up.urlsplit(s)
+        except ValueError:
+            return None, None
+        if not u.hostname: return None, None
+        hp = u.hostname
+    tail = rest[cut:]
+    frag = tail.find("#")
+    if frag >= 0: tail = tail[:frag]
+    qi = tail.find("?")
+    path, query = (tail, "") if qi < 0 else (tail[:qi], tail[qi + 1:])
+    if not path: path = "/"
+    h = hp.lower()
+    ok, hk, ht = _host_info(h, rds)
+    if not ok: return None, None
+    if FILE_EXT.search(path): return None, None
     q = ""
-    if u.query:
-        qs = [(k, v) for k, v in up.parse_qsl(u.query, keep_blank_values=True) if not TRACK.match(k)]
+    if query:
+        qs = [(k, v) for k, v in up.parse_qsl(query, keep_blank_values=True) if not TRACK.match(k)]
         q = "?" + up.urlencode(qs) if qs else ""
-    path = u.path
-    if len(path) > 1: path = path.rstrip("/")
-    if path == "/": path = ""
-    if h.startswith("www."): h = h[4:]
-    return f"{h}{path}{q}", tag_url(h, u.path)
+    kp = path.rstrip("/") if len(path) > 1 else ""
+    if kp == "/": kp = ""
+    tag = ht
+    if not tag:
+        seg = path.split("/", 2)[1] if len(path) > 1 else ""
+        if seg:
+            tag = _SEGC.get(seg)
+            if tag is None:
+                ok2, mk, ctry = locale_market(seg)
+                tag = (mk or "other") if ok2 else ""
+                if len(_SEGC) < 100000: _SEGC[seg] = tag
+    return f"{hk}{kp}{q}", tag
 
 
 class SitemapCrawl:
@@ -241,23 +289,30 @@ class SitemapCrawl:
     def run(self, tops):
         stack = list(tops)
         pool = None
-        while stack:
-            batch = []
-            while stack and len(batch) < 8:
-                s = stack.pop()
-                if s in self.seen_sm: continue
-                self.seen_sm.add(s)
-                base = up.urlsplit(s).path.rsplit("/", 1)[-1]
-                if MEDIA_SM.search(base):
-                    self.skipped.append(s); continue
-                batch.append(s)
-            if not batch: continue
-            if len(batch) == 1:
-                stack.extend(self.one(batch[0]))
-            else:
-                if pool is None: pool = ThreadPoolExecutor(4)
-                for kids in pool.map(self.one, batch): stack.extend(kids)
-            if self.files > 6000: break
+        for rnd in range(3):
+            while stack:
+                batch = []
+                while stack and len(batch) < 8:
+                    s = stack.pop()
+                    if s in self.seen_sm: continue
+                    self.seen_sm.add(s)
+                    base = up.urlsplit(s).path.rsplit("/", 1)[-1]
+                    if MEDIA_SM.search(base):
+                        self.skipped.append(s); continue
+                    batch.append(s)
+                if not batch: continue
+                if len(batch) == 1:
+                    stack.extend(self.one(batch[0]))
+                else:
+                    if pool is None: pool = ThreadPoolExecutor(4)
+                    for kids in pool.map(self.one, batch): stack.extend(kids)
+                if self.files > 6000: break
+            retry = [u for u, e in self.failed if e not in (404, 410, "unparseable")]
+            if not retry: break
+            self.failed = [x for x in self.failed if x[0] not in retry]
+            for u in retry: self.seen_sm.discard(u)
+            time.sleep(3 * (rnd + 1))
+            stack = retry
         if pool: pool.shutdown()
 
     def one(self, s):
