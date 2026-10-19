@@ -6752,3 +6752,15 @@ on1eclothing.com,US,295,sitemap,7,https://on1eclothing.com/sitemap.xml,2026-10-1
 marineengineparts.com,US,15904,sitemap,7,https://marineengineparts.com/xmlsitemap.php,2026-10-19,raw=15904 dupes_removed=0
 store.leviton.com,US,1632,sitemap,7,https://store.leviton.com/sitemap.xml,2026-10-19,raw=1632 dupes_removed=0
 okumafishingusa.com,US,787,sitemap,8,https://okumafishingusa.com/sitemap.xml,2026-10-19,raw=787 dupes_removed=0
+olopgiftshop.com,US,4396,sitemap,1,https://olopgiftshop.com/sitemap.xml | https://olopgiftshop.com/sitemap.xml | https://olopgiftshop.com/sitemap.xml | https://olopgiftshop.com/sitemap.xml,2026-10-19,raw=4396 dupes_removed=0
+parts4cells.com,US,8259,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://parts4cells.com/sitemap.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+neonsolhandmade.com,US,251,sitemap,7,https://neonsolhandmade.com/sitemap.xml,2026-10-19,raw=251 dupes_removed=0
+shop.privatelabeltan.com,US,60,sitemap,6,https://shop.privatelabeltan.com/sitemap.xml,2026-10-19,raw=60 dupes_removed=0
+thepowdercoatstore.com,US,365,sitemap,7,https://thepowdercoatstore.com/sitemap.xml | https://thepowdercoatstore.com/sitemap.xml | https://thepowdercoatstore.com/sitemap.xml,2026-10-19,raw=365 dupes_removed=0
+shop.ticketbud.com,US,12,sitemap,5,https://shop.ticketbud.com/sitemap.xml,2026-10-19,raw=12 dupes_removed=0
+sweatybetty.com,US,368,sitemap (US pages only),7,https://www.sweatybetty.com/on/demandware.static/-/Library-Sites-sweatybettylibrary/default/sitemap/sitemap_global.xml | https://www.sweatybetty.com/sitemap_index.xml | https://www.sweatybetty.com/eu/sitemap_index.xml | https://www.sweatybetty.com/au/sitemap_index.xml | https://www.sweatybetty.com/us/sitemap_index.xml,2026-10-19,"raw=1127 dupes_removed=0; failed sitemap fetches=1: https://www.sweatybetty.com/au/sitemap_index.xml:404; country split untagged=387,other=372,US=368"
+tayloredexpressions.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,no sitemap found
+showermewithlove.com,US,3165,sitemap,8,https://showermewithlove.com/sitemap.xml,2026-10-19,raw=3165 dupes_removed=0
+alarmclocksonline.com,US,83,sitemap,1,https://www.alarmclocksonline.com/sitemap.xml,2026-10-19,raw=83 dupes_removed=0
+pixieandtheboy.com,US,3274,sitemap,1,https://www.pixieandtheboy.com/sitemap.xml,2026-10-19,raw=3274 dupes_removed=0
+thebarreltap.com,US,9338,sitemap,15,https://www.thebarreltap.com/sitemap.xml | https://www.thebarreltap.com/sitemap.xml | https://www.thebarreltap.com/sitemap.xml,2026-10-19,raw=9338 dupes_removed=0
