@@ -119,7 +119,7 @@ AJ Trading,https://ajtrading.ae/,558,sitemap,2026-10-19,Verified
 Ajaz Agri,https://ajazagri.ae/,1,archive,2026-10-19,Verified
 Ajmal Perfumes,https://www.ajmalperfume.com/,2103,archive,2026-10-19,Known major retailer – manually accepted
 Ajman Aquarium,https://ajmanaquarium.ae/,1689,sitemap,2026-10-19,Verified
-Ajman Bank,https://www.ajmanbank.ae/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.ajmanbank.ae', port=80): Read timed out. (read time))",2026-10-19,Verified
+Ajman Bank,https://www.ajmanbank.ae/,1630,archive,2026-10-19,Verified
 Ajman Coop Online,https://ajmancoop.suppy.app/,,"Not available (sitemap present but yielded no countable URLs ([('https://ajmancoop.suppy.app/sitemap.xml', 'unparseable')]); no sitemap/shop total/platform count and no archive captures)",2026-10-19,Verified
 Ajman Furniture | Buy Online Furniture UAE,https://www.ajmanfurniture.ae/,947,sitemap,2026-10-19,Verified
 Ajwan,https://ajwan.ae/,118,sitemap,2026-10-19,Verified
@@ -153,7 +153,7 @@ Al Kady Gifts,https://alkadygifts.ae/,388,sitemap,2026-10-19,Verified
 Al Khayam,https://alkhayamkitchen.ae/,398,sitemap,2026-10-19,Verified
 AL KHUBAZI MOTOR,https://alkhubaizibikes.ae/,3111,sitemap,2026-10-19,Verified
 Al Mahara Diving Center,https://www.almaharadivingcenter.ae/,147,sitemap,2026-10-19,Verified
-Al Manakh Spare Parts,https://almanakhparts.ae/,31,sitemap (partial: 3 of 10 sitemap files read),2026-10-19,Verified
+Al Manakh Spare Parts,https://almanakhparts.ae/,97,sitemap,2026-10-19,Verified
 Al Mandoos,https://almandoos.com/,609,sitemap,2026-10-19,Verified
 Al Masam Stationery LLC,https://almasam.ae/,21037,sitemap,2026-10-19,Verified
 Al Munir Computers LLC Online Shopping,https://almunircomputers.ae/,442,archive,2026-10-19,Verified
@@ -187,7 +187,7 @@ AL3ATI MARINE,https://al3ati.ae/,78,sitemap,2026-10-19,Verified
 Alam Al Aqar,https://alamalaqar.ae/,91,sitemap,2026-10-19,Verified
 Albatar,https://albatar.ae/,81,sitemap,2026-10-19,Verified
 albaytfurniture.ae,https://albaytfurniture.ae/,50,sitemap,2026-10-19,Verified
-Alchemy Designs,https://alchemydesign.ae/,51,sitemap (partial: 1 of 2 sitemap files read),2026-10-19,Verified
+Alchemy Designs,https://alchemydesign.ae/,51,sitemap,2026-10-19,Verified
 Alcon Concrete Products,https://www.alcon.ae/,97,sitemap,2026-10-19,Verified
 Aldebran,https://aldebran.ae/,2251,sitemap,2026-10-19,Verified
 Alensa UAE,https://www.alensa.ae/,,Not available (unreachable (HTTP 500)),2026-10-19,Verified
@@ -374,7 +374,7 @@ ATOMIC-SHOP Performance Parts & Motorsport Equipment - UAE,https://atomic-shop.a
 ATOMICREEF CORALS AQUATIC & LIVE ANIMALS TRADING L.L.C,https://atomicreef.ae/,215,sitemap,2026-10-19,Verified
 AtoZ Trade,https://atoztrade.ae/,271,sitemap,2026-10-19,Verified
 ATP Trading,https://www.atpgroupservices.ae/,110,sitemap,2026-10-19,Verified
-ATTACK SHARK,https://attackshark.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+ATTACK SHARK,https://attackshark.ae/,296,platform product count,2026-10-19,Verified
 AttireCorp,https://attirecorp.ae/,422,sitemap,2026-10-19,Verified
 Audentia,https://audentia.ae/,886,sitemap,2026-10-19,Verified
 Audio Shop Dubai,https://audioshopdubai.com/,1,sitemap (partial: 1 of 20 sitemap files read),2026-10-19,Verified
@@ -394,7 +394,7 @@ Autojin.ae,https://autojin.ae/,300,sitemap,2026-10-19,Verified
 Autospa,https://www.mycarcare.ae/,22,archive,2026-10-19,Verified
 Autostyle,https://autostyle.ae/,683,sitemap,2026-10-19,Verified
 Autoverse,https://autoverse.ae/,5267,sitemap,2026-10-19,Verified
-AutoWin,https://www.autowin.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+AutoWin,https://www.autowin.ae/,6195,platform product count,2026-10-19,Verified
 AV Pro’s,https://www.avpros.ae/,1929,sitemap,2026-10-19,Verified
 AVERA,https://avera.ae/,1549,sitemap,2026-10-19,Verified
 AVIS Bedlinen®,https://avisbedlinen.ae/,340,sitemap,2026-10-19,Verified
@@ -481,7 +481,7 @@ Bauerfeind UAE,https://www.bauerfeind.ae/,340,sitemap,2026-10-19,Verified
 Bayanihan Perfumes,https://bayanihan.ae/,119,sitemap,2026-10-19,Verified
 Baytak Walls and Floors,https://baytakts.ae/,99,sitemap,2026-10-19,Verified
 Baytana,https://www.baytana.ae/,117,sitemap,2026-10-19,Verified
-BazarKom,https://www.bkmaison.com/,,Not available (no sitemap found; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
+BazarKom,https://www.bkmaison.com/,,Not available (no AE pages in sitemap),2026-10-19,Verified
 Bazaro.ae,https://bazaro.ae/,154,sitemap,2026-10-19,Verified
 Bazzarchi UAE Marketplace,https://bazzarchi.ae/,968,sitemap,2026-10-19,Verified
 Be and beauty,https://beandbeauty.ae/,1295,sitemap,2026-10-19,Verified
@@ -532,7 +532,7 @@ Best Flooring Dubai Company,https://bestflooringdubai.ae/,165,sitemap,2026-10-19
 Best Food Delivery in Dubai,https://sushi.smilefood.ae/,534,sitemap,2026-10-19,Verified
 Best Gold Shop in UAE,https://bestgold.ae/,15,shop-page total,2026-10-19,Verified
 "Best in garden tools, fertilizing, pesticiding source for your needs!",https://gardencorner.ae/,756,sitemap,2026-10-19,Verified
-"Best IT Store in Dubai, UAE",https://www.sysllc.ae/,11002,sitemap (partial: 1 of 2 sitemap files read),2026-10-19,Verified
+"Best IT Store in Dubai, UAE",https://www.sysllc.ae/,11002,sitemap,2026-10-19,Verified
 Best Lattafa Perfumes for Men & Women,https://lattafa.com/,803,sitemap,2026-10-19,Verified
 Best Mix For Sweets,https://bestmix.ae/,2059,archive,2026-10-19,Verified
 Best Modern & Luxury Office Desk Collection Dubai UAE,https://office-desk.ae/,1597,sitemap,2026-10-19,Verified
@@ -559,7 +559,7 @@ bhk,https://bhk.ae/,393,sitemap,2026-10-19,Verified
 Bi Cycle Repair,https://bicyclerepair.ae/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.bicyclerepair.ae', port=443): Max retries exceeded))",2026-10-19,Verified
 Bicycle Repair Dubai,https://bikerepair.ae/,86,sitemap,2026-10-19,Verified
 BicycleFix UAE,https://bicyclefix.ae/,112,archive,2026-10-19,Verified
-Bicycles and electric bikes Electra in the official store,https://electrabike.ae/,1560,sitemap (partial: 5 of 6 sitemap files read),2026-10-19,Verified
+Bicycles and electric bikes Electra in the official store,https://electrabike.ae/,1560,sitemap,2026-10-19,Verified
 Bidfood Home,https://bidfoodhome.ae/,2318,sitemap,2026-10-19,Verified
 BIG BUDS,https://bigbudsflowers.ae/,546,sitemap (partial: 7 of 8 sitemap files read),2026-10-19,Verified
 BIG VAP,https://bigvap.ae/,864,sitemap,2026-10-19,Verified
@@ -624,14 +624,14 @@ BONCAFE,https://www.boncafeme.ae/,562,sitemap,2026-10-19,Verified
 Bonita Boutique,https://bonita.ae/,827,sitemap,2026-10-19,Verified
 Bonkerscorner UAE,https://bonkerscorner.ae/,2653,sitemap,2026-10-19,Verified
 Book Boat,https://bookboat.ae/,1056,sitemap,2026-10-19,Verified
-BookBeauty,https://bookbeauty.ae/,383,sitemap (partial: 11 of 12 sitemap files read),2026-10-19,Verified
+BookBeauty,https://bookbeauty.ae/,383,sitemap,2026-10-19,Verified
 Boom Bloom,https://boombloom.ae/,104,sitemap,2026-10-19,Verified
 Boomy,https://boomy.ae/,432,sitemap,2026-10-19,Verified
 Boosters Coffee,https://boosterscoffee.ae/,82,sitemap,2026-10-19,Verified
 Boots,https://ae.boots.com/,12115,sitemap,2026-10-19,Verified (secondary evidence)
 Border PPE,https://bordersafetywears.com/,260,sitemap,2026-10-19,Verified
 Boris becker,https://www.borisbecker.ae/,222,sitemap,2026-10-19,Verified
-Bossini,https://bossini.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+Bossini,https://bossini.ae/,166,archive,2026-10-19,Verified
 Botana,https://botana.ae/,87,sitemap,2026-10-19,Verified
 Bouguessa,https://bouguessa.com/,915,sitemap,2026-10-19,Verified
 boujeelife.ae,https://boujeelife.ae/,190,sitemap,2026-10-19,Verified
@@ -644,7 +644,7 @@ Boutiqueen.ae,https://boutiqueen.ae/,1835,sitemap,2026-10-19,Verified
 BOYD,https://the-boyd.com/,60,sitemap,2026-10-19,Verified
 BR Detectors Dubai,https://www.brdetectors-dubai.com/,3355,archive,2026-10-19,Verified
 BRAGARD LLC,https://www.bragard.ae/,422,sitemap (partial: 17 of 18 sitemap files read),2026-10-19,Verified
-brandart.ae,https://brandart.ae/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='brandart.ae', port=443): Max retries exceeded with url))",2026-10-19,Verified
+brandart.ae,https://brandart.ae/,11,sitemap,2026-10-19,Verified
 Brands For Less,https://www.brandsforless.com/en-ae/,39815,archive,2026-10-19,Verified (secondary evidence)
 brandsandvines,https://www.brandsandvines.ae/,2170,sitemap,2026-10-19,Verified
 Braun,https://ae.braun.com/,779,sitemap,2026-10-19,Verified (secondary evidence)
@@ -692,7 +692,7 @@ Buy Genuine HEETS & IQOS in Dubai & Abu Dhabi,https://heets-abudhabi.ae/,592,sit
 "Buy Instagram Followers, Likes, Views",https://www.follower.ae/,116,sitemap,2026-10-19,Verified
 Buy New and Pre-Owned Toyota Cars in the UAE,https://www.toyota.ae/,714,sitemap,2026-10-19,Verified
 Buy Perfumes Online,https://ae.ahmedalmaghribi.com/,298,sitemap,2026-10-19,Verified
-"Buy Smartphones, Gaming Consoles, Headphones Gegroup.ae",https://gegroup.ae/,1705,sitemap (partial: 24 of 25 sitemap files read),2026-10-19,Verified
+"Buy Smartphones, Gaming Consoles, Headphones Gegroup.ae",https://gegroup.ae/,1705,sitemap,2026-10-19,Verified
 Buy Terea Dubai,https://buyterea.ae/,200,sitemap,2026-10-19,Verified
 Buy Tyres Online in Uae,https://www.tyreplus-me.com/en/uae/,2301,sitemap,2026-10-19,Verified
 Buy Used Appliances in UAE,https://buyusedappliances.ae/,57,sitemap,2026-10-19,Verified
@@ -1033,7 +1033,7 @@ DASHA FASHION,https://dasha.ae/,239,sitemap,2026-10-19,Verified
 Data Point,https://www.thinkpad.ae/,133,sitemap,2026-10-19,Verified
 Datar Spices,https://datarspices.ae/,1034,archive,2026-10-19,Verified
 Davianna,https://davianna.ae/,257,sitemap,2026-10-19,Verified
-dcgpac,https://dcgpac.ae/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dcgpac.ae', port=80): Max retries exceeded with url))",2026-10-19,Verified
+dcgpac,https://dcgpac.ae/,1504,sitemap,2026-10-19,Verified
 de Savary Middle East,https://www.desavarylondon.ae/,170,sitemap,2026-10-19,Verified
 deal4me.ae,https://deal4me.ae/,63,sitemap,2026-10-19,Verified
 Deaura,https://deaura.ae/,209,sitemap,2026-10-19,Verified
@@ -1097,7 +1097,7 @@ Dibba Club,https://dibbaclub.ae/,2905,sitemap,2026-10-19,Verified
 Digital Card,https://digitalcard.ae/,46,sitemap,2026-10-19,Verified
 Digital Copier,https://digitalcopier.ae/,589,sitemap,2026-10-19,Verified
 Digital Desk,https://digitaldesk.ae/,277,sitemap,2026-10-19,Verified
-Digital Dimension Computers LLC,https://ddcuae.ae/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ddcuae.ae', port=80): Max retries exceeded with url))",2026-10-19,Verified
+Digital Dimension Computers LLC,https://ddcuae.ae/,101,archive,2026-10-19,Verified
 Digital Edge Marketing,https://qoratech.ae/,9,platform product count,2026-10-19,Verified
 Digital Future Solutions LLC,https://www.digitalfuture.ae/,1074,sitemap (AE pages only),2026-10-19,Verified
 Digital Impressions ae,https://digitalimpressions.ae/,484,sitemap,2026-10-19,Verified
@@ -1165,7 +1165,7 @@ Dragon Vape Dubai,https://dragonvapdubai.ae/,545,sitemap,2026-10-19,Verified
 drcars,https://drcars.ae/,497,sitemap,2026-10-19,Verified
 Dream Candy,https://dreambydrjohns.ae/,12,sitemap,2026-10-19,Verified
 Dream Dubai,https://www.dreamdubai.com/,5077,archive,2026-10-19,Verified
-Dream Health Supplements,https://dreamhealth.ae/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.dreamhealth.ae', port=80): Max retries exceeded wit))",2026-10-19,Verified
+Dream Health Supplements,https://dreamhealth.ae/,68,sitemap,2026-10-19,Verified
 Dreamd Well Properties,https://dreamdwellproperties.ae/,1065,sitemap,2026-10-19,Verified
 Dreamdays,https://dreamdays.ae/,1129,sitemap,2026-10-19,Verified
 Driver Car Rental Dubai,https://drivercarrental.ae/,177,sitemap,2026-10-19,Verified
@@ -1240,7 +1240,7 @@ DZ Store | Fresh Online Grocery Delivery in UAE,https://dzstore.ae/,263,sitemap 
 Dzain,https://client.dzain.ae/,203,archive,2026-10-19,Verified
 E&S Real Estate - Elevate your investment with us,https://www.esrealestate.ae/,12,shop-page total,2026-10-19,Verified
 E-Cig Vape Dubai,https://ecigdubai.ae/,803,sitemap,2026-10-19,Verified
-e-Stylish,https://e-stylish.ae/,81,archive,2026-10-19,Verified
+e-Stylish,https://e-stylish.ae/,70,sitemap,2026-10-19,Verified
 E11 Store,https://e11store.ae/,267,sitemap,2026-10-19,Verified
 EAF,https://eaf.ae/,178,sitemap (partial: 22 of 23 sitemap files read),2026-10-19,Verified
 Eagle Scales Dubai,https://eaglescales.ae/,74,sitemap,2026-10-19,Verified
@@ -1248,7 +1248,7 @@ Earss,https://earss.ae/,498,sitemap,2026-10-19,Verified
 Easy Assist,https://easyassist.ae/,34,sitemap,2026-10-19,Verified
 Easy Blinds & Curtains,https://dubai-curtains.ae/,258,sitemap,2026-10-19,Verified
 Easy Gardens Landscape Works,https://www.easygardens.ae/,46,sitemap,2026-10-19,Verified
-Easy Go Car Export,https://www.easygocarexport.ae/,27,archive,2026-10-19,Verified
+Easy Go Car Export,https://www.easygocarexport.ae/,10,sitemap,2026-10-19,Verified
 Easy Grocery UAE,https://www.easyfood.ae/,41,archive,2026-10-19,Verified
 Easy Lab,https://easylab.ae/,1603,sitemap,2026-10-19,Verified
 EasyFit,https://easy-fit.ae/,275,sitemap,2026-10-19,Verified
@@ -1436,7 +1436,7 @@ famco,https://famcocorp.ae/,2834,sitemap,2026-10-19,Verified
 Family Desert Safari Dubai Deals & Packages 2025,https://familydesertsafari.ae/,63,sitemap,2026-10-19,Verified
 Famm,https://famm.ae/,140,sitemap,2026-10-19,Verified
 Famstore,https://famstore.ae/,104,sitemap,2026-10-19,Verified
-Faqihi Enterprises Supplier | Distributor UAE,https://faqihient.ae/,125,sitemap (partial: 4 of 6 sitemap files read),2026-10-19,Verified
+Faqihi Enterprises Supplier | Distributor UAE,https://faqihient.ae/,125,sitemap,2026-10-19,Verified
 Farada,https://farada.ae/,807,sitemap,2026-10-19,Verified
 Farbe Middle East,https://farbe.ae/,916,sitemap,2026-10-19,Verified
 Fardisya,https://fardisya.ae/,44237,sitemap (partial: 30 of 64 sitemap files read),2026-10-19,Verified
@@ -1774,7 +1774,7 @@ Greensouq,https://greensouq.ae/,1836,sitemap,2026-10-19,Verified
 GreenTree,https://greentree.ae/,353,sitemap,2026-10-19,Verified
 Greenwood Foils UAE,https://grwd.ae/,483,sitemap,2026-10-19,Verified
 GreetFleets,https://www.greetfleets.ae/,710,sitemap,2026-10-19,Verified
-Grenewed,https://grenewed.ae/,,"Not available (unreachable (ReadTimeout: HTTPSConnectionPool(host='www.grenewed.ae', port=443): Read timed out. (read tim))",2026-10-19,Verified
+Grenewed,https://grenewed.ae/,420,sitemap,2026-10-19,Verified
 Grimaldi's Pizzeria,https://grimaldispizzeria.ae/,248,sitemap,2026-10-19,Verified
 Grit Fitness,https://gritfitness.ae/,212,sitemap,2026-10-19,Verified
 Groomology,https://www.groomology.ae/,10,archive,2026-10-19,Verified
@@ -1833,7 +1833,7 @@ Harmony House,https://harmonyhouse.ae/,3471,sitemap,2026-10-19,Verified
 HASHI,https://hashi.ae/,201,sitemap,2026-10-19,Verified
 Hasobe UAE,https://hasobe.ae/,285,sitemap,2026-10-19,Verified
 Hassan & Brothers,https://hassan-brothers.ae/,7,sitemap,2026-10-19,Verified
-Hatta Honey,https://www.hattahoney.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+Hatta Honey,https://www.hattahoney.ae/,2132,archive,2026-10-19,Verified
 HATTITUDE,https://hattitude.ae/,94,sitemap,2026-10-19,Verified
 Hauck Middle East,https://hauck.ae/,121,sitemap,2026-10-19,Verified
 Haute Horologe,https://www.hautehorologe.ae/,513,sitemap,2026-10-19,Verified
@@ -2075,7 +2075,7 @@ ISPR Group,https://ispr.ae/,105,sitemap,2026-10-19,Verified
 ISPR Luxury Properties,https://isprluxuryproperties.ae/,105,sitemap,2026-10-19,Verified
 iSTYLE UAE,https://istyle.ae/,7879,sitemap,2026-10-19,Verified
 italfood,https://italfood.ae/,72,sitemap,2026-10-19,Verified
-italianluxurygroup.com.au,https://www.italianluxurygroup.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+italianluxurygroup.com.au,https://www.italianluxurygroup.ae/,2573,platform product count,2026-10-19,Verified
 ITCart,https://itcart.ae/,5656,sitemap,2026-10-19,Verified
 Ithara.ae,https://www.ithara.ae/,973,sitemap,2026-10-19,Verified
 IThub.ae,https://ithub.ae/,12837,sitemap,2026-10-19,Verified
@@ -2141,7 +2141,7 @@ JudithLeiberGCC,https://www.judithleiber.ae/,267,sitemap,2026-10-19,Verified
 Juices,https://barakatfresh.ae/,11820,sitemap,2026-10-19,Verified (secondary evidence)
 Julnar General Trading,https://www.julnar.ae/,411,sitemap,2026-10-19,Verified
 Jumbo Electronics,https://www.jumbo.ae/,11760,sitemap,2026-10-19,Verified
-Junaid Jamshed,https://junaidjamshed.ae/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.junaidjamshed.ae', port=80): Max retries exceeded w))",2026-10-19,Verified
+Junaid Jamshed,https://junaidjamshed.ae/,174,archive,2026-10-19,Verified
 JuneFlowers,https://www.juneflowers.ae/,621,sitemap,2026-10-19,Verified
 Junior Couture UAE,https://www.juniorcouture.ae/,9566,sitemap,2026-10-19,Verified
 JURA TRADING L.L.C,https://jurastore.ae/,317,sitemap,2026-10-19,Verified
@@ -2159,7 +2159,7 @@ Kadi Boutique,https://kadi.ae/,1171,sitemap,2026-10-19,Verified
 Kado Flowers,https://kadoflowers.ae/,143,sitemap,2026-10-19,Verified
 Kalyan Silks ae,https://kalyansilks.ae/,1482,sitemap,2026-10-19,Verified
 Kamado Bono,https://www.kamadobono.ae/,449,sitemap,2026-10-19,Verified
-Kamagra Dubai,https://kamagradubai.ae/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.kamagradubai.ae', port=80): Max retries exceeded wi))",2026-10-19,Verified
+Kamagra Dubai,https://kamagradubai.ae/,1948,sitemap,2026-10-19,Verified
 Kamat Sweets,https://kamatsweets.ae/,89,sitemap,2026-10-19,Verified
 Kamill,https://www.kamill.ae/,9,sitemap,2026-10-19,Verified
 Kamin,https://kamin.ae/,1143,sitemap,2026-10-19,Verified
@@ -2179,7 +2179,7 @@ Kasa.ae,https://kasa.ae/,241,sitemap,2026-10-19,Verified
 Kashkha,https://www.kashkha.com/,3046,"sitemap (whole site, no market segment)",2026-10-19,Verified
 kat.ae,https://www.kat.ae/,3259,sitemap,2026-10-19,Verified
 KAYAK,https://www.kayak.ae/,181642,sitemap,2026-10-19,Verified
-KAYALI,https://kayali.com/en-ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+KAYALI,https://kayali.com/en-ae/,131,platform product count,2026-10-19,Verified
 Kayan,https://wearkayan.ae/,629,sitemap,2026-10-19,Verified
 Kayan Dates,https://kayan.ae/,125,sitemap,2026-10-19,Verified
 KCT,https://kct.ae/,299,sitemap,2026-10-19,Verified
@@ -2234,7 +2234,7 @@ Kite N Surf,https://kiteandsurf.ae/,1170,sitemap,2026-10-19,Verified
 Kite Surf Beach Center,https://kitesurfbeachcenter.ae/,40,sitemap,2026-10-19,Verified
 Kiteloop,https://www.kiteloop.ae/,69,sitemap,2026-10-19,Verified
 KITOBZ,https://knigi.ae/,1100,archive,2026-10-19,Verified
-KITSCH,https://www.mykitsch.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+KITSCH,https://www.mykitsch.ae/,1332,platform product count,2026-10-19,Verified
 Kivona,https://kivona.ae/,593,sitemap,2026-10-19,Verified
 Kizik UAE,https://kizik.ae/,1103,sitemap,2026-10-19,Verified
 KleanFreak,https://www.kleanfreak.ae/,2731,sitemap,2026-10-19,Verified
@@ -2496,7 +2496,7 @@ MAISONDEFASHION.COM,https://maisondefashion.ae/,31815,sitemap,2026-10-19,Verifie
 Maisoon,https://maisoon.ae/,50,sitemap,2026-10-19,Verified
 MaitriBodh ME,https://www.mbplife.ae/,939,sitemap,2026-10-19,Verified
 MAJA,https://majaconcept.ae/,799,sitemap,2026-10-19,Verified
-Majan,https://majan.com/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.majan.com', port=80): Read timed out. (read timeout))",2026-10-19,Verified
+Majan,https://majan.com/,54,sitemap,2026-10-19,Verified
 Majestic Fruits,https://ffe.ae/,134,sitemap,2026-10-19,Verified
 Majestic Furniture,https://www.majesticfurniture.ae/,1326,archive,2026-10-19,Verified
 Makan Home,https://makanhome.ae/,146,sitemap,2026-10-19,Verified
@@ -2642,7 +2642,7 @@ Miel Al-Hayat - Buy Premium Quality Honey Online,https://mielalhayat.ae/,28,site
 MiFitness UAE,https://mifitness.ae/,717,sitemap,2026-10-19,Verified
 Mifo UAE,https://mifo.ae/,20,sitemap,2026-10-19,Verified
 Mikah Coffee UAE,https://mikahcoffee.ae/,112,sitemap,2026-10-19,Verified
-Mikas,https://mikas.ae/,,"Not available (unreachable (ReadTimeout: HTTPSConnectionPool(host='www.mikas.ae', port=443): Read timed out. (read timeou))",2026-10-19,Verified
+Mikas,https://mikas.ae/,75,sitemap,2026-10-19,Verified
 Milan Plus,https://milanplus.ae/,1916,sitemap,2026-10-19,Verified
 milanohome,https://milanohome.ae/,91,sitemap,2026-10-19,Verified
 Miles of Smiles Nursery,https://milesofsmiles.ae/,194,sitemap,2026-10-19,Verified
@@ -2770,7 +2770,7 @@ My Flowers N Gifts,https://myflowersngifts.ae/,173,platform product count,2026-1
 My Gamings Hub,https://mygamingshub.ae/,831,sitemap,2026-10-19,Verified
 My Haire,https://myhaire.ae/,121,sitemap,2026-10-19,Verified
 My Happy Place,https://myhappyplace.ae/,27,sitemap,2026-10-19,Verified
-My Perfume Shop,https://www.myperfumeshop.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified (secondary evidence)
+My Perfume Shop,https://www.myperfumeshop.ae/,10826,shop-page total,2026-10-19,Verified (secondary evidence)
 My Site,https://www.littlenestnursery.ae/,21,sitemap,2026-10-19,Verified
 My Tailor & Little Things,https://mytailor.ae/,19,sitemap,2026-10-19,Verified
 My Website,https://www.mcfurniture.ae/,1654,sitemap,2026-10-19,Verified
@@ -2886,7 +2886,7 @@ Nexx,https://nexx.ae/,131,sitemap,2026-10-19,Verified
 Niamora,https://niamora.ae/,36,shop-page total,2026-10-19,Verified
 Niche Gallery,https://parisgallery.ae/,19136,sitemap,2026-10-19,Verified
 Niche Premium Gift Boxes,https://nichepackaging.ae/,116,sitemap,2026-10-19,Verified
-Nicotine Pouches Dubai,https://nicotinepouche.ae/,,"Not available (unreachable (ReadTimeout: HTTPSConnectionPool(host='www.nicotinepouche.ae', port=443): Read timed out. (re))",2026-10-19,Verified
+Nicotine Pouches Dubai,https://nicotinepouche.ae/,119,sitemap,2026-10-19,Verified
 nifte & co,https://www.nifte.ae/,1051,sitemap,2026-10-19,Verified
 Nikai Group,https://www.nikai.com/,525,platform product count,2026-10-19,Verified
 Nike,https://www.nike.ae/,51610,sitemap,2026-10-19,Verified
@@ -3072,7 +3072,7 @@ Pandora,https://ae.pandora.net/,,Not available (blocked by site: HTTP 403 on rob
 PANGAIA,https://pangaia.ae/,715,sitemap,2026-10-19,Verified
 Panos Melekkis Jewellery,https://panosmelekkis.com/,,Not available (blocked by robots.txt (Disallow: /)),2026-10-19,Verified
 Panvil,https://panvil.ae/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.panvil.ae', port=80): Max retries exceeded with url))",2026-10-19,Verified
-Par Tea Time,https://parteatime.ae/,1568,archive,2026-10-19,Verified
+Par Tea Time,https://parteatime.ae/,789,sitemap,2026-10-19,Verified
 Paradize Kitties Home - Best Kitten Adoption Home,https://paradizekittieshome.ae/,1212,sitemap,2026-10-19,Verified
 Paragliding in Dubai,https://paragliding.ae/,3,archive,2026-10-19,Verified
 Parasteh,https://parastehjewels.ae/,319,sitemap,2026-10-19,Verified
@@ -3192,7 +3192,7 @@ Plus Size,https://plussize.ae/,105,sitemap,2026-10-19,Verified
 Ply World,https://plyworld.ae/,140,sitemap,2026-10-19,Verified
 POAPRO Power of Attorney Dubai,https://poapro.ae/,178,sitemap,2026-10-19,Verified
 Pocket Prints,https://pocketprints.ae/,62,sitemap,2026-10-19,Verified
-PokeArbab,https://pokearbab.ae/,91,shop-page total,2026-10-19,Verified
+PokeArbab,https://pokearbab.ae/,111,sitemap,2026-10-19,Verified
 PoolStore.ae,https://www.poolstore.ae/,328,sitemap,2026-10-19,Verified
 POPPINS HOME,https://poppinshome.ae/,2795,sitemap,2026-10-19,Verified
 Popsy,https://www.popsy.app/en-ae/,4783,sitemap (AE pages only),2026-10-19,Verified
@@ -3304,7 +3304,7 @@ Pyramid Healthcare,https://pyramidshealth.ae/,73,sitemap,2026-10-19,Verified
 Qasaed Perfumes,https://qasaed.ae/,61,sitemap,2026-10-19,Verified
 Qassar Marine,https://qassar.ae/,146,sitemap,2026-10-19,Verified
 QER,https://qer.ae/,200,sitemap,2026-10-19,Verified
-QET,https://www.qet.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+QET,https://www.qet.ae/,20,shop-page total,2026-10-19,Verified
 Qisat Sharq,https://qisatsharq.ae/,11980,sitemap,2026-10-19,Verified
 Qissati Fragrances,https://qissatifragrances.com/,29,sitemap,2026-10-19,Verified
 QISWAHPORTALLLC.AE,https://qiswahportalllc.ae/,914,sitemap,2026-10-19,Verified
@@ -3355,7 +3355,7 @@ Range Rover Repair Dubai!,https://rangeroverrepairsdubai.ae/,113,sitemap,2026-10
 Rapid Digital Technologies,https://rapiddigital.ae/,10,sitemap,2026-10-19,Verified
 RAQAMAK,https://raqamak.ae/,371,sitemap,2026-10-19,Verified
 Rasasi Perfumes 1979 - UAE,https://rasasistore.com/,287,sitemap,2026-10-19,Verified
-rashidexpress,https://rashidexpress.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+rashidexpress,https://rashidexpress.ae/,4176,archive,2026-10-19,Verified
 Rashtions Store,https://rashtions.ae/,,Not available (no sitemap found; no sitemap/shop total/platform count and no archive captures),2026-10-19,Verified
 Rasikh Gems,https://rasikhgems.ae/,756,sitemap,2026-10-19,Verified
 Raven Gifts,https://ravengifts.ae/,272,sitemap,2026-10-19,Verified
@@ -3497,7 +3497,7 @@ Royex Technologies,https://www.royex.ae/,486,sitemap,2026-10-19,Verified
 Rozalina,https://rozalinarestaurant.ae/,194,sitemap,2026-10-19,Verified
 Rozan Designs,https://rozan.ae/,457,sitemap,2026-10-19,Verified
 Rozina Flowers,https://rozinaflowers.ae/,243,sitemap,2026-10-19,Verified
-RR CELLARS,https://rrcellars.ae/,758,archive,2026-10-19,Verified
+RR CELLARS,https://rrcellars.ae/,2484,sitemap,2026-10-19,Verified
 RRF Construktion Solution,https://rrf-csf.ae/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified
 RUBA535 UAE,https://www.ruba535.ae/,10,sitemap,2026-10-19,Verified
 Rubber Flooring Dubai,https://rubberflooringdubai.ae/,82,sitemap,2026-10-19,Verified
@@ -3630,7 +3630,7 @@ Shaima Beauty,https://shaimabeauty.ae/,9799,sitemap,2026-10-19,Verified
 Shajara,https://www.shajara.ae/,210,sitemap,2026-10-19,Verified
 Shakeel Ahmed Stationery,https://shakeel.ae/,3143,sitemap,2026-10-19,Verified
 Shakti UAE,https://shaktimat.ae/,71,sitemap,2026-10-19,Verified
-Shamanic Boutique musical instruments store,https://shamanic.ae/,372,archive,2026-10-19,Verified
+Shamanic Boutique musical instruments store,https://shamanic.ae/,482,sitemap,2026-10-19,Verified
 Shams,https://myshams.ae/,40,sitemap,2026-10-19,Verified
 Shams Abu Dhabi,https://shamsabudhabi.ae/,101,sitemap (partial: 11 of 12 sitemap files read),2026-10-19,Verified
 Sharaf DG,https://uae.sharafdg.com/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Verified (secondary evidence)
@@ -4410,7 +4410,7 @@ Wallpaper Land,https://wallpaperland.ae/,477,sitemap,2026-10-19,Verified
 WALUTEC Water Purifiers,https://walutec.ae/,95,sitemap,2026-10-19,Verified
 Warning Tape UAE,https://warningtape.ae/,122,sitemap,2026-10-19,Verified
 Wasata UAE,https://wasata.ae/,21,sitemap (partial: 6 of 7 sitemap files read),2026-10-19,Verified
-Wash n Fold,https://washnfold.ae/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.washnfold.ae', port=80): Read timed out. (read time))",2026-10-19,Verified
+Wash n Fold,https://washnfold.ae/,13,sitemap,2026-10-19,Verified
 Watch Shop in Dubai | Al Mekshah Watches,https://almekshah.ae/,665,sitemap,2026-10-19,Verified
 WATCHH,https://www.watchh.ae/,420,sitemap,2026-10-19,Verified
 Water Adventure Dubai,https://wateradventure.ae/,71,sitemap,2026-10-19,Verified
@@ -4477,7 +4477,7 @@ Wolfi's,https://wolfis.ae/,4397,sitemap,2026-10-19,Verified
 Women and Families Wellbeing,https://www.womenandfamilieswellbeing.ae/,117,sitemap,2026-10-19,Verified
 Wondergifts,https://www.wondergifts.ae/,1390,sitemap,2026-10-19,Verified
 Wonderloom,https://wonderloom.ae/,84,sitemap,2026-10-19,Verified
-Wood,https://floorsdesign.ae/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.floorsdesign.ae', port=80): Read timed out. (read t))",2026-10-19,Verified
+Wood,https://floorsdesign.ae/,20,shop-page total,2026-10-19,Verified
 Wood Barrow Art Crafts,https://woodbarrow.ae/,337,sitemap,2026-10-19,Verified
 Wood Culture,https://woodculture.ae/,1739,sitemap,2026-10-19,Verified
 Wood Supply,https://woodsupply.ae/,2,shop-page total,2026-10-19,Verified
@@ -4498,7 +4498,7 @@ WT BURDEN,https://wtburden.ae/,289,sitemap,2026-10-19,Verified
 www.evo.ae,https://www.evo.ae/,493,sitemap (partial: 10 of 11 sitemap files read),2026-10-19,Verified
 www.fitco.ae,https://fitco.ae/,1399,sitemap,2026-10-19,Verified
 www.meatstoryfresh.ae,https://www.meatstoryfresh.ae/,114,sitemap,2026-10-19,Verified
-www.shoplongino.it,https://www.shoplongino.ae/,659,sitemap (partial: 3 of 4 sitemap files read),2026-10-19,Verified
+www.shoplongino.it,https://www.shoplongino.ae/,659,sitemap,2026-10-19,Verified
 X Cafe,https://www.xcafe.ae/,74,sitemap,2026-10-19,Verified
 X Five,https://xfive.ae/,53,sitemap,2026-10-19,Verified
 Xact Auditing,https://www.xactauditing.ae/,199,sitemap,2026-10-19,Verified
@@ -4590,7 +4590,7 @@ ZS Jewelry,https://zsjewelry.ae/,1693,sitemap,2026-10-19,Verified
 Zuvees,https://zuvees.com/,2797,sitemap,2026-10-19,Verified
 ZVC Veterinary Center,https://zvcveterinarycenter.ae/,189,sitemap,2026-10-19,Verified
 zynk,https://zynk.ae/,47,sitemap,2026-10-19,Verified
-übbs pouches,https://ubbspouches.ae/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+übbs pouches,https://ubbspouches.ae/,11,shop-page total,2026-10-19,Verified
 Сaviar №1,https://1-caviar.ae/,421,sitemap,2026-10-19,Verified
 آیگرین آتوپارت,https://autoparts.igreen.ae/,1472,sitemap,2026-10-19,Verified
 أبيات,https://abyat.ae/,339,sitemap,2026-10-19,Verified (secondary evidence)
@@ -4644,7 +4644,7 @@ zynk,https://zynk.ae/,47,sitemap,2026-10-19,Verified
 شوبارد®,https://www.chopard.com/ar-ae/,7649,sitemap (AE pages only),2026-10-19,Verified
 عبايات حوراء,https://hawraaabaya.com/,1142,sitemap,2026-10-19,Verified
 عقارات الامارات uaebest للاعلانات العقارية,https://uaebest.ae/,1,archive,2026-10-19,Verified
-قنديل للطباعة والنشر والتوزيع,https://qindeel.ae/,1307,archive,2026-10-19,Verified
+قنديل للطباعة والنشر والتوزيع,https://qindeel.ae/,521,sitemap,2026-10-19,Verified
 كوميديا لتقنية المعلومات,https://comedia.ae/,152,sitemap,2026-10-19,Verified
 لاروز جاليري,https://larosegallery.ae/,2536,sitemap (partial: 9 of 10 sitemap files read),2026-10-19,Verified
 ليفت مي أب,https://liftmeup.ae/,88,sitemap,2026-10-19,Verified
