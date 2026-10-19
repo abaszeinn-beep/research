@@ -9,7 +9,7 @@ Input CSV columns: domain, markets (semicolon list e.g. "SA;AE"), listed_urls (o
 Output CSV columns: domain, market, pages_count, count_method, sitemap_files,
                     top_sitemap_url, count_date, notes
 """
-import argparse, csv, datetime, gzip, html, json, os, re, sys, threading, time, zlib
+import argparse, array, csv, datetime, gzip, html, json, os, re, sys, threading, time, zlib
 import urllib.parse as up
 import urllib.robotparser as rp
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -209,7 +209,8 @@ class SitemapCrawl:
     def __init__(self, fetcher, rds, robots):
         self.f, self.rds, self.robots = fetcher, rds, robots
         self.seen_sm = set(); self.files = 0; self.skipped = []; self.failed = []
-        self.seen = set(); self.tags = {}; self.raw = 0; self.dups = 0
+        self.hashes = array.array('Q'); self.tagarr = array.array('B'); self.tagids = {}
+        self.tags = {}; self.raw = 0; self.dups = 0
         self.lock = threading.Lock()
 
     def add(self, locs):
@@ -218,11 +219,24 @@ class SitemapCrawl:
                 self.raw += 1
                 k, t = norm_key(l, self.rds)
                 if k is None: continue
-                h = hash(k)
-                if h in self.seen:
-                    self.dups += 1; continue
-                self.seen.add(h)
-                self.tags[t] = self.tags.get(t, 0) + 1
+                ti = self.tagids.setdefault(t, len(self.tagids))
+                self.hashes.append(hash(k) & 0xFFFFFFFFFFFFFFFF)
+                self.tagarr.append(ti)
+
+    def finalize(self):
+        """Exact dedupe over 64-bit hashes (compact arrays, bounded memory); fills self.tags / self.dups."""
+        import numpy as np
+        n = len(self.hashes)
+        if n == 0:
+            self.tags = {}; self.dups = 0; return
+        h = np.frombuffer(self.hashes, dtype=np.uint64)
+        tg = np.frombuffer(self.tagarr, dtype=np.uint8)
+        _, idx = np.unique(h, return_index=True)
+        names = {v: k for k, v in self.tagids.items()}
+        cnt = np.bincount(tg[idx], minlength=len(self.tagids))
+        self.tags = {names[i]: int(c) for i, c in enumerate(cnt) if c}
+        self.dups = n - len(idx)
+        self.hashes = array.array("Q"); self.tagarr = array.array("B")
 
     def run(self, tops):
         stack = list(tops)
@@ -335,7 +349,7 @@ def count_domain(domain, markets, deadline_s=3600):
                 if r is not None: r.close()
                 if ok: tops = [base + c]; break
         if tops:
-            cr = SitemapCrawl(f, rds, robots); cr.run(tops)
+            cr = SitemapCrawl(f, rds, robots); cr.run(tops); cr.finalize()
             total = sum(cr.tags.values())
             if cr.files > 0 and total > 0:
                 return _market_rows(domain, markets, cr, tops, today, how, notes)
