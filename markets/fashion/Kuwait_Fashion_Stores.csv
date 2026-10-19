@@ -1,4 +1,4 @@
-﻿Store Name,Website,Type,Gender,Platform,Size Tier (best-effort),Verification Status,Evidence URL,Classification Signal,Discovery Source
+Store Name,Website,Type,Gender,Platform,Size Tier (best-effort),Verification Status,Evidence URL,Classification Signal,Discovery Source
 Abati Boutique,https://abatiboutique.online/,Fashion-only,Women,WooCommerce,Small / local brand,Verified,https://abatiboutique.online/wp-json/wc/store/v1/products/categories,"WooCommerce store API categories: abaya, عباية, قميص, ملابس",Existing research
 Abaya Lab,https://abayalabkw.com/,Fashion-only,Women,WooCommerce,Small / local brand,Verified,https://abayalabkw.com/wp-json/wc/store/v1/products/categories,"WooCommerce store API categories: abaya, بشت, بنطلون, تنورة, جاكيت, عبايات",Existing research
 Abreez Abaya,https://abreezabaya.com/ar,Fashion-only,Women,Shopify,Small / local brand,Verified,https://abreezabaya.com/,homepage nav: abayas,Existing research
