@@ -1,0 +1,55 @@
+{
+ "shopify_rows_in_master": 17975,
+ "rows_not_live_checked_nonfashion_category": 5807,
+ "rows_live_checked_attempted": 12168,
+ "rows_with_live_product_data": 11573,
+ "included": 5705,
+ "by_type": {
+  "Fashion-only": 3258,
+  "Has clothing section": 2447
+ },
+ "by_gender": {
+  "Unisex": 3240,
+  "Women": 1955,
+  "Men": 510
+ },
+ "by_type_gender": {
+  "Fashion-only|Men": 291,
+  "Fashion-only|Unisex": 1612,
+  "Fashion-only|Women": 1355,
+  "Has clothing section|Men": 219,
+  "Has clothing section|Unisex": 1628,
+  "Has clothing section|Women": 600
+ },
+ "by_verification_status": {
+  "Verified live (products.json)": 5492,
+  "Classified from stored evidence (live data unavailable)": 213
+ },
+ "by_size_tier": {
+  "Small": 4955,
+  "Medium": 682,
+  "Large": 50,
+  "Brand-Major": 18
+ },
+ "excluded": 12270,
+ "excluded_by_reason": {
+  "Non-fashion stored category (not live-checked)": 5807,
+  "Live: not adult clothing store": 6081,
+  "Live data unavailable and stored category not fashion": 382
+ },
+ "qa": {
+  "sample_size": 200,
+  "method": "two manual random reviews of 100 (70 included + 30 live-excluded) from product titles/types",
+  "estimated_error_rate": "~5%",
+  "rules_fixed_after_qa": [
+   "auto-part/golf tee/comic/fabric/pattern/nail-coat false positives",
+   "bottle with Apparel product_type",
+   "low-share merch threshold: >=3 strong clothing products and >=2.5%"
+  ]
+ },
+ "notes": [
+  "Gender best-effort from titles/tags; ~57% Unisex where no gender cues.",
+  "Live data via products.json?limit=250 (first 250 products); curl with adaptive limiter 4-8 req/s and 429 backoff; python httpx was 429-ed by Shopify edge while curl was not.",
+  "Size Tier from Tranco rank/reference tier; most stores unranked (Small)."
+ ]
+}

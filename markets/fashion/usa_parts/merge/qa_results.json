@@ -1,0 +1,45 @@
+{
+ "lines": [
+  [
+   "Sample 1 (random_state=42, n=100) errors (type/gender/name)",
+   "7/100 = 7% (generic scraped name, boxing-gear store typed Fashion-only, print/engraving shop x2, doll-clothes store, 2 gender mislabels)"
+  ],
+  [
+   "Sample 1 after rule fixes (explicit-unisex tightened, name cleanup, B2B/print-shop domain removals)",
+   "~4/100 re-judged = ~4%"
+  ],
+  [
+   "Sample 2 (random_state=7, n=100, after fixes) errors",
+   "5/100 = 5% (3 gender mislabels from weak signals: EllyK, Bandwear; body-armor store; fishing-brand typed Fashion-only; 1 name)"
+  ],
+  [
+   "Combined error rate",
+   "~6% (12/200 first-pass) - below the 8% threshold, so only targeted rule fixes were applied"
+  ],
+  [
+   "Gender \"Unspecified\" share of final",
+   "see Gender AFTER fix; these are stores with no women/men/unisex signal in collections, products or nav"
+  ],
+  [
+   "Sampling method",
+   "Agent review of name, domain, type, fetched collection/product signal counts and matched product titles; not live page visits"
+  ]
+ ],
+ "method": [
+  "Inputs: three part CSVs (shopify 5,705; other 1,480; discovery 114) read via git show from the part branches.",
+  "Dedupe key: registrable domain via tldextract (PSL private domains on); domains hosting 5+ merchants (bigcartel, square.site, 3dcartstores, ecwid, etc.) keyed by full host so merchant subdomains stay distinct. Winner = strongest verification rank, then richest row; stored URL/path (incl. locale paths) kept as-is.",
+  "Gender: Shopify rows -> /collections.json handles+titles, then /products.json titles/product_type/tags; non-Shopify rows -> homepage anchor hrefs/text. Tokens women/womens/ladies/her/female vs men/mens/him/guys; unisex/genderless/all-gender explicit.",
+  "Unisex only when both sides present (>=2 signals each, minor side >=8% of gendered signals) or explicit unisex (a unisex collection, or >=3 unisex products and >=15% share). No signal -> store-name signal -> previous Women/Men value kept -> otherwise Unspecified (never default Unisex).",
+  "Fetching: curl, global adaptive limiter 4-8 req/s (starts 6, -25% on 429, +0.5 per 100 clean responses), 429 exponential backoff with retries, robots.txt fetched per host and honoured, no challenge bypass (403/captcha pages are recorded as failures and the old value is kept).",
+  "Sanity pass: name/domain rules for kids-only, marketplaces/resale/big-box wholesale clubs, B2B wholesale, non-fashion (supplements, pets, CBD...), shoes/bags/jewelry/hats/socks/print-shop-only names. Generic scraped names (My Site, Access denied...) replaced by domain label."
+ ],
+ "gaps": [
+  "Gender is Unspecified for ~29% of rows: many boutiques and merch stores do not label collections/products by gender; product-type keyword inference (dress, bra) was not applied.",
+  "Non-Shopify gender relies on homepage nav only; JS-rendered sites (Square, Wix, Bigcartel) mostly returned no nav, so those rows keep prior values or become Unspecified.",
+  "Fetch failures (403/404/timeouts/robots) keep the old gender value (counted under Gender basis); some old values were default Unisex.",
+  "The discovery part has no excluded CSV (summary only), so its exclusions are not in the Excluded sheet.",
+  "Type (Fashion-only vs Has clothing section) is inherited from the parts and was not re-derived; merch stores with a few tees can be labelled Fashion-only.",
+  "Kids/marketplace/non-fashion filtering in the sanity pass is name/domain based, so kids-only stores with neutral names may remain.",
+  "Size Tier and Platform are inherited; platform labels normalised to lowercase."
+ ]
+}
