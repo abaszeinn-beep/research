@@ -2865,3 +2865,8 @@ voomisupply.com,US,2133311,sitemap,2139,https://voomisupply.com/sitemap.xml,2026
 shopgap.com,US,2332316,sitemap,2900,https://www.shopgap.com/sitemap.xml,2026-10-19,raw=2333726 dupes_removed=1410
 mottandbow.com,US,776156,sitemap,3530,https://www.mottandbow.com/sitemap.xml | https://www.mottandbow.com/sitemap.xml | https://www.mottandbow.com/sitemap.xml,2026-10-19,raw=776156 dupes_removed=0
 recomparo.com,US,2883983,sitemap,2894,https://www.recomparo.com/sitemap.xml,2026-10-19,raw=2883983 dupes_removed=0
+armiea.com,US,0,sitemap (US pages only),3908,https://armiea.com/sitemap.xml,2026-10-19,"raw=1971229 dupes_removed=0; country split other=1292956,untagged=617713,AE=60560"
+shop.simon.com,US,2724990,sitemap,2731,https://shop.simon.com/sitemap.xml | https://shop.simon.com/sitemap.xml | https://shop.simon.com/sitemap.xml,2026-10-19,raw=2725028 dupes_removed=38
+360oder.com,US,3607582,sitemap,3614,https://360oder.com/sitemap.xml,2026-10-19,raw=3607582 dupes_removed=0
+swarovski.com,US,1933181,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+pipingrock.com,US,0,sitemap (US pages only),6009,https://www.pipingrock.com/sitemap.xml | https://www.pipingrock.com/sitemap.xml | https://www.pipingrock.com/sitemap.xml,2026-10-19,"raw=2234561 dupes_removed=0; country split untagged=1381861,other=807664,SA=45036"
