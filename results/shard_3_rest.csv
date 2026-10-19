@@ -2870,3 +2870,7 @@ shop.simon.com,US,2724990,sitemap,2731,https://shop.simon.com/sitemap.xml | http
 360oder.com,US,3607582,sitemap,3614,https://360oder.com/sitemap.xml,2026-10-19,raw=3607582 dupes_removed=0
 swarovski.com,US,1933181,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
 pipingrock.com,US,0,sitemap (US pages only),6009,https://www.pipingrock.com/sitemap.xml | https://www.pipingrock.com/sitemap.xml | https://www.pipingrock.com/sitemap.xml,2026-10-19,"raw=2234561 dupes_removed=0; country split untagged=1381861,other=807664,SA=45036"
+pepboys.com,US,302450,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+s4shops.com,US,20,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+italist.com,US,0,sitemap (US pages only),5138,https://italist.com/sitemap.xml,2026-10-19,"raw=4278456 dupes_removed=0; country split other=2455148,untagged=411271,QA=370270,SA=370270,AE=335781,KW=335716"
+boiilife.com,US,0,sitemap (US pages only),6001,https://boiilife.com/sitemap.xml,2026-10-19,"raw=3190595 dupes_removed=0; country split untagged=1671012,other=1246667,AE=90972,SA=90972,QA=90972"
