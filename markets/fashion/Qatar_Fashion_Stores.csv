@@ -53,7 +53,7 @@ Balmain,https://balmain.com/en-qa,240077,sitemap,2026-10-19,Fashion-only,Unisex,
 Brands Outlet,https://brandsoutletglobal.com/,10630,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Medium,Verified,https://brandsoutletglobal.com/
 Brands Qatar,https://brandsco.qa/,386,sitemap,2026-10-19,Fashion-only,Men,Shopify,Small,Verified,https://brandsco.qa/
 Byerley,https://byerley.qa/,215,archive,2026-10-19,Fashion-only,Men,Custom,Small,"Unverified – Qatar storefront live, purchase path not confirmed (JS/static page)",https://byerley.qa/
-Chantelle,https://chantelle.com/shop/en-qa,99798,sitemap (partial: 83 of 84 sitemap files read),2026-10-19,Fashion-only,Women,Custom (Next.js),Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://chantelle.com/shop/en-qa?popup=popup-user-location&userCountry=US&lang=en
+Chantelle,https://chantelle.com/shop/en-qa,99774,sitemap (partial: 83 of 84 sitemap files read),2026-10-19,Fashion-only,Women,Custom (Next.js),Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://chantelle.com/shop/en-qa?popup=popup-user-location&userCountry=US&lang=en
 Coudre,https://coudre.qa/,484,sitemap (partial: 14 of 15 sitemap files read),2026-10-19,Fashion-only,Women,WordPress,Small,Verified,https://coudre.qa/
 Dar Al Qaftan,https://daralqaftan.qa/,35,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://daralqaftan.qa/collections.json
 Dart,https://dartline.qa/,38,sitemap,2026-10-19,Fashion-only,Women,WooCommerce,Small,Verified,https://dartline.qa/wp-json/wc/store/v1/products/categories
@@ -81,7 +81,7 @@ Lichi,https://lichi.com/qa/en,2408,sitemap (QA pages only),2026-10-19,Fashion-on
 LIN,https://lin.com.qa/,405,sitemap,2026-10-19,Fashion-only,Women,Custom,Small,"Unverified – Qatar storefront live, purchase path not confirmed (JS/static page)",https://lin.com.qa/
 Louzan Qatar,https://louzanqatar.com/,278,sitemap,2026-10-19,Fashion-only,Women,Custom,Small,"Unverified – Qatar storefront live, purchase path not confirmed (JS/static page)",https://louzanqatar.com/
 Luisa Spagnoli,https://www.luisaspagnoli.com/en/qa,19032,sitemap,2026-10-19,Fashion-only,Women,Salesforce Commerce Cloud,Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://www.luisaspagnoli.com/en/qa
-Luna Couture,https://lunacouture.qa/,379,platform product count,2026-10-19,Fashion-only,Women,WooCommerce,Small,Verified,https://lunacouture.qa/wp-json/wc/store/v1/products/categories
+Luna Couture,https://lunacouture.qa/,1902,sitemap,2026-10-19,Fashion-only,Women,WooCommerce,Small,Verified,https://lunacouture.qa/wp-json/wc/store/v1/products/categories
 Mac Duggal Qatar,https://qa.macduggal.com/,3725,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://qa.macduggal.com/
 Maje Qatar,https://www.maje.qa/,1337,sitemap,2026-10-19,Fashion-only,Women,shopify,Small,Verified,https://maje.qa/
 Malika Clothing,https://www.malikaclothing.qa/,803,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://www.malikaclothing.qa/collections.json
@@ -96,7 +96,7 @@ Off Pitch,https://www.offpitch.qa/en,38,sitemap,2026-10-19,Fashion-only,Unisex,C
 Out of the Blue,https://outoftheblue.qa/,3997,sitemap,2026-10-19,Has clothing section,Unisex,shopify,Small,Verified,https://outoftheblue.qa/
 Peak Qatar,https://peak.qa/ar/,2558,sitemap,2026-10-19,Has clothing section,Unisex,WooCommerce,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://peak.qa/wp-json/wc/store/v1/products/categories
 Phati,https://www.phati.qa/,259,sitemap,2026-10-19,Fashion-only,Women,Custom/Other,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://www.phati.qa/
-ProSwimwear Qatar,https://www.proswimwear.qa/,6143,sitemap (partial: 53 of 57 sitemap files read),2026-10-19,Fashion-only,Unisex,Custom,Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://www.proswimwear.qa/
+ProSwimwear Qatar,https://www.proswimwear.qa/,6143,sitemap,2026-10-19,Fashion-only,Unisex,Custom,Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://www.proswimwear.qa/
 Qfit,https://qfit.qa/,442,sitemap,2026-10-19,Fashion-only,Unisex,WooCommerce,Small,Verified,https://qfit.qa/wp-json/wc/store/v1/products/categories
 Roma Style,https://roumastyle.qa/,19,sitemap,2026-10-19,Fashion-only,Women,WooCommerce,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://roumastyle.qa/wp-json/wc/store/v1/products/categories
 Romano,https://romano.qa/en,,Not available (no sitemap; shop-page total reported 0),2026-10-19,Fashion-only,Unisex,Custom (Next.js),Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://romano.qa/en
@@ -104,8 +104,8 @@ Rumi Earth,https://www.rumi.co/,,Not available (no QA pages in sitemap),2026-10-
 Sadil,https://sadil.qa/,87,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://sadil.qa/collections.json
 Sama Store,https://www.samastore.qa/,168,sitemap,2026-10-19,Has clothing section,Unisex,Shopify,Small,Verified,https://www.samastore.qa/collections.json
 Sandro Qatar,https://www.sandro.qa/,1829,sitemap,2026-10-19,Fashion-only,Unisex,Custom/Other,Small,Verified,https://www.sandro.qa/
-Shop Five,https://www.shop5.qa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop5.qa', port=80): Max retries exceeded with url:))",2026-10-19,Fashion-only,Men,shopify,Small,Verified,https://www.shop5.qa/
-Skylink,https://skylink.qa/,156,archive,2026-10-19,Fashion-only,Women,WooCommerce,Small,Verified,https://skylink.qa/wp-json/wc/store/v1/products/categories
+Shop Five,https://www.shop5.qa/,3903,sitemap,2026-10-19,Fashion-only,Men,shopify,Small,Verified,https://www.shop5.qa/
+Skylink,https://skylink.qa/,116,sitemap,2026-10-19,Fashion-only,Women,WooCommerce,Small,Verified,https://skylink.qa/wp-json/wc/store/v1/products/categories
 Soleil,https://soleil.qa/,514,sitemap,2026-10-19,Fashion-only,Women,Custom,Small,"Unverified – Qatar storefront live, purchase path not confirmed (JS/static page)",https://soleil.qa/
 Squatwolf Qatar,https://squatwolf.com/en-qa,3222,sitemap (QA pages only),2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://squatwolf.com/en-qa
 Summer Salt,https://summer-salt.qa/,272,sitemap,2026-10-19,Fashion-only,Women,Custom,Small,"Unverified – Qatar storefront live, purchase path not confirmed (JS/static page)",https://summer-salt.qa/
