@@ -3,7 +3,7 @@ Store Name,Website,Website Pages Count,Count Method,Count Date,Type,Gender,Platf
 Adidas Qatar,https://www.adidas.qa/en/,2496,sitemap,2026-10-19,Has clothing section,Unisex,Salesforce Commerce Cloud,Large,Verified,https://www.adidas.qa/en/
 Al Nasser Qatar,https://qa.alnasser.net/,13825,sitemap,2026-10-19,Has clothing section,Unisex,shopify,Large,Verified,https://qa.alnasser.net/
 American Eagle Qatar,https://www.americaneagle.com.qa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,Custom,Large,Verified (secondary evidence),https://web.archive.org/web/20250322231222/https://www.americaneagle.com.qa/ar/american-eagle/shop-women/bottoms/shorts/
-Balenciaga Qatar,https://www.balenciaga.com/en-qa,0,sitemap (QA pages only),2026-10-19,Has clothing section,Unisex,Salesforce Commerce Cloud,Large,"Qatar-locale storefront (en-qa, QAR)",https://www.balenciaga.com/en-qa
+Balenciaga Qatar,https://www.balenciaga.com/en-qa,22704,sitemap (partial: 27 of 28 sitemap files read),2026-10-19,Has clothing section,Unisex,Salesforce Commerce Cloud,Large,"Qatar-locale storefront (en-qa, QAR)",https://www.balenciaga.com/en-qa
 Bershka Qatar,https://www.bershka.com/qa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,custom/unknown,Large,Verified (secondary evidence),https://web.archive.org/web/20260613215835/https://www.bershka.com/qa/ar/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D9%85%D9%84%D8%A7%D8%A8%D8%B3/%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-n3802.html
 Burberry Qatar,https://qa.burberry.com/,3875,sitemap,2026-10-19,Fashion-only,Unisex,Custom/Other,Large,Qatar-locale storefront (qa.burberry.com); no QAR on homepage,https://qa.burberry.com/
 Calvin Klein Qatar,https://www.calvinklein.qa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,Custom,Large,"Known major retailer – manually accepted (403 bot-wall, not bypassed)",https://web.archive.org/web/20251122044217/https://www.calvinklein.qa/ar/kids-black-friday-early.html
@@ -25,11 +25,11 @@ Muji Qatar,https://www.muji.qa/en/,,Not available (blocked by site: HTTP 403 on 
 Namshi,https://www.namshi.com/qatar-en/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.namshi.com', port=80): Read timed out. (read timeou))",2026-10-19,Fashion-only,Unisex,Custom (Next.js),Large,Verified (secondary evidence),https://www.namshi.com/qatar-en/buy-2xtremz-textured-dress-with-short-sleeves-and-pockets/Z3B43CABEDCDDD73D9CA8Z/p/
 Next Qatar,https://www.next.qa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Has clothing section,Unisex,custom/unknown,Large,Verified (secondary evidence),https://www.next.qa/Next-QA-AR-Products-1.xml.gz
 Nike Qatar,https://www.nike.qa/en/,24496,sitemap,2026-10-19,Has clothing section,Unisex,Salesforce Commerce Cloud,Large,Verified,https://www.nike.qa/en/home/
-Ounass Qatar,https://www.ounass.qa/,342593,sitemap,2026-10-19,Fashion-only,Unisex,Custom,Large,Verified,https://www.ounass.qa/shop-emporio-armani-eagle-patch-zip-hoodie-for-kids-00438af14935_4067.html
+Ounass Qatar,https://www.ounass.qa/,387593,sitemap,2026-10-19,Fashion-only,Unisex,Custom,Large,Verified,https://www.ounass.qa/shop-emporio-armani-eagle-patch-zip-hoodie-for-kids-00438af14935_4067.html
 Oysho Qatar,https://www.oysho.com/qa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Women,custom/unknown,Large,Verified (secondary evidence),https://web.archive.org/web/20260712062634/https://www.oysho.com/qa/2-square-piping-hair-claws-l33180414
 PrettyLittleThing Qatar,https://www.prettylittlething.qa/,44119,archive,2026-10-19,Fashion-only,Women,Custom (Magento),Large,"Known major retailer – manually accepted (Cloudflare-protected, not bypassed)",https://www.prettylittlething.qa/animal-printed-onion-skin-bandeau-maxi-dress.html
 Pull&Bear Qatar,https://www.pullandbear.com/qa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,custom/unknown,Large,Verified (secondary evidence),https://web.archive.org/web/20260712213550/https://www.pullandbear.com/qa/ar/%D8%A7%D9%84%D8%B1%D8%AC%D8%A7%D9%84/%D9%85%D9%84%D8%A7%D8%A8%D8%B3/anime-n7253?celement=1030378186
-Replay Qatar,https://replayjeans.qa/,15,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Large,Verified,https://replayjeans.qa/
+Replay Qatar,https://replayjeans.qa/,652,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Large,Verified,https://replayjeans.qa/
 Riva Fashion,https://www.rivafashion.com/en-qa/,74598,archive,2026-10-19,Fashion-only,Women,magento,Large,Verified,https://www.rivafashion.com/en-qa/
 Salam Stores,https://salams.com/,17968,sitemap,2026-10-19,Has clothing section,Unisex,Magento,Large,Verified,https://salams.com/
 SHEIN,https://ar.shein.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ar.shein.com', port=80): Max retries exceeded with ))",2026-10-19,Fashion-only,Unisex,Custom/Other,Large,Known major retailer – manually accepted,https://ar.shein.com/
@@ -53,8 +53,8 @@ Balmain,https://balmain.com/en-qa,240077,sitemap,2026-10-19,Fashion-only,Unisex,
 Brands Outlet,https://brandsoutletglobal.com/,10630,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Medium,Verified,https://brandsoutletglobal.com/
 Brands Qatar,https://brandsco.qa/,386,sitemap,2026-10-19,Fashion-only,Men,Shopify,Small,Verified,https://brandsco.qa/
 Byerley,https://byerley.qa/,215,archive,2026-10-19,Fashion-only,Men,Custom,Small,"Unverified – Qatar storefront live, purchase path not confirmed (JS/static page)",https://byerley.qa/
-Chantelle,https://chantelle.com/shop/en-qa,99798,sitemap,2026-10-19,Fashion-only,Women,Custom (Next.js),Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://chantelle.com/shop/en-qa?popup=popup-user-location&userCountry=US&lang=en
-Coudre,https://coudre.qa/,484,sitemap,2026-10-19,Fashion-only,Women,WordPress,Small,Verified,https://coudre.qa/
+Chantelle,https://chantelle.com/shop/en-qa,99798,sitemap (partial: 83 of 84 sitemap files read),2026-10-19,Fashion-only,Women,Custom (Next.js),Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://chantelle.com/shop/en-qa?popup=popup-user-location&userCountry=US&lang=en
+Coudre,https://coudre.qa/,484,sitemap (partial: 14 of 15 sitemap files read),2026-10-19,Fashion-only,Women,WordPress,Small,Verified,https://coudre.qa/
 Dar Al Qaftan,https://daralqaftan.qa/,35,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://daralqaftan.qa/collections.json
 Dart,https://dartline.qa/,38,sitemap,2026-10-19,Fashion-only,Women,WooCommerce,Small,Verified,https://dartline.qa/wp-json/wc/store/v1/products/categories
 Dary,https://dary.com.qa/,135,sitemap,2026-10-19,Fashion-only,Women,shopify,Small,Verified,https://dary.com.qa/
@@ -68,7 +68,7 @@ FAZI,https://fazi.qa/,1,archive,2026-10-19,Fashion-only,Women,Custom/Other,Small
 Fetch,https://fetch.qa/,958,sitemap,2026-10-19,Fashion-only,Unisex,Custom/Other,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://fetch.qa/
 FIGS,https://www.wearfigs.com/en-QA/,1883,sitemap,2026-10-19,Fashion-only,Unisex,shopify,Small,Verified,https://www.wearfigs.com/en-QA/
 Fitwell,https://fitwell.qa/,825,sitemap,2026-10-19,Has clothing section,Women,WooCommerce,Small,Verified,https://fitwell.qa/wp-json/wc/store/v1/products/categories
-Grizzly,https://grizzly.qa/,75,sitemap,2026-10-19,Fashion-only,Unisex,WooCommerce,Small,Verified,https://grizzly.qa/
+Grizzly,https://grizzly.qa/,143,sitemap,2026-10-19,Fashion-only,Unisex,WooCommerce,Small,Verified,https://grizzly.qa/
 Hermosa QA,https://hermosa.qa/,2233,sitemap,2026-10-19,Has clothing section,Women,Shopify,Small,Verified,https://hermosa.qa/collections.json
 Instaura Lingerie,https://instaura.qa/,317,sitemap,2026-10-19,Fashion-only,Women,shopify,Small,Verified,https://instaura.qa/
 Jaya,https://jaya-qa.com/,16,shop-page total,2026-10-19,Fashion-only,Women,woocommerce,Small,Verified,https://jaya-qa.com/
@@ -93,17 +93,17 @@ Naya,https://naya.qa/,129,sitemap,2026-10-19,Fashion-only,Women,Custom,Small,"Un
 Nimbus,https://nimbus.com.qa/,634,sitemap,2026-10-19,Fashion-only,Unisex,woocommerce,Small,Verified,https://nimbus.com.qa/
 Nymphaea Abayas,https://www.nymphaea.qa/,119,sitemap,2026-10-19,Fashion-only,Women,WooCommerce,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://www.nymphaea.qa/
 Off Pitch,https://www.offpitch.qa/en,38,sitemap,2026-10-19,Fashion-only,Unisex,Custom (Next.js),Medium,Verified,https://www.offpitch.qa/en
-Out of the Blue,https://outoftheblue.qa/,3036,sitemap,2026-10-19,Has clothing section,Unisex,shopify,Small,Verified,https://outoftheblue.qa/
+Out of the Blue,https://outoftheblue.qa/,3997,sitemap,2026-10-19,Has clothing section,Unisex,shopify,Small,Verified,https://outoftheblue.qa/
 Peak Qatar,https://peak.qa/ar/,2558,sitemap,2026-10-19,Has clothing section,Unisex,WooCommerce,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://peak.qa/wp-json/wc/store/v1/products/categories
 Phati,https://www.phati.qa/,259,sitemap,2026-10-19,Fashion-only,Women,Custom/Other,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://www.phati.qa/
-ProSwimwear Qatar,https://www.proswimwear.qa/,6143,sitemap,2026-10-19,Fashion-only,Unisex,Custom,Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://www.proswimwear.qa/
+ProSwimwear Qatar,https://www.proswimwear.qa/,6143,sitemap (partial: 53 of 57 sitemap files read),2026-10-19,Fashion-only,Unisex,Custom,Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://www.proswimwear.qa/
 Qfit,https://qfit.qa/,442,sitemap,2026-10-19,Fashion-only,Unisex,WooCommerce,Small,Verified,https://qfit.qa/wp-json/wc/store/v1/products/categories
 Roma Style,https://roumastyle.qa/,19,sitemap,2026-10-19,Fashion-only,Women,WooCommerce,Small,Unverified candidate – weak Qatar signal (fashion-classified),https://roumastyle.qa/wp-json/wc/store/v1/products/categories
-Romano,https://romano.qa/en,0,shop-page total,2026-10-19,Fashion-only,Unisex,Custom (Next.js),Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://romano.qa/en
-Rumi Earth,https://www.rumi.co/,0,sitemap (QA pages only),2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://www.rumi.co/collections.json
+Romano,https://romano.qa/en,,Not available (no sitemap; shop-page total reported 0),2026-10-19,Fashion-only,Unisex,Custom (Next.js),Medium,Unverified candidate – weak Qatar signal (fashion-classified),https://romano.qa/en
+Rumi Earth,https://www.rumi.co/,,Not available (no QA pages in sitemap),2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://www.rumi.co/collections.json
 Sadil,https://sadil.qa/,87,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://sadil.qa/collections.json
 Sama Store,https://www.samastore.qa/,168,sitemap,2026-10-19,Has clothing section,Unisex,Shopify,Small,Verified,https://www.samastore.qa/collections.json
-Sandro Qatar,https://www.sandro.qa/,1554,sitemap,2026-10-19,Fashion-only,Unisex,Custom/Other,Small,Verified,https://www.sandro.qa/
+Sandro Qatar,https://www.sandro.qa/,1829,sitemap,2026-10-19,Fashion-only,Unisex,Custom/Other,Small,Verified,https://www.sandro.qa/
 Shop Five,https://www.shop5.qa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.shop5.qa', port=80): Max retries exceeded with url:))",2026-10-19,Fashion-only,Men,shopify,Small,Verified,https://www.shop5.qa/
 Skylink,https://skylink.qa/,156,archive,2026-10-19,Fashion-only,Women,WooCommerce,Small,Verified,https://skylink.qa/wp-json/wc/store/v1/products/categories
 Soleil,https://soleil.qa/,514,sitemap,2026-10-19,Fashion-only,Women,Custom,Small,"Unverified – Qatar storefront live, purchase path not confirmed (JS/static page)",https://soleil.qa/

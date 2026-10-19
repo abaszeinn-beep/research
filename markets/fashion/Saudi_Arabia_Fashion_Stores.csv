@@ -3,18 +3,18 @@ Abercrombie & Fitch,https://www.abercrombie.sa/,,"Not available (unreachable (Co
 Adidas,https://www.adidas.sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260615115215/https://www.adidas.sa/ar/%D8%A8%D9%86%D8%B7%D8%A7%D9%84-mercedes---amg-petronas-formula-one-team-dna/JV5379.html
 aivi,https://en-sa.aivi.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.en-sa.aivi.com', port=80): Max retries exceeded wit))",2026-10-19,Fashion-only,"Women, Men",magento,Brand-Major,Verified,https://en-sa.aivi.com/women/clothing/dresses.html
 American Eagle,https://www.americaneagle.com.sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,"Women, Men",,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260712025636/https://www.americaneagle.com.sa/en/buy-ae-10-flex-loose-khaki-short-khaki
-Asics,https://www.asics.com/sa/,0,sitemap (SA pages only),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.asics.com/sa/
+Asics,https://www.asics.com/sa/,105369,"sitemap (whole site, no market segment)",2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.asics.com/sa/
 Bershka,https://www.bershka.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260710113236/https://www.bershka.com/sa/--%D8%B1%D8%AC%D8%A7%D9%84/%D9%85%D9%84%D8%A7%D8%A8%D8%B3/ed-hardy-x-bershka-c1010888669.html
 Calvin Klein,https://www.calvinklein.sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.calvinklein.sa/
-Calzedonia,https://www.calzedonia.com/sa/,53615,sitemap,2026-10-19,Fashion-only,Women,custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.calzedonia.com/sa/
+Calzedonia,https://www.calzedonia.com/sa/,53615,sitemap (partial: 31 of 32 sitemap files read),2026-10-19,Fashion-only,Women,custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.calzedonia.com/sa/
 Carrefour KSA,https://www.carrefourksa.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.carrefourksa.com', port=80): Max retries exceeded w))",2026-10-19,Has clothing section,"Women, Men",,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20261002154046/https://www.carrefourksa.com/mafsau/ar/australian-egyptian-rice/ahram-egyptian-rice-5kg/p/649704
 Centrepoint,https://www.centrepointstores.com/sa/,65605,archive,2026-10-19,Has clothing section,Unisex,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20261011132300/https://www.centrepointstores.com/sa/ar/buy-amla-baby-remote-control-swing-system-car/p/169778248
 Centrepoint (Lifestyle),https://www.lifestyleshops.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Has clothing section,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.lifestyleshops.com/sa/
 DeFacto,https://www.defacto.com/en-sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.defacto.com/en-sa/
 Fashion: Brands For Less,https://www.brandsforless.com/en-sa/,39815,archive,2026-10-19,Has clothing section,"Women, Men",,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260218061032/https://www.brandsforless.com/en-sa/women-zipplex-lace-up-training-shoes-black/1256145/p/
-Fred Perry,https://www.fredperry.com/sa-en/,6919,sitemap (SA pages only),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.fredperry.com/sa-en/
+Fred Perry,https://www.fredperry.com/sa-en/,6919,sitemap (partial: 14 of 15 sitemap files read),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.fredperry.com/sa-en/
 GAP,https://www.gap.sa/,2406,sitemap,2026-10-19,Fashion-only,"Women, Men",salesforce-commerce,Brand-Major,Verified,https://www.gap.sa/en/women-dresses
-Giordano Online,https://giordano.com.sa/ar,7371,sitemap,2026-10-19,Has clothing section,"Women, Men",shopify,Brand-Major,Verified,https://giordano.com.sa/ar/collections/men-tees
+Giordano Online,https://giordano.com.sa/ar,8371,sitemap,2026-10-19,Has clothing section,"Women, Men",shopify,Brand-Major,Verified,https://giordano.com.sa/ar/collections/men-tees
 Guess KSA,https://www.guess.sa/,1886,sitemap,2026-10-19,Has clothing section,"Women, Men",salesforce-commerce,Brand-Major,Verified,https://www.guess.sa/en/guess-jeans
 H&M,https://sa.hm.com/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Has clothing section,"Women, Men",,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20251017021920/https://sa.hm.com/ar/buy-3-piece-print-motif-fancy-dress-set-black-harry-potter-0
 Hollister,https://www.hollisterco.sa/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.hollisterco.sa', port=80): Read timed out. (read ti))",2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.hollisterco.sa/
@@ -25,7 +25,7 @@ Mango,https://shop.mango.com/sa/,,Not available (blocked by site: HTTP 429 on ro
 Massimo Dutti,https://www.massimodutti.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20261012120118/https://www.massimodutti.com/sa/men/cashmere/accessories-n4525
 Max Fashion,https://www.maxfashion.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,"Women, Men",,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260916232802/https://www.maxfashion.com/sa/en/buy-plain-waterfall-cardigan-with-v-neck-and-long-sleeves/p/161848229
 Namshi,https://www.namshi.com/saudi-en/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.namshi.com', port=80): Read timed out. (read timeou))",2026-10-19,Fashion-only,Unisex,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260713005947/https://www.namshi.com/saudi-en/adidas/?f%5Bcolour_family%5D=pink&f%5Bdelivery_type%5D=standard&f%5Bnms_sneaker_silhouette_family%5D=GRAND%20COURT%2CAnthony_Edwards&page=1
-Nayomi-KSA,https://sa.nayomi.com/,2993,sitemap,2026-10-19,Fashion-only,Women,shopify,Brand-Major,Verified,https://sa.nayomi.com/
+Nayomi-KSA,https://sa.nayomi.com/,3551,sitemap,2026-10-19,Fashion-only,Women,shopify,Brand-Major,Verified,https://sa.nayomi.com/
 New Balance Saudi Arabia,https://www.newbalance.com.sa/en/,2727,sitemap,2026-10-19,Has clothing section,"Women, Men",magento,Brand-Major,Verified,https://www.newbalance.com.sa/
 Next,https://www.next.sa/ar,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Verified,https://www.next.sa/ar/back-to-school
 Nike,https://www.nike.sa/en/,33388,sitemap,2026-10-19,Fashion-only,"Women, Men",salesforce-commerce,Brand-Major,Verified,https://www.nike.sa/en/clothing?prefn1=nikeBrands&prefv1=nike_sportswear
@@ -36,7 +36,7 @@ PUMA,https://sa.puma.com/sa/ar,3944,sitemap,2026-10-19,Has clothing section,"Wom
 Redtag,https://sa.redtagfashion.com/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Has clothing section,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://sa.redtagfashion.com/
 Reebok Saudi,https://www.reebok.sa/,6055,sitemap,2026-10-19,Fashion-only,"Women, Men",shopify,Brand-Major,Verified,https://www.reebok.sa/
 Riva Fashion: Shop Women's Clothes and Accessories Online,https://www.rivafashion.com/ar-sa/,74598,archive,2026-10-19,Fashion-only,Women,magento,Brand-Major,Verified,https://www.rivafashion.com/ar-sa/rivawomen/dresses.html
-River Island,https://www.riverisland.com/sa/,12985,sitemap,2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.riverisland.com/sa/
+River Island,https://www.riverisland.com/sa/,12985,sitemap (partial: 13 of 15 sitemap files read),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Known major retailer – manually accepted,https://www.riverisland.com/sa/
 SHEIN (Saudi Arabia),https://ar.shein.com/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.ar.shein.com', port=80): Max retries exceeded with ))",2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Verified,https://ar.shein.com/RecommendSelection/Women-Clothing-sc-017172961.html?ici=ar_tab02navbar02&src_module=topcat&src_identifier=fc%3DWomen%20Clothing%60sc%3DWomen%20Clothing%60tc%3D0%60oc%3D0%60ps%3Dtab02navbar02%60jc%3DitemPicking_017172961&adp=
 Splash,https://www.splashfashions.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260916232828/https://www.splashfashions.com/sa/en/buy-abayas-embroidered-a-line-abaya-with-v-neck/p/9310054
 Stradivarius,https://www.stradivarius.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Women,,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260927203027/https://www.stradivarius.com/sa/en/women/shoes/all/new-n2377
@@ -48,20 +48,20 @@ Zara,https://www.zara.com/sa/,,Not available (blocked by site: HTTP 403 on robot
 أُناس,https://saudi.ounass.com/women,394162,sitemap,2026-10-19,Fashion-only,"Women, Men",custom/unknown,Brand-Major,Verified,https://saudi.ounass.com/women/clothing
 ديكاتلون السعودية,https://decathlon.com.sa/,3510,sitemap,2026-10-19,Has clothing section,"Women, Men",shopify,Brand-Major,Verified,https://decathlon.com.sa/
 Atelier Medad,https://ateliermedad.com/en-sa/,124,sitemap,2026-10-19,Has clothing section,"Women, Men",zid,Large,Verified,https://ateliermedad.com/categories/1510722/
-Columbia Saudi Arabia,https://columbia.sa/,2601,sitemap,2026-10-19,Has clothing section,"Women, Men",shopify,Large,Verified,https://columbia.sa/
+Columbia Saudi Arabia,https://columbia.sa/,3087,sitemap,2026-10-19,Has clothing section,"Women, Men",shopify,Large,Verified,https://columbia.sa/
 "Dolce&Gabbana® Clothing, Beauty, Casa and Food & Beverage",https://www.dolcegabbana.com/en-sa/,12897,sitemap (SA pages only),2026-10-19,Has clothing section,"Women, Men",salesforce-commerce,Large,Verified (secondary evidence),https://www.dolcegabbana.com/en-sa/fashion/women/highlights/most-loved/
 "ETRO Official Website: Men's, Women's & Home collections",https://www.etro.com/sa-en/,4658,sitemap (SA pages only),2026-10-19,Has clothing section,"Women, Men",salesforce-commerce,Large,Verified,https://www.etro.com/sa-en/women/clothing/
-Fashion.sa,https://fashion.sa/,29677,sitemap,2026-10-19,Fashion-only,"Women, Men",salla,Large,Verified,https://fashion.sa/collections/women-dresses
+Fashion.sa,https://fashion.sa/,33681,sitemap,2026-10-19,Fashion-only,"Women, Men",salla,Large,Verified,https://fashion.sa/collections/women-dresses
 Fashion: Selfridges / Harrods (intl),https://www.harrods.com/en-sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Has clothing section,Unisex,,Large,Verified (secondary evidence),https://web.archive.org/web/20260712184313/https://www.harrods.com/en-sa/p/fendi-kids-ff-print-stroller-000000000006476717
 ghareeb.abaya,https://ghareeb.com.sa/,1,archive,2026-10-19,Fashion-only,Women,salla,Large,Verified,https://ghareeb.com.sa
 harveynichols,https://www.harveynichols.sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.harveynichols.sa', port=80): Max retries exceeded w))",2026-10-19,Has clothing section,"Women, Men, Unisex",magento,Large,Verified,https://www.harveynichols.sa/en/women/clothing.html
 HUGO BOSS,https://www.hugoboss.com/sa/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Has clothing section,"Women, Men",salesforce-commerce,Large,Verified (secondary evidence),https://www.hugoboss.com/sa/en/mens-clothing-new-arrivals/
 Ipekyol KSA,https://sa.ipekyol.com/,3635,sitemap,2026-10-19,Fashion-only,Women,shopify,Large,Verified,https://sa.ipekyol.com/collections/dress-2
-JACK & JONES,https://www.jackjones.com/ar-sa,13367,sitemap (SA pages only),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Large,Verified,https://www.jackjones.com/ar-sa/jeans
+JACK & JONES,https://www.jackjones.com/ar-sa,12799,sitemap (SA pages only),2026-10-19,Fashion-only,"Women, Men",custom/unknown,Large,Verified,https://www.jackjones.com/ar-sa/jeans
 Kate Spade Saudi Arabia,https://www.katespade.sa/,4719,sitemap,2026-10-19,Has clothing section,Unisex,shopify,Large,Verified,https://www.katespade.sa/
 LIU.JO,https://liujo.sa/,7149,sitemap,2026-10-19,Has clothing section,Women,shopify,Large,Verified (secondary evidence),https://liujo.sa/collections/women-fp-new-arrivals-clothing
 Lomar,https://lomar.sa/,153,shop-page total,2026-10-19,Fashion-only,Men,salla,Large,Verified,https://lomar.sa/categories/1555557/thobe-sadiry
-Luxury: Balenciaga,https://www.balenciaga.com/en-sa/,0,sitemap (SA pages only),2026-10-19,Fashion-only,Unisex,,Large,Verified (secondary evidence),https://web.archive.org/web/20260712203233/https://www.balenciaga.com/en-sa/denim-stay-press-shorts-black-A001RBTUW541000.html
+Luxury: Balenciaga,https://www.balenciaga.com/en-sa/,22704,sitemap (partial: 27 of 28 sitemap files read),2026-10-19,Fashion-only,Unisex,,Large,Verified (secondary evidence),https://web.archive.org/web/20260712203233/https://www.balenciaga.com/en-sa/denim-stay-press-shorts-black-A001RBTUW541000.html
 Luxury: Gucci,https://www.gucci.com/sa/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gucci.com', port=80): Max retries exceeded with url))",2026-10-19,Fashion-only,Unisex,,Large,Verified (secondary evidence),https://web.archive.org/web/20260712182819/https://www.gucci.com/sa/ar/pr/children/girl/girl-clothing-4-12-years/dresses-for-girl/childrens-denim-dress-with-horsebit-p-827449XDDCP4100
 Luxury: Saint Laurent,https://www.ysl.com/en-sa/,1209,sitemap (SA pages only),2026-10-19,Fashion-only,Unisex,,Large,Verified (secondary evidence),https://web.archive.org/web/20260614100501/https://www.ysl.com/en-sa/pr/gaby-micro-vanity-bag-in-lambskin-8192851EL071000.html
 Max Mara KSA,https://www.maxmara.sa/,1123,sitemap,2026-10-19,Has clothing section,Women,shopify,Large,Verified,https://www.maxmara.sa/
@@ -98,13 +98,13 @@ Befashion Store,https://befashion.com.sa/,365,archive,2026-10-19,Has clothing se
 berllin,https://berllin.com/en,1135,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://berllin.com/en/dresses-offers-discounts/c1260795271
 Beyoncé,https://beyonce.com/sa-ar,73,sitemap,2026-10-19,Has clothing section,Women,shopify,Medium,Unverified – weak Saudi signals only,https://beyonce.com/shop/products/bday-pullover-hoodie
 Billionaire EU,https://www.billionaire.com/sa/,2439,sitemap (SA pages only),2026-10-19,Fashion-only,Men,salesforce-commerce,Medium,Unverified – weak Saudi signals only,https://www.billionaire.com/sa/clothing/
-boutiqaat,https://www.boutiqaat.com/ar-sa/,179349,sitemap (SA pages only),2026-10-19,Has clothing section,"Women, Men",custom/unknown,Medium,Verified (secondary evidence),https://www.boutiqaat.com/ar-om/women/arabic-fragrances/all-over-spray-1209517592/l/
+boutiqaat,https://www.boutiqaat.com/ar-sa/,181020,sitemap (SA pages only),2026-10-19,Has clothing section,"Women, Men",custom/unknown,Medium,Verified (secondary evidence),https://www.boutiqaat.com/ar-om/women/arabic-fragrances/all-over-spray-1209517592/l/
 BREAK THE CYCLE,https://breakthecycle.sa/,93,sitemap,2026-10-19,Fashion-only,Unisex,zid,Medium,Verified,https://breakthecycle.sa/categories/572091/
-Chantelle,https://chantelle.com/shop/en-sa/,99798,sitemap,2026-10-19,Fashion-only,Women,custom/unknown,Medium,Unverified – weak Saudi signals only,https://chantelle.com/shop/en-sa/category/lingerie
+Chantelle,https://chantelle.com/shop/en-sa/,99798,sitemap (partial: 83 of 84 sitemap files read),2026-10-19,Fashion-only,Women,custom/unknown,Medium,Unverified – weak Saudi signals only,https://chantelle.com/shop/en-sa/category/lingerie
 Check Point,https://www.checkpoint.com.sa/ar,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.checkpoint.com.sa', port=443): Max retries exceede))",2026-10-19,Fashion-only,"Women, Men",shopify,Medium,Verified,https://www.checkpoint.com.sa/ar/collections/clothing
 Closet SA,https://closet.sa/,126,sitemap,2026-10-19,Fashion-only,"Women, Unisex",zid,Medium,Verified,https://closet.sa/categories/1295787/abayas
 CloudCorner - زاوية السحابة,https://cloudcorner.com.sa/,10,platform product count,2026-10-19,Fashion-only,"Women, Men",woocommerce,Medium,Verified,https://cloudcorner.com.sa/product-category/dresses/
-Crowdless,https://crowdless.sa/,627,sitemap,2026-10-19,Has clothing section,Women,shopify,Medium,Verified,https://crowdless.sa/collections/clothing
+Crowdless,https://crowdless.sa/,631,sitemap,2026-10-19,Has clothing section,Women,shopify,Medium,Verified,https://crowdless.sa/collections/clothing
 DABB,https://dabb.sa/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Fashion-only,Women,zid,Medium,Verified,https://dabb.sa/products/green-hoodie
 DALEEN,https://daleen.com.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='daleen.com.sa', port=443): Max retries exceeded with u))",2026-10-19,Fashion-only,Women,zid,Medium,Verified,https://daleen.com.sa/categories/1065758/نواعم
 Dar nijood,https://darnijood.com/,692,sitemap,2026-10-19,Has clothing section,Women,salla,Medium,Verified,https://darnijood.com/
@@ -129,7 +129,7 @@ LAVALLEE,https://lavalleeshop.com/,745,sitemap,2026-10-19,Fashion-only,Women,sal
 lolacasademunt,https://lolacasademunt.sa/,6557,sitemap,2026-10-19,Fashion-only,Women,shopify,Medium,Verified,https://lolacasademunt.sa/collections/clothes
 Luisa Spagnoli Online Shop,https://www.luisaspagnoli.com/en/sa/,19032,sitemap,2026-10-19,Fashion-only,Women,salesforce-commerce,Medium,Unverified – weak Saudi signals only,https://www.luisaspagnoli.com/en/sa/search?cgid=category_000_023_000
 Main Website,https://richy.sa/,,"Not available (unreachable (ConnectionError: HTTPSConnectionPool(host='www.richy.sa', port=443): Max retries exceeded with ur))",2026-10-19,Has clothing section,Men,custom/unknown,Medium,Verified,https://richy.sa/allfabrics/offers-tailorings296
-Maje KSA,https://maje.sa/,1462,sitemap,2026-10-19,Fashion-only,Women,shopify,Medium,Verified,https://maje.sa/products/mfpro04615-rhinestone-knit-maxi-dress-black
+Maje KSA,https://maje.sa/,1507,sitemap,2026-10-19,Fashion-only,Women,shopify,Medium,Verified,https://maje.sa/products/mfpro04615-rhinestone-knit-maxi-dress-black
 Manar Store,https://manar.sa/,574,sitemap,2026-10-19,Fashion-only,"Women, Men, Unisex",salla,Medium,Verified,https://manar.sa/categories/1562587/
 Mansoj Dal,https://mansojdal.sa/en,133,sitemap,2026-10-19,Fashion-only,"Women, Men",salla,Medium,Verified,https://mansojdal.sa/en/Blackabayas/c1610899702
 Maxpoint Store,https://maxpoint.sa/en,2895,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://maxpoint.sa/en/-/c1057817580
@@ -138,8 +138,8 @@ mcmworldwide.ksa,https://mcmworldwide.sa/,1247,sitemap,2026-10-19,Has clothing s
 Mnsaj - منسج,https://mnsaj.com/,1306,sitemap,2026-10-19,Fashion-only,Women,custom/unknown,Medium,Verified,https://mnsaj.com/
 Myille Womens Clothing,https://myille.com/en,879,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://myille.com/en/dresses/c1389278007
 ND Fashion فساتين سهرة وزفاف فاخرة في الخبر,https://ndfashions.com/,800,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://ndfashions.com/
-NewStep,https://newstep.sa/,5016,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://www.youtube.com/@newstep-2/shorts
-Noētic,https://noetic.sa/,505,sitemap,2026-10-19,Fashion-only,Women,shopify,Medium,Verified,https://noetic.sa/collections/occasions
+NewStep,https://newstep.sa/,5035,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://www.youtube.com/@newstep-2/shorts
+Noētic,https://noetic.sa/,799,sitemap,2026-10-19,Fashion-only,Women,shopify,Medium,Verified,https://noetic.sa/collections/occasions
 NUDA,https://nuda.sa/,253,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://nuda.sa/-/c343198260
 Overall-Boutique11,https://overall-boutique11.com/en,2,archive,2026-10-19,Has clothing section,"Women, Men",salla,Medium,Verified,https://overall-boutique11.com/en
 Personage,https://personage.sa/,282,sitemap,2026-10-19,Has clothing section,"Women, Men",woocommerce,Medium,Verified,https://personage.sa/product/straight-leg-jeans/
@@ -152,7 +152,7 @@ Rinital,https://rinital-sa.com/,65,sitemap,2026-10-19,Fashion-only,Women,salla,M
 Rosa Clara Saudi Arabia,https://rosaclara.sa/,2447,sitemap,2026-10-19,Fashion-only,Women,shopify,Medium,Verified,https://rosaclara.sa/collections/cocktail-dresses-collection-marfil-barcelona
 Rosemet Premium Evening and Occasion Dresses,https://rosemet.sa/en,311,archive,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://rosemet.sa/ar/%D8%B9%D8%B1%D9%88%D8%B6-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-96/c2131149855
 S U L É,https://sule.sa/,320,sitemap,2026-10-19,Fashion-only,"Women, Men",shopify,Medium,Verified,https://sule.sa/collections/e-clothes
-Samena,https://samena-stores.com/,10944,sitemap,2026-10-19,Fashion-only,"Women, Men",shopify,Medium,Verified,https://samena-stores.com/
+Samena,https://samena-stores.com/,11629,sitemap,2026-10-19,Fashion-only,"Women, Men",shopify,Medium,Verified,https://samena-stores.com/
 SELENE Saudi Arabia Everyday Wear for Women Men and Kids,https://selene-official.com/en,1143,sitemap,2026-10-19,Fashion-only,"Women, Men, Unisex",salla,Medium,Verified,https://selene-official.com/en/-/c1682506315
 SELSAL,https://selsal.sa/,401,sitemap,2026-10-19,Fashion-only,Women,zid,Medium,Verified,https://selsal.sa/categories/1724344/فساتين-السهرة
 Sharqiaa,https://store.sharqiaa.com/en,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.store.sharqiaa.com', port=80): Max retries exceeded))",2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://store.sharqiaa.com/en/Plain-abayas/c553922058
@@ -217,7 +217,7 @@ ZUM,https://zum.sa/,53,sitemap,2026-10-19,Fashion-only,Unisex,zid,Medium,Verifie
 كيابي السعودية,https://kiabi.sa/ar,11851,sitemap,2026-10-19,Fashion-only,"Women, Men",shopify,Medium,Verified,https://kiabi.sa/ar/collections/fam4000328-t-shirts-tops-and-tank-tops
 لارا LARA,https://lara.com.sa/,495,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://lara.com.sa
 ليال عباية,https://aya-ksa-sa.com/,190,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://aya-ksa-sa.com
-ماركس آند سبنسر السعودية,https://www.marksandspencer.sa/ar/fashion,8844,sitemap,2026-10-19,Fashion-only,"Women, Men",custom/unknown,Medium,Verified,https://www.marksandspencer.sa/fashion/category/women/clothing/skirts
+ماركس آند سبنسر السعودية,https://www.marksandspencer.sa/ar/fashion,9121,sitemap,2026-10-19,Fashion-only,"Women, Men",custom/unknown,Medium,Verified,https://www.marksandspencer.sa/fashion/category/women/clothing/skirts
 متجر اكتان للأزياء,https://actan.com/en,10099,sitemap,2026-10-19,Fashion-only,Women,salla,Medium,Verified,https://actan.com/en/-/c666109309
 متجر الصقر,https://store.alsaqerfc.sa/,13,shop-page total,2026-10-19,Fashion-only,Unisex,custom/unknown,Medium,Verified,https://store.alsaqerfc.sa/sub-category/4
 متجر العريس,https://rdai.sa/,526,sitemap,2026-10-19,Fashion-only,Men,salla,Medium,Verified,https://rdai.sa/
@@ -313,7 +313,7 @@ mmashops,https://mmashops.com/en,29,archive,2026-10-19,Fashion-only,Unisex,salla
 Mybag71,https://mybag71.com/en,593,sitemap,2026-10-19,Has clothing section,"Women, Men, Unisex",salla,Small,Verified,https://mybag71.com/en/ملابس/c1555873235
 N O V E M B E R,https://novemberline.com/en,1,archive,2026-10-19,Fashion-only,Women,salla,Small,Verified,https://salla.sa/tarh_november
 Nabila Nazir,https://nabilanazer.com.sa/en,555,sitemap,2026-10-19,Fashion-only,Women,salla,Small,Verified,https://salla.sa/nabilanazer
-ne.abaya,https://neabaya.com/en,102,sitemap,2026-10-19,Fashion-only,Women,salla,Small,Verified,https://neabaya.com/en
+ne.abaya,https://neabaya.com/en,110,sitemap,2026-10-19,Fashion-only,Women,salla,Small,Verified,https://neabaya.com/en
 Nk_abayaline,https://nk-abayaline.com/en,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Fashion-only,Women,salla,Small,Verified,https://nk-abayaline.com/en/العبايات-الشتوية/c1311976520
 noorphir,https://noorphir.com/,1,archive,2026-10-19,Has clothing section,Women,salla,Small,Verified,https://noorphir.com/-/c1651692307
 Nova abaya,https://novadetails.com/en,427,sitemap,2026-10-19,Fashion-only,Women,salla,Small,Verified,https://novadetails.com/en/عطر-العبايات/c1972623661
@@ -342,7 +342,7 @@ Sahab.line.sa,https://sahablinesa.com/en,,Not available (sitemap present but yie
 sara abayah,https://saraabaya.com/,1,archive,2026-10-19,Fashion-only,Women,salla,Small,Verified,https://saraabaya.com/عبايات-سوداء/c920488572
 SHcouture,https://shcouture1.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Fashion-only,Women,salla,Small,Verified,https://shcouture1.com/-/c1339839856
 Shey,https://shey3.com/en,20,archive,2026-10-19,Fashion-only,Unisex,salla,Small,Verified,https://salla.sa/shey14
-Show Muscles,https://showmuscles.com/en,136,sitemap,2026-10-19,Fashion-only,Unisex,salla,Small,Verified,https://showmuscles.com/en/-/c458993274
+Show Muscles,https://showmuscles.com/en,169,sitemap,2026-10-19,Fashion-only,Unisex,salla,Small,Verified,https://showmuscles.com/en/-/c458993274
 Soeurs,https://soeurssss.com/,219,sitemap,2026-10-19,Fashion-only,Women,salla,Small,Verified,https://soeurssss.com/العبايات/c1218212468
 Sohadline,https://sohadline.com/,1,archive,2026-10-19,Fashion-only,Women,salla,Small,Verified,https://sohadline.com/
 Souls,https://soulsabbayas.com/,,Not available (sitemap present but yielded no countable URLs; no sitemap/shop total/platform count and no archive captures),2026-10-19,Fashion-only,Women,salla,Small,Verified,https://salla.sa/souls_abbayas

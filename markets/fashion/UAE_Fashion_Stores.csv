@@ -6,7 +6,7 @@ Armani UAE (incl. Armani Exchange),https://www.armani.com/en-ae/,8732,sitemap (A
 Banana Republic,https://www.bananarepublic.ae/,588,sitemap,2026-10-19,Fashion-only,Unisex,Salesforce-commerce,Brand-Major,Verified,https://www.bananarepublic.ae/
 Bershka UAE,https://www.bershka.com/ae/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,Unknown,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260417163247/https://www.bershka.com/ae/ar/%D8%AC%D8%A7%D9%83%D9%8A%D8%AA-%D8%B5%D9%88%D9%81-%D8%A8%D8%BA%D8%B7%D8%A7%D8%A1-%D9%84%D9%84%D8%B1%D8%A3%D8%B3-c0p209484874.html?colorId=250
 Bloomingdale's,https://bloomingdales.ae/,156373,sitemap,2026-10-19,Fashion-only,Women,Salesforce-commerce,Brand-Major,Verified,https://bloomingdales.ae/
-Bouguessa,https://bouguessa.com/,879,sitemap,2026-10-19,Fashion-only,Women,Shopify,Brand-Major,Verified,https://bouguessa.com/
+Bouguessa,https://bouguessa.com/,915,sitemap,2026-10-19,Fashion-only,Women,Shopify,Brand-Major,Verified,https://bouguessa.com/
 Brands For Less,https://www.brandsforless.com/en-ae/,39815,archive,2026-10-19,Fashion-only,Unisex,Unknown,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260217194607/https://www.brandsforless.com/en-ae/rw-remote-controlled-lamborghini-toy-car-playset-lime-green/1187874/p/&quot;/Mozilla/5.0%20%28compatible;%20archive.org_bot%20+http://archive.org/details/archive.org_bot%29%20Zeno/0344175%20warc/v0.8.97
 Burberry UAE,https://ae.burberry.com/,3896,sitemap,2026-10-19,Fashion-only,Unisex,Custom,Brand-Major,Known major retailer – manually accepted,https://ae.burberry.com/
 Calvin Klein UAE,https://www.calvinklein.ae/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,Salesforce-commerce,Brand-Major,Known major retailer – manually accepted,https://www.calvinklein.ae/
@@ -24,8 +24,8 @@ H&M UAE,https://ae.hm.com/,,Not available (blocked by site: HTTP 403 on robots.t
 HUGO BOSS UAE,https://hugoboss.ae/,2502,sitemap,2026-10-19,Fashion-only,Unisex,Salesforce-commerce,Brand-Major,Verified,https://hugoboss.ae/
 Jashanmal,https://www.jashanmal.com/,25247,sitemap,2026-10-19,Has clothing section,Unisex,Shopify,Brand-Major,Verified,https://www.jashanmal.com/
 JD Sports UAE,https://www.jdsports.ae/,5693,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Brand-Major,Live-checked: UAE-locale storefront,https://www.jdsports.ae/
-Karl Lagerfeld UAE,https://www.karllagerfeld.com/en-ae/,3571,sitemap (AE pages only),2026-10-19,Fashion-only,Unisex,Unknown,Brand-Major,"Live-checked: UAE locale + AED, clothing nav",https://www.karllagerfeld.com/en-ae/
-La Senza UAE,https://www.lasenza.com/ae/,0,sitemap (AE pages only),2026-10-19,Fashion-only,Women,Unknown,Brand-Major,"Live-checked: AED prices, lingerie nav (lasenza.ae down with 521)",https://www.lasenza.com/ae/
+Karl Lagerfeld UAE,https://www.karllagerfeld.com/en-ae/,3581,sitemap (AE pages only),2026-10-19,Fashion-only,Unisex,Unknown,Brand-Major,"Live-checked: UAE locale + AED, clothing nav",https://www.karllagerfeld.com/en-ae/
+La Senza UAE,https://www.lasenza.com/ae/,55177,"sitemap (whole site, no market segment)",2026-10-19,Fashion-only,Women,Unknown,Brand-Major,"Live-checked: AED prices, lingerie nav (lasenza.ae down with 521)",https://www.lasenza.com/ae/
 Lacoste UAE,https://www.lacoste.com/ae/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,Salesforce-commerce,Brand-Major,Known major retailer – manually accepted,https://www.lacoste.com/ae/
 LC Waikiki UAE,https://www.lcwaikiki.com/en-AE,744919,archive,2026-10-19,Fashion-only,Unisex,Custom,Brand-Major,Known major retailer – manually accepted,https://www.lcwaikiki.com/en-AE
 Lifestyle,https://www.lifestyleshops.com/ae/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,Unknown,Brand-Major,Known major retailer – manually accepted,https://apps.apple.com/ae/app/centrepoint-online-shopping/id1161310479
@@ -57,7 +57,7 @@ Tommy Hilfiger UAE,https://ae.tommy.com/,,"Not available (unreachable (Connectio
 Tryano,https://www.tryano.com/,6262,archive,2026-10-19,Fashion-only,Unisex,Salesforce-commerce,Brand-Major,Known major retailer – manually accepted,https://www.tryano.com/
 Under Armour UAE,https://www.underarmour.ae/en/,11874,sitemap,2026-10-19,Has clothing section,Unisex,Salesforce-commerce,Brand-Major,Verified,https://www.underarmour.ae/en/home
 Uniqlo UAE,https://www.uniqlo.com/ae/en/,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.uniqlo.com', port=80): Read timed out. (read timeou))",2026-10-19,Fashion-only,Unisex,Custom,Brand-Major,Known major retailer – manually accepted,https://www.uniqlo.com/ae/en/
-"Victoria's Secret UAE (global site, UAE locale)",https://www.victoriassecret.com/ae/,0,sitemap (AE pages only),2026-10-19,Fashion-only,Women,Unknown,Brand-Major,Live-checked: UAE-locale storefront,https://www.victoriassecret.com/ae/vs/bras
+"Victoria's Secret UAE (global site, UAE locale)",https://www.victoriassecret.com/ae/,1335182,"sitemap (whole site, no market segment)",2026-10-19,Fashion-only,Women,Unknown,Brand-Major,Live-checked: UAE-locale storefront,https://www.victoriassecret.com/ae/vs/bras
 Victoria’s Secret UAE,https://www.victoriassecret.ae/,26147,sitemap,2026-10-19,Fashion-only,Women,Custom/Unknown,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260712031708/https://www.victoriassecret.ae/ar/beauty/buy-coconut-body-lotion-pink-coconut-0
 Zara UAE,https://www.zara.com/ae/,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),2026-10-19,Fashion-only,Unisex,Unknown,Brand-Major,Verified (secondary evidence),https://web.archive.org/web/20260520004625/https://www.zara.com/ae/ar/%D8%A7%D9%94%D9%81%D8%B1%D9%88%D9%84-%D8%A8%D9%85%D9%84%D9%85%D8%B3-%D9%88%D8%AA%D8%B7%D8%B1%D9%8A%D8%B2-%D8%A7%D9%94%D8%B2%D9%87%D8%A7%D8%B1-%D9%88%D8%AF%D8%A7%D9%86%D8%AA%D9%8A%D9%84-p02209594.html
 Aldebran,https://aldebran.ae/,2251,sitemap,2026-10-19,Has clothing section,Men,Woocommerce,Large,Verified,https://aldebran.ae/
@@ -99,8 +99,8 @@ Betty Rose,https://bettyrose.ae/,286,sitemap,2026-10-19,Fashion-only,Women,Shopi
 Black Diamond,https://www.black-diamond.ae/,76,shop-page total,2026-10-19,Has clothing section,Women,Woocommerce,Medium,Verified,https://www.black-diamond.ae/
 Blañce UAE,https://blance.ae/,111,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Medium,Verified,https://blance.ae/collections/dress-shirts
 Bodd Active UAE,https://boddactive.ae/,293,sitemap,2026-10-19,Has clothing section,Women,Shopify,Medium,Verified,https://boddactive.ae/
-Boris becker,https://www.borisbecker.ae/,155,sitemap,2026-10-19,Has clothing section,Unisex,Woocommerce,Medium,Verified,https://www.borisbecker.ae/
-By Amal,https://byamal.ae/,349,sitemap,2026-10-19,Fashion-only,Women,Shopify,Medium,Verified,https://byamal.ae/
+Boris becker,https://www.borisbecker.ae/,222,sitemap,2026-10-19,Has clothing section,Unisex,Woocommerce,Medium,Verified,https://www.borisbecker.ae/
+By Amal,https://byamal.ae/,395,sitemap,2026-10-19,Fashion-only,Women,Shopify,Medium,Verified,https://byamal.ae/
 CRYPT,https://crypt.ae/,589,sitemap,2026-10-19,Has clothing section,Women,Shopify,Medium,Verified,https://crypt.ae/
 Dar Al Hay Gents Tailoring,https://daralhay.ae/,250,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Medium,Verified,https://daralhay.ae/
 de Savary Middle East,https://www.desavarylondon.ae/,170,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Medium,Verified,https://www.desavarylondon.ae/
@@ -145,7 +145,7 @@ Vinay Fashion,https://vinayfashion.ae/,202,sitemap,2026-10-19,Fashion-only,Women
 Waves-fashion-store,https://wavesflipflops.ae/,165,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Medium,Verified,https://wavesflipflops.ae/
 Yeseco,https://yeseco.ae/,153,sitemap,2026-10-19,Has clothing section,Unisex,Woocommerce,Medium,Verified,https://yeseco.ae/
 الخزام للملبوسات الخليجية,https://www.alkhazam.ae/,216,sitemap,2026-10-19,Fashion-only,Men,Shopify,Medium,Verified,https://www.alkhazam.ae/
-متجر عالم آرڤا للملابس والهدايا,https://arvaworld.ae/,1412,sitemap,2026-10-19,Fashion-only,Unisex,Woocommerce,Medium,Verified,https://arvaworld.ae/
+متجر عالم آرڤا للملابس والهدايا,https://arvaworld.ae/,1412,sitemap (partial: 15 of 16 sitemap files read),2026-10-19,Fashion-only,Unisex,Woocommerce,Medium,Verified,https://arvaworld.ae/
 30+ Pakistani Clothing Brands,https://konjae.ae/,3,shop-page total,2026-10-19,Fashion-only,Unisex,Custom/Unknown,Small,Verified,https://konjae.ae/men-clothing/
 3bayti,https://3bayti.ae/,2462,sitemap,2026-10-19,Fashion-only,Women,Custom/Unknown,Small,Verified,https://3bayti.ae/
 4RACING2,https://4racing2.ae/,112,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://4racing2.ae/
@@ -158,21 +158,21 @@ Amadawear.ae,https://amadawear.ae/,245,sitemap,2026-10-19,Fashion-only,Women,Sho
 Athleta,https://www.athleta.ae/,140,sitemap,2026-10-19,Fashion-only,Unisex,Salesforce-commerce,Small,Verified,https://www.athleta.ae/
 AXEL ARIGATO,https://www.axelarigato.ae/,73,sitemap,2026-10-19,Has clothing section,Unisex,Salesforce-commerce,Small,Verified,https://www.axelarigato.ae/
 Azael,https://www.azaelabaya.ae/,207,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://www.azaelabaya.ae/
-Balenciaga,https://www.balenciaga.com/en-ae/,0,sitemap (AE pages only),2026-10-19,Has clothing section,Unisex,Unknown,Small,Verified (secondary evidence),https://www.balenciaga.com/en-ae
+Balenciaga,https://www.balenciaga.com/en-ae/,22704,sitemap (partial: 27 of 28 sitemap files read),2026-10-19,Has clothing section,Unisex,Unknown,Small,Verified (secondary evidence),https://www.balenciaga.com/en-ae
 Balqees,https://balqees.ae/,115,sitemap,2026-10-19,Fashion-only,Women,Woocommerce,Small,Verified,https://balqees.ae/shop/
-Base53,https://base53.ae/,4141,sitemap,2026-10-19,Fashion-only,Unisex,Woocommerce,Small,Live-checked: clothing + cart + UAE signal (not in verified directory),https://base53.ae/product-category/womens-fashion/womens-clothing/
+Base53,https://base53.ae/,4797,sitemap (partial: 12 of 13 sitemap files read),2026-10-19,Fashion-only,Unisex,Woocommerce,Small,Live-checked: clothing + cart + UAE signal (not in verified directory),https://base53.ae/product-category/womens-fashion/womens-clothing/
 BATIK - AE,https://batik.ae/,637,sitemap,2026-10-19,Has clothing section,Women,Shopify,Small,Verified,https://batik.ae/
 Boarders,https://boarders.ae/,491,archive,2026-10-19,Has clothing section,Unisex,Bigcommerce,Small,Verified,https://boarders.ae/apparel/
 Bonita Boutique,https://bonita.ae/,827,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://bonita.ae/
-Bonkerscorner UAE,https://bonkerscorner.ae/,2649,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://bonkerscorner.ae/
-Bottega Veneta UAE,https://www.bottegaveneta.com/en-ae,483,sitemap (AE pages only),2026-10-19,Fashion-only,Unisex,Unknown,Small,Live-checked: UAE-locale storefront,https://www.bottegaveneta.com/en-ae/women-collection-ae/women-clothing/new-clothing-women
+Bonkerscorner UAE,https://bonkerscorner.ae/,2653,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://bonkerscorner.ae/
+Bottega Veneta UAE,https://www.bottegaveneta.com/en-ae,483,sitemap (partial: 85 of 86 sitemap files read),2026-10-19,Fashion-only,Unisex,Unknown,Small,Live-checked: UAE-locale storefront,https://www.bottegaveneta.com/en-ae/women-collection-ae/women-clothing/new-clothing-women
 Bousni.ae,https://www.bousni.com/,1975,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://www.bousni.com/
-boutiqaat,https://www.boutiqaat.com/ar-ae/,178969,sitemap (AE pages only),2026-10-19,Has clothing section,Men,Custom/Unknown,Small,Verified (secondary evidence),https://www.boutiqaat.com/ar-ae/
+boutiqaat,https://www.boutiqaat.com/ar-ae/,180920,sitemap (AE pages only),2026-10-19,Has clothing section,Men,Custom/Unknown,Small,Verified (secondary evidence),https://www.boutiqaat.com/ar-ae/
 Boutique de Lola,https://www.boutiquedelola.ae/,3,shop-page total,2026-10-19,Fashion-only,Women,Magento,Small,Verified,https://boutiquedelola.ae/
-BRAGARD LLC,https://www.bragard.ae/,422,sitemap,2026-10-19,Fashion-only,Women,Prestashop,Small,Verified,https://www.bragard.ae/244-jackets
+BRAGARD LLC,https://www.bragard.ae/,422,sitemap (partial: 17 of 18 sitemap files read),2026-10-19,Fashion-only,Women,Prestashop,Small,Verified,https://www.bragard.ae/244-jackets
 By Amanina,https://byamanina.ae/,30,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://byamanina.ae/
 By Joud,https://byjoud.ae/,41,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://byjoud.ae/
-Castaway - Reel me into the sea -,https://www.castaway.ae/,491,sitemap,2026-10-19,Has clothing section,Unisex,Woocommerce,Small,Verified,https://castaway.ae/product-category/apparel/
+Castaway - Reel me into the sea -,https://www.castaway.ae/,688,sitemap (partial: 19 of 20 sitemap files read),2026-10-19,Has clothing section,Unisex,Woocommerce,Small,Verified,https://castaway.ae/product-category/apparel/
 CHIC LE FRIQUE,https://chiclefrique.com/,1176,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://chiclefrique.com/
 Clearance.ae,https://www.clearance.ae/,2185,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://www.clearance.ae/products/akira-womenswear-jacket
 Club L London,https://www.clubllondon.ae/,4179,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Live-checked: clothing + cart + UAE signal (not in verified directory),https://www.clubllondon.ae/
@@ -209,7 +209,7 @@ GBBM,https://gbbm.ae/,207,sitemap,2026-10-19,Fashion-only,Women,Woocommerce,Smal
 Genes Lecoanet Hemant UAE,https://www.geneslecoanethemant.ae/,547,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://geneslecoanethemant.ae/
 Giordano,https://giordano.ae/,17769,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://giordano.ae/
 Golf Superstore,https://www.golfsuperstore.ae/,2109,sitemap,2026-10-19,Has clothing section,Unisex,Shopify,Small,Verified,https://www.golfsuperstore.ae/collections/polo
-Green Hill Sports,https://www.greenhillsports.com/,0,sitemap (AE pages only),2026-10-19,Has clothing section,Unisex,Shopify,Small,Verified,https://www.greenhillsports.com/collections/boxing-shorts-and-vest
+Green Hill Sports,https://www.greenhillsports.com/,6062,"sitemap (whole site, no market segment)",2026-10-19,Has clothing section,Unisex,Shopify,Small,Verified,https://www.greenhillsports.com/collections/boxing-shorts-and-vest
 Gymshark UAE,https://www.gymshark.ae/,18700,sitemap,2026-10-19,Fashion-only,Unisex,Custom/Unknown,Small,Verified,https://www.gymshark.ae/
 Habayeb Abaya Shop,https://habayeb.ae/en,784,sitemap,2026-10-19,Fashion-only,Women,Opencart,Small,Verified,"https://wa.me/+971561671727?text=*Hi, I want information about abaya.*"
 Hals Boutique by Ibdaa3,https://ibdaa3.ae/,119,sitemap,2026-10-19,Fashion-only,Women,Woocommerce,Small,Verified,https://ibdaa3.ae/product-category/classic-abaya-2025/
@@ -221,12 +221,12 @@ HĀNM,https://www.hanm.ae/,291,sitemap,2026-10-19,Fashion-only,Women,Shopify,Sma
 INFAME,https://infame.ae/,69,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://infame.ae/
 Iren Vartik,https://irenvartik.ae/,1029,archive,2026-10-19,Fashion-only,Women,Custom/Unknown,Small,Live-checked: clothing + cart + UAE signal (not in verified directory),https://irenvartik.ae/odezhda/
 ITKORI,https://itkori.com/,733,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://itkori.com/
-JACK & JONES,https://www.jackjones.com/ar-ae/,1603,sitemap (AE pages only),2026-10-19,Fashion-only,Men,Custom/Unknown,Small,Verified (secondary evidence),https://www.jackjones.com/ar-ae
+JACK & JONES,https://www.jackjones.com/ar-ae/,13320,sitemap (AE pages only),2026-10-19,Fashion-only,Men,Custom/Unknown,Small,Verified (secondary evidence),https://www.jackjones.com/ar-ae
 Jacket,https://jackets.ae/,44,sitemap,2026-10-19,Fashion-only,Unisex,Woocommerce,Small,Verified,https://jackets.ae/
 JACQUEMUS UAE,https://www.jacquemus.ae/,472,sitemap,2026-10-19,Has clothing section,Unisex,Salesforce-commerce,Small,Verified,https://www.jacquemus.ae/
 JOANNA FASHION,https://joanna.ae/,221,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://joanna.ae/
 Just Adore,https://justadore.ae/,2516,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://justadore.ae/collections/baby-dresses
-Kashkha,https://www.kashkha.com/,0,sitemap (AE pages only),2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://www.kashkha.com/
+Kashkha,https://www.kashkha.com/,3046,"sitemap (whole site, no market segment)",2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://www.kashkha.com/
 Kayan,https://wearkayan.ae/,629,sitemap,2026-10-19,Has clothing section,Women,Shopify,Small,Verified,https://wearkayan.ae/
 KHAYAL Luxury Linen Clothing UAE,https://khayall.ae/,19,sitemap,2026-10-19,Fashion-only,Unisex,Unknown,Small,Live-checked: clothing + cart + UAE signal (not in verified directory),https://khayall.ae/
 Kiabi,https://www.kiabi.ae/,12560,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://kiabi.ae/
@@ -248,7 +248,7 @@ Maison Margiela UAE,https://www.maisonmargiela.ae/,2259,sitemap,2026-10-19,Has c
 Maisoon,https://maisoon.ae/,50,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://maisoon.ae/
 ManaZone,https://manazone.ae/,52,sitemap,2026-10-19,Fashion-only,Men,Woocommerce,Small,Verified,https://manazone.ae/product/essential-plain-pants-2/
 manjus,https://manjus.ae/,41,sitemap,2026-10-19,Fashion-only,Women,Custom/Unknown,Small,Verified,https://manjus.ae/
-Manyavar UAE,https://www.manyavar.com/en-ae/,6777,sitemap (AE pages only),2026-10-19,Fashion-only,Women,Unknown,Small,Live-checked: UAE-locale storefront,https://www.manyavar.com/en-ae/
+Manyavar UAE,https://www.manyavar.com/en-ae/,6777,sitemap (partial: 22 of 23 sitemap files read),2026-10-19,Fashion-only,Women,Unknown,Small,Live-checked: UAE-locale storefront,https://www.manyavar.com/en-ae/
 MARCO PERNER™ Dubai,https://marco.ae/,100,sitemap,2026-10-19,Fashion-only,Unisex,Woocommerce,Small,Verified,https://marco.ae/
 Marie France UAE,https://mariefrance.ae/,2135,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://mariefrance.ae/
 Marina Rinaldi UAE,https://www.marinarinaldi.ae/,590,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://www.marinarinaldi.ae/
@@ -295,14 +295,14 @@ Pull&Bear,https://www.pullandbear.com/ae/,,Not available (blocked by site: HTTP 
 qualitypointgeneraltrallc.ae,https://qualitypointgeneraltrallc.ae/,60,sitemap,2026-10-19,Fashion-only,Unisex,Woocommerce,Small,Verified,https://qualitypointgeneraltrallc.ae/
 RDX Sports UAE,https://rdxsports.ae/,1339,sitemap,2026-10-19,Has clothing section,Women,Shopify,Small,Verified,https://wholesale.rdxsports.com/?utm_source=retail-store-shopify&amp;utm_medium=top-header&amp;utm_campaign=uae-website
 Reverse Printed Abayas,https://reverse.ae/,87,sitemap,2026-10-19,Has clothing section,Women,Shopify,Small,Verified,https://reverse.ae/
-Robella,https://robella.ae/,325,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://robella.ae/
+Robella,https://robella.ae/,325,sitemap (partial: 10 of 11 sitemap files read),2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://robella.ae/
 Roxx,https://roxx.ae/,110,shop-page total,2026-10-19,Fashion-only,Women,Woocommerce,Small,Verified,https://roxx.ae/product-category/women/modestwear/
 Royal Vision,https://royalvisionofficial.ae/,191,sitemap,2026-10-19,Fashion-only,Women,Woocommerce,Small,Verified,https://royalvisionofficial.ae/product-category/ladies-garments/
 Rumi Earth,https://www.rumi.ae/,686,sitemap,2026-10-19,Has clothing section,Women,Shopify,Small,Verified,https://www.rumi.co/?shpxid=87d67636-8346-4627-82bd-9a165ad8ffbd
 RUNNERS SPORTS,https://runners.ae/,8013,sitemap,2026-10-19,Has clothing section,Unisex,Shopify,Small,Verified,https://runners.ae/collections/apparel
-Ryderwear UAE,https://www.ryderwear.com/en-ae/,363739,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Live-checked: UAE-locale storefront,https://www.ryderwear.com/en-ae/
+Ryderwear UAE,https://www.ryderwear.com/en-ae/,363788,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Live-checked: UAE-locale storefront,https://www.ryderwear.com/en-ae/
 RZIST,https://rzist.ae/,219,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Live-checked: clothing + cart + UAE signal (not in verified directory),https://rzist.ae/
-Saint Laurent,https://www.ysl.com/en-ae/,1210,sitemap (AE pages only),2026-10-19,Fashion-only,Unisex,Unknown,Small,Verified (secondary evidence),https://web.archive.org/web/20251119051202/https://www.ysl.com/en-ae/pr/belted-coat-in-stonewash-silk-satin-843316Y5J306641.html
+Saint Laurent,https://www.ysl.com/en-ae/,1225,sitemap (AE pages only),2026-10-19,Fashion-only,Unisex,Unknown,Small,Verified (secondary evidence),https://web.archive.org/web/20251119051202/https://www.ysl.com/en-ae/pr/belted-coat-in-stonewash-silk-satin-843316Y5J306641.html
 saucony.ae,https://www.saucony.ae/ae,474,archive,2026-10-19,Fashion-only,Men,Custom/Unknown,Small,Verified,https://www.saucony.ae/ae
 Selected Lines,https://selectedlines.ae/,503,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://selectedlines.ae/
 Shlalah,https://shlalah.ae/,51,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://shlalah.ae/
@@ -333,7 +333,7 @@ TimeOutX,https://www.timeoutx.ae/,486,sitemap,2026-10-19,Fashion-only,Unisex,Woo
 Tory Burch,https://www.toryburch.ae/,1944,sitemap,2026-10-19,Has clothing section,Unisex,Salesforce-commerce,Small,Verified,https://www.toryburch.ae/
 TRY ON DRESS,https://tryondress.ae/,956,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://tryondress.ae/
 Turtle Dubai,https://turtledubai.ae/,30,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://turtledubai.ae/
-UAE Sport Store,https://uaesss.com/,4179,sitemap,2026-10-19,Fashion-only,Unisex,Woocommerce,Small,Verified,https://uaesss.com/
+UAE Sport Store,https://uaesss.com/,4180,sitemap (partial: 8 of 9 sitemap files read),2026-10-19,Fashion-only,Unisex,Woocommerce,Small,Verified,https://uaesss.com/
 UNBOUND,https://unboundmodest.com/,157,sitemap,2026-10-19,Has clothing section,Women,Shopify,Small,Verified,https://unboundmodest.com/products/essential-modest-set
 Valentino Online Boutique: The Maison Valentino Official Site,https://www.valentino.com/en-ae/,2359,sitemap (AE pages only),2026-10-19,Has clothing section,Unisex,Sap-hybris,Small,Verified,https://www.valentino.com/en-ae/women/private-sales-ready-to-wear-woman
 VAVCI,https://vavci.ae/,1299,sitemap,2026-10-19,Fashion-only,Men,Shopify,Small,Verified,https://vavci.ae/
@@ -350,7 +350,7 @@ Zapped,https://zapped.ae/,395,sitemap,2026-10-19,Fashion-only,Men,Shopify,Small,
 Zealous LLC,https://www.zealous.ae/,446,sitemap,2026-10-19,Has clothing section,Unisex,Odoo,Small,Verified,https://zealousllc.odoo.com/shop/category/men-suit-86
 ZipItStore,https://zipitstore.ae/,49,sitemap,2026-10-19,Fashion-only,Women,Shopify,Small,Verified,https://zipitstore.ae/
 ZMURUD,https://zmurud.ae/en,3934,sitemap,2026-10-19,Fashion-only,Unisex,Shopify,Small,Verified,https://zmurud.ae/en
-ZONA ZERO,https://zonazero.ae/,1127,sitemap,2026-10-19,Has clothing section,Unisex,Woocommerce,Small,Verified,https://zonazero.ae/product-category/mens-fashion/men-clothing/
+ZONA ZERO,https://zonazero.ae/,1136,sitemap,2026-10-19,Has clothing section,Unisex,Woocommerce,Small,Verified,https://zonazero.ae/product-category/mens-fashion/men-clothing/
 عبايات حوراء,https://hawraaabaya.com/,1142,sitemap,2026-10-19,Fashion-only,Women,Zid,Small,Verified,https://hawraaabaya.com/
 ليفت مي أب,https://liftmeup.ae/,88,sitemap,2026-10-19,Fashion-only,Women,Custom/Unknown,Small,Verified,https://liftmeup.ae/
 متجر الأصيل الإلكتروني,https://alaseel.com/,169,sitemap,2026-10-19,Fashion-only,Men,Salla,Small,Verified (secondary evidence),https://alaseel.com/
