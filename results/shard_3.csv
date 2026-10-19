@@ -4103,3 +4103,791 @@ lifestraw.com,US,560,sitemap,12,https://lifestraw.com/sitemap.xml,2026-10-19,raw
 bonniesbearshop.com,US,438,sitemap,1,https://bonniesbearshop.com/sitemap.xml,2026-10-19,raw=438 dupes_removed=0
 modalai.com,US,1256,sitemap,27,https://www.modalai.com/sitemap.xml,2026-10-19,raw=1256 dupes_removed=0
 mustangarmament.com,US,32,sitemap,3,https://mustangarmament.com/sitemap_index.xml,2026-10-19,raw=33 dupes_removed=1
+northatlanticseed.com,US,4436,sitemap,21,https://www.northatlanticseed.com/wp-sitemap.xml,2026-10-19,raw=4436 dupes_removed=0
+badassbeardcare.com,US,618,sitemap,7,https://badassbeardcare.com/sitemap.xml,2026-10-19,raw=618 dupes_removed=0
+therugcompany.com,US,992,sitemap,6,https://www.therugcompany.com/xmlsitemap.php,2026-10-19,raw=1018 dupes_removed=26
+atlascoolingandheating.com,US,622,sitemap,14,https://atlascoolingandheating.com/sitemap.xml,2026-10-19,raw=625 dupes_removed=3
+blue4designs.com,US,80,sitemap,4,https://blue4designs.com/sitemap.xml,2026-10-19,"raw=80 dupes_removed=0; failed sitemap fetches=1: https://blue4designs.com/sitemap_agentic_discovery.xml:ConnectionError: HTTPSConnectionPool(host='blue4designs.com', port=443): Max retries exceeded wit"
+greenbelly.co,US,347,sitemap,5,https://www.greenbelly.co/sitemap.xml,2026-10-19,"raw=347 dupes_removed=0; failed sitemap fetches=1: https://www.greenbelly.co/sitemap_collections_1.xml?from=94831378530&to=278869213282:ConnectionError: HTTPSConnectionPool(host='www.greenbelly.co', port=443): Max retries exceeded wi"
+theblackwitchesbrew.com,US,43,sitemap,6,https://theblackwitchesbrew.com/sitemap.xml,2026-10-19,"raw=43 dupes_removed=0; failed sitemap fetches=1: https://theblackwitchesbrew.com/sitemap_pages_1.xml?from=112848339238&to=117700591910:ConnectionError: HTTPSConnectionPool(host='theblackwitchesbrew.com', port=443): Max retries excee"
+oriembroly.com,US,1097,sitemap,6,https://oriembroly.com/sitemap.xml,2026-10-19,"raw=1097 dupes_removed=0; failed sitemap fetches=2: https://oriembroly.com/sitemap_blogs_1.xml:ConnectionError: HTTPSConnectionPool(host='oriembroly.com', port=443): Max retries exceeded with ; https://oriembroly.com/sitemap_products_2.xml?from=10256706011451&to=15430350831931:ConnectionError: HTTPSConnectionPool(host='oriembroly.com', port=443): Max retries exceeded with "
+skrillex.com,US,19,sitemap,4,https://skrillex.com/sitemap.xml | https://skrillex.com/sitemap.xml | https://skrillex.com/sitemap.xml,2026-10-19,"raw=19 dupes_removed=0; failed sitemap fetches=2: https://skrillex.com/sitemap_collections_1.xml?from=343184703655&to=370383192231:ConnectionError: HTTPSConnectionPool(host='skrillex.com', port=443): Max retries exceeded with ur; https://skrillex.com/sitemap_products_1.xml?from=8651078107303&to=8651079712935:ConnectionError: HTTPSConnectionPool(host='skrillex.com', port=443): Max retries exceeded with ur"
+birddogdistributing.com,US,601,sitemap,4,https://www.birddogdistributing.com/xmlsitemap.php,2026-10-19,"raw=601 dupes_removed=0; failed sitemap fetches=2: https://www.birddogdistributing.com/xmlsitemap.php?type=brands&page=1:ConnectionError: HTTPSConnectionPool(host='www.birddogdistributing.com', port=443): Max retries e; https://www.birddogdistributing.com/xmlsitemap.php?type=products&page=1:ConnectionError: HTTPSConnectionPool(host='www.birddogdistributing.com', port=443): Max retries e"
+thehubofnantucket.com,US,136,sitemap,6,https://www.thehubofnantucket.com/sitemap.xml,2026-10-19,"raw=136 dupes_removed=0; failed sitemap fetches=1: https://www.thehubofnantucket.com/sitemap_pages_1.xml?from=16025085&to=18385577:ConnectionError: HTTPSConnectionPool(host='www.thehubofnantucket.com', port=443): Max retries exc"
+downrangeind.com,US,223,sitemap,1,https://www.downrangeind.com/sitemap.xml,2026-10-19,raw=223 dupes_removed=0
+thesecretdoormh.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
+averycreeknursery.com,US,2971,sitemap,1,https://www.averycreeknursery.com/sitemap.xml,2026-10-19,raw=2971 dupes_removed=0
+wineonsale.com,US,7854,sitemap,12,https://wineonsale.com/sitemap.xml,2026-10-19,"raw=7854 dupes_removed=0; failed sitemap fetches=2: https://wineonsale.com/sitemap_blogs_1.xml:ConnectionError: HTTPSConnectionPool(host='wineonsale.com', port=443): Max retries exceeded with ; https://wineonsale.com/sitemap_pages_1.xml?from=21347565686&to=124482158730:ConnectionError: HTTPSConnectionPool(host='wineonsale.com', port=443): Max retries exceeded with "
+bryte.com,US,141,sitemap,1,https://www.bryte.com/sitemap.xml,2026-10-19,raw=141 dupes_removed=0
+brahmin.com,US,1067,sitemap,7,https://brahmin.com/sitemap.xml,2026-10-19,raw=1067 dupes_removed=0
+wholesale.goldenhourhemp.com,US,81,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://goldenhourhemp.com/sitemap.php', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+scalemodelmasterpieces.com,US,396,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://scalemodelmasterpieces-com.3dcartstores.com/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+glassparadise.3dcartstores.com,US,496,sitemap,1,https://glassparadise.3dcartstores.com/sitemap.xml,2026-10-19,raw=496 dupes_removed=0
+retromanufacturing.com,US,2578,sitemap,10,https://www.retromanufacturing.com/sitemap.xml,2026-10-19,raw=2578 dupes_removed=0
+jeffreycampbellshoes.com,US,3954,sitemap,8,https://jeffreycampbellshoes.com/sitemap.xml,2026-10-19,"raw=3954 dupes_removed=0; failed sitemap fetches=3: https://jeffreycampbellshoes.com/sitemap_blogs_1.xml:ConnectionError: HTTPSConnectionPool(host='jeffreycampbellshoes.com', port=443): Max retries exce; https://jeffreycampbellshoes.com/sitemap_collections_5.xml?from=633156665716&to=646289031540:ConnectionError: HTTPSConnectionPool(host='jeffreycampbellshoes.com', port=443): Max retries exce; https://jeffreycampbellshoes.com/sitemap_collections_3.xml?from=260685168705&to=272297328705:ConnectionError: HTTPSConnectionPool(host='jeffreycampbellshoes.com', port=443): Max retries exce"
+hrsaddlesandtack.3dcartstores.com,US,646,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+ellerebel.com,US,1325,sitemap,10,https://ellerebel.com/sitemap.xml,2026-10-19,raw=1325 dupes_removed=0
+aefurniture.com,US,1517,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://aefurniture.com/index.php/sitemap.xml', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+shop.thestrokes.com,US,103,sitemap,6,https://shop.thestrokes.com/sitemap.xml,2026-10-19,raw=103 dupes_removed=0
+netcarat.com,US,1344,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.netcarat.com/sitemap.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+siequestrian.com,US,186,sitemap,7,https://siequestrian.com/sitemap.xml,2026-10-19,raw=186 dupes_removed=0
+viviebikes.com,US,763,sitemap,12,https://viviebikes.com/sitemap.xml | https://viviebikes.com/sitemap.xml | https://viviebikes.com/sitemap.xml,2026-10-19,raw=763 dupes_removed=0
+wallartgiant.com,US,722,sitemap,7,https://wallartgiant.com/sitemap.xml,2026-10-19,raw=722 dupes_removed=0
+ironplanethobbies.com,US,50845,sitemap,10,https://ironplanethobbies.com/xmlsitemap.php,2026-10-19,raw=50845 dupes_removed=0
+sewyeahquilting.com,US,32101,sitemap,47,https://sewyeahquilting.com/sitemap.xml,2026-10-19,raw=32101 dupes_removed=0
+warchestboutique.com,US,2565,sitemap,9,https://warchestboutique.com/sitemap.xml,2026-10-19,raw=2565 dupes_removed=0
+aquaticed.com,US,1420,sitemap,11,https://www.aquaticed.com/sitemap.xml,2026-10-19,"raw=1420 dupes_removed=0; failed sitemap fetches=1: https://www.aquaticed.com/es/sitemap_blogs_1.xml:ConnectionError: HTTPSConnectionPool(host='www.aquaticed.com', port=443): Max retries exceeded wi"
+aggregatemarkets.com,US,230039,sitemap,19,https://aggregatemarkets.com/sitemap.xml,2026-10-19,"raw=231317 dupes_removed=1278; failed sitemap fetches=2: https://aggregatemarkets.com/locations/states/counties/cities/sitemap/es-2.xml:ConnectionError: HTTPSConnectionPool(host='aggregatemarkets.com', port=443): Max retries exceeded; https://aggregatemarkets.com/locations/states/counties/cities/sitemap/es-1.xml:ConnectionError: HTTPSConnectionPool(host='aggregatemarkets.com', port=443): Max retries exceeded"
+stylemakerfabrics.com,US,3441,sitemap,10,https://stylemakerfabrics.com/sitemap.xml,2026-10-19,raw=3441 dupes_removed=0
+lostandfoundflagco.com,US,12,sitemap,6,https://lostandfoundflagco.com/sitemap.xml,2026-10-19,raw=12 dupes_removed=0
+pennylinn.com,US,46727,sitemap,86,https://pennylinn.com/sitemap.xml,2026-10-19,raw=46727 dupes_removed=0
+latexmattressfactory.com,US,119,sitemap,7,https://latexmattressfactory.com/sitemap.xml,2026-10-19,raw=119 dupes_removed=0
+th3dstudio.com,US,5759,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.th3dstudio.com/sitemap_index.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+satooreptilesandaquatics.com,US,2627,sitemap,8,https://www.satooreptilesandaquatics.com/sitemap.xml,2026-10-19,raw=2627 dupes_removed=0
+halloweencostumes.com,US,16848,sitemap,18,https://www.halloweencostumes.com/sitemap.xml | https://www.halloweencostumes.com/buy/sitemap_en_us.xml,2026-10-19,"raw=16848 dupes_removed=0; failed sitemap fetches=1: https://www.halloweencostumes.com/sitemap.xml:ConnectionError: HTTPSConnectionPool(host='www.halloweencostumes.com', port=443): Max retries exc"
+newjammies.com,US,491,sitemap,7,https://newjammies.com/sitemap.xml,2026-10-19,raw=491 dupes_removed=0
+freeflyapparel.com,US,1464,sitemap,7,https://freeflyapparel.com/sitemap.xml,2026-10-19,raw=1464 dupes_removed=0
+piggear.com,US,58,sitemap,1,https://www.piggear.com/sitemap.xml,2026-10-19,raw=58 dupes_removed=0
+eatbanza.com,US,689,sitemap,14,https://www.eatbanza.com/sitemap.xml,2026-10-19,raw=689 dupes_removed=0
+immunodx.com,US,877,sitemap,7,https://immunodx.com/sitemap.xml,2026-10-19,raw=877 dupes_removed=0
+hillsideneedlearts.com,US,734,sitemap,1,https://www.hillsideneedlearts.com/sitemap.xml,2026-10-19,raw=734 dupes_removed=0
+jasonwustudio.com,US,157,sitemap,6,https://jasonwustudio.com/sitemap.xml,2026-10-19,raw=157 dupes_removed=0
+us.katthelabel.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.us.katthelabel.com', port=80): Max retries exceeded))",0,,2026-10-19,
+carolinasfirstdefense.com,US,1851,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('http://carolinasfirstdefenseproshop.3dcartstores.com/sitemap.xml', ""ConnectionError: HTTPConnectionPool(host='carolinasfirstdefenseproshop.3dcartstores.com', port=80"")]); wayback CDX unique urlkeys (html,200; own host + www only)"
+live2lives.org,US,511,sitemap,12,https://live2lives.org/sitemap.xml,2026-10-19,raw=511 dupes_removed=0
+stashtea.com,US,392,sitemap,7,https://www.stashtea.com/sitemap.xml | https://www.stashtea.com/sitemap.xml | https://www.stashtea.com/sitemap.xml,2026-10-19,raw=392 dupes_removed=0
+otiesbotanicals.com,US,116,sitemap,6,https://otiesbotanicals.com/sitemap_index.xml,2026-10-19,raw=117 dupes_removed=1
+manfredijewels.com,US,8314,sitemap,12,https://www.manfredijewels.com/sitemap.xml,2026-10-19,"raw=8314 dupes_removed=0; failed sitemap fetches=2: https://www.manfredijewels.com/sitemap_blogs_1.xml:ConnectionError: HTTPSConnectionPool(host='www.manfredijewels.com', port=443): Max retries exceed; https://www.manfredijewels.com/sitemap_collections_1.xml?from=33800814628&to=336728096944:ConnectionError: HTTPSConnectionPool(host='www.manfredijewels.com', port=443): Max retries exceed"
+bonjourdenver.com,US,,"Not available (unreachable (SSLError: HTTPSConnectionPool(host='www.bonjourdenver.com', port=443): Max retries exceede))",0,,2026-10-19,
+grannysassydesigns.com,US,2542,sitemap,1,https://www.grannysassydesigns.com/sitemap.xml,2026-10-19,raw=2542 dupes_removed=0
+succulentsbox.com,US,3652,sitemap,9,https://succulentsbox.com/sitemap.xml | https://succulentsbox.com/sitemap.xml | https://succulentsbox.com/sitemap.xml,2026-10-19,raw=3652 dupes_removed=0
+gomugyourself.com,US,8303,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://gomugyourself.com/sitemap.xml', 403)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+forbiddengeek.com,US,3007,sitemap,9,https://www.forbiddengeek.com/sitemap.xml,2026-10-19,raw=3007 dupes_removed=0
+hustlerhollywood.com,US,11669,sitemap,8,https://www.hustlerhollywood.com/sitemap.xml,2026-10-19,raw=11669 dupes_removed=0
+swiftronicsinc.com,US,1131,sitemap,14,https://swiftronicsinc.com/sitemap.xml,2026-10-19,raw=1131 dupes_removed=0
+moleskine.com,US,740,sitemap (US pages only),6,https://www.moleskine.com/sitemap_0.xml | https://www.moleskine.com/it-it/sitemap_0.xml | https://www.moleskine.co.jp/ja-jp/sitemap_0.xml | https://www.moleskine.com/en-us/sitemap_0.xml | https://www.moleskine.com/zh-hk/sitemap_0.xml (+1 more),2026-10-19,"raw=27360 dupes_removed=0; country split untagged=14008,other=11016,US=740"
+through-time.com,US,1539,sitemap,7,https://www.through-time.com/sitemap.xml,2026-10-19,raw=1539 dupes_removed=0
+monsterscooterparts.com,US,46065,sitemap,51,https://monsterscooterparts.com/sitemap.xml | https://monsterscooterparts.com/sitemap.xml | https://monsterscooterparts.com/sitemap.xml,2026-10-19,raw=46065 dupes_removed=0
+speedfactoryracing.net,US,58623,sitemap,70,https://www.speedfactoryracing.net/sitemap.xml,2026-10-19,raw=58623 dupes_removed=0
+shopstallhigh.com,US,59,sitemap,6,https://shopstallhigh.com/sitemap.xml,2026-10-19,raw=59 dupes_removed=0
+hulken.com,US,262,sitemap,7,https://hulken.com/sitemap.xml,2026-10-19,raw=262 dupes_removed=0
+ubraidit.com,US,93,sitemap,1,https://www.ubraidit.com/sitemap.xml,2026-10-19,raw=93 dupes_removed=0
+shopazil.com,US,1261,sitemap,8,https://shopazil.com/sitemap.xml,2026-10-19,raw=1261 dupes_removed=0
+inkermannyc.com,US,240,sitemap,7,https://www.inkermannyc.com/sitemap.xml,2026-10-19,raw=240 dupes_removed=0
+everythingbutwater.com,US,8135,sitemap,3,https://www.everythingbutwater.com/sitemap_index.xml,2026-10-19,raw=8135 dupes_removed=0; media sitemaps skipped=1
+shopcursive.com,US,4349,sitemap,1,https://www.shopcursive.com/sitemap.xml,2026-10-19,raw=4349 dupes_removed=0
+indigotones.com,US,5175,sitemap,16,https://indigotones.com/sitemap.xml | https://indigotones.com/sitemap.xml | https://indigotones.com/sitemap.xml,2026-10-19,raw=5175 dupes_removed=0
+shopmexicoenlapiel.com,US,279,sitemap,6,https://shopmexicoenlapiel.com/sitemap.xml,2026-10-19,raw=279 dupes_removed=0
+daytonaudio.com,US,6095,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+theshopatsweetbeginnings.com,US,758,sitemap,6,https://theshopatsweetbeginnings.com/sitemap.xml,2026-10-19,raw=758 dupes_removed=0
+postwineandspirits.wine,US,2465,sitemap,1,https://www.postwineandspirits.wine/sitemap.xml,2026-10-19,raw=2465 dupes_removed=0
+schiffsovereign.com,US,4309,sitemap,13,https://schiffsovereign.com/sitemap.xml,2026-10-19,raw=4342 dupes_removed=0
+exquisitetimepieces.com,US,11689,sitemap,24,https://www.exquisitetimepieces.com/sitemap.xml | https://www.exquisitetimepieces.com/sitemap.xml,2026-10-19,raw=11689 dupes_removed=0
+handeyesupply.com,US,1513,sitemap,8,https://www.handeyesupply.com/sitemap.xml,2026-10-19,raw=1513 dupes_removed=0
+livbaysupplies.com,US,534,sitemap,7,https://livbaysupplies.com/sitemap.xml,2026-10-19,raw=534 dupes_removed=0
+productsup.com,US,1609,sitemap,1,https://www.productsup.com/sitemap.xml,2026-10-19,raw=1611 dupes_removed=2
+katzsdelicatessen.com,US,201,sitemap,1,https://katzsdelicatessen.com/media/sitemap/sitemap.xml,2026-10-19,raw=201 dupes_removed=0
+rockport.com,US,923,sitemap,9,https://www.rockport.com/sitemap.xml,2026-10-19,raw=923 dupes_removed=0
+hobbsscreens.com,US,101,sitemap,1,https://www.hobbsscreens.com/sitemap.xml,2026-10-19,raw=101 dupes_removed=0
+prestigewatches.store,US,347,sitemap,6,https://prestigewatches.store/sitemap_index.xml,2026-10-19,raw=348 dupes_removed=1
+muvfl.com,US,668,sitemap,14,https://muvfl.com/sitemap.xml,2026-10-19,raw=669 dupes_removed=1
+burton.com,US,1728,sitemap (US pages only),44,https://www.burton.com/sitemap.xml | https://www.burton.com/sitemap.xml | https://www.burton.com/sitemap.xml,2026-10-19,"raw=10369 dupes_removed=0; country split other=6912,untagged=1729,US=1728"
+curtainsin.com,US,377809,sitemap,76,https://www.curtainsin.com/sitemap.xml,2026-10-19,"raw=377809 dupes_removed=0; failed sitemap fetches=2: https://www.curtainsin.com/sitemap_74.xml:ConnectionError: HTTPSConnectionPool(host='www.curtainsin.com', port=443): Max retries exceeded w; https://www.curtainsin.com/sitemap_72.xml:ConnectionError: HTTPSConnectionPool(host='www.curtainsin.com', port=443): Max retries exceeded w"
+squadronposters.com,US,8233,sitemap,13,https://www.squadronposters.com/post-sitemap.xml | https://www.squadronposters.com/page-sitemap.xml | https://www.squadronposters.com/product-sitemap4.xml | https://www.squadronposters.com/product-sitemap3.xml | https://www.squadronposters.com/product-sitemap2.xml (+8 more),2026-10-19,raw=8236 dupes_removed=3
+adornedbylonnie.com,US,1175,sitemap,8,https://adornedbylonnie.com/sitemap.xml,2026-10-19,raw=1176 dupes_removed=1
+armageddonsports.com,US,180,sitemap,7,https://armageddonsports.com/sitemap.xml,2026-10-19,raw=180 dupes_removed=0
+shop.mattel.com,US,51492,sitemap,72,https://shop.mattel.com/sitemap.xml,2026-10-19,raw=51492 dupes_removed=0
+shop.homemadehooplah.com,US,19,sitemap,6,https://shop.homemadehooplah.com/sitemap.xml,2026-10-19,raw=19 dupes_removed=0
+nausetsurfshop.com,US,129,sitemap,6,https://www.nausetsurfshop.com/sitemap.xml,2026-10-19,raw=129 dupes_removed=0
+permanenthangover.com,US,300,sitemap,6,https://www.permanenthangover.com/sitemap.xml,2026-10-19,raw=300 dupes_removed=0
+jenis.com,US,255,sitemap,7,https://jenis.com/sitemap.xml,2026-10-19,raw=255 dupes_removed=0
+shop.membean.com,US,19,sitemap,5,https://shop.membean.com/sitemap.xml,2026-10-19,raw=19 dupes_removed=0
+agjeans.com,US,1559,sitemap,8,https://www.agjeans.com/sitemap.xml,2026-10-19,raw=1559 dupes_removed=0
+shopdripclothing.com,US,56,sitemap,5,https://shopdripclothing.com/sitemap.xml,2026-10-19,raw=56 dupes_removed=0
+newkssauces.com,US,102,sitemap,7,https://www.newkssauces.com/sitemap.xml,2026-10-19,raw=102 dupes_removed=0
+medrock.com,US,68,sitemap,7,https://medrock.com/sitemap.xml,2026-10-19,raw=68 dupes_removed=0
+zedsupply.com,US,27527,sitemap,32,https://zedsupply.com/sitemap_index.xml,2026-10-19,"raw=27641 dupes_removed=114; failed sitemap fetches=2: https://zedsupply.com/product-sitemap29.xml:ConnectionError: HTTPSConnectionPool(host='zedsupply.com', port=443): Max retries exceeded with u; https://zedsupply.com/product-sitemap27.xml:ConnectionError: HTTPSConnectionPool(host='zedsupply.com', port=443): Max retries exceeded with u"
+shop.tnstateparks.com,US,244,sitemap,6,https://shop.tnstateparks.com/sitemap.xml,2026-10-19,raw=244 dupes_removed=0
+shop.ocasiocortez.com,US,203,sitemap,10,https://shop.ocasiocortez.com/sitemap.xml,2026-10-19,raw=203 dupes_removed=0
+shopmnairsoft.com,US,136,sitemap,7,https://shopmnairsoft.com/sitemap.xml,2026-10-19,raw=136 dupes_removed=0
+sucreabeille.com,US,1227,sitemap,7,https://sucreabeille.com/sitemap.xml | https://sucreabeille.com/sitemap.xml | https://sucreabeille.com/sitemap.xml,2026-10-19,raw=1227 dupes_removed=0
+mastahbetta.com,US,1583,sitemap,8,https://mastahbetta.com/sitemap.xml,2026-10-19,raw=1583 dupes_removed=0
+petiteandsassy.com,US,1034,sitemap,6,https://petiteandsassy.com/sitemap.xml,2026-10-19,raw=1034 dupes_removed=0
+ninewest.com,US,2436,sitemap,12,https://ninewest.com/sitemap.xml,2026-10-19,raw=2436 dupes_removed=0
+cupidrop.com,US,627,sitemap,8,https://www.cupidrop.com/sitemap.xml,2026-10-19,raw=627 dupes_removed=0
+lightningbuggiftco.com,US,1830,sitemap,1,https://www.lightningbuggiftco.com/sitemap.xml,2026-10-19,raw=1830 dupes_removed=0
+lovesac.com,US,3967,sitemap,4,https://www.lovesac.com/sitemap-index.xml,2026-10-19,raw=3968 dupes_removed=1
+thewhiffshop.com,US,482,sitemap,6,https://thewhiffshop.com/sitemap.xml,2026-10-19,raw=482 dupes_removed=0
+shop.delta.com,US,356,sitemap,6,https://shop.delta.com/sitemap.xml,2026-10-19,raw=356 dupes_removed=0
+outbagsusa.com,US,371,sitemap,7,https://www.outbagsusa.com/sitemap.xml,2026-10-19,raw=371 dupes_removed=0
+adfontesmedia.com,US,1,sitemap,1,https://adfontesmedia.com/sitemap.xml,2026-10-19,raw=1 dupes_removed=0
+tkhotpick.com,US,1419,sitemap,7,https://tkhotpick.com/sitemap.xml,2026-10-19,raw=1419 dupes_removed=0
+drummagazines.com,US,14069,sitemap,1,https://drummagazines.com/sitemap.xml,2026-10-19,raw=14311 dupes_removed=242
+loebsclothing.com,US,69,sitemap,6,https://loebsclothing.com/sitemap.xml,2026-10-19,raw=69 dupes_removed=0
+outwardhound.com,US,628,sitemap,5,https://outwardhound.com/xmlsitemap.php,2026-10-19,raw=628 dupes_removed=0
+kidsdiscover.com,US,12845,sitemap,32,https://www.kidsdiscover.com/sitemap_index.xml,2026-10-19,raw=12853 dupes_removed=8
+sweetfurniture.com,US,30026,sitemap,37,https://sweetfurniture.com/sitemap.xml | https://sweetfurniture.com/sitemap.xml | https://sweetfurniture.com/sitemap.xml,2026-10-19,raw=30026 dupes_removed=0
+thebodyfirm.com,US,200,sitemap,8,https://thebodyfirm.com/sitemap.xml | https://thebodyfirm.com/sitemap.xml | https://thebodyfirm.com/sitemap.xml,2026-10-19,raw=200 dupes_removed=0
+marcanthonyonline.com,US,95,sitemap,10,https://marcanthonyonline.com/sitemap.xml,2026-10-19,raw=95 dupes_removed=0
+oya-idil.com,US,71,sitemap,6,https://oya-idil.com/sitemap.xml,2026-10-19,raw=71 dupes_removed=0
+us.lojel.com,US,128,sitemap,8,https://us.lojel.com/sitemap_index.xml,2026-10-19,raw=128 dupes_removed=0
+jennifer-bags.com,US,641,sitemap,1,https://jennifer-bags.com/sitemap.xml,2026-10-19,raw=641 dupes_removed=0
+gothardsistersmusicshop.com,US,182,sitemap,7,https://www.gothardsistersmusicshop.com/sitemap.xml,2026-10-19,raw=182 dupes_removed=0
+livingroyal.com,US,787,sitemap,7,https://www.livingroyal.com/sitemap.xml,2026-10-19,raw=787 dupes_removed=0
+theflyingfishstudio.com,US,92,sitemap,6,https://theflyingfishstudio.com/sitemap.xml,2026-10-19,raw=92 dupes_removed=0
+waldimports.com,US,485,sitemap,7,https://www.waldimports.com/sitemap.xml,2026-10-19,raw=485 dupes_removed=0
+shopsethi.com,US,1094,sitemap,6,https://shopsethi.com/sitemap.xml,2026-10-19,raw=1094 dupes_removed=0
+tvicr.com,US,184,sitemap,14,https://tvicr.com/wp-sitemap.xml,2026-10-19,raw=184 dupes_removed=0
+solsticescents.com,US,131,sitemap,1,https://solsticescents.3dcartstores.com/sitemap.xml,2026-10-19,raw=131 dupes_removed=0
+shoeshackonline.com,US,1638,sitemap,7,https://shoeshackonline.com/sitemap.xml,2026-10-19,raw=1638 dupes_removed=0
+cashmerette.com,US,290,sitemap,7,https://www.cashmerette.com/sitemap.xml | https://www.cashmerette.com/sitemap.xml | https://www.cashmerette.com/sitemap.xml,2026-10-19,raw=290 dupes_removed=0
+shopkolohe.com,US,210,sitemap,7,https://shopkolohe.com/sitemap.xml,2026-10-19,raw=210 dupes_removed=0
+explorecedarchest.com,US,1464,sitemap,8,https://explorecedarchest.com/sitemap.xml,2026-10-19,raw=1464 dupes_removed=0
+dropalinedesigns.com,US,4050,sitemap,1,https://www.dropalinedesigns.com/sitemap.xml,2026-10-19,raw=4288 dupes_removed=238
+letssewandquilt.com,US,31326,sitemap,34,https://www.letssewandquilt.com/sitemap_index.xml,2026-10-19,raw=31389 dupes_removed=63
+us.tonies.com,US,881,sitemap,7,https://us.tonies.com/sitemap.xml | https://us.tonies.com/sitemap.xml | https://us.tonies.com/sitemap.xml,2026-10-19,raw=881 dupes_removed=0
+shoppshomeboys.com,US,2405,sitemap,1,https://www.shoppshomeboys.com/sitemap.xml,2026-10-19,raw=2405 dupes_removed=0
+nycpev.com,US,49,sitemap,10,https://nycpev.com/sitemap.xml,2026-10-19,raw=50 dupes_removed=1
+halfandhalfboutique.com,US,642,sitemap,7,https://www.halfandhalfboutique.com/sitemap.xml,2026-10-19,raw=642 dupes_removed=0
+thenorthface.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
+classicshapewear.com,US,428,sitemap,6,https://www.classicshapewear.com/sitemap.xml,2026-10-19,raw=428 dupes_removed=0
+silkygem.com,US,207,sitemap,7,https://www.silkygem.com/sitemap.xml,2026-10-19,raw=207 dupes_removed=0
+michaelsofbrooklyn.com,US,282,sitemap,7,https://www.michaelsofbrooklyn.com/sitemap.xml,2026-10-19,raw=282 dupes_removed=0
+amyrachellejewelry.com,US,96,sitemap,6,https://amyrachellejewelry.com/sitemap.xml,2026-10-19,raw=96 dupes_removed=0
+thedocumentsportal.com,US,88,sitemap,4,https://thedocumentsportal.com/sitemap_index.xml,2026-10-19,raw=89 dupes_removed=1
+mikesmontes.com,US,1855,sitemap,1,https://www.mikesmontes.com/sitemap.xml,2026-10-19,raw=1855 dupes_removed=0
+purposewrecker.com,US,5493,sitemap,1,https://purposewrecker.com/media/sitemap/sitemap.xml,2026-10-19,raw=5493 dupes_removed=0
+officialexclusive.com,US,378,sitemap,7,https://officialexclusive.com/sitemap.xml,2026-10-19,raw=378 dupes_removed=0
+macsindianjewelry.com,US,4796,sitemap,3,https://www.macsindianjewelry.com/sitemap.xml,2026-10-19,raw=4796 dupes_removed=0
+labelleperfumes.com,US,18975,sitemap,32,https://labelleperfumes.com/sitemap.xml,2026-10-19,raw=18975 dupes_removed=0
+southerncruiser.3dcartstores.com,US,74,sitemap,1,https://southerncruiser.3dcartstores.com/sitemap.xml,2026-10-19,raw=74 dupes_removed=0
+irisglobal.com,US,895,sitemap,18,https://www.irisglobal.com/sitemap_index.xml,2026-10-19,raw=896 dupes_removed=1
+packercreekpottery.com,US,1192,sitemap,7,https://packercreekpottery.com/sitemap.xml,2026-10-19,raw=1192 dupes_removed=0
+bloomflowery.com,US,2038,sitemap,1,https://www.bloomflowery.com/sitemap.xml,2026-10-19,raw=2038 dupes_removed=0
+footcarexpress.com,US,34,sitemap,7,https://www.footcarexpress.com/sitemap.xml,2026-10-19,raw=34 dupes_removed=0
+davincibaby.com,US,403,sitemap,7,https://davincibaby.com/sitemap.xml,2026-10-19,raw=403 dupes_removed=0
+batesvilleshop.com,US,90,sitemap,1,https://batesvilleshop.com/sitemap.xml,2026-10-19,raw=90 dupes_removed=0
+tigear.com,US,423,sitemap,7,https://www.tigear.com/sitemap.xml,2026-10-19,raw=423 dupes_removed=0
+shop.nockonarchery.com,US,241,sitemap,5,https://shop.nockonarchery.com/sitemap.xml,2026-10-19,"raw=241 dupes_removed=0; failed sitemap fetches=1: https://shop.nockonarchery.com/sitemap_agentic_discovery.xml:SSLError: HTTPSConnectionPool(host='shop.nockonarchery.com', port=443): Max retries exceed"
+ourhouseabove.com,US,477,sitemap,7,https://ourhouseabove.com/sitemap.xml,2026-10-19,raw=477 dupes_removed=0
+mountainhouse.com,US,474,sitemap,7,https://mountainhouse.com/sitemap.xml | https://mountainhouse.com/sitemap.xml | https://mountainhouse.com/sitemap.xml,2026-10-19,raw=474 dupes_removed=0
+battlebrickcustoms.com,US,508,sitemap,1,https://www.battlebrickcustoms.com/sitemap.xml,2026-10-19,raw=508 dupes_removed=0
+gmamoses.com,US,10,sitemap,6,https://gmamoses.com/sitemap.xml,2026-10-19,raw=10 dupes_removed=0
+hakuhodousa.com,US,746,sitemap,7,https://hakuhodousa.com/sitemap.xml,2026-10-19,raw=746 dupes_removed=0
+thehvachouse.com,US,77,sitemap,6,https://thehvachouse.com/sitemap.xml,2026-10-19,raw=77 dupes_removed=0
+shopalbf.com,US,1409,sitemap,12,https://shopalbf.com/sitemap.xml,2026-10-19,raw=1409 dupes_removed=0
+stitchhappy.com,US,2104,sitemap,1,https://stitchhappy.com/sitemap.xml,2026-10-19,raw=2104 dupes_removed=0
+neotech-usa.com,US,559,sitemap,6,https://neotech-usa.com/sitemap.xml,2026-10-19,raw=559 dupes_removed=0
+acornsales.com,US,63815,sitemap,75,https://acornsales.com/sitemap.xml,2026-10-19,raw=63815 dupes_removed=0
+fastdecals.com,US,20536,sitemap,3,https://fastdecals.com/shop/sitemap.xml,2026-10-19,"raw=20536 dupes_removed=0; media sitemaps skipped=1; failed sitemap fetches=1: https://fastdecals.com/shop/categories_1.xml:SSLError: HTTPSConnectionPool(host='fastdecals.com', port=443): Max retries exceeded with "
+ontechsmartservices.com,US,1274,sitemap,7,https://www.ontechsmartservices.com/sitemap.xml,2026-10-19,raw=1274 dupes_removed=0
+prettypokets.com,US,96,sitemap,7,https://prettypokets.com/sitemap.xml,2026-10-19,raw=96 dupes_removed=0
+goldenhillstudio.com,US,878,sitemap,7,https://www.goldenhillstudio.com/sitemap.xml,2026-10-19,raw=878 dupes_removed=0
+modernbarbersupply.com,US,3112,sitemap,17,https://modernbarbersupply.com/sitemap.xml,2026-10-19,raw=3112 dupes_removed=0
+copsplus.com,US,40991,sitemap,9,https://copsplus.com/xmlsitemap.php,2026-10-19,raw=40991 dupes_removed=0
+thevacuumfactory.com,US,28061,sitemap,55,https://www.thevacuumfactory.com/sitemap_index.xml,2026-10-19,raw=28062 dupes_removed=1
+refillgoodness.com,US,71,sitemap,6,https://refillgoodness.com/sitemap.xml,2026-10-19,raw=71 dupes_removed=0
+tissfab.com,US,307,sitemap,6,https://tissfab.com/sitemap.xml,2026-10-19,raw=307 dupes_removed=0
+mroglobalsolutions.com,US,558347,sitemap,564,https://www.mroglobalsolutions.com/sitemap.xml,2026-10-19,"raw=558347 dupes_removed=0; failed sitemap fetches=1: https://www.mroglobalsolutions.com/sitemap_blogs_1.xml:ConnectionError: HTTPSConnectionPool(host='www.mroglobalsolutions.com', port=443): Max retries ex"
+pavoi.com,US,1375,sitemap,8,https://www.pavoi.com/sitemap.xml,2026-10-19,raw=1375 dupes_removed=0
+amanogawa.cloud,US,274658,sitemap,280,https://amanogawa.cloud/sitemap.xml,2026-10-19,"raw=274658 dupes_removed=0; failed sitemap fetches=1: https://amanogawa.cloud/sitemap_products_275.xml?from=15616983236719&to=15618507636847:ConnectionError: HTTPSConnectionPool(host='amanogawa.cloud', port=443): Max retries exceeded with"
+fishoutawater.com,US,229,sitemap,1,https://www.fishoutawater.com/sitemap.xml,2026-10-19,raw=229 dupes_removed=0
+shedtracks.com,US,312,sitemap,7,https://www.shedtracks.com/sitemap.xml,2026-10-19,raw=312 dupes_removed=0
+theresilientkidz.com,US,34,sitemap,6,https://theresilientkidz.com/sitemap.xml,2026-10-19,raw=34 dupes_removed=0
+reptilepetsdirect.com,US,660,sitemap,7,https://reptilepetsdirect.com/sitemap.xml,2026-10-19,raw=660 dupes_removed=0
+redchapterclothing.com,US,106,sitemap,6,https://redchapterclothing.com/sitemap.xml,2026-10-19,raw=106 dupes_removed=0
+fieldsfabrics.com,US,53,sitemap,1,https://fieldsfabrics.com/sitemap.xml,2026-10-19,raw=53 dupes_removed=0
+latinosdepot.com,US,316,sitemap,1,https://latinosdepot.com/sitemap.xml | https://latinosdepot.com/sitemap.xml | https://latinosdepot.com/sitemap.xml | https://latinosdepot.com/sitemap.xml,2026-10-19,raw=316 dupes_removed=0
+savedbychristapparels.com,US,86,sitemap,7,https://savedbychristapparels.com/sitemap.xml,2026-10-19,raw=86 dupes_removed=0
+ivycityco.com,US,7857,sitemap,26,https://ivy-city-co.myshopify.com/sitemap.xml | https://ivy-city-co.myshopify.com/llms.txt,2026-10-19,raw=7857 dupes_removed=0; failed sitemap fetches=1: https://ivy-city-co.myshopify.com/llms.txt:unparseable
+majorsupply.com,US,8705,sitemap,16,https://www.majorsupply.com/sitemap_index.xml,2026-10-19,raw=8707 dupes_removed=2
+bombereyewear.com,US,1833,sitemap,12,https://www.bombereyewear.com/sitemap.xml,2026-10-19,raw=1833 dupes_removed=0
+ets-lindgren.com,US,626,sitemap,14,https://www.ets-lindgren.com/sitemap_index.xml,2026-10-19,raw=631 dupes_removed=5
+lindas.com,US,69646,sitemap,75,https://lindas.com/sitemap.xml,2026-10-19,raw=69646 dupes_removed=0
+meduzabeauty.com,US,20,sitemap,6,https://www.meduzabeauty.com/sitemap.xml,2026-10-19,raw=20 dupes_removed=0
+cutandcropped.com,US,1189,sitemap,8,https://www.cutandcropped.com/sitemap.xml,2026-10-19,raw=1189 dupes_removed=0
+thedenimbarlosalamitos.com,US,903,sitemap,6,https://thedenimbarlosalamitos.com/sitemap.xml,2026-10-19,raw=903 dupes_removed=0
+starkcarpet.com,US,4480,sitemap,11,https://starkcarpet.com/sitemap.xml,2026-10-19,raw=4480 dupes_removed=0
+glitter4all.com,US,452,sitemap,6,https://glitter4all.com/sitemap.xml,2026-10-19,raw=452 dupes_removed=0
+ray-ban.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
+biryanipot.us,US,189,sitemap,1,https://www.biryanipot.us/sitemap.xml,2026-10-19,raw=189 dupes_removed=0
+cultgaia.com,US,2854,sitemap,9,https://cultgaia.com/sitemap.xml | https://cultgaia.com/sitemap.xml | https://cultgaia.com/sitemap.xml,2026-10-19,raw=2854 dupes_removed=0
+armitagetactical.com,US,181,sitemap,7,https://armitagetactical.com/sitemap.xml,2026-10-19,raw=181 dupes_removed=0
+tiendadeportivany.com,US,41,sitemap,6,https://tiendadeportivany.com/sitemap.xml,2026-10-19,raw=41 dupes_removed=0
+acwkits.com,US,93,sitemap,1,https://www.acwkits.com/sitemap.xml,2026-10-19,raw=93 dupes_removed=0
+shop3duniverse.com,US,2273,sitemap,8,https://shop3duniverse.com/sitemap.xml | https://shop3duniverse.com/sitemap.xml | https://shop3duniverse.com/sitemap.xml,2026-10-19,raw=2273 dupes_removed=0
+thedooloop.com,US,133,sitemap,7,https://thedooloop.com/sitemap.xml,2026-10-19,raw=133 dupes_removed=0
+shopupscaleit.com,US,329,sitemap,6,https://shopupscaleit.com/sitemap.xml,2026-10-19,raw=329 dupes_removed=0
+triplesrope.com,US,381,sitemap,1,https://www.triplesrope.com/sitemap.xml,2026-10-19,raw=381 dupes_removed=0
+oceanplasticsjewelry.com,US,79,sitemap,7,https://oceanplasticsjewelry.com/sitemap.xml,2026-10-19,raw=79 dupes_removed=0
+solaray.com,US,894,sitemap,7,https://solaray.com/sitemap.xml | https://solaray.com/sitemap.xml | https://solaray.com/sitemap.xml,2026-10-19,raw=894 dupes_removed=0
+britexfabrics.com,US,8536,sitemap,15,https://britexfabrics.com/sitemap.xml,2026-10-19,raw=8536 dupes_removed=0
+boulderbarks.com,US,4540,sitemap,11,https://boulderbarks.com/sitemap.xml,2026-10-19,raw=4540 dupes_removed=0
+shop.madisonnicoledesign.com,US,206,sitemap,7,https://shop.madisonnicoledesign.com/sitemap.xml | https://shop.madisonnicoledesign.com/a/sitemap-tools/xml/supplemental-sitemap.xml | https://shop.madisonnicoledesign.com/sitemap.xml | https://shop.madisonnicoledesign.com/sitemap.xml | https://shop.madisonnicoledesign.com/sitemap.xml,2026-10-19,raw=216 dupes_removed=10
+simplybreakers.com,US,22750,sitemap,28,https://www.simplybreakers.com/sitemap.xml,2026-10-19,raw=22750 dupes_removed=0
+kliotea.com,US,62,sitemap,7,https://kliotea.com/sitemap.xml,2026-10-19,raw=62 dupes_removed=0
+merch.credaily.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.merch.credaily.com', port=80): Max retries exceeded))",0,,2026-10-19,
+shoptwk.com,US,50,sitemap,7,https://www.shoptwk.com/sitemap.xml,2026-10-19,raw=50 dupes_removed=0
+kinadese.com,US,50,sitemap,6,https://kinadese.com/sitemap.xml,2026-10-19,raw=50 dupes_removed=0
+elitefinejewelers.com,US,1029,sitemap,7,https://www.elitefinejewelers.com/sitemap.xml,2026-10-19,raw=1029 dupes_removed=0
+barefootdreams.com,US,1263,sitemap,7,https://www.barefootdreams.com/sitemap.xml | https://www.barefootdreams.com/sitemap.xml | https://www.barefootdreams.com/sitemap.xml,2026-10-19,raw=1263 dupes_removed=0
+kennyflowers.com,US,809,sitemap,7,https://www.kennyflowers.com/sitemap.xml | https://www.kennyflowers.com/sitemap.xml | https://www.kennyflowers.com/sitemap.xml,2026-10-19,raw=809 dupes_removed=0
+shopbornbaby.com,US,1495,sitemap,8,https://shopbornbaby.com/sitemap.xml,2026-10-19,raw=1495 dupes_removed=0
+bomajewelrywholesale.com,US,3159,sitemap,14,https://bomajewelrywholesale.com/sitemap.xml,2026-10-19,raw=3159 dupes_removed=0
+shop.themomedit.com,US,650,sitemap,9,https://shop.themomedit.com/sitemap.xml | https://shop.themomedit.com/sitemap.xml | https://shop.themomedit.com/sitemap.xml,2026-10-19,"raw=650 dupes_removed=0; failed sitemap fetches=1: https://shop.themomedit.com/sitemap_pages_1.xml?from=91500216516&to=117000274116:SSLError: HTTPSConnectionPool(host='shop.themomedit.com', port=443): Max retries exceeded "
+jods.com,US,365,sitemap,7,https://jods.com/sitemap.xml,2026-10-19,raw=365 dupes_removed=0
+kingpintattoosupply.com,US,3054,sitemap,9,https://www.kingpintattoosupply.com/sitemap.xml | https://www.kingpintattoosupply.com/sitemap.xml | https://www.kingpintattoosupply.com/sitemap.xml,2026-10-19,raw=3054 dupes_removed=0
+swingdesign.com,US,4486,sitemap,11,https://www.swingdesign.com/sitemap.xml | https://www.swingdesign.com/sitemap.xml | https://www.swingdesign.com/sitemap.xml,2026-10-19,raw=4486 dupes_removed=0
+threeavenuesbookshop.com,US,10068,sitemap,1,https://www.threeavenuesbookshop.com/sitemap.xml,2026-10-19,raw=10068 dupes_removed=0
+americancommercialfurniture.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
+shopmidnightrider.com,US,188,sitemap,5,https://www.shopmidnightrider.com/sitemap.xml,2026-10-19,raw=188 dupes_removed=0
+goldenapplesbookstore.com,US,957,sitemap,7,https://goldenapplesbookstore.com/sitemap.xml,2026-10-19,raw=957 dupes_removed=0
+thesatedsheep.com,US,1837,sitemap,12,https://thesatedsheep.com/sitemap.xml | https://thesatedsheep.com/sitemap.xml | https://thesatedsheep.com/sitemap.xml,2026-10-19,raw=1837 dupes_removed=0
+madebybt.com,US,649,sitemap,6,https://madebybt.com/sitemap.xml,2026-10-19,raw=649 dupes_removed=0
+happycritterpetfood.com,US,197,sitemap,8,https://www.happycritterpetfood.com/sitemap_index.xml,2026-10-19,raw=198 dupes_removed=1
+fromourplace.com,US,660,sitemap,7,https://fromourplace.com/sitemap.xml | https://fromourplace.com/sitemap.xml | https://fromourplace.com/sitemap.xml,2026-10-19,raw=660 dupes_removed=0
+youthdiapers.com,US,139,sitemap,1,https://www.youthdiapers.com/sitemap.xml,2026-10-19,raw=139 dupes_removed=0
+lordhair.com,US,895,sitemap,1,https://www.lordhair.com/sitemap.xml,2026-10-19,raw=895 dupes_removed=0
+shopproverbsboutique.com,US,532,sitemap,7,https://shopproverbsboutique.com/sitemap.xml,2026-10-19,raw=532 dupes_removed=0
+arilloom.com,US,207,sitemap,7,https://www.arilloom.com/sitemap.xml,2026-10-19,raw=207 dupes_removed=0
+ammonyc.com,US,221,sitemap,8,https://ammonyc.com/sitemap.xml,2026-10-19,raw=221 dupes_removed=0
+formosacovers.com,US,946,sitemap,7,https://formosacovers.com/sitemap.xml,2026-10-19,raw=946 dupes_removed=0
+gruv.com,US,17228,sitemap,22,https://gruv.com/sitemap.xml,2026-10-19,raw=17228 dupes_removed=0
+edgewaterave.com,US,219,sitemap,7,https://edgewaterave.com/sitemap.xml,2026-10-19,raw=219 dupes_removed=0
+borboletapro.com,US,394,sitemap,7,https://www.borboletapro.com/sitemap.xml | https://www.borboletapro.com/sitemap.xml | https://www.borboletapro.com/sitemap.xml,2026-10-19,raw=394 dupes_removed=0
+watchwarehouse.com,US,9494,sitemap,6,https://watchwarehouse.com/xmlsitemap.php,2026-10-19,raw=9494 dupes_removed=0
+nikwax.com,US,803,sitemap (US pages only),27,https://nikwax.com/sitemap_index.xml | https://nikwax.com/en-us/sitemap_index.xml | https://nikwax.com/de-de/sitemap_index.xml,2026-10-19,"raw=3043 dupes_removed=3; country split other=1139,untagged=1098,US=803"
+nintendo.com,US,40924,sitemap (US pages only),185,https://www.nintendo.com/au/sitemap/0.xml | https://www.nintendo.com/jp/data/sitemap/sitemap.xml | https://www.nintendo.com/jp/topics/sitemap.xml | https://www.nintendo.com/jp/nintendo-direct/description/sitemap.xml | https://www.nintendo.com/kr/sitemap.xml (+44 more),2026-10-19,"raw=317022 dupes_removed=4423; country split other=213528,untagged=56671,US=40924"
+accidentallycoolgames.com,US,117503,sitemap,123,https://accidentallycoolgames.com/sitemap.xml,2026-10-19,raw=117503 dupes_removed=0
+12ozprophet.com,US,108,sitemap,7,https://12ozprophet.com/sitemap.xml,2026-10-19,raw=108 dupes_removed=0
+chinasquad.com,US,187169,sitemap,258,https://chinasquad.com/sitemap.xml,2026-10-19,raw=187169 dupes_removed=0
+shop.moonomens.com,US,21,sitemap,6,https://shop.moonomens.com/sitemap.xml,2026-10-19,raw=21 dupes_removed=0
+store.sworkit.com,US,56,sitemap,6,https://store.sworkit.com/sitemap.xml,2026-10-19,raw=56 dupes_removed=0
+momentsmadebridal.modestdresses.com,US,1527,sitemap,11,https://momentsmadebridal.modestdresses.com/sitemap-index.xml | https://momentsmadebridal.modestdresses.com/product-images-sitemap-index.xml,2026-10-19,raw=1527 dupes_removed=0; media sitemaps skipped=1
+therxteashop.com,US,88,sitemap,7,https://www.therxteashop.com/sitemap.xml,2026-10-19,raw=88 dupes_removed=0
+spiceandtea.com,US,1723,sitemap,8,https://www.spiceandtea.com/sitemap.xml,2026-10-19,raw=1723 dupes_removed=0
+nationalchefsupply.com,US,486,sitemap,1,https://www.nationalchefsupply.com/sitemap.xml,2026-10-19,raw=486 dupes_removed=0
+thegithubshop.com,US,272,sitemap,7,https://thegithubshop.com/sitemap.xml,2026-10-19,raw=272 dupes_removed=0
+navybloomsdallas.com,US,2655,sitemap,8,https://navybloomsdallas.com/sitemap.xml,2026-10-19,raw=2655 dupes_removed=0
+elleleightms.com,US,17,sitemap,6,https://elleleightms.com/sitemap.xml,2026-10-19,raw=17 dupes_removed=0
+shopmaxandriley.com,US,283,sitemap,6,https://shopmaxandriley.com/sitemap.xml,2026-10-19,raw=283 dupes_removed=0
+practicesports.com,US,1428,sitemap,7,https://practicesports.com/sitemap.xml,2026-10-19,raw=1432 dupes_removed=4; failed sitemap fetches=2: https://practicesports.com/productcat-sitemap.xml:404; https://practicesports.com/producttags-sitemap.xml:404
+samanthabdesign.com,US,84,sitemap,6,https://samanthabdesign.com/sitemap.xml,2026-10-19,"raw=84 dupes_removed=0; failed sitemap fetches=1: https://samanthabdesign.com/sitemap_blogs_1.xml:SSLError: HTTPSConnectionPool(host='samanthabdesign.com', port=443): Max retries exceeded "
+nutpods.com,US,286,sitemap,7,https://www.nutpods.com/sitemap.xml,2026-10-19,raw=286 dupes_removed=0
+freegobikes.com,US,886,sitemap,17,https://freegobikes.com/sitemap.xml,2026-10-19,raw=886 dupes_removed=0
+fabreeko.com,US,1017,sitemap,7,https://www.fabreeko.com/sitemap.xml,2026-10-19,raw=1017 dupes_removed=0
+redbarnmercantile.com,US,2051,sitemap,8,https://redbarnmercantile.com/sitemap.xml,2026-10-19,raw=2051 dupes_removed=0
+miaemilia.com,US,221,sitemap,7,https://miaemilia.com/sitemap.xml,2026-10-19,raw=221 dupes_removed=0
+michaelscustomframing.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
+watchthekrown.com,US,37,sitemap,7,https://watchthekrown.com/sitemap.xml,2026-10-19,raw=37 dupes_removed=0
+groundhopperguides.com,US,986,sitemap,10,https://groundhopperguides.com/sitemap_index.xml,2026-10-19,raw=987 dupes_removed=1
+babesta.com,US,4179,sitemap,10,https://babesta.com/sitemap.xml,2026-10-19,raw=4179 dupes_removed=0
+totalwireless.com,US,614,sitemap,1,https://www.totalwireless.com/sitemap.xml | https://www.totalwireless.com/llms.txt,2026-10-19,raw=618 dupes_removed=4; failed sitemap fetches=1: https://www.totalwireless.com/llms.txt:unparseable
+franklinandpoe.com,US,1404,sitemap,8,https://franklinandpoe.com/sitemap.xml,2026-10-19,raw=1404 dupes_removed=0
+shopcookette.com,US,100,sitemap,12,https://shopcookette.com/sitemap.xml,2026-10-19,raw=100 dupes_removed=0
+ecoflys.com,US,97,sitemap,7,https://ecoflys.com/sitemap.xml,2026-10-19,raw=97 dupes_removed=0
+kushkards.com,US,534,sitemap,7,https://www.kushkards.com/sitemap.xml,2026-10-19,raw=534 dupes_removed=0
+topdecktcg.com,US,14988,sitemap,7,https://www.topdecktcg.com/sitemap.xml,2026-10-19,raw=14989 dupes_removed=1
+ovadeks.com,US,6175,sitemap,10,https://ovadeks.com/sitemap.xml,2026-10-19,raw=6175 dupes_removed=0
+apronwarehouse.com,US,2099,sitemap,8,https://www.apronwarehouse.com/sitemap.xml,2026-10-19,raw=2099 dupes_removed=0
+armmotorsports.com,US,678,sitemap,7,https://armmotorsports.com/sitemap.xml,2026-10-19,raw=678 dupes_removed=0
+paperdirect.com,US,6714,sitemap,7,https://www.paperdirect.com/sitemap.xml | https://www.paperdirect.com/blog/sitemap.xml,2026-10-19,raw=6714 dupes_removed=0
+arcadefixit.com,US,5291,sitemap,8,https://arcadefixit.com/sitemap.xml,2026-10-19,raw=5296 dupes_removed=5
+newtonproducts.com,US,180,sitemap,7,https://www.newtonproducts.com/sitemap.xml,2026-10-19,raw=180 dupes_removed=0
+paradisehorticulture.com,US,362,sitemap,1,http://paradisehorticulture.com/sitemap.xml,2026-10-19,raw=362 dupes_removed=0
+lodgewood.com,US,2390,sitemap,1,https://www.lodgewood.com/sitemap.xml,2026-10-19,raw=2390 dupes_removed=0
+burgtec-usa.com,US,203,sitemap,10,https://burgtec-usa.com/sitemap.xml,2026-10-19,raw=203 dupes_removed=0
+ccallis.com,US,10604,sitemap,17,https://ccallis.com/sitemap.xml,2026-10-19,raw=10604 dupes_removed=0
+milanasbabyorganics.com,US,319,sitemap,7,https://milanasbabyorganics.com/sitemap.xml,2026-10-19,raw=319 dupes_removed=0
+shopstoriedobjects.com,US,729,sitemap,12,https://shopstoriedobjects.com/sitemap.xml,2026-10-19,raw=729 dupes_removed=0
+shaffer.store,US,1571,sitemap,12,https://shaffer.store/sitemap.xml,2026-10-19,raw=1571 dupes_removed=0
+q-productions.com,US,119,sitemap,7,https://q-productions.com/sitemap.xml,2026-10-19,raw=119 dupes_removed=0
+okwumaoriginals.com,US,35,sitemap,6,https://okwumaoriginals.com/sitemap.xml,2026-10-19,raw=35 dupes_removed=0
+imaginaryauthors.com,US,174,sitemap,6,https://imaginaryauthors.com/sitemap.xml,2026-10-19,raw=174 dupes_removed=0
+oceancatfishing.com,US,172,sitemap,7,https://oceancatfishing.com/sitemap.xml,2026-10-19,raw=172 dupes_removed=0
+badassglass.com,US,1970,sitemap,8,https://www.badassglass.com/sitemap.xml,2026-10-19,raw=1970 dupes_removed=0
+shop.pjsandpaint.com,US,85,sitemap,6,https://shop.pjsandpaint.com/sitemap.xml,2026-10-19,raw=85 dupes_removed=0
+osmo-official.com,US,85,sitemap (US pages only),1,https://osmo-official.com/sitemap.xml,2026-10-19,"raw=879 dupes_removed=0; country split untagged=587,other=207,US=85"
+psd.com,US,3236,sitemap,10,https://www.psd.com/sitemap.xml | https://www.psd.com/sitemap.xml | https://www.psd.com/sitemap.xml,2026-10-19,raw=3236 dupes_removed=0
+looptyhoops.com,US,524,sitemap,7,https://www.looptyhoops.com/sitemap.xml,2026-10-19,raw=524 dupes_removed=0
+heididaus.com,US,1943,sitemap,8,https://heididaus.com/sitemap.xml,2026-10-19,raw=1943 dupes_removed=0
+lincolnwoodworks.com,US,768,sitemap,1,https://www.lincolnwoodworks.com/sitemap.xml,2026-10-19,raw=768 dupes_removed=0
+knifeimport.com,US,4154,sitemap,1,https://knifeimport.com/sitemap.xml,2026-10-19,raw=4154 dupes_removed=0
+megafortrisusa.com,US,471,sitemap,15,http://megafortrisusa.com/sitemap_index.xml,2026-10-19,raw=472 dupes_removed=1
+allparts.com,US,2485,sitemap,9,https://www.allparts.com/sitemap.xml,2026-10-19,raw=2485 dupes_removed=0
+shop.annmariegianni.com,US,310,sitemap,5,https://shop.annmariegianni.com/sitemap.xml,2026-10-19,raw=310 dupes_removed=0
+k3kreations.com,US,2382,sitemap,1,https://www.k3kreations.com/sitemap.xml | https://www.k3kreations.com/sitemap.xml | https://www.k3kreations.com/sitemap.xml | https://www.k3kreations.com/sitemap.xml,2026-10-19,raw=2382 dupes_removed=0
+discountcleaningproducts.com,US,8031,sitemap,1,https://www.discountcleaningproducts.com/sitemap.xml,2026-10-19,raw=8031 dupes_removed=0
+newyorkdress.com,US,0,sitemap (US pages only),376,https://www.newyorkdress.com/sitemap.xml | https://www.newyorkdress.com/sitemap.xml | https://www.newyorkdress.com/sitemap.xml,2026-10-19,"raw=353418 dupes_removed=0; failed sitemap fetches=2: https://www.newyorkdress.com/en-ae/sitemap_articles_2.xml:ConnectionError: HTTPSConnectionPool(host='www.newyorkdress.com', port=443): Max retries exceeded; https://www.newyorkdress.com/en-ae/sitemap_collections_1.xml?from=8279064600&to=309886517361:ConnectionError: HTTPSConnectionPool(host='www.newyorkdress.com', port=443): Max retries exceeded; country split untagged=88425,other=88424,SA=88424,AE=88145"
+studiopatro.com,US,141,sitemap,7,https://studiopatro.com/sitemap.xml,2026-10-19,raw=141 dupes_removed=0
+tarpsnow.com,US,1680,sitemap,2,https://www.tarpsnow.com/sitemap.xml | https://www.tarpsnow.com/blog_sitemap.xml,2026-10-19,raw=2077 dupes_removed=397
+livebreathefutbol.com,US,451,sitemap,7,https://livebreathefutbol.com/sitemap.xml,2026-10-19,raw=451 dupes_removed=0
+proimageamerica.com,US,2863,sitemap,9,https://proimageamerica.com/sitemap.xml,2026-10-19,raw=2863 dupes_removed=0
+tuttatoscana.com,US,60,sitemap,1,https://tuttatoscana-com.3dcartstores.com/sitemap.xml,2026-10-19,raw=60 dupes_removed=0
+bikeexif.com,US,4971,sitemap,19,https://www.bikeexif.com/sitemap.xml,2026-10-19,raw=4971 dupes_removed=0
+pourednotstirred.com,US,141,sitemap,6,https://pourednotstirred.com/sitemap.xml,2026-10-19,raw=141 dupes_removed=0
+repeatcashmere.com,US,6740,sitemap,6,https://www.repeatcashmere.com/sitemap_index.xml,2026-10-19,raw=6740 dupes_removed=0; media sitemaps skipped=2
+thegratefulheartsboutique.com,US,3564,sitemap,1,https://www.thegratefulheartsboutique.com/sitemap.xml,2026-10-19,raw=3565 dupes_removed=1
+madelynroseboutique.com,US,1771,sitemap,1,https://www.madelynroseboutique.com/sitemap.xml,2026-10-19,raw=1771 dupes_removed=0
+fancyfoam-com.3dcartstores.com,US,145,sitemap,1,https://fancyfoam-com.3dcartstores.com/sitemap.xml,2026-10-19,raw=145 dupes_removed=0
+fishcake.us,US,591,sitemap,11,https://www.fishcake.us/sitemap.xml,2026-10-19,raw=592 dupes_removed=1
+theculturedcup.com,US,3268,sitemap,17,https://www.theculturedcup.com/sitemap.xml,2026-10-19,raw=3268 dupes_removed=0
+sightmark.com,US,1107,sitemap,12,https://www.sightmark.com/sitemap.xml,2026-10-19,raw=1107 dupes_removed=0
+avlsupply.com,US,15094,sitemap,26,https://avlsupply.com/sitemap_index.xml,2026-10-19,raw=15095 dupes_removed=1
+goodseeco.com,US,23930,sitemap,31,https://www.goodseeco.com/sitemap.xml,2026-10-19,raw=23931 dupes_removed=1
+beachbunnyswimwear.com,US,1219,sitemap,7,https://www.beachbunnyswimwear.com/sitemap.xml,2026-10-19,raw=1219 dupes_removed=0
+acepens.com,US,56,sitemap,6,https://www.acepens.com/sitemap.xml,2026-10-19,raw=56 dupes_removed=0
+conangray.com,US,134,sitemap,7,https://www.conangray.com/sitemap.xml,2026-10-19,raw=134 dupes_removed=0
+condition1.com,US,353,sitemap,7,https://condition1.com/sitemap.xml,2026-10-19,raw=353 dupes_removed=0
+store.blackjackapprenticeship.com,US,28,sitemap,7,https://store.blackjackapprenticeship.com/sitemap.xml,2026-10-19,raw=28 dupes_removed=0
+promostuffcheap.com,US,292,sitemap,1,https://promostuffcheap.com/sitemap.xml,2026-10-19,raw=296 dupes_removed=4
+madeinusaforever.com,US,1833,sitemap,7,https://madeinusaforever.com/sitemap.xml,2026-10-19,raw=1833 dupes_removed=0
+caneparealty.com,US,4187,sitemap,22,https://caneparealty.com/wp-sitemap.xml,2026-10-19,raw=4187 dupes_removed=0; failed sitemap fetches=15: https://caneparealty.com/wp-sitemap-users-8.xml:404; https://caneparealty.com/wp-sitemap-users-7.xml:404; https://caneparealty.com/wp-sitemap-users-5.xml:404
+theblousebarn.com,US,98,sitemap,6,https://theblousebarn.com/sitemap.xml,2026-10-19,raw=98 dupes_removed=0
+tigertough.com,US,1263,sitemap,8,https://www.tigertough.com/sitemap.xml | https://www.tigertough.com/sitemap.xml | https://www.tigertough.com/sitemap.xml,2026-10-19,raw=1263 dupes_removed=0
+niukatea.com,US,47,sitemap,6,https://niukatea.com/sitemap.xml,2026-10-19,raw=47 dupes_removed=0
+covoyacoffee.com,US,3412,sitemap,1,https://www.covoyacoffee.com/media/sitemap/sitemap.xml | https://www.covoyacoffee.com/media/sitemap/sitemap.xml,2026-10-19,raw=3412 dupes_removed=0
+tomtoc.com,US,1245,sitemap,12,https://www.tomtoc.com/sitemap.xml,2026-10-19,raw=1245 dupes_removed=0
+petalstreet.com,US,305,sitemap,7,https://www.petalstreet.com/sitemap.xml,2026-10-19,raw=305 dupes_removed=0
+lanesouthernorchards.com,US,202,sitemap,7,https://lanesouthernorchards.com/sitemap.xml,2026-10-19,raw=202 dupes_removed=0
+shopsueyboutique.com,US,120,sitemap,5,https://shopsueyboutique.com/sitemap.xml,2026-10-19,raw=120 dupes_removed=0
+customathleticsusa.com,US,241,sitemap,6,https://customathleticsusa.com/sitemap_index.xml,2026-10-19,raw=242 dupes_removed=1
+motomillion.com,US,61202,sitemap,67,https://www.motomillion.com/sitemap.xml,2026-10-19,raw=61202 dupes_removed=0
+us.carlfriedrik.com,US,751,sitemap,12,https://us.carlfriedrik.com/sitemap.xml,2026-10-19,raw=751 dupes_removed=0
+aeroflowurology.com,US,1099,sitemap,1,https://aeroflowurology.com/media/sitemap/urology_sitemap.xml,2026-10-19,raw=1099 dupes_removed=0
+aaafamilygems.com,US,771,sitemap,6,https://aaafamilygems.com/sitemap.xml,2026-10-19,raw=771 dupes_removed=0
+wirewireweb.net,US,534,sitemap,1,https://www.wirewireweb.net/sitemap.xml,2026-10-19,raw=534 dupes_removed=0
+french75maison.com,US,6848,sitemap,1,https://www.french75maison.com/sitemap.xml,2026-10-19,raw=6848 dupes_removed=0
+oxyllowsystem.com,US,130,sitemap,7,https://www.oxyllowsystem.com/sitemap.xml,2026-10-19,raw=130 dupes_removed=0
+shesunique.com,US,402,sitemap,7,https://shesunique.com/sitemap.xml,2026-10-19,raw=402 dupes_removed=0
+ecsautostores.com,US,7854,sitemap,44,https://ecsautostores.com/sitemap_index.xml,2026-10-19,raw=7857 dupes_removed=3; failed sitemap fetches=1: https://ecsautostores.com/product_cat-sitemap6.xml:404
+gptxboutique.com,US,925,sitemap,6,https://gptxboutique.com/sitemap.xml,2026-10-19,raw=925 dupes_removed=0
+venturesurplus.com,US,4668,sitemap,16,https://www.venturesurplus.com/sitemap_index.xml,2026-10-19,raw=4669 dupes_removed=1
+homeschoolplanet.com,US,5293,sitemap,22,https://homeschoolplanet.com/sitemap.xml,2026-10-19,raw=5294 dupes_removed=1
+fawbushs.com,US,3880,sitemap,11,https://fawbushs.com/sitemap.xml,2026-10-19,raw=3880 dupes_removed=0
+brettinteriors.com,US,23104,sitemap,10,https://www.brettinteriors.com/sitemap.xml,2026-10-19,raw=23113 dupes_removed=9; failed sitemap fetches=1: https://www.brettinteriors.com/dynamic-items-1_p_1ac8e9aa_7d60_42de_bd14_310715e6fbc3_0_5000-sitemap.xml:404
+mapsofantiquity.com,US,13635,sitemap,20,https://mapsofantiquity.com/sitemap.xml,2026-10-19,raw=13635 dupes_removed=0
+townemarket.us,US,1767,sitemap,5,https://townemarket.us/sitemap.xml,2026-10-19,raw=1767 dupes_removed=0
+h2ofloss.com,US,94,sitemap,8,https://h2ofloss.com/sitemap.xml,2026-10-19,raw=94 dupes_removed=0
+getfitcherries.com,US,192,sitemap,6,https://getfitcherries.com/sitemap.xml,2026-10-19,raw=192 dupes_removed=0
+sdbullion.com,US,10158,sitemap,3,https://sdbullion.com/feeds/blog_sitemap.xml | https://www.sdbullion.com/buy/sitemap.xml | https://sdbullion.com/feeds/sitemap.xml,2026-10-19,raw=10525 dupes_removed=367
+thatshoestore.com,US,832,sitemap,6,https://www.thatshoestore.com/sitemap.xml,2026-10-19,raw=832 dupes_removed=0
+oozelife.com,US,839,sitemap,7,https://www.oozelife.com/sitemap.xml | https://www.oozelife.com/sitemap.xml | https://www.oozelife.com/sitemap.xml,2026-10-19,raw=839 dupes_removed=0
+exchange-life.com,US,1897,sitemap,74,https://exchange-life.com/sitemap.xml,2026-10-19,raw=1897 dupes_removed=0
+longevityfilm.com,US,4338,sitemap,10,https://longevityfilm.com/sitemap.xml,2026-10-19,raw=4338 dupes_removed=0
+gallery202art.com,US,160,sitemap,10,https://www.gallery202art.com/sitemap_index.xml,2026-10-19,raw=160 dupes_removed=0
+dhccare.com,US,197,sitemap,6,https://www.dhccare.com/sitemap.xml,2026-10-19,raw=197 dupes_removed=0
+blueskyvitamin.com,US,10015,sitemap,16,https://blueskyvitamin.com/sitemap.xml,2026-10-19,raw=10015 dupes_removed=0
+shopleafandmoss.com,US,1664,sitemap,7,https://shopleafandmoss.com/sitemap.xml,2026-10-19,raw=1664 dupes_removed=0
+strobelssupply.com,US,130839,sitemap,18,https://www.strobelssupply.com/xmlsitemap.php,2026-10-19,raw=130839 dupes_removed=0
+serenium.co,US,32,sitemap (US pages only),30,https://serenium.co/sitemap.xml,2026-10-19,"raw=225 dupes_removed=0; country split untagged=97,other=96,US=32"
+alincocostumes.com,US,610,sitemap,7,https://alincocostumes.com/sitemap.xml,2026-10-19,raw=610 dupes_removed=0
+watch-connection.com,US,15882,sitemap,21,https://www.watch-connection.com/sitemap.xml,2026-10-19,raw=15882 dupes_removed=0
+shopideastogonow.com,US,381,sitemap,6,https://shopideastogonow.com/sitemap.xml,2026-10-19,raw=381 dupes_removed=0
+sneakerpolitics.com,US,7210,sitemap,13,https://sneakerpolitics.com/sitemap.xml,2026-10-19,raw=7210 dupes_removed=0
+tarpleymusic.com,US,11557,sitemap,18,https://tarpleymusic.com/sitemap.xml,2026-10-19,raw=11557 dupes_removed=0
+us.shaklee.com,US,,Not available (error: ValueError: invalid literal for int() with base 10: ''),0,,2026-10-19,sitemap present but yielded no countable URLs
+allisonspeka.com,US,55,sitemap,6,https://allisonspeka.com/sitemap.xml,2026-10-19,raw=55 dupes_removed=0
+protectiondepot.com,US,1502,sitemap,1,https://www.protectiondepot.com/sitemap.xml,2026-10-19,raw=1503 dupes_removed=1
+dopesneakers.shop,US,264,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://dopesneakers.shop/sitemap.xml', 'unparseable')]); wayback CDX unique urlkeys (html,200; own host + www only)"
+toms.com,US,956,sitemap,7,https://www.toms.com/sitemap.xml | https://www.toms.com/sitemap.xml | https://www.toms.com/sitemap.xml,2026-10-19,raw=956 dupes_removed=0
+mockingbirdprecision.com,US,1203,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('http://cdn.attracta.com/sitemap/634141.xml.gz', 404)]); wayback CDX unique urlkeys (html,200; own host + www only)"
+vpnunlimited.com,US,12164,sitemap,1,https://www.vpnunlimited.com/sitemap.xml,2026-10-19,raw=12164 dupes_removed=0
+sterlingtrends.com,US,233,sitemap,7,https://www.sterlingtrends.com/sitemap.xml,2026-10-19,raw=233 dupes_removed=0
+stacyadams.com,US,2505,sitemap,2,https://www.stacyadams.com/SiteMap.xml | https://www.stacyadams.com/ImageSiteMap.xml,2026-10-19,raw=2505 dupes_removed=0
+zodiacreports.app,US,310,sitemap,1,https://zodiacreports.app/sitemap.xml | https://zodiacreports.app/sitemap.xml | https://zodiacreports.app/sitemap.xml | https://zodiacreports.app/sitemap.xml,2026-10-19,raw=310 dupes_removed=0
+merkababedesigns.com,US,865,sitemap,7,https://merkababedesigns.com/sitemap.xml,2026-10-19,raw=865 dupes_removed=0
+kgnutsandbolts.com,US,70689,sitemap,3,https://www.kgnutsandbolts.com/sitemap.xml,2026-10-19,raw=70689 dupes_removed=0
+vgccmarketplace.com,US,245,sitemap,1,https://www.vgccmarketplace.com/sitemap.xml,2026-10-19,raw=245 dupes_removed=0
+kokkafabrics.com,US,3546,sitemap,14,https://kokkafabrics.com/sitemap.xml,2026-10-19,raw=3546 dupes_removed=0
+remedysnutrition.com,US,1571,sitemap,8,https://remedysnutrition.com/sitemap.xml | https://remedysnutrition.com/sitemap.xml | https://remedysnutrition.com/sitemap.xml,2026-10-19,raw=1571 dupes_removed=0
+corset1.com,US,179,sitemap,7,https://corset1.com/sitemap.xml,2026-10-19,raw=179 dupes_removed=0
+superdry.com,US,9128,sitemap,7,https://www.superdry.com/sitemap_index.xml,2026-10-19,raw=9129 dupes_removed=1
+alwaysbakeddsm.com,US,72,sitemap,6,https://alwaysbakeddsm.com/sitemap.xml,2026-10-19,raw=72 dupes_removed=0
+sheasageandsalt.com,US,55,sitemap,6,https://www.sheasageandsalt.com/sitemap.xml,2026-10-19,raw=55 dupes_removed=0
+botanitrim.com,US,1296,sitemap,1,https://www.botanitrim.com/sitemap.xml,2026-10-19,raw=1427 dupes_removed=131
+oakmontbakery.com,US,285,sitemap,1,https://oakmontbakery.com/sitemap.xml,2026-10-19,raw=285 dupes_removed=0
+store.cricketmedia.com,US,838,sitemap,6,https://store.cricketmedia.com/sitemap.xml,2026-10-19,raw=838 dupes_removed=0
+footpetals.com,US,203,sitemap,7,https://footpetals.com/sitemap.xml,2026-10-19,raw=203 dupes_removed=0
+asp-usa.com,US,1073,sitemap,7,https://www.asp-usa.com/sitemap.xml,2026-10-19,raw=1073 dupes_removed=0
+redaspenlove.com,US,1347,sitemap,7,https://redaspenlove.com/sitemap.xml | https://redaspenlove.com/sitemap.xml | https://redaspenlove.com/sitemap.xml,2026-10-19,raw=1347 dupes_removed=0
+shopingoodfun.com,US,235,sitemap,6,https://www.shopingoodfun.com/sitemap.xml,2026-10-19,raw=235 dupes_removed=0
+lawnmowersmaryland.com,US,9338,sitemap,16,https://www.lawnmowersmaryland.com/sitemap.xml,2026-10-19,raw=9338 dupes_removed=0
+mainandmountainbookstore.com,US,4424,sitemap,5,https://www.mainandmountainbookstore.com/sitemap.xml,2026-10-19,raw=4424 dupes_removed=0
+shopclearsky.com,US,18667,sitemap,22,https://shopclearsky.com/sitemap_index.xml,2026-10-19,raw=20019 dupes_removed=1352
+puravidabracelets.com,US,1974,sitemap,7,https://www.puravidabracelets.com/sitemap.xml,2026-10-19,raw=1974 dupes_removed=0
+lareeandco.com,US,3249,sitemap,9,https://lareeandco.com/sitemap.xml,2026-10-19,raw=3249 dupes_removed=0
+undiscoveredrealm.com,US,41604,sitemap,50,https://www.undiscoveredrealm.com/sitemap.xml,2026-10-19,raw=41604 dupes_removed=0
+funeralbossinc.com,US,661,sitemap,7,https://funeralbossinc.com/sitemap.xml,2026-10-19,raw=661 dupes_removed=0
+strukturemusic.com,US,94,sitemap,6,https://strukturemusic.com/sitemap.xml,2026-10-19,raw=94 dupes_removed=0
+pennandteller.com,US,226,sitemap,10,https://pennandteller.com/sitemap.xml | https://pennandteller.com/sitemap.rss,2026-10-19,raw=226 dupes_removed=0; failed sitemap fetches=1: https://pennandteller.com/sitemap.rss:unparseable
+neurogum.com,US,601,sitemap,7,https://neurogum.com/sitemap.xml,2026-10-19,raw=601 dupes_removed=0
+supergoop.com,US,277,sitemap,7,https://supergoop.com/sitemap.xml,2026-10-19,raw=277 dupes_removed=0
+mektrax.cc,US,236,sitemap,7,https://mektrax.cc/sitemap.xml,2026-10-19,raw=236 dupes_removed=0
+waldoward.com,US,249,sitemap,1,https://www.waldoward.com/sitemap.xml,2026-10-19,raw=249 dupes_removed=0
+triathletesports.com,US,119377,archive,0,,2026-10-19,"no sitemap found; wayback CDX unique urlkeys (html,200; own host + www only)"
+bxglow.com,US,94,sitemap,6,https://bxglow.com/sitemap.xml,2026-10-19,raw=94 dupes_removed=0
+sixthdimension.shop,US,283,sitemap,8,https://sixthdimension.shop/wp-sitemap.xml,2026-10-19,"raw=283 dupes_removed=0; failed sitemap fetches=1: https://sixthdimension.shop/wp-sitemap-taxonomies-post_tag-1.xml:SSLError: HTTPSConnectionPool(host='sixthdimension.shop', port=443): Max retries exceeded "
+store.catalystgamelabs.com,US,1658,sitemap,9,https://store.catalystgamelabs.com/sitemap.xml,2026-10-19,raw=1658 dupes_removed=0
+ilequipment.com,US,616,sitemap,7,https://ilequipment.com/sitemap.xml,2026-10-19,raw=616 dupes_removed=0
+store.millermotorcars.com,US,5877,sitemap,10,https://store.millermotorcars.com/sitemap.xml,2026-10-19,raw=5877 dupes_removed=0
+holylamborganics.com,US,791,sitemap,12,https://www.holylamborganics.com/sitemap.xml,2026-10-19,raw=791 dupes_removed=0
+toolsrenewed.com,US,16484,sitemap,1,https://309U63955517447.3dcartstores.com/sitemap.xml,2026-10-19,raw=16484 dupes_removed=0
+eastsidegolf.com,US,1098,sitemap,7,https://eastsidegolf.com/sitemap.xml,2026-10-19,raw=1098 dupes_removed=0
+sockwellusa.com,US,845,sitemap,7,https://sockwellusa.com/sitemap.xml,2026-10-19,raw=845 dupes_removed=0
+store.dreadcentral.com,US,107,sitemap,7,https://store.dreadcentral.com/sitemap.xml,2026-10-19,raw=107 dupes_removed=0
+ultimateautographs.com,US,12686,sitemap,18,https://ultimateautographs.com/sitemap.xml,2026-10-19,raw=12686 dupes_removed=0
+olouma.com,US,98,sitemap,7,https://olouma.com/sitemap.xml,2026-10-19,raw=98 dupes_removed=0
+guyskitchenhacks.com,US,52,sitemap,7,https://guyskitchenhacks.com/sitemap.xml,2026-10-19,raw=52 dupes_removed=0
+chillhouse.com,US,2581,sitemap,17,https://chillhouse.com/sitemap.xml,2026-10-19,raw=2581 dupes_removed=0
+referenceintime.com,US,1931,sitemap,7,https://www.referenceintime.com/sitemap.xml | https://www.referenceintime.com/sitemap.xml | https://www.referenceintime.com/sitemap.xml,2026-10-19,raw=1931 dupes_removed=0
+beadstreetonline.com,US,9362,sitemap,3,https://www.beadstreetonline.com/sitemap.xml,2026-10-19,raw=9362 dupes_removed=0
+shopwhatsgood.com,US,324,sitemap,6,https://shopwhatsgood.com/sitemap.xml,2026-10-19,"raw=324 dupes_removed=0; failed sitemap fetches=1: https://shopwhatsgood.com/sitemap_products_1.xml?from=3711472500816&to=7455000428624:SSLError: HTTPSConnectionPool(host='shopwhatsgood.com', port=443): Max retries exceeded wi"
+shoprockem.com,US,2634,sitemap,9,https://shoprockem.com/sitemap.xml,2026-10-19,raw=2634 dupes_removed=0
+ltsecurityinc.com,US,1669,sitemap,1,https://ltsecurityinc.com/media/sitemap/sitemap.xml,2026-10-19,raw=1669 dupes_removed=0
+brickhousesecurity.com,US,516,sitemap,6,https://www.brickhousesecurity.com/xmlsitemap.php,2026-10-19,raw=517 dupes_removed=1
+forwardcontrolsdesign.com,US,447,sitemap,1,https://www.forwardcontrolsdesign.com/sitemap.xml,2026-10-19,raw=447 dupes_removed=0
+canvasbeautybrand.com,US,539,sitemap,7,https://canvasbeautybrand.com/sitemap.xml | https://canvasbeautybrand.com/sitemap.xml | https://canvasbeautybrand.com/sitemap.xml,2026-10-19,raw=539 dupes_removed=0
+luxurycigarclub.com,US,2130,sitemap,8,https://luxurycigarclub.com/sitemap.xml | https://luxurycigarclub.com/sitemap.xml | https://luxurycigarclub.com/sitemap.xml,2026-10-19,raw=2130 dupes_removed=0
+drivelinebaseball.com,US,995,sitemap,7,http://drivelinebaseball.com/sitemap.xml,2026-10-19,raw=995 dupes_removed=0
+lecreuset.com,US,2774,sitemap,3,https://www.lecreuset.com/sitemap_index.xml,2026-10-19,raw=2774 dupes_removed=0
+fletcexpress.com,US,296,sitemap,1,https://fletcexpress.com/sitemap.xml | https://fletcexpress.com/sitemap.xml | https://fletcexpress.com/sitemap.xml | https://fletcexpress.com/sitemap.xml,2026-10-19,raw=296 dupes_removed=0
+topiaireflowers.com,US,147,sitemap,6,https://www.topiaireflowers.com/sitemap.xml,2026-10-19,raw=147 dupes_removed=0
+logiaweatherstations.com,US,38,sitemap,6,https://logiaweatherstations.com/sitemap.xml,2026-10-19,raw=38 dupes_removed=0
+shopmiftaah.com,US,35,sitemap,6,https://shopmiftaah.com/sitemap.xml,2026-10-19,raw=35 dupes_removed=0
+borgionis.com,US,309,sitemap,6,https://borgionis.com/sitemap.xml,2026-10-19,raw=309 dupes_removed=0
+wanderbeauty.com,US,386,sitemap,7,https://www.wanderbeauty.com/sitemap.xml | https://www.wanderbeauty.com/sitemap.xml | https://www.wanderbeauty.com/sitemap.xml,2026-10-19,raw=386 dupes_removed=0
+carpetone.com,US,4507,sitemap,5,https://www.carpetone.com/sitemap.xml | https://www.carpetone.com/pages-sitemap.xml | https://www.carpetone.com/blog-sitemap.xml | https://www.carpetone.com/locations-sitemap.xml,2026-10-19,raw=4508 dupes_removed=1
+tuffjug.com,US,82,sitemap,6,https://tuffjug.com/sitemap.xml,2026-10-19,raw=82 dupes_removed=0
+northerner.com,US,616,sitemap (US pages only),20,https://www.northerner.com/de/sitemap | https://www.northerner.com/media/sitemap.xml | https://www.northerner.com/uk/sitemap,2026-10-19,"raw=2743 dupes_removed=0; country split other=1127,untagged=1000,US=616"
+shop.lhh.com,US,22,sitemap,7,https://shop.lhh.com/sitemap.xml,2026-10-19,raw=22 dupes_removed=0
+needlepointinparadise.com,US,12916,sitemap,19,https://www.needlepointinparadise.com/sitemap.xml,2026-10-19,raw=12916 dupes_removed=0
+jny.com,US,1240,sitemap,8,https://www.jny.com/sitemap.xml,2026-10-19,raw=1240 dupes_removed=0
+europarts360.com,US,9021,sitemap,26,https://europarts360.com/sitemap.xml | https://europarts360.com/sitemap.xml | https://europarts360.com/sitemap.xml,2026-10-19,raw=9021 dupes_removed=0
+snackathonfoods.com,US,2419,sitemap,8,https://snackathonfoods.com/sitemap.xml | https://snackathonfoods.com/sitemap.xml | https://snackathonfoods.com/sitemap.xml,2026-10-19,raw=2419 dupes_removed=0
+saltyseahorseboutique.com,US,51,sitemap,6,https://saltyseahorseboutique.com/sitemap.xml,2026-10-19,raw=51 dupes_removed=0
+pigload.com,US,172,sitemap,1,https://www.pigload.com/sitemap.xml,2026-10-19,raw=172 dupes_removed=0
+gordini.com,US,287,sitemap,7,https://gordini.com/sitemap.xml,2026-10-19,raw=287 dupes_removed=0
+thomassabo.com,US,374,sitemap (US pages only),17,https://www.thomassabo.com/EU/de_DE/sitemap?name=sitemap_index.xml | https://www.thomassabo.com/GB/en_GB/sitemap?name=sitemap_index.xml | https://www.thomassabo.com/CA/en_CA/sitemap?name=sitemap_index.xml | https://www.thomassabo.com/SE/sv_SE/sitemap?name=sitemap_index.xml | https://www.thomassabo.com/US/en_US/sitemap?name=sitemap_index.xml (+3 more),2026-10-19,"raw=12396 dupes_removed=0; country split other=11274,untagged=748,US=374"
+tacoma-games.com,US,124440,sitemap,131,https://tacoma-games.com/sitemap.xml,2026-10-19,raw=124440 dupes_removed=0
+sharkind.com,US,7083,sitemap,14,https://sharkind.com/sitemap_index.xml,2026-10-19,raw=7087 dupes_removed=4
+industryofallnations.com,US,320,sitemap,7,https://industryofallnations.com/sitemap.xml,2026-10-19,raw=320 dupes_removed=0
+weddingshoppeinc.com,US,2742,sitemap,9,https://www.weddingshoppeinc.com/sitemap.xml,2026-10-19,raw=2742 dupes_removed=0
+innerbloomfloral.com,US,611,sitemap,6,https://innerbloomfloral.com/sitemap.xml,2026-10-19,raw=611 dupes_removed=0
+ocens.com,US,327,sitemap,5,https://www.ocens.com/sitemap.xml,2026-10-19,raw=327 dupes_removed=0
+smileactives.com,US,160,sitemap,7,https://smileactives.com/sitemap.xml | https://smileactives.com/sitemap.xml | https://smileactives.com/sitemap.xml,2026-10-19,raw=160 dupes_removed=0
+us.make-it-shine.com,US,2967,sitemap,14,https://us.make-it-shine.com/sitemap.xml,2026-10-19,raw=2967 dupes_removed=0
+shop.timeandtidewatches.com,US,1258,sitemap,8,https://shop.timeandtidewatches.com/sitemap.xml,2026-10-19,raw=1258 dupes_removed=0
+thepinpeople.com,US,334,sitemap,11,https://www.thepinpeople.com/sitemap.xml,2026-10-19,raw=336 dupes_removed=2
+keensfootweare.com,US,9561,sitemap,12,https://keensfootweare.com/wp-sitemap.xml,2026-10-19,raw=9561 dupes_removed=0
+unclaimedbaggage.com,US,63446,sitemap,69,https://www.unclaimedbaggage.com/sitemap.xml | https://www.unclaimedbaggage.com/sitemap.xml | https://www.unclaimedbaggage.com/sitemap.xml,2026-10-19,"raw=63446 dupes_removed=0; failed sitemap fetches=1: https://www.unclaimedbaggage.com/sitemap_products_63.xml?from=8488295891029&to=8492711215189:SSLError: HTTPSConnectionPool(host='www.unclaimedbaggage.com', port=443): Max retries exce"
+shopcampanywhere.com,US,110,sitemap,6,https://shopcampanywhere.com/sitemap.xml,2026-10-19,raw=110 dupes_removed=0
+purepathshop.co,US,125,sitemap (US pages only),26,https://purepathshop.co/sitemap.xml,2026-10-19,"raw=751 dupes_removed=0; country split other=375,untagged=126,AE=125,US=125"
+njs-export.com,US,3637,sitemap,9,https://www.njs-export.com/sitemap.xml,2026-10-19,raw=3637 dupes_removed=0
+store.tfi.org,US,34,sitemap,6,https://store.tfi.org/sitemap.xml,2026-10-19,raw=34 dupes_removed=0
+flair.co,US,611,sitemap,7,https://flair.co/sitemap.xml,2026-10-19,raw=611 dupes_removed=0
+outerbankschristmas.com,US,8282,sitemap,1,https://www.outerbankschristmas.com/sitemap.xml,2026-10-19,raw=8282 dupes_removed=0
+affordableart101.com,US,3921,sitemap,1,https://affordableart101.com/sitemap.xml,2026-10-19,raw=3921 dupes_removed=0
+bsidesjeans.com,US,600,sitemap,7,https://bsidesjeans.com/sitemap.xml,2026-10-19,raw=600 dupes_removed=0
+eggpressmfg.com,US,306,sitemap,8,https://eggpressmfg.com/sitemap.xml,2026-10-19,raw=306 dupes_removed=0
+shopakapparel.com,US,2098,sitemap,1,https://www.shopakapparel.com/sitemap.xml,2026-10-19,raw=2098 dupes_removed=0
+store.fifa.com,US,18274,sitemap,150,https://store.fifa.com/sitemap.xml,2026-10-19,raw=18274 dupes_removed=0
+case-mate.com,US,2253,sitemap,9,https://case-mate.com/sitemap.xml | https://case-mate.com/sitemap.xml | https://case-mate.com/sitemap.xml,2026-10-19,raw=2253 dupes_removed=0
+statelinetack.com,US,93463,sitemap,100,https://www.statelinetack.com/sitemap.xml,2026-10-19,raw=93464 dupes_removed=1
+giorgiotruffleshop.com,US,165,sitemap,5,https://giorgiotruffleshop.com/sitemap.xml,2026-10-19,raw=167 dupes_removed=2
+milky-mama.com,US,35193,sitemap,62,https://milky-mama.com/sitemap.xml | https://milky-mama.com/sitemap.xml | https://milky-mama.com/sitemap.xml,2026-10-19,raw=35193 dupes_removed=0
+thunderboltelectronics.com,US,18902,sitemap,1,https://thunderboltelectronics.com/sitemap.xml,2026-10-19,raw=18902 dupes_removed=0
+naautoequipment.com,US,1575,sitemap,1,https://naautoequipment.com/sitemap.xml,2026-10-19,raw=1575 dupes_removed=0
+shophouseoftrendz.com,US,294,sitemap,7,https://shophouseoftrendz.com/sitemap.xml,2026-10-19,raw=294 dupes_removed=0
+bike.marzocchi.com,US,134,sitemap,7,https://bike.marzocchi.com/sitemap.xml,2026-10-19,raw=134 dupes_removed=0
+immigrantapparel.com,US,146,sitemap,7,https://www.immigrantapparel.com/sitemap.xml,2026-10-19,raw=146 dupes_removed=0
+tupperware.com,US,3628,sitemap,17,https://www.tupperware.com/sitemap.xml,2026-10-19,raw=3628 dupes_removed=0
+luxedh.com,US,103493,sitemap,109,https://www.luxedh.com/sitemap.xml,2026-10-19,raw=103494 dupes_removed=1
+rockabyebabymusic.com,US,293,sitemap,7,https://www.rockabyebabymusic.com/sitemap.xml,2026-10-19,raw=293 dupes_removed=0
+ohyeahboutique.com,US,1439,sitemap,8,https://ohyeahboutique.com/sitemap.xml,2026-10-19,raw=1439 dupes_removed=0
+thegoldensoulclub.com,US,32,sitemap,6,https://thegoldensoulclub.com/sitemap.xml,2026-10-19,raw=32 dupes_removed=0
+lahammam.com,US,,Not available (blocked by robots.txt (Disallow: /)),0,,2026-10-19,
+whitesands-boutique.com,US,691,sitemap,1,https://whitesands-boutique.com/sitemap.xml | https://whitesands-boutique.com/sitemap.xml | https://whitesands-boutique.com/sitemap.xml | https://whitesands-boutique.com/sitemap.xml,2026-10-19,raw=691 dupes_removed=0
+shop.ehlersheatcool.com,US,29,sitemap,5,https://shop.ehlersheatcool.com/sitemap.xml,2026-10-19,raw=29 dupes_removed=0
+classicalconversationsbooks.com,US,794,sitemap,7,https://classicalconversationsbooks.com/sitemap.xml,2026-10-19,raw=794 dupes_removed=0
+shop.crystalgolfresort.com,US,107,sitemap,7,https://shop.crystalgolfresort.com/sitemap.xml,2026-10-19,raw=107 dupes_removed=0
+antibodies.com,US,148004,sitemap,23,https://www.antibodies.com/sitemap.xml,2026-10-19,raw=148012 dupes_removed=8
+midnightrallyclub.com,US,71,sitemap,6,https://midnightrallyclub.com/sitemap.xml,2026-10-19,raw=71 dupes_removed=0
+shop.carrieelle.com,US,151,sitemap,7,https://shop.carrieelle.com/sitemap.xml,2026-10-19,raw=151 dupes_removed=0
+sashatherese.com,US,651,sitemap,7,https://sashatherese.com/sitemap.xml | https://sashatherese.com/sitemap.xml | https://sashatherese.com/sitemap.xml | https://sashatherese.com/sitemap.xml | https://sashatherese.com/sitemap.xml (+1 more),2026-10-19,raw=651 dupes_removed=0
+topsellerbestsellers.com,US,181,sitemap,6,https://topsellerbestsellers.com/sitemap.xml,2026-10-19,raw=181 dupes_removed=0
+tofustrading.com,US,549,sitemap,6,https://tofustrading.com/sitemap.xml,2026-10-19,raw=549 dupes_removed=0
+faithshop.com,US,22602,sitemap,27,https://faithshop.com/sitemap.xml,2026-10-19,raw=22602 dupes_removed=0
+breathefree.shop,US,1177,sitemap,32,https://breathefree.shop/sitemap.xml,2026-10-19,raw=1177 dupes_removed=0
+floweringrock.com,US,68,sitemap,7,https://www.floweringrock.com/sitemap.xml,2026-10-19,raw=68 dupes_removed=0
+incendiomagicwand.com,US,96118,sitemap,172,https://incendiomagicwand.com/sitemap.xml,2026-10-19,raw=96118 dupes_removed=0
+nextsecuritycorp.com,US,23225,sitemap,42,https://nextsecuritycorp.com/sitemap.xml,2026-10-19,raw=23225 dupes_removed=0
+nhomedecor.com,US,3608,sitemap,12,https://www.nhomedecor.com/sitemap.xml | https://www.nhomedecor.com/es_es-sitemap.xml | https://www.nhomedecor.com/fr_fr-sitemap.xml | https://www.nhomedecor.com/zh_zh-sitemap.xml,2026-10-19,raw=3608 dupes_removed=0
+amehighlogcrafts.com,US,36,sitemap,7,https://www.amehighlogcrafts.com/sitemap.xml,2026-10-19,raw=36 dupes_removed=0
+sillmusicsupply.com,US,126,sitemap,1,https://www.sillmusicsupply.com/sitemap.xml,2026-10-19,raw=126 dupes_removed=0
+sherline.com,US,1825,sitemap,10,https://www.sherline.com/sitemap_index.xml,2026-10-19,raw=1826 dupes_removed=1
+usa-dealer.net,US,198,sitemap,1,https://usa-dealer.3dcartstores.com/sitemap.xml,2026-10-19,raw=198 dupes_removed=0
+ladyblacktie.com,US,3576,sitemap,9,https://www.ladyblacktie.com/sitemap.xml | https://www.ladyblacktie.com/sitemap.xml | https://www.ladyblacktie.com/sitemap.xml,2026-10-19,raw=3576 dupes_removed=0
+josephine-claire.com,US,259666,sitemap,338,https://josephine-claire.com/sitemap.xml,2026-10-19,raw=259666 dupes_removed=0
+thewestwayactive.com,US,22,sitemap,6,https://thewestwayactive.com/sitemap.xml,2026-10-19,raw=22 dupes_removed=0
+oncordcreations.com,US,30,sitemap,7,https://oncordcreations.com/sitemap.xml,2026-10-19,raw=30 dupes_removed=0
+sundaycitizen.co,US,1615,sitemap,7,https://sundaycitizen.co/sitemap.xml | https://sundaycitizen.co/sitemap.xml | https://sundaycitizen.co/sitemap.xml,2026-10-19,raw=1615 dupes_removed=0
+kenu.com,US,622,sitemap,17,https://www.kenu.com/sitemap.xml,2026-10-19,raw=622 dupes_removed=0
+mechmaxx.com,US,3565,sitemap,9,https://mechmaxx.com/sitemap.xml,2026-10-19,raw=3565 dupes_removed=0
+sphero.com,US,721,sitemap,7,https://sphero.com/sitemap.xml | https://sphero.com/sitemap.xml | https://sphero.com/sitemap.xml,2026-10-19,raw=721 dupes_removed=0
+bodyhealth.com,US,370,sitemap,8,https://bodyhealth.com/sitemap.xml,2026-10-19,raw=370 dupes_removed=0
+savagemind23.com,US,55,sitemap,6,https://exit-23clothingcompany.myshopify.com/sitemap.xml | https://exit-23clothingcompany.myshopify.com/sitemap.xml | https://exit-23clothingcompany.myshopify.com/sitemap.xml,2026-10-19,raw=55 dupes_removed=0
+supernaturalgoods.com,US,88,sitemap,7,https://www.supernaturalgoods.com/sitemap.xml,2026-10-19,raw=88 dupes_removed=0
+stivalinewyork.com,US,1747,sitemap,27,https://stivalinewyork.com/sitemap.xml,2026-10-19,raw=1747 dupes_removed=0
+artoftea.com,US,708,sitemap,7,https://www.artoftea.com/sitemap.xml,2026-10-19,raw=708 dupes_removed=0
+laylasleep.com,US,249,sitemap,1,https://laylasleep.com/sitemap.xml,2026-10-19,raw=249 dupes_removed=0
+shinypaw.com,US,83,sitemap,7,https://www.shinypaw.com/sitemap.xml,2026-10-19,raw=83 dupes_removed=0
+esdomera.com,US,19999,sitemap,44,https://esdomera.com/sitemap.xml,2026-10-19,raw=19999 dupes_removed=0
+thevitaminpatch.com,US,186,sitemap,7,https://thevitaminpatch.com/sitemap.xml,2026-10-19,raw=186 dupes_removed=0
+nelsonandalliehats.com,US,33,sitemap,6,https://nelsonandalliehats.com/sitemap.xml,2026-10-19,raw=33 dupes_removed=0
+store.facer.io,US,82,sitemap,7,https://store.facer.io/sitemap.xml,2026-10-19,raw=82 dupes_removed=0
+spankyscardshop.com,US,175125,sitemap,180,https://spankyscardshop.com/sitemap.xml,2026-10-19,raw=175125 dupes_removed=0
+shop.darksiderecords.com,US,291744,sitemap,298,https://darksiderecords.myshopify.com/sitemap.xml | https://darksiderecords.myshopify.com/sitemap.xml | https://darksiderecords.myshopify.com/sitemap.xml,2026-10-19,raw=291744 dupes_removed=0
+psychopathicvault.com,US,1011,sitemap,6,https://psychopathicvault.com/sitemap.xml,2026-10-19,raw=1011 dupes_removed=0
+lmtdefense.com,US,502,sitemap,35,https://lmtdefense.com/sitemap_index.xml,2026-10-19,raw=503 dupes_removed=1
+bussali.com,US,4677,sitemap,10,https://bussali.com/sitemap.xml,2026-10-19,raw=4677 dupes_removed=0
+shop.bakercustomjewelry.com,US,195,sitemap,6,https://shop.bakercustomjewelry.com/sitemap.xml,2026-10-19,raw=195 dupes_removed=0
+gwillikersgifts.com,US,3030,sitemap,8,https://gwillikersgifts.com/sitemap.xml,2026-10-19,raw=3030 dupes_removed=0
+superarbor.io,US,180507,sitemap,187,https://superarbor.io/sitemap.xml,2026-10-19,raw=180507 dupes_removed=0
+pacificdiamond.us,US,2697,sitemap,7,https://www.pacificdiamond.us/wp-sitemap.xml,2026-10-19,raw=2697 dupes_removed=0
+kingscamo.com,US,1085,sitemap,7,https://kingscamo.com/sitemap.xml,2026-10-19,raw=1085 dupes_removed=0
+longaberger.com,US,507,sitemap,7,https://longaberger.com/sitemap.xml,2026-10-19,raw=507 dupes_removed=0
+lalaandelm.com,US,1110,sitemap,7,https://lalaandelm.com/sitemap.xml,2026-10-19,raw=1110 dupes_removed=0
+intlmkt.com,US,145,sitemap,6,https://www.intlmkt.com/sitemap.xml,2026-10-19,raw=145 dupes_removed=0
+wosadobeauty.com,US,199,sitemap,7,https://wosadobeauty.com/sitemap.xml,2026-10-19,raw=199 dupes_removed=0
+pokersamadhi.com,US,255,sitemap,7,https://pokersamadhi.com/sitemap.xml,2026-10-19,raw=255 dupes_removed=0
+bunkerbranding.com,US,2613,sitemap,7,https://www.bunkerbranding.com/sitemap.xml,2026-10-19,raw=2613 dupes_removed=0
+everyday-wines.com,US,948,sitemap,7,https://everyday-wines.com/sitemap.xml,2026-10-19,raw=948 dupes_removed=0
+ellastein.com,US,393,sitemap,7,https://www.ellastein.com/sitemap.xml,2026-10-19,raw=393 dupes_removed=0
+alexgolfcars.com,US,48,sitemap,6,https://www.alexgolfcars.com/sitemap.xml,2026-10-19,raw=48 dupes_removed=0
+shopjohnnysgirl.com,US,1015,sitemap,7,https://shopjohnnysgirl.com/sitemap.xml,2026-10-19,raw=1015 dupes_removed=0
+sheex.com,US,395,sitemap,12,https://www.sheex.com/sitemap.xml,2026-10-19,raw=395 dupes_removed=0
+theobromachocolatier.com,US,30,sitemap,7,https://theobromachocolatier.com/sitemap.xml,2026-10-19,raw=30 dupes_removed=0
+whisperedlight.com,US,100,sitemap,1,https://whisperedlight.com/sitemap.xml,2026-10-19,raw=100 dupes_removed=0
+bridelily.com,US,24791,sitemap,36,https://www.bridelily.com/sitemap.xml,2026-10-19,raw=24791 dupes_removed=0
+direct.campingworld.com,US,9416,sitemap,5,https://direct.campingworld.com/sitemaps.xml,2026-10-19,raw=9425 dupes_removed=9
+thecornertoystore.com,US,1229,sitemap,8,https://thecornertoystore.com/sitemap.xml,2026-10-19,raw=1229 dupes_removed=0
+thelotusboutique.com,US,827,sitemap,6,https://thelotusboutique.com/sitemap.xml,2026-10-19,raw=827 dupes_removed=0
+paradoxlondon.com,US,3070,sitemap,17,https://www.paradoxlondon.com/sitemap.xml,2026-10-19,raw=3070 dupes_removed=0
+altenew.com,US,12716,sitemap,18,https://altenew.com/sitemap.xml | https://altenew.com/sitemap.xml | https://altenew.com/sitemap.xml,2026-10-19,raw=12716 dupes_removed=0
+weboost.com,US,549,sitemap,1,https://www.weboost.com/sitemap.xml,2026-10-19,raw=549 dupes_removed=0
+gift.oceana.org,US,230,sitemap,6,https://gift.oceana.org/sitemap.xml,2026-10-19,raw=230 dupes_removed=0
+baitpop.com,US,32,sitemap,6,https://baitpop.com/sitemap.xml,2026-10-19,raw=32 dupes_removed=0
+magicmicro.com,US,364,sitemap,1,https://www.magicmicro.com/sitemap.xml,2026-10-19,raw=364 dupes_removed=0
+pebbyforevee.com,US,3739,sitemap,9,https://pebbyforevee.com/sitemap.xml,2026-10-19,raw=3739 dupes_removed=0
+prestotex.com,US,64,sitemap,7,https://prestotex.com/sitemap.xml,2026-10-19,raw=64 dupes_removed=0
+pillowdecor.com,US,214,sitemap,7,https://pillowdecor.com/sitemap.xml,2026-10-19,raw=214 dupes_removed=0
+portolapaints.com,US,621,sitemap,7,https://portolapaints.com/sitemap.xml,2026-10-19,raw=621 dupes_removed=0
+shop.magicschool.ai,US,30,sitemap,6,https://shop.magicschool.ai/sitemap.xml,2026-10-19,raw=30 dupes_removed=0
+the-sleeper.com,US,198,sitemap,6,https://the-sleeper.com/sitemap.xml,2026-10-19,raw=198 dupes_removed=0
+ausomstore.com,US,310,sitemap,7,https://ausomstore.com/sitemap.xml,2026-10-19,raw=310 dupes_removed=0
+faceguts.com,US,299,sitemap,7,https://www.faceguts.com/sitemap.xml,2026-10-19,raw=299 dupes_removed=0
+newpower99.com,US,2383,sitemap,9,https://newpower99.com/sitemap.xml,2026-10-19,raw=2383 dupes_removed=0
+bornbytheshore.com,US,266,sitemap,7,https://www.bornbytheshore.com/sitemap.xml,2026-10-19,raw=266 dupes_removed=0
+shopkwanzajones.com,US,152,sitemap,6,https://shopkwanzajones.com/sitemap.xml | https://shopkwanzajones.com/sitemap.xml | https://shopkwanzajones.com/sitemap.xml,2026-10-19,raw=152 dupes_removed=0
+dashdesigns.com,US,531,sitemap,6,https://dashdesigns.com/sitemap.xml,2026-10-19,raw=531 dupes_removed=0
+kestrelinstruments.com,US,266,sitemap,1,https://kestrelinstruments.com/sitemaps/kestrel_sitemap.xml,2026-10-19,raw=266 dupes_removed=0
+cleanrth.com,US,49,sitemap,6,https://cleanrth.com/sitemap.xml,2026-10-19,raw=49 dupes_removed=0
+shop.tosimplyinspire.com,US,204,sitemap,6,https://shop.tosimplyinspire.com/sitemap.xml,2026-10-19,raw=204 dupes_removed=0
+barewoodoutlet.com,US,2308,sitemap,8,https://barewoodoutlet.com/sitemap.xml,2026-10-19,raw=2308 dupes_removed=0
+penntoolco.com,US,702156,sitemap,76,https://www.penntoolco.com/xmlsitemap.php,2026-10-19,raw=702164 dupes_removed=8
+ewfdirect.com,US,25317,sitemap,36,https://www.ewfdirect.com/sitemap.xml,2026-10-19,raw=25317 dupes_removed=0
+ragdiva.com,US,490,sitemap,7,https://ragdiva.com/sitemap.xml,2026-10-19,raw=490 dupes_removed=0
+youremma.com,US,0,sitemap (US pages only),52,https://youremma.com/sitemap.xml,2026-10-19,"raw=5019 dupes_removed=0; country split untagged=2786,other=1119,SA=1114"
+brightland.co,US,703,sitemap,7,https://brightland.co/sitemap.xml,2026-10-19,raw=703 dupes_removed=0
+oliviasinteriordesign.com,US,82,sitemap,6,https://oliviasinteriordesign.com/sitemap.xml,2026-10-19,raw=82 dupes_removed=0
+thingsjamaicanshopping.com,US,392,sitemap,6,https://thingsjamaicanshopping.com/sitemap.xml,2026-10-19,raw=393 dupes_removed=1
+vibe.us,US,617,sitemap,1,https://vibe.us/sitemap.xml,2026-10-19,raw=617 dupes_removed=0
+shopbestyouboutique.com,US,2485,sitemap,9,https://www.shopbestyouboutique.com/sitemap.xml,2026-10-19,raw=2485 dupes_removed=0
+foundmyfarm.com,US,36,sitemap,6,https://foundmyfarm.com/sitemap.xml,2026-10-19,raw=36 dupes_removed=0
+papersource.com,US,17628,sitemap,25,https://www.papersource.com/sitemap.xml | https://www.papersource.com/sitemap.xml | https://www.papersource.com/sitemap.xml,2026-10-19,raw=17628 dupes_removed=0
+ecotradecompany.com,US,2019,sitemap,8,https://www.ecotradecompany.com/sitemap.xml,2026-10-19,raw=2019 dupes_removed=0
+greatjonesgoods.com,US,482,sitemap,7,https://greatjonesgoods.com/sitemap.xml | https://greatjonesgoods.com/sitemap.xml | https://greatjonesgoods.com/sitemap.xml,2026-10-19,raw=482 dupes_removed=0
+ufmunderwear.com,US,156,sitemap,7,https://ufmunderwear.com/sitemap.xml,2026-10-19,raw=156 dupes_removed=0
+mofumofuroom.shop,US,90,sitemap,7,https://mofumofuroom.shop/sitemap.xml,2026-10-19,raw=90 dupes_removed=0
+ammanii.com,US,309,sitemap,12,https://ammanii.com/sitemap.xml,2026-10-19,raw=309 dupes_removed=0
+meggoddessdesigns.com,US,1306,sitemap,1,https://www.meggoddessdesigns.com/sitemap.xml,2026-10-19,raw=1306 dupes_removed=0
+parts.rvwholesalers.com,US,98,sitemap,6,https://parts.rvwholesalers.com/sitemap.xml,2026-10-19,raw=98 dupes_removed=0
+noellebydesign.com,US,578,sitemap,1,https://www.noellebydesign.com/sitemap.xml,2026-10-19,raw=578 dupes_removed=0
+ndi.com,US,7533,sitemap,19,https://ndi.com/sitemap_index.xml,2026-10-19,raw=7542 dupes_removed=9
+nationalbusinessfurniture.com,US,8925,sitemap,1,https://www.nationalbusinessfurniture.com/media/sitemap/sitemap.xml | https://www.nationalbusinessfurniture.com/media/sitemap/sitemap.xml,2026-10-19,raw=8932 dupes_removed=7
+shopwithleatherandlace.com,US,1303,sitemap,7,https://www.shopwithleatherandlace.com/sitemap.xml,2026-10-19,raw=1303 dupes_removed=0
+cocoandeve.com,US,408,sitemap,7,https://www.cocoandeve.com/sitemap.xml,2026-10-19,raw=408 dupes_removed=0
+thezflipcase.com,US,636,sitemap,7,https://thezflipcase.com/sitemap.xml,2026-10-19,raw=636 dupes_removed=0
+vondiamonds.com,US,450795,sitemap,457,https://vondiamonds.com/sitemap.xml,2026-10-19,raw=450795 dupes_removed=0
+indiepubs.com,US,323446,sitemap,330,https://indiepubs.com/sitemap.xml,2026-10-19,raw=323446 dupes_removed=0
+sjcustomsmi.com,US,515,sitemap,1,https://sjcustomsmi.com/sitemap.xml | https://sjcustomsmi.com/sitemap.xml | https://sjcustomsmi.com/sitemap.xml | https://sjcustomsmi.com/sitemap.xml,2026-10-19,raw=515 dupes_removed=0
+lanzofsalzburg.com,US,210,sitemap,6,https://lanzofsalzburg.com/sitemap.xml,2026-10-19,raw=210 dupes_removed=0
+smathersandbranson.com,US,2991,sitemap,10,https://www.smathersandbranson.com/sitemap.xml,2026-10-19,raw=2991 dupes_removed=0
+store.latimes.com,US,864,sitemap,6,https://store.latimes.com/sitemap.xml,2026-10-19,raw=864 dupes_removed=0
+theskippingstone.com,US,295,sitemap,7,https://www.theskippingstone.com/sitemap.xml,2026-10-19,raw=295 dupes_removed=0
+us.danielwellington.com,US,2075,sitemap,8,https://us.danielwellington.com/sitemap.xml | https://us.danielwellington.com/sitemap.xml | https://us.danielwellington.com/sitemap.xml | https://us.danielwellington.com/cdn/shop/files/faceted-sitemap.xml,2026-10-19,raw=2075 dupes_removed=0
+speakofthedevilshop.com,US,817,sitemap,5,https://speakofthedevilshop.com/sitemap.xml,2026-10-19,raw=817 dupes_removed=0
+ammocanman.com,US,680,sitemap,7,https://ammocanman.com/sitemap.xml,2026-10-19,raw=680 dupes_removed=0
+hhmercantile.biz,US,592,sitemap,1,https://www.hhmercantile.biz/sitemap.xml,2026-10-19,raw=592 dupes_removed=0
+feralfungi.com,US,138,sitemap,7,https://feralfungi.com/sitemap.xml,2026-10-19,raw=138 dupes_removed=0
+usocmedical.com,US,4549,sitemap,34,https://usocmedical.com/sitemap.xml,2026-10-19,raw=5133 dupes_removed=584; failed sitemap fetches=1: https://usocmedical.com/manufacture-sitemap.xml:404
+dreamlandjewelry.com,US,11168,sitemap,1,https://dreamlandjewelry.com/sitemap.xml,2026-10-19,raw=11168 dupes_removed=0
+lateknightbooks.com,US,464067,sitemap,470,https://lateknightbooks.com/sitemap.xml,2026-10-19,raw=464067 dupes_removed=0
+daintyhooligan.com,US,1471,sitemap,8,https://www.daintyhooligan.com/sitemap.xml,2026-10-19,raw=1471 dupes_removed=0
+fablesintheair.com,US,202,sitemap,7,https://fablesintheair.com/sitemap.xml,2026-10-19,raw=202 dupes_removed=0
+michipatterns.com,US,2647,sitemap,9,https://www.michipatterns.com/sitemap.xml,2026-10-19,raw=2648 dupes_removed=1
+poppypine.com,US,1266,sitemap,7,https://poppypine.com/sitemap.xml,2026-10-19,raw=1266 dupes_removed=0
+houndsy.com,US,4403,sitemap,15,https://www.houndsy.com/sitemap.xml,2026-10-19,raw=4403 dupes_removed=0
+urbanoutfitters.com,US,,Not available (blocked by site: HTTP 403 on robots.txt; not bypassed),0,,2026-10-19,no sitemap found
+newhollandoverland.com,US,639,sitemap,7,https://newhollandoverland.com/sitemap.xml,2026-10-19,raw=639 dupes_removed=0
+pisgahrangeltd.com,US,87,sitemap,7,https://www.pisgahrangeltd.com/sitemap.xml,2026-10-19,raw=87 dupes_removed=0
+merch.rubyonrails.org,US,18,sitemap,6,https://merch.rubyonrails.org/sitemap.xml,2026-10-19,raw=18 dupes_removed=0
+milaandrose.com,US,2828,sitemap,9,https://www.milaandrose.com/sitemap.xml | https://www.milaandrose.com/sitemap.xml | https://www.milaandrose.com/sitemap.xml,2026-10-19,raw=2828 dupes_removed=0
+us.davines.com,US,1625,sitemap,7,https://us.davines.com/sitemap.xml | https://us.davines.com/sitemap.xml | https://us.davines.com/sitemap.xml,2026-10-19,raw=1625 dupes_removed=0
+thetoytemple.com,US,1773,sitemap,12,https://www.thetoytemple.com/sitemap.xml,2026-10-19,raw=1773 dupes_removed=0
+mindoftravel.com,US,55,sitemap,7,https://mindoftravel.com/sitemap.xml,2026-10-19,raw=55 dupes_removed=0
+cbcheminc.com,US,90,sitemap,7,https://www.cbcheminc.com/sitemap.xml,2026-10-19,raw=90 dupes_removed=0
+folkofthewood.com,US,137,sitemap,6,https://folkofthewood.com/sitemap.xml,2026-10-19,raw=137 dupes_removed=0
+footwearetc.com,US,4827,sitemap,11,http://footwearetc.com/sitemap.xml,2026-10-19,raw=4830 dupes_removed=3
+newhorizonlighting.com,US,216,sitemap,7,https://www.newhorizonlighting.com/sitemap.xml,2026-10-19,raw=216 dupes_removed=0
+melfredborzall.com,US,1717,sitemap,2,https://www.melfredborzall.com/sitemap.xml | https://www.melfredborzall.com/media/sitemap.xml,2026-10-19,raw=3434 dupes_removed=1717
+shop1906.com,US,64,sitemap,6,https://shop1906.com/sitemap.xml,2026-10-19,raw=64 dupes_removed=0
+everything-mousey-pins.com,US,1599,sitemap,1,https://www.everything-mousey-pins.com/sitemap.xml,2026-10-19,raw=1599 dupes_removed=0
+nascoinc.com,US,165,sitemap,5,https://nascoinc.com/xmlsitemap.php,2026-10-19,raw=165 dupes_removed=0
+onewheel.com,US,588,sitemap,7,https://onewheel.com/sitemap.xml,2026-10-19,raw=588 dupes_removed=0
+shopalltheskies.com,US,139,sitemap,17,https://shopalltheskies.com/sitemap.xml,2026-10-19,raw=139 dupes_removed=0
+wineonlinedelivery.com,US,43167,sitemap,49,https://wineonlinedelivery.com/sitemap.xml,2026-10-19,raw=43167 dupes_removed=0
+thehaventabletop.com,US,625493,sitemap,636,https://thehaventabletop.com/sitemap.xml,2026-10-19,raw=625493 dupes_removed=0
+motortopia.com,US,27574,sitemap,36,https://www.motortopia.com/sitemap_index.xml,2026-10-19,raw=27575 dupes_removed=1; media sitemaps skipped=2
+newmanfarm.com,US,125,sitemap,7,https://newmanfarm.com/sitemap.xml,2026-10-19,raw=125 dupes_removed=0
+theduabrand.com,US,4730,sitemap,10,https://theduabrand.com/sitemap.xml,2026-10-19,raw=4730 dupes_removed=0
+drinkwaterloo.com,US,104,sitemap,7,https://www.drinkwaterloo.com/sitemap.xml,2026-10-19,raw=104 dupes_removed=0
+eknest.com,US,427,sitemap,6,https://eknest.com/sitemap.xml,2026-10-19,raw=427 dupes_removed=0
+polycade.com,US,415,sitemap,7,https://polycade.com/sitemap.xml,2026-10-19,raw=415 dupes_removed=0
+mykin.com,US,2276,sitemap,1,https://mykin.com/sitemap.xml,2026-10-19,raw=2276 dupes_removed=0
+readysetpedal.com,US,1045,sitemap,12,https://www.readysetpedal.com/sitemap.xml,2026-10-19,raw=1045 dupes_removed=0
+barclaycompany.com,US,2264,sitemap,5,https://www.barclaycompany.com/sitemap.xml,2026-10-19,raw=2265 dupes_removed=1
+waterpologear.3dcartstores.com,US,145,sitemap,1,https://waterpologear.3dcartstores.com/sitemap.xml,2026-10-19,raw=145 dupes_removed=0
+shop-us.omicronenergy.com,US,579,sitemap,6,https://shop-us.omicronenergy.com/sitemap.xml,2026-10-19,raw=579 dupes_removed=0
+mood.com,US,2312,sitemap,6,https://mood.com/sitemap.xml,2026-10-19,raw=2313 dupes_removed=1
+nextroundgolf.com,US,7579,sitemap,13,https://nextroundgolf.com/sitemap.xml,2026-10-19,raw=7579 dupes_removed=0
+shopyalehome.com,US,1219,sitemap,22,https://shopyalehome.com/sitemap.xml,2026-10-19,raw=1219 dupes_removed=0
+xtream.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.xtream.com', port=80): Max retries exceeded with ur))",0,,2026-10-19,
+timmysneaks.com,US,274,sitemap,7,https://timmysneaks.com/sitemap.xml,2026-10-19,raw=274 dupes_removed=0
+baggs.co,US,133,sitemap,7,https://baggs.co/sitemap.xml,2026-10-19,raw=133 dupes_removed=0
+oceansfloor.com,US,1497,sitemap,1,https://www.oceansfloor.com/sitemap.xml,2026-10-19,raw=1497 dupes_removed=0
+shoprumored.com,US,378,sitemap,7,https://www.shoprumored.com/sitemap.xml,2026-10-19,raw=378 dupes_removed=0
+haircode.com,US,323,sitemap,7,https://haircode.com/sitemap.xml,2026-10-19,raw=323 dupes_removed=0
+avarydrone.com,US,296,sitemap,7,https://avarydrone.com/sitemap.xml,2026-10-19,raw=296 dupes_removed=0
+isinwheel.com,US,2207,sitemap,12,https://www.isinwheel.com/sitemap.xml,2026-10-19,raw=2207 dupes_removed=0
+goprocut.com,US,15513,sitemap,1,https://goprocut.com/sitemap.xml,2026-10-19,raw=15513 dupes_removed=0
+galttoys.us,US,132,sitemap,5,https://www.galttoys.us/sitemap.xml,2026-10-19,raw=132 dupes_removed=0
+zassdesign.com,US,1306,sitemap,1,https://www.zassdesign.com/sitemap.xml,2026-10-19,raw=1306 dupes_removed=0
+wahl-eversharp.com,US,51,sitemap,7,https://wahl-eversharp.com/sitemap.xml,2026-10-19,raw=51 dupes_removed=0
+boxcity.com,US,1723,sitemap,9,https://boxcity.com/sitemap.xml | https://boxcity.com/post-sitemap.xml | https://boxcity.com/page-sitemap.xml | https://boxcity.com/ecstore-1-sitemap.xml,2026-10-19,raw=1723 dupes_removed=0
+officialspiritwear.com,US,334,sitemap,1,https://officialspiritwear.3dcartstores.com/sitemap.xml,2026-10-19,raw=334 dupes_removed=0
+bkonoutdoors.com,US,4168,sitemap,1,https://www.bkonoutdoors.com/sitemap.xml,2026-10-19,raw=4168 dupes_removed=0
+trenchersfarmhouse.com,US,156,sitemap,7,https://trenchersfarmhouse.com/sitemap.xml,2026-10-19,raw=156 dupes_removed=0
+stanhopejewelry.com,US,267,sitemap,1,https://www.stanhopejewelry.com/sitemap.xml,2026-10-19,raw=267 dupes_removed=0
+omnitype.com,US,328,sitemap,7,https://omnitype.com/sitemap.xml,2026-10-19,raw=328 dupes_removed=0
+texasgardenmaterials.com,US,541,sitemap,6,https://texasgardenmaterials.com/sitemap_index.xml | https://texasgardenmaterials.com/page-sitemap.xml | https://texasgardenmaterials.com/product-sitemap.xml | https://texasgardenmaterials.com/product_cat-sitemap.xml,2026-10-19,raw=542 dupes_removed=1
+doleplantation.com,US,241,sitemap,1,https://www.doleplantation.com/sitemap.xml,2026-10-19,raw=241 dupes_removed=0
+oatmeallacedesign.com,US,251,sitemap,7,https://oatmeallacedesign.com/sitemap.xml,2026-10-19,raw=251 dupes_removed=0
+roadsandkingdoms.com,US,46,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('https://www.roadsandkingdoms.com/wp-sitemap.xml', 403)]); woocommerce X-WP-Total (products only)"
+hallmark.com,US,15539,sitemap,5,https://www.hallmark.com/sitemap_index.xml,2026-10-19,raw=15539 dupes_removed=0; media sitemaps skipped=5
+shopwanderboutique.com,US,1547,sitemap,8,https://www.shopwanderboutique.com/sitemap.xml,2026-10-19,raw=1547 dupes_removed=0
+verbproducts.com,US,291,sitemap,7,https://www.verbproducts.com/sitemap.xml,2026-10-19,raw=291 dupes_removed=0
+cellcore.com,US,1477,sitemap,17,https://cellcore.com/sitemap.xml,2026-10-19,raw=1477 dupes_removed=0
+emmafy.com,US,476,sitemap,6,https://emmafy.com/sitemap.xml,2026-10-19,raw=476 dupes_removed=0
+zamst.us,US,243,sitemap,7,https://zamst.us/sitemap.xml | https://zamst.us/sitemap.xml | https://zamst.us/sitemap.xml | https://zamst.us/sitemap.xml | https://zamst.us/sitemap.xml (+1 more),2026-10-19,raw=243 dupes_removed=0
+minosimports.com,US,784,sitemap,1,https://minosimports.3dcartstores.com/sitemap.xml,2026-10-19,raw=784 dupes_removed=0
+s4g.com,US,10185,sitemap,1,https://www.s4g.com/sitemap.xml,2026-10-19,raw=10185 dupes_removed=0
+thebestbodybar.com,US,49,sitemap,6,https://thebestbodybar.com/sitemap.xml,2026-10-19,raw=49 dupes_removed=0
+shimmyshine.com,US,57,sitemap,7,https://shimmyshine.com/sitemap.xml,2026-10-19,raw=57 dupes_removed=0
+slfmkr.com,US,1122,sitemap,7,https://slfmkr.com/sitemap.xml,2026-10-19,raw=1122 dupes_removed=0
+elderberryplacemarket.com,US,1290,sitemap,7,https://elderberryplacemarket.com/sitemap.xml,2026-10-19,raw=1290 dupes_removed=0
+nightpearl.com,US,100,sitemap,7,https://nightpearl.com/sitemap.xml,2026-10-19,raw=100 dupes_removed=0
+amsperformance.com,US,1945,sitemap,16,https://www.amsperformance.com/sitemap_index.xml,2026-10-19,raw=1957 dupes_removed=12; media sitemaps skipped=5
+olibearandsimba.com,US,109,sitemap,22,https://olibearandsimba.com/sitemap.xml,2026-10-19,raw=109 dupes_removed=0
+threadedtribes.com,US,5377,sitemap,42,https://threadedtribes.com/sitemap.xml,2026-10-19,raw=5377 dupes_removed=0
+tedsvintageart.com,US,8830,sitemap,15,https://tedsvintageart.com/sitemap.xml,2026-10-19,raw=8830 dupes_removed=0
+electricmotorwarehouse.com,US,15405,sitemap,6,https://electricmotorwarehouse.com/xmlsitemap.php,2026-10-19,raw=15430 dupes_removed=25
+petrovichcaviar.com,US,64,sitemap,6,https://www.petrovichcaviar.com/sitemap.xml,2026-10-19,raw=64 dupes_removed=0
+sheergirl.com,US,16661,sitemap,42,https://www.sheergirl.com/sitemap.xml,2026-10-19,raw=16661 dupes_removed=0
+headshop.com,US,23579,sitemap,38,https://www.headshop.com/sitemap.xml,2026-10-19,raw=23579 dupes_removed=0
+thespotchicago.com,US,2869,sitemap,9,https://thespotchicago.com/sitemap.xml,2026-10-19,raw=2869 dupes_removed=0
+scandesign.com,US,1235,sitemap,6,https://www.scandesign.com/sitemap.xml,2026-10-19,raw=1235 dupes_removed=0
+laylasbowtique.com,US,81,sitemap,6,https://laylasbowtique.com/sitemap.xml,2026-10-19,raw=81 dupes_removed=0
+renogy.com,US,3069,sitemap,14,https://www.renogy.com/sitemap.xml,2026-10-19,raw=3069 dupes_removed=0
+mardel.com,US,200165,archive,0,,2026-10-19,"sitemap present but yielded no countable URLs; wayback CDX unique urlkeys (html,200; own host + www only)"
+1800tequila.com,US,237,sitemap,7,https://www.1800tequila.com/sitemap.xml,2026-10-19,raw=237 dupes_removed=0
+shop.telnyx.com,US,14,sitemap,5,https://shop.telnyx.com/sitemap.xml,2026-10-19,raw=14 dupes_removed=0
+reeseybsboutique.com,US,515,sitemap,6,https://reeseybsboutique.com/sitemap.xml,2026-10-19,raw=515 dupes_removed=0
+flexispot.com,US,5321,sitemap,1,https://www.flexispot.com/sitemap.xml,2026-10-19,raw=5321 dupes_removed=0
+oceaniamaui.com,US,392,sitemap,7,https://oceaniamaui.com/sitemap.xml,2026-10-19,raw=392 dupes_removed=0
+nzuritextiles.com,US,320,sitemap,7,https://nzuritextiles.com/sitemap.xml,2026-10-19,raw=320 dupes_removed=0
+chi.com,US,697,sitemap,2,https://chi.com/sitemap_index.xml,2026-10-19,raw=697 dupes_removed=0
+helenscollective.com,US,2890,sitemap,8,https://helenscollective.com/sitemap.xml,2026-10-19,raw=2890 dupes_removed=0
+eden-vert.com,US,643,sitemap,14,https://www.eden-vert.com/sitemap_index.xml | https://www.eden-vert.com/ai-sitemap.xml,2026-10-19,raw=695 dupes_removed=52
+maycocolors.com,US,11589,sitemap,33,https://www.maycocolors.com/sitemap_index.xml,2026-10-19,raw=11704 dupes_removed=115
+excesssolutions.com,US,2066,sitemap,1,https://www.excesssolutions.com/sitemap.xml,2026-10-19,raw=2066 dupes_removed=0
+nvnmarine.com,US,50460,sitemap,57,https://nvnmarine.com/sitemap.xml,2026-10-19,raw=50460 dupes_removed=0
+shopreefnreptiles.com,US,286,sitemap,7,https://shopreefnreptiles.com/sitemap.xml,2026-10-19,raw=286 dupes_removed=0
+meissajewelry.com,US,2643,sitemap,14,https://meissajewelry.com/sitemap.xml,2026-10-19,raw=2643 dupes_removed=0
+shoplucyrose.com,US,4830,sitemap,10,https://shoplucyrose.com/sitemap.xml,2026-10-19,raw=4830 dupes_removed=0
+prairiespirittradingpost.com,US,66041,sitemap,112,https://prairiespirittradingpost.com/sitemap.xml,2026-10-19,raw=66107 dupes_removed=66
+beyondyoga.com,US,2661,sitemap,10,https://beyondyoga.com/sitemap.xml | https://beyondyoga.com/sitemap.xml | https://beyondyoga.com/sitemap.xml,2026-10-19,raw=2661 dupes_removed=0
+goorin.com,US,2075,sitemap,14,https://goorin.com/sitemap.xml,2026-10-19,raw=2077 dupes_removed=2
+shop.polkadotchair.com,US,262,sitemap,6,https://shop.polkadotchair.com/sitemap.xml,2026-10-19,raw=262 dupes_removed=0
+nevawireless.com,US,4593,sitemap,10,https://nevawireless.com/sitemap.xml,2026-10-19,raw=4593 dupes_removed=0
+shoplaurenalexandra.com,US,1080,sitemap,6,https://www.shoplaurenalexandra.com/sitemap.xml,2026-10-19,raw=1080 dupes_removed=0
+raleys.com,US,854,sitemap,5,https://www.raleys.com/sitemap.xml,2026-10-19,raw=870 dupes_removed=0
+shop.chateaumarmont.com,US,45,sitemap,6,https://shop.chateaumarmont.com/sitemap.xml,2026-10-19,raw=45 dupes_removed=0
+u2.com,US,9743,sitemap,17,https://www.u2.com/sitemap.xml,2026-10-19,raw=9743 dupes_removed=0
+bouncebacksports.com,US,5619,sitemap,1,https://www.bouncebacksports.com/sitemap.xml,2026-10-19,raw=5619 dupes_removed=0
+irishadesigns.com,US,17237,sitemap,90,http://irishadesigns.com/sitemap_index.xml,2026-10-19,raw=18058 dupes_removed=821
+tin-cup.com,US,322,sitemap,7,https://tin-cup.com/sitemap.xml,2026-10-19,raw=322 dupes_removed=0
+sundayscaries.com,US,304,sitemap,7,https://sundayscaries.com/sitemap.xml,2026-10-19,raw=304 dupes_removed=0
+navalivingco.com,US,45,sitemap,6,https://www.navalivingco.com/sitemap.xml,2026-10-19,raw=45 dupes_removed=0
+puckipuppy.com,US,543,sitemap,7,https://www.puckipuppy.com/sitemap.xml,2026-10-19,raw=543 dupes_removed=0
+theguardtower.com,US,16835,sitemap,23,https://theguardtower.com/sitemap.xml,2026-10-19,raw=16835 dupes_removed=0
+abt.com,US,59674,sitemap,33,https://www.abt.com/sitemap.xml,2026-10-19,raw=59674 dupes_removed=0; media sitemaps skipped=5
+susanlisterlocke.com,US,579,sitemap,7,https://susanlisterlocke.com/sitemap.xml,2026-10-19,raw=579 dupes_removed=0
+polyvinylrecords.com,US,4154,sitemap,9,https://www.polyvinylrecords.com/sitemap.xml,2026-10-19,raw=4154 dupes_removed=0
+graceofdesign.com,US,586,sitemap,7,https://graceofdesign.com/sitemap.xml,2026-10-19,raw=586 dupes_removed=0
+fiberoptics4sale.com,US,18212,sitemap,24,https://www.fiberoptics4sale.com/sitemap.xml,2026-10-19,raw=18212 dupes_removed=0
+shwoodshop.com,US,474,sitemap,7,https://shwoodshop.com/sitemap.xml,2026-10-19,raw=474 dupes_removed=0
+themissionaryemporium.com,US,80,sitemap,6,https://themissionaryemporium.com/sitemap.xml,2026-10-19,raw=80 dupes_removed=0
+pro.mustangsurvival.com,US,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.pro.mustangsurvival.com', port=80): Max retries exc))",0,,2026-10-19,
+outofthebluemaine.com,US,158,sitemap,5,https://www.outofthebluemaine.com/sitemap.xml,2026-10-19,raw=158 dupes_removed=0
+kylesfootballcards.com,US,1082,sitemap,8,https://kylesfootballcards.com/sitemap.xml,2026-10-19,raw=1082 dupes_removed=0
+thelandscaperstore.com,US,315,sitemap,6,https://thelandscaperstore.com/sitemap.xml,2026-10-19,raw=315 dupes_removed=0
+moviemars.com,US,334941,sitemap,341,https://www.moviemars.com/sitemap.xml,2026-10-19,raw=334941 dupes_removed=0
+safemo.com,US,58,sitemap,7,https://safemo.com/sitemap.xml,2026-10-19,raw=58 dupes_removed=0
+palladiumbooks.com,US,988,sitemap,9,https://palladiumbooks.com/sitemap.xml,2026-10-19,raw=988 dupes_removed=0
+trudon.com,US,331,sitemap (US pages only),3,https://trudon.com/sitemaps/sitemap_eu_en.xml | https://trudon.com/sitemaps/sitemap_eu_fr.xml | https://trudon.com/sitemaps/sitemap_us_en.xml,2026-10-19,"raw=1119 dupes_removed=69; country split other=719,US=331"
+worlddiamondsource.com,US,2372,sitemap,18,https://www.worlddiamondsource.com/sitemap_index.xml,2026-10-19,raw=2455 dupes_removed=83; media sitemaps skipped=1
+haimov.com,US,1408,sitemap,7,https://haimov.com/sitemap.xml,2026-10-19,raw=1408 dupes_removed=0
+thebearslairgifts.com,US,1611,sitemap,1,https://www.thebearslairgifts.com/sitemap.xml,2026-10-19,raw=1611 dupes_removed=0
+resonantbotanicals.com,US,110,sitemap,7,https://resonantbotanicals.com/sitemap.xml,2026-10-19,raw=110 dupes_removed=0
+threesbrewing.com,US,457,sitemap,6,https://threesbrewing.com/sitemap.xml,2026-10-19,raw=457 dupes_removed=0
+townappliance.com,US,41043,sitemap,47,https://www.townappliance.com/sitemap.xml,2026-10-19,raw=41043 dupes_removed=0
+menswearhouse.com,US,,"Not available (unreachable (ReadTimeout: HTTPConnectionPool(host='www.menswearhouse.com', port=80): Read timed out. (read))",0,,2026-10-19,
+longstreetliving.com,US,17041,sitemap,22,https://www.longstreetliving.com/sitemap.xml,2026-10-19,raw=17041 dupes_removed=0
+thelupi.com,US,351,sitemap (US pages only),94,https://thelupi.com/sitemap.xml,2026-10-19,"raw=8074 dupes_removed=0; country split other=4563,untagged=3160,US=351"
+rvca.com,US,1366,sitemap,8,https://rvca.com/sitemap.xml,2026-10-19,raw=1366 dupes_removed=0
+theathleticcommunity.com,US,466,sitemap,7,https://www.theathleticcommunity.com/sitemap.xml,2026-10-19,raw=466 dupes_removed=0
+chickswithspiritualgifts.com,US,1,platform product count,0,,2026-10-19,"sitemap present but yielded no countable URLs ([('http://chickswithspiritualgifts.com/sitemapindeximages.xml', 404), ('http://chickswithspiritualgifts.com/sitemapmobileindex.xml', 404)]); woocommerce X-WP-Total (products only)"
+article.com,US,2890,sitemap,10,https://www.article.com/sitemap.xml,2026-10-19,raw=2890 dupes_removed=0; media sitemaps skipped=1
+shopconfetticloset.com,US,1263,sitemap,7,https://shopconfetticloset.com/sitemap.xml,2026-10-19,raw=1263 dupes_removed=0
+bcwsupplies.com,US,2684,sitemap,11,https://www.bcwsupplies.com/sitemap.xml | https://www.bcwsupplies.com/sitemap.xml,2026-10-19,raw=3314 dupes_removed=630
+shopolufsondesigns.com,US,785,sitemap,7,https://shopolufsondesigns.com/sitemap.xml,2026-10-19,raw=785 dupes_removed=0
+evelynbobbie.com,US,450,sitemap,7,https://evelynbobbie.com/sitemap.xml,2026-10-19,raw=450 dupes_removed=0
+healixscrubs.com,US,1909,sitemap,18,https://healixscrubs.com/sitemap.xml,2026-10-19,raw=1909 dupes_removed=0
+showroomla.com,US,61216,sitemap,98,https://www.showroomla.com/sitemap.xml,2026-10-19,raw=61216 dupes_removed=0
+reynspooner.com,US,1555,sitemap,8,https://www.reynspooner.com/sitemap.xml,2026-10-19,raw=1555 dupes_removed=0
+tribe-rn.com,US,59,sitemap,7,https://tribe-rn.com/sitemap.xml,2026-10-19,raw=59 dupes_removed=0
+jewishgiftplace.com,US,1260,sitemap,6,https://jewishgiftplace.com/sitemap.xml,2026-10-19,raw=1260 dupes_removed=0
+thejumppad.com,US,187,sitemap,12,https://thejumppad.com/sitemap.xml,2026-10-19,raw=187 dupes_removed=0
+tinylandus.com,US,2190,sitemap,12,https://www.tinylandus.com/sitemap.xml,2026-10-19,raw=2190 dupes_removed=0
