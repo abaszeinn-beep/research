@@ -116,7 +116,7 @@ Drops,https://drops.me/en-kw/,257060,sitemap,2026-10-19,Verified
 Dyson Kuwait,https://www.dyson.com.kw/,1272,archive,2026-10-19,Verified (secondary evidence)
 EAGER PILOTS,https://eagerpilots.com.kw/,49,sitemap,2026-10-19,Verified
 ElDora,https://eldora-kw.com/,1647,sitemap,2026-10-19,Verified
-Electronics in Touch Co,https://www.eitkw.com/,2699,sitemap (partial: 6 of 7 sitemap files read),2026-10-19,Verified
+Electronics in Touch Co,https://www.eitkw.com/,2699,sitemap,2026-10-19,Verified
 Elite House,https://elitewholesalekuwait.com/,181,sitemap,2026-10-19,Verified
 eMarket Kuwait: Discover Kuwait's Best Electronics,https://www.emarketkw.com/,2713,sitemap,2026-10-19,Verified
 EMVANO,https://ar-kw.emvano.com/,76156,sitemap,2026-10-19,Verified
@@ -201,7 +201,7 @@ Lime - Be Beautiful Everytime,https://lime-kw.com/,685,sitemap,2026-10-19,Verifi
 Limitee Perfumes,https://www.limiteeperfumes.com/kw/,6,sitemap,2026-10-19,Verified
 Livish,https://www.livish.com/,20963,sitemap,2026-10-19,Verified
 Loom,https://shoploom.co/,313,sitemap,2026-10-19,Verified
-Lulu Hypermarket Kuwait,https://gcc.luluhypermarket.com/en-kw/,,"Not available (unreachable (ConnectionError: HTTPConnectionPool(host='www.gcc.luluhypermarket.com', port=80): Max retries exc))",2026-10-19,Verified (secondary evidence)
+Lulu Hypermarket Kuwait,https://gcc.luluhypermarket.com/en-kw/,6839,archive,2026-10-19,Verified (secondary evidence)
 LUSH,https://lushkw.com/,8090,archive,2026-10-19,Verified (secondary evidence)
 L’Occitane Kuwait,https://kw.loccitane.com/,1737,sitemap,2026-10-19,Verified
 MAGRABi Kuwait,https://www.magrabi.com/kw-en/,23888,sitemap (KW pages only),2026-10-19,Verified
@@ -413,7 +413,7 @@ Zue For Pet Supplies Co,https://www.zue.com.kw/,2657,sitemap,2026-10-19,Verified
 صالة الماجد للمفروشات,https://almajedgallery.com/,787,sitemap,2026-10-19,Verified
 صفّار,https://shop.jawadalsaffar.com/,4,shop-page total,2026-10-19,Verified
 عباية لاب | Abaya lab,https://abayalabkw.com/,155,sitemap,2026-10-19,Verified
-عذاري,https://www.adhari.com.kw/,,Not available (error: ValueError: invalid literal for int() with base 10: ''),2026-10-19,Verified
+عذاري,https://www.adhari.com.kw/,126,archive,2026-10-19,Verified
 عروض الكويت,https://www.ooroodkw.com/,386,sitemap,2026-10-19,Verified
 عطار الكويت,https://attarkuwait.com/,4969,sitemap,2026-10-19,Verified
 علي ديل,https://www.alidealkw.com/,489,sitemap,2026-10-19,Verified
