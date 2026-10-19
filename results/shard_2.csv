@@ -4485,3 +4485,6 @@ tochatea.com,US,35,sitemap,7,https://www.tochatea.com/sitemap.xml,2026-10-19,raw
 shopus.oliviadeano.com,US,64,sitemap,7,https://shopus.oliviadeano.com/sitemap.xml,2026-10-19,raw=64 dupes_removed=0
 minifarmbox.com,US,42,sitemap,8,https://minifarmbox.com/sitemap.xml,2026-10-19,raw=42 dupes_removed=0
 us.ugreen.com,US,1109,sitemap,9,https://us.ugreen.com/sitemap.xml | https://us.ugreen.com/sitemap.xml | https://us.ugreen.com/sitemap.xml | https://us.ugreen.com/a/shop/sitemap.xml | https://us.ugreen.com/a/shop/llms.txt,2026-10-19,raw=1109 dupes_removed=0; failed sitemap fetches=1: https://us.ugreen.com/a/shop/llms.txt:unparseable
+flavorjungle.com,US,1095,sitemap,7,https://flavorjungle.com/sitemap.xml,2026-10-19,raw=1095 dupes_removed=0
+sheikparts.com,US,3042,sitemap,6,https://www.sheikparts.com/sitemap_index.xml,2026-10-19,raw=3043 dupes_removed=1
+area419.com,US,405,sitemap,10,https://www.area419.com/sitemap_index.xml,2026-10-19,raw=406 dupes_removed=1
