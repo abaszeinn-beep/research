@@ -1,0 +1,623 @@
+{
+ "Ahold Delhaize USA (Stop & Shop)": {
+  "key": "stopandshop.com",
+  "url": "https://stopandshop.com",
+  "tier": "huge",
+  "cat": "Grocery & Food",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261002230542/https://stopandshop.com/",
+   "timestamp": "20261002230542"
+  }
+ },
+ "Meijer": {
+  "key": "meijer.com",
+  "url": "https://meijer.com",
+  "tier": "huge",
+  "cat": "Department Store / General Merchandise",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261015135512/https://www.meijer.com/",
+   "timestamp": "20261015135512"
+  }
+ },
+ "NAPA Auto Parts": {
+  "key": "napaonline.com",
+  "url": "https://napaonline.com",
+  "tier": "large",
+  "cat": "Automotive Parts & Accessories",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261008153219/https://www.napaonline.com/",
+   "timestamp": "20261008153219"
+  }
+ },
+ "Bass Pro Shops": {
+  "key": "basspro.com",
+  "url": "https://basspro.com",
+  "tier": "huge",
+  "cat": "Sports, Fitness & Outdoor",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20250925081823/https://www.basspro.com/",
+   "timestamp": "20250925081823"
+  }
+ },
+ "Cabela's": {
+  "key": "cabelas.com",
+  "url": "https://cabelas.com",
+  "tier": "large",
+  "cat": "Hunting, Firearms Accessories & Tactical",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260827083414/http://www.cabelas.com/",
+   "timestamp": "20260827083414"
+  }
+ },
+ "JCPenney": {
+  "key": "jcpenney.com",
+  "url": "https://jcpenney.com",
+  "tier": "huge",
+  "cat": "Department Store / General Merchandise",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261013130235/https://www.jcpenney.com/",
+   "timestamp": "20261013130235"
+  }
+ },
+ "Saks Fifth Avenue": {
+  "key": "saksfifthavenue.com",
+  "url": "https://saksfifthavenue.com",
+  "tier": "large",
+  "cat": "Department Store / General Merchandise",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261017122135/https://www.saksfifthavenue.com/",
+   "timestamp": "20261017122135"
+  }
+ },
+ "Neiman Marcus": {
+  "key": "neimanmarcus.com",
+  "url": "https://neimanmarcus.com",
+  "tier": "large",
+  "cat": "Department Store / General Merchandise",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261017122102/https://www.neimanmarcus.com/",
+   "timestamp": "20261017122102"
+  }
+ },
+ "Bergdorf Goodman": {
+  "key": "bergdorfgoodman.com",
+  "url": "https://bergdorfgoodman.com",
+  "tier": "large",
+  "cat": "Department Store / General Merchandise",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261017123659/https://www.bergdorfgoodman.com/",
+   "timestamp": "20261017123659"
+  }
+ },
+ "RH": {
+  "key": "rh.com",
+  "url": "https://rh.com",
+  "tier": "large",
+  "cat": "Furniture",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20230804023908/https://rh.com/",
+   "timestamp": "20230804023908"
+  }
+ },
+ "Mattress Firm": {
+  "key": "mattressfirm.com",
+  "url": "https://mattressfirm.com",
+  "tier": "large",
+  "cat": "Bedding & Bath",
+  "wayback": {
+   "status": "204",
+   "available": true,
+   "url": "http://web.archive.org/web/20261014000900/http://mattressfirm.com/",
+   "timestamp": "20261014000900"
+  }
+ },
+ "Container Store": {
+  "key": "containerstore.com",
+  "url": "https://containerstore.com",
+  "tier": "large",
+  "cat": "Home Decor",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20210315205906/http://containerstore.com/",
+   "timestamp": "20210315205906"
+  }
+ },
+ "Southeastern Grocers (Winn-Dixie)": {
+  "key": "winndixie.com",
+  "url": "https://winndixie.com",
+  "tier": "large",
+  "cat": "Grocery & Food",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260907084913/https://www.winndixie.com/",
+   "timestamp": "20260907084913"
+  }
+ },
+ "WinCo Foods": {
+  "key": "wincofoods.com",
+  "url": "https://wincofoods.com",
+  "tier": "large",
+  "cat": "Grocery & Food",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260920065258/https://www.wincofoods.com/",
+   "timestamp": "20260920065258"
+  }
+ },
+ "iHerb": {
+  "key": "iherb.com",
+  "url": "https://iherb.com",
+  "tier": "large",
+  "cat": "Health, Vitamins & Supplements",
+  "wayback": null
+ },
+ "1-800 Contacts": {
+  "key": "1800contacts.com",
+  "url": "https://1800contacts.com",
+  "tier": "large",
+  "cat": "Eyewear",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261003140232/https://www.1800contacts.com/",
+   "timestamp": "20261003140232"
+  }
+ },
+ "Sunglass Hut": {
+  "key": "sunglasshut.com",
+  "url": "https://sunglasshut.com",
+  "tier": "large",
+  "cat": "Eyewear",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261015181316/https://www.sunglasshut.com/",
+   "timestamp": "20261015181316"
+  }
+ },
+ "Ray-Ban US": {
+  "key": "ray-ban.com|usa",
+  "url": "https://ray-ban.com/usa",
+  "tier": "large",
+  "cat": "Eyewear",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260713211208/https://www.ray-ban.com/usa",
+   "timestamp": "20260713211208"
+  }
+ },
+ "McKesson Medical-Surgical": {
+  "key": "mckesson.com",
+  "url": "https://mms.mckesson.com",
+  "tier": "large",
+  "cat": "Pharmacy & Medical Supplies",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261012064028/https://mms.mckesson.com/",
+   "timestamp": "20261012064028"
+  }
+ },
+ "B&H Photo Video": {
+  "key": "bhphotovideo.com",
+  "url": "https://bhphotovideo.com",
+  "tier": "large",
+  "cat": "Computers & Electronics",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261009203929/https://www.bhphotovideo.com/",
+   "timestamp": "20261009203929"
+  }
+ },
+ "Micro Center": {
+  "key": "microcenter.com",
+  "url": "https://microcenter.com",
+  "tier": "large",
+  "cat": "Computers & Electronics",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261013130714/https://www.microcenter.com/",
+   "timestamp": "20261013130714"
+  }
+ },
+ "Crutchfield": {
+  "key": "crutchfield.com",
+  "url": "https://crutchfield.com",
+  "tier": "large",
+  "cat": "Computers & Electronics",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260427200122/https://www.crutchfield.com/",
+   "timestamp": "20260427200122"
+  }
+ },
+ "LG US": {
+  "key": "lg.com|usa",
+  "url": "https://lg.com/us",
+  "tier": "large",
+  "cat": "Home Appliances",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261015193427/https://www.lg.com/us/",
+   "timestamp": "20261015193427"
+  }
+ },
+ "Fastenal": {
+  "key": "fastenal.com",
+  "url": "https://fastenal.com",
+  "tier": "large",
+  "cat": "Industrial & Tools",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261008035733/https://www.fastenal.com/",
+   "timestamp": "20261008035733"
+  }
+ },
+ "Zoro": {
+  "key": "zoro.com",
+  "url": "https://zoro.com",
+  "tier": "large",
+  "cat": "Industrial & Tools",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261011155527/https://www.zoro.com/",
+   "timestamp": "20261011155527"
+  }
+ },
+ "REI": {
+  "key": "rei.com",
+  "url": "https://rei.com",
+  "tier": "huge",
+  "cat": "Sports, Fitness & Outdoor",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261015175434/https://www.rei.com/",
+   "timestamp": "20261015175434"
+  }
+ },
+ "Backcountry": {
+  "key": "backcountry.com",
+  "url": "https://backcountry.com",
+  "tier": "large",
+  "cat": "Sports, Fitness & Outdoor",
+  "wayback": {
+   "status": "202",
+   "available": true,
+   "url": "http://web.archive.org/web/20260814225757/https://www.backcountry.com/",
+   "timestamp": "20260814225757"
+  }
+ },
+ "Fanatics": {
+  "key": "fanatics.com",
+  "url": "https://fanatics.com",
+  "tier": "huge",
+  "cat": "Sports, Fitness & Outdoor",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261012201527/https://www.fanatics.com/",
+   "timestamp": "20261012201527"
+  }
+ },
+ "NFL Shop": {
+  "key": "nflshop.com",
+  "url": "https://nflshop.com",
+  "tier": "large",
+  "cat": "Sports, Fitness & Outdoor",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260929181042/https://www.nflshop.com/",
+   "timestamp": "20260929181042"
+  }
+ },
+ "MLB Shop": {
+  "key": "mlbshop.com",
+  "url": "https://mlbshop.com",
+  "tier": "large",
+  "cat": "Sports, Fitness & Outdoor",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261009061859/https://www.mlbshop.com/",
+   "timestamp": "20261009061859"
+  }
+ },
+ "NBA Store": {
+  "key": "nba.com",
+  "url": "https://store.nba.com",
+  "tier": "large",
+  "cat": "Sports, Fitness & Outdoor",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261011074956/https://store.nba.com/",
+   "timestamp": "20261011074956"
+  }
+ },
+ "Lids": {
+  "key": "lids.com",
+  "url": "https://lids.com",
+  "tier": "large",
+  "cat": "Fashion & Apparel",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261012133651/https://www.lids.com/",
+   "timestamp": "20261012133651"
+  }
+ },
+ "New Balance": {
+  "key": "newbalance.com",
+  "url": "https://newbalance.com",
+  "tier": "large",
+  "cat": "Shoes",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261001040418/https://www.newbalance.com/",
+   "timestamp": "20261001040418"
+  }
+ },
+ "Vans": {
+  "key": "vans.com",
+  "url": "https://vans.com",
+  "tier": "large",
+  "cat": "Shoes",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20220323015603/https://www.vans.com/",
+   "timestamp": "20220323015603"
+  }
+ },
+ "Converse": {
+  "key": "converse.com",
+  "url": "https://converse.com",
+  "tier": "large",
+  "cat": "Shoes",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261012200948/https://www.converse.com/",
+   "timestamp": "20261012200948"
+  }
+ },
+ "Finish Line": {
+  "key": "finishline.com",
+  "url": "https://finishline.com",
+  "tier": "large",
+  "cat": "Shoes",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261017075310/https://www.finishline.com/",
+   "timestamp": "20261017075310"
+  }
+ },
+ "Madewell": {
+  "key": "madewell.com",
+  "url": "https://madewell.com",
+  "tier": "large",
+  "cat": "Fashion & Apparel",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261012100427/https://www.madewell.com/",
+   "timestamp": "20261012100427"
+  }
+ },
+ "Ann Taylor": {
+  "key": "anntaylor.com",
+  "url": "https://anntaylor.com",
+  "tier": "large",
+  "cat": "Fashion - Women",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261010230646/https://www.anntaylor.com/",
+   "timestamp": "20261010230646"
+  }
+ },
+ "Zara US": {
+  "key": "zara.com|usa",
+  "url": "https://zara.com/us",
+  "tier": "huge",
+  "cat": "Fashion & Apparel",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261009042710/https://www.zara.com/us/",
+   "timestamp": "20261009042710"
+  }
+ },
+ "H&M US": {
+  "key": "hm.com|usa",
+  "url": "https://hm.com/en_us",
+  "tier": "huge",
+  "cat": "Fashion & Apparel",
+  "wayback": null
+ },
+ "Men's Wearhouse": {
+  "key": "menswearhouse.com",
+  "url": "https://menswearhouse.com",
+  "tier": "large",
+  "cat": "Fashion - Men",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261008232443/https://www.menswearhouse.com/",
+   "timestamp": "20261008232443"
+  }
+ },
+ "Gucci US": {
+  "key": "gucci.com|usa",
+  "url": "https://gucci.com/us",
+  "tier": "large",
+  "cat": "Fashion & Apparel",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20120118185658/http://www.gucci.com/us/",
+   "timestamp": "20120118185658"
+  }
+ },
+ "Herm\u00e8s US": {
+  "key": "hermes.com|usa",
+  "url": "https://hermes.com/us",
+  "tier": "large",
+  "cat": "Bags & Luggage",
+  "wayback": null
+ },
+ "Est\u00e9e Lauder": {
+  "key": "esteelauder.com",
+  "url": "https://esteelauder.com",
+  "tier": "large",
+  "cat": "Beauty & Cosmetics",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260617231121/https://www.esteelauder.com/",
+   "timestamp": "20260617231121"
+  }
+ },
+ "Lanc\u00f4me US": {
+  "key": "lancome-usa.com",
+  "url": "https://lancome-usa.com",
+  "tier": "large",
+  "cat": "Beauty & Cosmetics",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261013055557/https://www.lancome-usa.com/",
+   "timestamp": "20261013055557"
+  }
+ },
+ "Pep Boys": {
+  "key": "pepboys.com",
+  "url": "https://pepboys.com",
+  "tier": "large",
+  "cat": "Automotive Parts & Accessories",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261010223657/https://www.pepboys.com/",
+   "timestamp": "20261010223657"
+  }
+ },
+ "RockAuto": {
+  "key": "rockauto.com",
+  "url": "https://rockauto.com",
+  "tier": "large",
+  "cat": "Automotive Parts & Accessories",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261015065019/https://www.rockauto.com/",
+   "timestamp": "20261015065019"
+  }
+ },
+ "Summit Racing": {
+  "key": "summitracing.com",
+  "url": "https://summitracing.com",
+  "tier": "large",
+  "cat": "Automotive Parts & Accessories",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261010075009/https://www.summitracing.com/",
+   "timestamp": "20261010075009"
+  }
+ },
+ "DigiKey": {
+  "key": "digikey.com",
+  "url": "https://digikey.com",
+  "tier": "large",
+  "cat": "Electronic Components",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261013101344/https://www.digikey.com/",
+   "timestamp": "20261013101344"
+  }
+ },
+ "Mouser Electronics": {
+  "key": "mouser.com",
+  "url": "https://mouser.com",
+  "tier": "large",
+  "cat": "Electronic Components",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261013155720/https://www.mouser.com/",
+   "timestamp": "20261013155720"
+  }
+ },
+ "Arrow Electronics": {
+  "key": "arrow.com",
+  "url": "https://arrow.com",
+  "tier": "large",
+  "cat": "Electronic Components",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261013091055/https://www.arrow.com/",
+   "timestamp": "20261013091055"
+  }
+ },
+ "US Foods": {
+  "key": "usfoods.com",
+  "url": "https://usfoods.com",
+  "tier": "large",
+  "cat": "Grocery & Food",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20261012035409/https://www.usfoods.com/",
+   "timestamp": "20261012035409"
+  }
+ },
+ "Net-a-Porter US": {
+  "key": "net-a-porter.com|usa",
+  "url": "https://net-a-porter.com/en-us",
+  "tier": "large",
+  "cat": "Fashion & Apparel",
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260712054315/https://www.net-a-porter.com/en-us/",
+   "timestamp": "20260712054315"
+  }
+ }
+}
