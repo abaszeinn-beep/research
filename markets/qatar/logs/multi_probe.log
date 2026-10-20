@@ -1,0 +1,107 @@
+Traceback (most recent call last):
+  File "/workspace/markets/qatar/scripts/multi_probe.py", line 103, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/markets/qatar/scripts/multi_probe.py", line 97, in main
+    q = """SELECT ref_id,name,domains FROM reference_stores WHERE kind='brand' AND ((status='excluded' AND reason LIKE '%no%storefront found%') OR name IN (%s))""" % ",".join("?" * len(names) or "''")
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ValueError: unsupported format character 'n' (0x6e) at index 110
+Babyshop [] True
+Max Fashion [] True
+Lifestyle [] True
+Ali Bin Ali [] False
+Shoe Mart [] True
+Emax [] True
+Shoexpress [] False
+Iconic [] True
+Al Rawdah / Quality Hypermarket [] True
+Sharaf DG [] True
+Sony [] False
+Samsung [] False
+Bose [] False
+LG [] False
+Canon [] False
+Pan Emirates [] True
+Pottery Barn [] False
+Fifty One East [] False
+Mahaseel ['sitemap', 'host_variant'] False
+West Elm [] False
+Anker [] True
+2XL Furniture [] False
+Crate & Barrel ['host_variant'] False
+Pottery Barn Kids [] False
+Mango [] True
+MAC Cosmetics [] False
+Forever 21 [] True
+ID Design [] True
+Monoprix Qatar ['host_variant'] True
+DeFacto [] True
+Royal Furniture [] True
+New Look [] False
+Safari Hypermarket [] False
+Uniqlo [] False
+Puma [] True
+Shein ['host_variant'] True
+Under Armour [] True
+Koton [] True
+Aldo [] True
+Old Navy ['host_variant'] False
+LC Waikiki [] False
+Aeropostale [] False
+Nine West [] False
+R&B Fashion [] True
+Rituals [] False
+Columbia [] False
+Levi's [] False
+NYX [] False
+Golden Scent [] True
+Kiko Milano [] False
+Rasasi [] True
+Ibraheem Al Qurashi [] False
+Al Haramain Perfumes [] False
+Al Majed Oud ['hreflang', 'hreflang'] True
+Malabar Gold & Diamonds ['selector_link'] True
+Pandora [] True
+Yves Rocher [] True
+Tanishq [] True
+Go Sport [] True
+Intersport [] True
+Skechers [] True
+Hamleys [] False
+Rivoli ['host_variant'] True
+FirstCry [] True
+Toy Triangle [] False
+iHerb [] True
+GNC [] True
+Grand Optics [] False
+River Island [] True
+Patchi [] True
+Bateel [] True
+Al Rifai [] True
+Lindt [] False
+Godiva [] False
+Jashanmal [] True
+Ard Al Zaafaran [] False
+Kinokuniya [] False
+Borders [] True
+Al Mana Group [] False
+Fono [] False
+Mobile Masters [] False
+Techno Blue ['host_variant'] False
+Tyre Plus [] False
+Jaidah Group [] False
+Pet Arabia [] True
+Pet Zone [] True
+Tommy Hilfiger [] True
+Toys R Us [] True
+Qatar Bikes [] False
+Harvey Nichols [] False
+Early Learning Centre [] False

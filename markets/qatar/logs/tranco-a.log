@@ -1,0 +1,24 @@
+[tranco] probe 22181 domains (ranks 1-150000), 129168 done before
+[tranco] {'done': 1000, 'hits': 17, 'new': 15, 'fail': 428} rate=3.8/s rank~127172
+[tranco] {'done': 2000, 'hits': 29, 'new': 27, 'fail': 862} rate=3.9/s rank~128207
+[tranco] {'done': 3000, 'hits': 37, 'new': 34, 'fail': 1297} rate=3.9/s rank~129167
+[tranco] {'done': 4000, 'hits': 46, 'new': 41, 'fail': 1690} rate=3.8/s rank~130179
+[tranco] {'done': 5000, 'hits': 62, 'new': 55, 'fail': 2109} rate=3.8/s rank~131179
+[tranco] {'done': 6000, 'hits': 68, 'new': 60, 'fail': 2588} rate=3.8/s rank~132145
+[tranco] {'done': 7000, 'hits': 75, 'new': 65, 'fail': 3018} rate=3.7/s rank~133156
+[tranco] {'done': 8000, 'hits': 84, 'new': 74, 'fail': 3422} rate=3.7/s rank~134206
+[tranco] {'done': 9000, 'hits': 97, 'new': 85, 'fail': 3875} rate=3.6/s rank~136208
+[tranco] {'done': 10000, 'hits': 107, 'new': 93, 'fail': 4388} rate=3.6/s rank~137830
+[tranco] {'done': 11000, 'hits': 111, 'new': 97, 'fail': 4813} rate=3.6/s rank~138843
+[tranco] {'done': 12000, 'hits': 121, 'new': 107, 'fail': 5195} rate=3.6/s rank~139835
+[tranco] {'done': 13000, 'hits': 131, 'new': 117, 'fail': 5629} rate=3.6/s rank~140675
+[tranco] {'done': 14000, 'hits': 139, 'new': 123, 'fail': 6090} rate=3.5/s rank~141845
+[tranco] {'done': 15000, 'hits': 155, 'new': 135, 'fail': 6537} rate=3.5/s rank~142811
+[tranco] {'done': 16000, 'hits': 164, 'new': 145, 'fail': 7043} rate=3.5/s rank~143826
+[tranco] {'done': 17000, 'hits': 172, 'new': 152, 'fail': 7491} rate=3.5/s rank~144798
+[tranco] {'done': 18000, 'hits': 182, 'new': 161, 'fail': 7927} rate=3.5/s rank~145831
+[tranco] {'done': 19000, 'hits': 192, 'new': 170, 'fail': 8381} rate=3.5/s rank~146738
+[tranco] {'done': 20000, 'hits': 199, 'new': 177, 'fail': 8869} rate=3.4/s rank~147817
+[tranco] {'done': 21000, 'hits': 209, 'new': 183, 'fail': 9351} rate=3.4/s rank~148792
+[tranco] {'done': 22000, 'hits': 215, 'new': 189, 'fail': 9861} rate=3.4/s rank~149859
+[tranco] probe finished {'done': 22181, 'hits': 217, 'new': 191, 'fail': 9954}

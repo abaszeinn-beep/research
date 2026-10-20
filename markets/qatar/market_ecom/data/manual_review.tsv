@@ -1,0 +1,12 @@
+# key	decision (reject|unverified|name)	reason or corrected name — QA decisions from manual inspection of verified rows
+fnp.qa	name	FNP Qatar
+qa.ok.com	reject	classifieds marketplace (OK.com), not a store
+joebrowns.co.uk	unverified	UK storefront; QAR only as currency-selector code, no Qatar delivery path
+japanesetaste.com	unverified	international site; QAR only as currency-selector code, no Qatar path
+mayfeyr.com	unverified	en-us storefront; QAR only via Shopify markets, no Qatar path
+mayfeyr.com|qa	unverified	en-us storefront; QAR only via Shopify markets, no Qatar path
+polaroid.com|qa	unverified	Qatar locale page but no QAR pricing evidence
+boconcept.com|qa	unverified	Qatar locale page but no QAR pricing evidence
+dkhoonemirates.com	unverified	UAE-root duplicate; Qatar storefront tracked as dkhoonemirates.com|qa
+qa.macduggal.com	name	Mac Duggal
+culture-circle.com|qa	unverified	resale/authentication marketplace (multi-seller), excluded as marketplace

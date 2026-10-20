@@ -1,0 +1,10 @@
+[tranco] probe 8339 domains (ranks 135001-200000), 185157 done before
+[tranco] {'done': 1000, 'hits': 0, 'new': 0, 'fail': 980} rate=7.3/s rank~142771
+[tranco] {'done': 2000, 'hits': 1, 'new': 0, 'fail': 1935} rate=7.3/s rank~149676
+[tranco] {'done': 3000, 'hits': 1, 'new': 0, 'fail': 2879} rate=7.3/s rank~156863
+[tranco] {'done': 4000, 'hits': 2, 'new': 1, 'fail': 3845} rate=7.4/s rank~164377
+[tranco] {'done': 5000, 'hits': 4, 'new': 3, 'fail': 4789} rate=7.2/s rank~171394
+[tranco] {'done': 6000, 'hits': 4, 'new': 3, 'fail': 5720} rate=8.0/s rank~181146
+[tranco] {'done': 7000, 'hits': 4, 'new': 3, 'fail': 6683} rate=8.2/s rank~189810
+[tranco] {'done': 8000, 'hits': 7, 'new': 6, 'fail': 7624} rate=8.8/s rank~197439
+[tranco] probe finished {'done': 8339, 'hits': 7, 'new': 6, 'fail': 7929}

@@ -1,0 +1,17 @@
+[secondary] 261 targets
+[secondary] 7cups.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 1}
+[secondary] 29dns.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 2}
+[secondary] 9x9.tw|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 3}
+[secondary] 3gokushi.jp|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 4}
+[secondary] a-hotel.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 5}
+[secondary] acca.org|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 6}
+[secondary] agi.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 7}
+[secondary] acnestudios.com|qa -> insufficient_secondary_evidence ['app_store'] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 8}
+[secondary] allmynursejobs.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 9}
+[secondary] airswift.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 10}
+[secondary] al-monitor.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 11}
+[secondary] anextour.ru|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 12}
+[secondary] aluprof.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 13}
+[secondary] angloinfo.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 14}
+[secondary] alpitour.it|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 15}
+[secondary] anycart.com|qa -> insufficient_secondary_evidence [] {'verified_secondary_evidence': 0, 'insufficient_secondary_evidence': 16}

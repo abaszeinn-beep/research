@@ -1,0 +1,165 @@
+Traceback (most recent call last):
+  File "/workspace/markets/qatar/scripts/batch_probe.py", line 6, in <module>
+    import major_probe as mp
+  File "/workspace/markets/qatar/scripts/major_probe.py", line 50, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/markets/qatar/scripts/major_probe.py", line 47, in main
+    res = await asyncio.gather(*(probe(c, *a.split("|", 2)) for a in sys.argv[1:]))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/markets/qatar/scripts/major_probe.py", line 47, in <genexpr>
+    res = await asyncio.gather(*(probe(c, *a.split("|", 2)) for a in sys.argv[1:]))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: probe() missing 2 required positional arguments: 'prefix' and 'rx'
+Max Fashion False True
+Ali Bin Ali False False
+Splash False True
+Lifestyle False True
+Shoe Mart False True
+Emax False True
+Iconic False True
+Monoprix Qatar False True
+Shoexpress False False
+Babyshop False True
+Safari Hypermarket False False
+Grand Hypermarket False True
+Widam Food False True
+Styli False True
+Fifty One East False False
+Spar Qatar False True
+Hassad Food False False
+Nesto Hypermarket False False
+Al Rawdah / Quality Hypermarket False True
+Ourshopee True True
+Mahaseel False False
+Dyson True True
+Mega Mart False True
+Sharaf DG False True
+Qatar Duty Free False True
+Samsung False False
+Alanees Electronics True False
+Microless False False
+Games 4 U / Gameshop True False
+Zad Holding False False
+Sony False False
+LG False False
+Canon False False
+Anker False True
+Pan Emirates False True
+Huawei False True
+Geekay Games False False
+Rayyan Water False False
+Marina Home Interiors False True
+Bose False False
+ACE Hardware Qatar True False
+Crate & Barrel False False
+2XL Furniture False False
+Royal Furniture False True
+Pull&Bear True True
+Bershka True True
+Pottery Barn Kids False False
+West Elm False False
+Oysho True True
+Massimo Dutti True True
+Stradivarius True True
+Midas Furniture False True
+Pottery Barn False False
+Forever 21 False True
+Mango False True
+ID Design False True
+Charlotte Tilbury True False
+DeFacto False True
+Koton False True
+New Look False False
+Uniqlo False False
+Old Navy False False
+Gap False True
+River Island False True
+Shein False True
+MAC Cosmetics False False
+Boots False True
+LC Waikiki False False
+Aeropostale False False
+Puma False True
+Tommy Hilfiger False True
+Calvin Klein True False
+Skechers False True
+Aldo False True
+Rituals False False
+Under Armour False True
+Nine West False False
+R&B Fashion False True
+Levi's False False
+Inglot False False
+Lacoste False False
+Columbia False False
+Huda Beauty True False
+VogaCloset True True
+Kiko Milano False False
+Level Shoes False True
+NYX False False
+Yves Rocher False True
+Tryano False False
+L'Occitane False True
+Rasasi False True
+Al Haramain Perfumes False False
+Lattafa False False
+Abdul Samad Al Qurashi False False
+The Body Shop False True
+Junaid Perfumes True True
+Ard Al Zaafaran False False
+Ibraheem Al Qurashi False False
+Swarovski False True
+Golden Scent False True
+Pandora False True
+Intersport False True
+Malabar Gold & Diamonds False True
+Wojooh / Faces False False
+Kalyan Jewellers False False
+Joyalukkas False True
+Go Sport False True
+Toys R Us False True
+Rivoli False True
+Al Majed Oud False True
+Aster Pharmacy False False
+Hamleys False False
+Tanishq False True
+FirstCry False True
+Early Learning Centre False False
+Life Pharmacy False True
+Toy Triangle False False
+iHerb False True
+Holland & Barrett False False
+Kulud Pharmacy False False
+Grand Optics False False
+Lindt False False
+Bateel False True
+Patchi False True
+Al Rifai False True
+Jashanmal False True
+GNC False True
+Techno Blue False False
+Harvey Nichols False False
+Fono False False
+Al Mana Group False False
+Borders False True
+Bloomingdale's False True
+Tyre Plus False False
+Godiva False False
+Kinokuniya False False
+Mobile Masters False False
+Jaidah Group False False
+Pet Arabia False True
+Mannai Trading False False
+Al-Futtaim Auto / Toyota Abdullah Abdulghani False False
+Dr Nutrition False False
+Pet Zone False True
+Qatar Bikes False False

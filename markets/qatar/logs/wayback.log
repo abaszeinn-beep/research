@@ -1,0 +1,109 @@
+[wayback] qa,0 done hosts=3 new=3 {'http_503': 2, 'requests': 1, 'hosts': 3, 'new': 3}
+[wayback] qa,1 done hosts=6 new=6 {'http_503': 4, 'requests': 2, 'hosts': 9, 'new': 9}
+[wayback] qa,4 done hosts=7 new=7 {'http_503': 4, 'requests': 3, 'hosts': 16, 'new': 16}
+[wayback] qa,5 done hosts=2 new=2 {'http_503': 4, 'requests': 4, 'hosts': 18, 'new': 18}
+[wayback] qa,3 done hosts=9 new=9 {'http_503': 4, 'requests': 5, 'hosts': 27, 'new': 27}
+[wayback] qa,6 done hosts=5 new=5 {'http_503': 4, 'requests': 7, 'hosts': 38, 'new': 38}
+[wayback] qa,7 done hosts=5 new=5 {'http_503': 4, 'requests': 8, 'hosts': 43, 'new': 43}
+[wayback] qa,9 done hosts=0 new=0 {'http_503': 5, 'requests': 9, 'hosts': 43, 'new': 43}
+[wayback] qa,8 done hosts=4 new=4 {'http_503': 5, 'requests': 10, 'hosts': 47, 'new': 47}
+[wayback] qa,2 done hosts=13 new=13 {'http_503': 5, 'requests': 13, 'hosts': 85, 'new': 85}
+[wayback] qa,b at qa,batabit,~ {'http_503': 5, 'requests': 20, 'hosts': 194, 'new': 194}
+[wayback] qa,c at qa,cbq,~ {'http_503': 12, 'requests': 40, 'hosts': 553, 'new': 549, 'ConnectError': 6}
+[wayback] qa,c at qa,circuitstore,~ {'http_503': 19, 'requests': 60, 'hosts': 755, 'new': 747, 'ConnectError': 6, 'ReadTimeout': 1, 'http_504': 1}
+[wayback] qa,d at qa,dior,~ {'http_503': 21, 'requests': 80, 'hosts': 1010, 'new': 999, 'ConnectError': 7, 'ReadTimeout': 2, 'http_504': 2}
+[wayback] qa,c at qa,creativecircle,~ {'http_503': 30, 'requests': 100, 'hosts': 1269, 'new': 1256, 'ConnectError': 9, 'ReadTimeout': 2, 'http_504': 4}
+[wayback] qa,b giving up for now at qa,blinkmena,~
+[wayback] qa,a at qa,antheatre,~ {'http_503': 40, 'requests': 120, 'hosts': 1504, 'new': 1484, 'ConnectError': 9, 'ReadTimeout': 5, 'http_504': 4}
+[wayback] qa,d at qa,dvc,~ {'requests': 20, 'hosts': 220, 'new': 219, 'http_503': 4, 'http_429': 2, 'ReadTimeout': 5, 'http_504': 1, 'ConnectError': 1}
+[wayback] qa,d done hosts=117 new=116 {'requests': 25, 'hosts': 293, 'new': 291, 'http_503': 9, 'http_429': 2, 'ReadTimeout': 7, 'http_504': 2, 'ConnectError': 1}
+[wayback] qa,a at qa,arabpressreleases,~ {'requests': 40, 'hosts': 462, 'new': 449, 'http_503': 20, 'http_429': 2, 'ReadTimeout': 8, 'http_504': 3, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,b giving up for now at qa,blinkmena,~
+[wayback] qa,c giving up for now at qa,crystals,~
+[wayback] qa,f at qa,fgrealty,~ {'requests': 60, 'hosts': 663, 'new': 631, 'http_503': 20, 'http_429': 2, 'ReadTimeout': 8, 'http_504': 3, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,g at qa,getat,~ {'requests': 80, 'hosts': 886, 'new': 839, 'http_503': 29, 'http_429': 2, 'ReadTimeout': 8, 'http_504': 4, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,a done hosts=390 new=385 {'requests': 90, 'hosts': 957, 'new': 901, 'http_503': 30, 'http_429': 2, 'ReadTimeout': 8, 'http_504': 4, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,h at qa,hamad,~ {'requests': 100, 'hosts': 1074, 'new': 1011, 'http_503': 32, 'http_429': 2, 'ReadTimeout': 8, 'http_504': 4, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,h at qa,hbjfoundation,~ {'requests': 120, 'hosts': 1235, 'new': 1156, 'http_503': 34, 'http_429': 2, 'ReadTimeout': 10, 'http_504': 4, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,f done hosts=300 new=291 {'requests': 126, 'hosts': 1329, 'new': 1245, 'http_503': 37, 'http_429': 3, 'ReadTimeout': 10, 'http_504': 4, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,h at qa,homelink,~ {'requests': 140, 'hosts': 1456, 'new': 1350, 'http_503': 38, 'http_429': 4, 'ReadTimeout': 11, 'http_504': 4, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,e at qa,expressfix,~ {'requests': 160, 'hosts': 1734, 'new': 1612, 'http_503': 40, 'http_429': 4, 'ReadTimeout': 12, 'http_504': 7, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,e done hosts=351 new=294 {'requests': 164, 'hosts': 1775, 'new': 1652, 'http_503': 41, 'http_429': 4, 'ReadTimeout': 13, 'http_504': 7, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,h done hosts=208 new=199 {'requests': 171, 'hosts': 1817, 'new': 1681, 'http_503': 42, 'http_429': 4, 'ReadTimeout': 13, 'http_504': 8, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,j at qa,jobted,~ {'requests': 180, 'hosts': 1897, 'new': 1749, 'http_503': 46, 'http_429': 8, 'ReadTimeout': 13, 'http_504': 11, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,j done hosts=111 new=107 {'requests': 200, 'hosts': 2109, 'new': 1946, 'http_503': 57, 'http_429': 9, 'ReadTimeout': 13, 'http_504': 11, 'ConnectError': 1, 'RemoteProtocolError': 1}
+[wayback] qa,k done hosts=126 new=123 {'requests': 212, 'hosts': 2313, 'new': 2143, 'http_503': 59, 'http_429': 9, 'ReadTimeout': 15, 'http_504': 12, 'ConnectError': 2, 'RemoteProtocolError': 1}
+[wayback] qa,i done hosts=225 new=222 {'requests': 219, 'hosts': 2349, 'new': 2177, 'http_503': 62, 'http_429': 9, 'ReadTimeout': 17, 'http_504': 12, 'ConnectError': 2, 'RemoteProtocolError': 1}
+[wayback] qa,g at qa,gov,ncsa,~ {'requests': 220, 'hosts': 2352, 'new': 2177, 'http_503': 63, 'http_429': 9, 'ReadTimeout': 17, 'http_504': 12, 'ConnectError': 2, 'RemoteProtocolError': 1}
+[wayback] qa,n at qa,next,~ {'requests': 240, 'hosts': 2578, 'new': 2369, 'http_503': 67, 'http_429': 9, 'ReadTimeout': 18, 'http_504': 14, 'ConnectError': 2, 'RemoteProtocolError': 2}
+[wayback] qa,l done hosts=221 new=216 {'requests': 256, 'hosts': 2776, 'new': 2549, 'http_503': 72, 'http_429': 9, 'ReadTimeout': 18, 'http_504': 15, 'ConnectError': 2, 'RemoteProtocolError': 2}
+[wayback] qa,n done hosts=246 new=225 {'requests': 258, 'hosts': 2810, 'new': 2583, 'http_503': 73, 'http_429': 9, 'ReadTimeout': 18, 'http_504': 15, 'ConnectError': 2, 'RemoteProtocolError': 2}
+[wayback] qa,o at qa,officestore,~ {'requests': 260, 'hosts': 2858, 'new': 2631, 'http_503': 73, 'http_429': 9, 'ReadTimeout': 18, 'http_504': 15, 'ConnectError': 2, 'RemoteProtocolError': 2}
+[wayback] qa,p at qa,pharmacareonline,~ {'requests': 280, 'hosts': 3079, 'new': 2843, 'http_503': 76, 'http_429': 15, 'ReadTimeout': 19, 'http_504': 17, 'ConnectError': 2, 'RemoteProtocolError': 2}
+[wayback] qa,g done hosts=366 new=255 {'requests': 295, 'hosts': 3270, 'new': 3024, 'http_503': 84, 'http_429': 16, 'ReadTimeout': 19, 'http_504': 17, 'ConnectError': 2, 'RemoteProtocolError': 2}
+[wayback] qa,p at qa,platinumkaraoke,~ {'requests': 300, 'hosts': 3332, 'new': 3086, 'http_503': 89, 'http_429': 16, 'ReadTimeout': 19, 'http_504': 17, 'ConnectError': 2, 'RemoteProtocolError': 2}
+[wayback] qa,p giving up for now at qa,pmc,~
+[wayback] qa,m at qa,mozabintnasser,~ {'requests': 320, 'hosts': 3507, 'new': 3251, 'http_503': 93, 'http_429': 32, 'ReadTimeout': 20, 'http_504': 17, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 4}
+[wayback] qa,m at qa,myofficesupply,~ {'requests': 340, 'hosts': 3708, 'new': 3443, 'http_503': 100, 'http_429': 32, 'ReadTimeout': 20, 'http_504': 18, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 4}
+[wayback] qa,m done hosts=462 new=446 {'requests': 347, 'hosts': 3789, 'new': 3520, 'http_503': 104, 'http_429': 32, 'ReadTimeout': 20, 'http_504': 18, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 4}
+[wayback] qa,r at qa,roza,~ {'requests': 360, 'hosts': 3880, 'new': 3603, 'http_503': 105, 'http_429': 32, 'ReadTimeout': 20, 'http_504': 20, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 4}
+[wayback] qa,r done hosts=247 new=242 {'requests': 365, 'hosts': 3930, 'new': 3652, 'http_503': 109, 'http_429': 37, 'ReadTimeout': 20, 'http_504': 22, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 4}
+[wayback] qa,q at qa,qcart,~ {'requests': 380, 'hosts': 4089, 'new': 3802, 'http_503': 113, 'http_429': 38, 'ReadTimeout': 20, 'http_504': 22, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 5}
+[wayback] qa,o at qa,ounass,~ {'requests': 400, 'hosts': 4279, 'new': 3981, 'http_503': 126, 'http_429': 38, 'ReadTimeout': 20, 'http_504': 23, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9}
+[wayback] qa,o done hosts=221 new=204 {'requests': 406, 'hosts': 4335, 'new': 4029, 'http_503': 127, 'http_429': 38, 'ReadTimeout': 20, 'http_504': 23, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9}
+[wayback] qa,q at qa,qsales,~ {'requests': 420, 'hosts': 4472, 'new': 4149, 'http_503': 131, 'http_429': 38, 'ReadTimeout': 20, 'http_504': 23, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9}
+[wayback] qa,u done hosts=86 new=81 {'requests': 435, 'hosts': 4626, 'new': 4294, 'http_503': 132, 'http_429': 39, 'ReadTimeout': 20, 'http_504': 23, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9}
+[wayback] qa,s at qa,sereyan,~ {'requests': 440, 'hosts': 4682, 'new': 4349, 'http_503': 135, 'http_429': 39, 'ReadTimeout': 20, 'http_504': 23, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9}
+[wayback] qa,v at qa,vis,~ {'requests': 460, 'hosts': 4958, 'new': 4619, 'http_503': 140, 'http_429': 41, 'ReadTimeout': 20, 'http_504': 24, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9}
+[wayback] qa,q done hosts=393 new=365 {'requests': 471, 'hosts': 5093, 'new': 4751, 'http_503': 146, 'http_429': 43, 'ReadTimeout': 20, 'http_504': 25, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9, 'http_502': 1}
+[wayback] qa,v at qa,vrai,~ {'requests': 480, 'hosts': 5218, 'new': 4873, 'http_503': 148, 'http_429': 44, 'ReadTimeout': 20, 'http_504': 25, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9, 'http_502': 1}
+[wayback] qa,v done hosts=125 new=121 {'requests': 481, 'hosts': 5224, 'new': 4879, 'http_503': 148, 'http_429': 44, 'ReadTimeout': 20, 'http_504': 25, 'ConnectError': 2, 'RemoteProtocolError': 2, 'ConnectTimeout': 9, 'http_502': 1}
+[wayback] qa,x done hosts=19 new=18 {'requests': 484, 'hosts': 5290, 'new': 4942, 'http_503': 149, 'http_429': 44, 'ReadTimeout': 20, 'http_504': 26, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 10, 'http_502': 1}
+[wayback] qa,t done hosts=443 new=426 {'requests': 493, 'hosts': 5407, 'new': 5047, 'http_503': 150, 'http_429': 44, 'ReadTimeout': 20, 'http_504': 27, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 11, 'http_502': 1}
+[wayback] qa,y done hosts=51 new=48 {'requests': 498, 'hosts': 5501, 'new': 5138, 'http_503': 152, 'http_429': 44, 'ReadTimeout': 20, 'http_504': 29, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 11, 'http_502': 1}
+[wayback] qa,com,0 done hosts=0 new=0 {'requests': 500, 'hosts': 5514, 'new': 5151, 'http_503': 152, 'http_429': 44, 'ReadTimeout': 20, 'http_504': 29, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 11, 'http_502': 1}
+[wayback] qa,w done hosts=182 new=178 {'requests': 502, 'hosts': 5530, 'new': 5167, 'http_503': 153, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 11, 'http_502': 1}
+[wayback] qa,com,2 done hosts=0 new=0 {'requests': 503, 'hosts': 5530, 'new': 5167, 'http_503': 153, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 11, 'http_502': 1}
+[wayback] qa,com,3 done hosts=3 new=1 {'requests': 507, 'hosts': 5548, 'new': 5183, 'http_503': 154, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 12, 'http_502': 1}
+[wayback] qa,com,4 done hosts=1 new=1 {'requests': 509, 'hosts': 5562, 'new': 5197, 'http_503': 154, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 12, 'http_502': 1}
+[wayback] qa,com,5 done hosts=1 new=1 {'requests': 510, 'hosts': 5563, 'new': 5198, 'http_503': 154, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 12, 'http_502': 1}
+[wayback] qa,com,6 done hosts=0 new=0 {'requests': 512, 'hosts': 5580, 'new': 5214, 'http_503': 154, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 12, 'http_502': 1}
+[wayback] qa,com,7 done hosts=2 new=2 {'requests': 514, 'hosts': 5610, 'new': 5243, 'http_503': 154, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 12, 'http_502': 1}
+[wayback] qa,com,8 done hosts=1 new=1 {'requests': 515, 'hosts': 5611, 'new': 5244, 'http_503': 155, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 12, 'http_502': 1}
+[wayback] qa,com,9 done hosts=0 new=0 {'requests': 518, 'hosts': 5654, 'new': 5287, 'http_503': 155, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 13, 'http_502': 1}
+[wayback] qa,com,a at qa,com,aamal,~ {'requests': 520, 'hosts': 5665, 'new': 5296, 'http_503': 155, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 13, 'http_502': 1}
+[wayback] qa,com,1 done hosts=0 new=0 {'requests': 524, 'hosts': 5723, 'new': 5353, 'http_503': 156, 'http_429': 46, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 13, 'http_502': 1}
+[wayback] qa,z done hosts=82 new=80 {'requests': 528, 'hosts': 5732, 'new': 5360, 'http_503': 158, 'http_429': 47, 'ReadTimeout': 20, 'http_504': 30, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 13, 'http_502': 1}
+[wayback] qa,com,c done hosts=49 new=26 {'requests': 536, 'hosts': 5827, 'new': 5425, 'http_503': 159, 'http_429': 47, 'ReadTimeout': 20, 'http_504': 31, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 13, 'http_502': 1}
+[wayback] qa,com,a at qa,com,ahlibank,~ {'requests': 540, 'hosts': 5875, 'new': 5457, 'http_503': 160, 'http_429': 47, 'ReadTimeout': 20, 'http_504': 31, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 13, 'http_502': 1}
+[wayback] qa,com,d done hosts=59 new=30 {'requests': 554, 'hosts': 6057, 'new': 5594, 'http_503': 161, 'http_429': 47, 'ReadTimeout': 20, 'http_504': 31, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 13, 'http_502': 1}
+[wayback] qa,com,b at qa,com,bydqatar,~ {'requests': 560, 'hosts': 6123, 'new': 5647, 'http_503': 162, 'http_429': 48, 'ReadTimeout': 20, 'http_504': 32, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 14, 'http_502': 1}
+[wayback] qa,com,e done hosts=33 new=25 {'requests': 561, 'hosts': 6156, 'new': 5672, 'http_503': 162, 'http_429': 48, 'ReadTimeout': 20, 'http_504': 32, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 14, 'http_502': 1}
+[wayback] qa,com,b done hosts=50 new=34 {'requests': 562, 'hosts': 6156, 'new': 5672, 'http_503': 163, 'http_429': 48, 'ReadTimeout': 20, 'http_504': 32, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 14, 'http_502': 1}
+[wayback] qa,s done hosts=649 new=611 {'requests': 564, 'hosts': 6172, 'new': 5685, 'http_503': 164, 'http_429': 50, 'ReadTimeout': 20, 'http_504': 32, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 14, 'http_502': 1}
+[wayback] qa,com,h done hosts=29 new=8 {'requests': 575, 'hosts': 6238, 'new': 5715, 'http_503': 164, 'http_429': 51, 'ReadTimeout': 20, 'http_504': 33, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 14, 'http_502': 1}
+[wayback] qa,com,f done hosts=33 new=21 {'requests': 576, 'hosts': 6243, 'new': 5719, 'http_503': 164, 'http_429': 52, 'ReadTimeout': 20, 'http_504': 33, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 14, 'http_502': 1}
+[wayback] qa,com,i at qa,com,invisalign,~ {'requests': 580, 'hosts': 6297, 'new': 5740, 'http_503': 165, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 33, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 14, 'http_502': 1}
+[wayback] qa,com,g done hosts=44 new=21 {'requests': 587, 'hosts': 6344, 'new': 5764, 'http_503': 167, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 34, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 16, 'http_502': 1}
+[wayback] qa,com,j done hosts=13 new=8 {'requests': 592, 'hosts': 6394, 'new': 5785, 'http_503': 169, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 18, 'http_502': 1}
+[wayback] qa,com,l done hosts=19 new=7 {'requests': 594, 'hosts': 6424, 'new': 5801, 'http_503': 169, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 18, 'http_502': 1}
+[wayback] qa,com,a done hosts=184 new=109 {'requests': 596, 'hosts': 6446, 'new': 5810, 'http_503': 169, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 18, 'http_502': 1}
+[wayback] qa,com,k at qa,com,klm,~ {'requests': 600, 'hosts': 6490, 'new': 5828, 'http_503': 169, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 20, 'http_502': 1}
+[wayback] qa,com,m done hosts=61 new=29 {'requests': 601, 'hosts': 6518, 'new': 5847, 'http_503': 169, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 20, 'http_502': 1}
+[wayback] qa,com,k done hosts=15 new=8 {'requests': 604, 'hosts': 6531, 'new': 5852, 'http_503': 169, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 21, 'http_502': 1}
+[wayback] qa,com,n done hosts=35 new=15 {'requests': 606, 'hosts': 6571, 'new': 5870, 'http_503': 170, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 2, 'ConnectTimeout': 21, 'http_502': 1}
+[wayback] qa,com,p done hosts=56 new=32 {'requests': 614, 'hosts': 6651, 'new': 5908, 'http_503': 174, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 24, 'http_502': 1}
+[wayback] qa,com,i giving up for now at qa,com,iqalattar,~
+[wayback] qa,com,q at qa,com,qib,~ {'requests': 620, 'hosts': 6742, 'new': 5967, 'http_503': 174, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 25, 'http_502': 1}
+[wayback] qa,com,o done hosts=28 new=11 {'requests': 622, 'hosts': 6789, 'new': 6002, 'http_503': 174, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 35, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 25, 'http_502': 1}
+[wayback] qa,com,q done hosts=93 new=41 {'requests': 627, 'hosts': 6852, 'new': 6033, 'http_503': 176, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,s done hosts=82 new=57 {'requests': 628, 'hosts': 6861, 'new': 6039, 'http_503': 176, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,u done hosts=15 new=9 {'requests': 629, 'hosts': 6876, 'new': 6048, 'http_503': 176, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,r done hosts=34 new=28 {'requests': 630, 'hosts': 6880, 'new': 6052, 'http_503': 176, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,x done hosts=0 new=0 {'requests': 632, 'hosts': 6887, 'new': 6054, 'http_503': 176, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,y done hosts=3 new=2 {'requests': 636, 'hosts': 6902, 'new': 6061, 'http_503': 177, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,v done hosts=15 new=7 {'requests': 637, 'hosts': 6908, 'new': 6065, 'http_503': 177, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,z done hosts=5 new=5 {'requests': 640, 'hosts': 6946, 'new': 6094, 'http_503': 177, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,w done hosts=18 new=12 {'requests': 642, 'hosts': 6957, 'new': 6100, 'http_503': 177, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] qa,com,t done hosts=61 new=36 {'requests': 643, 'hosts': 6959, 'new': 6101, 'http_503': 177, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}
+[wayback] finished {'requests': 643, 'hosts': 6959, 'new': 6101, 'http_503': 177, 'http_429': 53, 'ReadTimeout': 20, 'http_504': 36, 'ConnectError': 3, 'RemoteProtocolError': 3, 'ConnectTimeout': 26, 'http_502': 1}

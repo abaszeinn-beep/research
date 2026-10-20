@@ -1,0 +1,40 @@
+[reference] resolving 213 refs
+[reference] 10/213 {'accepted': 5, 'blocked': 10, 'cdx': 0, 'bing': 0, 'none': 5}
+[reference] 20/213 {'accepted': 10, 'blocked': 19, 'cdx': 0, 'bing': 0, 'none': 10}
+[reference] 30/213 {'accepted': 16, 'blocked': 25, 'cdx': 1, 'bing': 0, 'none': 13}
+[reference] 40/213 {'accepted': 18, 'blocked': 31, 'cdx': 1, 'bing': 0, 'none': 21}
+[reference] 50/213 {'accepted': 22, 'blocked': 36, 'cdx': 3, 'bing': 0, 'none': 25}
+[reference] 60/213 {'accepted': 25, 'blocked': 38, 'cdx': 4, 'bing': 0, 'none': 31}
+[reference] resolving 264 refs
+[reference] 10/264 {'accepted': 2, 'blocked': 34, 'cdx': 2, 'bing': 0, 'none': 6}
+[reference] 20/264 {'accepted': 6, 'blocked': 37, 'cdx': 2, 'bing': 0, 'none': 12}
+[reference] 30/264 {'accepted': 10, 'blocked': 42, 'cdx': 2, 'bing': 0, 'none': 18}
+[reference] 40/264 {'accepted': 12, 'blocked': 45, 'cdx': 2, 'bing': 0, 'none': 26}
+[reference] 50/264 {'accepted': 19, 'blocked': 48, 'cdx': 2, 'bing': 0, 'none': 29}
+[reference] 60/264 {'accepted': 22, 'blocked': 51, 'cdx': 2, 'bing': 0, 'none': 36}
+[reference] 70/264 {'accepted': 26, 'blocked': 52, 'cdx': 2, 'bing': 0, 'none': 42}
+[reference] 80/264 {'accepted': 32, 'blocked': 54, 'cdx': 3, 'bing': 0, 'none': 45}
+[reference] 90/264 {'accepted': 35, 'blocked': 55, 'cdx': 3, 'bing': 0, 'none': 52}
+[reference] 100/264 {'accepted': 39, 'blocked': 57, 'cdx': 5, 'bing': 0, 'none': 56}
+[reference] 110/264 {'accepted': 42, 'blocked': 59, 'cdx': 5, 'bing': 0, 'none': 63}
+[reference] 120/264 {'accepted': 44, 'blocked': 61, 'cdx': 5, 'bing': 0, 'none': 71}
+[reference] 130/264 {'accepted': 46, 'blocked': 62, 'cdx': 6, 'bing': 0, 'none': 78}
+[reference] 140/264 {'accepted': 48, 'blocked': 64, 'cdx': 6, 'bing': 0, 'none': 86}
+[reference] 150/264 {'accepted': 50, 'blocked': 66, 'cdx': 6, 'bing': 0, 'none': 94}
+[reference] 160/264 {'accepted': 53, 'blocked': 69, 'cdx': 6, 'bing': 0, 'none': 101}
+[reference] 170/264 {'accepted': 55, 'blocked': 73, 'cdx': 6, 'bing': 0, 'none': 109}
+[reference] 180/264 {'accepted': 56, 'blocked': 73, 'cdx': 6, 'bing': 0, 'none': 118}
+[reference] 190/264 {'accepted': 56, 'blocked': 74, 'cdx': 7, 'bing': 0, 'none': 127}
+[reference] 200/264 {'accepted': 59, 'blocked': 77, 'cdx': 7, 'bing': 0, 'none': 134}
+[reference] 210/264 {'accepted': 60, 'blocked': 77, 'cdx': 7, 'bing': 0, 'none': 143}
+[reference] 220/264 {'accepted': 62, 'blocked': 79, 'cdx': 7, 'bing': 0, 'none': 151}
+[reference] 230/264 {'accepted': 64, 'blocked': 79, 'cdx': 7, 'bing': 0, 'none': 159}
+[reference] 240/264 {'accepted': 65, 'blocked': 82, 'cdx': 7, 'bing': 0, 'none': 168}
+[reference] 250/264 {'accepted': 66, 'blocked': 82, 'cdx': 8, 'bing': 0, 'none': 176}
+[reference] 260/264 {'accepted': 66, 'blocked': 82, 'cdx': 8, 'bing': 0, 'none': 186}
+[reference] 264/264 {'accepted': 66, 'blocked': 82, 'cdx': 8, 'bing': 0, 'none': 190}
+[reference] resolving 14 refs
+[reference] 10/14 {'accepted': 5, 'blocked': 4, 'cdx': 0, 'bing': 0, 'none': 5}
+[reference] 14/14 {'accepted': 5, 'blocked': 4, 'cdx': 0, 'bing': 0, 'none': 9}
+[reference] resolving 7 refs
+[reference] 7/7 {'accepted': 0, 'blocked': 2, 'cdx': 0, 'bing': 0, 'none': 7}
