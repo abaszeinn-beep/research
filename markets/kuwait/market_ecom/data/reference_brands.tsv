@@ -1,0 +1,197 @@
+# name	category	tier	domains (space separated; global + known Kuwait)	source
+# source tags: user_brief = named in the task brief; group:<name> = listed as a brand of that franchise group;
+# analyst_seed = analyst brand knowledge (candidate only - status comes from live/secondary verification).
+X-cite (Alghanim)	Computers & Electronics	major	xcite.com xcite.com.kw	user_brief
+Eureka	Computers & Electronics	major	eureka.com.kw	user_brief
+Best Al-Yousifi	Computers & Electronics	major	best.com.kw bestalyousifi.com	user_brief
+Lulu Hypermarket Kuwait	Grocery & Food	major	luluhypermarket.com	user_brief
+Carrefour Kuwait	Grocery & Food	major	carrefourkuwait.com carrefour.com.kw	user_brief
+The Sultan Center (TSC)	Grocery & Food	major	sultan-center.com thesultancenter.com tsc.com.kw	user_brief
+City Centre Kuwait	Grocery & Food	major	citycentre.com.kw citycentrekuwait.com	user_brief
+Boutiqaat	Beauty & Cosmetics	major	boutiqaat.com	user_brief
+Alshaya Group (corporate)	Department Store / General	major	alshaya.com	user_brief
+H&M Kuwait (Alshaya)	Fashion & Apparel	major	hm.com kw.hm.com	group:alshaya
+Mothercare Kuwait (Alshaya)	Baby & Maternity	major	mothercare.com.kw mothercare.com	group:alshaya
+Boots Kuwait (Alshaya)	Pharmacy & Wellness	major	boots.com.kw boots.com	group:alshaya
+Victoria's Secret Kuwait (Alshaya)	Fashion - Women	major	victoriassecret.com.kw	group:alshaya
+Bath & Body Works Kuwait (Alshaya)	Beauty & Cosmetics	major	bathandbodyworks.com.kw	group:alshaya
+American Eagle Kuwait (Alshaya)	Fashion & Apparel	major	aeo.com.kw ae.com aeo-me.com	group:alshaya
+Pottery Barn Kuwait (Alshaya)	Furniture	major	potterybarn.com.kw	group:alshaya
+Pottery Barn Kids Kuwait (Alshaya)	Furniture	medium	potterybarnkids.com.kw	group:alshaya
+West Elm Kuwait (Alshaya)	Furniture	major	westelm.com.kw	group:alshaya
+Williams Sonoma Kuwait (Alshaya)	Kitchenware & Tableware	medium	williams-sonoma.com.kw williamssonoma.com.kw	group:alshaya
+Foot Locker Kuwait (Alshaya)	Shoes	major	footlocker.com.kw	group:alshaya
+Muji Kuwait (Alshaya)	Department Store / General	medium	muji.com.kw	group:alshaya
+Vans Kuwait (Alshaya)	Shoes	medium	vans.com.kw vans.com	group:alshaya
+New Look Kuwait (Alshaya)	Fashion - Women	medium	newlook.com.kw	group:alshaya
+Claire's Kuwait (Alshaya)	Jewelry & Watches	medium	claires.com.kw	group:alshaya
+Payless Kuwait (Alshaya)	Shoes	medium	payless.com.kw	group:alshaya
+MAC Cosmetics Kuwait (Alshaya)	Beauty & Cosmetics	medium	maccosmetics.com.kw	group:alshaya
+Charlotte Tilbury Kuwait (Alshaya)	Beauty & Cosmetics	medium	charlottetilbury.com.kw	group:alshaya
+Dyson Kuwait	Home Appliances	medium	dyson.com.kw	analyst_seed
+Centrepoint Kuwait (Landmark)	Department Store / General	major	centrepointstores.com	group:landmark
+Max Fashion Kuwait (Landmark)	Fashion & Apparel	major	maxfashion.com	group:landmark
+Home Centre Kuwait (Landmark)	Furniture	major	homecentre.com	group:landmark
+Babyshop Kuwait (Landmark)	Baby & Maternity	major	babyshopstores.com	group:landmark
+Splash Kuwait (Landmark)	Fashion & Apparel	major	splashfashions.com	group:landmark
+Lifestyle Kuwait (Landmark)	Fashion & Apparel	medium	lifestyleshops.com	group:landmark
+Shoe Mart Kuwait (Landmark)	Shoes	medium	shoemartstores.com	group:landmark
+Homebox Kuwait (Landmark)	Furniture	medium	homeboxstores.com	group:landmark
+Ounass (Chalhoub)	Fashion & Apparel	major	ounass.com ounass.com.kw kuwait.ounass.com	group:chalhoub
+Level Shoes (Chalhoub)	Shoes	medium	levelshoes.com	group:chalhoub
+Faces (Chalhoub)	Beauty & Cosmetics	major	faces.com wojooh.com	group:chalhoub
+Tryano (Chalhoub)	Department Store / General	medium	tryano.com	group:chalhoub
+Sephora Kuwait	Beauty & Cosmetics	major	sephora.com.kw sephora.me sephora.kw	analyst_seed
+6thStreet / AIVI (Apparel Group)	Fashion & Apparel	major	6thstreet.com aivi.com	group:apparel
+Aldo Kuwait (Apparel Group)	Shoes	medium	aldoshoes.com	group:apparel
+Charles & Keith Kuwait (Apparel Group)	Shoes	medium	charleskeith.com	group:apparel
+Skechers Kuwait (Apparel Group)	Shoes	medium	skechers.com.kw skechers.com	group:apparel
+Tommy Hilfiger Kuwait (Apparel Group)	Fashion & Apparel	medium	tommy.com	group:apparel
+Calvin Klein Kuwait (Apparel Group)	Fashion & Apparel	medium	calvinklein.com	group:apparel
+Nine West Kuwait (Apparel Group)	Shoes	medium	ninewest.com	group:apparel
+R&B Fashion (Apparel Group)	Fashion & Apparel	medium	rnbfashion.com	group:apparel
+Inglot (Apparel Group)	Beauty & Cosmetics	medium	inglot.com	group:apparel
+Zara Kuwait	Fashion & Apparel	major	zara.com	analyst_seed
+Massimo Dutti Kuwait	Fashion & Apparel	medium	massimodutti.com	analyst_seed
+Pull&Bear Kuwait	Fashion & Apparel	medium	pullandbear.com	analyst_seed
+Bershka Kuwait	Fashion & Apparel	medium	bershka.com	analyst_seed
+Stradivarius Kuwait	Fashion & Apparel	medium	stradivarius.com	analyst_seed
+Oysho Kuwait	Fashion - Women	medium	oysho.com	analyst_seed
+Zara Home Kuwait	Home Decor	medium	zarahome.com	analyst_seed
+Mango Kuwait	Fashion & Apparel	medium	mango.com shop.mango.com	analyst_seed
+Namshi	Fashion & Apparel	major	namshi.com	analyst_seed
+Sivvi	Fashion & Apparel	medium	sivvi.com	analyst_seed
+Styli	Fashion & Apparel	medium	styli.com stylishop.com	analyst_seed
+Nisnass	Fashion & Apparel	medium	nisnass.com	analyst_seed
+Brands For Less	Fashion & Apparel	medium	brandsforless.com	analyst_seed
+Mumzworld	Baby & Maternity	major	mumzworld.com	analyst_seed
+Shein Kuwait	Fashion & Apparel	major	shein.com ar.shein.com	analyst_seed
+noon Kuwait	Department Store / General	major	noon.com	user_brief
+Amazon (ships to Kuwait)	Department Store / General	major	amazon.com amazon.ae	user_brief
+Talabat (incl. talabat mart)	Grocery & Food	major	talabat.com	user_brief
+Deliveroo Kuwait	Grocery & Food	medium	deliveroo.com.kw	user_brief
+Cari	Grocery & Food	medium	cari.com	user_brief
+4Sale	Department Store / General	major	4sale.com q84sale.com	user_brief
+OpenSooq Kuwait	Department Store / General	major	opensooq.com	user_brief
+IKEA Kuwait (Alghanim)	Furniture	major	ikea.com ikea.com.kw	analyst_seed
+Jarir Bookstore Kuwait	Books & Stationery	major	jarir.com	analyst_seed
+Virgin Megastore Kuwait	Books & Stationery	medium	virginmegastore.com.kw virginmegastore.me	analyst_seed
+Blink Kuwait	Computers & Electronics	medium	blink.com.kw	analyst_seed
+Zain Kuwait eShop	Mobiles & Accessories	major	kw.zain.com zain.com	analyst_seed
+Ooredoo Kuwait shop	Mobiles & Accessories	major	ooredoo.com.kw	analyst_seed
+stc Kuwait shop	Mobiles & Accessories	major	stc.com.kw	analyst_seed
+Samsung Kuwait	Computers & Electronics	medium	samsung.com	analyst_seed
+Apple Kuwait	Computers & Electronics	major	apple.com	analyst_seed
+Huawei Kuwait	Mobiles & Accessories	medium	consumer.huawei.com huawei.com	analyst_seed
+Xiaomi Kuwait	Mobiles & Accessories	medium	mi.com xiaomi.com.kw	analyst_seed
+Lenovo Kuwait	Computers & Electronics	medium	lenovo.com	analyst_seed
+Sun & Sand Sports Kuwait	Sports, Fitness & Outdoor	major	sssports.com	analyst_seed
+Nike Kuwait	Shoes	medium	nike.com nike.ae	analyst_seed
+Adidas Kuwait	Sports, Fitness & Outdoor	medium	adidas.com.kw adidas.com	analyst_seed
+Puma Kuwait	Sports, Fitness & Outdoor	medium	puma.com	analyst_seed
+Under Armour Kuwait	Sports, Fitness & Outdoor	medium	underarmour.com	analyst_seed
+Decathlon Kuwait	Sports, Fitness & Outdoor	major	decathlon.com.kw decathlon.com	analyst_seed
+Sporter	Pharmacy & Wellness	medium	sporter.com	analyst_seed
+Dr. Nutrition	Pharmacy & Wellness	medium	drnutrition.com	analyst_seed
+Toys R Us Kuwait	Toys & Hobbies	medium	toysrus.com.kw toysrusmena.com	analyst_seed
+Hamleys Kuwait	Toys & Hobbies	medium	hamleys.com.kw hamleys.com	analyst_seed
+FirstCry Kuwait	Baby & Maternity	medium	firstcry.com.kw firstcry.ae	analyst_seed
+Floward	Flowers, Gifts & Party	major	floward.com	analyst_seed
+Bloomingdale's Kuwait	Department Store / General	major	bloomingdales.com.kw	analyst_seed
+Joi Gifts	Flowers, Gifts & Party	medium	joigifts.com	analyst_seed
+Bostani Chocolatier	Chocolates & Sweets	medium	bostani.com	analyst_seed
+Patchi Kuwait	Chocolates & Sweets	medium	patchi.com	analyst_seed
+Godiva Kuwait	Chocolates & Sweets	medium	godiva.com	analyst_seed
+Al Rifai Kuwait	Grocery & Food	medium	alrifai.com alrifaikw.com	analyst_seed
+Oncost	Grocery & Food	major	oncost.com oncost.com.kw	analyst_seed
+Grand Hyper Kuwait	Grocery & Food	medium	grandhyper.com grandhyper.com.kw	analyst_seed
+Gulfmart	Grocery & Food	medium	gulfmart.com.kw	analyst_seed
+Saveco Kuwait	Grocery & Food	medium	saveco.com	analyst_seed
+Mezzan	Grocery & Food	medium	mezzan.com	analyst_seed
+Kuwait Danish Dairy (KDD)	Grocery & Food	medium	kdd.com.kw	analyst_seed
+Taw9eel	Grocery & Food	medium	taw9eel.com	analyst_seed
+Abyat	Furniture	major	abyat.com	analyst_seed
+Midas Furniture	Furniture	medium	midas.com.kw midasfurniture.com	analyst_seed
+Safat Home	Furniture	medium	safathome.com	analyst_seed
+True Value Kuwait	Home Improvement & Hardware	medium	truevalue.com.kw	analyst_seed
+ACE Hardware Kuwait	Home Improvement & Hardware	medium	acekuwait.com ace.com.kw	analyst_seed
+Pan Home Kuwait	Furniture	medium	panhome.com	analyst_seed
+Homes R Us Kuwait	Furniture	medium	homesrus.com homesrus.ae	analyst_seed
+Danube Home Kuwait	Furniture	medium	danubehome.com	analyst_seed
+The One Kuwait	Home Decor	medium	theone.com	analyst_seed
+Marina Home Kuwait	Furniture	medium	marinahomeinteriors.com	analyst_seed
+2XL Furniture Kuwait	Furniture	medium	2xlhome.com	analyst_seed
+Crate & Barrel Kuwait	Furniture	medium	crateandbarrel.com.kw	analyst_seed
+Bed Bath & Beyond Kuwait	Home Decor	medium	bedbathandbeyond.com.kw	analyst_seed
+Life Pharmacy Kuwait	Pharmacy & Wellness	medium	lifepharmacy.com	analyst_seed
+Yiaco Medical	Healthcare & Medical Equipment	medium	yiaco.com	analyst_seed
+Basharacare	Beauty & Cosmetics	medium	basharacare.com	analyst_seed
+Nice One	Beauty & Cosmetics	medium	niceonesa.com niceone.com	analyst_seed
+Huda Beauty	Beauty & Cosmetics	medium	hudabeauty.com	analyst_seed
+Kayali	Perfumes & Oud	medium	kayali.com	analyst_seed
+Gissah Perfumes	Perfumes & Oud	medium	gissah.com	analyst_seed
+Dkhoon Perfumes	Perfumes & Oud	medium	dkhoon.com	analyst_seed
+Arabian Oud Kuwait	Perfumes & Oud	medium	arabianoud.com	analyst_seed
+Abdul Samad Al Qurashi Kuwait	Perfumes & Oud	medium	asqgrp.com	analyst_seed
+Ajmal Perfumes Kuwait	Perfumes & Oud	medium	ajmalperfume.com	analyst_seed
+Rasasi Kuwait	Perfumes & Oud	medium	rasasi.com	analyst_seed
+Swiss Arabian Kuwait	Perfumes & Oud	medium	swissarabian.com	analyst_seed
+Lattafa	Perfumes & Oud	medium	lattafa.com lattafa-usa.com	analyst_seed
+Ibraheem Al Qurashi	Perfumes & Oud	medium	ibraqperfumes.com	analyst_seed
+Perfumes Kuwait	Perfumes & Oud	medium	perfumeskuwait.com	analyst_seed
+Magrabi Optical Kuwait	Healthcare & Medical Equipment	medium	magrabi.com	analyst_seed
+Eyewa	Healthcare & Medical Equipment	medium	eyewa.com	analyst_seed
+Al Jaber Optical	Healthcare & Medical Equipment	medium	aljaberoptical.com	analyst_seed
+Malabar Gold & Diamonds Kuwait	Jewelry & Watches	medium	malabargoldanddiamonds.com	analyst_seed
+Joyalukkas Kuwait	Jewelry & Watches	medium	joyalukkas.com	analyst_seed
+Damas Kuwait	Jewelry & Watches	medium	damasjewel.com	analyst_seed
+L'azurde Kuwait	Jewelry & Watches	medium	lazurde.com	analyst_seed
+Swarovski Kuwait	Jewelry & Watches	medium	swarovski.com	analyst_seed
+Pandora Kuwait	Jewelry & Watches	medium	pandora.net	analyst_seed
+Tanagra	Jewelry & Watches	medium	tanagra.com tanagra.com.kw	analyst_seed
+Redtag Kuwait	Fashion & Apparel	medium	redtag.com redtagfashion.com	analyst_seed
+LC Waikiki Kuwait	Fashion & Apparel	medium	lcwaikiki.com.kw lcw.com	analyst_seed
+DeFacto Kuwait	Fashion & Apparel	medium	defacto.com	analyst_seed
+Koton Kuwait	Fashion & Apparel	medium	koton.com	analyst_seed
+Marks & Spencer Kuwait	Department Store / General	major	marksandspencer.com marksandspencerme.com	analyst_seed
+Matalan Kuwait	Fashion & Apparel	medium	matalan.com.kw matalanme.com	analyst_seed
+Next Kuwait	Fashion & Apparel	medium	next.com.kw nextdirect.com	analyst_seed
+Gap Kuwait	Fashion & Apparel	medium	gap.com.kw gapkuwait.com	analyst_seed
+Riva Fashion	Fashion & Apparel	medium	rivafashion.com	analyst_seed
+Miniso Kuwait	Department Store / General	medium	miniso.com.kw	analyst_seed
+Daiso Kuwait	Department Store / General	medium	daiso.com.kw	analyst_seed
+Lego Kuwait	Toys & Hobbies	medium	lego.com	analyst_seed
+Jumbo Electronics Kuwait	Computers & Electronics	medium	jumbo.ae	analyst_seed
+Sharaf DG Kuwait	Computers & Electronics	medium	sharafdg.com	analyst_seed
+Geekay Games	Gaming	medium	geekay.com	analyst_seed
+Games 4 Kuwait / PlayStation	Gaming	medium	playstation.com	analyst_seed
+Al Mulla Group Auto	Automotive Parts & Accessories	medium	almullagroup.com	analyst_seed
+Michelin Kuwait	Automotive Parts & Accessories	medium	michelin.com	analyst_seed
+Fine Hygienic	Cleaning & Household Supplies	medium	finehh.com	analyst_seed
+Kuwait Flour Mills (KFMB)	Grocery & Food	medium	kfmb.com.kw	analyst_seed
+Union of Consumer Co-operative Societies	Grocery & Food	major	ucs.org.kw ucs.com.kw	user_brief
+Mishref Co-op	Grocery & Food	medium	mishrefcoop.com	user_brief
+Rawda & Hawalli Co-op	Grocery & Food	medium	rhcoop.com	user_brief
+Jabriya Co-op	Grocery & Food	medium	jabriyacoop.com	user_brief
+Al-Yarmouk Co-op	Grocery & Food	medium	yarmoukcoop.com	user_brief
+Salwa Co-op	Grocery & Food	medium	salwacoop.com	user_brief
+Shamiya & Shuwaikh Co-op	Grocery & Food	medium	shamiyacoop.com	user_brief
+Wara Kuwait	Department Store / General	medium	wara.com.kw	analyst_seed
+Q8 Store	Department Store / General	medium	q8store.com	analyst_seed
+Hasawi Baby	Baby & Maternity	medium	hasawibaby.com	analyst_seed
+Al Babtain Electronics	Computers & Electronics	medium	albabtain.com	analyst_seed
+Hassan Al Yousifi / Abdulaziz Al Yousifi	Computers & Electronics	medium	alyousifi.com	analyst_seed
+Al Sayer (Toyota)	Automotive Parts & Accessories	medium	alsayer.com	analyst_seed
+Taiba Hospital Pharmacy	Pharmacy & Wellness	medium	taibahospital.com	analyst_seed
+Ubuy Kuwait	Department Store / General	medium	ubuy.com.kw	analyst_seed
+Desertcart Kuwait	Department Store / General	medium	desertcart.com.kw	analyst_seed
+Jazp	Department Store / General	medium	jazp.com	analyst_seed
+Trolley Kuwait	Grocery & Food	medium	trolley.com.kw	analyst_seed
+Jumla	Wholesale & B2B	medium	jumla.com	analyst_seed
+Kids Republic / Babyshop	Baby & Maternity	medium	kidsrepublic.com.kw	analyst_seed
+Al Shaya Starbucks	Coffee, Tea & Dates	medium	starbucks.com.kw	analyst_seed
+Bloom Box Kuwait	Flowers, Gifts & Party	medium	bloombox.com.kw	analyst_seed
+Fresh Flowers Kuwait	Flowers, Gifts & Party	medium	flowers.com.kw	analyst_seed
+Bazaar Kuwait	Department Store / General	medium	bazaar.com.kw	tranco
+Viva Kuwait shop	Mobiles & Accessories	medium	viva.com.kw	tranco
+Kpay	Department Store / General	medium	kpay.com.kw	tranco
