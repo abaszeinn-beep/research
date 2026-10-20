@@ -1,0 +1,29 @@
+# name	category	tier	domains	source
+# Physical-product brands from franchise-group portfolios that were missing from reference_brands.tsv.
+# F&B names in those portfolios are omitted (restaurants / food service are out of scope).
+Miniso	Department Store / General	medium	miniso.com miniso.sa	Saudi App Store seller URL https://miniso.sa/ (app ميني سو MINISO, seller ALI AHMED ALGABAS TRADING EST.)
+Nayomi	Fashion - Women	medium	nayomi.com nayomi.sa	analyst_seed; Saudi lingerie chain with own online store
+Riva Fashion	Fashion - Women	medium	rivafashion.com riva-fashion.com	analyst_seed; Saudi womenswear chain
+DeFacto	Fashion & Apparel	medium	defacto.com defacto.com.tr	Saudi App Store app DeFacto - Clothing & Shopping (seller DEFACTO PERAKENDE TICARET A S, sellerUrl defacto.com.tr)
+GAP	Fashion & Apparel	major	gap.com gap.sa	cenomi_and_azadea; https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf portfolio lists GAP
+New Yorker	Fashion & Apparel	medium	newyorker.de newyorker.com	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+La Senza	Fashion - Women	medium	lasenza.com lasenza.sa	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+Women's Secret	Fashion - Women	medium	womensecret.com	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+US Polo Assn	Fashion & Apparel	medium	uspoloassn.com uspoloassn.sa	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+Monsoon	Fashion - Women	medium	monsoon.co.uk monsoon.com	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+Jacadi	Fashion - Kids	medium	jacadi.fr jacadi.com	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+Mayoral	Fashion - Kids	medium	mayoral.com mayoral.sa	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+Flying Tiger Copenhagen	Home Decor	medium	flyingtiger.com	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail home portfolio
+FNAC	Computers & Electronics	medium	fnac.com fnac.sa	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail electronics portfolio
+Nature Republic	Beauty & Cosmetics	medium	naturerepublic.com	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail beauty portfolio
+Flormar	Beauty & Cosmetics	medium	flormar.com flormar.sa	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail beauty portfolio
+Springfield	Fashion & Apparel	medium	springfield.com	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+Undiz	Fashion - Women	medium	undiz.com	https://ir.cenomiretail.com/media/kjcji1a0/earnings-presentation-q3-2023_fiscal.pdf Cenomi Retail portfolio
+Al Saif Gallery	Home Decor	medium	alsaifgallery.com alsaifgallery.sa	analyst_seed; Saudi home and kitchen chain
+Geekay	Gaming	medium	geekay.com geekay.sa	analyst_seed; Saudi games and electronics retailer
+R&B Fashion	Fashion & Apparel	medium	randbfashion.com	Saudi App Store app R&B Fashion (seller R & B FASHION LLC)
+Rituals	Personal Care & Grooming	medium	rituals.com	analyst_seed; Apparel Group personal-care brand with GCC ecommerce
+Payless	Shoes	medium	payless.com payless.sa	analyst_seed; Alshaya footwear brand
+Brands For Less	Department Store / General	medium	brandsforless.com brandsforless.sa	analyst_seed; off-price retailer with a Saudi storefront
+Homewide	Furniture	medium	homewide.com.sa	analyst_seed; Saudi furniture chain
+Claire's	Fashion & Apparel	medium	claires.com	mall tenant Kingdom Centre / Red Sea directories; international accessories retailer

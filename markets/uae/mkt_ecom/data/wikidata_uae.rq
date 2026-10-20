@@ -1,0 +1,7 @@
+SELECT DISTINCT ?item ?itemLabel ?site WHERE {
+  { ?item wdt:P17 wd:Q878 } UNION { ?item wdt:P159 ?hq . ?hq wdt:P17 wd:Q878 } UNION { ?item wdt:P740 ?f . ?f wdt:P17 wd:Q878 }
+  ?item wdt:P856 ?site .
+  ?item wdt:P31/wdt:P279* ?t .
+  VALUES ?t { wd:Q4830453 wd:Q431289 wd:Q167037 wd:Q891723 wd:Q1631111 wd:Q126793 wd:Q507619 wd:Q216107 wd:Q2416217 wd:Q18388277 wd:Q1137815 wd:Q6881511 wd:Q783794 wd:Q11707 }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en,ar". }
+}
