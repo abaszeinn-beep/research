@@ -50,6 +50,23 @@ COUNTRY_ALIASES = {
 }
 
 
+# Rows dropped in the final audit: (country, registrable domain) -> reason.
+AUDIT_EXCLUDE = {
+    ("Saudi Arabia", "iksula.com"): "Saudi case study does not name the client",
+    ("UAE", "like.digital"): "website expired (Squarespace expiry page)",
+    ("Saudi Arabia", "like.digital"): "website expired (Squarespace expiry page)",
+    ("United States", "nogin.com"): "in Chapter 7 liquidation; operations shut down",
+    ("UAE", "halasocial.com"): "single-person operation per LinkedIn",
+    ("United States", "thisispattern.com"): "acquired by Domaine, which is already listed",
+}
+
+# Wrong domains recorded during research -> verified official domain.
+DOMAIN_FIX = {"uncommonagency.ae": "uncommonagency.co"}
+
+# Subdomains whose root domain belongs to a different business line.
+KEEP_SUBDOMAIN = {"studios.envoyb2b.com"}
+
+
 def norm_key(s):
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
@@ -109,6 +126,13 @@ def main():
                     rejects.append({"file": os.path.basename(path), "name": name, "problem": problem})
                     continue
                 key = registrable(url)
+                if key in DOMAIN_FIX:
+                    key = DOMAIN_FIX[key]
+                    url = f"https://{key}"
+                if (country, key) in AUDIT_EXCLUDE:
+                    rejects.append({"file": os.path.basename(path), "name": name,
+                                    "problem": AUDIT_EXCLUDE[(country, key)]})
+                    continue
                 bucket = rows_by_country[country]
                 if key in bucket:
                     existing = bucket[key]
@@ -117,7 +141,8 @@ def main():
                     existing["sources"].append(os.path.basename(path))
                     continue
                 bucket[key] = {
-                    "name": name, "url": url, "cat": cat, "fit": fit,
+                    "name": name, "url": url if domain(url) in KEEP_SUBDOMAIN else f"https://{key}",
+                    "cat": cat, "fit": fit,
                     "evidence": row.get("Evidence URL", ""), "note": row.get("Evidence Note", ""),
                     "sources": [os.path.basename(path)],
                 }

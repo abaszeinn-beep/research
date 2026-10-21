@@ -1,1 +1,32 @@
-[]
+[
+ {
+  "file": "ksa_groupBC_gapfill.csv",
+  "name": "Iksula",
+  "problem": "Saudi case study does not name the client"
+ },
+ {
+  "file": "uae_groupA.csv",
+  "name": "Like Digital & Partners",
+  "problem": "website expired (Squarespace expiry page)"
+ },
+ {
+  "file": "uae_groupA.csv",
+  "name": "Hala Social",
+  "problem": "single-person operation per LinkedIn"
+ },
+ {
+  "file": "us_fashion.csv",
+  "name": "Pattern",
+  "problem": "acquired by Domaine, which is already listed"
+ },
+ {
+  "file": "us_fashion_gapfill.csv",
+  "name": "Nogin",
+  "problem": "in Chapter 7 liquidation; operations shut down"
+ },
+ {
+  "file": "us_shopify.csv",
+  "name": "Pattern (thisispattern)",
+  "problem": "acquired by Domaine, which is already listed"
+ }
+]
