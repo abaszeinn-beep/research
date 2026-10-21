@@ -1,4 +1,4 @@
-"""Build per-market Ecommerce and Fashion prospect workbooks (UAE, Qatar, Kuwait)."""
+"""Build per-market Ecommerce and Fashion prospect workbooks (UAE, Qatar, Kuwait, Saudi Arabia)."""
 import sys
 from pathlib import Path
 
@@ -8,7 +8,8 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 SRC = Path("/tmp/prospects")
-FINAL = SRC / "final_gulf"
+FINAL_DIRS = {"UAE": "final_gulf", "Qatar": "final_gulf", "Kuwait": "final_gulf", "Saudi": "final_saudi"}
+FILE_PREFIX = {"Saudi": "Saudi_Arabia"}
 OUT = Path(__file__).resolve().parent
 NF = "Not found"
 
@@ -23,8 +24,8 @@ BAND = PatternFill("solid", fgColor="FFF7ED")
 MASTER_COLS = [
     ("Website Name", 34), ("Root Domain Link", 38), ("Semrush Organic Traffic", 16),
     ("Website Count", 13), ("Count Method", 34),
-    ("Company Phone Numbers (comma separated)", 36),
-    ("Company Emails (comma separated; marketing/sales/business only)", 38),
+    ("Company Phone Numbers", 36),
+    ("Company Emails", 38),
     ("Company LinkedIn", 42), ("Primary Decision Maker Name", 28), ("Position", 40),
 ]
 DM_COLS = [
@@ -72,9 +73,10 @@ def style_sheet(ws, widths, link_cols, num_cols=()):
 
 
 def build_market(market):
+    final = SRC / FINAL_DIRS[market]
     p = pd.read_csv(SRC / f"{market}.csv", dtype=str, keep_default_na=False)
-    comp = pd.read_csv(FINAL / f"{market}_companies.csv", dtype=str, keep_default_na=False)
-    ppl = pd.read_csv(FINAL / f"{market}_people.csv", dtype=str, keep_default_na=False)
+    comp = pd.read_csv(final / f"{market}_companies.csv", dtype=str, keep_default_na=False)
+    ppl = pd.read_csv(final / f"{market}_people.csv", dtype=str, keep_default_na=False)
     assert p["Root Domain"].is_unique and comp["Root Domain"].is_unique
     assert set(p["Root Domain"]) == set(comp["Root Domain"])
     df = p.merge(comp, on="Root Domain", how="left", validate="one_to_one")
@@ -110,7 +112,7 @@ def build_market(market):
                 clean(r["LinkedIn Profile"]),
             ])
         style_sheet(ws2, DM_COLS, link_cols={2, 7})
-        path = OUT / f"{market}_{kind}_Prospects.xlsx"
+        path = OUT / f"{FILE_PREFIX.get(market, market)}_{kind}_Prospects.xlsx"
         wb.save(path)
         results.append((path, len(sel), len(pp), set(sel["Root Domain"])))
     return results
@@ -136,7 +138,7 @@ def validate(path, n_master, n_dm, domains_http):
 
 
 if __name__ == "__main__":
-    for market in sys.argv[1:] or ["UAE", "Qatar", "Kuwait"]:
+    for market in sys.argv[1:] or ["UAE", "Qatar", "Kuwait", "Saudi"]:
         for path, nm, nd, doms in build_market(market):
             validate(path, nm, nd, doms)
             print(f"{path.name}: Master Prospects={nm} rows, Decision Makers={nd} rows  [OK]")
