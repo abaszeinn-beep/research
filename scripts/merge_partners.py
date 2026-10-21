@@ -75,6 +75,13 @@ def domain(url):
     return urlparse(url).netloc
 
 
+def registrable(url):
+    parts = domain(url).split(".")
+    if len(parts) >= 3 and parts[-2] in {"co", "com", "net", "org", "gov", "edu"} and len(parts[-1]) == 2:
+        return ".".join(parts[-3:])
+    return ".".join(parts[-2:])
+
+
 def main():
     rows_by_country = defaultdict(dict)
     rejects = []
@@ -101,7 +108,7 @@ def main():
                 if problem:
                     rejects.append({"file": os.path.basename(path), "name": name, "problem": problem})
                     continue
-                key = domain(url)
+                key = registrable(url)
                 bucket = rows_by_country[country]
                 if key in bucket:
                     existing = bucket[key]
@@ -139,7 +146,7 @@ def main():
             **{f: fits.get(f, 0) for f in FITS},
             "categories": dict(Counter(r["cat"] for r in recs).most_common()),
         }
-        all_domains.update(domain(r["url"]) for r in recs)
+        all_domains.update(registrable(r["url"]) for r in recs)
     stats["_unique_companies_all_markets"] = len(all_domains)
     stats["_rejected_rows"] = len(rejects)
     with open(os.path.join(OUT_DIR, "evidence", "rejected_rows.json"), "w") as fh:
