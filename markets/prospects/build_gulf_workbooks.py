@@ -1,4 +1,4 @@
-"""Build per-market Ecommerce and Fashion prospect workbooks (UAE, Qatar, Kuwait, Saudi Arabia)."""
+"""Build per-market Ecommerce and Fashion prospect workbooks (UAE, Qatar, Kuwait, Saudi Arabia, USA)."""
 import sys
 from pathlib import Path
 
@@ -8,7 +8,9 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 SRC = Path("/tmp/prospects")
-FINAL_DIRS = {"UAE": "final_gulf", "Qatar": "final_gulf", "Kuwait": "final_gulf", "Saudi": "final_saudi"}
+FINAL_DIRS = {"UAE": "final_gulf", "Qatar": "final_gulf", "Kuwait": "final_gulf", "Saudi": "final_saudi",
+              "USA": "final_usa"}
+SHARDS = {"USA": 6}
 FILE_PREFIX = {"Saudi": "Saudi_Arabia"}
 OUT = Path(__file__).resolve().parent
 NF = "Not found"
@@ -72,11 +74,29 @@ def style_sheet(ws, widths, link_cols, num_cols=()):
     ws.sheet_properties.tabColor = ORANGE
 
 
-def build_market(market):
+def read_csv(path):
+    return pd.read_csv(path, dtype=str, keep_default_na=False)
+
+
+def load_inputs(market):
+    """Return (base metrics, companies, people); sharded markets are concatenated and deduped by domain."""
     final = SRC / FINAL_DIRS[market]
-    p = pd.read_csv(SRC / f"{market}.csv", dtype=str, keep_default_na=False)
-    comp = pd.read_csv(final / f"{market}_companies.csv", dtype=str, keep_default_na=False)
-    ppl = pd.read_csv(final / f"{market}_people.csv", dtype=str, keep_default_na=False)
+    n = SHARDS.get(market)
+    if not n:
+        return (read_csv(SRC / f"{market}.csv"), read_csv(final / f"{market}_companies.csv"),
+                read_csv(final / f"{market}_people.csv"))
+    ids = range(1, n + 1)
+    p = pd.concat([read_csv(SRC / f"{market}_shard{i}.csv") for i in ids], ignore_index=True)
+    comp = pd.concat([read_csv(final / f"{market}_shard{i}_companies.csv") for i in ids], ignore_index=True)
+    ppl = pd.concat([read_csv(final / f"{market}_shard{i}_people.csv") for i in ids], ignore_index=True)
+    p = p.drop_duplicates("Root Domain", keep="first")
+    comp = comp.drop_duplicates("Root Domain", keep="first")
+    ppl = ppl.drop_duplicates(["Website Link", "Contact Name", "Position"], keep="first")
+    return p, comp, ppl
+
+
+def build_market(market):
+    p, comp, ppl = load_inputs(market)
     assert p["Root Domain"].is_unique and comp["Root Domain"].is_unique
     assert set(p["Root Domain"]) == set(comp["Root Domain"])
     df = p.merge(comp, on="Root Domain", how="left", validate="one_to_one")
