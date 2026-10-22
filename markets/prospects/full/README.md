@@ -1,8 +1,10 @@
 # Full prospect directories
 
-These workbooks contain every accepted store in the directory. They have no page-count cutoff and no Semrush traffic cutoff. `Passes Research Filter` is Yes only when the page count is blank (including `Not found`) or at least 500 and Semrush organic traffic is at least 1,000. Traffic that is missing or under 1,000 is No. Rows marked No stay in Master Prospects.
+These workbooks contain every accepted store in the directory. They have no page-count cutoff and no Semrush traffic cutoff.
 
-Decision Makers are people already researched for that store. Stores with no research have no people row. Excluded collects the directory reject lists that include a reason (fashion exclusions, unverified candidates, removed platform subdomains, and StoreLeads rejections). Those rows are not in Master Prospects. The first Excluded column, Exclusion list, names the source list.
+Master Prospects starts with the same columns, in the same order, as the filtered workbook for that market. Stores that were already researched keep those worked values. Stores that were not researched have the directory fields filled (name, URL, Semrush traffic, website count, count method, and any other worked header that has a directory source) and the research columns blank. Directory columns whose names are not already in that worked header are appended after it. `Passes Research Filter` is the last column. It is Yes only when the website count is blank (including `Not found`) or at least 500 and Semrush organic traffic is at least 1,000. Traffic that is missing or under 1,000 is No. Rows marked No stay in Master Prospects.
+
+Decision Makers uses the filtered workbook's columns and the people already researched for that store. Stores with no research have no people row. Excluded collects the directory reject lists that include a reason (fashion exclusions, unverified candidates, removed platform subdomains, and StoreLeads rejections). Those rows are not in Master Prospects. The first Excluded column, Exclusion list, names the source list.
 
 | File | Master rows | Decision-maker rows | Excluded rows | Download |
 | --- | ---: | ---: | ---: | --- |
