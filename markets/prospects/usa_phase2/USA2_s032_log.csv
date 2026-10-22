@@ -1,0 +1,11 @@
+Root Domain,Attempted,Fetch Result,Searches Run,Outcome,Store Type Flag,Notes
+https://dslaboratories.com/,yes,ok,3,done,retail,Direct crawl 429; contact page fetched. Phone and contact@ verified. CEO Fernando Tamez on about page and 2026 Drug Store News speaker list.
+https://www.arcadiapublishing.com/,yes,ok,3,done,retail,Direct crawl 429; contact page fetched. Wholesale/sales/publishing/marketing emails kept; customerservice@ and hr (neverly@) and accountsreceivable@ excluded. Richard Joseph stepped down as CEO in 2018. Brittain Phillips confirmed CEO in Jul 2025.
+https://theglitterguy.com/,yes,blocked,2,partial,retail,"Homepage 429. About page and LinkedIn confirm Sara and Jason Lively. No company phone, business email, or company LinkedIn found."
+https://moonshotgamestore.com/,yes,blocked,2,done,retail,Homepage 429. Founder blog lists both store phones. shop@ published on the company LinkedIn page. Jayson Manship founder current on LinkedIn.
+https://modeltrainstuff.com/,yes,blocked,2,done,retail,"Homepage 429. Prior contact-page phone +1 828-341-2295 matches Arden, NC ownership. Joe Grubba confirmed president after the 2024 Factory Direct Hobbies acquisition. No business email found."
+https://craftmade.com/,yes,ok,2,partial,retail,Homepage fetched. Phone regex hits were invalid and discarded. Company LinkedIn is the Litex ceiling-fan brand. No current executive verified outside data-broker pages.
+https://www.gardenanswer.com/,yes,blocked,2,done,retail,Homepage 429. About page publishes the phone. contact@ carried from the prior contact-information page. Laura and Aaron LeBoutillier are the founders; 2026 trademark is Garden Answer LLC.
+https://hapari.com/,yes,blocked,2,done,retail,Homepage 429. BBB lists John Curry as owner. Founder Tasha Curry is named on the current site. Toll-free phone from the company site and a 2013 press release. No non-support email found.
+https://www.thewaterbottlestore.com/,yes,ok,2,partial,retail,"About page publishes +1 888-474-9898, info@, and media address scott@. No full decision-maker name. A 2017 Texas LLC manager record is stale and was not used."
+https://sqairz.com/,yes,blocked,2,done,retail,"Homepage 429. Press kit and LinkedIn confirm Robert Winskowicz, Founder and CEO. Phone from the prior contact-information page. No business email found."
