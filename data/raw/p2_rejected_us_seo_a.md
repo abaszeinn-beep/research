@@ -31,3 +31,9 @@ Wildcard / ChatRank | AI-visibility SaaS/tooling vendors
 Toptal | Freelance marketplace, anonymized client
 Netconcepts | Legacy (2004-era) agency, now defunct
 StockWise/WebFX | WebFX already rejected by other stream (generalist)
+LSEO | Generalist (law/medical/local) SEO; ecommerce incidental
+Webfor | Vancouver WA generalist/local SEO & web design; weak ecommerce evidence
+Pennock / Untouchable Consulting | Sites unreachable; unverifiable
+New Seas | Remote 2-7 person Shopify SEO boutique; US presence only a LinkedIn Chicago listing; micro-scale
+Fourmeta | London AI/product dev agency, not US SEO
+ResultFirst / Fortress Growth / Loud.us | Not verified; small/generalist or tools-led; no named established-merchant evidence

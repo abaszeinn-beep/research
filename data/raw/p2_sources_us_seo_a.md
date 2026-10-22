@@ -58,3 +58,8 @@ https://www.v9digital.com/success-stories/argaux/ | AI search ecommerce / US | 5
 https://ussearchawards.com/?page_id=83681 | US Search Awards 2026 shortlist retail/ecommerce SEO / US | 12 | 0
 https://coalitiontechnologies.com/bigcommerce-enterprise | BigCommerce/Shopify Plus partner SEO / US | 6 | 0
 https://www.casestudies.com/company/bloomreach/case-study/wayfair-optimizes-at-scale-with-bloomreach | Big-retailer SEO agency cases / US | 5 | 0
+https://www.reddit.com/r/eCommerceSEO/comments/1qq3j33/which_ecommerce_seo_agencies_are_actually_worth/ | Reddit ecommerce SEO agency recs / US | 8 | 0
+https://www.reddit.com/r/EcommerceWebsite/comments/1p2rv6n/looking_for_ecommerce_seo_agency_recommendations/ | Reddit ecommerce SEO agency recs / US | 8 | 0
+https://newseas.co/testimonials | Shopify SEO boutique / US | 1 | 0
+https://beecommercer.com/anker-case-study/ | Consumer-electronics SEO angle (Anker/Belkin/Nanoleaf) / US | 0 | 0
+https://lseo.com | Ecommerce SEO / PA | 1 | 0

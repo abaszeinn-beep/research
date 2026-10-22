@@ -61,3 +61,6 @@ B2B ecommerce portal UAE distributor search (Adobe Al Ghandi, Atlio, Next Orbit,
 Marketplace integration Noon/Amazon.ae connector integrator Dubai search (RND, Sellenvo, ZaadCore, 3LI) | cat5 UAE | 5 | 0 (RND in deliverable; vendors)
 Shopify POS unified commerce Dubai implementation search (Creative971, GCC Marketing, B2, Make Retail) | cat5/6 UAE | 4 | 0
 Magento/Adobe Commerce replatform UAE retailer search 2026 (Codilar, Magebit, SQLI) | cat6 UAE | 5 | 0 (all in deliverable)
+Ecommerce audit / growth roadmap consultancy Dubai luxury fashion search (NIMA, Skand, HavStrategy) | cat3 UAE | 5 | 0 (NIMA in deliverable)
+Enterprise digital commerce transformation UAE group retailer search 2026 (NULogic, Codilar, Magneto, Tekgens) | cat6 UAE | 5 | 0
+Sharjah/Ajman/RAK ecommerce agency search (ChampX, ZaadCore, Web Makers, SalesTrig) | cat1/3 northern emirates | 4 | 0 (all micro/SME)

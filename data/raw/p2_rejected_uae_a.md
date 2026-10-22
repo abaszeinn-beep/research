@@ -100,3 +100,7 @@ GCC Marketing | generic web/app/hardware shop since 2009, no named ecommerce mer
 Sellenvo / ZaadCore Omniqlo | software vendors (ZaadCore also rejected earlier)
 Make Retail | Australian Shopify POS partner, no UAE office
 RND / SQLI / Magebit | already in UAE deliverable
+Skand Consulting | generic DIFC/ADGM management consultancy, ecommerce audit is one of seven practice areas, no named clients
+ChampX Digital | RAK SME web studio, small unnamed-scale clients
+NIMA Digital | already in UAE deliverable
+HavStrategy | previously rejected (India-run, no UAE office)
