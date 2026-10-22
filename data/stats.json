@@ -115,14 +115,14 @@
   }
  },
  "United States": {
-  "total": 948,
-  "Both": 596,
-  "Autommerce OS": 335,
+  "total": 950,
+  "Both": 597,
+  "Autommerce OS": 336,
   "Persona AI": 17,
   "categories": {
-   "Ecommerce Website Development Agencies": 306,
+   "Ecommerce Website Development Agencies": 307,
    "Ecommerce Digital Marketing & Performance Agencies": 201,
-   "Ecommerce System Integration Companies": 71,
+   "Ecommerce System Integration Companies": 72,
    "Ecommerce Product Photography & Creative Production Agencies": 54,
    "Ecommerce SEO Agencies & Consultants": 45,
    "Ecommerce Technology & Digital Transformation Firms": 44,
@@ -141,6 +141,6 @@
    "Fashion Ecommerce Sizing, Fit & Returns Optimization Specialists": 4
   }
  },
- "_unique_companies_all_markets": 1275,
+ "_unique_companies_all_markets": 1277,
  "_rejected_rows": 14
 }
