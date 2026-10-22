@@ -104,3 +104,17 @@ Skand Consulting | generic DIFC/ADGM management consultancy, ecommerce audit is 
 ChampX Digital | RAK SME web studio, small unnamed-scale clients
 NIMA Digital | already in UAE deliverable
 HavStrategy | previously rejected (India-run, no UAE office)
+Ekrocx Technologies (ekrocx.com) | enterprise commerce/PIM/data firm with Landmark/MAF/Emaar Digital logos but no HQ/UAE office address, no UAE case studies, vague "200+ clients" claims; unverifiable UAE presence
+Xpo9tial | Amazon/Walmart brand-builder, investor-oriented, one UAE case; no UAE office, not a merchant-services ecommerce agency
+ACE 360 | generic Abu Dhabi marketing consultancy, not ecommerce-specialized
+Firaasa | SaaS vendor, not an agency
+Omer Muneer Qazi | individual consultant
+Marketing Chemistry / DeLemon / Big AL (Abu Dhabi) | generic or micro marketing shops
+Tradelance (tradelance.io) | self-described "early" market-entry/RaaS firm, sister company of Globify (already listed); no established clients
+Home of Performance (hop.rocks) | generic performance-marketing agency, ecommerce only one service line
+The i.o agency (theioagency.com) | small Shopify shop with SME portfolio only (Aretha, Elevenish, Amina's), no enterprise/established merchant evidence
+Shopvert | Shopify mobile-app dev shop, no UAE office evidence
+Tech Wisdo | Shopify Select freelancer-style shop, no verifiable established UAE merchant clients
+Corvian Advisory / Kuvera Consulting / Transworld GCC | generic M&A/finance advisory, not ecommerce-specialized
+Elogic Commerce M&A | EU/UK/US focus, no UAE office
+Ecomswap | online business broker marketplace, not an agency

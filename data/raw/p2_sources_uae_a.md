@@ -64,3 +64,13 @@ Magento/Adobe Commerce replatform UAE retailer search 2026 (Codilar, Magebit, SQ
 Ecommerce audit / growth roadmap consultancy Dubai luxury fashion search (NIMA, Skand, HavStrategy) | cat3 UAE | 5 | 0 (NIMA in deliverable)
 Enterprise digital commerce transformation UAE group retailer search 2026 (NULogic, Codilar, Magneto, Tekgens) | cat6 UAE | 5 | 0
 Sharjah/Ajman/RAK ecommerce agency search (ChampX, ZaadCore, Web Makers, SalesTrig) | cat1/3 northern emirates | 4 | 0 (all micro/SME)
+Ops / last-mile ecommerce consulting Dubai search (Emerce, A37, Taqseem, Firaasa) | cat3 UAE | 4 | 0 (known/rejected/vendor)
+Shopify Plus replatforming advisory UAE search (Vervaunt, DYODE, Chameleon, individuals) | cat3 UAE | 4 | 0 (non-UAE or individuals)
+Abu Dhabi / Al Ain ecommerce consultants search (ACE 360, Emedia, Marketing Chemistry, DeLemon, Big AL) | cat3 Abu Dhabi/Al Ain | 5 | 0 (Emedia in deliverable; rest generic)
+Amazon/Noon marketplace consultancy UAE search (Xpo9tial, Commercium, FicAition, Taqseem, eComMerchant) | cat3 UAE | 5 | 0 (rejected/known)
+Omnichannel consulting for Landmark/Alshaya/MAF search (Emerce, Khaleej Digital, Ekrocx, Oliver Wyman) | cat3/6 UAE | 4 | 0 (Ekrocx rejected: no UAE office, logos only)
+https://ekrocx.com/ (home, about, contact verification) | cat6 UAE | 1 | 0 (no HQ address, logo wall only, rejected)
+Ecommerce strategy consultancy Dubai retail brands marketplace growth search (Taqseem, Tradelance, Swasthe, A37) | cat3 UAE | 4 | 0 (Taqseem/Swasthe/A37 rejected earlier; Tradelance early-stage sister of Globify)
+Arabic ecommerce consulting Dubai search (Emerce, Taqseem, ahmedkhaled.in, NIMA, hop.rocks) | cat3 UAE Arabic | 5 | 0 (individual/known/generic)
+Ecommerce M&A due diligence advisory GCC / Dubai DIFC search (Corvian, Kuvera, Transworld GCC, Elogic, Ecomswap) | cat3 UAE | 5 | 0 (generic finance advisory, not ecommerce-specialized)
+https://www.shopify.com/partners/directory/locations/united-arab-emirates + business-strategy-guidance directory (LUMINA, Creative971, io agency, Shopvert, Clicko, Ebiz, Tech Wisdo) | cat1/3 UAE | 15 | 0 (all known, rejected, micro or other country)
