@@ -1,0 +1,15 @@
+# KSA Group A working candidates (resume session)
+- DigiFist (digifist.com) Body Shop KSA Shopify Plus
+- EFFENTII CORP (effentiicorp.com) Retail Partners Co (Riyadh fashion) Shopify Plus
+- BrighteningTech (brightening.tech) Zrafh Shopify Plus
+- Hyzen Technologies (Riyadh, Salla) - no named clients
+- Coduzion - Golden Scent Magento
+- VM Media (vm-media-agency.com) Golden Scent testimonial
+- ITG Software - eXtra PWA
+- SellThru (sellthruagency.com) DKNY KSA, Redtag
+- ZaUtre (zautre.com) Montblanc KSA SFCC
+- FeatureMind - Mouawad KSA SFCC
+- Roya Marketing - ZBRANDSA
+- Makaseb (makaseb.sa) Salla/Zid partner
+- Yellostack (Khobar) Shopify
+- Habbar (Riyadh creative) Floward

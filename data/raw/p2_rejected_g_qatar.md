@@ -1,0 +1,59 @@
+# Phase 2 Qatar rejected candidates
+
+- WIRO | Elevare evidence concerns a newly launched/startup merchant; insufficient established-merchant proof.
+- Shafrah | Portfolio appears concentrated on small boutiques; no sufficiently established Qatar ecommerce client verified.
+- DIQ | Public project profile is small-business oriented, with projects generally below the target partner/client scale.
+- Help Desk Services | Ecommerce services found, but no strong named established Qatar ecommerce client evidence.
+- BRQ | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Twyla | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- iVega | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Haya | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Finsoul | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Agmaar | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Fossens | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Zayn Technology | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Red Berries | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Veloris | Services are relevant, but no named established Qatar ecommerce merchant could be verified.
+- Mooshfy | Generic Qatar-targeting service page; no verifiable operating presence or named established Qatar ecommerce clients.
+- EliteTeQ | Generic Qatar-targeting service page; no verifiable operating presence or named established Qatar ecommerce clients.
+- Ignited Nepal | Generic Qatar-targeting service page; no verifiable operating presence or named established Qatar ecommerce clients.
+- ZTABS | Generic Qatar-targeting service page; no verifiable operating presence or named established Qatar ecommerce clients.
+- Fynd / Kaily | Ecommerce platform/SaaS vendor rather than a qualifying agency or implementation consultancy.
+- Obsess | Virtual-store SaaS platform rather than a qualifying service partner.
+- VirtualFit | Fit/try-on technology vendor and direct product competitor rather than a qualifying agency.
+- Equipped | Technology/platform vendor rather than a qualifying agency or consultancy.
+- lessmore consultancy | Solo consultancy; excluded under the no-freelancers/solo-practitioners rule.
+- Christopher Fink | Individual consultant; excluded under the no-freelancers/solo-practitioners rule.
+- Ride Digital | Solo/individual consultancy with insufficient agency-scale operating evidence.
+- BORN Group | Acquired entity; not an independent operating partner candidate.
+- Emakina | Acquired entity; not an independent operating partner candidate.
+- Ksolves | Qatar ecommerce client is anonymous, so country-specific established-merchant evidence is insufficient.
+- Marco Marketing / Doha Modest | Published ecommerce case is explicitly illustrative rather than a verified client engagement.
+- Softkingo | Qatar project claims were too weak to verify to the required standard.
+- TechGropse | Qatar project claims were too weak to verify to the required standard.
+- Autumn | No clear named established Qatar ecommerce merchant case found.
+- Uplo | Qatar service coverage found, but client evidence is unnamed.
+- Computyne | Qatar service coverage found, but client evidence is unnamed.
+- Private Team | Strong named Qatar retail-operations work, but no clear ecommerce-specialist service or ecommerce client engagement.
+- ODN Digital | Strong GCC catalog services and recognizable regional clients, but no Qatar office or named Qatar merchant engagement was verified.
+- Inhand Design Qatar | Product-listing service is relevant, but no named established ecommerce merchant evidence was found.
+- WareOne | Qatar marketplace onboarding and logistics service found, but no named established Qatar ecommerce client was verified.
+- BBD Perfect Storm | Qatar Duty Free creative campaign is strong retail work, but the engagement is brand/terminal advertising rather than ecommerce-specialist creative production.
+- Lumiere Qatar | Ecommerce product photography service is relevant, but no named established ecommerce client was verified.
+- Nova Media Qatar | Delivery-platform menu production is relevant, but no named established merchant engagement was verified.
+- Blackpearl Studio | Ecommerce and catalog photography service found, but no named established ecommerce merchant client was verified.
+- Areterix Technologies | Detailed Qatar Odoo delivery-automation case uses an anonymous 20-person client, so established-merchant evidence is insufficient.
+- FATbit / Yo!Kart | Tajer case concerns a newly launched marketplace and does not yet establish a mature merchant able to meet the target profile.
+- GWC | Strong ecommerce fulfillment and supply-chain consulting capabilities, but no named established Qatar ecommerce consulting client was verified.
+- Ridkk | Qatar retail/ecommerce RPA page is a generic market-targeting page with no named Qatar merchant evidence.
+- Pixeldhow | Relevant Doha automation and Shopify services, but no named established Qatar ecommerce merchant case was verified.
+- Valex | Relevant Qatar ecommerce workflow automation services, but no named established merchant engagement was verified.
+- D4A | Qatar automation consultancy with credible delivery process, but no ecommerce specialization or named established ecommerce client was verified.
+- Celfocus | Ooredoo Qatar digital-channel transformation is substantial, but the evidence does not establish an ecommerce-shop engagement.
+- LITS Services | Qatar Dynamics 365 Commerce page is relevant but generic; no named established Qatar retail client was verified.
+- Novasoft | Regional Dynamics 365 and Shopify integration services found, but no named Qatar ecommerce merchant case was verified.
+- Inspire Technology | Qatar NetSuite ecommerce services found, but no named established ecommerce merchant implementation was verified.
+- Highstreet.io | Carrefour product-feed case is not tied to Carrefour Qatar or another independently verified Qatar operation.
+- Optimasea | GCC product-feed capability found, but no Qatar office or named Qatar merchant engagement was verified.
+- Cherry InfoTech | Qatar marketplace optimization service is relevant, but no named established ecommerce merchant client was verified.
+- Baloch Digitex | Qatar marketplace and feed services found, but no named established merchant evidence was verified.

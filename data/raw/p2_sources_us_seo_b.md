@@ -1,0 +1,23 @@
+https://www.vendar.org/marketing/seo/{new-york,chicago,houston,los-angeles,miami,phoenix}/ecommerce | ecommerce SEO / 6 metros | ~150 named | 0 (mostly local/generic)
+https://agencies.semrush.com/list/seo/ecommerce/{new-york-city,texas,san-francisco}/ | ecommerce SEO / NYC, TX, SF | ~60 | 0 (small shops; no website links)
+https://www.designrush.com/agency/ecommerce-seo-marketing/{new-york,california,texas,illinois/chicago,florida,illinois,georgia,pennsylvania,massachusetts,washington,colorado,arizona,new-jersey,virginia,north-carolina,ohio,michigan,minnesota,utah,oregon} | ecommerce SEO / 20 states+Chicago | ~600 | see csv
+https://clutch.co/seo-firms/ecommerce | ecommerce SEO national | 50 | see csv
+https://clutch.co/seo-firms/{new-york,los-angeles,chicago,dallas,houston,washington-dc,philadelphia,miami,atlanta,boston,phoenix,san-francisco,seattle,minneapolis,san-diego,tampa,denver,baltimore,st-louis,orlando,charlotte,san-antonio,portland,sacramento,pittsburgh,austin,las-vegas,cincinnati,kansas-city,columbus,indianapolis,cleveland,san-jose,nashville,providence,milwaukee,jacksonville,oklahoma-city,raleigh,salt-lake-city,detroit,memphis,richmond,louisville,new-orleans,hartford,buffalo,birmingham,grand-rapids,tucson,honolulu,omaha,boise,albuquerque,scottsdale,riverside,fort-lauderdale,irvine,boulder} | SEO / 58 metros | ~880 unique, 333 auto-screened for ecommerce signal | see csv
+https://www.loopexdigital.com/blog/best-ecommerce-seo-companies ; https://www.promodo.com/blog/best-ecommerce-seo-companies ; https://seoprofy.com/blog/retail-seo-companies/ ; https://www.seoworks.com/lists/the-best-e-commerce-seo-companies/ | ecommerce SEO national | ~45 | see csv
+https://onelittleweb.com/top-agencies/top-seo-agencies-in-los-angeles/ ; https://nicheseoagency.com/top-ecommerce-seo-companies-in-los-angeles-in-2026/ ; https://www.thebusinessrover.com/blog/best-seo-companies-bay-area | ecommerce SEO LA/SF | ~30 | see csv
+saved listicles (Shopify SEO x3, BigCommerce SEO, eCommerce Manager best SEO, South..., ranking 10) | ecommerce SEO national | ~45 | see csv
+WebSearch (Texas/Houston/Austin ecommerce SEO case studies) + DesignRush Texas | ecommerce SEO / US | 10 named | 0 new qualified (Searchbloom known; Artgro healthcare-focused, Tradewinds tiny clients/no HQ, SentryX multi-service)
+WebSearch (Denver/Boulder/Seattle/Portland ecommerce SEO consultants) + evolveinc top-10 | ecommerce SEO / US | 6 named | 1 new qualified (Intergrowth)
+WebSearch (OH/MI/PA/MN ecommerce SEO) + Semrush Michigan & Minnesota lists + SEO Works list | ecommerce SEO / US | 12 named | 0 new qualified (OuterBox/1Digital known; others local/lead-gen)
+WebSearch (Atlanta/Miami/Charlotte/Nashville/Tampa/Orlando) | ecommerce SEO / US | 5 named | 0 new qualified (Marketwake general growth agency, KeeverSEO general SEO, Ecomm Wizards previously rejected)
+WebSearch (Boston/Philadelphia/DC/NJ) | ecommerce SEO / US | 5 named | 0 new qualified (Fire&Spark known; Genius eCommerce rejected; Seapoint insurance/banking focus)
+WebSearch (Phoenix/SLC/Las Vegas/San Diego/Sacramento) + Semrush ecommerce US list | ecommerce SEO / US | 8 named | 0 new qualified (Stryde known; Onboardtech, Sixth Media local)
+WebSearch (enterprise SFCC/Magento/BigCommerce fashion & footwear SEO) | ecommerce SEO / US | 5 named | 1 new qualified (elk marketing); POLARIS UK-based, CQL/CB-I/Cogney known
+WebSearch (freelance ecommerce SEO consultants NY/LA/Chicago) | ecommerce SEO consultants / US | 4 named | 0 new qualified (individuals; excluded by SPEC)
+WebSearch (state-level IN/MO/WI/OR/WA/VA/NC/GA) + Semrush ecommerce US + Clutch ecommerce-industry | ecommerce SEO / US | 12 named | 0 new qualified
+WebSearch (Kansas City/Indianapolis/Columbus/Milwaukee/Louisville/Nashville) | ecommerce SEO / US | 5 named | 0 new qualified (general web/marketing agencies, local retailers)
+WebSearch (NYC/Brooklyn fashion & DTC ecommerce SEO) | ecommerce SEO / US | 5 named | 0 new qualified (Cogney/CB-I/Coalition known; SEO Circular local-generalist, redacted clients; SEO Align solo)
+WebSearch (HI/AK/ID/MT/NM/OK/AR/AL/KY/CT/ME small states) | ecommerce SEO / US | 5 named | 0 new qualified (local/redacted/small DTC clients)
+WebSearch (Seattle/Portland/Oregon/Washington outdoor apparel) | ecommerce SEO / US | 5 named | 0 new qualified (Groove Commerce, Thread known; Foghorn Labs paid-led; Webfu local)
+WebSearch (Chicago/Detroit/Cleveland/Pittsburgh) | ecommerce SEO / US | 5 named | 0 new qualified (Nordica Iceland-founded, US address unverifiable; Blayzer known; Ecomm Wizards rejected)
+WebSearch (LA/SF/San Jose/Orange County) | ecommerce SEO / US | 5 named | 0 new qualified (Bliss Drive multi-vertical small clients; Digital Authority known; SEOCALI local generalist)
