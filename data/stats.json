@@ -1,11 +1,11 @@
 {
  "Lebanon": {
-  "total": 50,
-  "Both": 34,
+  "total": 52,
+  "Both": 36,
   "Autommerce OS": 15,
   "Persona AI": 1,
   "categories": {
-   "Ecommerce Website Development Agencies": 19,
+   "Ecommerce Website Development Agencies": 21,
    "Ecommerce PIM / ERP / Inventory Management Consultants": 8,
    "Fashion Ecommerce Digital Marketing Agencies": 5,
    "Ecommerce Digital Marketing & Performance Agencies": 5,
@@ -20,18 +20,18 @@
   }
  },
  "Kuwait": {
-  "total": 73,
-  "Both": 42,
+  "total": 77,
+  "Both": 46,
   "Autommerce OS": 31,
   "Persona AI": 0,
   "categories": {
-   "Ecommerce Website Development Agencies": 29,
+   "Ecommerce Website Development Agencies": 31,
    "Ecommerce PIM / ERP / Inventory Management Consultants": 11,
    "Ecommerce System Integration Companies": 9,
+   "Ecommerce Digital Marketing & Performance Agencies": 5,
    "Fashion Ecommerce Technology Consultants": 4,
-   "Ecommerce Digital Marketing & Performance Agencies": 4,
+   "Fashion Ecommerce Digital Marketing Agencies": 4,
    "Ecommerce Technology & Digital Transformation Firms": 3,
-   "Fashion Ecommerce Digital Marketing Agencies": 3,
    "Ecommerce Product Photography & Creative Production Agencies": 3,
    "Ecommerce Automation & Workflow Consulting Firms": 2,
    "Ecommerce CRO & UX/UI Agencies": 2,
@@ -41,15 +41,15 @@
   }
  },
  "UAE": {
-  "total": 144,
-  "Both": 94,
-  "Autommerce OS": 47,
+  "total": 149,
+  "Both": 96,
+  "Autommerce OS": 50,
   "Persona AI": 3,
   "categories": {
-   "Ecommerce Website Development Agencies": 35,
+   "Ecommerce Website Development Agencies": 39,
    "Ecommerce Digital Marketing & Performance Agencies": 18,
    "Ecommerce System Integration Companies": 15,
-   "Ecommerce Technology & Digital Transformation Firms": 10,
+   "Ecommerce Technology & Digital Transformation Firms": 11,
    "Ecommerce Product Catalog Management & Data Entry Agencies": 9,
    "Ecommerce PIM / ERP / Inventory Management Consultants": 9,
    "Ecommerce SEO Agencies & Consultants": 7,
@@ -67,17 +67,17 @@
   }
  },
  "Qatar": {
-  "total": 56,
-  "Both": 28,
-  "Autommerce OS": 26,
+  "total": 59,
+  "Both": 29,
+  "Autommerce OS": 28,
   "Persona AI": 2,
   "categories": {
-   "Ecommerce Website Development Agencies": 16,
+   "Ecommerce Website Development Agencies": 18,
    "Ecommerce PIM / ERP / Inventory Management Consultants": 8,
    "Ecommerce System Integration Companies": 6,
    "Ecommerce Digital Marketing & Performance Agencies": 6,
    "Ecommerce SEO Agencies & Consultants": 5,
-   "Ecommerce Technology & Digital Transformation Firms": 3,
+   "Ecommerce Technology & Digital Transformation Firms": 4,
    "Ecommerce Automation & Workflow Consulting Firms": 2,
    "Ecommerce Product Photography & Creative Production Agencies": 2,
    "Fashion Ecommerce Personalization & Customer Experience Agencies": 2,
@@ -89,18 +89,18 @@
   }
  },
  "Saudi Arabia": {
-  "total": 118,
-  "Both": 69,
-  "Autommerce OS": 46,
+  "total": 123,
+  "Both": 73,
+  "Autommerce OS": 47,
   "Persona AI": 3,
   "categories": {
-   "Ecommerce Website Development Agencies": 27,
+   "Ecommerce Website Development Agencies": 28,
+   "Ecommerce System Integration Companies": 17,
    "Ecommerce Digital Marketing & Performance Agencies": 16,
-   "Ecommerce System Integration Companies": 14,
    "Ecommerce Technology & Digital Transformation Firms": 13,
+   "Ecommerce CRO & UX/UI Agencies": 7,
    "Ecommerce PIM / ERP / Inventory Management Consultants": 7,
    "Ecommerce Product Catalog Management & Data Entry Agencies": 7,
-   "Ecommerce CRO & UX/UI Agencies": 6,
    "Ecommerce SEO Agencies & Consultants": 6,
    "Ecommerce Product Photography & Creative Production Agencies": 5,
    "Ecommerce Automation & Workflow Consulting Firms": 4,
@@ -115,20 +115,20 @@
   }
  },
  "United States": {
-  "total": 981,
-  "Both": 616,
-  "Autommerce OS": 348,
+  "total": 988,
+  "Both": 620,
+  "Autommerce OS": 351,
   "Persona AI": 17,
   "categories": {
-   "Ecommerce Website Development Agencies": 313,
-   "Ecommerce Digital Marketing & Performance Agencies": 208,
+   "Ecommerce Website Development Agencies": 314,
+   "Ecommerce Digital Marketing & Performance Agencies": 211,
    "Ecommerce System Integration Companies": 73,
    "Ecommerce Product Photography & Creative Production Agencies": 55,
-   "Ecommerce SEO Agencies & Consultants": 51,
+   "Ecommerce SEO Agencies & Consultants": 53,
    "Ecommerce CRO & UX/UI Agencies": 45,
    "Ecommerce Technology & Digital Transformation Firms": 44,
    "Ecommerce PIM / ERP / Inventory Management Consultants": 39,
-   "Fashion Ecommerce Digital Marketing Agencies": 33,
+   "Fashion Ecommerce Digital Marketing Agencies": 34,
    "Fashion Ecommerce Technology Consultants": 24,
    "Ecommerce Product Catalog Management & Data Entry Agencies": 22,
    "Ecommerce Consulting & Strategy Firms": 17,
@@ -141,6 +141,6 @@
    "Fashion Ecommerce Sizing, Fit & Returns Optimization Specialists": 4
   }
  },
- "_unique_companies_all_markets": 1319,
+ "_unique_companies_all_markets": 1340,
  "_rejected_rows": 14
 }
