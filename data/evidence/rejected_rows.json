@@ -5,6 +5,46 @@
   "problem": "Saudi case study does not name the client"
  },
  {
+  "file": "p2_g_qatar.csv",
+  "name": "Bespin Global MEA",
+  "problem": "cloud infrastructure MSP, not an ecommerce specialist"
+ },
+ {
+  "file": "p2_g_qatar.csv",
+  "name": "Apptunix",
+  "problem": "generic app-development shop; evidence is a grocery picker app"
+ },
+ {
+  "file": "p2_g_qatar.csv",
+  "name": "Taqat for Technology",
+  "problem": "only client evidence is a charity shop, not an established merchant"
+ },
+ {
+  "file": "p2_g_uae_b.csv",
+  "name": "Splashlight Studios",
+  "problem": "recorded domain does not resolve; similar domain is an unrelated company"
+ },
+ {
+  "file": "p2_g_us_dev.csv",
+  "name": "NTT DATA",
+  "problem": "global IT conglomerate, not an ecommerce specialist"
+ },
+ {
+  "file": "p2_g_us_directories.csv",
+  "name": "Collin & Company",
+  "problem": "website returns 502 on repeated checks"
+ },
+ {
+  "file": "p2_kuwait.csv",
+  "name": "Friction Studio",
+  "problem": "India agency; one Kuwait client, no Kuwait presence"
+ },
+ {
+  "file": "p2_uae_c.csv",
+  "name": "UCS Solutions (Unique Computer Systems)",
+  "problem": "generalist software house; ecommerce is a secondary line"
+ },
+ {
   "file": "uae_groupA.csv",
   "name": "Like Digital & Partners",
   "problem": "website expired (Squarespace expiry page)"

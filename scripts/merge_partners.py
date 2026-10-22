@@ -58,6 +58,14 @@ AUDIT_EXCLUDE = {
     ("United States", "nogin.com"): "in Chapter 7 liquidation; operations shut down",
     ("UAE", "halasocial.com"): "single-person operation per LinkedIn",
     ("United States", "thisispattern.com"): "acquired by Domaine, which is already listed",
+    ("UAE", "splashlight-studios.com"): "recorded domain does not resolve; similar domain is an unrelated company",
+    ("UAE", "ucssolutions.com"): "generalist software house; ecommerce is a secondary line",
+    ("Kuwait", "frictionstudio.in"): "India agency; one Kuwait client, no Kuwait presence",
+    ("Qatar", "taqatechno.com"): "only client evidence is a charity shop, not an established merchant",
+    ("Qatar", "apptunix.com"): "generic app-development shop; evidence is a grocery picker app",
+    ("Qatar", "bespinglobal.sa"): "cloud infrastructure MSP, not an ecommerce specialist",
+    ("United States", "nttdata.com"): "global IT conglomerate, not an ecommerce specialist",
+    ("United States", "collinandcompany.com"): "website returns 502 on repeated checks",
 }
 
 # Wrong domains recorded during research -> verified official domain.

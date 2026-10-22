@@ -1,0 +1,17 @@
+# Kuwait candidate notes (working)
+- Wavai (KW) wavai.com - Shopify partner; Amber Oud, Al Ghurair Perfumes, Haya Alkharafi abayas, Ksrah streetwear -> Both
+- The io agency (UAE) - Shopify Plus; United Kakooli KW case; Drs Lounge -> Both
+- DBCO designandbuild.co - Fabric of Society KW luxury fashion (check HQ)
+- Brainvire - claims Hawalli office; Armada KW fashion -> Both (verify)
+- MagnetoIT - KW page; Petzone, Ashrafs, Skysales, Aljazira (verify)
+- Krish TechnoLabs - Fantasy World Toys KW Adobe Commerce
+- Axelerant - Alshaya (Acquia) 
+- Eurisko (LB) - KW page, Azadea (verify KW clients)
+- iGroup Solutions (KW) - Suzuki, Boodai (ecom clients?)
+- Emstell (KW) - check clients
+- Urbanlinks - Adam Star, Farah perfumes paid media
+- Makaseb (KW) ecommerce growth - clients?
+- Tarawud - Riddle fashion KW (check)
+- Klay Create (US) - Nouf hijab KW
+- Gavan Tech - Dar Dalal, Al-Sayer (small)
+- Metizsoft (IN) - TRIMODE

@@ -1,0 +1,71 @@
+# Phase 2 Qatar sources
+
+Format: URL | category/market | companies named | new qualified added
+
+- https://www.seamediainc.com/blog/how-we-implemented-realtime-erp-to-shopify-stock-sync-using-graphql-for-a-largescale-pharmacy-chain-in-qatar/ | Qatar / system integration | 1 | 1
+- https://commerce9.io/portfolios/gait/ | Qatar / system integration | 1 | 1
+- https://zeroandone.me/case-studies/snoonu-ml.html | Qatar / product catalog management | 1 | 1
+- https://www.calliweb.fr/realisations/majid-al-futtaim/ | Qatar / PIM and supplier catalog | 1 | 1
+- https://www.embitel.com/ecommerce-casestudies/jarir-book-stores | Qatar / system integration | 1 | 1
+- https://www.bespinglobal.sa/case_studies/jarir-bookstore-building-a-scalable-high-performance-ecommerce-platform-ready-for-every-eventuality/ | Qatar / digital transformation | 1 | 1
+- https://rowwad.qa/case-study/digital-ecosystem-development-for-dogcatto-qatars-premier-pet-care-marketplace/ | Qatar / PIM, ERP, and inventory | 1 | 1
+- https://www.retailpro.com/include/eng/successStories/PLG-Trade/ | Qatar / fashion inventory integration | 1 | 1
+- https://www.technaureus.com/news-and-events-detail/pos-erp-implementation-for-mangomart-hypermarket-q | Qatar / ERP and inventory | 1 | 1
+- https://www.fivesysdev.com/case-studies/building-a-scalable-promotion-service-for-qatar-duty-free | Qatar / workflow automation | 1 | 1
+- https://www.apptunix.com/portfolios/rafeeq-picker-grocery-app/ | Qatar / fulfillment automation | 1 | 1
+- https://motif.net/motifportfolio/alif/ | Qatar / ecommerce UX and CRO | 1 | 1
+- https://nobrandagency.com/products/studio-7 | Qatar / fashion ecommerce technology | 1 | 1
+- https://maxab.ai/services/ | Qatar / ecommerce development | 1 | 1
+- https://cosmic.ventures/case/mannai.html | Qatar / ecommerce SEO | 1 | 1
+- https://www.magdio.com/portfolio/badie-studio-seo-case-study | Qatar / ecommerce SEO | 1 | 1
+- https://digitallinkspro.qa/portfolio/covent-garden/ | Qatar / ecommerce SEO | 1 | 1
+- https://halabyte.com/portfolio/ifurniture/ | Qatar / ecommerce development | 1 | 1
+- https://www.creativeloft.qa/projects/armonico-photography-videography | Qatar / product photography | 1 | 1
+- https://taqnia.qa/photography/ecommerce-photography-qa/ | Qatar / product photography | 1 | 1
+- https://www.sociata.com/work/talabat-pro-qatar/ | Qatar / ecommerce performance marketing | 1 | 1
+- https://msys.agency/projects/streamlining-inventory-management-for-qatar-based-premium-apparel-brand/ | Qatar / fashion workflow automation | 1 | 1
+- https://auraqatar.com/portfolios/saudia/ | Qatar / ecommerce development | 1 | 1
+- https://www.nop-station.com/savanna-nopcommerce-powered-digital-transformation-journey-of-a-qatari-boutique-business | Qatar / ecommerce digital transformation | 1 | 1
+- https://www.nulogic.io/work/rivoli | Qatar / fashion personalization and CX | 1 | 1
+- https://88medias.com/portfolio/la-gallia/ | Qatar / fashion ecommerce development | 1 | 1
+- https://www.gravityer.com/case-studies/max-fashion | Qatar / fashion personalization and CX | 1 | 1
+- https://instudio.digital/le-closet/ | Qatar / fashion ecommerce development | 1 | 1
+- https://performance.privateteam-qa.com/ | Qatar / retail consulting | 1 | 0
+- https://velorisecom.com/store-catalogue-management/ | Qatar / product catalog management | 1 | 0
+- https://www.odndigital.com/pro-catalog-enhancement | Qatar/GCC / catalog enrichment | 9 | 0
+- https://inhanddesignqatar.com/how-can-an-online-product-listing-service-in-qatar-help-your-business/ | Qatar / product listing and data entry | 1 | 0
+- https://brq.qa/services/pimcore-development/ | Qatar / PIM and catalog management | 1 | 0
+- https://www.rauljitechnologies.com/case-study/al-maha-optical/ | Qatar / catalog-rich ecommerce development | 1 | 1
+- https://biglab.ae/projects/letoile/ | Qatar / product attribute enrichment | 1 | 0
+- https://aws.amazon.com/partners/success/snoonu-zero-one/ | Qatar / marketplace catalog automation | 1 | 0
+- https://sourcecode.qa/ar/ecommerce.html | Qatar / catalog setup and product data | 1 | 0
+- https://www.sortlist.com/s/product-photography/qatar-qa | Qatar / product photography directory | 10 | 0
+- https://ghassen-oueslati.com/product-photography-qatar/ | Qatar / ecommerce product photography | 1 | 0
+- https://bbdperfectstorm.com/project/endless-discovery | Qatar / retail creative production | 1 | 0
+- https://pictousmedia.com/services/product-photography-in-doha-qatar/ | Qatar / ecommerce product photography | 1 | 0
+- https://www.alraza.com/product-photography.html | Qatar / ecommerce product photography | 1 | 0
+- https://bx.qa/photography-services-qatar/ | Qatar / ecommerce product photography | 1 | 0
+- https://lumiere-qa.com/service/photography-services-in-qatar/ | Qatar / ecommerce product photography | 1 | 0
+- https://novamediaqa.com/services/menu-design | Qatar / delivery-platform creative production | 1 | 0
+- https://qdash.qa/?service=photography | Qatar / ecommerce product photography | 1 | 0
+- https://www.akwad.qa/widam-home-delivery-an-erpnext-e-commerce-and-delivery-case-study/ | Qatar / ecommerce workflow automation | 1 | 0
+- https://www.areterix.com/blog/case-study-2/digitizing-frozen-food-delivery-with-odoo-12 | Qatar / order and fulfillment automation | 1 | 0
+- https://www.yo-kart.com/case-study/tajer-qatar-ecommerce-platform-powered-by-yokart.html | Qatar / marketplace workflow automation | 1 | 0
+- https://www.agmglobal.co/blog/everrise-qatar-odoo-erp-electrical-trading-64 | Qatar / ecommerce ERP automation | 1 | 0
+- https://rowwad.qa/case-study/woocommerce-odoo-integration-for-costumestopia-by-rowwad/ | Qatar / WooCommerce-Odoo workflow automation | 1 | 0
+- https://www.ridkk.com/en/qatar/retail-ecommerce/rpa/rpa-services-retail-e-commerce-qatar | Qatar / retail RPA automation | 1 | 0
+- https://pixeldhow.com/services/business-automation-qatar | Qatar / workflow automation | 1 | 0
+- https://valex.qa/services/ecommerce-online-store-solutions | Qatar / ecommerce workflow automation | 1 | 0
+- https://www.odoo.com/partners/taqat-for-technology-8262119 | Qatar / ecommerce ERP and inventory | 11 | 1
+- https://www.posibolt.com/fashion-retail-solution-for-al-majed-group/ | Qatar / fashion retail ERP and inventory | 1 | 1
+- https://call.celfocus.com/articles/milestone-to-celebrate | Qatar / digital transformation | 1 | 0
+- https://www.gwclogistics.com/gwc-services/consulting-solution/ | Qatar / ecommerce fulfillment consulting | 1 | 0
+- https://www.lits.services/qatar/microsoft-dynamics-365-commerce-qatar/ | Qatar / commerce workflow automation | 1 | 0
+- https://www.louis-innovations.com/blog/osq-pioneering-pet-e-commerce-in-qatar | Qatar / bilingual product feeds | 1 | 1
+- https://www.casestudies.com/company/highstreetio/case-study/carrefour-brings-greater-accuracy-and-detail-to-local-inventory-ads | Qatar / retailer product feeds | 1 | 0
+- https://www.zaynseo.qa/google-merchant | Qatar / Google Shopping product feeds | 1 | 0
+- https://redberries.ae/qatar/services/google-shopping-feed-management/ | Qatar / Google Shopping product feeds | 1 | 0
+- https://ignitednepal.com/qa/ecommerce-growth/google-merchant-centre/ | Qatar / localized product feeds | 1 | 0
+- https://dgtlbase.com/en/cases/flower-shop-grows-roas-in-5-months/ | Qatar / product feed optimization | 1 | 0
+- https://optimasea.nl/en/shopping-feed-optimalisatie | Qatar/GCC / product feed management | 1 | 0
+- https://cherry.qa/marketplace-optimization/ | Qatar / marketplace feed management | 1 | 0

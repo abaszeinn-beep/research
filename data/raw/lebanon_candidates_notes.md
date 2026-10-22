@@ -1,0 +1,25 @@
+Candidates to verify (Lebanon):
+- YNOT ynotconsultancy.com
+- AphCom aphcom.com (Mike Sport, Crocs Lebanon)
+- Byblos Horizon bybloshorizon.com
+- Eurisko eurisko.net (Azadea)
+- Loumi-X loumi-x.com (Mazen Online)
+- Emagine emaginelb.com (Perdu, KookiWannaBe)
+- ACONVERTS aconverts.com (Pandora Lebanon, Exotica, Suave Ties)
+- Koein koein.com (Aishti, Newounsa)
+- Born Interactive borninteractive.com (Spinneys)
+- Krish Technolabs (Antoine Online, Nestle Lebanon) - regional/India
+- TEDMOB tedmob.com (ABC)
+- The Web Addicts thewebaddicts.com (ABC marketplace)
+- Webneoo webneoo.com (Beirut Duty Free)
+- Two7Square?
+- MEMA Agency mema.agency
+- Maze wearemaze.com
+- Creative 4 All
+- L'Atelier Growth lateliergrowth.com
+- bearhouse.io
+- The iBoost
+- MEDDOTS (Azadea campaigns)
+- Astound Commerce (Elie Saab)
+- Almoe, Anzimaty, Media Pixel, AY Develops (Shopify dir)
+- Sync Studios, Polar Stork, IY Media, Multiframes, Endspace Mena, Incoding, Solweavers

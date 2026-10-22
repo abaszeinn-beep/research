@@ -6,3 +6,7 @@ Arabic listicles (best SEO companies for stores KSA; product photography Riyadh/
 Odoo / SAP / NetSuite / Dynamics Saudi partner directories and listicles | PIM-ERP / KSA | ~30 | 0 (generic ERP shops without verifiable ecommerce focus, or already in deliverable)
 Salla / Zid integration partner pages | Automation / KSA | ~15 | 0 (SaaS apps or micro shops)
 Search coverage: photography, automation and feed categories yielded no new qualifiers beyond Phase-1 exclusions.
+https://pimcore.com/en/customers/basamh-group_c457184 | PIM-ERP / KSA | 2 | 1 (Centric)
+https://www.intwo.cloud/cases/jashanmal-national-company-brings-scale-security-and-speed-to-retail-with-dynamics-365-commerce/ | PIM-ERP / KSA | 2 | 1 (Intwo)
+Pimcore / Akeneo partner directories (Vaimo, hmmh, Valtech, Magneto, Credencys) | PIM-ERP / KSA | ~8 | 0
+Photography, automation, feed re-sweep (Resemble, Voila, Al Shohab, AGMA, Rawaj, RedBerries, 3Pearl, Tarjama, ForwardPMX, Keyade, Dtech) | photo/automation/feed / KSA | ~11 | 0
